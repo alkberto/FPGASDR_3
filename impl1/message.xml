@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901206</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(167): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>167</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>
