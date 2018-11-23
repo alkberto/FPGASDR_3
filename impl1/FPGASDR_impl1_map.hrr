@@ -1,0 +1,42 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      84.00        100.0
+                                  LUT4	      68.00        100.0
+                                 IOBUF	         19        100.0
+                                PFUREG	        127        100.0
+                                RIPPLE	         50        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               nco_sig	          1        38.0
+                               uart_tx	          1        25.2
+                               uart_rx	          1        36.2
+---------------------------------------------------
+Report for cell uart_tx
+   Instance path: top/uart_tx1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.17        25.2
+                                  LUT4	      24.00        35.3
+                                PFUREG	         31        24.4
+                                RIPPLE	          9        18.0
+---------------------------------------------------
+Report for cell uart_rx
+   Instance path: top/uart_rx1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.42        36.2
+                                  LUT4	      41.00        60.3
+                                PFUREG	         33        26.0
+                                RIPPLE	          9        18.0
+---------------------------------------------------
+Report for cell nco_sig
+   Instance path: top/nco
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.92        38.0
+                                  LUT4	       1.00         1.5
+                                PFUREG	         63        49.6
+                                RIPPLE	         32        64.0

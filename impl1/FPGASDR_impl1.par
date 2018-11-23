@@ -1,133 +1,28 @@
-
-map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGASDR_impl1.ngd" -o "FPGASDR_impl1_map.ncd" -pr "FPGASDR_impl1.prf" -mp "FPGASDR_impl1.mrp" -lpf "C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.lpf" -lpf "C:/Users/user/lattice/FPGASDR/FPGASDR.lpf" -c 0            
-map:  version Diamond (64-bit) 3.10.2.115
-
+PAR: Place And Route Diamond (64-bit) 3.10.2.115.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-   Process the file: FPGASDR_impl1.ngd
-   Picdevice="LCMXO2-7000HE"
+Fri Nov 23 23:28:39 2018
 
-   Pictype="TQFP144"
-
-   Picspeed=4
-
-   Remove unused logic
-
-   Do not produce over sized NCDs.
-
-Part used: LCMXO2-7000HETQFP144, Performance used: 4.
-
-Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-
-Running general design DRC...
-
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="In0"  />
-Removing unused logic...
-
-Optimizing...
-
-    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="In0"  />
+C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f FPGASDR_impl1.p2t
+FPGASDR_impl1_map.ncd FPGASDR_impl1.dir FPGASDR_impl1.prf -gui -msgset
+C:/Users/user/lattice/FPGASDR/promote.xml
 
 
+Preference file: FPGASDR_impl1.prf.
 
-Design Summary:
-   Number of registers:    127 out of  7209 (2%)
-      PFU registers:          127 out of  6864 (2%)
-      PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        84 out of  3432 (2%)
-      SLICEs as Logic/ROM:     84 out of  3432 (2%)
-      SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         50 out of  3432 (1%)
-   Number of LUT4s:        168 out of  6864 (2%)
-      Number used as logic LUTs:         68
-      Number used as distributed RAM:     0
-      Number used as ripple logic:      100
-      Number used as shift registers:     0
-   Number of PIO sites used: 19 + 4(JTAG) out of 115 (20%)
-   Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
-   Number of Power Controller:  0 out of 1 (0%)
-   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
-   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
-   Number of DCCA:  0 out of 8 (0%)
-   Number of DCMA:  0 out of 2 (0%)
-   Number of PLLs:  0 out of 2 (0%)
-   Number of DQSDLLs:  0 out of 2 (0%)
-   Number of CLKDIVC:  0 out of 4 (0%)
-   Number of ECLKSYNCA:  0 out of 4 (0%)
-   Number of ECLKBRIDGECS:  0 out of 2 (0%)
-   Notes:-
-      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
-      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  1
-     Net osc_clk: 74 loads, 74 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  14
-     Net uart_tx1/osc_clk_enable_45: 2 loads, 2 LSLICEs
-     Net uart_tx1/osc_clk_enable_36: 4 loads, 4 LSLICEs
-     Net uart_tx1/r_SM_Main_2: 10 loads, 10 LSLICEs
-     Net uart_rx1/osc_clk_enable_1: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_55: 9 loads, 9 LSLICEs
-     Net uart_rx1/osc_clk_enable_4: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_52: 2 loads, 2 LSLICEs
-     Net uart_rx1/osc_clk_enable_7: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_17: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_21: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_22: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_56: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_50: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_49: 1 loads, 1 LSLICEs
-   Number of LSRs:  6
-     Net uart_tx1/n1357: 9 loads, 9 LSLICEs
-     Net uart_tx1/r_SM_Main_2: 1 loads, 1 LSLICEs
-     Net uart_tx1/n1720: 1 loads, 1 LSLICEs
-     Net uart_rx1/n1344: 9 loads, 9 LSLICEs
-     Net uart_rx1/r_SM_Main_2: 2 loads, 2 LSLICEs
-     Net uart_rx1/n1719: 1 loads, 1 LSLICEs
-   Number of nets driven by tri-state buffers:  0
-   Top 10 highest fanout non-clock nets:
-     Net uart_tx1/r_SM_Main_2: 15 loads
-     Net uart_rx1/r_SM_Main_1: 13 loads
-     Net uart_rx1/r_Rx_Data: 12 loads
-     Net uart_rx1/r_SM_Main_0: 12 loads
-     Net uart_rx1/r_Bit_Index_0: 11 loads
-     Net uart_rx1/r_SM_Main_2: 10 loads
-     Net uart_tx1/r_SM_Main_0: 10 loads
-     Net uart_tx1/r_SM_Main_1: 10 loads
-     Net uart_rx1/n1344: 9 loads
-     Net uart_rx1/osc_clk_enable_55: 9 loads
- 
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -2.057       316053       0.308        0            18           Success
 
-   Number of warnings:  2
-   Number of errors:    0
+* : Design saved.
 
+Total (real) run time for 1-seed: 18 secs 
 
-
-Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
-Peak Memory Usage: 57 MB
-
-Dumping design to file FPGASDR_impl1_map.ncd.
-
-ncd2vdb "FPGASDR_impl1_map.ncd" ".vdbs/FPGASDR_impl1_map.vdb"
-
-Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
-
-mpartrce -p "FPGASDR_impl1.p2t" -f "FPGASDR_impl1.p3t" -tf "FPGASDR_impl1.pt" "FPGASDR_impl1_map.ncd" "FPGASDR_impl1.ncd"
-
----- MParTrce Tool ----
-Removing old design directory at request of -rem command line option to this program.
-Running par. Please wait . . .
+par done!
 
 Lattice Place and Route Report for Design "FPGASDR_impl1_map.ncd"
 Fri Nov 23 23:28:39 2018
@@ -364,6 +259,9 @@ Timing score: 316053
 Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
 
 
+All signals are completely routed.
+
+
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
 PAR_SUMMARY::Worst  slack<setup/<ns>> = -2.057
@@ -382,89 +280,3 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Exiting par with exit code 0
-Exiting mpartrce with exit code 0
-
-bitgen -f "FPGASDR_impl1.t2b" -w "FPGASDR_impl1.ncd" -jedec "FPGASDR_impl1.prf"
-
-
-BITGEN: Bitstream Generator Diamond (64-bit) 3.10.2.115
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-
-
-Loading design for application Bitgen from file FPGASDR_impl1.ncd.
-Design name: top
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO2-7000HE
-Package:     TQFP144
-Performance: 4
-Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 34.4.
-
-Running DRC.
-DRC detected 0 errors and 0 warnings.
-Reading Preference File from FPGASDR_impl1.prf.
-
-Preference Summary:
-+---------------------------------+---------------------------------+
-|  Preference                     |  Current Setting                |
-+---------------------------------+---------------------------------+
-|                         RamCfg  |                        Reset**  |
-+---------------------------------+---------------------------------+
-|                     MCCLK_FREQ  |                         2.08**  |
-+---------------------------------+---------------------------------+
-|                  CONFIG_SECURE  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                          INBUF  |                           ON**  |
-+---------------------------------+---------------------------------+
-|                      JTAG_PORT  |                       ENABLE**  |
-+---------------------------------+---------------------------------+
-|                       SDM_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                 SLAVE_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                MASTER_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                       I2C_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  CONFIGURATION  |                          CFG**  |
-+---------------------------------+---------------------------------+
-|                COMPRESS_CONFIG  |                           ON**  |
-+---------------------------------+---------------------------------+
-|                        MY_ASSP  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|               ONE_TIME_PROGRAM  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                 ENABLE_TRANSFR  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  SHAREDEBRINIT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|            BACKGROUND_RECONFIG  |                          OFF**  |
-+---------------------------------+---------------------------------+
- *  Default setting.
- ** The specified setting matches the default setting.
-
-
-Creating bit map...
- 
-Bitstream Status: Final           Version 1.94.
- 
-Saving bit stream in "FPGASDR_impl1.jed".
- 
-===========
-UFM Summary.
-===========
-UFM Size:        2046 Pages (128*2046 Bits).
-UFM Utilization: General Purpose Flash Memory.
- 
-Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
-Initialized UFM Pages:                     0 Page.
- 

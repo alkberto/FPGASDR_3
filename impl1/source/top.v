@@ -2,7 +2,7 @@
 module top 
   (
    input    i_Rx_Serial,
-   input Reset,
+ //  input Reset,
    output o_Tx_Serial,
    output   o_Rx_DV,
    output[7:0] o_Rx_Byte,
@@ -12,8 +12,10 @@ module top
    );
 
   wire osc_clk;
-
+wire reset;
 wire [7:0] i_Tx_Byte;
+wire [63:0] phase_inc_carr;
+wire [1:0] sin_out, cos_out;
 
   
 //// Internal Oscillator
@@ -25,12 +27,24 @@ wire [7:0] i_Tx_Byte;
 		.SEDSTDBY()     		// this signal is not required if not using SED
 		);
 
-	
+/*	
 	GSR GSR_INST (.GSR (Reset));
+*/
 
+
+nco_sig	 nco (
+.clk (osc_clk),
+.reset (reset),
+.phase_inc_carr (phase_inc_carr),
+.sin_out (sin_out),
+.cos_out (cos_out)
+);
 	
-	
-	
+assign MYLED[1:0] = sin_out;
+assign MYLED[3:2] = cos_out;
+assign phase_inc_carr = 64'b 10000001001011000000010011010101010110;
+assign reset = 1'b0;
+
 uart_rx  #(.CLKS_PER_BIT(1155))  uart_rx1 (
 .osc_clk (osc_clk), 
 .i_Rx_Serial (i_Rx_Serial),
@@ -49,18 +63,13 @@ uart_tx  #(.CLKS_PER_BIT(1155))  uart_tx1 (
 );	
 	
 	
-	
+/*	
 blinking_led blinking_led1 (
 .MYLED (MYLED),
 .In0 (In0),
 .osc_clk (osc_clk)
 );
-
-
-/*test test1 (
- .osc_clk    (osc_clk),
-   .i_Rx_Serial (i_Rx_Serial),
-  .o_Rx_DV (o_Rx_DV)
-   );
 */
+
+
 endmodule
