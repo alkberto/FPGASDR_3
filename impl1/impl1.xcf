@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.jed</File>
-			<FileTime>11/23/18 22:36:57</FileTime>
-			<JedecChecksum>0x12A6</JedecChecksum>
+			<FileTime>11/24/18 21:27:22</FileTime>
+			<JedecChecksum>0x6B81</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -29,6 +29,7 @@
 				<PreloadLength>664</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

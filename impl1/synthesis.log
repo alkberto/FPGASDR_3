@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Nov 23 23:28:25 2018
+Wed Nov 28 11:28:05 2018
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -35,7 +35,7 @@ Using performance grade 4.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
-The -top option is not used.
+Top-level module name = top.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -65,44 +65,53 @@ The -syn option is FALSE.
 -p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
 -p C:/Users/user/lattice/FPGASDR/impl1 (searchpath added)
 -p C:/Users/user/lattice/FPGASDR (searchpath added)
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/top.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/NCO.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/Mixer.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/CIC.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/PWM.v
 NGD file = FPGASDR_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
-WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, use the -top option.
 Technology check ok...
 
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/testuart.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/top.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v. VERI-1482
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(31): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(32): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(33): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(34): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(35): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v. VERI-1482
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(25): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(26): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(27): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(28): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(29): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v. VERI-1482
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(31): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(32): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(33): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(34): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(35): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/testuart.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/nco.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/mixer.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/cic.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/pwm.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): compiling module top. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="133.00"). VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/nco.v(10): compiling module nco_sig. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/nco.v(13): compiling module nco_sig. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(4): compiling module CIC. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(16): compiling module uart_rx. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): compiling module uart_tx. VERI-1018
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(63): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -110,24 +119,25 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-WARNING - synthesis: I/O Port MYLED[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port MYLED[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port MYLED[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port MYLED[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port In0 's net has no driver and is unused.
-######## Missing driver on net MYLED[7]. Patching with GND.
-######## Missing driver on net MYLED[6]. Patching with GND.
-######## Missing driver on net MYLED[5]. Patching with GND.
-######## Missing driver on net MYLED[4]. Patching with GND.
+######## Missing driver on net rst. Patching with GND.
 
 
 
-WARNING - synthesis: Bit 0 of Register \nco/state_nco_carr is stuck at Zero
-WARNING - synthesis: Bit 1 of Register \nco/state_nco_carr is stuck at Zero
-WARNING - synthesis: Bit 2 of Register \nco/state_nco_carr is stuck at One
-WARNING - synthesis: Bit 3 of Register \nco/state_nco_carr is stuck at Zero
-WARNING - synthesis: I/O Port In0 's net has no driver and is unused.
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(46): Register \nco/phase_accum_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: Bit 7 of Register \Mixer1/MixerOutSin is stuck at One
+WARNING - synthesis: Bit 7 of Register \Mixer1/MixerOutCos is stuck at One
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(46): Register \nco/phase_accum_i15 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i2.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i2.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i7 is a one-to-one match with \Mixer1/MixerOutCos_i3.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i6 is a one-to-one match with \Mixer1/MixerOutCos_i4.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i5 is a one-to-one match with \Mixer1/MixerOutCos_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i3.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i6 is a one-to-one match with \Mixer1/MixerOutSin_i4.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i5 is a one-to-one match with \Mixer1/MixerOutSin_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i5.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i5.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i7 is a one-to-one match with \Mixer1/MixerOutCos_i1.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -137,25 +147,22 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'.
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'In0' has no load.
-WARNING - synthesis: input pad net 'In0' has no legal load.
-WARNING - synthesis: DRC complete with 2 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 127 of 7209 (1 % )
-CCU2D => 50
-FD1P3AX => 24
+Number of register bits => 335 of 7209 (4 % )
+CCU2D => 125
+FD1P3AX => 160
 FD1P3IX => 32
-FD1S3AX => 63
-FD1S3AY => 2
-FD1S3IX => 6
+FD1S3AX => 122
+FD1S3AY => 4
+FD1S3IX => 17
 GSR => 1
-IB => 1
+IB => 2
 L6MUX21 => 1
-LUT4 => 67
-OB => 18
+LUT4 => 77
+OB => 27
 OSCH => 1
 PFUMX => 3
 ################### End Area Report ##################
@@ -167,32 +174,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : osc_clk, loads : 127
+  Net : osc_clk, loads : 335
 Clock Enable Nets
-Number of Clock Enables: 14
+Number of Clock Enables: 18
 Top 10 highest fanout Clock Enables:
-  Net : uart_tx1/osc_clk_enable_48, loads : 17
-  Net : uart_rx1/osc_clk_enable_55, loads : 16
-  Net : uart_tx1/osc_clk_enable_36, loads : 8
-  Net : uart_rx1/osc_clk_enable_52, loads : 3
-  Net : uart_tx1/osc_clk_enable_45, loads : 3
-  Net : uart_rx1/osc_clk_enable_17, loads : 1
-  Net : uart_rx1/osc_clk_enable_21, loads : 1
-  Net : uart_rx1/osc_clk_enable_22, loads : 1
-  Net : uart_rx1/osc_clk_enable_7, loads : 1
+  Net : CIC1/osc_clk_enable_80, loads : 50
+  Net : CIC1/osc_clk_enable_130, loads : 50
+  Net : CIC1/v_comb_N_550, loads : 26
+  Net : CIC1/v_comb, loads : 24
+  Net : uart_tx1/osc_clk_enable_156, loads : 17
+  Net : uart_rx1/osc_clk_enable_155, loads : 16
+  Net : uart_tx1/osc_clk_enable_45, loads : 8
+  Net : uart_rx1/osc_clk_enable_136, loads : 3
+  Net : uart_tx1/osc_clk_enable_138, loads : 3
   Net : uart_rx1/osc_clk_enable_49, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : uart_tx1/osc_clk_enable_48, loads : 17
-  Net : uart_tx1/n1357, loads : 16
-  Net : uart_rx1/osc_clk_enable_55, loads : 16
-  Net : uart_rx1/n1344, loads : 16
-  Net : uart_rx1/r_SM_Main_1, loads : 13
-  Net : uart_rx1/r_Rx_Data, loads : 12
+  Net : CIC1/osc_clk_enable_80, loads : 50
+  Net : CIC1/osc_clk_enable_130, loads : 50
+  Net : CIC1/v_comb_N_550, loads : 26
+  Net : CIC1/v_comb, loads : 24
+  Net : uart_tx1/osc_clk_enable_156, loads : 17
+  Net : uart_tx1/n928, loads : 16
+  Net : uart_rx1/osc_clk_enable_155, loads : 16
+  Net : uart_rx1/n927, loads : 16
   Net : uart_rx1/r_SM_Main_0, loads : 12
-  Net : uart_rx1/r_Bit_Index_0, loads : 11
-  Net : uart_tx1/r_SM_Main_0, loads : 10
-  Net : uart_tx1/r_SM_Main_1, loads : 10
+  Net : uart_rx1/r_SM_Main_1, loads : 12
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -202,7 +209,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|   76.075 MHz|     8 *
+clk0 [get_nets osc_clk]                 |  200.000 MHz|   72.759 MHz|     8 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -210,8 +217,8 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|   76.075 MHz|     8 *
 1 constraints not met.
 
 
-Peak Memory Usage: 61.691  MB
+Peak Memory Usage: 63.648  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.295  secs
+Elapsed CPU time for LSE flow : 1.872  secs
 --------------------------------------------------------------

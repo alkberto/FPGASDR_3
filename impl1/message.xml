@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
+    <Task name="MapVerilogSimFile">
         <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>In0</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>In0</Dynamic>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -21,51 +15,6 @@
         <Message>
             <ID>35001781</ID>
             <Severity>Info</Severity>
-        </Message>
-        <Message>
-            <ID>35001200</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>top</Dynamic>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(31): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>31</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(32): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>32</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(33): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>33</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(34): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>34</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(35): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>35</Navigation>
         </Message>
         <Message>
             <ID>35901199</ID>
@@ -108,6 +57,46 @@
             <Navigation>29</Navigation>
         </Message>
         <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(31): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(32): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(33): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(34): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(35): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): </Dynamic>
@@ -126,10 +115,34 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(10): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(13): </Dynamic>
             <Dynamic>nco_sig</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
-            <Navigation>10</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/mixer.v(2): </Dynamic>
+            <Dynamic>Mixer</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/mixer.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(4): </Dynamic>
+            <Dynamic>CIC</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/pwm.v(1): </Dynamic>
+            <Dynamic>PWM</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/pwm.v</Navigation>
+            <Navigation>1</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -148,88 +161,36 @@
             <Navigation>14</Navigation>
         </Message>
         <Message>
-            <ID>35002005</ID>
+            <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MYLED[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MYLED[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MYLED[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MYLED[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>In0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>0</Dynamic>
-            <Dynamic>\nco/state_nco_carr</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>1</Dynamic>
-            <Dynamic>\nco/state_nco_carr</Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(63): </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>63</Navigation>
         </Message>
         <Message>
             <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
-            <Dynamic>\nco/state_nco_carr</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\Mixer1/MixerOutSin</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
-            <Dynamic>\nco/state_nco_carr</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>In0</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\Mixer1/MixerOutCos</Dynamic>
         </Message>
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(46): </Dynamic>
-            <Dynamic>\nco/phase_accum_i0</Dynamic>
+            <Dynamic>\nco/phase_accum_i15</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
             <Navigation>46</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>In0</Dynamic>
-            <Navigation>In0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>In0</Dynamic>
-        </Message>
-        <Message>
-            <ID>1163101</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

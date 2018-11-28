@@ -1,0 +1,334 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file fpgasdr_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.2.115</big></U></B>
+Sat Nov 24 18:09:19 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FPGASDR_impl1.tw1 -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml FPGASDR_impl1_map.ncd FPGASDR_impl1.prf 
+Design file:     fpgasdr_impl1_map.ncd
+Preference file: fpgasdr_impl1.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "osc_clk" 133.000000 MHz (586 errors)</FONT></A></LI>
+</FONT>            1481 items scored, 586 timing errors detected.
+Warning:  86.296MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+            1481 items scored, 586 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 4.069ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uart_rx1/r_Clock_Count_180__i1  (from osc_clk +)
+   Destination:    FF         Data in        uart_rx1/r_Clock_Count_180__i2  (to osc_clk +)
+                   FF                        uart_rx1/r_Clock_Count_180__i1
+
+   Delay:              11.306ns  (30.3% logic, 69.7% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.306ns physical path delay uart_rx1/SLICE_16 to uart_rx1/SLICE_16 exceeds
+      7.519ns delay constraint less
+      0.282ns CE_SET requirement (totaling 7.237ns) by 4.069ns
+
+ Physical Path Details:
+
+      Data path uart_rx1/SLICE_16 to uart_rx1/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_16.CLK to *1/SLICE_16.Q0 uart_rx1/SLICE_16 (from osc_clk)
+ROUTE         2   e 1.234 *1/SLICE_16.Q0 to    SLICE_59.A0 uart_rx1/r_Clock_Count_1
+CTOF_DEL    ---     0.495    SLICE_59.A0 to    SLICE_59.F0 SLICE_59
+ROUTE         1   e 1.234    SLICE_59.F0 to *1/SLICE_52.D1 uart_rx1/n6_adj_688
+CTOF_DEL    ---     0.495 *1/SLICE_52.D1 to *1/SLICE_52.F1 uart_rx1/SLICE_52
+ROUTE         2   e 1.234 *1/SLICE_52.F1 to    SLICE_59.A1 uart_rx1/n1425
+CTOF_DEL    ---     0.495    SLICE_59.A1 to    SLICE_59.F1 SLICE_59
+ROUTE         1   e 1.234    SLICE_59.F1 to *1/SLICE_53.C1 uart_rx1/n8
+CTOF_DEL    ---     0.495 *1/SLICE_53.C1 to *1/SLICE_53.F1 uart_rx1/SLICE_53
+ROUTE         4   e 1.234 *1/SLICE_53.F1 to *1/SLICE_49.B0 uart_rx1/r_SM_Main_2_N_558_0
+CTOF_DEL    ---     0.495 *1/SLICE_49.B0 to *1/SLICE_49.F0 uart_rx1/SLICE_49
+ROUTE         1   e 0.480 *1/SLICE_49.F0 to *1/SLICE_49.C1 uart_rx1/n6
+CTOF_DEL    ---     0.495 *1/SLICE_49.C1 to *1/SLICE_49.F1 uart_rx1/SLICE_49
+ROUTE         9   e 1.234 *1/SLICE_49.F1 to *1/SLICE_16.CE uart_rx1/osc_clk_enable_50 (to osc_clk)
+                  --------
+                   11.306   (30.3% logic, 69.7% route), 7 logic levels.
+
+Warning:  86.296MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "osc_clk" 133.000000 MHz  |             |             |
+;                                       |  133.000 MHz|   86.296 MHz|   7 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+uart_rx1/r_SM_Main_2_N_558_0            |       4|     228|     38.91%
+                                        |        |        |
+uart_rx1/n1425                          |       2|     203|     34.64%
+                                        |        |        |
+uart_rx1/r_SM_Main_2_N_552_2            |       8|     197|     33.62%
+                                        |        |        |
+uart_rx1/n928                           |       9|     171|     29.18%
+                                        |        |        |
+uart_tx1/n10_adj_690                    |       1|     161|     27.47%
+                                        |        |        |
+uart_tx1/r_SM_Main_2_N_646_1            |       7|     161|     27.47%
+                                        |        |        |
+uart_tx1/n1198                          |       1|     158|     26.96%
+                                        |        |        |
+uart_rx1/n8                             |       1|     136|     23.21%
+                                        |        |        |
+uart_rx1/n4                             |       1|     127|     21.67%
+                                        |        |        |
+uart_tx1/n43                            |       1|     116|     19.80%
+                                        |        |        |
+uart_rx1/n1394                          |       2|     108|     18.43%
+                                        |        |        |
+uart_rx1/n1444                          |       1|     108|     18.43%
+                                        |        |        |
+uart_rx1/n6                             |       1|     108|     18.43%
+                                        |        |        |
+uart_rx1/osc_clk_enable_50              |       9|     108|     18.43%
+                                        |        |        |
+uart_rx1/n1518                          |       8|     104|     17.75%
+                                        |        |        |
+uart_tx1/n916                           |       9|      90|     15.36%
+                                        |        |        |
+uart_rx1/n6_adj_688                     |       1|      86|     14.68%
+                                        |        |        |
+uart_rx1/n6_adj_687                     |       1|      84|     14.33%
+                                        |        |        |
+uart_tx1/n10                            |       1|      68|     11.60%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 44
+   Covered under: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 586  Score: 1054666
+Cumulative negative slack: 1054666
+
+Constraints cover 1481 paths, 1 nets, and 433 connections (99.54% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.2.115</big></U></B>
+Sat Nov 24 18:09:19 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FPGASDR_impl1.tw1 -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml FPGASDR_impl1_map.ncd FPGASDR_impl1.prf 
+Design file:     fpgasdr_impl1_map.ncd
+Preference file: fpgasdr_impl1.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "osc_clk" 133.000000 MHz (0 errors)</A></LI>            1481 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+            1481 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              Mixer1/RFInR1_16  (from osc_clk +)
+   Destination:    FF         Data in        Mixer1/RFInR_17  (to osc_clk +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_51 to SLICE_51 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_51 to SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_51.CLK to    SLICE_51.Q0 SLICE_51 (from osc_clk)
+ROUTE         1   e 0.199    SLICE_51.Q0 to    SLICE_51.M1 Mixer1/RFInR1 (to osc_clk)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "osc_clk" 133.000000 MHz  |             |             |
+;                                       |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 44
+   Covered under: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1481 paths, 1 nets, and 433 connections (99.54% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 586 (setup), 0 (hold)
+Score: 1054666 (setup), 0 (hold)
+Cumulative negative slack: 1054666 (1054666+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

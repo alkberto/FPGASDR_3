@@ -15,24 +15,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.2.115
-Mapped on:  11/23/18  23:28:37
+Mapped on:  11/28/18  11:12:56
 
 Design Summary
 --------------
 
-   Number of registers:    127 out of  7209 (2%)
-      PFU registers:          127 out of  6864 (2%)
+   Number of registers:    142 out of  7209 (2%)
+      PFU registers:          142 out of  6864 (2%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        84 out of  3432 (2%)
-      SLICEs as Logic/ROM:     84 out of  3432 (2%)
+   Number of SLICEs:       103 out of  3432 (3%)
+      SLICEs as Logic/ROM:    103 out of  3432 (3%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         50 out of  3432 (1%)
-   Number of LUT4s:        168 out of  6864 (2%)
-      Number used as logic LUTs:         68
+      SLICEs as Carry:         64 out of  3432 (2%)
+   Number of LUT4s:        204 out of  6864 (3%)
+      Number used as logic LUTs:         76
       Number used as distributed RAM:     0
-      Number used as ripple logic:      100
+      Number used as ripple logic:      128
       Number used as shift registers:     0
-   Number of PIO sites used: 19 + 4(JTAG) out of 115 (20%)
+   Number of PIO sites used: 29 + 4(JTAG) out of 115 (29%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -58,65 +58,66 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net osc_clk: 74 loads, 74 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  14
+     Net osc_clk: 84 loads, 84 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  16
 
                                     Page 1
 
 
 
 
-Design:  top                                           Date:  11/23/18  23:28:37
+Design:  top                                           Date:  11/28/18  11:12:56
 
 Design Summary (cont)
 ---------------------
-     Net uart_tx1/osc_clk_enable_45: 2 loads, 2 LSLICEs
-     Net uart_tx1/osc_clk_enable_36: 4 loads, 4 LSLICEs
+     Net uart_tx1/osc_clk_enable_39: 2 loads, 2 LSLICEs
+     Net uart_tx1/osc_clk_enable_37: 4 loads, 4 LSLICEs
      Net uart_tx1/r_SM_Main_2: 10 loads, 10 LSLICEs
-     Net uart_rx1/osc_clk_enable_1: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_55: 9 loads, 9 LSLICEs
-     Net uart_rx1/osc_clk_enable_4: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_52: 2 loads, 2 LSLICEs
+     Net uart_rx1/osc_clk_enable_3: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_64: 9 loads, 9 LSLICEs
+     Net uart_rx1/osc_clk_enable_29: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_28: 1 loads, 1 LSLICEs
      Net uart_rx1/osc_clk_enable_7: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_17: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_8: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_20: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_15: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_18: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_24: 1 loads, 1 LSLICEs
      Net uart_rx1/osc_clk_enable_21: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_22: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_56: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_50: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_49: 1 loads, 1 LSLICEs
-   Number of LSRs:  6
-     Net uart_tx1/n1357: 9 loads, 9 LSLICEs
+     Net uart_rx1/osc_clk_enable_23: 1 loads, 1 LSLICEs
+     Net PWM1/osc_clk_enable_46: 5 loads, 5 LSLICEs
+   Number of LSRs:  7
+     Net uart_tx1/n877: 9 loads, 9 LSLICEs
      Net uart_tx1/r_SM_Main_2: 1 loads, 1 LSLICEs
-     Net uart_tx1/n1720: 1 loads, 1 LSLICEs
-     Net uart_rx1/n1344: 9 loads, 9 LSLICEs
+     Net uart_tx1/n1230: 1 loads, 1 LSLICEs
+     Net uart_rx1/n1368: 1 loads, 1 LSLICEs
      Net uart_rx1/r_SM_Main_2: 2 loads, 2 LSLICEs
-     Net uart_rx1/n1719: 1 loads, 1 LSLICEs
+     Net uart_rx1/n865: 9 loads, 9 LSLICEs
+     Net PWM1/osc_clk_enable_46: 6 loads, 6 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net uart_rx1/r_SM_Main_1: 16 loads
      Net uart_tx1/r_SM_Main_2: 15 loads
-     Net uart_rx1/r_SM_Main_1: 13 loads
+     Net uart_rx1/r_SM_Main_0: 14 loads
+     Net uart_rx1/r_SM_Main_2: 13 loads
+     Net MixerOutSin_c_7: 12 loads
      Net uart_rx1/r_Rx_Data: 12 loads
-     Net uart_rx1/r_SM_Main_0: 12 loads
-     Net uart_rx1/r_Bit_Index_0: 11 loads
-     Net uart_rx1/r_SM_Main_2: 10 loads
+     Net PWM1/osc_clk_enable_46: 11 loads
+     Net uart_rx1/r_Bit_Index_0: 10 loads
+     Net uart_rx1/r_Bit_Index_1: 10 loads
      Net uart_tx1/r_SM_Main_0: 10 loads
-     Net uart_tx1/r_SM_Main_1: 10 loads
-     Net uart_rx1/n1344: 9 loads
-     Net uart_rx1/osc_clk_enable_55: 9 loads
 
 
 
 
-   Number of warnings:  2
+   Number of warnings:  0
    Number of errors:    0
      
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: input pad net 'In0' has no legal load.
-WARNING - map: IO buffer missing for top level port In0...logic will be
-     discarded.
+   No errors or warnings present.
 
 IO (PIO) Attributes
 -------------------
@@ -125,27 +126,27 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| o_Rx_DV             | OUTPUT    | LVCMOS25  |            |
 
                                     Page 2
 
 
 
 
-Design:  top                                           Date:  11/23/18  23:28:37
+Design:  top                                           Date:  11/28/18  11:12:56
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+------------+
-| o_Tx_Serial         | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
+| o_Rx_Byte[5]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Rx_Byte[6]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| o_Rx_Byte[5]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | o_Rx_Byte[4]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_DV             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Tx_Serial         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Rx_Byte[3]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -171,44 +172,116 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | MYLED[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| MixerOutSin[7]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[6]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[5]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[4]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[3]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[2]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[1]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MixerOutSin[0]      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| PWMOut              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | i_Rx_Serial         | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
-Removed logic
--------------
-
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal uart_tx1/osc_clk_enable_48 was merged into signal uart_tx1/r_SM_Main_2
-Signal nco/add_195_63/CO undriven or does not drive anything - clipped.
-Signal nco/add_195_1/S0 undriven or does not drive anything - clipped.
-Signal nco/add_195_1/CI undriven or does not drive anything - clipped.
-Signal uart_rx1/r_Clock_Count_197_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal uart_rx1/r_Clock_Count_197_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal uart_rx1/r_Clock_Count_197_add_4_17/S1 undriven or does not drive
-     anything - clipped.
-Signal uart_rx1/r_Clock_Count_197_add_4_17/CO undriven or does not drive
-     anything - clipped.
-Signal uart_tx1/r_Clock_Count_199_add_4_17/S1 undriven or does not drive
-     anything - clipped.
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  11/23/18  23:28:37
+Design:  top                                           Date:  11/28/18  11:12:56
+
+IO (PIO) Attributes (cont)
+--------------------------
+| RFIn                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal uart_tx1/osc_clk_enable_59 was merged into signal uart_tx1/r_SM_Main_2
+Signal GND_net undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_1/CI undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal PWM1/TestData_203_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM1/TestData_203_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM1/sub_174_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal PWM1/sub_174_add_2_9/CO undriven or does not drive anything - clipped.
+Signal PWM1/TestData_203_add_4_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM1/TestData_203_add_4_9/CO undriven or does not drive anything -
+     clipped.
+Signal PWM1/counter_206_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM1/counter_206_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM1/counter_206_add_4_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM1/counter_206_add_4_9/CO undriven or does not drive anything -
+     clipped.
+Signal PWM1/OutCounter_204_205_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM1/OutCounter_204_205_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM1/OutCounter_204_205_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM1/OutCounter_204_205_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal nco/phase_accum_63__I_0_12_1/S0 undriven or does not drive anything -
+     clipped.
+Signal nco/phase_accum_63__I_0_12_1/CI undriven or does not drive anything -
+     clipped.
+Signal nco/phase_accum_63__I_0_12_49/S1 undriven or does not drive anything -
+     clipped.
+Signal nco/phase_accum_63__I_0_12_49/CO undriven or does not drive anything -
+     clipped.
+Signal uart_rx1/r_Clock_Count_208_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal uart_rx1/r_Clock_Count_208_add_4_1/CI undriven or does not drive anything
+     - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  11/28/18  11:12:56
 
 Removed logic (cont)
 --------------------
-Signal uart_tx1/r_Clock_Count_199_add_4_17/CO undriven or does not drive
+Signal uart_rx1/r_Clock_Count_208_add_4_17/S1 undriven or does not drive
      anything - clipped.
-Signal uart_tx1/r_Clock_Count_199_add_4_1/S0 undriven or does not drive anything
+Signal uart_rx1/r_Clock_Count_208_add_4_17/CO undriven or does not drive
+     anything - clipped.
+Signal uart_tx1/r_Clock_Count_210_add_4_17/S1 undriven or does not drive
+     anything - clipped.
+Signal uart_tx1/r_Clock_Count_210_add_4_17/CO undriven or does not drive
+     anything - clipped.
+Signal uart_tx1/r_Clock_Count_210_add_4_1/S0 undriven or does not drive anything
      - clipped.
-Signal uart_tx1/r_Clock_Count_199_add_4_1/CI undriven or does not drive anything
+Signal uart_tx1/r_Clock_Count_210_add_4_1/CI undriven or does not drive anything
      - clipped.
-Block uart_tx1/i1_1_lut was optimized away.
+Block uart_tx1/i202_1_lut was optimized away.
+Block i1 was optimized away.
 
 Memory Usage
 ------------
@@ -237,7 +310,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 57 MB
+   Peak Memory Usage: 56 MB
         
 
 
@@ -252,14 +325,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-                                    Page 4
+                                    Page 5
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

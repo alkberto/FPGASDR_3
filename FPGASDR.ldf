@@ -18,6 +18,9 @@
         <Source name="NCO.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="Mixer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>

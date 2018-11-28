@@ -1,0 +1,210 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+Loading design for application iotiming from file fpgasdr_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file fpgasdr_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file fpgasdr_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: top
+// Package: TQFP144
+// ncd File: fpgasdr_impl1.ncd
+// Version: Diamond (64-bit) 3.10.2.115
+// Written on Tue Nov 27 15:59:03 2018
+// M: Minimum Performance Grade
+// iotiming FPGASDR_impl1.ncd FPGASDR_impl1.prf -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+RFIn  osc_clk       
+i_Rx_ osc_clk       
+
+
+// Internal_Clock to Output
+
+Port            Internal_Clock
+--------------------------------------------------------
+MYLED[1]        osc_clk       
+MYLED[2]        osc_clk       
+MYLED[3]        osc_clk       
+MYLED[4]        osc_clk       
+MYLED[5]        osc_clk       
+MYLED[6]        osc_clk       
+MYLED[7]        osc_clk       
+MixerOutSin[10] osc_clk       
+MixerOutSin[11] osc_clk       
+MixerOutSin[12] osc_clk       
+MixerOutSin[13] osc_clk       
+MixerOutSin[14] osc_clk       
+MixerOutSin[15] osc_clk       
+MixerOutSin[16] osc_clk       
+MixerOutSin[17] osc_clk       
+MixerOutSin[18] osc_clk       
+MixerOutSin[19] osc_clk       
+MixerOutSin[1]  osc_clk       
+MixerOutSin[20] osc_clk       
+MixerOutSin[21] osc_clk       
+MixerOutSin[22] osc_clk       
+MixerOutSin[23] osc_clk       
+MixerOutSin[24] osc_clk       
+MixerOutSin[25] osc_clk       
+MixerOutSin[26] osc_clk       
+MixerOutSin[27] osc_clk       
+MixerOutSin[28] osc_clk       
+MixerOutSin[29] osc_clk       
+MixerOutSin[2]  osc_clk       
+MixerOutSin[30] osc_clk       
+MixerOutSin[31] osc_clk       
+MixerOutSin[32] osc_clk       
+MixerOutSin[33] osc_clk       
+MixerOutSin[34] osc_clk       
+MixerOutSin[35] osc_clk       
+MixerOutSin[36] osc_clk       
+MixerOutSin[37] osc_clk       
+MixerOutSin[38] osc_clk       
+MixerOutSin[39] osc_clk       
+MixerOutSin[3]  osc_clk       
+MixerOutSin[40] osc_clk       
+MixerOutSin[41] osc_clk       
+MixerOutSin[42] osc_clk       
+MixerOutSin[43] osc_clk       
+MixerOutSin[44] osc_clk       
+MixerOutSin[45] osc_clk       
+MixerOutSin[46] osc_clk       
+MixerOutSin[47] osc_clk       
+MixerOutSin[48] osc_clk       
+MixerOutSin[49] osc_clk       
+MixerOutSin[4]  osc_clk       
+MixerOutSin[50] osc_clk       
+MixerOutSin[51] osc_clk       
+MixerOutSin[52] osc_clk       
+MixerOutSin[53] osc_clk       
+MixerOutSin[54] osc_clk       
+MixerOutSin[55] osc_clk       
+MixerOutSin[56] osc_clk       
+MixerOutSin[57] osc_clk       
+MixerOutSin[58] osc_clk       
+MixerOutSin[59] osc_clk       
+MixerOutSin[5]  osc_clk       
+MixerOutSin[60] osc_clk       
+MixerOutSin[61] osc_clk       
+MixerOutSin[62] osc_clk       
+MixerOutSin[63] osc_clk       
+MixerOutSin[6]  osc_clk       
+MixerOutSin[7]  osc_clk       
+MixerOutSin[8]  osc_clk       
+MixerOutSin[9]  osc_clk       
+o_Rx_Byte[0]    osc_clk       
+o_Rx_Byte[1]    osc_clk       
+o_Rx_Byte[2]    osc_clk       
+o_Rx_Byte[3]    osc_clk       
+o_Rx_Byte[4]    osc_clk       
+o_Rx_Byte[5]    osc_clk       
+o_Rx_Byte[6]    osc_clk       
+o_Rx_Byte[7]    osc_clk       
+o_Rx_DV         osc_clk       
+o_Tx_Serial     osc_clk       
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

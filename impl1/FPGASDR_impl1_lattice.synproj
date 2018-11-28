@@ -31,11 +31,15 @@
 
 -lpf 1
 -p "C:/Users/user/lattice/FPGASDR"
--ver "C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v"
-"C:/Users/user/lattice/FPGASDR/impl1/source/top.v"
-"C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
+-ver "C:/Users/user/lattice/FPGASDR/impl1/source/top.v"
 "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
+"C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
+"C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v"
 "C:/Users/user/lattice/FPGASDR/NCO.v"
+"C:/Users/user/lattice/FPGASDR/Mixer.v"
+"C:/Users/user/lattice/FPGASDR/CIC.v"
+"C:/Users/user/lattice/FPGASDR/PWM.v"
+-top top
 
 
 -p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data" "C:/Users/user/lattice/FPGASDR/impl1" "C:/Users/user/lattice/FPGASDR"
