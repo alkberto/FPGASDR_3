@@ -1,7 +1,7 @@
 
 
 
-module CIC #(parameter width = 12)
+module CIC #(parameter width = 64)
 			(input wire               clk,
 			input wire               rst,
 			input wire        [15:0] decimation_ratio,
@@ -115,7 +115,10 @@ reg d_clk_tmp;
 
 				d10 <= d9 - d_d9;
 				
-				d_out <= d10 >>> (width - 8);
+		//		d_out <= d10 >>> (width - 8);
+					d_out[6:0] <= d10[7:1];
+					d_out[7] <= d10[width-1];
+			
 			end
 		end
 	end								

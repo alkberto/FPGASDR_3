@@ -8,6 +8,11 @@ Where sin_out and cos_out will operate at desired frequency.
 N is the bit width of phase_inc (64 in this case)
 
 If phase_inc limited to 64 bits... Change bits in equation correspondingly.
+
+
+With clock = 133 MHz phase_inc for  1Hz is 138697310208. 1 Mhz 138697310208000
+
+
 */
  
 module nco_sig

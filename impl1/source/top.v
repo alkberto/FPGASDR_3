@@ -9,18 +9,21 @@ module top
    	output [7:0] MYLED,
 	output [7:0] MixerOutSin,
 	input  RFIn,
-	output PWMOut
+	output PWMOut,
+	output sinGen,
+	output CIC_out_clk
    );
 
   wire osc_clk;
 wire reset;
 wire [7:0] i_Tx_Byte;
-wire [63:0] phase_inc_carr ;
-wire  sin_out, cos_out;//wire [7:0] MixerOutSin;
+wire [63:0] phase_inc_carr, phase_inc_carrGen ;
+wire  sin_out, cos_out;
+wire  cosGen;//wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
 wire [15:0] decimation_ratio = 16'd 2048;
 wire [7:0] CIC_out;
-wire CIC_out_clk;
+// wire CIC_out_clk;
 
 
   
@@ -39,7 +42,8 @@ wire CIC_out_clk;
 
 
 
- assign phase_inc_carr = 64'd 138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+ assign phase_inc_carr =    64'h 1ED3E9CFE280000; //138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+ assign phase_inc_carrGen = 64'h 1ECC07802400000; //E8943073C00000;
 assign reset = 1'b0;
 
 nco_sig	 nco (
@@ -47,6 +51,14 @@ nco_sig	 nco (
 .phase_inc_carr ( phase_inc_carr),
 .sin_out (sin_out),
 .cos_out (cos_out)
+);
+	
+
+nco_sig	 ncoGen (
+.clk (osc_clk),
+.phase_inc_carr ( phase_inc_carrGen),
+.sin_out (sinGen),
+.cos_out (cosGen)
 );
 	
 Mixer Mixer1 (
@@ -58,15 +70,15 @@ Mixer Mixer1 (
 .MixerOutCos (MixerOutCos)
 );
 	 
-CIC  #(.width(12)) CIC1 (
+CIC  #(.width(64)) CIC1 (
 .clk (osc_clk),
 .rst (rst),
 .decimation_ratio (decimation_ratio),
 .d_in (MixerOutCos),
 .d_out (CIC_out),
 .d_clk (CIC_out_clk)
-);
-
+); 
+ 
 PWM PWM1 (
 .clk (osc_clk),
 .DataIn (CIC_out),

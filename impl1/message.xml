@@ -115,10 +115,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(13): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(18): </Dynamic>
             <Dynamic>nco_sig</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
-            <Navigation>13</Navigation>
+            <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -163,10 +163,10 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(63): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(75): </Dynamic>
             <Dynamic>rst</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>63</Navigation>
+            <Navigation>75</Navigation>
         </Message>
         <Message>
             <ID>35001748</ID>
@@ -183,10 +183,10 @@
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(46): </Dynamic>
-            <Dynamic>\nco/phase_accum_i15</Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(51): </Dynamic>
+            <Dynamic>\ncoGen/phase_accum_i0</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
-            <Navigation>46</Navigation>
+            <Navigation>51</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>

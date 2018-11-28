@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 28 11:28:05 2018
+Wed Nov 28 17:03:24 2018
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -108,13 +108,13 @@ Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HE
 Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): " arg1="top" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="2"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;133.00&quot;)" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(13): " arg1="nco_sig" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="13"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(18): " arg1="nco_sig" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="18"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/mixer.v(2): " arg1="Mixer" arg2="c:/users/user/lattice/fpgasdr/mixer.v" arg3="2"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/cic.v(4): " arg1="CIC" arg2="c:/users/user/lattice/fpgasdr/cic.v" arg3="4"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/pwm.v(1): " arg1="PWM" arg2="c:/users/user/lattice/fpgasdr/pwm.v" arg3="1"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(16): " arg1="uart_rx" arg2="c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v" arg3="16"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): " arg1="uart_tx" arg2="c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v" arg3="14"  />
-    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(63): " arg1="rst" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="63"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(75): " arg1="rst" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="75"  />
 Last elaborated design is top()
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -129,19 +129,19 @@ Top-level module name = top.
 
     <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\Mixer1/MixerOutSin"  />
     <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\Mixer1/MixerOutCos"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(46): " arg1="\nco/phase_accum_i15" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="46"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(51): " arg1="\ncoGen/phase_accum_i0" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="51"  />
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i2.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i2.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i7 is a one-to-one match with \Mixer1/MixerOutCos_i3.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i6 is a one-to-one match with \Mixer1/MixerOutCos_i4.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i5 is a one-to-one match with \Mixer1/MixerOutCos_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i7.
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i3.
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i6 is a one-to-one match with \Mixer1/MixerOutSin_i4.
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i5 is a one-to-one match with \Mixer1/MixerOutSin_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i2 is a one-to-one match with \Mixer1/MixerOutCos_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i3 is a one-to-one match with \Mixer1/MixerOutCos_i5.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i4 is a one-to-one match with \Mixer1/MixerOutCos_i3.
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i5.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i5.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i7 is a one-to-one match with \Mixer1/MixerOutCos_i1.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i4.
 Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i1.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i2 is a one-to-one match with \Mixer1/MixerOutCos_i1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -158,24 +158,25 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    575 blocks expanded
+   1694 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 335 of 7209 (4 % )
-CCU2D => 125
-FD1P3AX => 160
+Number of register bits => 1165 of 7209 (16 % )
+CCU2D => 405
+FD1P3AX => 680
 FD1P3IX => 32
-FD1S3AX => 122
+FD1S3AX => 431
 FD1S3AY => 4
 FD1S3IX => 17
+FD1S3JX => 1
 GSR => 1
 IB => 2
 L6MUX21 => 1
-LUT4 => 77
-OB => 27
+LUT4 => 84
+OB => 29
 OSCH => 1
 PFUMX => 3
 ################### End Area Report ##################
@@ -187,32 +188,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : osc_clk, loads : 335
+  Net : osc_clk, loads : 1165
 Clock Enable Nets
-Number of Clock Enables: 18
+Number of Clock Enables: 28
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_80, loads : 50
-  Net : CIC1/osc_clk_enable_130, loads : 50
-  Net : CIC1/v_comb_N_550, loads : 26
-  Net : CIC1/v_comb, loads : 24
-  Net : uart_tx1/osc_clk_enable_156, loads : 17
-  Net : uart_rx1/osc_clk_enable_155, loads : 16
-  Net : uart_tx1/osc_clk_enable_45, loads : 8
-  Net : uart_rx1/osc_clk_enable_136, loads : 3
-  Net : uart_tx1/osc_clk_enable_138, loads : 3
-  Net : uart_rx1/osc_clk_enable_49, loads : 1
+  Net : CIC1/osc_clk_enable_514, loads : 50
+  Net : CIC1/osc_clk_enable_564, loads : 50
+  Net : CIC1/osc_clk_enable_214, loads : 50
+  Net : CIC1/osc_clk_enable_264, loads : 50
+  Net : CIC1/osc_clk_enable_71, loads : 50
+  Net : CIC1/osc_clk_enable_314, loads : 50
+  Net : CIC1/osc_clk_enable_164, loads : 50
+  Net : CIC1/osc_clk_enable_364, loads : 50
+  Net : CIC1/osc_clk_enable_138, loads : 50
+  Net : CIC1/osc_clk_enable_414, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : CIC1/osc_clk_enable_80, loads : 50
-  Net : CIC1/osc_clk_enable_130, loads : 50
-  Net : CIC1/v_comb_N_550, loads : 26
-  Net : CIC1/v_comb, loads : 24
-  Net : uart_tx1/osc_clk_enable_156, loads : 17
-  Net : uart_tx1/n928, loads : 16
-  Net : uart_rx1/osc_clk_enable_155, loads : 16
-  Net : uart_rx1/n927, loads : 16
-  Net : uart_rx1/r_SM_Main_0, loads : 12
-  Net : uart_rx1/r_SM_Main_1, loads : 12
+  Net : CIC1/osc_clk_enable_464, loads : 100
+  Net : CIC1/osc_clk_enable_614, loads : 100
+  Net : CIC1/v_comb, loads : 84
+  Net : CIC1/d_clk_tmp_N_2233, loads : 76
+  Net : Mixer1/MixerOutCos_2, loads : 62
+  Net : CIC1/osc_clk_enable_71, loads : 50
+  Net : CIC1/osc_clk_enable_138, loads : 50
+  Net : CIC1/osc_clk_enable_164, loads : 50
+  Net : CIC1/osc_clk_enable_314, loads : 50
+  Net : CIC1/osc_clk_enable_264, loads : 50
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -222,7 +223,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|   72.759 MHz|     8 *
+clk0 [get_nets osc_clk]                 |  200.000 MHz|   79.183 MHz|     8 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -230,8 +231,500 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|   72.759 MHz|     8 *
 1 constraints not met.
 
 
-Peak Memory Usage: 63.648  MB
+Peak Memory Usage: 75.445  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.872  secs
+Elapsed CPU time for LSE flow : 4.602  secs
 --------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGASDR_impl1.ngd" -o "FPGASDR_impl1_map.ncd" -pr "FPGASDR_impl1.prf" -mp "FPGASDR_impl1.mrp" -lpf "C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.lpf" -lpf "C:/Users/user/lattice/FPGASDR/FPGASDR.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.2.115
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: FPGASDR_impl1.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:   1165 out of  7209 (16%)
+      PFU registers:         1165 out of  6864 (17%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       599 out of  3432 (17%)
+      SLICEs as Logic/ROM:    599 out of  3432 (17%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:        405 out of  3432 (12%)
+   Number of LUT4s:        894 out of  6864 (13%)
+      Number used as logic LUTs:         84
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      810
+      Number used as shift registers:     0
+   Number of PIO sites used: 31 + 4(JTAG) out of 115 (30%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net osc_clk: 597 loads, 597 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  28
+     Net uart_tx1/r_SM_Main_2: 10 loads, 10 LSLICEs
+     Net uart_tx1/osc_clk_enable_636: 2 loads, 2 LSLICEs
+     Net uart_tx1/osc_clk_enable_630: 4 loads, 4 LSLICEs
+     Net CIC1/osc_clk_enable_71: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_138: 18 loads, 18 LSLICEs
+     Net CIC1/v_comb: 21 loads, 21 LSLICEs
+     Net CIC1/osc_clk_enable_164: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_314: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_264: 25 loads, 25 LSLICEs
+     Net CIC1/d_clk_tmp_N_2233: 14 loads, 14 LSLICEs
+     Net CIC1/osc_clk_enable_214: 26 loads, 26 LSLICEs
+     Net CIC1/osc_clk_enable_364: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_414: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_464: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_514: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_564: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_614: 25 loads, 25 LSLICEs
+     Net uart_rx1/osc_clk_enable_17: 2 loads, 2 LSLICEs
+     Net uart_rx1/osc_clk_enable_16: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_19: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_641: 9 loads, 9 LSLICEs
+     Net uart_rx1/osc_clk_enable_26: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_28: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_44: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_46: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_47: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_642: 1 loads, 1 LSLICEs
+     Net uart_rx1/osc_clk_enable_615: 1 loads, 1 LSLICEs
+   Number of LSRs:  8
+     Net uart_tx1/r_SM_Main_2: 1 loads, 1 LSLICEs
+     Net uart_tx1/n1629: 1 loads, 1 LSLICEs
+     Net uart_tx1/n911: 9 loads, 9 LSLICEs
+     Net CIC1/osc_clk_enable_138: 2 loads, 2 LSLICEs
+     Net CIC1/d_clk_tmp_N_2233: 5 loads, 5 LSLICEs
+     Net uart_rx1/r_SM_Main_2: 2 loads, 2 LSLICEs
+     Net uart_rx1/n897: 9 loads, 9 LSLICEs
+     Net uart_rx1/n1630: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net MixerOutCos_2: 63 loads
+     Net CIC1/osc_clk_enable_138: 32 loads
+     Net CIC1/osc_clk_enable_214: 26 loads
+     Net CIC1/osc_clk_enable_164: 25 loads
+     Net CIC1/osc_clk_enable_264: 25 loads
+     Net CIC1/osc_clk_enable_314: 25 loads
+     Net CIC1/osc_clk_enable_364: 25 loads
+     Net CIC1/osc_clk_enable_414: 25 loads
+     Net CIC1/osc_clk_enable_464: 25 loads
+     Net CIC1/osc_clk_enable_514: 25 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 64 MB
+
+Dumping design to file FPGASDR_impl1_map.ncd.
+
+ncd2vdb "FPGASDR_impl1_map.ncd" ".vdbs/FPGASDR_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+
+mpartrce -p "FPGASDR_impl1.p2t" -f "FPGASDR_impl1.p3t" -tf "FPGASDR_impl1.pt" "FPGASDR_impl1_map.ncd" "FPGASDR_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "FPGASDR_impl1_map.ncd"
+Wed Nov 28 17:03:34 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.2.115.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGASDR_impl1_map.ncd FPGASDR_impl1.dir/5_1.ncd FPGASDR_impl1.prf
+Preference file: FPGASDR_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file FPGASDR_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   31+4(JTAG)/336     10% used
+                  31+4(JTAG)/115     30% bonded
+
+   SLICE            599/3432         17% used
+
+   OSC                1/1           100% used
+
+
+Number of Signals: 2357
+Number of Connections: 4281
+
+Pin Constraint Summary:
+   12 out of 31 pins locked (38% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    osc_clk (driver: OSCH_inst, clk load #: 597)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    CIC1/osc_clk_enable_214 (driver: SLICE_625, clk load #: 0, sr load #: 0, ce load #: 26)
+    CIC1/osc_clk_enable_71 (driver: CIC1/SLICE_609, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_164 (driver: CIC1/SLICE_609, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_314 (driver: SLICE_9, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_264 (driver: SLICE_13, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_364 (driver: SLICE_373, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_414 (driver: SLICE_392, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_464 (driver: SLICE_393, clk load #: 0, sr load #: 0, ce load #: 25)
+
+No signal is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+................
+Finished Placer Phase 0.  REAL time: 4 secs 
+
+Starting Placer Phase 1.
+................
+Placer score = 757105.
+Finished Placer Phase 1.  REAL time: 10 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  715358
+Finished Placer Phase 2.  REAL time: 10 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "osc_clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 597
+  SECONDARY "CIC1/osc_clk_enable_214" from Q1 on comp "SLICE_625" on site "R21C18D", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_71" from Q0 on comp "CIC1/SLICE_609" on site "R22C20C", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_164" from Q1 on comp "CIC1/SLICE_609" on site "R22C20C", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_314" from Q1 on comp "SLICE_9" on site "R25C13A", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_264" from Q0 on comp "SLICE_13" on site "R25C12A", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_364" from Q0 on comp "SLICE_373" on site "R15C2A", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_414" from Q0 on comp "SLICE_392" on site "R14C16A", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_464" from Q1 on comp "SLICE_393" on site "R14C21B", clk load = 0, ce load = 25, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   31 + 4(JTAG) out of 336 (10.4%) PIO sites used.
+   31 + 4(JTAG) out of 115 (30.4%) bonded PIO sites used.
+   Number of PIO comps: 31; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 6 / 28 ( 21%)  | 2.5V       | -         |
+| 1        | 14 / 29 ( 48%) | 2.5V       | -         |
+| 2        | 10 / 29 ( 34%) | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)   | -          | -         |
+| 4        | 0 / 10 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 9 secs 
+
+Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
+
+0 connections routed; 4281 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 15 secs 
+
+Start NBR router at 17:03:49 11/28/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 17:03:50 11/28/18
+
+Start NBR section for initial routing at 17:03:50 11/28/18
+Level 1, iteration 1
+34(0.01%) conflicts; 2236(52.23%) untouched conns; 942497 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.304ns/-942.498ns; real time: 17 secs 
+Level 2, iteration 1
+42(0.01%) conflicts; 1961(45.81%) untouched conns; 991835 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.334ns/-991.836ns; real time: 18 secs 
+Level 3, iteration 1
+161(0.04%) conflicts; 428(10.00%) untouched conns; 1056721 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1056.722ns; real time: 20 secs 
+Level 4, iteration 1
+89(0.02%) conflicts; 0(0.00%) untouched conn; 1079453 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1079.453ns; real time: 22 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 17:03:56 11/28/18
+Level 1, iteration 1
+56(0.01%) conflicts; 41(0.96%) untouched conns; 1076467 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.311ns/-1076.467ns; real time: 22 secs 
+Level 4, iteration 1
+65(0.02%) conflicts; 0(0.00%) untouched conn; 1079461 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1079.461ns; real time: 23 secs 
+Level 4, iteration 2
+41(0.01%) conflicts; 0(0.00%) untouched conn; 1078918 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1078.918ns; real time: 23 secs 
+Level 4, iteration 3
+23(0.01%) conflicts; 0(0.00%) untouched conn; 1079151 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1079.151ns; real time: 24 secs 
+Level 4, iteration 4
+13(0.00%) conflicts; 0(0.00%) untouched conn; 1079151 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.341ns/-1079.151ns; real time: 24 secs 
+Level 4, iteration 5
+11(0.00%) conflicts; 0(0.00%) untouched conn; 1090778 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1090.778ns; real time: 24 secs 
+Level 4, iteration 6
+6(0.00%) conflicts; 0(0.00%) untouched conn; 1090778 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1090.778ns; real time: 24 secs 
+Level 4, iteration 7
+6(0.00%) conflicts; 0(0.00%) untouched conn; 1120496 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.575ns/-1120.496ns; real time: 24 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 1120496 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.575ns/-1120.496ns; real time: 25 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 1114166 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.166ns; real time: 25 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 1114166 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.166ns; real time: 25 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 1114166 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.166ns; real time: 25 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 1114166 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.166ns; real time: 25 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 1114819 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.819ns; real time: 25 secs 
+
+Start NBR section for performance tuning (iteration 1) at 17:03:59 11/28/18
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 1114646 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.646ns; real time: 25 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 1114819 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.819ns; real time: 25 secs 
+
+Start NBR section for re-routing at 17:03:59 11/28/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 1114819 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.454ns/-1114.819ns; real time: 25 secs 
+
+Start NBR section for post-routing at 17:03:59 11/28/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 943 (22.03%)
+  Estimated worst slack<setup> : -3.454ns
+  Timing score<setup> : 1761303
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 25 secs 
+Total REAL time: 28 secs 
+Completely routed.
+End of route.  4281 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 1761303 
+
+Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -3.454
+PAR_SUMMARY::Timing score<setup/<ns>> = 1761.303
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.303
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 25 secs 
+Total REAL time to completion: 29 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "FPGASDR_impl1.t2b" -w "FPGASDR_impl1.ncd" -jedec "FPGASDR_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.2.115
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file FPGASDR_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from FPGASDR_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "FPGASDR_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

@@ -1,50 +1,140 @@
 [ START MERGED ]
-uart_tx1/osc_clk_enable_59 uart_tx1/r_SM_Main_2
+uart_tx1/osc_clk_enable_634 uart_tx1/r_SM_Main_2
 [ END MERGED ]
 [ START CLIPPED ]
 GND_net
-PWM1/sub_174_add_2_5/S1
-PWM1/sub_174_add_2_5/S0
-PWM1/sub_174_add_2_7/S1
-PWM1/sub_174_add_2_7/S0
-PWM1/sub_174_add_2_1/S1
-PWM1/sub_174_add_2_1/S0
-PWM1/sub_174_add_2_1/CI
-PWM1/sub_174_add_2_3/S1
-PWM1/sub_174_add_2_3/S0
-PWM1/TestData_203_add_4_1/S0
-PWM1/TestData_203_add_4_1/CI
-PWM1/sub_174_add_2_9/S0
-PWM1/sub_174_add_2_9/CO
-PWM1/TestData_203_add_4_9/S1
-PWM1/TestData_203_add_4_9/CO
-PWM1/counter_206_add_4_1/S0
-PWM1/counter_206_add_4_1/CI
-PWM1/counter_206_add_4_9/S1
-PWM1/counter_206_add_4_9/CO
-PWM1/OutCounter_204_205_add_4_1/S0
-PWM1/OutCounter_204_205_add_4_1/CI
-PWM1/OutCounter_204_205_add_4_11/S1
-PWM1/OutCounter_204_205_add_4_11/CO
+ncoGen/phase_accum_63__I_0_12_43/S1
+ncoGen/phase_accum_63__I_0_12_43/CO
+ncoGen/phase_accum_63__I_0_12_1/S0
+ncoGen/phase_accum_63__I_0_12_1/CI
+uart_rx1/r_Clock_Count_237_add_4_1/S0
+uart_rx1/r_Clock_Count_237_add_4_1/CI
+uart_rx1/r_Clock_Count_237_add_4_17/S1
+uart_rx1/r_Clock_Count_237_add_4_17/CO
 nco/phase_accum_63__I_0_12_1/S0
 nco/phase_accum_63__I_0_12_1/CI
-nco/phase_accum_63__I_0_12_49/S1
-nco/phase_accum_63__I_0_12_49/CO
-uart_rx1/r_Clock_Count_208_add_4_1/S0
-uart_rx1/r_Clock_Count_208_add_4_1/CI
-uart_rx1/r_Clock_Count_208_add_4_17/S1
-uart_rx1/r_Clock_Count_208_add_4_17/CO
-uart_tx1/r_Clock_Count_210_add_4_17/S1
-uart_tx1/r_Clock_Count_210_add_4_17/CO
-uart_tx1/r_Clock_Count_210_add_4_1/S0
-uart_tx1/r_Clock_Count_210_add_4_1/CI
+nco/phase_accum_63__I_0_12_45/CO
+CIC1/sub_38_add_2_1/S0
+CIC1/sub_38_add_2_1/CI
+CIC1/sub_39_add_2_1/S0
+CIC1/sub_39_add_2_1/CI
+CIC1/sub_39_add_2_65/S1
+CIC1/sub_39_add_2_65/CO
+CIC1/sub_40_add_2_1/S1
+CIC1/sub_40_add_2_1/S0
+CIC1/sub_40_add_2_1/CI
+CIC1/sub_40_add_2_9/S1
+CIC1/sub_40_add_2_11/S1
+CIC1/sub_40_add_2_11/S0
+CIC1/sub_40_add_2_13/S1
+CIC1/sub_40_add_2_13/S0
+CIC1/sub_40_add_2_15/S1
+CIC1/sub_40_add_2_15/S0
+CIC1/sub_40_add_2_17/S1
+CIC1/sub_40_add_2_17/S0
+CIC1/sub_40_add_2_19/S1
+CIC1/sub_40_add_2_19/S0
+CIC1/sub_40_add_2_21/S1
+CIC1/sub_40_add_2_21/S0
+CIC1/sub_40_add_2_23/S1
+CIC1/sub_40_add_2_23/S0
+CIC1/sub_40_add_2_25/S1
+CIC1/sub_40_add_2_25/S0
+CIC1/sub_40_add_2_27/S1
+CIC1/sub_40_add_2_27/S0
+CIC1/sub_40_add_2_29/S1
+CIC1/sub_40_add_2_29/S0
+CIC1/sub_40_add_2_31/S1
+CIC1/sub_40_add_2_31/S0
+CIC1/sub_40_add_2_33/S1
+CIC1/sub_40_add_2_33/S0
+CIC1/sub_40_add_2_35/S1
+CIC1/sub_40_add_2_35/S0
+CIC1/sub_40_add_2_37/S1
+CIC1/sub_40_add_2_37/S0
+CIC1/sub_40_add_2_39/S1
+CIC1/sub_40_add_2_39/S0
+CIC1/sub_40_add_2_41/S1
+CIC1/sub_40_add_2_41/S0
+CIC1/sub_40_add_2_43/S1
+CIC1/sub_40_add_2_43/S0
+CIC1/sub_40_add_2_45/S1
+CIC1/sub_40_add_2_45/S0
+CIC1/sub_40_add_2_47/S1
+CIC1/sub_40_add_2_47/S0
+CIC1/sub_40_add_2_49/S1
+CIC1/sub_40_add_2_49/S0
+CIC1/sub_40_add_2_51/S1
+CIC1/sub_40_add_2_51/S0
+CIC1/sub_40_add_2_53/S1
+CIC1/sub_40_add_2_53/S0
+CIC1/sub_40_add_2_55/S1
+CIC1/sub_40_add_2_55/S0
+CIC1/sub_40_add_2_57/S1
+CIC1/sub_40_add_2_57/S0
+CIC1/sub_40_add_2_59/S1
+CIC1/sub_40_add_2_59/S0
+CIC1/sub_40_add_2_61/S1
+CIC1/sub_40_add_2_61/S0
+CIC1/sub_40_add_2_63/S1
+CIC1/sub_40_add_2_63/S0
+CIC1/sub_40_add_2_65/S1
+CIC1/sub_40_add_2_65/CO
+CIC1/sub_37_add_2_1/S0
+CIC1/sub_37_add_2_1/CI
+CIC1/sub_37_add_2_65/S1
+CIC1/sub_37_add_2_65/CO
+CIC1/sub_36_add_2_1/S0
+CIC1/sub_36_add_2_1/CI
+CIC1/sub_36_add_2_65/S1
+CIC1/sub_36_add_2_65/CO
+CIC1/add_3_1/S0
+CIC1/add_3_1/CI
+CIC1/add_3_65/S1
+CIC1/add_3_65/CO
+CIC1/add_4_2/S0
+CIC1/add_4_2/CI
+CIC1/add_4_64/CO
+CIC1/add_5_2/S0
+CIC1/add_5_2/CI
+CIC1/add_5_64/CO
+CIC1/add_6_2/S0
+CIC1/add_6_2/CI
+CIC1/add_6_64/CO
+CIC1/add_7_2/S0
+CIC1/add_7_2/CI
+CIC1/add_7_64/CO
+CIC1/count_233_234_add_4_1/S0
+CIC1/count_233_234_add_4_1/CI
+CIC1/count_233_234_add_4_11/CO
+CIC1/sub_38_add_2_65/S1
+CIC1/sub_38_add_2_65/CO
+PWM1/sub_199_add_2_1/S1
+PWM1/sub_199_add_2_1/S0
+PWM1/sub_199_add_2_1/CI
+PWM1/sub_199_add_2_3/S1
+PWM1/sub_199_add_2_3/S0
+PWM1/sub_199_add_2_5/S1
+PWM1/sub_199_add_2_5/S0
+PWM1/sub_199_add_2_7/S1
+PWM1/sub_199_add_2_7/S0
+PWM1/sub_199_add_2_9/S0
+PWM1/sub_199_add_2_9/CO
+PWM1/counter_235_add_4_1/S0
+PWM1/counter_235_add_4_1/CI
+PWM1/counter_235_add_4_9/S1
+PWM1/counter_235_add_4_9/CO
+uart_tx1/r_Clock_Count_239_add_4_1/S0
+uart_tx1/r_Clock_Count_239_add_4_1/CI
+uart_tx1/r_Clock_Count_239_add_4_17/S1
+uart_tx1/r_Clock_Count_239_add_4_17/CO
 [ END CLIPPED ]
 [ START OSC ]
 osc_clk 133.00
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Wed Nov 28 11:12:57 2018
+# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Wed Nov 28 17:03:33 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MYLED[7]" SITE "107" ;
@@ -56,6 +146,9 @@ LOCATE COMP "MYLED[2]" SITE "99" ;
 LOCATE COMP "MYLED[1]" SITE "98" ;
 LOCATE COMP "MYLED[0]" SITE "97" ;
 LOCATE COMP "PWMOut" SITE "109" ;
+LOCATE COMP "sinGen" SITE "142" ;
+LOCATE COMP "CIC_out_clk" SITE "125" ;
+LOCATE COMP "RFIn" SITE "1" ;
 FREQUENCY NET "osc_clk" 133.000000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

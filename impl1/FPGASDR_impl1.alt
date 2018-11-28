@@ -1,19 +1,19 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed Nov 28 11:13:19 2018 *
+NOTE DATE CREATED: Wed Nov 28 17:04:09 2018 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS o_Rx_Byte[5] : 54 : out *
-NOTE PINS o_Rx_Byte[6] : 127 : out *
-NOTE PINS o_Rx_Byte[4] : 132 : out *
-NOTE PINS o_Rx_Byte[7] : 133 : out *
-NOTE PINS o_Rx_DV : 121 : out *
-NOTE PINS o_Tx_Serial : 139 : out *
-NOTE PINS o_Rx_Byte[3] : 138 : out *
-NOTE PINS o_Rx_Byte[2] : 128 : out *
-NOTE PINS o_Rx_Byte[1] : 140 : out *
-NOTE PINS o_Rx_Byte[0] : 122 : out *
+NOTE PINS o_Rx_Byte[6] : 47 : out *
+NOTE PINS o_Rx_Byte[7] : 44 : out *
+NOTE PINS o_Rx_DV : 42 : out *
+NOTE PINS o_Tx_Serial : 49 : out *
+NOTE PINS o_Rx_Byte[5] : 52 : out *
+NOTE PINS o_Rx_Byte[4] : 55 : out *
+NOTE PINS o_Rx_Byte[3] : 54 : out *
+NOTE PINS o_Rx_Byte[2] : 50 : out *
+NOTE PINS o_Rx_Byte[1] : 48 : out *
+NOTE PINS o_Rx_Byte[0] : 56 : out *
 NOTE PINS MYLED[7] : 107 : out *
 NOTE PINS MYLED[6] : 106 : out *
 NOTE PINS MYLED[5] : 105 : out *
@@ -22,16 +22,18 @@ NOTE PINS MYLED[3] : 100 : out *
 NOTE PINS MYLED[2] : 99 : out *
 NOTE PINS MYLED[1] : 98 : out *
 NOTE PINS MYLED[0] : 97 : out *
-NOTE PINS MixerOutSin[7] : 114 : out *
-NOTE PINS MixerOutSin[6] : 111 : out *
-NOTE PINS MixerOutSin[5] : 119 : out *
-NOTE PINS MixerOutSin[4] : 110 : out *
-NOTE PINS MixerOutSin[3] : 120 : out *
-NOTE PINS MixerOutSin[2] : 103 : out *
-NOTE PINS MixerOutSin[1] : 117 : out *
-NOTE PINS MixerOutSin[0] : 96 : out *
+NOTE PINS MixerOutSin[7] : 113 : out *
+NOTE PINS MixerOutSin[6] : 96 : out *
+NOTE PINS MixerOutSin[5] : 85 : out *
+NOTE PINS MixerOutSin[4] : 89 : out *
+NOTE PINS MixerOutSin[3] : 94 : out *
+NOTE PINS MixerOutSin[2] : 115 : out *
+NOTE PINS MixerOutSin[1] : 111 : out *
+NOTE PINS MixerOutSin[0] : 93 : out *
 NOTE PINS PWMOut : 109 : out *
-NOTE PINS i_Rx_Serial : 126 : in *
-NOTE PINS RFIn : 125 : in *
+NOTE PINS sinGen : 142 : out *
+NOTE PINS CIC_out_clk : 125 : out *
+NOTE PINS i_Rx_Serial : 84 : in *
+NOTE PINS RFIn : 1 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *
