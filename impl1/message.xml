@@ -7,6 +7,38 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/user/lattice/FPGASDR/FPGASDR.lpf(14): Semantic error in &quot;IOBUF PORT &quot;DiffIn&quot; IO_TYPE=LVCMOS25 CLAMP=ON HYSTERESIS=NA ;&quot;: </Dynamic>
+            <Dynamic>DiffIn</Dynamic>
+            <Navigation>C:/Users/user/lattice/FPGASDR/FPGASDR.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>i_Rx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>DiffIn</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_Rx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DiffIn</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -132,7 +164,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(4): </Dynamic>
-            <Dynamic>CIC</Dynamic>
+            <Dynamic>CIC(width=58)</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
             <Navigation>4</Navigation>
         </Message>
@@ -145,28 +177,72 @@
             <Navigation>1</Navigation>
         </Message>
         <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(16): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>16</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(75): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(87): </Dynamic>
             <Dynamic>rst</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>75</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_Rx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Tx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_DV</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Rx_Byte[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DiffIn</Dynamic>
         </Message>
         <Message>
             <ID>35001748</ID>
@@ -181,6 +257,16 @@
             <Dynamic>\Mixer1/MixerOutCos</Dynamic>
         </Message>
         <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_Rx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DiffIn</Dynamic>
+        </Message>
+        <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(51): </Dynamic>
@@ -191,6 +277,37 @@
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>i_Rx_Serial</Dynamic>
+            <Navigation>i_Rx_Serial</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>i_Rx_Serial</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>DiffIn</Dynamic>
+            <Navigation>DiffIn</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>DiffIn</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

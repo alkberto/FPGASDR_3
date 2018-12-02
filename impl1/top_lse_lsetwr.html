@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed Nov 28 17:03:30 2018
+Sun Dec 02 20:16:34 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -28,122 +28,236 @@ Report level:    verbose report, limited to 3 items per constraint
 
 ================================================================================
 Constraint: create_clock -period 5.000000 -name clk0 [get_nets osc_clk]
-            878 items scored, 878 timing errors detected.
+            253 items scored, 253 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 7.629ns
+Error:  The following path violates requirements by 4.552ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_237__i5  (from osc_clk +)
-   Destination:    FD1P3AX    SP             \uart_rx1/r_Rx_DV_52  (to osc_clk +)
+   Source:         FD1S3AX    CK             \Mixer1/MixerOutCos_i7  (from osc_clk +)
+   Destination:    FD1S3AX    D              \CIC1/d1_i57  (to osc_clk +)
 
-   Delay:                  12.344ns  (31.6% logic, 68.4% route), 8 logic levels.
+   Delay:                   9.392ns  (60.0% logic, 40.0% route), 27 logic levels.
 
  Constraint Details:
 
-     12.344ns data_path \uart_rx1/r_Clock_Count_237__i5 to \uart_rx1/r_Rx_DV_52 violates
+      9.392ns data_path \Mixer1/MixerOutCos_i7 to \CIC1/d1_i57 violates
       5.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 4.715ns) by 7.629ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.552ns
 
- Path Details: \uart_rx1/r_Clock_Count_237__i5 to \uart_rx1/r_Rx_DV_52
+ Path Details: \Mixer1/MixerOutCos_i7 to \CIC1/d1_i57
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_237__i5 (from osc_clk)
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[5]
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_adj_4
-Route         1   e 0.941                                  \uart_rx1/n6_adj_2411
-LUT4        ---     0.493              D to Z              \uart_rx1/i4_4_lut_adj_3
-Route         2   e 1.141                                  \uart_rx1/n1769
-LUT4        ---     0.493              C to Z              \uart_rx1/i978_3_lut
-Route         1   e 0.941                                  \uart_rx1/n1149
-LUT4        ---     0.493              C to Z              \uart_rx1/i992_4_lut
-Route         5   e 1.405                                  \uart_rx1/n1163
-LUT4        ---     0.493              A to Z              \uart_rx1/i1224_4_lut
-Route         1   e 0.941                                  \uart_rx1/n1785
-LUT4        ---     0.493              B to Z              \uart_rx1/i1226_3_lut
-Route         1   e 0.941                                  \uart_rx1/n1787
-LUT4        ---     0.493              D to Z              \uart_rx1/i26_4_lut
-Route         1   e 0.941                                  \uart_rx1/osc_clk_enable_642
+L_CO        ---     0.444             CK to Q              \Mixer1/MixerOutCos_i7 (from osc_clk)
+Route        51   e 2.314                                  MixerOutCos[7]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \CIC1/add_3_9
+Route         1   e 0.020                                  \CIC1/n238
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_11
+Route         1   e 0.020                                  \CIC1/n239
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_13
+Route         1   e 0.020                                  \CIC1/n240
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_15
+Route         1   e 0.020                                  \CIC1/n241
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_17
+Route         1   e 0.020                                  \CIC1/n242
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_19
+Route         1   e 0.020                                  \CIC1/n243
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_21
+Route         1   e 0.020                                  \CIC1/n244
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_23
+Route         1   e 0.020                                  \CIC1/n245
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_25
+Route         1   e 0.020                                  \CIC1/n246
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_27
+Route         1   e 0.020                                  \CIC1/n247
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_29
+Route         1   e 0.020                                  \CIC1/n248
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_31
+Route         1   e 0.020                                  \CIC1/n249
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_33
+Route         1   e 0.020                                  \CIC1/n250
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_35
+Route         1   e 0.020                                  \CIC1/n251
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_37
+Route         1   e 0.020                                  \CIC1/n252
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_39
+Route         1   e 0.020                                  \CIC1/n253
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_41
+Route         1   e 0.020                                  \CIC1/n254
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_43
+Route         1   e 0.020                                  \CIC1/n255
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_45
+Route         1   e 0.020                                  \CIC1/n256
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_47
+Route         1   e 0.020                                  \CIC1/n257
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_49
+Route         1   e 0.020                                  \CIC1/n258
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_51
+Route         1   e 0.020                                  \CIC1/n259
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_53
+Route         1   e 0.020                                  \CIC1/n260
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_55
+Route         1   e 0.020                                  \CIC1/n261
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_57
+Route         1   e 0.020                                  \CIC1/n262
+FCI_TO_F    ---     0.598            CIN to S[2]           \CIC1/add_3_59
+Route         1   e 0.941                                  \CIC1/d1_57__N_1069[57]
                   --------
-                   12.344  (31.6% logic, 68.4% route), 8 logic levels.
+                    9.392  (60.0% logic, 40.0% route), 27 logic levels.
 
 
-Error:  The following path violates requirements by 7.629ns
+Error:  The following path violates requirements by 4.552ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_237__i4  (from osc_clk +)
-   Destination:    FD1P3AX    SP             \uart_rx1/r_Rx_DV_52  (to osc_clk +)
+   Source:         FD1S3AX    CK             \Mixer1/MixerOutCos_i7  (from osc_clk +)
+   Destination:    FD1S3AX    D              \CIC1/d1_i57  (to osc_clk +)
 
-   Delay:                  12.344ns  (31.6% logic, 68.4% route), 8 logic levels.
+   Delay:                   9.392ns  (60.0% logic, 40.0% route), 27 logic levels.
 
  Constraint Details:
 
-     12.344ns data_path \uart_rx1/r_Clock_Count_237__i4 to \uart_rx1/r_Rx_DV_52 violates
+      9.392ns data_path \Mixer1/MixerOutCos_i7 to \CIC1/d1_i57 violates
       5.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 4.715ns) by 7.629ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.552ns
 
- Path Details: \uart_rx1/r_Clock_Count_237__i4 to \uart_rx1/r_Rx_DV_52
+ Path Details: \Mixer1/MixerOutCos_i7 to \CIC1/d1_i57
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_237__i4 (from osc_clk)
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[4]
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut_adj_4
-Route         1   e 0.941                                  \uart_rx1/n6_adj_2411
-LUT4        ---     0.493              D to Z              \uart_rx1/i4_4_lut_adj_3
-Route         2   e 1.141                                  \uart_rx1/n1769
-LUT4        ---     0.493              C to Z              \uart_rx1/i978_3_lut
-Route         1   e 0.941                                  \uart_rx1/n1149
-LUT4        ---     0.493              C to Z              \uart_rx1/i992_4_lut
-Route         5   e 1.405                                  \uart_rx1/n1163
-LUT4        ---     0.493              A to Z              \uart_rx1/i1224_4_lut
-Route         1   e 0.941                                  \uart_rx1/n1785
-LUT4        ---     0.493              B to Z              \uart_rx1/i1226_3_lut
-Route         1   e 0.941                                  \uart_rx1/n1787
-LUT4        ---     0.493              D to Z              \uart_rx1/i26_4_lut
-Route         1   e 0.941                                  \uart_rx1/osc_clk_enable_642
+L_CO        ---     0.444             CK to Q              \Mixer1/MixerOutCos_i7 (from osc_clk)
+Route        51   e 2.314                                  MixerOutCos[7]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \CIC1/add_3_9
+Route         1   e 0.020                                  \CIC1/n238
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_11
+Route         1   e 0.020                                  \CIC1/n239
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_13
+Route         1   e 0.020                                  \CIC1/n240
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_15
+Route         1   e 0.020                                  \CIC1/n241
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_17
+Route         1   e 0.020                                  \CIC1/n242
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_19
+Route         1   e 0.020                                  \CIC1/n243
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_21
+Route         1   e 0.020                                  \CIC1/n244
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_23
+Route         1   e 0.020                                  \CIC1/n245
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_25
+Route         1   e 0.020                                  \CIC1/n246
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_27
+Route         1   e 0.020                                  \CIC1/n247
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_29
+Route         1   e 0.020                                  \CIC1/n248
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_31
+Route         1   e 0.020                                  \CIC1/n249
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_33
+Route         1   e 0.020                                  \CIC1/n250
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_35
+Route         1   e 0.020                                  \CIC1/n251
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_37
+Route         1   e 0.020                                  \CIC1/n252
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_39
+Route         1   e 0.020                                  \CIC1/n253
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_41
+Route         1   e 0.020                                  \CIC1/n254
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_43
+Route         1   e 0.020                                  \CIC1/n255
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_45
+Route         1   e 0.020                                  \CIC1/n256
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_47
+Route         1   e 0.020                                  \CIC1/n257
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_49
+Route         1   e 0.020                                  \CIC1/n258
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_51
+Route         1   e 0.020                                  \CIC1/n259
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_53
+Route         1   e 0.020                                  \CIC1/n260
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_55
+Route         1   e 0.020                                  \CIC1/n261
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_57
+Route         1   e 0.020                                  \CIC1/n262
+FCI_TO_F    ---     0.598            CIN to S[2]           \CIC1/add_3_59
+Route         1   e 0.941                                  \CIC1/d1_57__N_1069[57]
                   --------
-                   12.344  (31.6% logic, 68.4% route), 8 logic levels.
+                    9.392  (60.0% logic, 40.0% route), 27 logic levels.
 
 
-Error:  The following path violates requirements by 7.505ns
+Error:  The following path violates requirements by 4.375ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_237__i5  (from osc_clk +)
-   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_237__i12  (to osc_clk +)
+   Source:         FD1S3AX    CK             \Mixer1/MixerOutCos_i7  (from osc_clk +)
+   Destination:    FD1S3AX    D              \CIC1/d1_i55  (to osc_clk +)
 
-   Delay:                  12.345ns  (27.6% logic, 72.4% route), 7 logic levels.
+   Delay:                   9.215ns  (59.5% logic, 40.5% route), 26 logic levels.
 
  Constraint Details:
 
-     12.345ns data_path \uart_rx1/r_Clock_Count_237__i5 to \uart_rx1/r_Clock_Count_237__i12 violates
+      9.215ns data_path \Mixer1/MixerOutCos_i7 to \CIC1/d1_i55 violates
       5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 7.505ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.375ns
 
- Path Details: \uart_rx1/r_Clock_Count_237__i5 to \uart_rx1/r_Clock_Count_237__i12
+ Path Details: \Mixer1/MixerOutCos_i7 to \CIC1/d1_i55
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_237__i5 (from osc_clk)
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[5]
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_adj_4
-Route         1   e 0.941                                  \uart_rx1/n6_adj_2411
-LUT4        ---     0.493              D to Z              \uart_rx1/i4_4_lut_adj_3
-Route         2   e 1.141                                  \uart_rx1/n1769
-LUT4        ---     0.493              C to Z              \uart_rx1/i978_3_lut
-Route         1   e 0.941                                  \uart_rx1/n1149
-LUT4        ---     0.493              C to Z              \uart_rx1/i992_4_lut
-Route         5   e 1.405                                  \uart_rx1/n1163
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_rep_16
-Route         7   e 1.502                                  \uart_rx1/n1910
-LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut
-Route        16   e 1.815                                  \uart_rx1/n897
+L_CO        ---     0.444             CK to Q              \Mixer1/MixerOutCos_i7 (from osc_clk)
+Route        51   e 2.314                                  MixerOutCos[7]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \CIC1/add_3_9
+Route         1   e 0.020                                  \CIC1/n238
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_11
+Route         1   e 0.020                                  \CIC1/n239
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_13
+Route         1   e 0.020                                  \CIC1/n240
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_15
+Route         1   e 0.020                                  \CIC1/n241
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_17
+Route         1   e 0.020                                  \CIC1/n242
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_19
+Route         1   e 0.020                                  \CIC1/n243
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_21
+Route         1   e 0.020                                  \CIC1/n244
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_23
+Route         1   e 0.020                                  \CIC1/n245
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_25
+Route         1   e 0.020                                  \CIC1/n246
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_27
+Route         1   e 0.020                                  \CIC1/n247
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_29
+Route         1   e 0.020                                  \CIC1/n248
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_31
+Route         1   e 0.020                                  \CIC1/n249
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_33
+Route         1   e 0.020                                  \CIC1/n250
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_35
+Route         1   e 0.020                                  \CIC1/n251
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_37
+Route         1   e 0.020                                  \CIC1/n252
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_39
+Route         1   e 0.020                                  \CIC1/n253
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_41
+Route         1   e 0.020                                  \CIC1/n254
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_43
+Route         1   e 0.020                                  \CIC1/n255
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_45
+Route         1   e 0.020                                  \CIC1/n256
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_47
+Route         1   e 0.020                                  \CIC1/n257
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_49
+Route         1   e 0.020                                  \CIC1/n258
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_51
+Route         1   e 0.020                                  \CIC1/n259
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_53
+Route         1   e 0.020                                  \CIC1/n260
+FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC1/add_3_55
+Route         1   e 0.020                                  \CIC1/n261
+FCI_TO_F    ---     0.598            CIN to S[2]           \CIC1/add_3_57
+Route         1   e 0.941                                  \CIC1/d1_57__N_1069[55]
                   --------
-                   12.345  (27.6% logic, 72.4% route), 7 logic levels.
+                    9.215  (59.5% logic, 40.5% route), 26 logic levels.
 
-Warning: 12.629 ns is the maximum delay for this constraint.
+Warning: 9.552 ns is the maximum delay for this constraint.
 
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -153,7 +267,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |     5.000 ns|    12.629 ns|     8 *
+clk0 [get_nets osc_clk]                 |     5.000 ns|     9.552 ns|    27 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -163,91 +277,209 @@ clk0 [get_nets osc_clk]                 |     5.000 ns|    12.629 ns|     8 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\uart_rx1/n1769                         |       2|     336|     38.27%
+\CIC1/n242                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/r_SM_Main_2__N_2281[0]        |       4|     281|     32.00%
+\CIC1/n243                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n897                          |      16|     256|     29.16%
+\CIC1/n244                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n1149                         |       1|     203|     23.12%
+\CIC1/n245                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n1163                         |       5|     203|     23.12%
+\CIC1/n246                              |       1|      81|     32.02%
                                         |        |        |
-\uart_tx1/n10_adj_2664                  |       1|     185|     21.07%
+\CIC1/n247                              |       1|      81|     32.02%
                                         |        |        |
-\uart_tx1/n1161                         |       1|     185|     21.07%
+\CIC1/n248                              |       1|      81|     32.02%
                                         |        |        |
-\uart_tx1/r_SM_Main_2__N_2369[1]        |       9|     185|     21.07%
+\CIC1/n249                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n1910                         |       7|     181|     20.62%
+\CIC1/n250                              |       1|      81|     32.02%
                                         |        |        |
-\uart_tx1/n1151                         |       1|     179|     20.39%
+\CIC1/n251                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n8                            |       1|     167|     19.02%
+\CIC1/n252                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n6                            |       1|     160|     18.22%
+\CIC1/n253                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/osc_clk_enable_641            |      16|     160|     18.22%
+\CIC1/n254                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n1738                         |       5|     146|     16.63%
+\CIC1/n255                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n6_adj_2411                   |       1|     138|     15.72%
+\CIC1/n256                              |       1|      81|     32.02%
                                         |        |        |
-\uart_rx1/n1783                         |       1|     112|     12.76%
+\CIC1/n257                              |       1|      81|     32.02%
                                         |        |        |
-\uart_tx1/n911                          |      16|     112|     12.76%
+\CIC1/n258                              |       1|      81|     32.02%
                                         |        |        |
-\CIC1/n1438                             |       1|     105|     11.96%
+\CIC1/n241                              |       1|      79|     31.23%
                                         |        |        |
-\CIC1/n1439                             |       1|     105|     11.96%
+\CIC1/n259                              |       1|      77|     30.43%
                                         |        |        |
-\CIC1/n1440                             |       1|     105|     11.96%
+\CIC1/n240                              |       1|      73|     28.85%
                                         |        |        |
-\CIC1/n1441                             |       1|     105|     11.96%
+\CIC1/n260                              |       1|      69|     27.27%
                                         |        |        |
-\CIC1/n1442                             |       1|     105|     11.96%
+\CIC1/n239                              |       1|      63|     24.90%
                                         |        |        |
-\CIC1/n1443                             |       1|     105|     11.96%
+\CIC1/n261                              |       1|      51|     20.16%
                                         |        |        |
-\CIC1/n1444                             |       1|     105|     11.96%
+MixerOutCos[7]                          |      51|      50|     19.76%
                                         |        |        |
-\CIC1/n1445                             |       1|     105|     11.96%
+\CIC1/n238                              |       1|      49|     19.37%
                                         |        |        |
-\CIC1/n1446                             |       1|     105|     11.96%
+\CIC1/n237                              |       1|      31|     12.25%
                                         |        |        |
-\CIC1/n1447                             |       1|     105|     11.96%
+\CIC1/n236                              |       1|      29|     11.46%
                                         |        |        |
-\CIC1/n1448                             |       1|     105|     11.96%
+\CIC1/n325                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1449                             |       1|     105|     11.96%
+\CIC1/n326                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1450                             |       1|     105|     11.96%
+\CIC1/n327                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1451                             |       1|     105|     11.96%
+\CIC1/n328                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1452                             |       1|     105|     11.96%
+\CIC1/n329                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1453                             |       1|     105|     11.96%
+\CIC1/n330                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1454                             |       1|     105|     11.96%
+\CIC1/n331                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1455                             |       1|     105|     11.96%
+\CIC1/n332                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1456                             |       1|     105|     11.96%
+\CIC1/n333                              |       1|      28|     11.07%
                                         |        |        |
-\uart_tx1/n10                           |       1|     104|     11.85%
+\CIC1/n334                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1437                             |       1|     103|     11.73%
+\CIC1/n335                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1457                             |       1|     101|     11.50%
+\CIC1/n336                              |       1|      28|     11.07%
                                         |        |        |
-MixerOutCos[2]                          |      63|      98|     11.16%
+\CIC1/n337                              |       1|      28|     11.07%
                                         |        |        |
-\uart_rx1/n6_adj_2410                   |       1|      98|     11.16%
+\CIC1/n338                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1436                             |       1|      97|     11.05%
+\CIC1/n339                              |       1|      28|     11.07%
                                         |        |        |
-\CIC1/n1458                             |       1|      93|     10.59%
+\CIC1/n340                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n341                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n342                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n343                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n344                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n345                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n346                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n347                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n348                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n349                              |       1|      28|     11.07%
+                                        |        |        |
+\CIC1/n295                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n296                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n297                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n298                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n299                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n300                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n301                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n302                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n303                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n304                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n305                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n306                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n307                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n308                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n309                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n310                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n311                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n312                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n313                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n314                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n315                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n316                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n317                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n318                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n319                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n355                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n356                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n357                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n358                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n359                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n360                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n361                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n362                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n363                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n364                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n365                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n366                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n367                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n368                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n369                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n370                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n371                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n372                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n373                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n374                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n375                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n376                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n377                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n378                              |       1|      26|     10.28%
+                                        |        |        |
+\CIC1/n379                              |       1|      26|     10.28%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -255,12 +487,12 @@ MixerOutCos[2]                          |      63|      98|     11.16%
 <A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
 ---------------
 
-Timing errors: 878  Score: 4928771
+Timing errors: 253  Score: 995598
 
-Constraints cover  44345 paths, 2354 nets, and 5188 connections (99.4% coverage)
+Constraints cover  36052 paths, 2031 nets, and 4370 connections (99.5% coverage)
 
 
-Peak memory: 79101952 bytes, TRCE: 8523776 bytes, DLYMAN: 491520 bytes
+Peak memory: 76242944 bytes, TRCE: 7200768 bytes, DLYMAN: 327680 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

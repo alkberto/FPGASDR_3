@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 28 17:03:24 2018
+Sun Dec 02 20:16:29 2018
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -116,11 +116,9 @@ INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): compiling
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="133.00"). VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/nco.v(18): compiling module nco_sig. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(4): compiling module CIC. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(4): compiling module CIC(width=58). VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(16): compiling module uart_rx. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): compiling module uart_tx. VERI-1018
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(75): net rst does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(87): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -128,24 +126,46 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
+WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Tx_Serial 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_DV 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DiffIn 's net has no driver and is unused.
+######## Missing driver on net o_Tx_Serial. Patching with GND.
+######## Missing driver on net o_Rx_DV. Patching with GND.
+######## Missing driver on net o_Rx_Byte[7]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[6]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[5]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[4]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[3]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[2]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[1]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[0]. Patching with GND.
 ######## Missing driver on net rst. Patching with GND.
 
 
 
 WARNING - synthesis: Bit 7 of Register \Mixer1/MixerOutSin is stuck at One
 WARNING - synthesis: Bit 7 of Register \Mixer1/MixerOutCos is stuck at One
+WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DiffIn 's net has no driver and is unused.
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(51): Register \ncoGen/phase_accum_i0 is stuck at Zero. VDB-5013
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i2.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i7.
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i3.
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i6 is a one-to-one match with \Mixer1/MixerOutSin_i4.
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i5 is a one-to-one match with \Mixer1/MixerOutSin_i6.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i2 is a one-to-one match with \Mixer1/MixerOutCos_i6.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i3 is a one-to-one match with \Mixer1/MixerOutCos_i5.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i4 is a one-to-one match with \Mixer1/MixerOutCos_i3.
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i5.
-Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i4.
-Duplicate register/latch removal. \Mixer1/MixerOutSin_i7 is a one-to-one match with \Mixer1/MixerOutSin_i1.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i6.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i2 is a one-to-one match with \Mixer1/MixerOutSin_i5.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i3 is a one-to-one match with \Mixer1/MixerOutSin_i4.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i2 is a one-to-one match with \Mixer1/MixerOutCos_i5.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i3 is a one-to-one match with \Mixer1/MixerOutCos_i4.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i1 is a one-to-one match with \Mixer1/MixerOutSin_i3.
+Duplicate register/latch removal. \Mixer1/MixerOutCos_i1 is a one-to-one match with \Mixer1/MixerOutCos_i3.
+Duplicate register/latch removal. \Mixer1/MixerOutSin_i2 is a one-to-one match with \Mixer1/MixerOutSin_i1.
 Duplicate register/latch removal. \Mixer1/MixerOutCos_i2 is a one-to-one match with \Mixer1/MixerOutCos_i1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
@@ -156,25 +176,28 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'.
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'i_Rx_Serial' has no load.
+WARNING - synthesis: input pad net 'i_Rx_Serial' has no legal load.
+WARNING - synthesis: logical net 'DiffIn' has no load.
+WARNING - synthesis: input pad net 'DiffIn' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1165 of 7209 (16 % )
-CCU2D => 405
-FD1P3AX => 680
-FD1P3IX => 32
-FD1S3AX => 431
-FD1S3AY => 4
-FD1S3IX => 17
+Number of register bits => 1019 of 7209 (14 % )
+CCU2D => 357
+FD1P3AX => 604
+FD1S3AX => 402
+FD1S3AY => 2
+FD1S3IX => 10
 FD1S3JX => 1
 GSR => 1
-IB => 2
-L6MUX21 => 1
-LUT4 => 84
-OB => 29
+IB => 1
+LUT4 => 36
+OB => 30
 OSCH => 1
-PFUMX => 3
+PFUMX => 1
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -184,32 +207,32 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : osc_clk, loads : 1165
+  Net : osc_clk, loads : 1019
 Clock Enable Nets
-Number of Clock Enables: 28
+Number of Clock Enables: 14
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_514, loads : 50
-  Net : CIC1/osc_clk_enable_564, loads : 50
-  Net : CIC1/osc_clk_enable_214, loads : 50
-  Net : CIC1/osc_clk_enable_264, loads : 50
-  Net : CIC1/osc_clk_enable_71, loads : 50
-  Net : CIC1/osc_clk_enable_314, loads : 50
-  Net : CIC1/osc_clk_enable_164, loads : 50
-  Net : CIC1/osc_clk_enable_364, loads : 50
-  Net : CIC1/osc_clk_enable_138, loads : 50
-  Net : CIC1/osc_clk_enable_414, loads : 50
+  Net : CIC1/osc_clk_enable_59, loads : 60
+  Net : CIC1/osc_clk_enable_298, loads : 50
+  Net : CIC1/osc_clk_enable_348, loads : 50
+  Net : CIC1/osc_clk_enable_398, loads : 50
+  Net : CIC1/osc_clk_enable_148, loads : 50
+  Net : CIC1/osc_clk_enable_448, loads : 50
+  Net : CIC1/osc_clk_enable_248, loads : 50
+  Net : CIC1/osc_clk_enable_498, loads : 50
+  Net : CIC1/osc_clk_enable_98, loads : 50
+  Net : CIC1/osc_clk_enable_198, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : CIC1/osc_clk_enable_464, loads : 100
-  Net : CIC1/osc_clk_enable_614, loads : 100
-  Net : CIC1/v_comb, loads : 84
-  Net : CIC1/d_clk_tmp_N_2233, loads : 76
-  Net : Mixer1/MixerOutCos_2, loads : 62
-  Net : CIC1/osc_clk_enable_71, loads : 50
-  Net : CIC1/osc_clk_enable_138, loads : 50
-  Net : CIC1/osc_clk_enable_164, loads : 50
-  Net : CIC1/osc_clk_enable_314, loads : 50
-  Net : CIC1/osc_clk_enable_264, loads : 50
+  Net : CIC1/osc_clk_enable_548, loads : 100
+  Net : CIC1/v_comb, loads : 76
+  Net : CIC1/osc_clk_enable_59, loads : 60
+  Net : Mixer1/MixerOutCos_7, loads : 50
+  Net : CIC1/osc_clk_enable_98, loads : 50
+  Net : CIC1/osc_clk_enable_498, loads : 50
+  Net : CIC1/osc_clk_enable_448, loads : 50
+  Net : CIC1/osc_clk_enable_398, loads : 50
+  Net : CIC1/osc_clk_enable_148, loads : 50
+  Net : CIC1/osc_clk_enable_198, loads : 50
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -219,7 +242,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|   79.183 MHz|     8 *
+clk0 [get_nets osc_clk]                 |  200.000 MHz|  104.690 MHz|    27 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -227,10 +250,10 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|   79.183 MHz|     8 *
 1 constraints not met.
 
 
-Peak Memory Usage: 75.445  MB
+Peak Memory Usage: 72.715  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.602  secs
+Elapsed CPU time for LSE flow : 4.555  secs
 --------------------------------------------------------------
 
 

@@ -15,24 +15,27 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.2.115
-Mapped on:  11/28/18  17:03:31
+Mapped on:  12/02/18  20:16:37
 
 Design Summary
 --------------
 
-   Number of registers:   1165 out of  7209 (16%)
-      PFU registers:         1165 out of  6864 (17%)
+   Number of registers:   1019 out of  7209 (14%)
+      PFU registers:         1019 out of  6864 (15%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:       599 out of  3432 (17%)
-      SLICEs as Logic/ROM:    599 out of  3432 (17%)
+   Number of SLICEs:       519 out of  3432 (15%)
+      SLICEs as Logic/ROM:    519 out of  3432 (15%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        405 out of  3432 (12%)
-   Number of LUT4s:        894 out of  6864 (13%)
-      Number used as logic LUTs:         84
+      SLICEs as Carry:        357 out of  3432 (10%)
+   Number of LUT4s:        752 out of  6864 (11%)
+      Number used as logic LUTs:         38
       Number used as distributed RAM:     0
-      Number used as ripple logic:      810
+      Number used as ripple logic:      714
       Number used as shift registers:     0
-   Number of PIO sites used: 31 + 4(JTAG) out of 115 (30%)
+   Number of PIO sites used: 32 + 4(JTAG) out of 115 (31%)
+      Number of PIO sites used for single ended IOs: 34
+      Number of PIO sites used for differential IOs: 2 (represented by 1 PIO
+     comps in NCD)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -57,88 +60,79 @@ Design Summary
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  1
-     Net osc_clk: 597 loads, 597 rising, 0 falling (Driver: OSCH_inst )
-   Number of Clock Enables:  28
 
                                     Page 1
 
 
 
 
-Design:  top                                           Date:  11/28/18  17:03:31
+Design:  top                                           Date:  12/02/18  20:16:37
 
 Design Summary (cont)
 ---------------------
-     Net uart_tx1/r_SM_Main_2: 10 loads, 10 LSLICEs
-     Net uart_tx1/osc_clk_enable_636: 2 loads, 2 LSLICEs
-     Net uart_tx1/osc_clk_enable_630: 4 loads, 4 LSLICEs
-     Net CIC1/osc_clk_enable_71: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_138: 18 loads, 18 LSLICEs
-     Net CIC1/v_comb: 21 loads, 21 LSLICEs
-     Net CIC1/osc_clk_enable_164: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_314: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_264: 25 loads, 25 LSLICEs
-     Net CIC1/d_clk_tmp_N_2233: 14 loads, 14 LSLICEs
-     Net CIC1/osc_clk_enable_214: 26 loads, 26 LSLICEs
-     Net CIC1/osc_clk_enable_364: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_414: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_464: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_514: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_564: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_614: 25 loads, 25 LSLICEs
-     Net uart_rx1/osc_clk_enable_17: 2 loads, 2 LSLICEs
-     Net uart_rx1/osc_clk_enable_16: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_19: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_641: 9 loads, 9 LSLICEs
-     Net uart_rx1/osc_clk_enable_26: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_28: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_44: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_46: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_47: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_642: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_615: 1 loads, 1 LSLICEs
-   Number of LSRs:  8
-     Net uart_tx1/r_SM_Main_2: 1 loads, 1 LSLICEs
-     Net uart_tx1/n1629: 1 loads, 1 LSLICEs
-     Net uart_tx1/n911: 9 loads, 9 LSLICEs
-     Net CIC1/osc_clk_enable_138: 2 loads, 2 LSLICEs
-     Net CIC1/d_clk_tmp_N_2233: 5 loads, 5 LSLICEs
-     Net uart_rx1/r_SM_Main_2: 2 loads, 2 LSLICEs
-     Net uart_rx1/n897: 9 loads, 9 LSLICEs
-     Net uart_rx1/n1630: 1 loads, 1 LSLICEs
+   Number of clocks:  1
+     Net osc_clk: 519 loads, 519 rising, 0 falling (Driver: OSCH_inst )
+   Number of Clock Enables:  14
+     Net CIC1/osc_clk_enable_59: 24 loads, 24 LSLICEs
+     Net CIC1/osc_clk_enable_98: 25 loads, 25 LSLICEs
+     Net CIC1/v_comb: 19 loads, 19 LSLICEs
+     Net CIC1/d_clk_tmp_N_2041: 6 loads, 6 LSLICEs
+     Net CIC1/osc_clk_enable_548: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_498: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_448: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_398: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_148: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_198: 26 loads, 26 LSLICEs
+     Net CIC1/osc_clk_enable_248: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_298: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_348: 25 loads, 25 LSLICEs
+     Net PWM1/osc_clk_enable_555: 5 loads, 5 LSLICEs
+   Number of LSRs:  2
+     Net CIC1/osc_clk_enable_59: 2 loads, 2 LSLICEs
+     Net CIC1/d_clk_tmp_N_2041: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net MixerOutCos_2: 63 loads
-     Net CIC1/osc_clk_enable_138: 32 loads
-     Net CIC1/osc_clk_enable_214: 26 loads
-     Net CIC1/osc_clk_enable_164: 25 loads
-     Net CIC1/osc_clk_enable_264: 25 loads
-     Net CIC1/osc_clk_enable_314: 25 loads
-     Net CIC1/osc_clk_enable_364: 25 loads
-     Net CIC1/osc_clk_enable_414: 25 loads
-     Net CIC1/osc_clk_enable_464: 25 loads
-     Net CIC1/osc_clk_enable_514: 25 loads
+     Net MixerOutCos_7: 51 loads
+     Net CIC1/osc_clk_enable_59: 37 loads
+     Net CIC1/osc_clk_enable_198: 26 loads
+     Net CIC1/osc_clk_enable_148: 25 loads
+     Net CIC1/osc_clk_enable_248: 25 loads
+     Net CIC1/osc_clk_enable_298: 25 loads
+     Net CIC1/osc_clk_enable_398: 25 loads
+     Net CIC1/osc_clk_enable_448: 25 loads
+     Net CIC1/osc_clk_enable_498: 25 loads
+     Net CIC1/osc_clk_enable_548: 25 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  5
    Number of errors:    0
      
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/user/lattice/FPGASDR/FPGASDR.lpf(14): Semantic error in
+     "IOBUF PORT "DiffIn" IO_TYPE=LVCMOS25 CLAMP=ON HYSTERESIS=NA ;": Port
+     "DiffIn" does not exist in the design. This preference has been disabled.
+WARNING - map: input pad net 'i_Rx_Serial' has no legal load.
+WARNING - map: input pad net 'DiffIn' has no legal load.
+WARNING - map: IO buffer missing for top level port i_Rx_Serial...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port DiffIn...logic will be
+     discarded.
+
+
+
+
 
                                     Page 2
 
 
 
 
-Design:  top                                           Date:  11/28/18  17:03:31
-
-
-Design Errors/Warnings
-----------------------
-
-   No errors or warnings present.
+Design:  top                                           Date:  12/02/18  20:16:37
 
 IO (PIO) Attributes
 -------------------
@@ -147,13 +141,13 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| o_Rx_Byte[6]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | o_Rx_DV             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Tx_Serial         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[6]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Rx_Byte[5]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -192,22 +186,24 @@ IO (PIO) Attributes
 | MixerOutSin[4]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MixerOutSin[3]      | OUTPUT    | LVCMOS25  |            |
-
-                                    Page 3
-
-
-
-
-Design:  top                                           Date:  11/28/18  17:03:31
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | MixerOutSin[2]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MixerOutSin[1]      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MixerOutSin[0]      | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  12/02/18  20:16:37
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DiffOut             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | PWMOut              | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -215,59 +211,80 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | CIC_out_clk         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| i_Rx_Serial         | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| RFIn                | INPUT     | LVCMOS25  |            |
+| RFIn                | INPUT     | LVDS25    |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal uart_tx1/osc_clk_enable_634 was merged into signal uart_tx1/r_SM_Main_2
-Signal GND_net undriven or does not drive anything - clipped.
-Signal ncoGen/phase_accum_63__I_0_12_43/S1 undriven or does not drive anything -
-     clipped.
-Signal ncoGen/phase_accum_63__I_0_12_43/CO undriven or does not drive anything -
-     clipped.
-Signal ncoGen/phase_accum_63__I_0_12_1/S0 undriven or does not drive anything -
-     clipped.
-Signal ncoGen/phase_accum_63__I_0_12_1/CI undriven or does not drive anything -
-     clipped.
-Signal uart_rx1/r_Clock_Count_237_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal uart_rx1/r_Clock_Count_237_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal uart_rx1/r_Clock_Count_237_add_4_17/S1 undriven or does not drive
-     anything - clipped.
-Signal uart_rx1/r_Clock_Count_237_add_4_17/CO undriven or does not drive
-     anything - clipped.
 Signal nco/phase_accum_63__I_0_12_1/S0 undriven or does not drive anything -
      clipped.
 Signal nco/phase_accum_63__I_0_12_1/CI undriven or does not drive anything -
      clipped.
 Signal nco/phase_accum_63__I_0_12_45/CO undriven or does not drive anything -
      clipped.
+Signal PWM1/add_5_1/S0 undriven or does not drive anything - clipped.
+Signal PWM1/add_5_1/CI undriven or does not drive anything - clipped.
+Signal PWM1/add_5_9/S1 undriven or does not drive anything - clipped.
+Signal PWM1/add_5_9/CO undriven or does not drive anything - clipped.
+Signal PWM1/counter_68_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_68_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_68_add_4_9/S1 undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_68_add_4_9/CO undriven or does not drive anything - clipped.
+     
+Signal CIC1/add_3_1/S0 undriven or does not drive anything - clipped.
+Signal CIC1/add_3_1/CI undriven or does not drive anything - clipped.
+Signal CIC1/add_3_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/add_3_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/add_4_2/S0 undriven or does not drive anything - clipped.
+Signal CIC1/add_4_2/CI undriven or does not drive anything - clipped.
+Signal CIC1/add_4_58/CO undriven or does not drive anything - clipped.
+Signal CIC1/add_5_2/S0 undriven or does not drive anything - clipped.
+Signal CIC1/add_5_2/CI undriven or does not drive anything - clipped.
+Signal CIC1/add_5_58/CO undriven or does not drive anything - clipped.
+Signal CIC1/add_6_2/S0 undriven or does not drive anything - clipped.
+Signal CIC1/add_6_2/CI undriven or does not drive anything - clipped.
+Signal CIC1/add_6_58/CO undriven or does not drive anything - clipped.
+Signal CIC1/add_7_2/S0 undriven or does not drive anything - clipped.
+Signal CIC1/add_7_2/CI undriven or does not drive anything - clipped.
+Signal CIC1/add_7_58/CO undriven or does not drive anything - clipped.
 Signal CIC1/sub_38_add_2_1/S0 undriven or does not drive anything - clipped.
 Signal CIC1/sub_38_add_2_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/sub_39_add_2_1/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_39_add_2_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/sub_39_add_2_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_39_add_2_65/CO undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_1/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_1/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_38_add_2_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_38_add_2_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/sub_36_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_36_add_2_1/CI undriven or does not drive anything - clipped.
 
                                     Page 4
 
 
 
 
-Design:  top                                           Date:  11/28/18  17:03:31
+Design:  top                                           Date:  12/02/18  20:16:37
 
 Removed logic (cont)
 --------------------
+Signal CIC1/sub_36_add_2_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_36_add_2_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/sub_37_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_37_add_2_1/CI undriven or does not drive anything - clipped.
+Signal CIC1/sub_37_add_2_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_37_add_2_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_1/CI undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_9/S0 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_11/S1 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_11/S0 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_13/S1 undriven or does not drive anything - clipped.
@@ -307,104 +324,40 @@ Signal CIC1/sub_40_add_2_45/S0 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_47/S1 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_47/S0 undriven or does not drive anything - clipped.
 Signal CIC1/sub_40_add_2_49/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_49/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_51/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_51/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_53/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_53/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_55/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_55/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_57/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_57/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_59/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_59/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_61/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_61/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_63/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_63/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_40_add_2_65/CO undriven or does not drive anything - clipped.
 
                                     Page 5
 
 
 
 
-Design:  top                                           Date:  11/28/18  17:03:31
+Design:  top                                           Date:  12/02/18  20:16:37
 
 Removed logic (cont)
 --------------------
-Signal CIC1/sub_37_add_2_1/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_37_add_2_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/sub_37_add_2_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_37_add_2_65/CO undriven or does not drive anything - clipped.
-Signal CIC1/sub_36_add_2_1/S0 undriven or does not drive anything - clipped.
-Signal CIC1/sub_36_add_2_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/sub_36_add_2_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_36_add_2_65/CO undriven or does not drive anything - clipped.
-Signal CIC1/add_3_1/S0 undriven or does not drive anything - clipped.
-Signal CIC1/add_3_1/CI undriven or does not drive anything - clipped.
-Signal CIC1/add_3_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/add_3_65/CO undriven or does not drive anything - clipped.
-Signal CIC1/add_4_2/S0 undriven or does not drive anything - clipped.
-Signal CIC1/add_4_2/CI undriven or does not drive anything - clipped.
-Signal CIC1/add_4_64/CO undriven or does not drive anything - clipped.
-Signal CIC1/add_5_2/S0 undriven or does not drive anything - clipped.
-Signal CIC1/add_5_2/CI undriven or does not drive anything - clipped.
-Signal CIC1/add_5_64/CO undriven or does not drive anything - clipped.
-Signal CIC1/add_6_2/S0 undriven or does not drive anything - clipped.
-Signal CIC1/add_6_2/CI undriven or does not drive anything - clipped.
-Signal CIC1/add_6_64/CO undriven or does not drive anything - clipped.
-Signal CIC1/add_7_2/S0 undriven or does not drive anything - clipped.
-Signal CIC1/add_7_2/CI undriven or does not drive anything - clipped.
-Signal CIC1/add_7_64/CO undriven or does not drive anything - clipped.
-Signal CIC1/count_233_234_add_4_1/S0 undriven or does not drive anything -
+Signal CIC1/sub_40_add_2_49/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_51/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_40_add_2_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/sub_39_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal CIC1/sub_39_add_2_1/CI undriven or does not drive anything - clipped.
+Signal CIC1/sub_39_add_2_59/S1 undriven or does not drive anything - clipped.
+Signal CIC1/sub_39_add_2_59/CO undriven or does not drive anything - clipped.
+Signal CIC1/count_66_67_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal CIC1/count_233_234_add_4_1/CI undriven or does not drive anything -
+Signal CIC1/count_66_67_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal CIC1/count_233_234_add_4_11/CO undriven or does not drive anything -
+Signal CIC1/count_66_67_add_4_11/S1 undriven or does not drive anything -
      clipped.
-Signal CIC1/sub_38_add_2_65/S1 undriven or does not drive anything - clipped.
-Signal CIC1/sub_38_add_2_65/CO undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_1/S1 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_1/S0 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_1/CI undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_3/S1 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_3/S0 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_5/S1 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_5/S0 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_7/S1 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_7/S0 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_9/S0 undriven or does not drive anything - clipped.
-Signal PWM1/sub_199_add_2_9/CO undriven or does not drive anything - clipped.
-Signal PWM1/counter_235_add_4_1/S0 undriven or does not drive anything -
+Signal CIC1/count_66_67_add_4_11/CO undriven or does not drive anything -
      clipped.
-Signal PWM1/counter_235_add_4_1/CI undriven or does not drive anything -
+Signal ncoGen/phase_accum_63__I_0_12_43/S1 undriven or does not drive anything -
      clipped.
-Signal PWM1/counter_235_add_4_9/S1 undriven or does not drive anything -
+Signal ncoGen/phase_accum_63__I_0_12_43/CO undriven or does not drive anything -
      clipped.
-Signal PWM1/counter_235_add_4_9/CO undriven or does not drive anything -
+Signal ncoGen/phase_accum_63__I_0_12_1/S0 undriven or does not drive anything -
      clipped.
-Signal uart_tx1/r_Clock_Count_239_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal uart_tx1/r_Clock_Count_239_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal uart_tx1/r_Clock_Count_239_add_4_17/S1 undriven or does not drive
-
-                                    Page 6
-
-
-
-
-Design:  top                                           Date:  11/28/18  17:03:31
-
-Removed logic (cont)
---------------------
-     anything - clipped.
-Signal uart_tx1/r_Clock_Count_239_add_4_17/CO undriven or does not drive
-     anything - clipped.
-Block uart_tx1/i1_1_lut was optimized away.
-Block i1 was optimized away.
+Signal ncoGen/phase_accum_63__I_0_12_1/CI undriven or does not drive anything -
+     clipped.
 
 Memory Usage
 ------------
@@ -433,31 +386,12 @@ Run Time and Memory Usage
 
    Total CPU Time: 1 secs  
    Total REAL Time: 2 secs  
-   Peak Memory Usage: 64 MB
+   Peak Memory Usage: 63 MB
         
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 7
+                                    Page 6
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
