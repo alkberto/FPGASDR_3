@@ -18,6 +18,7 @@ With clock = 133 MHz phase_inc for  1Hz is 138697310208. 1 Mhz 138697310208000
 module nco_sig
 (clk,
 phase_inc_carr,
+phase_accum,
 sin_out,
 cos_out);
  
@@ -29,7 +30,7 @@ output  cos_out;
 parameter IDLE_nco = 0, START_nco = 1;
 reg state_nco_carr = IDLE_nco ;
 
-reg [63:0] phase_accum;
+output reg [63:0] phase_accum;
 
 
 assign sin_out = (phase_accum[63] == 1'b1)? 1'b0 : 1'b1 ; 

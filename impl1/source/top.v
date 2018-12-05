@@ -8,11 +8,14 @@ module top
    output[7:0] o_Rx_Byte,
    	output [7:0] MYLED,
 	output [7:0] MixerOutSin,
+	input XIn,
+	output XOut,
 	input  RFIn, 
 	input DiffIn,
 	output DiffOut,
 	output PWMOut,
 	output sinGen,
+	output sin_out,
 	output CIC_out_clk
    );
 
@@ -20,11 +23,15 @@ module top
 wire reset;
 wire [7:0] i_Tx_Byte;
 wire [63:0] phase_inc_carr, phase_inc_carrGen ;
-wire  sin_out, cos_out;
+//wire  sin_out, cos_out;
 wire  cosGen;//wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
 wire [15:0] decimation_ratio = 16'd 1024;
 wire [7:0] CIC_out;
+wire [63:0] phase_accum;
+wire [7:0] Sine;
+wire [7:0] Cosine;
+
 // wire CIC_out_clk;
 
 /*
@@ -34,7 +41,7 @@ wire [7:0] CIC_out;
  29.56,33.25,38.00,44.33,53.20,66.50,88.67,133.00 MHz. 
 
 */
-  
+/*
 //// Internal Oscillator
 	defparam OSCH_inst.NOM_FREQ = "133.00";
 	OSCH OSCH_inst
@@ -44,32 +51,45 @@ wire [7:0] CIC_out;
 		.SEDSTDBY()     		// this signal is not required if not using SED
 		);
  
+ */
+ 
 /*	
 	GSR GSR_INST (.GSR (Reset));
 */
 
 
 
- assign phase_inc_carr =    64'h 1ED3E9CFE280000; //138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
- assign phase_inc_carrGen = 64'h 1ECC07802400000; //E8943073C00000;
+ assign phase_inc_carr =    64'h C56106EA3BC; //1E1E1E1E1DBDFC0; //138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+ assign phase_inc_carrGen = 64'h 1E25D3E862E4518; //E8943073C00000;
 assign reset = 1'b0;
 
 
 nco_sig	 nco (
 .clk (osc_clk),
 .phase_inc_carr ( phase_inc_carr),
+.phase_accum (phase_accum),
 .sin_out (sin_out),
 .cos_out (cos_out)
 );
-	
 
+SinCos SinCos1 (
+.Clock (osc_clk),
+.ClkEn (1'b 1),
+.Reset (1'b 0),
+.Theta (phase_accum[63:56]),
+.Sine (Sine),
+.Cosine (Cosine)
+);
+	
+/*
 nco_sig	 ncoGen (
 .clk (osc_clk),
 .phase_inc_carr ( phase_inc_carrGen),
+.phase_accum (phase_accum),
 .sin_out (sinGen),
 .cos_out (cosGen)
 );
-	
+*/	
 	
 	
 Mixer Mixer1 (
@@ -89,15 +109,18 @@ CIC  #(.width(58)) CIC1 (
 .d_in (MixerOutCos),
 .d_out (CIC_out),
 .d_clk (CIC_out_clk)
-); 
+);  
  
 PWM PWM1 (
 .clk (osc_clk),
-.DataIn (CIC_out),
+.DataIn (Sine), //(CIC_out),
 .PWMOut (PWMOut)
 );
 
-	  
+PLL PLL1 (
+.CLKI (XIn),.CLKOP (osc_clk)
+);
+
 	  
 assign MYLED[5:0] = MixerOutSin[5:0];
 assign MYLED[7] = sin_out;

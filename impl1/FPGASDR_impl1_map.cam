@@ -1,118 +1,26 @@
 [ START MERGED ]
 [ END MERGED ]
 [ START CLIPPED ]
-nco/phase_accum_63__I_0_12_1/S0
-nco/phase_accum_63__I_0_12_1/CI
-nco/phase_accum_63__I_0_12_45/CO
-PWM1/add_5_1/S0
-PWM1/add_5_1/CI
+CIC1/count_39_40_add_4_11/S1
+CIC1/count_39_40_add_4_11/CO
+CIC1/count_39_40_add_4_1/S0
+CIC1/count_39_40_add_4_1/CI
 PWM1/add_5_9/S1
 PWM1/add_5_9/CO
-PWM1/counter_68_add_4_1/S0
-PWM1/counter_68_add_4_1/CI
-PWM1/counter_68_add_4_9/S1
-PWM1/counter_68_add_4_9/CO
-CIC1/add_3_1/S0
-CIC1/add_3_1/CI
-CIC1/add_3_59/S1
-CIC1/add_3_59/CO
-CIC1/add_4_2/S0
-CIC1/add_4_2/CI
-CIC1/add_4_58/CO
-CIC1/add_5_2/S0
-CIC1/add_5_2/CI
-CIC1/add_5_58/CO
-CIC1/add_6_2/S0
-CIC1/add_6_2/CI
-CIC1/add_6_58/CO
-CIC1/add_7_2/S0
-CIC1/add_7_2/CI
-CIC1/add_7_58/CO
-CIC1/sub_38_add_2_1/S0
-CIC1/sub_38_add_2_1/CI
-CIC1/sub_38_add_2_59/S1
-CIC1/sub_38_add_2_59/CO
-CIC1/sub_36_add_2_1/S0
-CIC1/sub_36_add_2_1/CI
-CIC1/sub_36_add_2_59/S1
-CIC1/sub_36_add_2_59/CO
-CIC1/sub_37_add_2_1/S0
-CIC1/sub_37_add_2_1/CI
-CIC1/sub_37_add_2_59/S1
-CIC1/sub_37_add_2_59/CO
-CIC1/sub_40_add_2_1/S1
-CIC1/sub_40_add_2_1/S0
-CIC1/sub_40_add_2_1/CI
-CIC1/sub_40_add_2_3/S1
-CIC1/sub_40_add_2_3/S0
-CIC1/sub_40_add_2_5/S1
-CIC1/sub_40_add_2_5/S0
-CIC1/sub_40_add_2_7/S1
-CIC1/sub_40_add_2_7/S0
-CIC1/sub_40_add_2_9/S1
-CIC1/sub_40_add_2_9/S0
-CIC1/sub_40_add_2_11/S1
-CIC1/sub_40_add_2_11/S0
-CIC1/sub_40_add_2_13/S1
-CIC1/sub_40_add_2_13/S0
-CIC1/sub_40_add_2_15/S1
-CIC1/sub_40_add_2_15/S0
-CIC1/sub_40_add_2_17/S1
-CIC1/sub_40_add_2_17/S0
-CIC1/sub_40_add_2_19/S1
-CIC1/sub_40_add_2_19/S0
-CIC1/sub_40_add_2_21/S1
-CIC1/sub_40_add_2_21/S0
-CIC1/sub_40_add_2_23/S1
-CIC1/sub_40_add_2_23/S0
-CIC1/sub_40_add_2_25/S1
-CIC1/sub_40_add_2_25/S0
-CIC1/sub_40_add_2_27/S1
-CIC1/sub_40_add_2_27/S0
-CIC1/sub_40_add_2_29/S1
-CIC1/sub_40_add_2_29/S0
-CIC1/sub_40_add_2_31/S1
-CIC1/sub_40_add_2_31/S0
-CIC1/sub_40_add_2_33/S1
-CIC1/sub_40_add_2_33/S0
-CIC1/sub_40_add_2_35/S1
-CIC1/sub_40_add_2_35/S0
-CIC1/sub_40_add_2_37/S1
-CIC1/sub_40_add_2_37/S0
-CIC1/sub_40_add_2_39/S1
-CIC1/sub_40_add_2_39/S0
-CIC1/sub_40_add_2_41/S1
-CIC1/sub_40_add_2_41/S0
-CIC1/sub_40_add_2_43/S1
-CIC1/sub_40_add_2_43/S0
-CIC1/sub_40_add_2_45/S1
-CIC1/sub_40_add_2_45/S0
-CIC1/sub_40_add_2_47/S1
-CIC1/sub_40_add_2_47/S0
-CIC1/sub_40_add_2_49/S1
-CIC1/sub_40_add_2_49/S0
-CIC1/sub_40_add_2_51/S0
-CIC1/sub_40_add_2_59/S1
-CIC1/sub_40_add_2_59/CO
-CIC1/sub_39_add_2_1/S0
-CIC1/sub_39_add_2_1/CI
-CIC1/sub_39_add_2_59/S1
-CIC1/sub_39_add_2_59/CO
-CIC1/count_66_67_add_4_1/S0
-CIC1/count_66_67_add_4_1/CI
-CIC1/count_66_67_add_4_11/S1
-CIC1/count_66_67_add_4_11/CO
-ncoGen/phase_accum_63__I_0_12_43/S1
-ncoGen/phase_accum_63__I_0_12_43/CO
-ncoGen/phase_accum_63__I_0_12_1/S0
-ncoGen/phase_accum_63__I_0_12_1/CI
+PWM1/add_5_1/S0
+PWM1/add_5_1/CI
+PWM1/counter_41_add_4_1/S0
+PWM1/counter_41_add_4_1/CI
+PWM1/counter_41_add_4_9/S1
+PWM1/counter_41_add_4_9/CO
+nco/phase_accum_63__I_0_12_1/S0
+nco/phase_accum_63__I_0_12_1/CI
+nco/phase_accum_63__I_0_12_63/S1
+nco/phase_accum_63__I_0_12_63/CO
 [ END CLIPPED ]
-[ START OSC ]
-osc_clk 133.00
-[ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Sun Dec 02 20:16:39 2018
+# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Wed Dec 05 22:13:28 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MYLED[7]" SITE "107" ;
@@ -123,11 +31,15 @@ LOCATE COMP "MYLED[3]" SITE "100" ;
 LOCATE COMP "MYLED[2]" SITE "99" ;
 LOCATE COMP "MYLED[1]" SITE "98" ;
 LOCATE COMP "MYLED[0]" SITE "97" ;
+LOCATE COMP "XOut" SITE "58" ;
 LOCATE COMP "DiffOut" SITE "127" ;
 LOCATE COMP "PWMOut" SITE "109" ;
 LOCATE COMP "sinGen" SITE "142" ;
+LOCATE COMP "sin_out" SITE "54" ;
 LOCATE COMP "CIC_out_clk" SITE "125" ;
+LOCATE COMP "XIn" SITE "57" ;
 LOCATE COMP "RFIn" SITE "133" ;
-FREQUENCY NET "osc_clk" 133.000000 MHz ;
+FREQUENCY NET "osc_clk" 136.000000 MHz ;
+FREQUENCY NET "XIn_c" 8.000000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

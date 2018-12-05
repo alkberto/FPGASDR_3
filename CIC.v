@@ -1,5 +1,7 @@
-
-
+// https://www.embedded.com/design/configurable-systems/4006446/Understanding-cascaded-integrator-comb-filters
+// https://github.com/ericgineer/CIC/blob/master/CIC.v
+// https://westcoastdsp.wordpress.com/tag/cic-filter/
+// https://www.dsprelated.com/thread/907/cic-filter
 
 module CIC #(parameter width = 64)
 			(input wire               clk,

@@ -1,75 +1,82 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  1019 of 7209 (14.135%)
-I/O cells:      31
+Register bits:  103 of 7209 (1.429%)
+I/O cells:      34
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       357          100.0
-                            FD1P3AX       604          100.0
-                            FD1S3AX       402          100.0
+                              CCU2D        48          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX         9          100.0
+                            FD1P3DX         8          100.0
+                            FD1S3AX        74          100.0
                             FD1S3AY         2          100.0
                             FD1S3IX        10          100.0
-                            FD1S3JX         1          100.0
                                 GSR         1          100.0
-                                 IB         1          100.0
-                               LUT4        36          100.0
-                                 OB        30          100.0
-                               OSCH         1          100.0
+                                 IB         2          100.0
+                               LUT4        28          100.0
+                                 OB        32          100.0
                               PFUMX         1          100.0
+                          ROM256X1A         8          100.0
 SUB MODULES
                       CIC(width=58)         1
                               Mixer         1
+                                PLL         1
                                 PWM         1
+                             SinCos         1
                             nco_sig         1
-                         nco_sig_U0         1
-                              TOTAL      1451
+                              TOTAL       230
 ----------------------------------------------------------------------
 Report for cell nco_sig.v1
-Instance Path : ncoGen
+Instance Path : nco
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        22            6.2
-                            FD1S3AX        42           10.4
-                               LUT4         1            2.8
-                              TOTAL        65
-----------------------------------------------------------------------
-Report for cell CIC(width=58).v1
-Instance Path : CIC1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D       302           84.6
-                            FD1P3AX       596           98.7
-                            FD1S3AX       302           75.1
-                            FD1S3IX        10          100.0
-                            FD1S3JX         1          100.0
-                               LUT4        12           33.3
-                              TOTAL      1223
-----------------------------------------------------------------------
-Report for cell PWM.v1
-Instance Path : PWM1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        10            2.8
-                            FD1P3AX         8            1.3
-                            FD1S3AX         9            2.2
-                               LUT4        17           47.2
-                              PFUMX         1          100.0
-                              TOTAL        45
+                              CCU2D        32           66.7
+                            FD1S3AX        62           83.8
+                               LUT4         1            3.6
+                              TOTAL        95
 ----------------------------------------------------------------------
 Report for cell Mixer.v1
 Instance Path : Mixer1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1S3AX         4            1.0
+                            FD1S3AX         2            2.7
                             FD1S3AY         2          100.0
-                               LUT4         3            8.3
-                              TOTAL         9
+                               LUT4         3           10.7
+                              TOTAL         7
 ----------------------------------------------------------------------
-Report for cell nco_sig_U0.v1
-Instance Path : nco
+Report for cell PWM.v1
+Instance Path : PWM1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        23            6.4
-                            FD1S3AX        45           11.2
-                               LUT4         3            8.3
-                              TOTAL        71
+                              CCU2D        10           20.8
+                            FD1P3AX         8           88.9
+                            FD1S3AX         9           12.2
+                               LUT4        17           60.7
+                              PFUMX         1          100.0
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell SinCos.v1
+Instance Path : SinCos1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         8          100.0
+                          ROM256X1A         8          100.0
+                              TOTAL        16
+----------------------------------------------------------------------
+Report for cell CIC(width=58).v1
+Instance Path : CIC1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           12.5
+                            FD1P3AX         1           11.1
+                            FD1S3AX         1            1.4
+                            FD1S3IX        10          100.0
+                               LUT4         7           25.0
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell PLL.v1
+Instance Path : PLL1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

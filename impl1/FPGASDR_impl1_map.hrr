@@ -3,59 +3,64 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     519.00        100.0
-                                  LUT4	      38.00        100.0
-                                 IOBUF	         31        100.0
-                                PFUREG	       1019        100.0
-                                RIPPLE	        357        100.0
+                                  SLIC	     119.00        100.0
+                                  LUT4	     130.00        100.0
+                                 IOBUF	         34        100.0
+                                PFUREG	        103        100.0
+                                RIPPLE	         48        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            nco_sig_U0	          1         4.5
-                               nco_sig	          1         4.2
-                                   PWM	          1         2.7
-                                 Mixer	          1         0.4
-                         CIC(width=58)	          1        88.1
+                               nco_sig	          1        27.3
+                                SinCos	          1        44.1
+                                   PWM	          1        15.1
+                                   PLL	          1         0.0
+                                 Mixer	          1         1.7
+                         CIC(width=58)	          1         8.0
 ---------------------------------------------------
 Report for cell nco_sig
-   Instance path: top/ncoGen
+   Instance path: top/nco
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      21.58         4.2
-                                  LUT4	       1.00         2.6
-                                PFUREG	         42         4.1
-                                RIPPLE	         22         6.2
----------------------------------------------------
-Report for cell CIC(width=58)
-   Instance path: top/CIC1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	     457.00        88.1
-                                  LUT4	      12.00        31.6
-                                PFUREG	        909        89.2
-                                RIPPLE	        302        84.6
----------------------------------------------------
-Report for cell PWM
-   Instance path: top/PWM1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      14.08         2.7
-                                  LUT4	      17.00        44.7
-                                PFUREG	         17         1.7
-                                RIPPLE	         10         2.8
+                                  SLIC	      32.50        27.3
+                                  LUT4	       1.00         0.8
+                                PFUREG	         62        60.2
+                                RIPPLE	         32        66.7
 ---------------------------------------------------
 Report for cell Mixer
    Instance path: top/Mixer1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       2.25         0.4
-                                  LUT4	       3.00         7.9
-                                PFUREG	          6         0.6
+                                  SLIC	       2.00         1.7
+                                  LUT4	       3.00         2.3
+                                PFUREG	          4         3.9
 ---------------------------------------------------
-Report for cell nco_sig_U0
-   Instance path: top/nco
+Report for cell PWM
+   Instance path: top/PWM1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.42         4.5
-                                  LUT4	       3.00         7.9
-                                PFUREG	         45         4.4
-                                RIPPLE	         23         6.4
+                                  SLIC	      18.00        15.1
+                                  LUT4	      17.00        13.1
+                                PFUREG	         17        16.5
+                                RIPPLE	         10        20.8
+---------------------------------------------------
+Report for cell SinCos
+   Instance path: top/SinCos1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      52.50        44.1
+                                  LUT4	     100.00        76.9
+                                PFUREG	          8         7.8
+---------------------------------------------------
+Report for cell CIC(width=58)
+   Instance path: top/CIC1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.50         8.0
+                                  LUT4	       7.00         5.4
+                                PFUREG	         12        11.7
+                                RIPPLE	          6        12.5
+---------------------------------------------------
+Report for cell PLL
+   Instance path: top/PLL1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
