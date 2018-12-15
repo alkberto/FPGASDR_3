@@ -2,6 +2,7 @@
 // https://github.com/ericgineer/CIC/blob/master/CIC.v
 // https://westcoastdsp.wordpress.com/tag/cic-filter/
 // https://www.dsprelated.com/thread/907/cic-filter
+// http://home.mit.bme.hu/~kollar/papers/cic.pdf
 
 module CIC #(parameter width = 64)
 			(input wire               clk,
@@ -30,6 +31,7 @@ reg signed [width-1:0] d8, d_d8;
 reg signed [width-1:0] d9, d_d9;
 reg signed [width-1:0] d10;
 
+reg signed [width-1:0] d_scaled;
 reg [15:0] count;
 
 reg v_comb;  // Valid signal for comb section running at output rate
@@ -117,8 +119,12 @@ reg d_clk_tmp;
 
 				d10 <= d9 - d_d9;
 				
+		//		d_scaled <= d10 <<< 4;
+		//		d_out <= d_scaled >>> (width - 12);
+
 				d_out <= d10 >>> (width - 8);
-	
+				//d_out[6:0] <= d10[50:44];
+				//d_out[7] <= d10[57];
 			
 			end
 		end

@@ -29,8 +29,8 @@ wire [7:0] MixerOutCos;
 wire [15:0] decimation_ratio = 16'd 1024;
 wire [7:0] CIC_out;
 wire [63:0] phase_accum;
-wire [7:0] Sine;
-wire [7:0] Cosine;
+wire [7:0] LOSine;
+wire [7:0] LOCosine;
 
 // wire CIC_out_clk;
 
@@ -59,7 +59,7 @@ wire [7:0] Cosine;
 
 
 
- assign phase_inc_carr =    64'h C56106EA3BC; //1E1E1E1E1DBDFC0; //138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+ assign phase_inc_carr =    64'h 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  assign phase_inc_carrGen = 64'h 1E25D3E862E4518; //E8943073C00000;
 assign reset = 1'b0;
 
@@ -77,8 +77,8 @@ SinCos SinCos1 (
 .ClkEn (1'b 1),
 .Reset (1'b 0),
 .Theta (phase_accum[63:56]),
-.Sine (Sine),
-.Cosine (Cosine)
+.Sine (LOSine),
+.Cosine (LOCosine)
 );
 	
 /*
@@ -95,8 +95,8 @@ nco_sig	 ncoGen (
 Mixer Mixer1 (
 .clk (osc_clk),
 .RFIn (RFIn),
-.sin_in (sin_out),
-.cos_in (cos_out),
+.sin_in (LOSine),
+.cos_in (LOCosine),
 .RFOut (DiffOut),
 .MixerOutSin (MixerOutSin),
 .MixerOutCos (MixerOutCos)
@@ -106,14 +106,15 @@ CIC  #(.width(58)) CIC1 (
 .clk (osc_clk),
 .rst (rst),
 .decimation_ratio (decimation_ratio),
-.d_in (MixerOutCos),
+.d_in (MixerOutSin),
 .d_out (CIC_out),
 .d_clk (CIC_out_clk)
 );  
  
+ 
 PWM PWM1 (
 .clk (osc_clk),
-.DataIn (Sine), //(CIC_out),
+.DataIn (CIC_out), //(CIC_out),
 .PWMOut (PWMOut)
 );
 
@@ -122,7 +123,8 @@ PLL PLL1 (
 );
 
 	  
-assign MYLED[5:0] = MixerOutSin[5:0];
+//assign MYLED[5:0] = MixerOutSin[7:2];
+assign MYLED[5:0] = CIC_out [7:2];
 assign MYLED[7] = sin_out;
 assign MYLED[6] = cos_out;
  

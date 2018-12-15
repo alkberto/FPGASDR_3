@@ -22,7 +22,7 @@ always @(posedge clk)
 	begin
 		counter <= counter + 1'b 1;
 		if (counter == 0) 
-			DataInNoSign <= DataIn +  8'd 127;
+			DataInNoSign <= DataIn +  8'd 128;
 		else
 			DataInNoSign <= DataInNoSign;
 			

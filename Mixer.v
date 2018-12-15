@@ -10,12 +10,12 @@ MixerOutCos
 
 
 input clk;
-input  sin_in;
-input  cos_in;
+input signed [7:0] sin_in;
+input signed [7:0] cos_in;
 input RFIn;
 output RFOut;
-output  reg [7:0] MixerOutSin;
-output  reg [7:0] MixerOutCos;
+output reg signed [7:0] MixerOutSin;
+output reg signed [7:0] MixerOutCos;
 reg  RFInR1 = 1'b1;
 reg  RFInR = 1'b1;
 
@@ -29,26 +29,16 @@ assign RFOut = RFInR;
 always @(posedge clk)
 	begin
 		if (RFInR == 1'b 0)
-			if (sin_in == 1'b 0)
-				MixerOutSin <=  8'b 01111111;
+			begin
+				MixerOutSin <= sin_in;
+				MixerOutCos <= cos_in;
+			end
 			else
-				MixerOutSin <= 8'b 10000001;
-		else
-			if (sin_in == 1'b 0)
-				MixerOutSin <= 8'b 10000001;
-			else
-				MixerOutSin <=  8'b 01111111;	
+				begin
+				MixerOutSin <= -sin_in;
+				MixerOutCos <= -cos_in;				
 				
-		if (RFInR == 1'b 0)
-			if (cos_in == 1'b 0)
-				MixerOutCos <=  8'b 01111111;
-			else
-				MixerOutCos <= 8'b 10000001;
-		else
-			if (cos_in == 1'b 0)
-				MixerOutCos <= 8'b 10000001;	
-			else
-				MixerOutCos <= 8'b 01111111;	
+				end
 	end
 
 

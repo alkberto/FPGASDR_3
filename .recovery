@@ -2,17 +2,17 @@
 <BaliProject version="3.2" title="FPGASDR" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="blinking_led" top="top"/>
+        <Options def_top="uart_tx" top="top"/>
+        <Source name="impl1/source/TestUart.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="impl1/source/top.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
-        </Source>
-        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog">
-            <Options/>
         </Source>
         <Source name="impl1/source/UartRX.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl1/source/TestUart.v" type="Verilog" type_short="Verilog">
+        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="NCO.v" type="Verilog" type_short="Verilog">
@@ -21,16 +21,16 @@
         <Source name="Mixer.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="SinCos.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="CIC.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="PWM.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="PLL.ipx" type="IPX_Module" type_short="IPX">
-            <Options/>
-        </Source>
-        <Source name="SinCos.ipx" type="IPX_Module" type_short="IPX">
+        <Source name="PLL.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">

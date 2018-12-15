@@ -11,10 +11,10 @@
         <Message>
             <ID>1100644</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/user/lattice/FPGASDR/FPGASDR.lpf(14): Semantic error in &quot;IOBUF PORT &quot;DiffIn&quot; IO_TYPE=LVCMOS25 CLAMP=ON HYSTERESIS=NA ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/user/lattice/FPGASDR/FPGASDR.lpf(13): Semantic error in &quot;IOBUF PORT &quot;DiffIn&quot; IO_TYPE=LVCMOS25 CLAMP=ON HYSTERESIS=NA ;&quot;: </Dynamic>
             <Dynamic>DiffIn</Dynamic>
             <Navigation>C:/Users/user/lattice/FPGASDR/FPGASDR.lpf</Navigation>
-            <Navigation>14</Navigation>
+            <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>1166064</ID>
@@ -47,86 +47,6 @@
         <Message>
             <ID>35001781</ID>
             <Severity>Info</Severity>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(25): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>25</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(26): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>26</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(27): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>27</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(28): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>28</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(29): </Dynamic>
-            <Dynamic>uart_tx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>29</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(31): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>31</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(32): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>32</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(33): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>33</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(34): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>34</Navigation>
-        </Message>
-        <Message>
-            <ID>35901199</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(35): </Dynamic>
-            <Dynamic>uart_rx</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
-            <Navigation>35</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -299,10 +219,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(6): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(7): </Dynamic>
             <Dynamic>CIC(width=58)</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
-            <Navigation>6</Navigation>
+            <Navigation>7</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -415,12 +335,6 @@
             <Dynamic>sinGen</Dynamic>
         </Message>
         <Message>
-            <ID>35001748</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>7</Dynamic>
-            <Dynamic>\Mixer1/MixerOutSin</Dynamic>
-        </Message>
-        <Message>
             <ID>35002005</ID>
             <Severity>Warning</Severity>
             <Dynamic>i_Rx_Serial</Dynamic>
@@ -434,7 +348,7 @@
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(52): </Dynamic>
-            <Dynamic>\nco/phase_accum_i1</Dynamic>
+            <Dynamic>\nco/phase_accum_i0</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
             <Navigation>52</Navigation>
         </Message>
