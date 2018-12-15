@@ -119,8 +119,8 @@ reg d_clk_tmp;
 
 				d10 <= d9 - d_d9;
 				
-		//		d_scaled <= d10 <<< 4;
-		//		d_out <= d_scaled >>> (width - 12);
+				d_scaled <= d10;// <<< 4;
+				d_out <= d_scaled >>> (width - 8);
 
 				d_out <= d10 >>> (width - 8);
 				//d_out[6:0] <= d10[50:44];

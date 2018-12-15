@@ -220,7 +220,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(7): </Dynamic>
-            <Dynamic>CIC(width=58)</Dynamic>
+            <Dynamic>CIC(width=68)</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
             <Navigation>7</Navigation>
         </Message>
@@ -259,10 +259,10 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(107): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(114): </Dynamic>
             <Dynamic>rst</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>107</Navigation>
+            <Navigation>114</Navigation>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -345,14 +345,6 @@
             <Dynamic>DiffIn</Dynamic>
         </Message>
         <Message>
-            <ID>35935013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(52): </Dynamic>
-            <Dynamic>\nco/phase_accum_i0</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
-            <Navigation>52</Navigation>
-        </Message>
-        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
@@ -389,6 +381,10 @@
         </Message>
     </Task>
     <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
         <Message>
             <ID>61091062</ID>
             <Severity>Warning</Severity>

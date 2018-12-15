@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec 15 13:16:09 2018
+Sat Dec 15 21:13:40 2018
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -118,12 +118,12 @@ INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_15. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_16. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(7): compiling module CIC(width=58). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(7): compiling module CIC(width=68). VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pll.v(8): compiling module PLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=17,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(107): net rst does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(114): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -163,7 +163,6 @@ WARNING - synthesis: I/O Port sinGen 's net has no driver and is unused.
 
 WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
 WARNING - synthesis: I/O Port DiffIn 's net has no driver and is unused.
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(52): Register \nco/phase_accum_i0 is stuck at Zero. VDB-5013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -182,18 +181,18 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1002 of 7209 (13 % )
-CCU2D => 341
+Number of register bits => 1162 of 7209 (16 % )
+CCU2D => 395
 EHXPLLJ => 1
-FD1P3AX => 604
+FD1P3AX => 704
 FD1P3DX => 8
-FD1S3AX => 377
+FD1S3AX => 435
 FD1S3AY => 2
-FD1S3IX => 10
+FD1S3IX => 12
 FD1S3JX => 1
 GSR => 1
 IB => 2
-LUT4 => 41
+LUT4 => 43
 OB => 32
 PFUMX => 1
 ROM256X1A => 8
@@ -206,33 +205,33 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : osc_clk, loads : 1003
+  Net : osc_clk, loads : 1163
   Net : XIn_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 14
+Number of Clock Enables: 16
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_238, loads : 50
-  Net : CIC1/osc_clk_enable_288, loads : 50
+  Net : CIC1/osc_clk_enable_286, loads : 50
+  Net : CIC1/osc_clk_enable_336, loads : 50
   Net : CIC1/osc_clk_enable_52, loads : 50
-  Net : CIC1/osc_clk_enable_338, loads : 50
-  Net : CIC1/osc_clk_enable_138, loads : 50
-  Net : CIC1/osc_clk_enable_388, loads : 50
-  Net : CIC1/osc_clk_enable_188, loads : 50
-  Net : CIC1/osc_clk_enable_438, loads : 50
-  Net : CIC1/osc_clk_enable_106, loads : 50
-  Net : CIC1/osc_clk_enable_488, loads : 50
+  Net : CIC1/osc_clk_enable_386, loads : 50
+  Net : CIC1/osc_clk_enable_136, loads : 50
+  Net : CIC1/osc_clk_enable_436, loads : 50
+  Net : CIC1/osc_clk_enable_186, loads : 50
+  Net : CIC1/osc_clk_enable_486, loads : 50
+  Net : CIC1/osc_clk_enable_114, loads : 50
+  Net : CIC1/osc_clk_enable_236, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : CIC1/osc_clk_enable_538, loads : 100
-  Net : CIC1/v_comb, loads : 76
-  Net : CIC1/d_clk_tmp_N_2025, loads : 60
-  Net : Mixer1/MixerOutSin_c_7, loads : 51
+  Net : CIC1/osc_clk_enable_636, loads : 100
+  Net : CIC1/osc_clk_enable_586, loads : 100
+  Net : CIC1/osc_clk_enable_536, loads : 100
+  Net : CIC1/d_clk_tmp_N_2345, loads : 88
+  Net : Mixer1/MixerOutSin_c_7, loads : 61
+  Net : CIC1/v_comb, loads : 56
+  Net : CIC1/osc_clk_enable_114, loads : 50
   Net : CIC1/osc_clk_enable_52, loads : 50
-  Net : CIC1/osc_clk_enable_106, loads : 50
-  Net : CIC1/osc_clk_enable_488, loads : 50
-  Net : CIC1/osc_clk_enable_438, loads : 50
-  Net : CIC1/osc_clk_enable_388, loads : 50
-  Net : CIC1/osc_clk_enable_288, loads : 50
+  Net : CIC1/osc_clk_enable_486, loads : 50
+  Net : CIC1/osc_clk_enable_436, loads : 50
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -242,7 +241,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|  104.679 MHz|    27 *
+clk0 [get_nets osc_clk]                 |  200.000 MHz|   95.721 MHz|    32 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -250,8 +249,8 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|  104.679 MHz|    27 *
 1 constraints not met.
 
 
-Peak Memory Usage: 72.543  MB
+Peak Memory Usage: 75.008  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.181  secs
+Elapsed CPU time for LSE flow : 3.635  secs
 --------------------------------------------------------------

@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.jed</File>
-			<FileTime>11/24/18 21:27:22</FileTime>
-			<JedecChecksum>0x6B81</JedecChecksum>
+			<FileTime>12/15/18 13:17:54</FileTime>
+			<JedecChecksum>0x1C38</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

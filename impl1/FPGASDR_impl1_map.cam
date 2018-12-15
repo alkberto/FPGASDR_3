@@ -4,27 +4,27 @@
 VCC_net
 CIC1/add_3_2/S0
 CIC1/add_3_2/CI
-CIC1/add_3_58/CO
+CIC1/add_3_68/CO
 CIC1/add_4_2/S0
 CIC1/add_4_2/CI
-CIC1/add_4_58/CO
+CIC1/add_4_68/CO
 CIC1/add_5_2/S0
 CIC1/add_5_2/CI
-CIC1/add_5_58/CO
+CIC1/add_5_68/CO
 CIC1/add_6_2/S0
 CIC1/add_6_2/CI
-CIC1/add_6_58/CO
+CIC1/add_6_68/CO
 CIC1/add_7_2/S0
 CIC1/add_7_2/CI
-CIC1/add_7_58/CO
+CIC1/add_7_68/CO
 CIC1/sub_38_add_2_1/S0
 CIC1/sub_38_add_2_1/CI
-CIC1/sub_38_add_2_59/S1
-CIC1/sub_38_add_2_59/CO
+CIC1/sub_38_add_2_69/S1
+CIC1/sub_38_add_2_69/CO
 CIC1/sub_36_add_2_1/S0
 CIC1/sub_36_add_2_1/CI
-CIC1/sub_36_add_2_59/S1
-CIC1/sub_36_add_2_59/CO
+CIC1/sub_36_add_2_69/S1
+CIC1/sub_36_add_2_69/CO
 CIC1/sub_40_add_2_1/S1
 CIC1/sub_40_add_2_1/S0
 CIC1/sub_40_add_2_1/CI
@@ -76,37 +76,47 @@ CIC1/sub_40_add_2_47/S1
 CIC1/sub_40_add_2_47/S0
 CIC1/sub_40_add_2_49/S1
 CIC1/sub_40_add_2_49/S0
+CIC1/sub_40_add_2_51/S1
 CIC1/sub_40_add_2_51/S0
+CIC1/sub_40_add_2_53/S1
+CIC1/sub_40_add_2_53/S0
+CIC1/sub_40_add_2_55/S1
+CIC1/sub_40_add_2_55/S0
+CIC1/sub_40_add_2_57/S1
+CIC1/sub_40_add_2_57/S0
 CIC1/sub_40_add_2_59/S1
-CIC1/sub_40_add_2_59/CO
+CIC1/sub_40_add_2_59/S0
+CIC1/sub_40_add_2_61/S0
+CIC1/sub_40_add_2_69/S1
+CIC1/sub_40_add_2_69/CO
 CIC1/sub_39_add_2_1/S0
 CIC1/sub_39_add_2_1/CI
-CIC1/sub_39_add_2_59/S1
-CIC1/sub_39_add_2_59/CO
+CIC1/sub_39_add_2_69/S1
+CIC1/sub_39_add_2_69/CO
 CIC1/sub_37_add_2_1/S0
 CIC1/sub_37_add_2_1/CI
-CIC1/sub_37_add_2_59/S1
-CIC1/sub_37_add_2_59/CO
-CIC1/count_55_56_add_4_1/S0
-CIC1/count_55_56_add_4_1/CI
-CIC1/count_55_56_add_4_11/S1
-CIC1/count_55_56_add_4_11/CO
-PWM1/counter_57_add_4_1/S0
-PWM1/counter_57_add_4_1/CI
-PWM1/counter_57_add_4_9/S1
-PWM1/counter_57_add_4_9/CO
+CIC1/sub_37_add_2_69/S1
+CIC1/sub_37_add_2_69/CO
+CIC1/count_53_54_add_4_1/S0
+CIC1/count_53_54_add_4_1/CI
+CIC1/count_53_54_add_4_13/S1
+CIC1/count_53_54_add_4_13/CO
+PWM1/counter_55_add_4_1/S0
+PWM1/counter_55_add_4_1/CI
+PWM1/counter_55_add_4_9/S1
+PWM1/counter_55_add_4_9/CO
 Mixer1/unary_minus_6_add_3_1/S0
 Mixer1/unary_minus_6_add_3_1/CI
 Mixer1/unary_minus_6_add_3_9/S1
 Mixer1/unary_minus_6_add_3_9/CO
 nco/phase_accum_63__I_0_12_1/S0
 nco/phase_accum_63__I_0_12_1/CI
-nco/phase_accum_63__I_0_12_59/S1
-nco/phase_accum_63__I_0_12_59/CO
+nco/phase_accum_63__I_0_12_65/S1
+nco/phase_accum_63__I_0_12_65/CO
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Sat Dec 15 13:16:50 2018
+# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Sat Dec 15 21:13:47 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MYLED[7]" SITE "107" ;
