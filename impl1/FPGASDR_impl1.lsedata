@@ -2,12 +2,13 @@
 
 <clocks>
     <clockitem name = "XIn"  type = "port" />
+    <clockitem name = "CIC_out_clk"  type = "net" />
     <clockitem name = "osc_clk"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 2
+    //  Number of Clocks processed: 3
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
@@ -63,7 +64,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 150
+        Instances in netlist: 287
     -->
 
     <instance  name = "nco/phase_accum_63__I_0_13"  library = "work"  arch = ""  type = "comb">
@@ -103,6 +104,20 @@
 
         <nets>
         <nitem  name = "PLL1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/AND2_t17"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
         </nets>
     </instance>
 
@@ -24069,6 +24084,320 @@
         </nets>
     </instance>
 
+    <instance  name = "HP_IIR1/sub_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
+        <nitem  name = "CIC_out[1]"  />
+        <nitem  name = "CIC_out[0]"  />
+        <nitem  name = "HP_IIR1/XLast[7]"  />
+        <nitem  name = "HP_IIR1/XLast[6]"  />
+        <nitem  name = "HP_IIR1/XLast[5]"  />
+        <nitem  name = "HP_IIR1/XLast[4]"  />
+        <nitem  name = "HP_IIR1/XLast[3]"  />
+        <nitem  name = "HP_IIR1/XLast[2]"  />
+        <nitem  name = "HP_IIR1/XLast[1]"  />
+        <nitem  name = "HP_IIR1/XLast[0]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[8]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[7]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[6]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[5]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[4]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[3]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[2]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[1]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/d_out_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "b[11]"  direction = "in"  />
+        <pitem  name = "b[12]"  direction = "in"  />
+        <pitem  name = "b[13]"  direction = "in"  />
+        <pitem  name = "b[14]"  direction = "in"  />
+        <pitem  name = "b[15]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[15]"  direction = "in"  />
+        <pitem  name = "a[14]"  direction = "in"  />
+        <pitem  name = "a[13]"  direction = "in"  />
+        <pitem  name = "a[12]"  direction = "in"  />
+        <pitem  name = "a[11]"  direction = "in"  />
+        <pitem  name = "a[10]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[15]"  />
+        <nitem  name = "HP_IIR1/MultResult[14]"  />
+        <nitem  name = "HP_IIR1/MultResult[13]"  />
+        <nitem  name = "HP_IIR1/MultResult[12]"  />
+        <nitem  name = "HP_IIR1/MultResult[11]"  />
+        <nitem  name = "HP_IIR1/MultResult[10]"  />
+        <nitem  name = "HP_IIR1/MultResult[9]"  />
+        <nitem  name = "HP_IIR1/MultResult[8]"  />
+        <nitem  name = "HP_IIR1/MultResult[7]"  />
+        <nitem  name = "HP_IIR1/MultResult[6]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[8]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[7]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[6]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[5]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[4]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[3]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[2]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[1]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2356[0]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[7]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[6]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[5]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[4]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[3]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[2]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[1]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/LastOut"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "IIR_out[7]"  />
+        <nitem  name = "IIR_out[6]"  />
+        <nitem  name = "IIR_out[5]"  />
+        <nitem  name = "IIR_out[4]"  />
+        <nitem  name = "IIR_out[3]"  />
+        <nitem  name = "IIR_out[2]"  />
+        <nitem  name = "IIR_out[1]"  />
+        <nitem  name = "IIR_out[0]"  />
+        <nitem  name = "HP_IIR1/LastOut[7]"  />
+        <nitem  name = "HP_IIR1/LastOut[6]"  />
+        <nitem  name = "HP_IIR1/LastOut[5]"  />
+        <nitem  name = "HP_IIR1/LastOut[4]"  />
+        <nitem  name = "HP_IIR1/LastOut[3]"  />
+        <nitem  name = "HP_IIR1/LastOut[2]"  />
+        <nitem  name = "HP_IIR1/LastOut[1]"  />
+        <nitem  name = "HP_IIR1/LastOut[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/iir_out"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "IIR_out[7]"  />
+        <nitem  name = "IIR_out[6]"  />
+        <nitem  name = "IIR_out[5]"  />
+        <nitem  name = "IIR_out[4]"  />
+        <nitem  name = "IIR_out[3]"  />
+        <nitem  name = "IIR_out[2]"  />
+        <nitem  name = "IIR_out[1]"  />
+        <nitem  name = "IIR_out[0]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[7]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[6]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[5]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[4]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[3]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[2]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[1]"  />
+        <nitem  name = "HP_IIR1/d_out_7__N_2348[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/XLast"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
+        <nitem  name = "CIC_out[1]"  />
+        <nitem  name = "CIC_out[0]"  />
+        <nitem  name = "HP_IIR1/XLast[7]"  />
+        <nitem  name = "HP_IIR1/XLast[6]"  />
+        <nitem  name = "HP_IIR1/XLast[5]"  />
+        <nitem  name = "HP_IIR1/XLast[4]"  />
+        <nitem  name = "HP_IIR1/XLast[3]"  />
+        <nitem  name = "HP_IIR1/XLast[2]"  />
+        <nitem  name = "HP_IIR1/XLast[1]"  />
+        <nitem  name = "HP_IIR1/XLast[0]"  />
+        </nets>
+    </instance>
+
     <instance  name = "PWM1/counter_7__I_0_16"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
@@ -24109,14 +24438,14 @@
         <nitem  name = "PWM1/counter[2]"  />
         <nitem  name = "PWM1/counter[1]"  />
         <nitem  name = "PWM1/counter[0]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[7]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[6]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[5]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[4]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[3]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[2]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[1]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[0]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[7]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[6]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[5]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[4]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[3]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[2]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[1]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[0]"  />
         </nets>
     </instance>
 
@@ -24199,7 +24528,7 @@
         <nitem  name = "PWM1/counter[2]"  />
         <nitem  name = "PWM1/counter[1]"  />
         <nitem  name = "PWM1/counter[0]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2372"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2389"  />
         </nets>
     </instance>
 
@@ -24235,22 +24564,22 @@
         <nets>
         <nitem  name = "PWM1/gnd"  />
         <nitem  name = "PWM1/pwr"  />
-        <nitem  name = "MYLED[5]"  />
-        <nitem  name = "MYLED[4]"  />
-        <nitem  name = "MYLED[3]"  />
-        <nitem  name = "MYLED[2]"  />
-        <nitem  name = "MYLED[1]"  />
-        <nitem  name = "MYLED[0]"  />
-        <nitem  name = "CIC_out[1]"  />
-        <nitem  name = "CIC_out[0]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[7]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[6]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[5]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[4]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[3]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[2]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[1]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[0]"  />
+        <nitem  name = "IIR_out[7]"  />
+        <nitem  name = "IIR_out[6]"  />
+        <nitem  name = "IIR_out[5]"  />
+        <nitem  name = "IIR_out[4]"  />
+        <nitem  name = "IIR_out[3]"  />
+        <nitem  name = "IIR_out[2]"  />
+        <nitem  name = "IIR_out[1]"  />
+        <nitem  name = "IIR_out[0]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[7]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[6]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[5]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[4]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[3]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[2]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[1]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[0]"  />
         </nets>
     </instance>
 
@@ -24292,23 +24621,23 @@
         <nitem  name = "PWM1/DataInNoSign[2]"  />
         <nitem  name = "PWM1/DataInNoSign[1]"  />
         <nitem  name = "PWM1/DataInNoSign[0]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2372"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[7]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[6]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[5]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[4]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[3]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[2]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[1]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2364[0]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[7]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[6]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[5]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[4]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[3]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[2]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[1]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[0]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2389"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[7]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[6]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[5]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[4]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[3]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[2]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[1]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2381[0]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[7]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[6]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[5]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[4]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[3]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[2]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[1]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[0]"  />
         </nets>
     </instance>
 
@@ -24352,7 +24681,7 @@
         <nitem  name = "PWM1/DataInNoSign[2]"  />
         <nitem  name = "PWM1/DataInNoSign[1]"  />
         <nitem  name = "PWM1/DataInNoSign[0]"  />
-        <nitem  name = "PWM1/PWMOut_N_2374"  />
+        <nitem  name = "PWM1/PWMOut_N_2391"  />
         </nets>
     </instance>
 
@@ -24363,8 +24692,8 @@
         </pins>
 
         <nets>
-        <nitem  name = "PWM1/PWMOut_N_2374"  />
-        <nitem  name = "PWM1/PWMOut_N_2373"  />
+        <nitem  name = "PWM1/PWMOut_N_2391"  />
+        <nitem  name = "PWM1/PWMOut_N_2390"  />
         </nets>
     </instance>
 
@@ -24416,14 +24745,14 @@
         <nitem  name = "PWM1/DataInNoSign[2]"  />
         <nitem  name = "PWM1/DataInNoSign[1]"  />
         <nitem  name = "PWM1/DataInNoSign[0]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[7]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[6]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[5]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[4]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[3]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[2]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[1]"  />
-        <nitem  name = "PWM1/DataInNoSign_7__N_2356[0]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[7]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[6]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[5]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[4]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[3]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[2]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[1]"  />
+        <nitem  name = "PWM1/DataInNoSign_7__N_2373[0]"  />
         </nets>
     </instance>
 
@@ -24440,7 +24769,7 @@
         <nitem  name = "PWM1/gnd"  />
         <nitem  name = "osc_clk"  />
         <nitem  name = "PWMOut"  />
-        <nitem  name = "PWM1/PWMOut_N_2373"  />
+        <nitem  name = "PWM1/PWMOut_N_2390"  />
         </nets>
     </instance>
 
@@ -24492,14 +24821,14 @@
         <nitem  name = "PWM1/counter[2]"  />
         <nitem  name = "PWM1/counter[1]"  />
         <nitem  name = "PWM1/counter[0]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[7]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[6]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[5]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[4]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[3]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[2]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[1]"  />
-        <nitem  name = "PWM1/counter_7__N_2348[0]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[7]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[6]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[5]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[4]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[3]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[2]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[1]"  />
+        <nitem  name = "PWM1/counter_7__N_2365[0]"  />
         </nets>
     </instance>
 
@@ -24549,8 +24878,1923 @@
         </nets>
     </instance>
 
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/AND2_t14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/AND2_t11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/AND2_t8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_0_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_0_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_1_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_1_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_2_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        <pitem  name = "B"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_2_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_3_n2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/ND2_t0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_3_n0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_31"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_30"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_29"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_28"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_27"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_26"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_25"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_24"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_23"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[0]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_22"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[1]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_21"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[2]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_20"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[3]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_19"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[4]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_18"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[5]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_17"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[6]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "D"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/LastOut[7]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[0]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[1]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[2]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[3]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[4]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Result[5]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[6]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[7]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[8]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[9]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[10]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[11]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[12]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[13]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[14]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/FF_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CK"  direction = "in"  />
+        <pitem  name = "SP"  direction = "in"  />
+        <pitem  name = "CD"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        <pitem  name = "D"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CIC_out_clk"  />
+        <nitem  name = "HP_IIR1/pwr"  />
+        <nitem  name = "HP_IIR1/gnd"  />
+        <nitem  name = "HP_IIR1/MultResult[15]"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_15"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_Cadd_0_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mfco"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_Cadd_2_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_Cadd_4_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_Cadd_6_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_15"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_0_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_0_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_0_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_0_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Cadd_Multiplier_0_1_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_1_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_1_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_1_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_1_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_14"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_14"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_add_1_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/co_Multiplier_0_1_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_15"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_15"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Cadd_t_Multiplier_0_2_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "CI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "B0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "S1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "COUT"  direction = "out"  />
+        <pitem  name = "A1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_14"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_14"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_0_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/t_Multiplier_0_add_2_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "S0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_15"  />
+        <nitem  name = "HP_IIR1/Multiplier1/co_t_Multiplier_0_2_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/s_Multiplier_0_1_15"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/rego_o_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/mfco"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_0_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_0_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_1_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_2_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_2_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_3_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_4_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_8"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_cin_lr_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_0_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_0_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_9"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_4"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_1_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_1_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_12"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_10"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_2_n1"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_5"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_2_n0"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/scuba_vhi_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CO"  direction = "out"  />
+        <pitem  name = "P1"  direction = "out"  />
+        <pitem  name = "P0"  direction = "out"  />
+        <pitem  name = "CI"  direction = "in"  />
+        <pitem  name = "B3"  direction = "in"  />
+        <pitem  name = "A3"  direction = "in"  />
+        <pitem  name = "B2"  direction = "in"  />
+        <pitem  name = "A2"  direction = "in"  />
+        <pitem  name = "A1"  direction = "in"  />
+        <pitem  name = "B0"  direction = "in"  />
+        <pitem  name = "B1"  direction = "in"  />
+        <pitem  name = "A0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "HP_IIR1/Multiplier1/mfco_3"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_14"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_pp_3_13"  />
+        <nitem  name = "HP_IIR1/Multiplier1/mco_11"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_6"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vlo"  />
+        <nitem  name = "HP_IIR1/Multiplier1/regb_b_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/rega_a_7"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_3_n2"  />
+        <nitem  name = "HP_IIR1/Multiplier1/scuba_vhi"  />
+        <nitem  name = "HP_IIR1/Multiplier1/Multiplier_0_mult_6_3_n0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "AND2_t11"  />
+    <instance  name = "AND2_t14"  />
+    <instance  name = "AND2_t17"  />
+    <instance  name = "AND2_t8"  />
     <instance  name = "CIC1"  />
+    <instance  name = "HP_IIR1"  />
     <instance  name = "Mixer1"  />
+    <instance  name = "Multiplier1"  />
+    <instance  name = "Multiplier_0_mult_0_0"  />
+    <instance  name = "Multiplier_0_mult_0_1"  />
+    <instance  name = "Multiplier_0_mult_0_2"  />
+    <instance  name = "Multiplier_0_mult_0_3"  />
+    <instance  name = "Multiplier_0_mult_2_0"  />
+    <instance  name = "Multiplier_0_mult_2_1"  />
+    <instance  name = "Multiplier_0_mult_2_2"  />
+    <instance  name = "Multiplier_0_mult_2_3"  />
+    <instance  name = "Multiplier_0_mult_4_0"  />
+    <instance  name = "Multiplier_0_mult_4_1"  />
+    <instance  name = "Multiplier_0_mult_4_2"  />
+    <instance  name = "Multiplier_0_mult_4_3"  />
+    <instance  name = "Multiplier_0_mult_6_0"  />
+    <instance  name = "Multiplier_0_mult_6_1"  />
+    <instance  name = "Multiplier_0_mult_6_2"  />
+    <instance  name = "Multiplier_0_mult_6_3"  />
+    <instance  name = "ND2_t0"  />
+    <instance  name = "ND2_t1"  />
+    <instance  name = "ND2_t10"  />
+    <instance  name = "ND2_t12"  />
+    <instance  name = "ND2_t13"  />
+    <instance  name = "ND2_t15"  />
+    <instance  name = "ND2_t16"  />
+    <instance  name = "ND2_t2"  />
+    <instance  name = "ND2_t3"  />
+    <instance  name = "ND2_t4"  />
+    <instance  name = "ND2_t5"  />
+    <instance  name = "ND2_t6"  />
+    <instance  name = "ND2_t7"  />
+    <instance  name = "ND2_t9"  />
     <instance  name = "PLL1/PLL1"  />
     <instance  name = "PWM1"  />
     <instance  name = "SinCos1"  />
@@ -24572,7 +26816,7 @@
     <instance  name = "triglut_1_0_8"  />
     <instance  name = "triglut_1_0_9"  />
     <!--
-        REG instances in netlist: 29
+        REG instances in netlist: 32
     -->
 
     <regs>
@@ -24602,18 +26846,23 @@
         <reg  name = "CIC1/d_out"  />
         <reg  name = "CIC1/d_d_tmp"  />
         <reg  name = "CIC1/d1"  />
+        <reg  name = "HP_IIR1/LastOut"  />
+        <reg  name = "HP_IIR1/iir_out"  />
+        <reg  name = "HP_IIR1/XLast"  />
         <reg  name = "PWM1/DataInNoSign"  />
         <reg  name = "PWM1/PWMOut_15"  />
         <reg  name = "PWM1/counter"  />
     </regs>
 
     <!--
-        Views in design "top": 5
+        Views in design "top": 7
     -->
 
     <views>
         <view  name = "CIC(width=68)"  />
+        <view  name = "HP_IIR"  />
         <view  name = "Mixer"  />
+        <view  name = "Multiplier"  />
         <view  name = "PWM"  />
         <view  name = "SinCos"  />
         <view  name = "nco_sig"  />

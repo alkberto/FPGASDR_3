@@ -31,6 +31,7 @@ wire [7:0] CIC_out;
 wire [63:0] phase_accum;
 wire [7:0] LOSine;
 wire [7:0] LOCosine;
+wire [7:0] IIR_out;
 
 // wire CIC_out_clk;
 
@@ -64,7 +65,8 @@ wire [7:0] LOCosine;
 
 // assign phase_inc_carr =    64'h 104376A9DD10437; //1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  //assign phase_inc_carr =    64'h 1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
- assign phase_inc_carr =    64'h 1B1B4294E949F45;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+ //assign phase_inc_carr =    64'h 1B1B4294E949F45;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+assign phase_inc_carr =    64'h 104376A9DD10437;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  
 
 assign phase_inc_carrGen = 64'h 1E25D3E862E4518; //E8943073C00000;
@@ -118,10 +120,15 @@ CIC  #(.width(68)) CIC1 (
 .d_clk (CIC_out_clk)
 );  
  
+HP_IIR HP_IIR1 (.clk (CIC_out_clk),
+.d_in (CIC_out),
+.d_out (IIR_out)
+);
+
  
 PWM PWM1 (
 .clk (osc_clk),
-.DataIn (CIC_out), //(CIC_out),
+.DataIn (IIR_out), //(CIC_out),
 .PWMOut (PWMOut)
 );
 

@@ -1,7 +1,54 @@
 [ START MERGED ]
 [ END MERGED ]
 [ START CLIPPED ]
-VCC_net
+n1018
+HP_IIR1/Multiplier1/Multiplier_0_mult_6_3/CO
+HP_IIR1/Multiplier1/Multiplier_0_mult_0_0/S0
+HP_IIR1/Multiplier1/t_Multiplier_0_add_2_6/S1
+HP_IIR1/Multiplier1/t_Multiplier_0_add_2_6/COUT
+HP_IIR1/Multiplier1/t_Multiplier_0_add_2_2/S0
+HP_IIR1/Multiplier1/Cadd_t_Multiplier_0_2_1/S1
+HP_IIR1/Multiplier1/Cadd_t_Multiplier_0_2_1/S0
+HP_IIR1/Multiplier1/Multiplier_0_add_1_5/COUT
+HP_IIR1/Multiplier1/Cadd_Multiplier_0_1_1/S0
+HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_7/S1
+HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_7/COUT
+HP_IIR1/Multiplier1/Multiplier_0_add_0_2/S0
+HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_1/S1
+HP_IIR1/Multiplier1/Cadd_Multiplier_0_0_1/S0
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_6/S1
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_6/S0
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_4_4/S1
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_4_4/COUT
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_4/S1
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_4/S0
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_2_4/S1
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_2_4/COUT
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_2/S1
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_2/S0
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_0_4/S1
+HP_IIR1/Multiplier1/Multiplier_0_Cadd_0_4/COUT
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_0/S1
+HP_IIR1/Multiplier1/Multiplier_0_cin_lr_add_0/S0
+HP_IIR1/sub_43_add_1_1/S0
+HP_IIR1/sub_43_add_1_1/CI
+HP_IIR1/sub_43_add_1_9/S1
+HP_IIR1/sub_43_add_1_9/CO
+HP_IIR1/add_150_2/S0
+HP_IIR1/add_150_2/CI
+HP_IIR1/add_150_8/CO
+nco/phase_accum_63__I_0_12_65/S1
+nco/phase_accum_63__I_0_12_65/CO
+nco/phase_accum_63__I_0_12_1/S0
+nco/phase_accum_63__I_0_12_1/CI
+PWM1/counter_58_add_4_1/S0
+PWM1/counter_58_add_4_1/CI
+PWM1/counter_58_add_4_9/S1
+PWM1/counter_58_add_4_9/CO
+Mixer1/unary_minus_6_add_3_1/S0
+Mixer1/unary_minus_6_add_3_1/CI
+Mixer1/unary_minus_6_add_3_9/S1
+Mixer1/unary_minus_6_add_3_9/CO
 CIC1/add_3_2/S0
 CIC1/add_3_2/CI
 CIC1/add_3_68/CO
@@ -21,10 +68,6 @@ CIC1/sub_38_add_2_1/S0
 CIC1/sub_38_add_2_1/CI
 CIC1/sub_38_add_2_69/S1
 CIC1/sub_38_add_2_69/CO
-CIC1/sub_36_add_2_1/S0
-CIC1/sub_36_add_2_1/CI
-CIC1/sub_36_add_2_69/S1
-CIC1/sub_36_add_2_69/CO
 CIC1/sub_40_add_2_1/S1
 CIC1/sub_40_add_2_1/S0
 CIC1/sub_40_add_2_1/CI
@@ -89,6 +132,10 @@ CIC1/sub_40_add_2_59/S0
 CIC1/sub_40_add_2_61/S0
 CIC1/sub_40_add_2_69/S1
 CIC1/sub_40_add_2_69/CO
+CIC1/sub_36_add_2_1/S0
+CIC1/sub_36_add_2_1/CI
+CIC1/sub_36_add_2_69/S1
+CIC1/sub_36_add_2_69/CO
 CIC1/sub_39_add_2_1/S0
 CIC1/sub_39_add_2_1/CI
 CIC1/sub_39_add_2_69/S1
@@ -97,26 +144,14 @@ CIC1/sub_37_add_2_1/S0
 CIC1/sub_37_add_2_1/CI
 CIC1/sub_37_add_2_69/S1
 CIC1/sub_37_add_2_69/CO
-CIC1/count_53_54_add_4_1/S0
-CIC1/count_53_54_add_4_1/CI
-CIC1/count_53_54_add_4_13/S1
-CIC1/count_53_54_add_4_13/CO
-PWM1/counter_55_add_4_1/S0
-PWM1/counter_55_add_4_1/CI
-PWM1/counter_55_add_4_9/S1
-PWM1/counter_55_add_4_9/CO
-Mixer1/unary_minus_6_add_3_1/S0
-Mixer1/unary_minus_6_add_3_1/CI
-Mixer1/unary_minus_6_add_3_9/S1
-Mixer1/unary_minus_6_add_3_9/CO
-nco/phase_accum_63__I_0_12_1/S0
-nco/phase_accum_63__I_0_12_1/CI
-nco/phase_accum_63__I_0_12_65/S1
-nco/phase_accum_63__I_0_12_65/CO
+CIC1/count_56_57_add_4_1/S0
+CIC1/count_56_57_add_4_1/CI
+CIC1/count_56_57_add_4_13/S1
+CIC1/count_56_57_add_4_13/CO
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Sat Dec 15 21:13:47 2018
+# map:  version Diamond (64-bit) 3.10.2.115 -- WARNING: Map write only section -- Mon Dec 17 23:03:52 2018
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MYLED[7]" SITE "107" ;

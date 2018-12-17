@@ -1,21 +1,25 @@
+Starting process: module
+
+Starting process: 
+
 SCUBA, Version Diamond (64-bit) 3.10.2.115
 Sat Dec 15 23:31:29 2018
-  
+
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-  
+
 BEGIN SCUBA Module Synthesis
-  
+
     Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n Multiplier -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 8 -widthb 8 -widthp 16 -signed -PL_stages 0 -input_reg -output_reg -clk0 -ce0 -rst0 
     Circuit name     : Multiplier
     Module type      : dspmult_a
     Module Version   : 4.9
     Ports            : 
-    Inputs       : Clock, ClkEn, Aclr, DataA[7:0], DataB[7:0]
-    Outputs      : Result[15:0]
+	Inputs       : Clock, ClkEn, Aclr, DataA[7:0], DataB[7:0]
+	Outputs      : Result[15:0]
     I/O buffer       : not inserted
     EDIF output      : Multiplier.edn
     Verilog output   : Multiplier.v
@@ -27,6 +31,17 @@ BEGIN SCUBA Module Synthesis
     Estimated Resource Usage:
             LUT : 106
             Reg : 32
-  
+
 END   SCUBA Module Synthesis
+
+File: Multiplier.lpc created.
+
+
+End process: completed successfully.
+
+
+Total Warnings:  0
+
+Total Errors:  0
+
 
