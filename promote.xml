@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/user/lattice/FPGASDR/promote.xml" version="Diamond (64-bit) 3.10.2.115" date="Sat Dec 15 14:04:26 2018" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/user/lattice/FPGASDR/promote.xml" version="Diamond (64-bit) 3.10.3.144" date="Tue Apr 09 16:44:11 2019" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35931002" type="Warning" />
   <msg mid="35901401" type="Error" />
   <msg mid="35901209" type="Warning" />
   <msg mid="35901171" type="Error" />
   <msg mid="35901199" type="Warning" />
+  <msg mid="35901138" type="Error" />
 </userSetting>

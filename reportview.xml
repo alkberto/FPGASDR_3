@@ -7,4 +7,10 @@
         <ToolReport id="toolpio" path="" status="2"/>
         <ToolReport id="toolsso" path="" status="2"/>
     </Implement>
+    <Implement name="sim2">
+        <ToolReport id="tooldec" path="" status="0"/>
+        <ToolReport id="toolhle_genhierarchy" path="" status="0"/>
+        <ToolReport id="toolpio" path="" status="0"/>
+        <ToolReport id="toolsso" path="" status="0"/>
+    </Implement>
 </ReportView>

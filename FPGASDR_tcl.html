@@ -170,6 +170,53 @@ prj_run Export -impl impl1
 
 
 
+<A name="pn190116150102"></A><B><U><big>pn190116150102</big></U></B>
+#Start recording tcl command: 1/11/2019 22:20:37
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+C:/Users/user/lattice/TestFFT
+TestFFT
+#Start recording tcl command: 1/16/2019 15:01:00
+#Project Location: C:/Users/user/lattice/TestFFT; Project name: TestFFT
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+prj_run Export -impl impl1
+pgr_project open "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_project save "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project new -name "TestFFT" -impl "impl1" -dev LCMXO2-7000HC-4TG144C -synthesis "lse"
+file copy -force -- "E:/rtl/bimpy.v" "E:/rtl/bitreverse.v" "E:/rtl/butterfly.v" "E:/rtl/convround.v" "E:/rtl/fftmain.v" "C:/Users/user/lattice/TestFFT/impl1/source"
+file copy -force -- "E:/rtl/fftstage.v" "E:/rtl/hwbfly.v" "E:/rtl/ifftmain.v" "E:/rtl/laststage.v" "E:/rtl/longbimpy.v" "C:/Users/user/lattice/TestFFT/impl1/source"
+file copy -force -- "E:/rtl/qtrstage.v" "E:/rtl/windowfn.v" "C:/Users/user/lattice/TestFFT/impl1/source"
+prj_src add "C:/Users/user/lattice/TestFFT/impl1/source/bimpy.v" "C:/Users/user/lattice/TestFFT/impl1/source/bitreverse.v" "C:/Users/user/lattice/TestFFT/impl1/source/butterfly.v" "C:/Users/user/lattice/TestFFT/impl1/source/convround.v" "C:/Users/user/lattice/TestFFT/impl1/source/fftmain.v" "C:/Users/user/lattice/TestFFT/impl1/source/fftstage.v" "C:/Users/user/lattice/TestFFT/impl1/source/hwbfly.v" "C:/Users/user/lattice/TestFFT/impl1/source/ifftmain.v" "C:/Users/user/lattice/TestFFT/impl1/source/laststage.v" "C:/Users/user/lattice/TestFFT/impl1/source/longbimpy.v" "C:/Users/user/lattice/TestFFT/impl1/source/qtrstage.v" "C:/Users/user/lattice/TestFFT/impl1/source/windowfn.v"
+prj_project save
+pgr_project close
+#Stop recording: 1/16/2019 15:01:02
+
+
+
+<A name="pn190409164411"></A><B><U><big>pn190409164411</big></U></B>
+#Start recording tcl command: 4/4/2019 20:10:15
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+prj_run Map -impl impl1 -task MapVHDLSimFile
+prj_run PAR -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 4/9/2019 16:44:11
+
+
+
 <BR>
 <BR>
 <BR>

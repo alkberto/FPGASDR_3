@@ -1,0 +1,512 @@
+# Design Explorer: Shortcut to "C:\Users\user\lattice\FPGASDR\sim3\sim3.aws" design added.
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile C:/Users/user/lattice/FPGASDR/sim2/source/Mixer.v
+# Adding file C:\Users\user\lattice\FPGASDR\sim2\source\Mixer.v ... Done
+addfile C:/Users/user/lattice/FPGASDR/MixerSim.v
+# Adding file C:\Users\user\lattice\FPGASDR\MixerSim.v ... Done
+vlib C:/Users/user/lattice/FPGASDR/sim3/work
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vlog -dbg -work work C:/Users/user/lattice/FPGASDR/sim2/source/Mixer.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: Mixer.
+# $root top modules: Mixer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/Users/user/lattice/FPGASDR/MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module Mixer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MixerSim.
+# $root top modules: MixerSim.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+module MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r MixerSim -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.8 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:40, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+add wave *
+# 7 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:45, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module Mixer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 MixerSim.v : (28, 14): Undeclared identifier: RFIN.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:45, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+# Design: Design sim3 already active.
+# 
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 MixerSim.v : (28, 14): Undeclared identifier: RFIN.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# Design: Design sim3 already active.
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module Mixer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MixerSim.
+# $root top modules: MixerSim.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:47, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 285176220 ps
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:48, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run @200ns
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MixerSim.v : (1, 2): Syntax error. Unexpected token: non-printable: \x91. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Info: VCP2113 Module Mixer found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:50, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+# 1 signal(s) traced.
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MixerSim.v : (1, 2): Syntax error. Unexpected token: non-printable: \x91. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Info: VCP2113 Module Mixer found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MixerSim.v : (1, 10): Syntax error. Unexpected token: timescale[_IDENTIFIER]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Info: VCP2113 Module Mixer found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# Design: Design sim3 already active.
+# 
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MixerSim.
+# $root top modules: MixerSim.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# Design: Design sim3 already active.
+# 
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  17:58, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  18:00, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 619331725 ps
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../sim2/source/Mixer.v $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MixerSim.
+# $root top modules: MixerSim.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_machxo2 -PL pmi_work +access +r MixerSim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  20:14, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  20:17, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# 1 signal(s) traced.
+# KERNEL: stopped at time: 110 ns
+# KERNEL: stopped at time: 210 ns
+# 1 signal(s) traced.
+alog -O2 -sve -msg 5 -sv2k12 -work work $dsn/../sim2/source/Mixer.v $dsn/../MixerSim.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MixerSim.
+# $root top modules: MixerSim.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+run 100 ns
+# KERNEL: stopped at time: 310 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 5 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5527 kB (elbread=1280 elab2=4102 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\user\lattice\FPGASDR\sim3\src\wave.asdb
+#  20:26, mercoledì 26 dicembre 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/user/lattice/FPGASDR/sim3/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Warning: KERNEL_0291 Signal '/MixerSim/MixerOutSin' has already been traced.
+# 0 signal(s) traced.
+# 1 signal(s) traced.

@@ -1,0 +1,12 @@
+synthesis:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Dec 26 17:35:19 2018
+
+
+Command Line:  synthesis -f FPGASDR_sim2_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
+

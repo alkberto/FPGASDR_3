@@ -7,6 +7,13 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
     <Task name="Map">
         <Message>
             <ID>1100644</ID>
@@ -51,10 +58,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): </Dynamic>
             <Dynamic>top</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>2</Navigation>
+            <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -219,10 +226,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(7): </Dynamic>
-            <Dynamic>CIC(width=68)</Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(24): </Dynamic>
+            <Dynamic>CIC(width=74)</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
-            <Navigation>7</Navigation>
+            <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -289,6 +296,15 @@
             <Navigation>1120</Navigation>
         </Message>
         <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/hp_iir.v(32): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/hp_iir.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/user/lattice/fpgasdr/pwm.v(1): </Dynamic>
@@ -315,10 +331,18 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(116): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(119): </Dynamic>
             <Dynamic>rst</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>116</Navigation>
+            <Navigation>119</Navigation>
+        </Message>
+        <Message>
+            <ID>35935034</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(129): </Dynamic>
+            <Dynamic>HP_IIR1</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>129</Navigation>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -399,12 +423,6 @@
             <ID>35002005</ID>
             <Severity>Warning</Severity>
             <Dynamic>DiffIn</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>0</Dynamic>
-            <Dynamic>\HP_IIR1/iir_out_ret1</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>

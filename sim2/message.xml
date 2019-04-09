@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MixerSim</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/mixersim.v(2): </Dynamic>
+            <Dynamic>MixerSim</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/mixersim.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/mixersim.v(28): </Dynamic>
+            <Dynamic>RFIn</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/mixersim.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/fpgasdr/sim2/source/mixer.v(2): </Dynamic>
+            <Dynamic>Mixer</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/sim2/source/mixer.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35001782</ID>
+            <Severity>Error</Severity>
+            <Dynamic>MixerSim</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

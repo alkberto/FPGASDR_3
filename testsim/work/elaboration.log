@@ -1,0 +1,45 @@
+Active-HDL 10.3.3558.6081  2018-12-25 23:22:09
+
+Elaboration top modules:
+Verilog Module                top
+
+
+------------------------------------------------------------------------------------------------
+Verilog Module          | Library     | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------
+top                     | work        |      | 10.3.3558.6081  (Windows) | -dbg
+nco_sig                 | work        |      | 10.3.3558.6081  (Windows) | -dbg
+SinCos                  | work        |      | 10.3.3558.6081  (Windows) | -dbg
+Mixer                   | work        |      | 10.3.3558.6081  (Windows) | -dbg
+CIC                     | work        |      | 10.3.3558.6081  (Windows) | -dbg
+HP_IIR                  | work        |      | 10.3.3558.6081  (Windows) | -dbg
+PWM                     | work        |      | 10.3.3558.6081  (Windows) | -dbg
+PLL                     | work        |      | 10.3.3558.6081  (Windows) | -dbg
+FD1P3DX                 | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+ROM256X1A               | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+Multiplier              | work        |      | 10.3.3558.6081  (Windows) | -dbg
+AND2                    | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+ND2                     | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+FADD2B                  | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+MULT2                   | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+VLO                     | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+VHI                     | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+EHXPLLJ                 | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+UDP                     | Library     | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------
+UDFDL5E_UDP_X           | ovi_machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+Library                 | Comment
+------------------------------------------------------------------------------------------------
+ovi_machxo2             | LATTICE Diamond 3.10, MACHXO2 VERILOG LIBRARY
+work                    | None
+------------------------------------------------------------------------------------------------
+
+
+Simulation Options: vsim +access +r top -PL pmi_work -L ovi_machxo2
+

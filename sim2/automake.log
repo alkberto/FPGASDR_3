@@ -1,0 +1,92 @@
+
+synthesis -f "FPGASDR_sim2_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Dec 26 17:35:19 2018
+
+
+Command Line:  synthesis -f FPGASDR_sim2_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Area
+The -top option is not used.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/user/lattice/FPGASDR (searchpath added)
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/user/lattice/FPGASDR/sim2 (searchpath added)
+-p C:/Users/user/lattice/FPGASDR (searchpath added)
+Verilog design file = C:/Users/user/lattice/FPGASDR/sim2/source/Mixer.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/MixerSim.v
+NGD file = FPGASDR_sim2.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+    <postMsg mid="35001200" type="Warning" dynamic="1" navigation="0" arg0="MixerSim"  />
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/sim2/source/mixer.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/mixersim.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): MixerSim
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/mixersim.v(2): " arg1="MixerSim" arg2="c:/users/user/lattice/fpgasdr/mixersim.v" arg3="2"  />
+    <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/mixersim.v(28): " arg1="RFIn" arg2="c:/users/user/lattice/fpgasdr/mixersim.v" arg3="28"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/sim2/source/mixer.v(2): " arg1="Mixer" arg2="c:/users/user/lattice/fpgasdr/sim2/source/mixer.v" arg3="2"  />
+Last elaborated design is MixerSim()
+    <postMsg mid="35001782" type="Error"   dynamic="1" navigation="0" arg0="MixerSim"  />

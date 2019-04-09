@@ -1,0 +1,461 @@
+<top name = "MixerSim"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "osc_clk_N_800"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "MixerSim">
+
+    <!--
+        Top Level Pins: 34
+    -->
+
+    <pins>
+        <pitem  name = "RFIn"  direction = "in"  />
+        <pitem  name = "LOSine[7]"  direction = "in"  />
+        <pitem  name = "LOSine[6]"  direction = "in"  />
+        <pitem  name = "LOSine[5]"  direction = "in"  />
+        <pitem  name = "LOSine[4]"  direction = "in"  />
+        <pitem  name = "LOSine[3]"  direction = "in"  />
+        <pitem  name = "LOSine[2]"  direction = "in"  />
+        <pitem  name = "LOSine[1]"  direction = "in"  />
+        <pitem  name = "LOSine[0]"  direction = "in"  />
+        <pitem  name = "LOCosine[7]"  direction = "in"  />
+        <pitem  name = "LOCosine[6]"  direction = "in"  />
+        <pitem  name = "LOCosine[5]"  direction = "in"  />
+        <pitem  name = "LOCosine[4]"  direction = "in"  />
+        <pitem  name = "LOCosine[3]"  direction = "in"  />
+        <pitem  name = "LOCosine[2]"  direction = "in"  />
+        <pitem  name = "LOCosine[1]"  direction = "in"  />
+        <pitem  name = "LOCosine[0]"  direction = "in"  />
+        <pitem  name = "DiffOut"  direction = "out"  />
+        <pitem  name = "MixerOutSin[7]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[6]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[5]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[4]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[3]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[2]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[1]"  direction = "out"  />
+        <pitem  name = "MixerOutSin[0]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[7]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[6]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[5]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[4]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[3]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[2]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[1]"  direction = "out"  />
+        <pitem  name = "MixerOutCos[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 11
+    -->
+
+    <instance  name = "Mixer1/RFOut_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "DiffOut"  />
+        <nitem  name = "Mixer1/RFOut_N_826"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/MixerOutSin"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Mixer1/gnd"  />
+        <nitem  name = "osc_clk_N_800"  />
+        <nitem  name = "MixerOutSin[7]"  />
+        <nitem  name = "MixerOutSin[6]"  />
+        <nitem  name = "MixerOutSin[5]"  />
+        <nitem  name = "MixerOutSin[4]"  />
+        <nitem  name = "MixerOutSin[3]"  />
+        <nitem  name = "MixerOutSin[2]"  />
+        <nitem  name = "MixerOutSin[1]"  />
+        <nitem  name = "MixerOutSin[0]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[7]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[6]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[5]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[4]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[3]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[2]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[1]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/RFInR_14"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Mixer1/gnd"  />
+        <nitem  name = "osc_clk_N_800"  />
+        <nitem  name = "DiffOut"  />
+        <nitem  name = "Mixer1/RFInR1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "osc_clk_N_800_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "osc_clk_N_800"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/unary_minus_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[7]"  direction = "in"  />
+        <pitem  name = "i[6]"  direction = "in"  />
+        <pitem  name = "i[5]"  direction = "in"  />
+        <pitem  name = "i[4]"  direction = "in"  />
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LOSine[7]"  />
+        <nitem  name = "LOSine[6]"  />
+        <nitem  name = "LOSine[5]"  />
+        <nitem  name = "LOSine[4]"  />
+        <nitem  name = "LOSine[3]"  />
+        <nitem  name = "LOSine[2]"  />
+        <nitem  name = "LOSine[1]"  />
+        <nitem  name = "LOSine[0]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[7]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[6]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[5]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[4]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[3]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[2]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[1]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/unary_minus_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[7]"  direction = "in"  />
+        <pitem  name = "i[6]"  direction = "in"  />
+        <pitem  name = "i[5]"  direction = "in"  />
+        <pitem  name = "i[4]"  direction = "in"  />
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LOCosine[7]"  />
+        <nitem  name = "LOCosine[6]"  />
+        <nitem  name = "LOCosine[5]"  />
+        <nitem  name = "LOCosine[4]"  />
+        <nitem  name = "LOCosine[3]"  />
+        <nitem  name = "LOCosine[2]"  />
+        <nitem  name = "LOCosine[1]"  />
+        <nitem  name = "LOCosine[0]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[7]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[6]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[5]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[4]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[3]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[2]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[1]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/MixerOutSin_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LOSine[7]"  />
+        <nitem  name = "LOSine[6]"  />
+        <nitem  name = "LOSine[5]"  />
+        <nitem  name = "LOSine[4]"  />
+        <nitem  name = "LOSine[3]"  />
+        <nitem  name = "LOSine[2]"  />
+        <nitem  name = "LOSine[1]"  />
+        <nitem  name = "LOSine[0]"  />
+        <nitem  name = "Mixer1/RFOut_N_826"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[7]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[6]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[5]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[4]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[3]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[2]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[1]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_817[0]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[7]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[6]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[5]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[4]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[3]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[2]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[1]"  />
+        <nitem  name = "Mixer1/MixerOutSin_7__N_801[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/MixerOutCos_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "LOCosine[7]"  />
+        <nitem  name = "LOCosine[6]"  />
+        <nitem  name = "LOCosine[5]"  />
+        <nitem  name = "LOCosine[4]"  />
+        <nitem  name = "LOCosine[3]"  />
+        <nitem  name = "LOCosine[2]"  />
+        <nitem  name = "LOCosine[1]"  />
+        <nitem  name = "LOCosine[0]"  />
+        <nitem  name = "Mixer1/RFOut_N_826"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[7]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[6]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[5]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[4]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[3]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[2]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[1]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_827[0]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[7]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[6]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[5]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[4]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[3]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[2]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[1]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/MixerOutCos"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Mixer1/gnd"  />
+        <nitem  name = "osc_clk_N_800"  />
+        <nitem  name = "MixerOutCos[7]"  />
+        <nitem  name = "MixerOutCos[6]"  />
+        <nitem  name = "MixerOutCos[5]"  />
+        <nitem  name = "MixerOutCos[4]"  />
+        <nitem  name = "MixerOutCos[3]"  />
+        <nitem  name = "MixerOutCos[2]"  />
+        <nitem  name = "MixerOutCos[1]"  />
+        <nitem  name = "MixerOutCos[0]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[7]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[6]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[5]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[4]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[3]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[2]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[1]"  />
+        <nitem  name = "Mixer1/MixerOutCos_7__N_809[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1/RFInR1_13"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Mixer1/gnd"  />
+        <nitem  name = "osc_clk_N_800"  />
+        <nitem  name = "RFIn"  />
+        <nitem  name = "Mixer1/RFInR1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mixer1"  />
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "Mixer1/MixerOutSin"  />
+        <reg  name = "Mixer1/RFInR_14"  />
+        <reg  name = "Mixer1/MixerOutCos"  />
+        <reg  name = "Mixer1/RFInR1_13"  />
+    </regs>
+
+    <!--
+        Views in design "MixerSim": 1
+    -->
+
+    <views>
+        <view  name = "Mixer"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

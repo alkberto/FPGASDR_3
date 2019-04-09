@@ -1,0 +1,1 @@
+-o C:/Users/user/lattice/FPGASDR/testsim/compile -lc C:/Users/user/lattice/FPGASDR/testsim/library.cfg -fl C:/Users/user/lattice/FPGASDR/testsim/projlib.cfg -pli "C:/lscc/diamond/3.10_x64/active-hdl/bin/systf.dll" -epr C:/Users/user/lattice/FPGASDR/testsim/compile/testsim.epr -dbg -work work C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v 

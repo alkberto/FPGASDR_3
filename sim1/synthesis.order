@@ -1,0 +1,12 @@
+i<>.\..\impl1\source\TestUart.v
+i<>.\..\PLL.v
+i<>.\..\PWM.v
+i<>.\..\Multiplier.v
+i<>.\..\HP_IIR.v
+i<>.\..\CIC.v
+i<>.\..\Mixer.v
+i<>.\..\SinCos.v
+i<>.\..\NCO.v
+i<>.\..\impl1\source\top.v
+i<>.\..\impl1\source\UartRX.v
+i<>.\..\impl1\source\UartTX.v

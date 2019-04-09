@@ -1,13 +1,13 @@
 
 synthesis -f "FPGASDR_impl1_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.10.2.115
+synthesis:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Dec 17 23:03:43 2018
+Wed Apr 10 00:10:54 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -104,7 +104,7 @@ Analyzing Verilog file c:/users/user/lattice/fpgasdr/multiplier.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_iir.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(2): " arg1="top" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): " arg1="top" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="3"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(18): " arg1="nco_sig" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="18"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/sincos.v(8): " arg1="SinCos" arg2="c:/users/user/lattice/fpgasdr/sincos.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): " arg1="FD1P3DX" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="187"  />
@@ -125,7 +125,7 @@ Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_15" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_16" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/mixer.v(2): " arg1="Mixer" arg2="c:/users/user/lattice/fpgasdr/mixer.v" arg3="2"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/cic.v(7): " arg1="CIC(width=68)" arg2="c:/users/user/lattice/fpgasdr/cic.v" arg3="7"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/cic.v(24): " arg1="CIC(width=74)" arg2="c:/users/user/lattice/fpgasdr/cic.v" arg3="24"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/hp_iir.v(5): " arg1="HP_IIR" arg2="c:/users/user/lattice/fpgasdr/hp_iir.v" arg3="5"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/multiplier.v(8): " arg1="Multiplier" arg2="c:/users/user/lattice/fpgasdr/multiplier.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): " arg1="AND2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="43"  />
@@ -134,10 +134,11 @@ Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/user/lattice/fpgasdr/hp_iir.v(32): " arg1="16" arg2="8" arg3="c:/users/user/lattice/fpgasdr/hp_iir.v" arg4="32"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/pwm.v(1): " arg1="PWM" arg2="c:/users/user/lattice/fpgasdr/pwm.v" arg3="1"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/pll.v(8): " arg1="PLL" arg2="c:/users/user/lattice/fpgasdr/pll.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKFB_DIV=17,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=3,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
-    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(116): " arg1="rst" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="116"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(119): " arg1="rst" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="119"  />
 Last elaborated design is top()
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -146,6 +147,7 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
+    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(129): " arg1="HP_IIR1" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="129"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="i_Rx_Serial"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="o_Tx_Serial"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="o_Rx_DV"  />
@@ -176,121 +178,9 @@ Top-level module name = top.
 
 
 
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-
-The number of registers created due to operator pipelining is 10.
-
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="i_Rx_Serial"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="DiffIn"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\HP_IIR1/iir_out_ret1"  />
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_24.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_30 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_26.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_28 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_31 is a one-to-one match with \HP_IIR1/Multiplier1/FF_30.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_29 is a one-to-one match with \HP_IIR1/Multiplier1/FF_28.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_27 is a one-to-one match with \HP_IIR1/Multiplier1/FF_29.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_26 is a one-to-one match with \HP_IIR1/Multiplier1/FF_27.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_25 is a one-to-one match with \HP_IIR1/Multiplier1/FF_31.
-Duplicate register/latch removal. \HP_IIR1/Multiplier1/FF_24 is a one-to-one match with \HP_IIR1/Multiplier1/FF_25.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -310,28 +200,24 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
 
 Design Results:
-   1774 blocks expanded
+   1996 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1218 of 7209 (16 % )
-AND2 => 3
-CCU2D => 404
+Number of register bits => 1255 of 7209 (17 % )
+CCU2D => 635
 EHXPLLJ => 1
-FADD2B => 25
-FD1P3AX => 704
-FD1P3DX => 32
-FD1S3AX => 467
+FD1P3AX => 764
+FD1P3DX => 8
+FD1S3AX => 466
 FD1S3AY => 2
-FD1S3IX => 12
+FD1S3IX => 14
 FD1S3JX => 1
 GSR => 1
 IB => 2
-LUT4 => 46
-MULT2 => 16
-ND2 => 14
+LUT4 => 58
 OB => 32
 PFUMX => 1
 ROM256X1A => 8
@@ -343,35 +229,34 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
-  Net : osc_clk, loads : 1163
-  Net : CIC1/CIC_out_clk_c, loads : 57
+Number of Clocks: 2
+  Net : osc_clk, loads : 1256
   Net : XIn_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 16
+Number of Clock Enables: 17
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_59, loads : 62
-  Net : CIC1/osc_clk_enable_348, loads : 50
-  Net : CIC1/osc_clk_enable_398, loads : 50
-  Net : CIC1/osc_clk_enable_448, loads : 50
-  Net : CIC1/osc_clk_enable_148, loads : 50
-  Net : CIC1/osc_clk_enable_498, loads : 50
-  Net : CIC1/osc_clk_enable_248, loads : 50
-  Net : CIC1/osc_clk_enable_548, loads : 50
-  Net : CIC1/osc_clk_enable_98, loads : 50
-  Net : CIC1/osc_clk_enable_598, loads : 50
+  Net : CIC1/osc_clk_enable_375, loads : 50
+  Net : CIC1/osc_clk_enable_52, loads : 50
+  Net : CIC1/osc_clk_enable_119, loads : 50
+  Net : CIC1/osc_clk_enable_725, loads : 50
+  Net : CIC1/osc_clk_enable_425, loads : 50
+  Net : CIC1/osc_clk_enable_159, loads : 50
+  Net : CIC1/osc_clk_enable_475, loads : 50
+  Net : CIC1/osc_clk_enable_275, loads : 50
+  Net : CIC1/osc_clk_enable_525, loads : 50
+  Net : CIC1/osc_clk_enable_175, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : CIC1/osc_clk_enable_655, loads : 100
-  Net : CIC1/osc_clk_enable_298, loads : 100
-  Net : CIC1/osc_clk_enable_198, loads : 100
-  Net : CIC1/d_clk_tmp_N_2345, loads : 64
-  Net : CIC1/osc_clk_enable_59, loads : 62
-  Net : Mixer1/MixerOutSin_c_7, loads : 61
-  Net : CIC1/v_comb, loads : 56
-  Net : CIC1/osc_clk_enable_98, loads : 50
-  Net : CIC1/osc_clk_enable_598, loads : 50
-  Net : CIC1/osc_clk_enable_548, loads : 50
+  Net : Mixer1/MixerOutSin_c_7, loads : 105
+  Net : CIC1/osc_clk_enable_675, loads : 100
+  Net : CIC1/osc_clk_enable_625, loads : 100
+  Net : CIC1/osc_clk_enable_575, loads : 100
+  Net : CIC1/osc_clk_enable_325, loads : 100
+  Net : CIC1/osc_clk_enable_225, loads : 100
+  Net : CIC1/v_comb, loads : 64
+  Net : CIC1/osc_clk_enable_52, loads : 50
+  Net : CIC1/osc_clk_enable_119, loads : 50
+  Net : CIC1/osc_clk_enable_159, loads : 50
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -381,25 +266,22 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets CIC_out_clk_c]           |  200.000 MHz|   66.041 MHz|    10 *
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|   95.721 MHz|    32 *
+clk0 [get_nets osc_clk]                 |  200.000 MHz|   69.334 MHz|    40 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-2 constraints not met.
+1 constraints not met.
 
 
-Peak Memory Usage: 78.879  MB
+Peak Memory Usage: 79.379  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.867  secs
+Elapsed CPU time for LSE flow : 4.165  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGASDR_impl1.ngd" -o "FPGASDR_impl1_map.ncd" -pr "FPGASDR_impl1.prf" -mp "FPGASDR_impl1.mrp" -lpf "C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.lpf" -lpf "C:/Users/user/lattice/FPGASDR/FPGASDR.lpf" -c 0            
-map:  version Diamond (64-bit) 3.10.2.115
+map:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -437,17 +319,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:   1218 out of  7209 (17%)
-      PFU registers:         1218 out of  6864 (18%)
+   Number of registers:   1255 out of  7209 (17%)
+      PFU registers:         1255 out of  6864 (18%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:       667 out of  3432 (19%)
-      SLICEs as Logic/ROM:    667 out of  3432 (19%)
+   Number of SLICEs:       725 out of  3432 (21%)
+      SLICEs as Logic/ROM:    725 out of  3432 (21%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        445 out of  3432 (13%)
-   Number of LUT4s:        1057 out of  6864 (15%)
-      Number used as logic LUTs:        167
+      SLICEs as Carry:        635 out of  3432 (19%)
+   Number of LUT4s:        1429 out of  6864 (21%)
+      Number used as logic LUTs:        159
       Number used as distributed RAM:     0
-      Number used as ripple logic:      890
+      Number used as ripple logic:      1270
       Number used as shift registers:     0
    Number of PIO sites used: 35 + 4(JTAG) out of 115 (34%)
       Number of PIO sites used for single ended IOs: 37
@@ -474,42 +356,43 @@ Design Summary:
    Notes:-
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  3
-     Net osc_clk: 593 loads, 593 rising, 0 falling (Driver: PLL1/PLLInst_0 )
-     Net CIC_out_clk_c: 28 loads, 28 rising, 0 falling (Driver: CIC1/d_clk_88 )
+   Number of clocks:  2
+     Net osc_clk: 653 loads, 653 rising, 0 falling (Driver: PLL1/PLLInst_0 )
      Net XIn_c: 1 loads, 1 rising, 0 falling (Driver: PIO XIn )
-   Number of Clock Enables:  16
-     Net CIC1/osc_clk_enable_59: 24 loads, 24 LSLICEs
-     Net CIC1/osc_clk_enable_98: 25 loads, 25 LSLICEs
-     Net CIC1/v_comb: 14 loads, 14 LSLICEs
-     Net CIC1/osc_clk_enable_655: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_598: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_548: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_498: 27 loads, 27 LSLICEs
-     Net CIC1/osc_clk_enable_448: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_398: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_348: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_298: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_148: 25 loads, 25 LSLICEs
-     Net CIC1/osc_clk_enable_198: 26 loads, 26 LSLICEs
-     Net CIC1/d_clk_tmp_N_2345: 11 loads, 11 LSLICEs
-     Net CIC1/osc_clk_enable_248: 25 loads, 25 LSLICEs
-     Net PWM1/osc_clk_enable_609: 5 loads, 5 LSLICEs
-   Number of LSRs:  2
-     Net CIC1/osc_clk_enable_59: 2 loads, 2 LSLICEs
-     Net CIC1/d_clk_tmp_N_2345: 6 loads, 6 LSLICEs
+   Number of Clock Enables:  17
+     Net PWM1/osc_clk_enable_732: 4 loads, 4 LSLICEs
+     Net CIC1/osc_clk_enable_52: 28 loads, 28 LSLICEs
+     Net CIC1/osc_clk_enable_119: 17 loads, 17 LSLICEs
+     Net CIC1/v_comb: 17 loads, 17 LSLICEs
+     Net CIC1/osc_clk_enable_159: 20 loads, 20 LSLICEs
+     Net CIC1/osc_clk_enable_725: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_675: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_625: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_575: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_525: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_475: 27 loads, 27 LSLICEs
+     Net CIC1/osc_clk_enable_375: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_325: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_275: 26 loads, 26 LSLICEs
+     Net CIC1/osc_clk_enable_225: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_175: 25 loads, 25 LSLICEs
+     Net CIC1/osc_clk_enable_425: 26 loads, 26 LSLICEs
+   Number of LSRs:  3
+     Net CIC1/osc_clk_enable_119: 2 loads, 2 LSLICEs
+     Net CIC1/osc_clk_enable_159: 5 loads, 5 LSLICEs
+     Net CIC1/d_clk_tmp_N_2537: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net MixerOutSin_c_7: 106 loads
      Net phase_accum_58: 90 loads
      Net phase_accum_59: 90 loads
      Net phase_accum_62: 89 loads
      Net phase_accum_57: 83 loads
-     Net MixerOutSin_c_7: 62 loads
      Net phase_accum_63: 48 loads
-     Net CIC1/osc_clk_enable_59: 39 loads
-     Net phase_accum_61: 34 loads
-     Net CIC1/osc_clk_enable_498: 27 loads
-     Net CIC1/osc_clk_enable_198: 26 loads
+     Net CIC1/n1169: 38 loads
+     Net CIC1/n389: 38 loads
+     Net CIC1/n545: 38 loads
+     Net CIC1/n701: 38 loads
  
 
    Number of warnings:  5
@@ -518,8 +401,8 @@ Design Summary:
 
 
 Total CPU Time: 1 secs  
-Total REAL Time: 2 secs  
-Peak Memory Usage: 67 MB
+Total REAL Time: 0 secs  
+Peak Memory Usage: 68 MB
 
 Dumping design to file FPGASDR_impl1_map.ncd.
 
@@ -534,9 +417,9 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FPGASDR_impl1_map.ncd"
-Mon Dec 17 23:03:54 2018
+Wed Apr 10 00:11:02 2019
 
-PAR: Place And Route Diamond (64-bit) 3.10.2.115.
+PAR: Place And Route Diamond (64-bit) 3.10.3.144.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGASDR_impl1_map.ncd FPGASDR_impl1.dir/5_1.ncd FPGASDR_impl1.prf
 Preference file: FPGASDR_impl1.prf.
 Placement level-cost: 5-1.
@@ -561,13 +444,13 @@ Device utilization summary:
    PIO (prelim)   35+4(JTAG)/336     12% used
                   35+4(JTAG)/115     34% bonded
 
-   SLICE            667/3432         19% used
+   SLICE            725/3432         21% used
 
    PLL                1/2            50% used
 
 
-Number of Signals: 2598
-Number of Connections: 5032
+Number of Signals: 3132
+Number of Connections: 6649
     <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
 
 Pin Constraint Summary:
@@ -575,36 +458,35 @@ Pin Constraint Summary:
 
     <postMsg mid="61091062" type="Warning" dynamic="0" navigation="0"  />
     <postMsg mid="61091050" type="Warning" dynamic="4" navigation="0" arg0="XIn" arg1="PLL1/PLLInst_0" arg2="57" arg3="PB26A"  />
-The following 2 signals are selected to use the primary clock routing resources:
-    osc_clk (driver: PLL1/PLLInst_0, clk load #: 592)
-    CIC_out_clk_c (driver: SLICE_361, clk load #: 28)
+The following 1 signal is selected to use the primary clock routing resources:
+    osc_clk (driver: PLL1/PLLInst_0, clk load #: 652)
 
 
 The following 8 signals are selected to use the secondary clock routing resources:
-    CIC1/osc_clk_enable_498 (driver: CIC1/SLICE_447, clk load #: 0, sr load #: 0, ce load #: 27)
-    CIC1/osc_clk_enable_59 (driver: CIC1/SLICE_665, clk load #: 0, sr load #: 2, ce load #: 24)
-    CIC1/osc_clk_enable_198 (driver: SLICE_387, clk load #: 0, sr load #: 0, ce load #: 26)
-    CIC1/osc_clk_enable_98 (driver: CIC1/SLICE_665, clk load #: 0, sr load #: 0, ce load #: 25)
-    CIC1/osc_clk_enable_655 (driver: CIC1/SLICE_249, clk load #: 0, sr load #: 0, ce load #: 25)
-    CIC1/osc_clk_enable_598 (driver: CIC1/SLICE_448, clk load #: 0, sr load #: 0, ce load #: 25)
-    CIC1/osc_clk_enable_548 (driver: CIC1/SLICE_283, clk load #: 0, sr load #: 0, ce load #: 25)
-    CIC1/osc_clk_enable_448 (driver: CIC1/SLICE_317, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_52 (driver: CIC1/SLICE_875, clk load #: 0, sr load #: 0, ce load #: 28)
+    CIC1/osc_clk_enable_475 (driver: CIC1/SLICE_85, clk load #: 0, sr load #: 0, ce load #: 27)
+    CIC1/osc_clk_enable_275 (driver: SLICE_0, clk load #: 0, sr load #: 0, ce load #: 26)
+    CIC1/osc_clk_enable_425 (driver: CIC1/SLICE_85, clk load #: 0, sr load #: 0, ce load #: 26)
+    CIC1/osc_clk_enable_159 (driver: CIC1/SLICE_966, clk load #: 0, sr load #: 5, ce load #: 20)
+    CIC1/osc_clk_enable_725 (driver: SLICE_82, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_675 (driver: CIC1/SLICE_83, clk load #: 0, sr load #: 0, ce load #: 25)
+    CIC1/osc_clk_enable_625 (driver: CIC1/SLICE_83, clk load #: 0, sr load #: 0, ce load #: 25)
 
 No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-................
-Finished Placer Phase 0.  REAL time: 4 secs 
+.................
+Finished Placer Phase 0.  REAL time: 6 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 1459546.
-Finished Placer Phase 1.  REAL time: 15 secs 
+...
+Placer score = 183770241.
+Finished Placer Phase 1.  REAL time: 8 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  1304532
-Finished Placer Phase 2.  REAL time: 16 secs 
+Placer score =  180069448
+Finished Placer Phase 2.  REAL time: 8 secs 
 
 
 ------------------ Clock Report ------------------
@@ -616,18 +498,17 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "osc_clk" from CLKOP on comp "PLL1/PLLInst_0" on PLL site "RPLL", clk load = 592
-  PRIMARY "CIC_out_clk_c" from Q0 on comp "SLICE_361" on site "R2C19A", clk load = 28
-  SECONDARY "CIC1/osc_clk_enable_498" from Q1 on comp "CIC1/SLICE_447" on site "R16C4B", clk load = 0, ce load = 27, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_59" from F0 on comp "CIC1/SLICE_665" on site "R14C18A", clk load = 0, ce load = 24, sr load = 2
-  SECONDARY "CIC1/osc_clk_enable_198" from Q0 on comp "SLICE_387" on site "R14C19A", clk load = 0, ce load = 26, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_98" from Q0 on comp "CIC1/SLICE_665" on site "R14C18A", clk load = 0, ce load = 25, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_655" from Q0 on comp "CIC1/SLICE_249" on site "R16C6A", clk load = 0, ce load = 25, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_598" from Q1 on comp "CIC1/SLICE_448" on site "R15C6A", clk load = 0, ce load = 25, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_548" from Q0 on comp "CIC1/SLICE_283" on site "R14C5A", clk load = 0, ce load = 25, sr load = 0
-  SECONDARY "CIC1/osc_clk_enable_448" from Q0 on comp "CIC1/SLICE_317" on site "R12C4A", clk load = 0, ce load = 25, sr load = 0
+  PRIMARY "osc_clk" from CLKOP on comp "PLL1/PLLInst_0" on PLL site "RPLL", clk load = 652
+  SECONDARY "CIC1/osc_clk_enable_52" from Q0 on comp "CIC1/SLICE_875" on site "R22C20D", clk load = 0, ce load = 28, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_475" from Q1 on comp "CIC1/SLICE_85" on site "R12C21D", clk load = 0, ce load = 27, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_275" from Q1 on comp "SLICE_0" on site "R14C21A", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_425" from Q0 on comp "CIC1/SLICE_85" on site "R12C21D", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_159" from F0 on comp "CIC1/SLICE_966" on site "R21C20C", clk load = 0, ce load = 20, sr load = 5
+  SECONDARY "CIC1/osc_clk_enable_725" from Q0 on comp "SLICE_82" on site "R12C22C", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_675" from Q1 on comp "CIC1/SLICE_83" on site "R12C22B", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "CIC1/osc_clk_enable_625" from Q0 on comp "CIC1/SLICE_83" on site "R12C22B", clk load = 0, ce load = 25, sr load = 0
 
-  PRIMARY  : 2 out of 8 (25%)
+  PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 8 out of 8 (100%)
 
 Edge Clocks:
@@ -647,24 +528,24 @@ I/O Bank Usage Summary:
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
 | 0        | 10 / 28 ( 35%) | 2.5V       | -         |
-| 1        | 8 / 29 ( 27%)  | 2.5V       | -         |
-| 2        | 11 / 29 ( 37%) | 2.5V       | -         |
-| 3        | 0 / 9 (  0%)   | -          | -         |
-| 4        | 4 / 10 ( 40%)  | 2.5V       | -         |
-| 5        | 2 / 10 ( 20%)  | 2.5V       | -         |
+| 1        | 12 / 29 ( 41%) | 2.5V       | -         |
+| 2        | 9 / 29 ( 31%)  | 2.5V       | -         |
+| 3        | 1 / 9 ( 11%)   | 2.5V       | -         |
+| 4        | 2 / 10 ( 20%)  | 2.5V       | -         |
+| 5        | 1 / 10 ( 10%)  | 2.5V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 14 secs 
+Total placer CPU time: 8 secs 
 
 Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
 
-0 connections routed; 5032 unrouted.
+0 connections routed; 6649 unrouted.
 Starting router resource preassignment
     <postMsg mid="62061005" type="Warning" dynamic="2" navigation="0" arg0="CLKI" arg1="XIn_c"  />
 
-Completed router resource preassignment. Real time: 21 secs 
+Completed router resource preassignment. Real time: 14 secs 
 
-Start NBR router at 23:04:15 12/17/18
+Start NBR router at 00:11:16 04/10/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -679,161 +560,101 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 23:04:16 12/17/18
+Start NBR special constraint process at 00:11:16 04/10/19
 
-Start NBR section for initial routing at 23:04:16 12/17/18
+Start NBR section for initial routing at 00:11:16 04/10/19
 Level 1, iteration 1
-12(0.00%) conflicts; 2907(57.77%) untouched conns; 1226719 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.839ns/-1226.720ns; real time: 24 secs 
+5(0.00%) conflicts; 4238(63.74%) untouched conns; 9802271 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.316ns/-9802.272ns; real time: 16 secs 
 Level 2, iteration 1
-113(0.03%) conflicts; 2498(49.64%) untouched conns; 1174281 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.839ns/-1174.282ns; real time: 26 secs 
+169(0.04%) conflicts; 3449(51.87%) untouched conns; 9554692 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-9554.693ns; real time: 19 secs 
 Level 3, iteration 1
-229(0.06%) conflicts; 601(11.94%) untouched conns; 1281699 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1281.700ns; real time: 29 secs 
+568(0.15%) conflicts; 202(3.04%) untouched conns; 10249340 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-10249.340ns; real time: 23 secs 
 Level 4, iteration 1
-132(0.03%) conflicts; 0(0.00%) untouched conn; 1324720 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1324.721ns; real time: 31 secs 
+314(0.08%) conflicts; 0(0.00%) untouched conn; 10508825 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-10508.826ns; real time: 26 secs 
 
-Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 18 (1.80%)
+Info: Initial congestion level at 75% usage is 7
+Info: Initial congestion area  at 75% usage is 46 (4.60%)
 
-Start NBR section for normal routing at 23:04:25 12/17/18
+Start NBR section for normal routing at 00:11:28 04/10/19
 Level 1, iteration 1
-72(0.02%) conflicts; 72(1.43%) untouched conns; 1299422 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1299.423ns; real time: 32 secs 
+68(0.02%) conflicts; 91(1.37%) untouched conns; 10891639 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-10891.639ns; real time: 28 secs 
 Level 4, iteration 1
-104(0.03%) conflicts; 0(0.00%) untouched conn; 1320706 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1320.707ns; real time: 33 secs 
+51(0.01%) conflicts; 0(0.00%) untouched conn; 11035050 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11035.050ns; real time: 29 secs 
 Level 4, iteration 2
-70(0.02%) conflicts; 0(0.00%) untouched conn; 1332400 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1332.401ns; real time: 34 secs 
+29(0.01%) conflicts; 0(0.00%) untouched conn; 11081402 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11081.402ns; real time: 29 secs 
 Level 4, iteration 3
-48(0.01%) conflicts; 0(0.00%) untouched conn; 1340319 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1340.320ns; real time: 35 secs 
+18(0.00%) conflicts; 0(0.00%) untouched conn; 11153997 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11153.997ns; real time: 30 secs 
 Level 4, iteration 4
-26(0.01%) conflicts; 0(0.00%) untouched conn; 1340319 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.860ns/-1340.320ns; real time: 36 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 11153997 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11153.997ns; real time: 30 secs 
 Level 4, iteration 5
-22(0.01%) conflicts; 0(0.00%) untouched conn; 1373251 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.868ns/-1373.252ns; real time: 37 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 11147837 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11147.837ns; real time: 30 secs 
 Level 4, iteration 6
-13(0.00%) conflicts; 0(0.00%) untouched conn; 1373251 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.868ns/-1373.252ns; real time: 37 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 11147837 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11147.837ns; real time: 31 secs 
 Level 4, iteration 7
-9(0.00%) conflicts; 0(0.00%) untouched conn; 1376305 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1376.306ns; real time: 38 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 11140818 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11140.819ns; real time: 31 secs 
 Level 4, iteration 8
-8(0.00%) conflicts; 0(0.00%) untouched conn; 1376305 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1376.306ns; real time: 38 secs 
-Level 4, iteration 9
-4(0.00%) conflicts; 0(0.00%) untouched conn; 1388435 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.436ns; real time: 38 secs 
-Level 4, iteration 10
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1388435 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.436ns; real time: 38 secs 
-Level 4, iteration 11
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1388854 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.855ns; real time: 39 secs 
-Level 4, iteration 12
-1(0.00%) conflict; 0(0.00%) untouched conn; 1388854 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.855ns; real time: 39 secs 
-Level 4, iteration 13
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390447 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.448ns; real time: 39 secs 
-Level 4, iteration 14
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390447 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.448ns; real time: 39 secs 
-Level 4, iteration 15
-1(0.00%) conflict; 0(0.00%) untouched conn; 1388854 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.855ns; real time: 40 secs 
-Level 4, iteration 16
-1(0.00%) conflict; 0(0.00%) untouched conn; 1388854 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1388.855ns; real time: 40 secs 
-Level 4, iteration 17
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390447 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.448ns; real time: 40 secs 
-Level 4, iteration 18
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1390447 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.448ns; real time: 40 secs 
-Level 4, iteration 19
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1390685 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.686ns; real time: 40 secs 
-Level 4, iteration 20
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390685 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -3.016ns/-1390.686ns; real time: 40 secs 
-Level 4, iteration 21
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1390018 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1390.019ns; real time: 41 secs 
-Level 4, iteration 22
-2(0.00%) conflicts; 0(0.00%) untouched conn; 1390018 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1390.019ns; real time: 41 secs 
-Level 4, iteration 23
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390831 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1390.832ns; real time: 41 secs 
-Level 4, iteration 24
-1(0.00%) conflict; 0(0.00%) untouched conn; 1390831 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1390.832ns; real time: 41 secs 
-Level 4, iteration 25
-0(0.00%) conflict; 0(0.00%) untouched conn; 1392073 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.895ns/-1392.074ns; real time: 41 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 11140818 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11140.819ns; real time: 31 secs 
 
-Start NBR section for performance tuning (iteration 1) at 23:04:35 12/17/18
+Start NBR section for performance tuning (iteration 1) at 00:11:33 04/10/19
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 1391858 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.852ns/-1391.859ns; real time: 42 secs 
-Level 4, iteration 2
-1(0.00%) conflict; 0(0.00%) untouched conn; 1391643 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.852ns/-1391.644ns; real time: 42 secs 
-Level 4, iteration 3
-1(0.00%) conflict; 0(0.00%) untouched conn; 1391636 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.852ns/-1391.637ns; real time: 42 secs 
-Level 4, iteration 4
-0(0.00%) conflict; 0(0.00%) untouched conn; 1391636 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.852ns/-1391.637ns; real time: 42 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 11140818 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11140.819ns; real time: 31 secs 
 
-Start NBR section for re-routing at 23:04:36 12/17/18
+Start NBR section for re-routing at 00:11:33 04/10/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 1391636 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -2.852ns/-1391.637ns; real time: 42 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 11008349 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -6.333ns/-11008.349ns; real time: 38 secs 
 
-Start NBR section for post-routing at 23:04:36 12/17/18
+Start NBR section for post-routing at 00:11:40 04/10/19
 
 End NBR router with 0 unrouted connection
 
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 1166 (23.17%)
-  Estimated worst slack<setup> : -2.945ns
-  Timing score<setup> : 2641130
+  Number of connections with timing violations : 3315 (49.86%)
+  Estimated worst slack<setup> : -6.333ns
+  Timing score<setup> : 19988795
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 41 secs 
-Total REAL time: 45 secs 
+Total CPU time 39 secs 
+Total REAL time: 40 secs 
 Completely routed.
-End of route.  5032 routed (100.00%); 0 unrouted.
+End of route.  6649 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
-Timing score: 2641130 
+Timing score: 19988795 
 
 Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
 
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = -2.945
-PAR_SUMMARY::Timing score<setup/<ns>> = 2641.130
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.306
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -6.333
+PAR_SUMMARY::Timing score<setup/<ns>> = 19988.795
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.307
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 42 secs 
-Total REAL time to completion: 46 secs 
+Total CPU  time to completion: 40 secs 
+Total REAL time to completion: 41 secs 
 
 par done!
 
@@ -848,7 +669,7 @@ Exiting mpartrce with exit code 0
 bitgen -f "FPGASDR_impl1.t2b" -w "FPGASDR_impl1.ncd" -jedec "FPGASDR_impl1.prf"
 
 
-BITGEN: Bitstream Generator Diamond (64-bit) 3.10.2.115
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.3.144
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.

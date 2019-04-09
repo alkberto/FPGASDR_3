@@ -4,7 +4,24 @@
 // https://www.dsprelated.com/thread/907/cic-filter
 // http://home.mit.bme.hu/~kollar/papers/cic.pdf
 
-module CIC #(parameter width = 64)
+/*
+or a Q-stage CIC decimation-by-D filter (diff delay = 1) overflow errors are avoided if the number of integrator and comb register bit widths is at least
+
+    register bit widths = number of bits in x(n) + {Qlog2(D)}
+
+where x(n) is the input to the CIC filter, and {k} means that if k is not an integer, round it up to the next larger integer. For example, if a Q = 3-stage CIC decimation filter accepts one-bit binary input words from a sigma-delta A/D converter and the decimation factor is D = 64, binary overflow errors are avoided if the three integrator and three comb registers’ bit widths are no less than
+
+    register bit widths = 1 + {3 log2(D)} = 1 + 3 6 = 19 bits.
+	5 stadi, decimation 16384 (14 bit) 1 + 5 * 14 = 71 
+	TODO: Però devo aggiungere 1 o 2 bit altrimenti audio satura/distorce.
+	
+*/
+
+
+
+
+//width ok was 64
+module CIC #(parameter width = 80)
 			(input wire               clk,
 			input wire               rst,
 			input wire        [15:0] decimation_ratio,
@@ -120,7 +137,7 @@ reg d_clk_tmp;
 				d10 <= d9 - d_d9;
 				
 				d_scaled <= d10;// <<< 4;
-				d_out <= d_scaled >>> (width - 8);
+				d_out <=  d_scaled >>> (width - 8);
 
 				d_out <= d10 >>> (width - 8);
 				//d_out[6:0] <= d10[50:44];
