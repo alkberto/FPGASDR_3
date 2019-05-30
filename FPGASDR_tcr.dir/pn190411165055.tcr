@@ -1,0 +1,4 @@
+#Start recording tcl command: 4/11/2019 15:11:14
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+#Stop recording: 4/11/2019 16:50:55

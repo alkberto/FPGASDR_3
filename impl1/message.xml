@@ -234,75 +234,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/hp_iir.v(5): </Dynamic>
-            <Dynamic>HP_IIR</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/hp_iir.v</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/multiplier.v(8): </Dynamic>
-            <Dynamic>Multiplier</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/multiplier.v</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
-            <Dynamic>AND2</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>43</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
-            <Dynamic>ND2</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>797</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
-            <Dynamic>FADD2B</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>138</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
-            <Dynamic>MULT2</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>684</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
-            <Dynamic>VLO</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>1124</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
-            <Dynamic>VHI</Dynamic>
-            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>1120</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/hp_iir.v(32): </Dynamic>
-            <Dynamic>16</Dynamic>
-            <Dynamic>8</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/hp_iir.v</Navigation>
-            <Navigation>32</Navigation>
+            <Dynamic>c:/users/user/lattice/fpgasdr/hp_shift.v(6): </Dynamic>
+            <Dynamic>HP_shift</Dynamic>
+            <Navigation>c:/users/user/lattice/fpgasdr/hp_shift.v</Navigation>
+            <Navigation>6</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -323,6 +258,14 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
             <Dynamic>EHXPLLJ(CLKFB_DIV=17,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=3,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
@@ -331,18 +274,18 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(119): </Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(124): </Dynamic>
             <Dynamic>rst</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>119</Navigation>
+            <Navigation>124</Navigation>
         </Message>
         <Message>
             <ID>35935034</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(129): </Dynamic>
-            <Dynamic>HP_IIR1</Dynamic>
+            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(140): </Dynamic>
+            <Dynamic>HP_shift1</Dynamic>
             <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>129</Navigation>
+            <Navigation>140</Navigation>
         </Message>
         <Message>
             <ID>35002005</ID>

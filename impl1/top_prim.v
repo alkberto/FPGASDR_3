@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.10.3.144
-// Netlist written on Wed Apr 10 00:10:59 2019
+// Netlist written on Wed May 29 22:23:43 2019
 //
 // Verilog Description of module top
 //
@@ -34,7 +34,7 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
     wire [7:0]LOSine;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(33[12:18])
     
     wire cos_out_N_66, n1845, n1846, MYLED_c_4, MYLED_c_3, MYLED_c_2;
-    wire [7:0]DataInNoSign_7__N_2556;
+    wire [7:0]DataInNoSign_7__N_2588;
     
     VHI i2 (.Z(VCC_net));
     nco_sig nco (.osc_clk(osc_clk), .\phase_accum[63] (phase_accum[63]), 
@@ -42,17 +42,17 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
             .cos_out_N_66(cos_out_N_66), .\phase_accum[61] (phase_accum[61]), 
             .\phase_accum[60] (phase_accum[60]), .\phase_accum[59] (phase_accum[59]), 
             .\phase_accum[58] (phase_accum[58]), .\phase_accum[57] (phase_accum[57]), 
-            .\phase_accum[56] (phase_accum[56]), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(79[10] 85[2])
+            .\phase_accum[56] (phase_accum[56]), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(84[10] 90[2])
     Mixer Mixer1 (.MixerOutSin_c_0(MixerOutSin_c_0), .osc_clk(osc_clk), 
           .DiffOut_c(DiffOut_c), .RFIn_c(RFIn_c), .LOSine({LOSine}), .MixerOutSin_c_1(MixerOutSin_c_1), 
           .MixerOutSin_c_2(MixerOutSin_c_2), .MixerOutSin_c_3(MixerOutSin_c_3), 
           .MixerOutSin_c_4(MixerOutSin_c_4), .MixerOutSin_c_5(MixerOutSin_c_5), 
           .MixerOutSin_c_6(MixerOutSin_c_6), .MixerOutSin_c_7(MixerOutSin_c_7), 
-          .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(107[7] 115[2])
-    PWM PWM1 (.osc_clk(osc_clk), .\DataInNoSign_7__N_2556[0] (DataInNoSign_7__N_2556[0]), 
-        .PWMOut_c(PWMOut_c), .MYLED_c_5(MYLED_c_5), .\DataInNoSign_7__N_2556[1] (DataInNoSign_7__N_2556[1]), 
+          .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(112[7] 120[2])
+    PWM PWM1 (.osc_clk(osc_clk), .\DataInNoSign_7__N_2588[0] (DataInNoSign_7__N_2588[0]), 
+        .PWMOut_c(PWMOut_c), .MYLED_c_5(MYLED_c_5), .\DataInNoSign_7__N_2588[1] (DataInNoSign_7__N_2588[1]), 
         .MYLED_c_2(MYLED_c_2), .MYLED_c_3(MYLED_c_3), .MYLED_c_4(MYLED_c_4), 
-        .n1846(n1846), .n1845(n1845), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(132[5] 137[2])
+        .n1846(n1846), .n1845(n1845), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(142[5] 147[2])
     OB o_Rx_DV_pad (.I(GND_net), .O(o_Rx_DV));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(8[13:20])
     OB o_Tx_Serial_pad (.I(GND_net), .O(o_Tx_Serial));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(7[11:22])
     VLO i1 (.Z(GND_net));
@@ -95,17 +95,17 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
            .LOSine({LOSine}), .\phase_accum[63] (phase_accum[63]), .\phase_accum[62] (phase_accum[62]), 
            .\phase_accum[61] (phase_accum[61]), .\phase_accum[60] (phase_accum[60]), 
            .\phase_accum[59] (phase_accum[59]), .\phase_accum[58] (phase_accum[58]), 
-           .\phase_accum[57] (phase_accum[57]), .\phase_accum[56] (phase_accum[56])) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+           .\phase_accum[57] (phase_accum[57]), .\phase_accum[56] (phase_accum[56])) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     GSR GSR_INST (.GSR(VCC_net));
     \CIC(width=74)  CIC1 (.GND_net(GND_net), .osc_clk(osc_clk), .CIC_out_clk_c(CIC_out_clk_c), 
-            .\DataInNoSign_7__N_2556[0] (DataInNoSign_7__N_2556[0]), .MixerOutSin_c_7(MixerOutSin_c_7), 
-            .\DataInNoSign_7__N_2556[1] (DataInNoSign_7__N_2556[1]), .MYLED_c_2(MYLED_c_2), 
+            .\DataInNoSign_7__N_2588[0] (DataInNoSign_7__N_2588[0]), .MixerOutSin_c_7(MixerOutSin_c_7), 
+            .\DataInNoSign_7__N_2588[1] (DataInNoSign_7__N_2588[1]), .MYLED_c_2(MYLED_c_2), 
             .MYLED_c_3(MYLED_c_3), .MYLED_c_4(MYLED_c_4), .n1846(n1846), 
             .n1845(n1845), .MYLED_c_5(MYLED_c_5), .MixerOutSin_c_0(MixerOutSin_c_0), 
             .MixerOutSin_c_1(MixerOutSin_c_1), .MixerOutSin_c_2(MixerOutSin_c_2), 
             .MixerOutSin_c_3(MixerOutSin_c_3), .MixerOutSin_c_4(MixerOutSin_c_4), 
-            .MixerOutSin_c_5(MixerOutSin_c_5), .MixerOutSin_c_6(MixerOutSin_c_6)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(117[20] 124[2])
-    PLL PLL1 (.XIn_c(XIn_c), .osc_clk(osc_clk), .GND_net(GND_net)) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(139[5] 141[2])
+            .MixerOutSin_c_5(MixerOutSin_c_5), .MixerOutSin_c_6(MixerOutSin_c_6)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(122[20] 129[2])
+    PLL PLL1 (.XIn_c(XIn_c), .osc_clk(osc_clk), .GND_net(GND_net)) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(149[5] 151[2])
     
 endmodule
 //
@@ -137,10 +137,10 @@ module nco_sig (osc_clk, \phase_accum[63] , sin_out_c, \phase_accum[62] ,
         n2702, n2701, n2700, n2699, n2698, n2697, n2696, n2695, 
         n2694, n2693, n2692, n2691, n2690, n2689, n2688, n2687;
     
-    FD1S3AX phase_accum_i0 (.D(phase_accum_63__N_1[0]), .CK(osc_clk), .Q(phase_accum[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i0 (.D(phase_accum_63__N_1[0]), .CK(osc_clk), .Q(phase_accum[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i0.GSR = "ENABLED";
     FD1S3AX phase_accum_i63 (.D(phase_accum_63__N_1[63]), .CK(osc_clk), 
-            .Q(\phase_accum[63] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[63] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i63.GSR = "ENABLED";
     LUT4 phase_accum_63__I_0_13_1_lut (.A(\phase_accum[63] ), .Z(sin_out_c)) /* synthesis lut_function=(!(A)) */ ;   // c:/users/user/lattice/fpgasdr/nco.v(36[18:56])
     defparam phase_accum_63__I_0_13_1_lut.init = 16'h5555;
@@ -148,181 +148,181 @@ module nco_sig (osc_clk, \phase_accum[63] , sin_out_c, \phase_accum[62] ,
          .Z(cos_out_N_66)) /* synthesis lut_function=(A (B)+!A !(B)) */ ;   // c:/users/user/lattice/fpgasdr/nco.v(37[19:54])
     defparam phase_accum_63__I_0_2_lut.init = 16'h9999;
     FD1S3AX phase_accum_i62 (.D(phase_accum_63__N_1[62]), .CK(osc_clk), 
-            .Q(\phase_accum[62] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[62] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i62.GSR = "ENABLED";
     FD1S3AX phase_accum_i61 (.D(phase_accum_63__N_1[61]), .CK(osc_clk), 
-            .Q(\phase_accum[61] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[61] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i61.GSR = "ENABLED";
     FD1S3AX phase_accum_i60 (.D(phase_accum_63__N_1[60]), .CK(osc_clk), 
-            .Q(\phase_accum[60] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[60] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i60.GSR = "ENABLED";
     FD1S3AX phase_accum_i59 (.D(phase_accum_63__N_1[59]), .CK(osc_clk), 
-            .Q(\phase_accum[59] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[59] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i59.GSR = "ENABLED";
     FD1S3AX phase_accum_i58 (.D(phase_accum_63__N_1[58]), .CK(osc_clk), 
-            .Q(\phase_accum[58] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[58] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i58.GSR = "ENABLED";
     FD1S3AX phase_accum_i57 (.D(phase_accum_63__N_1[57]), .CK(osc_clk), 
-            .Q(\phase_accum[57] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[57] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i57.GSR = "ENABLED";
     FD1S3AX phase_accum_i56 (.D(phase_accum_63__N_1[56]), .CK(osc_clk), 
-            .Q(\phase_accum[56] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(\phase_accum[56] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i56.GSR = "ENABLED";
     FD1S3AX phase_accum_i55 (.D(phase_accum_63__N_1[55]), .CK(osc_clk), 
-            .Q(phase_accum[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i55.GSR = "ENABLED";
     FD1S3AX phase_accum_i54 (.D(phase_accum_63__N_1[54]), .CK(osc_clk), 
-            .Q(phase_accum[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i54.GSR = "ENABLED";
     FD1S3AX phase_accum_i53 (.D(phase_accum_63__N_1[53]), .CK(osc_clk), 
-            .Q(phase_accum[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i53.GSR = "ENABLED";
     FD1S3AX phase_accum_i52 (.D(phase_accum_63__N_1[52]), .CK(osc_clk), 
-            .Q(phase_accum[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i52.GSR = "ENABLED";
     FD1S3AX phase_accum_i51 (.D(phase_accum_63__N_1[51]), .CK(osc_clk), 
-            .Q(phase_accum[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i51.GSR = "ENABLED";
     FD1S3AX phase_accum_i50 (.D(phase_accum_63__N_1[50]), .CK(osc_clk), 
-            .Q(phase_accum[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i50.GSR = "ENABLED";
     FD1S3AX phase_accum_i49 (.D(phase_accum_63__N_1[49]), .CK(osc_clk), 
-            .Q(phase_accum[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i49.GSR = "ENABLED";
     FD1S3AX phase_accum_i48 (.D(phase_accum_63__N_1[48]), .CK(osc_clk), 
-            .Q(phase_accum[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i48.GSR = "ENABLED";
     FD1S3AX phase_accum_i47 (.D(phase_accum_63__N_1[47]), .CK(osc_clk), 
-            .Q(phase_accum[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i47.GSR = "ENABLED";
     FD1S3AX phase_accum_i46 (.D(phase_accum_63__N_1[46]), .CK(osc_clk), 
-            .Q(phase_accum[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i46.GSR = "ENABLED";
     FD1S3AX phase_accum_i45 (.D(phase_accum_63__N_1[45]), .CK(osc_clk), 
-            .Q(phase_accum[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i45.GSR = "ENABLED";
     FD1S3AX phase_accum_i44 (.D(phase_accum_63__N_1[44]), .CK(osc_clk), 
-            .Q(phase_accum[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i44.GSR = "ENABLED";
     FD1S3AX phase_accum_i43 (.D(phase_accum_63__N_1[43]), .CK(osc_clk), 
-            .Q(phase_accum[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i43.GSR = "ENABLED";
     FD1S3AX phase_accum_i42 (.D(phase_accum_63__N_1[42]), .CK(osc_clk), 
-            .Q(phase_accum[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i42.GSR = "ENABLED";
     FD1S3AX phase_accum_i41 (.D(phase_accum_63__N_1[41]), .CK(osc_clk), 
-            .Q(phase_accum[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i41.GSR = "ENABLED";
     FD1S3AX phase_accum_i40 (.D(phase_accum_63__N_1[40]), .CK(osc_clk), 
-            .Q(phase_accum[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i40.GSR = "ENABLED";
     FD1S3AX phase_accum_i39 (.D(phase_accum_63__N_1[39]), .CK(osc_clk), 
-            .Q(phase_accum[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i39.GSR = "ENABLED";
     FD1S3AX phase_accum_i38 (.D(phase_accum_63__N_1[38]), .CK(osc_clk), 
-            .Q(phase_accum[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i38.GSR = "ENABLED";
     FD1S3AX phase_accum_i37 (.D(phase_accum_63__N_1[37]), .CK(osc_clk), 
-            .Q(phase_accum[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i37.GSR = "ENABLED";
     FD1S3AX phase_accum_i36 (.D(phase_accum_63__N_1[36]), .CK(osc_clk), 
-            .Q(phase_accum[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i36.GSR = "ENABLED";
     FD1S3AX phase_accum_i35 (.D(phase_accum_63__N_1[35]), .CK(osc_clk), 
-            .Q(phase_accum[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i35.GSR = "ENABLED";
     FD1S3AX phase_accum_i34 (.D(phase_accum_63__N_1[34]), .CK(osc_clk), 
-            .Q(phase_accum[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i34.GSR = "ENABLED";
     FD1S3AX phase_accum_i33 (.D(phase_accum_63__N_1[33]), .CK(osc_clk), 
-            .Q(phase_accum[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i33.GSR = "ENABLED";
     FD1S3AX phase_accum_i32 (.D(phase_accum_63__N_1[32]), .CK(osc_clk), 
-            .Q(phase_accum[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i32.GSR = "ENABLED";
     FD1S3AX phase_accum_i31 (.D(phase_accum_63__N_1[31]), .CK(osc_clk), 
-            .Q(phase_accum[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i31.GSR = "ENABLED";
     FD1S3AX phase_accum_i30 (.D(phase_accum_63__N_1[30]), .CK(osc_clk), 
-            .Q(phase_accum[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i30.GSR = "ENABLED";
     FD1S3AX phase_accum_i29 (.D(phase_accum_63__N_1[29]), .CK(osc_clk), 
-            .Q(phase_accum[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i29.GSR = "ENABLED";
     FD1S3AX phase_accum_i28 (.D(phase_accum_63__N_1[28]), .CK(osc_clk), 
-            .Q(phase_accum[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i28.GSR = "ENABLED";
     FD1S3AX phase_accum_i27 (.D(phase_accum_63__N_1[27]), .CK(osc_clk), 
-            .Q(phase_accum[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i27.GSR = "ENABLED";
     FD1S3AX phase_accum_i26 (.D(phase_accum_63__N_1[26]), .CK(osc_clk), 
-            .Q(phase_accum[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i26.GSR = "ENABLED";
     FD1S3AX phase_accum_i25 (.D(phase_accum_63__N_1[25]), .CK(osc_clk), 
-            .Q(phase_accum[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i25.GSR = "ENABLED";
     FD1S3AX phase_accum_i24 (.D(phase_accum_63__N_1[24]), .CK(osc_clk), 
-            .Q(phase_accum[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i24.GSR = "ENABLED";
     FD1S3AX phase_accum_i23 (.D(phase_accum_63__N_1[23]), .CK(osc_clk), 
-            .Q(phase_accum[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i23.GSR = "ENABLED";
     FD1S3AX phase_accum_i22 (.D(phase_accum_63__N_1[22]), .CK(osc_clk), 
-            .Q(phase_accum[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i22.GSR = "ENABLED";
     FD1S3AX phase_accum_i21 (.D(phase_accum_63__N_1[21]), .CK(osc_clk), 
-            .Q(phase_accum[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i21.GSR = "ENABLED";
     FD1S3AX phase_accum_i20 (.D(phase_accum_63__N_1[20]), .CK(osc_clk), 
-            .Q(phase_accum[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i20.GSR = "ENABLED";
     FD1S3AX phase_accum_i19 (.D(phase_accum_63__N_1[19]), .CK(osc_clk), 
-            .Q(phase_accum[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i19.GSR = "ENABLED";
     FD1S3AX phase_accum_i18 (.D(phase_accum_63__N_1[18]), .CK(osc_clk), 
-            .Q(phase_accum[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i18.GSR = "ENABLED";
     FD1S3AX phase_accum_i17 (.D(phase_accum_63__N_1[17]), .CK(osc_clk), 
-            .Q(phase_accum[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i17.GSR = "ENABLED";
     FD1S3AX phase_accum_i16 (.D(phase_accum_63__N_1[16]), .CK(osc_clk), 
-            .Q(phase_accum[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i16.GSR = "ENABLED";
     FD1S3AX phase_accum_i15 (.D(phase_accum_63__N_1[15]), .CK(osc_clk), 
-            .Q(phase_accum[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i15.GSR = "ENABLED";
     FD1S3AX phase_accum_i14 (.D(phase_accum_63__N_1[14]), .CK(osc_clk), 
-            .Q(phase_accum[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i14.GSR = "ENABLED";
     FD1S3AX phase_accum_i13 (.D(phase_accum_63__N_1[13]), .CK(osc_clk), 
-            .Q(phase_accum[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i13.GSR = "ENABLED";
     FD1S3AX phase_accum_i12 (.D(phase_accum_63__N_1[12]), .CK(osc_clk), 
-            .Q(phase_accum[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i12.GSR = "ENABLED";
     FD1S3AX phase_accum_i11 (.D(phase_accum_63__N_1[11]), .CK(osc_clk), 
-            .Q(phase_accum[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i11.GSR = "ENABLED";
     FD1S3AX phase_accum_i10 (.D(phase_accum_63__N_1[10]), .CK(osc_clk), 
-            .Q(phase_accum[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+            .Q(phase_accum[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i10.GSR = "ENABLED";
-    FD1S3AX phase_accum_i9 (.D(phase_accum_63__N_1[9]), .CK(osc_clk), .Q(phase_accum[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i9 (.D(phase_accum_63__N_1[9]), .CK(osc_clk), .Q(phase_accum[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i9.GSR = "ENABLED";
-    FD1S3AX phase_accum_i8 (.D(phase_accum_63__N_1[8]), .CK(osc_clk), .Q(phase_accum[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i8 (.D(phase_accum_63__N_1[8]), .CK(osc_clk), .Q(phase_accum[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i8.GSR = "ENABLED";
-    FD1S3AX phase_accum_i7 (.D(phase_accum_63__N_1[7]), .CK(osc_clk), .Q(phase_accum[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i7 (.D(phase_accum_63__N_1[7]), .CK(osc_clk), .Q(phase_accum[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i7.GSR = "ENABLED";
-    FD1S3AX phase_accum_i6 (.D(phase_accum_63__N_1[6]), .CK(osc_clk), .Q(phase_accum[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i6 (.D(phase_accum_63__N_1[6]), .CK(osc_clk), .Q(phase_accum[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i6.GSR = "ENABLED";
-    FD1S3AX phase_accum_i5 (.D(phase_accum_63__N_1[5]), .CK(osc_clk), .Q(phase_accum[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i5 (.D(phase_accum_63__N_1[5]), .CK(osc_clk), .Q(phase_accum[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i5.GSR = "ENABLED";
-    FD1S3AX phase_accum_i4 (.D(phase_accum_63__N_1[4]), .CK(osc_clk), .Q(phase_accum[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i4 (.D(phase_accum_63__N_1[4]), .CK(osc_clk), .Q(phase_accum[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i4.GSR = "ENABLED";
-    FD1S3AX phase_accum_i3 (.D(phase_accum_63__N_1[3]), .CK(osc_clk), .Q(phase_accum[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i3 (.D(phase_accum_63__N_1[3]), .CK(osc_clk), .Q(phase_accum[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i3.GSR = "ENABLED";
-    FD1S3AX phase_accum_i2 (.D(phase_accum_63__N_1[2]), .CK(osc_clk), .Q(phase_accum[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i2 (.D(phase_accum_63__N_1[2]), .CK(osc_clk), .Q(phase_accum[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i2.GSR = "ENABLED";
-    FD1S3AX phase_accum_i1 (.D(phase_accum_63__N_1[1]), .CK(osc_clk), .Q(phase_accum[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=79, LSE_RLINE=85 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
+    FD1S3AX phase_accum_i1 (.D(phase_accum_63__N_1[1]), .CK(osc_clk), .Q(phase_accum[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=10, LSE_RCOL=2, LSE_LLINE=84, LSE_RLINE=90 */ ;   // c:/users/user/lattice/fpgasdr/nco.v(39[7] 52[4])
     defparam phase_accum_i1.GSR = "ENABLED";
     CCU2D phase_accum_63__I_0_12_65 (.A0(\phase_accum[63] ), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), 
@@ -617,11 +617,11 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     
     wire n3276, n3277, n3278, n3279;
     
-    FD1S3AX MixerOutSin_i1 (.D(MixerOutSin_7__N_67[0]), .CK(osc_clk), .Q(MixerOutSin_c_0)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i1 (.D(MixerOutSin_7__N_67[0]), .CK(osc_clk), .Q(MixerOutSin_c_0)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i1.GSR = "ENABLED";
-    FD1S3AY RFInR_14 (.D(RFInR1), .CK(osc_clk), .Q(DiffOut_c)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(22[8] 25[25])
+    FD1S3AY RFInR_14 (.D(RFInR1), .CK(osc_clk), .Q(DiffOut_c)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(22[8] 25[25])
     defparam RFInR_14.GSR = "ENABLED";
-    FD1S3AY RFInR1_13 (.D(RFIn_c), .CK(osc_clk), .Q(RFInR1)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(22[8] 25[25])
+    FD1S3AY RFInR1_13 (.D(RFIn_c), .CK(osc_clk), .Q(RFInR1)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(22[8] 25[25])
     defparam RFInR1_13.GSR = "ENABLED";
     LUT4 MixerOutSin_7__I_0_i6_3_lut (.A(LOSine[5]), .B(MixerOutSin_7__N_83[5]), 
          .C(DiffOut_c), .Z(MixerOutSin_7__N_67[5])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(37[5] 41[8])
@@ -644,22 +644,22 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     LUT4 MixerOutSin_7__I_0_i7_3_lut (.A(LOSine[6]), .B(MixerOutSin_7__N_83[6]), 
          .C(DiffOut_c), .Z(MixerOutSin_7__N_67[6])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(37[5] 41[8])
     defparam MixerOutSin_7__I_0_i7_3_lut.init = 16'hcaca;
-    FD1S3AX MixerOutSin_i2 (.D(MixerOutSin_7__N_67[1]), .CK(osc_clk), .Q(MixerOutSin_c_1)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i2 (.D(MixerOutSin_7__N_67[1]), .CK(osc_clk), .Q(MixerOutSin_c_1)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i2.GSR = "ENABLED";
     LUT4 MixerOutSin_7__I_0_i8_3_lut (.A(LOSine[7]), .B(MixerOutSin_7__N_83[7]), 
          .C(DiffOut_c), .Z(MixerOutSin_7__N_67[7])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(37[5] 41[8])
     defparam MixerOutSin_7__I_0_i8_3_lut.init = 16'hcaca;
-    FD1S3AX MixerOutSin_i3 (.D(MixerOutSin_7__N_67[2]), .CK(osc_clk), .Q(MixerOutSin_c_2)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i3 (.D(MixerOutSin_7__N_67[2]), .CK(osc_clk), .Q(MixerOutSin_c_2)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i3.GSR = "ENABLED";
-    FD1S3AX MixerOutSin_i4 (.D(MixerOutSin_7__N_67[3]), .CK(osc_clk), .Q(MixerOutSin_c_3)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i4 (.D(MixerOutSin_7__N_67[3]), .CK(osc_clk), .Q(MixerOutSin_c_3)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i4.GSR = "ENABLED";
-    FD1S3AX MixerOutSin_i5 (.D(MixerOutSin_7__N_67[4]), .CK(osc_clk), .Q(MixerOutSin_c_4)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i5 (.D(MixerOutSin_7__N_67[4]), .CK(osc_clk), .Q(MixerOutSin_c_4)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i5.GSR = "ENABLED";
-    FD1S3AX MixerOutSin_i6 (.D(MixerOutSin_7__N_67[5]), .CK(osc_clk), .Q(MixerOutSin_c_5)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i6 (.D(MixerOutSin_7__N_67[5]), .CK(osc_clk), .Q(MixerOutSin_c_5)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i6.GSR = "ENABLED";
-    FD1S3AX MixerOutSin_i7 (.D(MixerOutSin_7__N_67[6]), .CK(osc_clk), .Q(MixerOutSin_c_6)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i7 (.D(MixerOutSin_7__N_67[6]), .CK(osc_clk), .Q(MixerOutSin_c_6)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i7.GSR = "ENABLED";
-    FD1S3AX MixerOutSin_i8 (.D(MixerOutSin_7__N_67[7]), .CK(osc_clk), .Q(MixerOutSin_c_7)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=107, LSE_RLINE=115 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
+    FD1S3AX MixerOutSin_i8 (.D(MixerOutSin_7__N_67[7]), .CK(osc_clk), .Q(MixerOutSin_c_7)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=112, LSE_RLINE=120 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i8.GSR = "ENABLED";
     CCU2D unary_minus_6_add_3_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(LOSine[0]), .B1(GND_net), .C1(GND_net), 
@@ -705,14 +705,14 @@ endmodule
 // Verilog Description of module PWM
 //
 
-module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5, 
-            \DataInNoSign_7__N_2556[1] , MYLED_c_2, MYLED_c_3, MYLED_c_4, 
+module PWM (osc_clk, \DataInNoSign_7__N_2588[0] , PWMOut_c, MYLED_c_5, 
+            \DataInNoSign_7__N_2588[1] , MYLED_c_2, MYLED_c_3, MYLED_c_4, 
             n1846, n1845, GND_net) /* synthesis syn_module_defined=1 */ ;
     input osc_clk;
-    input \DataInNoSign_7__N_2556[0] ;
+    input \DataInNoSign_7__N_2588[0] ;
     output PWMOut_c;
     input MYLED_c_5;
-    input \DataInNoSign_7__N_2556[1] ;
+    input \DataInNoSign_7__N_2588[1] ;
     input MYLED_c_2;
     input MYLED_c_3;
     input MYLED_c_4;
@@ -725,13 +725,13 @@ module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5,
     wire [7:0]counter;   // c:/users/user/lattice/fpgasdr/pwm.v(7[11:18])
     
     wire n3344, n3411, n3355, n12, n4, n3370, osc_clk_enable_732, 
-        PWMOut_N_2565;
+        PWMOut_N_2597;
     wire [7:0]n37;
     
     wire n3413, n3412, n3410, n3374, n10, n3369, n3358, n6;
     wire [7:0]n164;
     
-    wire n14, n10_adj_2569, n3280, n3281, n3282, n3283;
+    wire n14, n10_adj_2601, n3280, n3281, n3282, n3283;
     
     LUT4 i1061_3_lut_4_lut (.A(DataInNoSign[3]), .B(counter[3]), .C(counter[2]), 
          .D(DataInNoSign[2]), .Z(n3344)) /* synthesis lut_function=(A (B (C (D)+!C !(D)))+!A !(B+!(C (D)+!C !(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
@@ -739,10 +739,10 @@ module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5,
     LUT4 i1086_1_lut_4_lut_4_lut (.A(n3411), .B(n3355), .C(n12), .D(n4), 
          .Z(n3370)) /* synthesis lut_function=(!(A (C)+!A (B (D)+!B (C)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i1086_1_lut_4_lut_4_lut.init = 16'h0b4f;
-    FD1P3AX DataInNoSign_i0_i0 (.D(\DataInNoSign_7__N_2556[0] ), .SP(osc_clk_enable_732), 
-            .CK(osc_clk), .Q(DataInNoSign[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+    FD1P3AX DataInNoSign_i0_i0 (.D(\DataInNoSign_7__N_2588[0] ), .SP(osc_clk_enable_732), 
+            .CK(osc_clk), .Q(DataInNoSign[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i0.GSR = "ENABLED";
-    FD1S3AX PWMOut_15 (.D(PWMOut_N_2565), .CK(osc_clk), .Q(PWMOut_c)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+    FD1S3AX PWMOut_15 (.D(PWMOut_N_2597), .CK(osc_clk), .Q(PWMOut_c)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam PWMOut_15.GSR = "ENABLED";
     FD1S3AX counter_55__i0 (.D(n37[0]), .CK(osc_clk), .Q(counter[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_55__i0.GSR = "ENABLED";
@@ -758,7 +758,7 @@ module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5,
          .C(n10), .Z(n12)) /* synthesis lut_function=(A (B (C))+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i12_3_lut_3_lut.init = 16'hd4d4;
     PFUMX DataInNoSign_7__I_0_i16 (.BLUT(n3369), .ALUT(n3370), .C0(n3358), 
-          .Z(PWMOut_N_2565)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;
+          .Z(PWMOut_N_2597)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;
     LUT4 i1091_2_lut_3_lut (.A(DataInNoSign[7]), .B(counter[7]), .C(n3374), 
          .Z(n3358)) /* synthesis lut_function=(A ((C)+!B)+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i1091_2_lut_3_lut.init = 16'hf6f6;
@@ -785,30 +785,30 @@ module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5,
     LUT4 DataInNoSign_7__I_0_i10_3_lut_3_lut (.A(DataInNoSign[6]), .B(counter[6]), 
          .C(counter[5]), .Z(n10)) /* synthesis lut_function=(A (B (C))+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i10_3_lut_3_lut.init = 16'hd4d4;
-    FD1P3AX DataInNoSign_i0_i1 (.D(\DataInNoSign_7__N_2556[1] ), .SP(osc_clk_enable_732), 
-            .CK(osc_clk), .Q(DataInNoSign[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+    FD1P3AX DataInNoSign_i0_i1 (.D(\DataInNoSign_7__N_2588[1] ), .SP(osc_clk_enable_732), 
+            .CK(osc_clk), .Q(DataInNoSign[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i1.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i2 (.D(MYLED_c_2), .SP(osc_clk_enable_732), 
-            .CK(osc_clk), .Q(DataInNoSign[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .CK(osc_clk), .Q(DataInNoSign[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i2.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i3 (.D(MYLED_c_3), .SP(osc_clk_enable_732), 
-            .CK(osc_clk), .Q(DataInNoSign[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .CK(osc_clk), .Q(DataInNoSign[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i3.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i4 (.D(MYLED_c_4), .SP(osc_clk_enable_732), 
-            .CK(osc_clk), .Q(DataInNoSign[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .CK(osc_clk), .Q(DataInNoSign[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i4.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i5 (.D(n1846), .SP(osc_clk_enable_732), .CK(osc_clk), 
-            .Q(DataInNoSign[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .Q(DataInNoSign[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i5.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i6 (.D(n1845), .SP(osc_clk_enable_732), .CK(osc_clk), 
-            .Q(DataInNoSign[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .Q(DataInNoSign[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i6.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i7 (.D(n164[7]), .SP(osc_clk_enable_732), .CK(osc_clk), 
-            .Q(DataInNoSign[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=132, LSE_RLINE=137 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+            .Q(DataInNoSign[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=142, LSE_RLINE=147 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i7.GSR = "ENABLED";
     FD1S3AX counter_55__i1 (.D(n37[1]), .CK(osc_clk), .Q(counter[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_55__i1.GSR = "ENABLED";
-    LUT4 i1095_4_lut (.A(counter[0]), .B(n14), .C(n10_adj_2569), .D(counter[6]), 
+    LUT4 i1095_4_lut (.A(counter[0]), .B(n14), .C(n10_adj_2601), .D(counter[6]), 
          .Z(osc_clk_enable_732)) /* synthesis lut_function=(!(A+(B+(C+(D))))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i1095_4_lut.init = 16'h0001;
     FD1S3AX counter_55__i2 (.D(n37[2]), .CK(osc_clk), .Q(counter[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
@@ -826,7 +826,7 @@ module PWM (osc_clk, \DataInNoSign_7__N_2556[0] , PWMOut_c, MYLED_c_5,
     LUT4 i6_4_lut (.A(counter[3]), .B(counter[1]), .C(counter[5]), .D(counter[7]), 
          .Z(n14)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i6_4_lut.init = 16'hfffe;
-    LUT4 i2_2_lut (.A(counter[2]), .B(counter[4]), .Z(n10_adj_2569)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
+    LUT4 i2_2_lut (.A(counter[2]), .B(counter[4]), .Z(n10_adj_2601)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i2_2_lut.init = 16'heeee;
     CCU2D counter_55_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(counter[0]), .B1(GND_net), .C1(GND_net), 
@@ -901,68 +901,68 @@ module SinCos (osc_clk, VCC_net, GND_net, LOSine, \phase_accum[63] ,
         Sine_1_ffin, Sine_0_ffin, Sine_7_ffin;
     
     FD1P3DX FF_14 (.D(Sine_6_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[6])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(37[13] 38[21])
+            .Q(LOSine[6])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(37[13] 38[21])
     defparam FF_14.GSR = "ENABLED";
     FD1P3DX FF_13 (.D(Sine_5_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[5])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(41[13] 42[21])
+            .Q(LOSine[5])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(41[13] 42[21])
     defparam FF_13.GSR = "ENABLED";
     FD1P3DX FF_12 (.D(Sine_4_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[4])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(45[13] 46[21])
+            .Q(LOSine[4])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(45[13] 46[21])
     defparam FF_12.GSR = "ENABLED";
     FD1P3DX FF_11 (.D(Sine_3_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[3])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(49[13] 50[21])
+            .Q(LOSine[3])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(49[13] 50[21])
     defparam FF_11.GSR = "ENABLED";
     FD1P3DX FF_10 (.D(Sine_2_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[2])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(53[13] 54[21])
+            .Q(LOSine[2])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(53[13] 54[21])
     defparam FF_10.GSR = "ENABLED";
     FD1P3DX FF_9 (.D(Sine_1_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[1])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(57[13:84])
+            .Q(LOSine[1])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(57[13:84])
     defparam FF_9.GSR = "ENABLED";
     FD1P3DX FF_8 (.D(Sine_0_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[0])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(60[13:84])
+            .Q(LOSine[0])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(60[13:84])
     defparam FF_8.GSR = "ENABLED";
     ROM256X1A triglut_1_0_15 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_7_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_7_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_15.initval = 256'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
     ROM256X1A triglut_1_0_14 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_6_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_6_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_14.initval = 256'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000001111111111100000000000000000000000000000000000000000000000000000000000;
     FD1P3DX FF_15 (.D(Sine_7_ffin), .SP(VCC_net), .CK(osc_clk), .CD(GND_net), 
-            .Q(LOSine[7])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(33[13] 34[21])
+            .Q(LOSine[7])) /* synthesis GSR="ENABLED", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/sincos.v(33[13] 34[21])
     defparam FF_15.GSR = "ENABLED";
     ROM256X1A triglut_1_0_13 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_5_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_5_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_13.initval = 256'b1111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111000000000000000000000111111111111111111111111111111111111110000000000011111111111111111111111111111111111111000000000000000000000;
     ROM256X1A triglut_1_0_12 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_4_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_4_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_12.initval = 256'b1111111111000000000001111111111111100000000000000000000000000000000000000000000000000000000011111111111111000000000001111111111000000000011111111111000000000000001111111111111111111111110000000000011111111111111111111111100000000000000111111111110000000000;
     ROM256X1A triglut_1_0_11 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_3_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_3_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_11.initval = 256'b1111100000111111000001111110000000011111111100000000000000000000000000000000000000011111111100000000111111000001111110000011111000001111100000011111000000011111110000000011111111111111110000000000011111111111111110000000011111110000000111110000001111100000;
     ROM256X1A triglut_1_0_10 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_2_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_2_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_10.initval = 256'b1100011100111000110001110001111000011110000011111100000000000000000000000000011111100000111100001111000111000110001110011100011000110001100011100011000111100011110000111100000011111111110000000000011111111110000001111000011110001111000110001110001100011000;
     ROM256X1A triglut_1_0_9 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_1_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_1_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_9.initval = 256'b1011010010100100101101101101100110011001100011000011111000000000000000001111100001100011001100110011011011011010010010100101101011010010100101101101001001101100110011001100011100001111110000000000011111100001110001100110011001101100100101101101001010010110;
     ROM256X1A triglut_1_0_8 (.AD0(\phase_accum[56] ), .AD1(\phase_accum[57] ), 
             .AD2(\phase_accum[58] ), .AD3(\phase_accum[59] ), .AD4(\phase_accum[60] ), 
             .AD5(\phase_accum[61] ), .AD6(\phase_accum[62] ), .AD7(\phase_accum[63] ), 
-            .DO0(Sine_0_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=87, LSE_RLINE=94 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(87[8] 94[2])
+            .DO0(Sine_0_ffin)) /* synthesis syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=8, LSE_RCOL=2, LSE_LLINE=92, LSE_RLINE=99 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(92[8] 99[2])
     defparam triglut_1_0_8.initval = 256'b0110011000110010011001001011010101010101010010110011000111000000000001110001100110100101010101010101101001001100100110001100110001100110001100100110010010110101010101010100101100110001110000000000011100011001101001010101010101011010010011001001100011001100;
     
 endmodule
@@ -970,17 +970,17 @@ endmodule
 // Verilog Description of module \CIC(width=74) 
 //
 
-module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556[0] , 
-            MixerOutSin_c_7, \DataInNoSign_7__N_2556[1] , MYLED_c_2, MYLED_c_3, 
+module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2588[0] , 
+            MixerOutSin_c_7, \DataInNoSign_7__N_2588[1] , MYLED_c_2, MYLED_c_3, 
             MYLED_c_4, n1846, n1845, MYLED_c_5, MixerOutSin_c_0, MixerOutSin_c_1, 
             MixerOutSin_c_2, MixerOutSin_c_3, MixerOutSin_c_4, MixerOutSin_c_5, 
             MixerOutSin_c_6) /* synthesis syn_module_defined=1 */ ;
     input GND_net;
     input osc_clk;
     output CIC_out_clk_c;
-    output \DataInNoSign_7__N_2556[0] ;
+    output \DataInNoSign_7__N_2588[0] ;
     input MixerOutSin_c_7;
-    output \DataInNoSign_7__N_2556[1] ;
+    output \DataInNoSign_7__N_2588[1] ;
     output MYLED_c_2;
     output MYLED_c_3;
     output MYLED_c_4;
@@ -1091,7 +1091,7 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
         n2915, n2914, n857, n2913, n2912, n2911, n2910, n2909, 
         n2908, n2907, n2906, n2905, n2904, n2903, n2902, n2901, 
         n2900, n2899, n2898, n2897, n2896, n2892, n1325, d_clk_tmp_N_2537, 
-        n24_adj_2567, n18, n22_adj_2568, n2891, n2890, n2889, n2888, 
+        n24_adj_2599, n18, n22_adj_2600, n2891, n2890, n2889, n2888, 
         n2887, n2886, n2885, n2884, n2883, n2882, n2881, n2880, 
         n2879, n2878, n2877, n2876, n2875, n2874, n2872;
     wire [36:0]n1482;
@@ -1202,7 +1202,7 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_71_6.INJECT1_0 = "NO";
     defparam add_71_6.INJECT1_1 = "NO";
     FD1P3AX d6_i0_i0 (.D(n1131[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i0.GSR = "ENABLED";
     CCU2D add_92_37 (.A0(d_d_tmp[71]), .B0(n1169), .C0(n1170[34]), .D0(d_tmp[71]), 
           .A1(d_d_tmp[72]), .B1(n1169), .C1(n1170[35]), .D1(d_tmp[72]), 
@@ -1218,7 +1218,7 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_71_4.INIT1 = 16'h5666;
     defparam add_71_4.INJECT1_0 = "NO";
     defparam add_71_4.INJECT1_1 = "NO";
-    FD1S3AX d2_i0 (.D(d2_73__N_1383[0]), .CK(osc_clk), .Q(d2[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i0 (.D(d2_73__N_1383[0]), .CK(osc_clk), .Q(d2[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i0.GSR = "ENABLED";
     CCU2D add_71_2 (.A0(d2[37]), .B0(d3[37]), .C0(GND_net), .D0(GND_net), 
           .A1(d2[38]), .B1(d3[38]), .C1(GND_net), .D1(GND_net), .COUT(n3080), 
@@ -1234,27 +1234,27 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_92_35.INIT1 = 16'hb874;
     defparam add_92_35.INJECT1_0 = "NO";
     defparam add_92_35.INJECT1_1 = "NO";
-    FD1S3AX d3_i0 (.D(d3_73__N_1457[0]), .CK(osc_clk), .Q(d3[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i0 (.D(d3_73__N_1457[0]), .CK(osc_clk), .Q(d3[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i0.GSR = "ENABLED";
-    FD1S3AX d4_i0 (.D(d4_73__N_1531[0]), .CK(osc_clk), .Q(d4[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i0 (.D(d4_73__N_1531[0]), .CK(osc_clk), .Q(d4[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i0.GSR = "ENABLED";
-    FD1S3AX d5_i0 (.D(d5_73__N_1605[0]), .CK(osc_clk), .Q(d5[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i0 (.D(d5_73__N_1605[0]), .CK(osc_clk), .Q(d5[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i0.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i0 (.D(d5[0]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i0.GSR = "ENABLED";
     FD1P3AX d7_i0_i0 (.D(n1599[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d7[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i0.GSR = "ENABLED";
     FD1S3JX d_clk_tmp_86 (.D(n1883), .CK(osc_clk), .PD(osc_clk_enable_119), 
-            .Q(d_clk_tmp)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_clk_tmp)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_clk_tmp_86.GSR = "ENABLED";
-    FD1S3AX v_comb_87 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(v_comb)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(v_comb)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87.GSR = "ENABLED";
-    FD1S3AX d_clk_88 (.D(d_clk_tmp), .CK(osc_clk), .Q(CIC_out_clk_c)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+    FD1S3AX d_clk_88 (.D(d_clk_tmp), .CK(osc_clk), .Q(CIC_out_clk_c)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_clk_88.GSR = "ENABLED";
     FD1P3AX d8_i0_i0 (.D(n975[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d8[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i0.GSR = "ENABLED";
     CCU2D add_92_33 (.A0(d_d_tmp[67]), .B0(n1169), .C0(n1170[30]), .D0(d_tmp[67]), 
           .A1(d_d_tmp[68]), .B1(n1169), .C1(n1170[31]), .D1(d_tmp[68]), 
@@ -1299,30 +1299,30 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_92_23.INJECT1_0 = "NO";
     defparam add_92_23.INJECT1_1 = "NO";
     FD1P3AX d9_i0_i0 (.D(n1443[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d9[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i0.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i0 (.D(d6[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d_d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i0.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i0 (.D(d7[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d_d7[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i0.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i0 (.D(d8[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d_d8[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i0.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i0 (.D(d9[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d_d9[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i0.GSR = "ENABLED";
     FD1P3AX d_out_i0_i0 (.D(d10[66]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(\DataInNoSign_7__N_2556[0] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(\DataInNoSign_7__N_2588[0] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i0.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i0 (.D(d_tmp[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d_d_tmp[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i0.GSR = "ENABLED";
     FD1P3AX d10__0__i1 (.D(n1404[29]), .SP(osc_clk_enable_52), .CK(osc_clk), 
             .Q(d10[66]));   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d10__0__i1.GSR = "ENABLED";
-    FD1S3AX d1_i0 (.D(d1_73__N_1309[0]), .CK(osc_clk), .Q(d1[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i0 (.D(d1_73__N_1309[0]), .CK(osc_clk), .Q(d1[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i0.GSR = "ENABLED";
     CCU2D add_77_39 (.A0(d4[73]), .B0(n701), .C0(n702[36]), .D0(d3[73]), 
           .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n3078), 
@@ -1387,35 +1387,35 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam i989_2_lut.init = 16'h6666;
     LUT4 i990_2_lut (.A(d4[0]), .B(d5[0]), .Z(d5_73__N_1605[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i990_2_lut.init = 16'h6666;
-    FD1S3AX v_comb_87_rep_20 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_725)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_20 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_725)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_20.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_19 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_675)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_19 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_675)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_19.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_18 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_625)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_18 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_625)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_18.GSR = "ENABLED";
     LUT4 i1003_2_lut (.A(d3[37]), .B(d4[37]), .Z(n702[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i1003_2_lut.init = 16'h6666;
-    FD1S3AX v_comb_87_rep_17 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_575)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_17 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_575)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_17.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_16 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_525)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_16 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_525)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_16.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_15 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_475)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_15 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_475)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_15.GSR = "ENABLED";
     LUT4 i1002_2_lut (.A(d2[37]), .B(d3[37]), .Z(n546[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i1002_2_lut.init = 16'h6666;
-    FD1S3AX v_comb_87_rep_13 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_375)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_13 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_375)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_13.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_12 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_325)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_12 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_325)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_12.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_11 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_275)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_11 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_275)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_11.GSR = "ENABLED";
     LUT4 i1008_2_lut (.A(d1[37]), .B(d2[37]), .Z(n3218)) /* synthesis lut_function=(A (B)+!A !(B)) */ ;
     defparam i1008_2_lut.init = 16'h9999;
-    FD1S3AX v_comb_87_rep_10 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_225)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_10 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_225)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_10.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_9 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_175)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_9 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_175)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_9.GSR = "ENABLED";
-    FD1S3AX v_comb_87_rep_8 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_52)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_8 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_52)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_8.GSR = "ENABLED";
     LUT4 i987_2_lut (.A(d1[0]), .B(d2[0]), .Z(d2_73__N_1383[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i987_2_lut.init = 16'h6666;
@@ -2300,7 +2300,7 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_91_1.INJECT1_0 = "NO";
     defparam add_91_1.INJECT1_1 = "NO";
     FD1P3AX d6_i0_i1 (.D(n1131[1]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i1.GSR = "ENABLED";
     CCU2D add_97_27 (.A0(d9[62]), .B0(d_d9[62]), .C0(GND_net), .D0(GND_net), 
           .A1(d9[63]), .B1(d_d9[63]), .C1(GND_net), .D1(GND_net), .CIN(n2927), 
@@ -2552,233 +2552,233 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     LUT4 i13_4_lut (.A(count[7]), .B(n26), .C(n22), .D(count[12]), .Z(d_clk_tmp_N_2537)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i13_4_lut.init = 16'h8000;
     FD1P3AX d6_i0_i2 (.D(n1131[2]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i2.GSR = "ENABLED";
     FD1P3AX d6_i0_i3 (.D(n1131[3]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i3.GSR = "ENABLED";
     FD1P3AX d6_i0_i4 (.D(n1131[4]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i4.GSR = "ENABLED";
     FD1P3AX d6_i0_i5 (.D(n1131[5]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i5.GSR = "ENABLED";
     FD1P3AX d6_i0_i6 (.D(n1131[6]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i6.GSR = "ENABLED";
     FD1P3AX d6_i0_i7 (.D(n1131[7]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i7.GSR = "ENABLED";
     FD1P3AX d6_i0_i8 (.D(n1131[8]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i8.GSR = "ENABLED";
     FD1P3AX d6_i0_i9 (.D(n1131[9]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i9.GSR = "ENABLED";
     FD1P3AX d6_i0_i10 (.D(n1131[10]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i10.GSR = "ENABLED";
     FD1P3AX d6_i0_i11 (.D(n1131[11]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i11.GSR = "ENABLED";
     FD1P3AX d6_i0_i12 (.D(n1131[12]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i12.GSR = "ENABLED";
     FD1P3AX d6_i0_i13 (.D(n1131[13]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i13.GSR = "ENABLED";
     FD1P3AX d6_i0_i14 (.D(n1131[14]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i14.GSR = "ENABLED";
     FD1P3AX d6_i0_i15 (.D(n1131[15]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i15.GSR = "ENABLED";
     FD1P3AX d6_i0_i16 (.D(n1131[16]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i16.GSR = "ENABLED";
     FD1P3AX d6_i0_i17 (.D(n1131[17]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i17.GSR = "ENABLED";
     FD1P3AX d6_i0_i18 (.D(n1131[18]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i18.GSR = "ENABLED";
     FD1P3AX d6_i0_i19 (.D(n1131[19]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i19.GSR = "ENABLED";
     FD1P3AX d6_i0_i20 (.D(n1131[20]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i20.GSR = "ENABLED";
     FD1P3AX d6_i0_i21 (.D(n1131[21]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i21.GSR = "ENABLED";
     FD1P3AX d6_i0_i22 (.D(n1131[22]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i22.GSR = "ENABLED";
     FD1P3AX d6_i0_i23 (.D(n1131[23]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i23.GSR = "ENABLED";
     FD1P3AX d6_i0_i24 (.D(n1131[24]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i24.GSR = "ENABLED";
     FD1P3AX d6_i0_i25 (.D(n1131[25]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i25.GSR = "ENABLED";
     FD1P3AX d6_i0_i26 (.D(n1131[26]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i26.GSR = "ENABLED";
     FD1P3AX d6_i0_i27 (.D(n1131[27]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i27.GSR = "ENABLED";
     FD1P3AX d6_i0_i28 (.D(n1131[28]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i28.GSR = "ENABLED";
     FD1P3AX d6_i0_i29 (.D(n1131[29]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i29.GSR = "ENABLED";
     FD1P3AX d6_i0_i30 (.D(n1131[30]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i30.GSR = "ENABLED";
     FD1P3AX d6_i0_i31 (.D(n1131[31]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i31.GSR = "ENABLED";
     FD1P3AX d6_i0_i32 (.D(n1131[32]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i32.GSR = "ENABLED";
     FD1P3AX d6_i0_i33 (.D(n1131[33]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i33.GSR = "ENABLED";
     FD1P3AX d6_i0_i34 (.D(n1131[34]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i34.GSR = "ENABLED";
     FD1P3AX d6_i0_i35 (.D(n1131[35]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i35.GSR = "ENABLED";
     FD1P3AX d6_i0_i36 (.D(n1131[36]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i36.GSR = "ENABLED";
     FD1P3AX d6_i0_i37 (.D(n1209[0]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i37.GSR = "ENABLED";
     FD1P3AX d6_i0_i38 (.D(n1209[1]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i38.GSR = "ENABLED";
     FD1P3AX d6_i0_i39 (.D(n1209[2]), .SP(osc_clk_enable_52), .CK(osc_clk), 
-            .Q(d6[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i39.GSR = "ENABLED";
     FD1P3AX d6_i0_i40 (.D(n1209[3]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i40.GSR = "ENABLED";
     FD1P3AX d6_i0_i41 (.D(n1209[4]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i41.GSR = "ENABLED";
     FD1P3AX d6_i0_i42 (.D(n1209[5]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i42.GSR = "ENABLED";
     FD1P3AX d6_i0_i43 (.D(n1209[6]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i43.GSR = "ENABLED";
     FD1P3AX d6_i0_i44 (.D(n1209[7]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i44.GSR = "ENABLED";
     FD1P3AX d6_i0_i45 (.D(n1209[8]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i45.GSR = "ENABLED";
     FD1P3AX d6_i0_i46 (.D(n1209[9]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i46.GSR = "ENABLED";
     FD1P3AX d6_i0_i47 (.D(n1209[10]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i47.GSR = "ENABLED";
     FD1P3AX d6_i0_i48 (.D(n1209[11]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i48.GSR = "ENABLED";
     FD1P3AX d6_i0_i49 (.D(n1209[12]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i49.GSR = "ENABLED";
     FD1P3AX d6_i0_i50 (.D(n1209[13]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i50.GSR = "ENABLED";
     FD1P3AX d6_i0_i51 (.D(n1209[14]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i51.GSR = "ENABLED";
     FD1P3AX d6_i0_i52 (.D(n1209[15]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i52.GSR = "ENABLED";
     FD1P3AX d6_i0_i53 (.D(n1209[16]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i53.GSR = "ENABLED";
     FD1P3AX d6_i0_i54 (.D(n1209[17]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i54.GSR = "ENABLED";
     FD1P3AX d6_i0_i55 (.D(n1209[18]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i55.GSR = "ENABLED";
     FD1P3AX d6_i0_i56 (.D(n1209[19]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i56.GSR = "ENABLED";
     FD1P3AX d6_i0_i57 (.D(n1209[20]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i57.GSR = "ENABLED";
     FD1P3AX d6_i0_i58 (.D(n1209[21]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i58.GSR = "ENABLED";
     FD1P3AX d6_i0_i59 (.D(n1209[22]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i59.GSR = "ENABLED";
     FD1P3AX d6_i0_i60 (.D(n1209[23]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i60.GSR = "ENABLED";
     FD1P3AX d6_i0_i61 (.D(n1209[24]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i61.GSR = "ENABLED";
     FD1P3AX d6_i0_i62 (.D(n1209[25]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i62.GSR = "ENABLED";
     FD1P3AX d6_i0_i63 (.D(n1209[26]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i63.GSR = "ENABLED";
     FD1P3AX d6_i0_i64 (.D(n1209[27]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i64.GSR = "ENABLED";
     FD1P3AX d6_i0_i65 (.D(n1209[28]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i65.GSR = "ENABLED";
     FD1P3AX d6_i0_i66 (.D(n1209[29]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i66.GSR = "ENABLED";
     FD1P3AX d6_i0_i67 (.D(n1209[30]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i67.GSR = "ENABLED";
     FD1P3AX d6_i0_i68 (.D(n1209[31]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i68.GSR = "ENABLED";
     FD1P3AX d6_i0_i69 (.D(n1209[32]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i69.GSR = "ENABLED";
     FD1P3AX d6_i0_i70 (.D(n1209[33]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i70.GSR = "ENABLED";
     FD1P3AX d6_i0_i71 (.D(n1209[34]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i71.GSR = "ENABLED";
     FD1P3AX d6_i0_i72 (.D(n1209[35]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i72.GSR = "ENABLED";
     FD1P3AX d6_i0_i73 (.D(n1209[36]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d6[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d6[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d6_i0_i73.GSR = "ENABLED";
-    FD1S3AX d2_i1 (.D(d2_73__N_1383[1]), .CK(osc_clk), .Q(d2[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i1 (.D(d2_73__N_1383[1]), .CK(osc_clk), .Q(d2[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i1.GSR = "ENABLED";
-    LUT4 i12_4_lut (.A(count[9]), .B(n24_adj_2567), .C(n18), .D(count[5]), 
+    LUT4 i12_4_lut (.A(count[9]), .B(n24_adj_2599), .C(n18), .D(count[5]), 
          .Z(n26)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i12_4_lut.init = 16'h8000;
     LUT4 i8_4_lut (.A(count[13]), .B(count[3]), .C(count[11]), .D(count[6]), 
          .Z(n22)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i8_4_lut.init = 16'h8000;
     LUT4 i10_4_lut (.A(count[0]), .B(count[4]), .C(count[2]), .D(count[8]), 
-         .Z(n24_adj_2567)) /* synthesis lut_function=(A (B (C (D)))) */ ;
+         .Z(n24_adj_2599)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i10_4_lut.init = 16'h8000;
-    LUT4 i11_3_lut (.A(count[1]), .B(n22_adj_2568), .C(count[9]), .Z(n25)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(90[17:47])
+    LUT4 i11_3_lut (.A(count[1]), .B(n22_adj_2600), .C(count[9]), .Z(n25)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(90[17:47])
     defparam i11_3_lut.init = 16'hfefe;
     CCU2D add_95_37 (.A0(d9[35]), .B0(d_d9[35]), .C0(GND_net), .D0(GND_net), 
           .A1(d9[36]), .B1(d_d9[36]), .C1(GND_net), .D1(GND_net), .CIN(n2891), 
@@ -3031,1028 +3031,1028 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_101_5.INIT1 = 16'h5999;
     defparam add_101_5.INJECT1_0 = "NO";
     defparam add_101_5.INJECT1_1 = "NO";
-    FD1S3AX d2_i2 (.D(d2_73__N_1383[2]), .CK(osc_clk), .Q(d2[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i2 (.D(d2_73__N_1383[2]), .CK(osc_clk), .Q(d2[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i2.GSR = "ENABLED";
-    FD1S3AX d2_i3 (.D(d2_73__N_1383[3]), .CK(osc_clk), .Q(d2[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i3 (.D(d2_73__N_1383[3]), .CK(osc_clk), .Q(d2[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i3.GSR = "ENABLED";
-    FD1S3AX d2_i4 (.D(d2_73__N_1383[4]), .CK(osc_clk), .Q(d2[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i4 (.D(d2_73__N_1383[4]), .CK(osc_clk), .Q(d2[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i4.GSR = "ENABLED";
-    FD1S3AX d2_i5 (.D(d2_73__N_1383[5]), .CK(osc_clk), .Q(d2[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i5 (.D(d2_73__N_1383[5]), .CK(osc_clk), .Q(d2[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i5.GSR = "ENABLED";
-    FD1S3AX d2_i6 (.D(d2_73__N_1383[6]), .CK(osc_clk), .Q(d2[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i6 (.D(d2_73__N_1383[6]), .CK(osc_clk), .Q(d2[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i6.GSR = "ENABLED";
-    FD1S3AX d2_i7 (.D(d2_73__N_1383[7]), .CK(osc_clk), .Q(d2[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i7 (.D(d2_73__N_1383[7]), .CK(osc_clk), .Q(d2[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i7.GSR = "ENABLED";
-    FD1S3AX d2_i8 (.D(d2_73__N_1383[8]), .CK(osc_clk), .Q(d2[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i8 (.D(d2_73__N_1383[8]), .CK(osc_clk), .Q(d2[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i8.GSR = "ENABLED";
-    FD1S3AX d2_i9 (.D(d2_73__N_1383[9]), .CK(osc_clk), .Q(d2[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i9 (.D(d2_73__N_1383[9]), .CK(osc_clk), .Q(d2[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i9.GSR = "ENABLED";
-    FD1S3AX d2_i10 (.D(d2_73__N_1383[10]), .CK(osc_clk), .Q(d2[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i10 (.D(d2_73__N_1383[10]), .CK(osc_clk), .Q(d2[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i10.GSR = "ENABLED";
-    FD1S3AX d2_i11 (.D(d2_73__N_1383[11]), .CK(osc_clk), .Q(d2[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i11 (.D(d2_73__N_1383[11]), .CK(osc_clk), .Q(d2[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i11.GSR = "ENABLED";
-    FD1S3AX d2_i12 (.D(d2_73__N_1383[12]), .CK(osc_clk), .Q(d2[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i12 (.D(d2_73__N_1383[12]), .CK(osc_clk), .Q(d2[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i12.GSR = "ENABLED";
-    FD1S3AX d2_i13 (.D(d2_73__N_1383[13]), .CK(osc_clk), .Q(d2[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i13 (.D(d2_73__N_1383[13]), .CK(osc_clk), .Q(d2[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i13.GSR = "ENABLED";
-    FD1S3AX d2_i14 (.D(d2_73__N_1383[14]), .CK(osc_clk), .Q(d2[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i14 (.D(d2_73__N_1383[14]), .CK(osc_clk), .Q(d2[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i14.GSR = "ENABLED";
-    FD1S3AX d2_i15 (.D(d2_73__N_1383[15]), .CK(osc_clk), .Q(d2[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i15 (.D(d2_73__N_1383[15]), .CK(osc_clk), .Q(d2[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i15.GSR = "ENABLED";
-    FD1S3AX d2_i16 (.D(d2_73__N_1383[16]), .CK(osc_clk), .Q(d2[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i16 (.D(d2_73__N_1383[16]), .CK(osc_clk), .Q(d2[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i16.GSR = "ENABLED";
-    FD1S3AX d2_i17 (.D(d2_73__N_1383[17]), .CK(osc_clk), .Q(d2[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i17 (.D(d2_73__N_1383[17]), .CK(osc_clk), .Q(d2[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i17.GSR = "ENABLED";
-    FD1S3AX d2_i18 (.D(d2_73__N_1383[18]), .CK(osc_clk), .Q(d2[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i18 (.D(d2_73__N_1383[18]), .CK(osc_clk), .Q(d2[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i18.GSR = "ENABLED";
-    FD1S3AX d2_i19 (.D(d2_73__N_1383[19]), .CK(osc_clk), .Q(d2[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i19 (.D(d2_73__N_1383[19]), .CK(osc_clk), .Q(d2[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i19.GSR = "ENABLED";
-    FD1S3AX d2_i20 (.D(d2_73__N_1383[20]), .CK(osc_clk), .Q(d2[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i20 (.D(d2_73__N_1383[20]), .CK(osc_clk), .Q(d2[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i20.GSR = "ENABLED";
-    FD1S3AX d2_i21 (.D(d2_73__N_1383[21]), .CK(osc_clk), .Q(d2[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i21 (.D(d2_73__N_1383[21]), .CK(osc_clk), .Q(d2[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i21.GSR = "ENABLED";
-    FD1S3AX d2_i22 (.D(d2_73__N_1383[22]), .CK(osc_clk), .Q(d2[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i22 (.D(d2_73__N_1383[22]), .CK(osc_clk), .Q(d2[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i22.GSR = "ENABLED";
-    FD1S3AX d2_i23 (.D(d2_73__N_1383[23]), .CK(osc_clk), .Q(d2[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i23 (.D(d2_73__N_1383[23]), .CK(osc_clk), .Q(d2[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i23.GSR = "ENABLED";
-    FD1S3AX d2_i24 (.D(d2_73__N_1383[24]), .CK(osc_clk), .Q(d2[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i24 (.D(d2_73__N_1383[24]), .CK(osc_clk), .Q(d2[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i24.GSR = "ENABLED";
-    FD1S3AX d2_i25 (.D(d2_73__N_1383[25]), .CK(osc_clk), .Q(d2[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i25 (.D(d2_73__N_1383[25]), .CK(osc_clk), .Q(d2[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i25.GSR = "ENABLED";
-    FD1S3AX d2_i26 (.D(d2_73__N_1383[26]), .CK(osc_clk), .Q(d2[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i26 (.D(d2_73__N_1383[26]), .CK(osc_clk), .Q(d2[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i26.GSR = "ENABLED";
-    FD1S3AX d2_i27 (.D(d2_73__N_1383[27]), .CK(osc_clk), .Q(d2[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i27 (.D(d2_73__N_1383[27]), .CK(osc_clk), .Q(d2[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i27.GSR = "ENABLED";
-    FD1S3AX d2_i28 (.D(d2_73__N_1383[28]), .CK(osc_clk), .Q(d2[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i28 (.D(d2_73__N_1383[28]), .CK(osc_clk), .Q(d2[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i28.GSR = "ENABLED";
-    FD1S3AX d2_i29 (.D(d2_73__N_1383[29]), .CK(osc_clk), .Q(d2[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i29 (.D(d2_73__N_1383[29]), .CK(osc_clk), .Q(d2[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i29.GSR = "ENABLED";
-    FD1S3AX d2_i30 (.D(d2_73__N_1383[30]), .CK(osc_clk), .Q(d2[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i30 (.D(d2_73__N_1383[30]), .CK(osc_clk), .Q(d2[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i30.GSR = "ENABLED";
-    FD1S3AX d2_i31 (.D(d2_73__N_1383[31]), .CK(osc_clk), .Q(d2[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i31 (.D(d2_73__N_1383[31]), .CK(osc_clk), .Q(d2[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i31.GSR = "ENABLED";
-    FD1S3AX d2_i32 (.D(d2_73__N_1383[32]), .CK(osc_clk), .Q(d2[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i32 (.D(d2_73__N_1383[32]), .CK(osc_clk), .Q(d2[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i32.GSR = "ENABLED";
-    FD1S3AX d2_i33 (.D(d2_73__N_1383[33]), .CK(osc_clk), .Q(d2[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i33 (.D(d2_73__N_1383[33]), .CK(osc_clk), .Q(d2[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i33.GSR = "ENABLED";
-    FD1S3AX d2_i34 (.D(d2_73__N_1383[34]), .CK(osc_clk), .Q(d2[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i34 (.D(d2_73__N_1383[34]), .CK(osc_clk), .Q(d2[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i34.GSR = "ENABLED";
-    FD1S3AX d2_i35 (.D(d2_73__N_1383[35]), .CK(osc_clk), .Q(d2[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i35 (.D(d2_73__N_1383[35]), .CK(osc_clk), .Q(d2[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i35.GSR = "ENABLED";
-    FD1S3AX d2_i36 (.D(d2_73__N_1383[36]), .CK(osc_clk), .Q(d2[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i36 (.D(d2_73__N_1383[36]), .CK(osc_clk), .Q(d2[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i36.GSR = "ENABLED";
-    FD1S3AX d2_i37 (.D(d2_73__N_1383[37]), .CK(osc_clk), .Q(d2[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i37 (.D(d2_73__N_1383[37]), .CK(osc_clk), .Q(d2[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i37.GSR = "ENABLED";
-    FD1S3AX d2_i38 (.D(d2_73__N_1383[38]), .CK(osc_clk), .Q(d2[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i38 (.D(d2_73__N_1383[38]), .CK(osc_clk), .Q(d2[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i38.GSR = "ENABLED";
-    FD1S3AX d2_i39 (.D(d2_73__N_1383[39]), .CK(osc_clk), .Q(d2[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i39 (.D(d2_73__N_1383[39]), .CK(osc_clk), .Q(d2[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i39.GSR = "ENABLED";
-    FD1S3AX d2_i40 (.D(d2_73__N_1383[40]), .CK(osc_clk), .Q(d2[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i40 (.D(d2_73__N_1383[40]), .CK(osc_clk), .Q(d2[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i40.GSR = "ENABLED";
-    FD1S3AX d2_i41 (.D(d2_73__N_1383[41]), .CK(osc_clk), .Q(d2[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i41 (.D(d2_73__N_1383[41]), .CK(osc_clk), .Q(d2[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i41.GSR = "ENABLED";
-    FD1S3AX d2_i42 (.D(d2_73__N_1383[42]), .CK(osc_clk), .Q(d2[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i42 (.D(d2_73__N_1383[42]), .CK(osc_clk), .Q(d2[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i42.GSR = "ENABLED";
-    FD1S3AX d2_i43 (.D(d2_73__N_1383[43]), .CK(osc_clk), .Q(d2[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i43 (.D(d2_73__N_1383[43]), .CK(osc_clk), .Q(d2[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i43.GSR = "ENABLED";
-    FD1S3AX d2_i44 (.D(d2_73__N_1383[44]), .CK(osc_clk), .Q(d2[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i44 (.D(d2_73__N_1383[44]), .CK(osc_clk), .Q(d2[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i44.GSR = "ENABLED";
-    FD1S3AX d2_i45 (.D(d2_73__N_1383[45]), .CK(osc_clk), .Q(d2[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i45 (.D(d2_73__N_1383[45]), .CK(osc_clk), .Q(d2[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i45.GSR = "ENABLED";
-    FD1S3AX d2_i46 (.D(d2_73__N_1383[46]), .CK(osc_clk), .Q(d2[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i46 (.D(d2_73__N_1383[46]), .CK(osc_clk), .Q(d2[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i46.GSR = "ENABLED";
-    FD1S3AX d2_i47 (.D(d2_73__N_1383[47]), .CK(osc_clk), .Q(d2[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i47 (.D(d2_73__N_1383[47]), .CK(osc_clk), .Q(d2[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i47.GSR = "ENABLED";
-    FD1S3AX d2_i48 (.D(d2_73__N_1383[48]), .CK(osc_clk), .Q(d2[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i48 (.D(d2_73__N_1383[48]), .CK(osc_clk), .Q(d2[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i48.GSR = "ENABLED";
-    FD1S3AX d2_i49 (.D(d2_73__N_1383[49]), .CK(osc_clk), .Q(d2[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i49 (.D(d2_73__N_1383[49]), .CK(osc_clk), .Q(d2[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i49.GSR = "ENABLED";
-    FD1S3AX d2_i50 (.D(d2_73__N_1383[50]), .CK(osc_clk), .Q(d2[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i50 (.D(d2_73__N_1383[50]), .CK(osc_clk), .Q(d2[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i50.GSR = "ENABLED";
-    FD1S3AX d2_i51 (.D(d2_73__N_1383[51]), .CK(osc_clk), .Q(d2[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i51 (.D(d2_73__N_1383[51]), .CK(osc_clk), .Q(d2[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i51.GSR = "ENABLED";
-    FD1S3AX d2_i52 (.D(d2_73__N_1383[52]), .CK(osc_clk), .Q(d2[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i52 (.D(d2_73__N_1383[52]), .CK(osc_clk), .Q(d2[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i52.GSR = "ENABLED";
-    FD1S3AX d2_i53 (.D(d2_73__N_1383[53]), .CK(osc_clk), .Q(d2[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i53 (.D(d2_73__N_1383[53]), .CK(osc_clk), .Q(d2[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i53.GSR = "ENABLED";
-    FD1S3AX d2_i54 (.D(d2_73__N_1383[54]), .CK(osc_clk), .Q(d2[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i54 (.D(d2_73__N_1383[54]), .CK(osc_clk), .Q(d2[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i54.GSR = "ENABLED";
-    FD1S3AX d2_i55 (.D(d2_73__N_1383[55]), .CK(osc_clk), .Q(d2[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i55 (.D(d2_73__N_1383[55]), .CK(osc_clk), .Q(d2[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i55.GSR = "ENABLED";
-    FD1S3AX d2_i56 (.D(d2_73__N_1383[56]), .CK(osc_clk), .Q(d2[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i56 (.D(d2_73__N_1383[56]), .CK(osc_clk), .Q(d2[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i56.GSR = "ENABLED";
-    FD1S3AX d2_i57 (.D(d2_73__N_1383[57]), .CK(osc_clk), .Q(d2[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i57 (.D(d2_73__N_1383[57]), .CK(osc_clk), .Q(d2[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i57.GSR = "ENABLED";
-    FD1S3AX d2_i58 (.D(d2_73__N_1383[58]), .CK(osc_clk), .Q(d2[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i58 (.D(d2_73__N_1383[58]), .CK(osc_clk), .Q(d2[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i58.GSR = "ENABLED";
-    FD1S3AX d2_i59 (.D(d2_73__N_1383[59]), .CK(osc_clk), .Q(d2[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i59 (.D(d2_73__N_1383[59]), .CK(osc_clk), .Q(d2[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i59.GSR = "ENABLED";
-    FD1S3AX d2_i60 (.D(d2_73__N_1383[60]), .CK(osc_clk), .Q(d2[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i60 (.D(d2_73__N_1383[60]), .CK(osc_clk), .Q(d2[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i60.GSR = "ENABLED";
-    FD1S3AX d2_i61 (.D(d2_73__N_1383[61]), .CK(osc_clk), .Q(d2[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i61 (.D(d2_73__N_1383[61]), .CK(osc_clk), .Q(d2[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i61.GSR = "ENABLED";
-    FD1S3AX d2_i62 (.D(d2_73__N_1383[62]), .CK(osc_clk), .Q(d2[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i62 (.D(d2_73__N_1383[62]), .CK(osc_clk), .Q(d2[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i62.GSR = "ENABLED";
-    FD1S3AX d2_i63 (.D(d2_73__N_1383[63]), .CK(osc_clk), .Q(d2[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i63 (.D(d2_73__N_1383[63]), .CK(osc_clk), .Q(d2[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i63.GSR = "ENABLED";
-    FD1S3AX d2_i64 (.D(d2_73__N_1383[64]), .CK(osc_clk), .Q(d2[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i64 (.D(d2_73__N_1383[64]), .CK(osc_clk), .Q(d2[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i64.GSR = "ENABLED";
-    FD1S3AX d2_i65 (.D(d2_73__N_1383[65]), .CK(osc_clk), .Q(d2[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i65 (.D(d2_73__N_1383[65]), .CK(osc_clk), .Q(d2[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i65.GSR = "ENABLED";
-    FD1S3AX d2_i66 (.D(d2_73__N_1383[66]), .CK(osc_clk), .Q(d2[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i66 (.D(d2_73__N_1383[66]), .CK(osc_clk), .Q(d2[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i66.GSR = "ENABLED";
-    FD1S3AX d2_i67 (.D(d2_73__N_1383[67]), .CK(osc_clk), .Q(d2[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i67 (.D(d2_73__N_1383[67]), .CK(osc_clk), .Q(d2[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i67.GSR = "ENABLED";
-    FD1S3AX d2_i68 (.D(d2_73__N_1383[68]), .CK(osc_clk), .Q(d2[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i68 (.D(d2_73__N_1383[68]), .CK(osc_clk), .Q(d2[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i68.GSR = "ENABLED";
-    FD1S3AX d2_i69 (.D(d2_73__N_1383[69]), .CK(osc_clk), .Q(d2[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i69 (.D(d2_73__N_1383[69]), .CK(osc_clk), .Q(d2[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i69.GSR = "ENABLED";
-    FD1S3AX d2_i70 (.D(d2_73__N_1383[70]), .CK(osc_clk), .Q(d2[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i70 (.D(d2_73__N_1383[70]), .CK(osc_clk), .Q(d2[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i70.GSR = "ENABLED";
-    FD1S3AX d2_i71 (.D(d2_73__N_1383[71]), .CK(osc_clk), .Q(d2[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i71 (.D(d2_73__N_1383[71]), .CK(osc_clk), .Q(d2[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i71.GSR = "ENABLED";
-    FD1S3AX d2_i72 (.D(d2_73__N_1383[72]), .CK(osc_clk), .Q(d2[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i72 (.D(d2_73__N_1383[72]), .CK(osc_clk), .Q(d2[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i72.GSR = "ENABLED";
-    FD1S3AX d2_i73 (.D(d2_73__N_1383[73]), .CK(osc_clk), .Q(d2[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d2_i73 (.D(d2_73__N_1383[73]), .CK(osc_clk), .Q(d2[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d2_i73.GSR = "ENABLED";
-    FD1S3AX d3_i1 (.D(d3_73__N_1457[1]), .CK(osc_clk), .Q(d3[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i1 (.D(d3_73__N_1457[1]), .CK(osc_clk), .Q(d3[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i1.GSR = "ENABLED";
-    FD1S3AX d3_i2 (.D(d3_73__N_1457[2]), .CK(osc_clk), .Q(d3[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i2 (.D(d3_73__N_1457[2]), .CK(osc_clk), .Q(d3[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i2.GSR = "ENABLED";
-    FD1S3AX d3_i3 (.D(d3_73__N_1457[3]), .CK(osc_clk), .Q(d3[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i3 (.D(d3_73__N_1457[3]), .CK(osc_clk), .Q(d3[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i3.GSR = "ENABLED";
-    FD1S3AX d3_i4 (.D(d3_73__N_1457[4]), .CK(osc_clk), .Q(d3[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i4 (.D(d3_73__N_1457[4]), .CK(osc_clk), .Q(d3[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i4.GSR = "ENABLED";
-    FD1S3AX d3_i5 (.D(d3_73__N_1457[5]), .CK(osc_clk), .Q(d3[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i5 (.D(d3_73__N_1457[5]), .CK(osc_clk), .Q(d3[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i5.GSR = "ENABLED";
-    FD1S3AX d3_i6 (.D(d3_73__N_1457[6]), .CK(osc_clk), .Q(d3[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i6 (.D(d3_73__N_1457[6]), .CK(osc_clk), .Q(d3[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i6.GSR = "ENABLED";
-    FD1S3AX d3_i7 (.D(d3_73__N_1457[7]), .CK(osc_clk), .Q(d3[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i7 (.D(d3_73__N_1457[7]), .CK(osc_clk), .Q(d3[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i7.GSR = "ENABLED";
-    FD1S3AX d3_i8 (.D(d3_73__N_1457[8]), .CK(osc_clk), .Q(d3[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i8 (.D(d3_73__N_1457[8]), .CK(osc_clk), .Q(d3[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i8.GSR = "ENABLED";
-    FD1S3AX d3_i9 (.D(d3_73__N_1457[9]), .CK(osc_clk), .Q(d3[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i9 (.D(d3_73__N_1457[9]), .CK(osc_clk), .Q(d3[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i9.GSR = "ENABLED";
-    FD1S3AX d3_i10 (.D(d3_73__N_1457[10]), .CK(osc_clk), .Q(d3[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i10 (.D(d3_73__N_1457[10]), .CK(osc_clk), .Q(d3[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i10.GSR = "ENABLED";
-    FD1S3AX d3_i11 (.D(d3_73__N_1457[11]), .CK(osc_clk), .Q(d3[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i11 (.D(d3_73__N_1457[11]), .CK(osc_clk), .Q(d3[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i11.GSR = "ENABLED";
-    FD1S3AX d3_i12 (.D(d3_73__N_1457[12]), .CK(osc_clk), .Q(d3[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i12 (.D(d3_73__N_1457[12]), .CK(osc_clk), .Q(d3[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i12.GSR = "ENABLED";
-    FD1S3AX d3_i13 (.D(d3_73__N_1457[13]), .CK(osc_clk), .Q(d3[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i13 (.D(d3_73__N_1457[13]), .CK(osc_clk), .Q(d3[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i13.GSR = "ENABLED";
-    FD1S3AX d3_i14 (.D(d3_73__N_1457[14]), .CK(osc_clk), .Q(d3[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i14 (.D(d3_73__N_1457[14]), .CK(osc_clk), .Q(d3[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i14.GSR = "ENABLED";
-    FD1S3AX d3_i15 (.D(d3_73__N_1457[15]), .CK(osc_clk), .Q(d3[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i15 (.D(d3_73__N_1457[15]), .CK(osc_clk), .Q(d3[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i15.GSR = "ENABLED";
-    FD1S3AX d3_i16 (.D(d3_73__N_1457[16]), .CK(osc_clk), .Q(d3[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i16 (.D(d3_73__N_1457[16]), .CK(osc_clk), .Q(d3[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i16.GSR = "ENABLED";
-    FD1S3AX d3_i17 (.D(d3_73__N_1457[17]), .CK(osc_clk), .Q(d3[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i17 (.D(d3_73__N_1457[17]), .CK(osc_clk), .Q(d3[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i17.GSR = "ENABLED";
-    FD1S3AX d3_i18 (.D(d3_73__N_1457[18]), .CK(osc_clk), .Q(d3[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i18 (.D(d3_73__N_1457[18]), .CK(osc_clk), .Q(d3[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i18.GSR = "ENABLED";
-    FD1S3AX d3_i19 (.D(d3_73__N_1457[19]), .CK(osc_clk), .Q(d3[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i19 (.D(d3_73__N_1457[19]), .CK(osc_clk), .Q(d3[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i19.GSR = "ENABLED";
-    FD1S3AX d3_i20 (.D(d3_73__N_1457[20]), .CK(osc_clk), .Q(d3[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i20 (.D(d3_73__N_1457[20]), .CK(osc_clk), .Q(d3[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i20.GSR = "ENABLED";
-    FD1S3AX d3_i21 (.D(d3_73__N_1457[21]), .CK(osc_clk), .Q(d3[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i21 (.D(d3_73__N_1457[21]), .CK(osc_clk), .Q(d3[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i21.GSR = "ENABLED";
-    FD1S3AX d3_i22 (.D(d3_73__N_1457[22]), .CK(osc_clk), .Q(d3[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i22 (.D(d3_73__N_1457[22]), .CK(osc_clk), .Q(d3[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i22.GSR = "ENABLED";
-    FD1S3AX d3_i23 (.D(d3_73__N_1457[23]), .CK(osc_clk), .Q(d3[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i23 (.D(d3_73__N_1457[23]), .CK(osc_clk), .Q(d3[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i23.GSR = "ENABLED";
-    FD1S3AX d3_i24 (.D(d3_73__N_1457[24]), .CK(osc_clk), .Q(d3[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i24 (.D(d3_73__N_1457[24]), .CK(osc_clk), .Q(d3[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i24.GSR = "ENABLED";
-    FD1S3AX d3_i25 (.D(d3_73__N_1457[25]), .CK(osc_clk), .Q(d3[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i25 (.D(d3_73__N_1457[25]), .CK(osc_clk), .Q(d3[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i25.GSR = "ENABLED";
-    FD1S3AX d3_i26 (.D(d3_73__N_1457[26]), .CK(osc_clk), .Q(d3[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i26 (.D(d3_73__N_1457[26]), .CK(osc_clk), .Q(d3[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i26.GSR = "ENABLED";
-    FD1S3AX d3_i27 (.D(d3_73__N_1457[27]), .CK(osc_clk), .Q(d3[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i27 (.D(d3_73__N_1457[27]), .CK(osc_clk), .Q(d3[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i27.GSR = "ENABLED";
-    FD1S3AX d3_i28 (.D(d3_73__N_1457[28]), .CK(osc_clk), .Q(d3[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i28 (.D(d3_73__N_1457[28]), .CK(osc_clk), .Q(d3[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i28.GSR = "ENABLED";
-    FD1S3AX d3_i29 (.D(d3_73__N_1457[29]), .CK(osc_clk), .Q(d3[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i29 (.D(d3_73__N_1457[29]), .CK(osc_clk), .Q(d3[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i29.GSR = "ENABLED";
-    FD1S3AX d3_i30 (.D(d3_73__N_1457[30]), .CK(osc_clk), .Q(d3[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i30 (.D(d3_73__N_1457[30]), .CK(osc_clk), .Q(d3[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i30.GSR = "ENABLED";
-    FD1S3AX d3_i31 (.D(d3_73__N_1457[31]), .CK(osc_clk), .Q(d3[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i31 (.D(d3_73__N_1457[31]), .CK(osc_clk), .Q(d3[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i31.GSR = "ENABLED";
-    FD1S3AX d3_i32 (.D(d3_73__N_1457[32]), .CK(osc_clk), .Q(d3[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i32 (.D(d3_73__N_1457[32]), .CK(osc_clk), .Q(d3[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i32.GSR = "ENABLED";
-    FD1S3AX d3_i33 (.D(d3_73__N_1457[33]), .CK(osc_clk), .Q(d3[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i33 (.D(d3_73__N_1457[33]), .CK(osc_clk), .Q(d3[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i33.GSR = "ENABLED";
-    FD1S3AX d3_i34 (.D(d3_73__N_1457[34]), .CK(osc_clk), .Q(d3[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i34 (.D(d3_73__N_1457[34]), .CK(osc_clk), .Q(d3[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i34.GSR = "ENABLED";
-    FD1S3AX d3_i35 (.D(d3_73__N_1457[35]), .CK(osc_clk), .Q(d3[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i35 (.D(d3_73__N_1457[35]), .CK(osc_clk), .Q(d3[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i35.GSR = "ENABLED";
-    FD1S3AX d3_i36 (.D(d3_73__N_1457[36]), .CK(osc_clk), .Q(d3[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i36 (.D(d3_73__N_1457[36]), .CK(osc_clk), .Q(d3[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i36.GSR = "ENABLED";
-    FD1S3AX d3_i37 (.D(d3_73__N_1457[37]), .CK(osc_clk), .Q(d3[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i37 (.D(d3_73__N_1457[37]), .CK(osc_clk), .Q(d3[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i37.GSR = "ENABLED";
-    FD1S3AX d3_i38 (.D(d3_73__N_1457[38]), .CK(osc_clk), .Q(d3[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i38 (.D(d3_73__N_1457[38]), .CK(osc_clk), .Q(d3[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i38.GSR = "ENABLED";
-    FD1S3AX d3_i39 (.D(d3_73__N_1457[39]), .CK(osc_clk), .Q(d3[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i39 (.D(d3_73__N_1457[39]), .CK(osc_clk), .Q(d3[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i39.GSR = "ENABLED";
-    FD1S3AX d3_i40 (.D(d3_73__N_1457[40]), .CK(osc_clk), .Q(d3[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i40 (.D(d3_73__N_1457[40]), .CK(osc_clk), .Q(d3[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i40.GSR = "ENABLED";
-    FD1S3AX d3_i41 (.D(d3_73__N_1457[41]), .CK(osc_clk), .Q(d3[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i41 (.D(d3_73__N_1457[41]), .CK(osc_clk), .Q(d3[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i41.GSR = "ENABLED";
-    FD1S3AX d3_i42 (.D(d3_73__N_1457[42]), .CK(osc_clk), .Q(d3[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i42 (.D(d3_73__N_1457[42]), .CK(osc_clk), .Q(d3[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i42.GSR = "ENABLED";
-    FD1S3AX d3_i43 (.D(d3_73__N_1457[43]), .CK(osc_clk), .Q(d3[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i43 (.D(d3_73__N_1457[43]), .CK(osc_clk), .Q(d3[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i43.GSR = "ENABLED";
-    FD1S3AX d3_i44 (.D(d3_73__N_1457[44]), .CK(osc_clk), .Q(d3[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i44 (.D(d3_73__N_1457[44]), .CK(osc_clk), .Q(d3[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i44.GSR = "ENABLED";
-    FD1S3AX d3_i45 (.D(d3_73__N_1457[45]), .CK(osc_clk), .Q(d3[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i45 (.D(d3_73__N_1457[45]), .CK(osc_clk), .Q(d3[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i45.GSR = "ENABLED";
-    FD1S3AX d3_i46 (.D(d3_73__N_1457[46]), .CK(osc_clk), .Q(d3[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i46 (.D(d3_73__N_1457[46]), .CK(osc_clk), .Q(d3[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i46.GSR = "ENABLED";
-    FD1S3AX d3_i47 (.D(d3_73__N_1457[47]), .CK(osc_clk), .Q(d3[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i47 (.D(d3_73__N_1457[47]), .CK(osc_clk), .Q(d3[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i47.GSR = "ENABLED";
-    FD1S3AX d3_i48 (.D(d3_73__N_1457[48]), .CK(osc_clk), .Q(d3[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i48 (.D(d3_73__N_1457[48]), .CK(osc_clk), .Q(d3[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i48.GSR = "ENABLED";
-    FD1S3AX d3_i49 (.D(d3_73__N_1457[49]), .CK(osc_clk), .Q(d3[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i49 (.D(d3_73__N_1457[49]), .CK(osc_clk), .Q(d3[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i49.GSR = "ENABLED";
-    FD1S3AX d3_i50 (.D(d3_73__N_1457[50]), .CK(osc_clk), .Q(d3[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i50 (.D(d3_73__N_1457[50]), .CK(osc_clk), .Q(d3[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i50.GSR = "ENABLED";
-    FD1S3AX d3_i51 (.D(d3_73__N_1457[51]), .CK(osc_clk), .Q(d3[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i51 (.D(d3_73__N_1457[51]), .CK(osc_clk), .Q(d3[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i51.GSR = "ENABLED";
-    FD1S3AX d3_i52 (.D(d3_73__N_1457[52]), .CK(osc_clk), .Q(d3[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i52 (.D(d3_73__N_1457[52]), .CK(osc_clk), .Q(d3[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i52.GSR = "ENABLED";
-    FD1S3AX d3_i53 (.D(d3_73__N_1457[53]), .CK(osc_clk), .Q(d3[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i53 (.D(d3_73__N_1457[53]), .CK(osc_clk), .Q(d3[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i53.GSR = "ENABLED";
-    FD1S3AX d3_i54 (.D(d3_73__N_1457[54]), .CK(osc_clk), .Q(d3[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i54 (.D(d3_73__N_1457[54]), .CK(osc_clk), .Q(d3[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i54.GSR = "ENABLED";
-    FD1S3AX d3_i55 (.D(d3_73__N_1457[55]), .CK(osc_clk), .Q(d3[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i55 (.D(d3_73__N_1457[55]), .CK(osc_clk), .Q(d3[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i55.GSR = "ENABLED";
-    FD1S3AX d3_i56 (.D(d3_73__N_1457[56]), .CK(osc_clk), .Q(d3[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i56 (.D(d3_73__N_1457[56]), .CK(osc_clk), .Q(d3[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i56.GSR = "ENABLED";
-    FD1S3AX d3_i57 (.D(d3_73__N_1457[57]), .CK(osc_clk), .Q(d3[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i57 (.D(d3_73__N_1457[57]), .CK(osc_clk), .Q(d3[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i57.GSR = "ENABLED";
-    FD1S3AX d3_i58 (.D(d3_73__N_1457[58]), .CK(osc_clk), .Q(d3[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i58 (.D(d3_73__N_1457[58]), .CK(osc_clk), .Q(d3[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i58.GSR = "ENABLED";
-    FD1S3AX d3_i59 (.D(d3_73__N_1457[59]), .CK(osc_clk), .Q(d3[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i59 (.D(d3_73__N_1457[59]), .CK(osc_clk), .Q(d3[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i59.GSR = "ENABLED";
-    FD1S3AX d3_i60 (.D(d3_73__N_1457[60]), .CK(osc_clk), .Q(d3[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i60 (.D(d3_73__N_1457[60]), .CK(osc_clk), .Q(d3[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i60.GSR = "ENABLED";
-    FD1S3AX d3_i61 (.D(d3_73__N_1457[61]), .CK(osc_clk), .Q(d3[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i61 (.D(d3_73__N_1457[61]), .CK(osc_clk), .Q(d3[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i61.GSR = "ENABLED";
-    FD1S3AX d3_i62 (.D(d3_73__N_1457[62]), .CK(osc_clk), .Q(d3[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i62 (.D(d3_73__N_1457[62]), .CK(osc_clk), .Q(d3[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i62.GSR = "ENABLED";
-    FD1S3AX d3_i63 (.D(d3_73__N_1457[63]), .CK(osc_clk), .Q(d3[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i63 (.D(d3_73__N_1457[63]), .CK(osc_clk), .Q(d3[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i63.GSR = "ENABLED";
-    FD1S3AX d3_i64 (.D(d3_73__N_1457[64]), .CK(osc_clk), .Q(d3[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i64 (.D(d3_73__N_1457[64]), .CK(osc_clk), .Q(d3[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i64.GSR = "ENABLED";
-    FD1S3AX d3_i65 (.D(d3_73__N_1457[65]), .CK(osc_clk), .Q(d3[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i65 (.D(d3_73__N_1457[65]), .CK(osc_clk), .Q(d3[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i65.GSR = "ENABLED";
-    FD1S3AX d3_i66 (.D(d3_73__N_1457[66]), .CK(osc_clk), .Q(d3[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i66 (.D(d3_73__N_1457[66]), .CK(osc_clk), .Q(d3[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i66.GSR = "ENABLED";
-    FD1S3AX d3_i67 (.D(d3_73__N_1457[67]), .CK(osc_clk), .Q(d3[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i67 (.D(d3_73__N_1457[67]), .CK(osc_clk), .Q(d3[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i67.GSR = "ENABLED";
-    FD1S3AX d3_i68 (.D(d3_73__N_1457[68]), .CK(osc_clk), .Q(d3[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i68 (.D(d3_73__N_1457[68]), .CK(osc_clk), .Q(d3[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i68.GSR = "ENABLED";
-    FD1S3AX d3_i69 (.D(d3_73__N_1457[69]), .CK(osc_clk), .Q(d3[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i69 (.D(d3_73__N_1457[69]), .CK(osc_clk), .Q(d3[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i69.GSR = "ENABLED";
-    FD1S3AX d3_i70 (.D(d3_73__N_1457[70]), .CK(osc_clk), .Q(d3[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i70 (.D(d3_73__N_1457[70]), .CK(osc_clk), .Q(d3[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i70.GSR = "ENABLED";
-    FD1S3AX d3_i71 (.D(d3_73__N_1457[71]), .CK(osc_clk), .Q(d3[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i71 (.D(d3_73__N_1457[71]), .CK(osc_clk), .Q(d3[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i71.GSR = "ENABLED";
-    FD1S3AX d3_i72 (.D(d3_73__N_1457[72]), .CK(osc_clk), .Q(d3[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i72 (.D(d3_73__N_1457[72]), .CK(osc_clk), .Q(d3[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i72.GSR = "ENABLED";
-    FD1S3AX d3_i73 (.D(d3_73__N_1457[73]), .CK(osc_clk), .Q(d3[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d3_i73 (.D(d3_73__N_1457[73]), .CK(osc_clk), .Q(d3[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d3_i73.GSR = "ENABLED";
-    FD1S3AX d4_i1 (.D(d4_73__N_1531[1]), .CK(osc_clk), .Q(d4[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i1 (.D(d4_73__N_1531[1]), .CK(osc_clk), .Q(d4[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i1.GSR = "ENABLED";
-    FD1S3AX d4_i2 (.D(d4_73__N_1531[2]), .CK(osc_clk), .Q(d4[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i2 (.D(d4_73__N_1531[2]), .CK(osc_clk), .Q(d4[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i2.GSR = "ENABLED";
-    FD1S3AX d4_i3 (.D(d4_73__N_1531[3]), .CK(osc_clk), .Q(d4[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i3 (.D(d4_73__N_1531[3]), .CK(osc_clk), .Q(d4[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i3.GSR = "ENABLED";
-    FD1S3AX d4_i4 (.D(d4_73__N_1531[4]), .CK(osc_clk), .Q(d4[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i4 (.D(d4_73__N_1531[4]), .CK(osc_clk), .Q(d4[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i4.GSR = "ENABLED";
-    FD1S3AX d4_i5 (.D(d4_73__N_1531[5]), .CK(osc_clk), .Q(d4[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i5 (.D(d4_73__N_1531[5]), .CK(osc_clk), .Q(d4[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i5.GSR = "ENABLED";
-    FD1S3AX d4_i6 (.D(d4_73__N_1531[6]), .CK(osc_clk), .Q(d4[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i6 (.D(d4_73__N_1531[6]), .CK(osc_clk), .Q(d4[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i6.GSR = "ENABLED";
-    FD1S3AX d4_i7 (.D(d4_73__N_1531[7]), .CK(osc_clk), .Q(d4[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i7 (.D(d4_73__N_1531[7]), .CK(osc_clk), .Q(d4[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i7.GSR = "ENABLED";
-    FD1S3AX d4_i8 (.D(d4_73__N_1531[8]), .CK(osc_clk), .Q(d4[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i8 (.D(d4_73__N_1531[8]), .CK(osc_clk), .Q(d4[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i8.GSR = "ENABLED";
-    FD1S3AX d4_i9 (.D(d4_73__N_1531[9]), .CK(osc_clk), .Q(d4[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i9 (.D(d4_73__N_1531[9]), .CK(osc_clk), .Q(d4[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i9.GSR = "ENABLED";
-    FD1S3AX d4_i10 (.D(d4_73__N_1531[10]), .CK(osc_clk), .Q(d4[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i10 (.D(d4_73__N_1531[10]), .CK(osc_clk), .Q(d4[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i10.GSR = "ENABLED";
-    FD1S3AX d4_i11 (.D(d4_73__N_1531[11]), .CK(osc_clk), .Q(d4[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i11 (.D(d4_73__N_1531[11]), .CK(osc_clk), .Q(d4[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i11.GSR = "ENABLED";
-    FD1S3AX d4_i12 (.D(d4_73__N_1531[12]), .CK(osc_clk), .Q(d4[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i12 (.D(d4_73__N_1531[12]), .CK(osc_clk), .Q(d4[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i12.GSR = "ENABLED";
-    FD1S3AX d4_i13 (.D(d4_73__N_1531[13]), .CK(osc_clk), .Q(d4[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i13 (.D(d4_73__N_1531[13]), .CK(osc_clk), .Q(d4[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i13.GSR = "ENABLED";
-    FD1S3AX d4_i14 (.D(d4_73__N_1531[14]), .CK(osc_clk), .Q(d4[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i14 (.D(d4_73__N_1531[14]), .CK(osc_clk), .Q(d4[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i14.GSR = "ENABLED";
-    FD1S3AX d4_i15 (.D(d4_73__N_1531[15]), .CK(osc_clk), .Q(d4[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i15 (.D(d4_73__N_1531[15]), .CK(osc_clk), .Q(d4[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i15.GSR = "ENABLED";
-    FD1S3AX d4_i16 (.D(d4_73__N_1531[16]), .CK(osc_clk), .Q(d4[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i16 (.D(d4_73__N_1531[16]), .CK(osc_clk), .Q(d4[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i16.GSR = "ENABLED";
-    FD1S3AX d4_i17 (.D(d4_73__N_1531[17]), .CK(osc_clk), .Q(d4[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i17 (.D(d4_73__N_1531[17]), .CK(osc_clk), .Q(d4[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i17.GSR = "ENABLED";
-    FD1S3AX d4_i18 (.D(d4_73__N_1531[18]), .CK(osc_clk), .Q(d4[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i18 (.D(d4_73__N_1531[18]), .CK(osc_clk), .Q(d4[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i18.GSR = "ENABLED";
-    FD1S3AX d4_i19 (.D(d4_73__N_1531[19]), .CK(osc_clk), .Q(d4[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i19 (.D(d4_73__N_1531[19]), .CK(osc_clk), .Q(d4[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i19.GSR = "ENABLED";
-    FD1S3AX d4_i20 (.D(d4_73__N_1531[20]), .CK(osc_clk), .Q(d4[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i20 (.D(d4_73__N_1531[20]), .CK(osc_clk), .Q(d4[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i20.GSR = "ENABLED";
-    FD1S3AX d4_i21 (.D(d4_73__N_1531[21]), .CK(osc_clk), .Q(d4[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i21 (.D(d4_73__N_1531[21]), .CK(osc_clk), .Q(d4[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i21.GSR = "ENABLED";
-    FD1S3AX d4_i22 (.D(d4_73__N_1531[22]), .CK(osc_clk), .Q(d4[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i22 (.D(d4_73__N_1531[22]), .CK(osc_clk), .Q(d4[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i22.GSR = "ENABLED";
-    FD1S3AX d4_i23 (.D(d4_73__N_1531[23]), .CK(osc_clk), .Q(d4[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i23 (.D(d4_73__N_1531[23]), .CK(osc_clk), .Q(d4[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i23.GSR = "ENABLED";
-    FD1S3AX d4_i24 (.D(d4_73__N_1531[24]), .CK(osc_clk), .Q(d4[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i24 (.D(d4_73__N_1531[24]), .CK(osc_clk), .Q(d4[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i24.GSR = "ENABLED";
-    FD1S3AX d4_i25 (.D(d4_73__N_1531[25]), .CK(osc_clk), .Q(d4[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i25 (.D(d4_73__N_1531[25]), .CK(osc_clk), .Q(d4[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i25.GSR = "ENABLED";
-    FD1S3AX d4_i26 (.D(d4_73__N_1531[26]), .CK(osc_clk), .Q(d4[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i26 (.D(d4_73__N_1531[26]), .CK(osc_clk), .Q(d4[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i26.GSR = "ENABLED";
-    FD1S3AX d4_i27 (.D(d4_73__N_1531[27]), .CK(osc_clk), .Q(d4[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i27 (.D(d4_73__N_1531[27]), .CK(osc_clk), .Q(d4[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i27.GSR = "ENABLED";
-    FD1S3AX d4_i28 (.D(d4_73__N_1531[28]), .CK(osc_clk), .Q(d4[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i28 (.D(d4_73__N_1531[28]), .CK(osc_clk), .Q(d4[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i28.GSR = "ENABLED";
-    FD1S3AX d4_i29 (.D(d4_73__N_1531[29]), .CK(osc_clk), .Q(d4[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i29 (.D(d4_73__N_1531[29]), .CK(osc_clk), .Q(d4[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i29.GSR = "ENABLED";
-    FD1S3AX d4_i30 (.D(d4_73__N_1531[30]), .CK(osc_clk), .Q(d4[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i30 (.D(d4_73__N_1531[30]), .CK(osc_clk), .Q(d4[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i30.GSR = "ENABLED";
-    FD1S3AX d4_i31 (.D(d4_73__N_1531[31]), .CK(osc_clk), .Q(d4[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i31 (.D(d4_73__N_1531[31]), .CK(osc_clk), .Q(d4[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i31.GSR = "ENABLED";
-    FD1S3AX d4_i32 (.D(d4_73__N_1531[32]), .CK(osc_clk), .Q(d4[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i32 (.D(d4_73__N_1531[32]), .CK(osc_clk), .Q(d4[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i32.GSR = "ENABLED";
-    FD1S3AX d4_i33 (.D(d4_73__N_1531[33]), .CK(osc_clk), .Q(d4[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i33 (.D(d4_73__N_1531[33]), .CK(osc_clk), .Q(d4[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i33.GSR = "ENABLED";
-    FD1S3AX d4_i34 (.D(d4_73__N_1531[34]), .CK(osc_clk), .Q(d4[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i34 (.D(d4_73__N_1531[34]), .CK(osc_clk), .Q(d4[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i34.GSR = "ENABLED";
-    FD1S3AX d4_i35 (.D(d4_73__N_1531[35]), .CK(osc_clk), .Q(d4[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i35 (.D(d4_73__N_1531[35]), .CK(osc_clk), .Q(d4[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i35.GSR = "ENABLED";
-    FD1S3AX d4_i36 (.D(d4_73__N_1531[36]), .CK(osc_clk), .Q(d4[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i36 (.D(d4_73__N_1531[36]), .CK(osc_clk), .Q(d4[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i36.GSR = "ENABLED";
-    FD1S3AX d4_i37 (.D(d4_73__N_1531[37]), .CK(osc_clk), .Q(d4[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i37 (.D(d4_73__N_1531[37]), .CK(osc_clk), .Q(d4[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i37.GSR = "ENABLED";
-    FD1S3AX d4_i38 (.D(d4_73__N_1531[38]), .CK(osc_clk), .Q(d4[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i38 (.D(d4_73__N_1531[38]), .CK(osc_clk), .Q(d4[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i38.GSR = "ENABLED";
-    FD1S3AX d4_i39 (.D(d4_73__N_1531[39]), .CK(osc_clk), .Q(d4[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i39 (.D(d4_73__N_1531[39]), .CK(osc_clk), .Q(d4[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i39.GSR = "ENABLED";
-    FD1S3AX d4_i40 (.D(d4_73__N_1531[40]), .CK(osc_clk), .Q(d4[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i40 (.D(d4_73__N_1531[40]), .CK(osc_clk), .Q(d4[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i40.GSR = "ENABLED";
-    FD1S3AX d4_i41 (.D(d4_73__N_1531[41]), .CK(osc_clk), .Q(d4[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i41 (.D(d4_73__N_1531[41]), .CK(osc_clk), .Q(d4[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i41.GSR = "ENABLED";
-    FD1S3AX d4_i42 (.D(d4_73__N_1531[42]), .CK(osc_clk), .Q(d4[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i42 (.D(d4_73__N_1531[42]), .CK(osc_clk), .Q(d4[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i42.GSR = "ENABLED";
-    FD1S3AX d4_i43 (.D(d4_73__N_1531[43]), .CK(osc_clk), .Q(d4[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i43 (.D(d4_73__N_1531[43]), .CK(osc_clk), .Q(d4[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i43.GSR = "ENABLED";
-    FD1S3AX d4_i44 (.D(d4_73__N_1531[44]), .CK(osc_clk), .Q(d4[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i44 (.D(d4_73__N_1531[44]), .CK(osc_clk), .Q(d4[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i44.GSR = "ENABLED";
-    FD1S3AX d4_i45 (.D(d4_73__N_1531[45]), .CK(osc_clk), .Q(d4[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i45 (.D(d4_73__N_1531[45]), .CK(osc_clk), .Q(d4[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i45.GSR = "ENABLED";
-    FD1S3AX d4_i46 (.D(d4_73__N_1531[46]), .CK(osc_clk), .Q(d4[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i46 (.D(d4_73__N_1531[46]), .CK(osc_clk), .Q(d4[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i46.GSR = "ENABLED";
-    FD1S3AX d4_i47 (.D(d4_73__N_1531[47]), .CK(osc_clk), .Q(d4[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i47 (.D(d4_73__N_1531[47]), .CK(osc_clk), .Q(d4[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i47.GSR = "ENABLED";
-    FD1S3AX d4_i48 (.D(d4_73__N_1531[48]), .CK(osc_clk), .Q(d4[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i48 (.D(d4_73__N_1531[48]), .CK(osc_clk), .Q(d4[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i48.GSR = "ENABLED";
-    FD1S3AX d4_i49 (.D(d4_73__N_1531[49]), .CK(osc_clk), .Q(d4[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i49 (.D(d4_73__N_1531[49]), .CK(osc_clk), .Q(d4[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i49.GSR = "ENABLED";
-    FD1S3AX d4_i50 (.D(d4_73__N_1531[50]), .CK(osc_clk), .Q(d4[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i50 (.D(d4_73__N_1531[50]), .CK(osc_clk), .Q(d4[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i50.GSR = "ENABLED";
-    FD1S3AX d4_i51 (.D(d4_73__N_1531[51]), .CK(osc_clk), .Q(d4[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i51 (.D(d4_73__N_1531[51]), .CK(osc_clk), .Q(d4[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i51.GSR = "ENABLED";
-    FD1S3AX d4_i52 (.D(d4_73__N_1531[52]), .CK(osc_clk), .Q(d4[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i52 (.D(d4_73__N_1531[52]), .CK(osc_clk), .Q(d4[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i52.GSR = "ENABLED";
-    FD1S3AX d4_i53 (.D(d4_73__N_1531[53]), .CK(osc_clk), .Q(d4[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i53 (.D(d4_73__N_1531[53]), .CK(osc_clk), .Q(d4[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i53.GSR = "ENABLED";
-    FD1S3AX d4_i54 (.D(d4_73__N_1531[54]), .CK(osc_clk), .Q(d4[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i54 (.D(d4_73__N_1531[54]), .CK(osc_clk), .Q(d4[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i54.GSR = "ENABLED";
-    FD1S3AX d4_i55 (.D(d4_73__N_1531[55]), .CK(osc_clk), .Q(d4[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i55 (.D(d4_73__N_1531[55]), .CK(osc_clk), .Q(d4[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i55.GSR = "ENABLED";
-    FD1S3AX d4_i56 (.D(d4_73__N_1531[56]), .CK(osc_clk), .Q(d4[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i56 (.D(d4_73__N_1531[56]), .CK(osc_clk), .Q(d4[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i56.GSR = "ENABLED";
-    FD1S3AX d4_i57 (.D(d4_73__N_1531[57]), .CK(osc_clk), .Q(d4[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i57 (.D(d4_73__N_1531[57]), .CK(osc_clk), .Q(d4[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i57.GSR = "ENABLED";
-    FD1S3AX d4_i58 (.D(d4_73__N_1531[58]), .CK(osc_clk), .Q(d4[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i58 (.D(d4_73__N_1531[58]), .CK(osc_clk), .Q(d4[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i58.GSR = "ENABLED";
-    FD1S3AX d4_i59 (.D(d4_73__N_1531[59]), .CK(osc_clk), .Q(d4[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i59 (.D(d4_73__N_1531[59]), .CK(osc_clk), .Q(d4[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i59.GSR = "ENABLED";
-    FD1S3AX d4_i60 (.D(d4_73__N_1531[60]), .CK(osc_clk), .Q(d4[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i60 (.D(d4_73__N_1531[60]), .CK(osc_clk), .Q(d4[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i60.GSR = "ENABLED";
-    FD1S3AX d4_i61 (.D(d4_73__N_1531[61]), .CK(osc_clk), .Q(d4[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i61 (.D(d4_73__N_1531[61]), .CK(osc_clk), .Q(d4[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i61.GSR = "ENABLED";
-    FD1S3AX d4_i62 (.D(d4_73__N_1531[62]), .CK(osc_clk), .Q(d4[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i62 (.D(d4_73__N_1531[62]), .CK(osc_clk), .Q(d4[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i62.GSR = "ENABLED";
-    FD1S3AX d4_i63 (.D(d4_73__N_1531[63]), .CK(osc_clk), .Q(d4[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i63 (.D(d4_73__N_1531[63]), .CK(osc_clk), .Q(d4[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i63.GSR = "ENABLED";
-    FD1S3AX d4_i64 (.D(d4_73__N_1531[64]), .CK(osc_clk), .Q(d4[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i64 (.D(d4_73__N_1531[64]), .CK(osc_clk), .Q(d4[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i64.GSR = "ENABLED";
-    FD1S3AX d4_i65 (.D(d4_73__N_1531[65]), .CK(osc_clk), .Q(d4[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i65 (.D(d4_73__N_1531[65]), .CK(osc_clk), .Q(d4[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i65.GSR = "ENABLED";
-    FD1S3AX d4_i66 (.D(d4_73__N_1531[66]), .CK(osc_clk), .Q(d4[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i66 (.D(d4_73__N_1531[66]), .CK(osc_clk), .Q(d4[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i66.GSR = "ENABLED";
-    FD1S3AX d4_i67 (.D(d4_73__N_1531[67]), .CK(osc_clk), .Q(d4[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i67 (.D(d4_73__N_1531[67]), .CK(osc_clk), .Q(d4[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i67.GSR = "ENABLED";
-    FD1S3AX d4_i68 (.D(d4_73__N_1531[68]), .CK(osc_clk), .Q(d4[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i68 (.D(d4_73__N_1531[68]), .CK(osc_clk), .Q(d4[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i68.GSR = "ENABLED";
-    FD1S3AX d4_i69 (.D(d4_73__N_1531[69]), .CK(osc_clk), .Q(d4[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i69 (.D(d4_73__N_1531[69]), .CK(osc_clk), .Q(d4[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i69.GSR = "ENABLED";
-    FD1S3AX d4_i70 (.D(d4_73__N_1531[70]), .CK(osc_clk), .Q(d4[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i70 (.D(d4_73__N_1531[70]), .CK(osc_clk), .Q(d4[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i70.GSR = "ENABLED";
-    FD1S3AX d4_i71 (.D(d4_73__N_1531[71]), .CK(osc_clk), .Q(d4[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i71 (.D(d4_73__N_1531[71]), .CK(osc_clk), .Q(d4[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i71.GSR = "ENABLED";
-    FD1S3AX d4_i72 (.D(d4_73__N_1531[72]), .CK(osc_clk), .Q(d4[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i72 (.D(d4_73__N_1531[72]), .CK(osc_clk), .Q(d4[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i72.GSR = "ENABLED";
-    FD1S3AX d4_i73 (.D(d4_73__N_1531[73]), .CK(osc_clk), .Q(d4[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d4_i73 (.D(d4_73__N_1531[73]), .CK(osc_clk), .Q(d4[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d4_i73.GSR = "ENABLED";
-    FD1S3AX d5_i1 (.D(d5_73__N_1605[1]), .CK(osc_clk), .Q(d5[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i1 (.D(d5_73__N_1605[1]), .CK(osc_clk), .Q(d5[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i1.GSR = "ENABLED";
-    FD1S3AX d5_i2 (.D(d5_73__N_1605[2]), .CK(osc_clk), .Q(d5[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i2 (.D(d5_73__N_1605[2]), .CK(osc_clk), .Q(d5[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i2.GSR = "ENABLED";
-    FD1S3AX d5_i3 (.D(d5_73__N_1605[3]), .CK(osc_clk), .Q(d5[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i3 (.D(d5_73__N_1605[3]), .CK(osc_clk), .Q(d5[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i3.GSR = "ENABLED";
-    FD1S3AX d5_i4 (.D(d5_73__N_1605[4]), .CK(osc_clk), .Q(d5[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i4 (.D(d5_73__N_1605[4]), .CK(osc_clk), .Q(d5[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i4.GSR = "ENABLED";
-    FD1S3AX d5_i5 (.D(d5_73__N_1605[5]), .CK(osc_clk), .Q(d5[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i5 (.D(d5_73__N_1605[5]), .CK(osc_clk), .Q(d5[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i5.GSR = "ENABLED";
-    FD1S3AX d5_i6 (.D(d5_73__N_1605[6]), .CK(osc_clk), .Q(d5[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i6 (.D(d5_73__N_1605[6]), .CK(osc_clk), .Q(d5[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i6.GSR = "ENABLED";
-    FD1S3AX d5_i7 (.D(d5_73__N_1605[7]), .CK(osc_clk), .Q(d5[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i7 (.D(d5_73__N_1605[7]), .CK(osc_clk), .Q(d5[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i7.GSR = "ENABLED";
-    FD1S3AX d5_i8 (.D(d5_73__N_1605[8]), .CK(osc_clk), .Q(d5[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i8 (.D(d5_73__N_1605[8]), .CK(osc_clk), .Q(d5[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i8.GSR = "ENABLED";
-    FD1S3AX d5_i9 (.D(d5_73__N_1605[9]), .CK(osc_clk), .Q(d5[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i9 (.D(d5_73__N_1605[9]), .CK(osc_clk), .Q(d5[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i9.GSR = "ENABLED";
-    FD1S3AX d5_i10 (.D(d5_73__N_1605[10]), .CK(osc_clk), .Q(d5[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i10 (.D(d5_73__N_1605[10]), .CK(osc_clk), .Q(d5[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i10.GSR = "ENABLED";
-    FD1S3AX d5_i11 (.D(d5_73__N_1605[11]), .CK(osc_clk), .Q(d5[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i11 (.D(d5_73__N_1605[11]), .CK(osc_clk), .Q(d5[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i11.GSR = "ENABLED";
-    FD1S3AX d5_i12 (.D(d5_73__N_1605[12]), .CK(osc_clk), .Q(d5[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i12 (.D(d5_73__N_1605[12]), .CK(osc_clk), .Q(d5[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i12.GSR = "ENABLED";
-    FD1S3AX d5_i13 (.D(d5_73__N_1605[13]), .CK(osc_clk), .Q(d5[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i13 (.D(d5_73__N_1605[13]), .CK(osc_clk), .Q(d5[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i13.GSR = "ENABLED";
-    FD1S3AX d5_i14 (.D(d5_73__N_1605[14]), .CK(osc_clk), .Q(d5[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i14 (.D(d5_73__N_1605[14]), .CK(osc_clk), .Q(d5[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i14.GSR = "ENABLED";
-    FD1S3AX d5_i15 (.D(d5_73__N_1605[15]), .CK(osc_clk), .Q(d5[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i15 (.D(d5_73__N_1605[15]), .CK(osc_clk), .Q(d5[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i15.GSR = "ENABLED";
-    FD1S3AX d5_i16 (.D(d5_73__N_1605[16]), .CK(osc_clk), .Q(d5[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i16 (.D(d5_73__N_1605[16]), .CK(osc_clk), .Q(d5[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i16.GSR = "ENABLED";
-    FD1S3AX d5_i17 (.D(d5_73__N_1605[17]), .CK(osc_clk), .Q(d5[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i17 (.D(d5_73__N_1605[17]), .CK(osc_clk), .Q(d5[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i17.GSR = "ENABLED";
-    FD1S3AX d5_i18 (.D(d5_73__N_1605[18]), .CK(osc_clk), .Q(d5[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i18 (.D(d5_73__N_1605[18]), .CK(osc_clk), .Q(d5[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i18.GSR = "ENABLED";
-    FD1S3AX d5_i19 (.D(d5_73__N_1605[19]), .CK(osc_clk), .Q(d5[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i19 (.D(d5_73__N_1605[19]), .CK(osc_clk), .Q(d5[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i19.GSR = "ENABLED";
-    FD1S3AX d5_i20 (.D(d5_73__N_1605[20]), .CK(osc_clk), .Q(d5[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i20 (.D(d5_73__N_1605[20]), .CK(osc_clk), .Q(d5[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i20.GSR = "ENABLED";
-    FD1S3AX d5_i21 (.D(d5_73__N_1605[21]), .CK(osc_clk), .Q(d5[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i21 (.D(d5_73__N_1605[21]), .CK(osc_clk), .Q(d5[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i21.GSR = "ENABLED";
-    FD1S3AX d5_i22 (.D(d5_73__N_1605[22]), .CK(osc_clk), .Q(d5[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i22 (.D(d5_73__N_1605[22]), .CK(osc_clk), .Q(d5[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i22.GSR = "ENABLED";
-    FD1S3AX d5_i23 (.D(d5_73__N_1605[23]), .CK(osc_clk), .Q(d5[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i23 (.D(d5_73__N_1605[23]), .CK(osc_clk), .Q(d5[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i23.GSR = "ENABLED";
-    FD1S3AX d5_i24 (.D(d5_73__N_1605[24]), .CK(osc_clk), .Q(d5[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i24 (.D(d5_73__N_1605[24]), .CK(osc_clk), .Q(d5[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i24.GSR = "ENABLED";
-    FD1S3AX d5_i25 (.D(d5_73__N_1605[25]), .CK(osc_clk), .Q(d5[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i25 (.D(d5_73__N_1605[25]), .CK(osc_clk), .Q(d5[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i25.GSR = "ENABLED";
-    FD1S3AX d5_i26 (.D(d5_73__N_1605[26]), .CK(osc_clk), .Q(d5[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i26 (.D(d5_73__N_1605[26]), .CK(osc_clk), .Q(d5[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i26.GSR = "ENABLED";
-    FD1S3AX d5_i27 (.D(d5_73__N_1605[27]), .CK(osc_clk), .Q(d5[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i27 (.D(d5_73__N_1605[27]), .CK(osc_clk), .Q(d5[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i27.GSR = "ENABLED";
-    FD1S3AX d5_i28 (.D(d5_73__N_1605[28]), .CK(osc_clk), .Q(d5[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i28 (.D(d5_73__N_1605[28]), .CK(osc_clk), .Q(d5[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i28.GSR = "ENABLED";
-    FD1S3AX d5_i29 (.D(d5_73__N_1605[29]), .CK(osc_clk), .Q(d5[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i29 (.D(d5_73__N_1605[29]), .CK(osc_clk), .Q(d5[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i29.GSR = "ENABLED";
-    FD1S3AX d5_i30 (.D(d5_73__N_1605[30]), .CK(osc_clk), .Q(d5[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i30 (.D(d5_73__N_1605[30]), .CK(osc_clk), .Q(d5[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i30.GSR = "ENABLED";
-    FD1S3AX d5_i31 (.D(d5_73__N_1605[31]), .CK(osc_clk), .Q(d5[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i31 (.D(d5_73__N_1605[31]), .CK(osc_clk), .Q(d5[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i31.GSR = "ENABLED";
-    FD1S3AX d5_i32 (.D(d5_73__N_1605[32]), .CK(osc_clk), .Q(d5[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i32 (.D(d5_73__N_1605[32]), .CK(osc_clk), .Q(d5[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i32.GSR = "ENABLED";
-    FD1S3AX d5_i33 (.D(d5_73__N_1605[33]), .CK(osc_clk), .Q(d5[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i33 (.D(d5_73__N_1605[33]), .CK(osc_clk), .Q(d5[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i33.GSR = "ENABLED";
-    FD1S3AX d5_i34 (.D(d5_73__N_1605[34]), .CK(osc_clk), .Q(d5[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i34 (.D(d5_73__N_1605[34]), .CK(osc_clk), .Q(d5[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i34.GSR = "ENABLED";
-    FD1S3AX d5_i35 (.D(d5_73__N_1605[35]), .CK(osc_clk), .Q(d5[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i35 (.D(d5_73__N_1605[35]), .CK(osc_clk), .Q(d5[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i35.GSR = "ENABLED";
-    FD1S3AX d5_i36 (.D(d5_73__N_1605[36]), .CK(osc_clk), .Q(d5[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i36 (.D(d5_73__N_1605[36]), .CK(osc_clk), .Q(d5[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i36.GSR = "ENABLED";
-    FD1S3AX d5_i37 (.D(d5_73__N_1605[37]), .CK(osc_clk), .Q(d5[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i37 (.D(d5_73__N_1605[37]), .CK(osc_clk), .Q(d5[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i37.GSR = "ENABLED";
-    FD1S3AX d5_i38 (.D(d5_73__N_1605[38]), .CK(osc_clk), .Q(d5[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i38 (.D(d5_73__N_1605[38]), .CK(osc_clk), .Q(d5[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i38.GSR = "ENABLED";
-    FD1S3AX d5_i39 (.D(d5_73__N_1605[39]), .CK(osc_clk), .Q(d5[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i39 (.D(d5_73__N_1605[39]), .CK(osc_clk), .Q(d5[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i39.GSR = "ENABLED";
-    FD1S3AX d5_i40 (.D(d5_73__N_1605[40]), .CK(osc_clk), .Q(d5[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i40 (.D(d5_73__N_1605[40]), .CK(osc_clk), .Q(d5[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i40.GSR = "ENABLED";
-    FD1S3AX d5_i41 (.D(d5_73__N_1605[41]), .CK(osc_clk), .Q(d5[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i41 (.D(d5_73__N_1605[41]), .CK(osc_clk), .Q(d5[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i41.GSR = "ENABLED";
-    FD1S3AX d5_i42 (.D(d5_73__N_1605[42]), .CK(osc_clk), .Q(d5[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i42 (.D(d5_73__N_1605[42]), .CK(osc_clk), .Q(d5[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i42.GSR = "ENABLED";
-    FD1S3AX d5_i43 (.D(d5_73__N_1605[43]), .CK(osc_clk), .Q(d5[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i43 (.D(d5_73__N_1605[43]), .CK(osc_clk), .Q(d5[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i43.GSR = "ENABLED";
-    FD1S3AX d5_i44 (.D(d5_73__N_1605[44]), .CK(osc_clk), .Q(d5[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i44 (.D(d5_73__N_1605[44]), .CK(osc_clk), .Q(d5[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i44.GSR = "ENABLED";
-    FD1S3AX d5_i45 (.D(d5_73__N_1605[45]), .CK(osc_clk), .Q(d5[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i45 (.D(d5_73__N_1605[45]), .CK(osc_clk), .Q(d5[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i45.GSR = "ENABLED";
-    FD1S3AX d5_i46 (.D(d5_73__N_1605[46]), .CK(osc_clk), .Q(d5[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i46 (.D(d5_73__N_1605[46]), .CK(osc_clk), .Q(d5[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i46.GSR = "ENABLED";
-    FD1S3AX d5_i47 (.D(d5_73__N_1605[47]), .CK(osc_clk), .Q(d5[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i47 (.D(d5_73__N_1605[47]), .CK(osc_clk), .Q(d5[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i47.GSR = "ENABLED";
-    FD1S3AX d5_i48 (.D(d5_73__N_1605[48]), .CK(osc_clk), .Q(d5[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i48 (.D(d5_73__N_1605[48]), .CK(osc_clk), .Q(d5[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i48.GSR = "ENABLED";
-    FD1S3AX d5_i49 (.D(d5_73__N_1605[49]), .CK(osc_clk), .Q(d5[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i49 (.D(d5_73__N_1605[49]), .CK(osc_clk), .Q(d5[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i49.GSR = "ENABLED";
-    FD1S3AX d5_i50 (.D(d5_73__N_1605[50]), .CK(osc_clk), .Q(d5[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i50 (.D(d5_73__N_1605[50]), .CK(osc_clk), .Q(d5[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i50.GSR = "ENABLED";
-    FD1S3AX d5_i51 (.D(d5_73__N_1605[51]), .CK(osc_clk), .Q(d5[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i51 (.D(d5_73__N_1605[51]), .CK(osc_clk), .Q(d5[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i51.GSR = "ENABLED";
-    FD1S3AX d5_i52 (.D(d5_73__N_1605[52]), .CK(osc_clk), .Q(d5[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i52 (.D(d5_73__N_1605[52]), .CK(osc_clk), .Q(d5[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i52.GSR = "ENABLED";
-    FD1S3AX d5_i53 (.D(d5_73__N_1605[53]), .CK(osc_clk), .Q(d5[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i53 (.D(d5_73__N_1605[53]), .CK(osc_clk), .Q(d5[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i53.GSR = "ENABLED";
-    FD1S3AX d5_i54 (.D(d5_73__N_1605[54]), .CK(osc_clk), .Q(d5[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i54 (.D(d5_73__N_1605[54]), .CK(osc_clk), .Q(d5[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i54.GSR = "ENABLED";
-    FD1S3AX d5_i55 (.D(d5_73__N_1605[55]), .CK(osc_clk), .Q(d5[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i55 (.D(d5_73__N_1605[55]), .CK(osc_clk), .Q(d5[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i55.GSR = "ENABLED";
-    FD1S3AX d5_i56 (.D(d5_73__N_1605[56]), .CK(osc_clk), .Q(d5[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i56 (.D(d5_73__N_1605[56]), .CK(osc_clk), .Q(d5[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i56.GSR = "ENABLED";
-    FD1S3AX d5_i57 (.D(d5_73__N_1605[57]), .CK(osc_clk), .Q(d5[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i57 (.D(d5_73__N_1605[57]), .CK(osc_clk), .Q(d5[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i57.GSR = "ENABLED";
-    FD1S3AX d5_i58 (.D(d5_73__N_1605[58]), .CK(osc_clk), .Q(d5[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i58 (.D(d5_73__N_1605[58]), .CK(osc_clk), .Q(d5[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i58.GSR = "ENABLED";
-    FD1S3AX d5_i59 (.D(d5_73__N_1605[59]), .CK(osc_clk), .Q(d5[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i59 (.D(d5_73__N_1605[59]), .CK(osc_clk), .Q(d5[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i59.GSR = "ENABLED";
-    FD1S3AX d5_i60 (.D(d5_73__N_1605[60]), .CK(osc_clk), .Q(d5[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i60 (.D(d5_73__N_1605[60]), .CK(osc_clk), .Q(d5[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i60.GSR = "ENABLED";
-    FD1S3AX d5_i61 (.D(d5_73__N_1605[61]), .CK(osc_clk), .Q(d5[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i61 (.D(d5_73__N_1605[61]), .CK(osc_clk), .Q(d5[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i61.GSR = "ENABLED";
-    FD1S3AX d5_i62 (.D(d5_73__N_1605[62]), .CK(osc_clk), .Q(d5[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i62 (.D(d5_73__N_1605[62]), .CK(osc_clk), .Q(d5[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i62.GSR = "ENABLED";
-    FD1S3AX d5_i63 (.D(d5_73__N_1605[63]), .CK(osc_clk), .Q(d5[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i63 (.D(d5_73__N_1605[63]), .CK(osc_clk), .Q(d5[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i63.GSR = "ENABLED";
-    FD1S3AX d5_i64 (.D(d5_73__N_1605[64]), .CK(osc_clk), .Q(d5[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i64 (.D(d5_73__N_1605[64]), .CK(osc_clk), .Q(d5[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i64.GSR = "ENABLED";
-    FD1S3AX d5_i65 (.D(d5_73__N_1605[65]), .CK(osc_clk), .Q(d5[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i65 (.D(d5_73__N_1605[65]), .CK(osc_clk), .Q(d5[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i65.GSR = "ENABLED";
-    FD1S3AX d5_i66 (.D(d5_73__N_1605[66]), .CK(osc_clk), .Q(d5[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i66 (.D(d5_73__N_1605[66]), .CK(osc_clk), .Q(d5[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i66.GSR = "ENABLED";
-    FD1S3AX d5_i67 (.D(d5_73__N_1605[67]), .CK(osc_clk), .Q(d5[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i67 (.D(d5_73__N_1605[67]), .CK(osc_clk), .Q(d5[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i67.GSR = "ENABLED";
-    FD1S3AX d5_i68 (.D(d5_73__N_1605[68]), .CK(osc_clk), .Q(d5[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i68 (.D(d5_73__N_1605[68]), .CK(osc_clk), .Q(d5[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i68.GSR = "ENABLED";
-    FD1S3AX d5_i69 (.D(d5_73__N_1605[69]), .CK(osc_clk), .Q(d5[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i69 (.D(d5_73__N_1605[69]), .CK(osc_clk), .Q(d5[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i69.GSR = "ENABLED";
-    FD1S3AX d5_i70 (.D(d5_73__N_1605[70]), .CK(osc_clk), .Q(d5[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i70 (.D(d5_73__N_1605[70]), .CK(osc_clk), .Q(d5[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i70.GSR = "ENABLED";
-    FD1S3AX d5_i71 (.D(d5_73__N_1605[71]), .CK(osc_clk), .Q(d5[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i71 (.D(d5_73__N_1605[71]), .CK(osc_clk), .Q(d5[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i71.GSR = "ENABLED";
-    FD1S3AX d5_i72 (.D(d5_73__N_1605[72]), .CK(osc_clk), .Q(d5[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i72 (.D(d5_73__N_1605[72]), .CK(osc_clk), .Q(d5[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i72.GSR = "ENABLED";
-    FD1S3AX d5_i73 (.D(d5_73__N_1605[73]), .CK(osc_clk), .Q(d5[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d5_i73 (.D(d5_73__N_1605[73]), .CK(osc_clk), .Q(d5[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d5_i73.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i1 (.D(d5[1]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i1.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i2 (.D(d5[2]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i2.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i3 (.D(d5[3]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i3.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i4 (.D(d5[4]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i4.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i5 (.D(d5[5]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i5.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i6 (.D(d5[6]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i6.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i7 (.D(d5[7]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i7.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i8 (.D(d5[8]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i8.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i9 (.D(d5[9]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i9.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i10 (.D(d5[10]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i10.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i11 (.D(d5[11]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i11.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i12 (.D(d5[12]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i12.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i13 (.D(d5[13]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i13.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i14 (.D(d5[14]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i14.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i15 (.D(d5[15]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i15.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i16 (.D(d5[16]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i16.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i17 (.D(d5[17]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i17.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i18 (.D(d5[18]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i18.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i19 (.D(d5[19]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i19.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i20 (.D(d5[20]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i20.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i21 (.D(d5[21]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i21.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i22 (.D(d5[22]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i22.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i23 (.D(d5[23]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i23.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i24 (.D(d5[24]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i24.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i25 (.D(d5[25]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i25.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i26 (.D(d5[26]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i26.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i27 (.D(d5[27]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i27.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i28 (.D(d5[28]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i28.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i29 (.D(d5[29]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i29.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i30 (.D(d5[30]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i30.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i31 (.D(d5[31]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i31.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i32 (.D(d5[32]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i32.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i33 (.D(d5[33]), .SP(osc_clk_enable_119), .CK(osc_clk), 
-            .Q(d_tmp[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i33.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i34 (.D(d5[34]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i34.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i35 (.D(d5[35]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i35.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i36 (.D(d5[36]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i36.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i37 (.D(d5[37]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i37.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i38 (.D(d5[38]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i38.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i39 (.D(d5[39]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i39.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i40 (.D(d5[40]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i40.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i41 (.D(d5[41]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i41.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i42 (.D(d5[42]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i42.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i43 (.D(d5[43]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i43.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i44 (.D(d5[44]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i44.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i45 (.D(d5[45]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i45.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i46 (.D(d5[46]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i46.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i47 (.D(d5[47]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i47.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i48 (.D(d5[48]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i48.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i49 (.D(d5[49]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i49.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i50 (.D(d5[50]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i50.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i51 (.D(d5[51]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i51.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i52 (.D(d5[52]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i52.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i53 (.D(d5[53]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i53.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i54 (.D(d5[54]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i54.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i55 (.D(d5[55]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i55.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i56 (.D(d5[56]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i56.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i57 (.D(d5[57]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i57.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i58 (.D(d5[58]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i58.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i59 (.D(d5[59]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i59.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i60 (.D(d5[60]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i60.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i61 (.D(d5[61]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i61.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i62 (.D(d5[62]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i62.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i63 (.D(d5[63]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i63.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i64 (.D(d5[64]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i64.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i65 (.D(d5[65]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i65.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i66 (.D(d5[66]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i66.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i67 (.D(d5[67]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i67.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i68 (.D(d5[68]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i68.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i69 (.D(d5[69]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i69.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i70 (.D(d5[70]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i70.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i71 (.D(d5[71]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i71.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i72 (.D(d5[72]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i72.GSR = "ENABLED";
     FD1P3AX d_tmp_i0_i73 (.D(d5[73]), .SP(osc_clk_enable_159), .CK(osc_clk), 
-            .Q(d_tmp[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+            .Q(d_tmp[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d_tmp_i0_i73.GSR = "ENABLED";
     FD1P3AX d7_i0_i1 (.D(n1599[1]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i1.GSR = "ENABLED";
     FD1P3AX d7_i0_i2 (.D(n1599[2]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i2.GSR = "ENABLED";
     FD1P3AX d7_i0_i3 (.D(n1599[3]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i3.GSR = "ENABLED";
     FD1P3AX d7_i0_i4 (.D(n1599[4]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i4.GSR = "ENABLED";
     FD1P3AX d7_i0_i5 (.D(n1599[5]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i5.GSR = "ENABLED";
     FD1P3AX d7_i0_i6 (.D(n1599[6]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i6.GSR = "ENABLED";
     FD1P3AX d7_i0_i7 (.D(n1599[7]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i7.GSR = "ENABLED";
     FD1P3AX d7_i0_i8 (.D(n1599[8]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i8.GSR = "ENABLED";
     FD1P3AX d7_i0_i9 (.D(n1599[9]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i9.GSR = "ENABLED";
     FD1P3AX d7_i0_i10 (.D(n1599[10]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i10.GSR = "ENABLED";
     FD1P3AX d7_i0_i11 (.D(n1599[11]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i11.GSR = "ENABLED";
     FD1P3AX d7_i0_i12 (.D(n1599[12]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i12.GSR = "ENABLED";
     FD1P3AX d7_i0_i13 (.D(n1599[13]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i13.GSR = "ENABLED";
     FD1P3AX d7_i0_i14 (.D(n1599[14]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i14.GSR = "ENABLED";
     FD1P3AX d7_i0_i15 (.D(n1599[15]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i15.GSR = "ENABLED";
     FD1P3AX d7_i0_i16 (.D(n1599[16]), .SP(osc_clk_enable_175), .CK(osc_clk), 
-            .Q(d7[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i16.GSR = "ENABLED";
     FD1P3AX d7_i0_i17 (.D(n1599[17]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i17.GSR = "ENABLED";
     FD1P3AX d7_i0_i18 (.D(n1599[18]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i18.GSR = "ENABLED";
     FD1P3AX d7_i0_i19 (.D(n1599[19]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i19.GSR = "ENABLED";
     FD1P3AX d7_i0_i20 (.D(n1599[20]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i20.GSR = "ENABLED";
     FD1P3AX d7_i0_i21 (.D(n1599[21]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i21.GSR = "ENABLED";
     FD1P3AX d7_i0_i22 (.D(n1599[22]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i22.GSR = "ENABLED";
     FD1P3AX d7_i0_i23 (.D(n1599[23]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i23.GSR = "ENABLED";
     FD1P3AX d7_i0_i24 (.D(n1599[24]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i24.GSR = "ENABLED";
     FD1P3AX d7_i0_i25 (.D(n1599[25]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i25.GSR = "ENABLED";
     FD1P3AX d7_i0_i26 (.D(n1599[26]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i26.GSR = "ENABLED";
     FD1P3AX d7_i0_i27 (.D(n1599[27]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i27.GSR = "ENABLED";
     FD1P3AX d7_i0_i28 (.D(n1599[28]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i28.GSR = "ENABLED";
     FD1P3AX d7_i0_i29 (.D(n1599[29]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i29.GSR = "ENABLED";
     FD1P3AX d7_i0_i30 (.D(n1599[30]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i30.GSR = "ENABLED";
     FD1P3AX d7_i0_i31 (.D(n1599[31]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i31.GSR = "ENABLED";
     FD1P3AX d7_i0_i32 (.D(n1599[32]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i32.GSR = "ENABLED";
     FD1P3AX d7_i0_i33 (.D(n1599[33]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i33.GSR = "ENABLED";
     FD1P3AX d7_i0_i34 (.D(n1599[34]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i34.GSR = "ENABLED";
     FD1P3AX d7_i0_i35 (.D(n1599[35]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i35.GSR = "ENABLED";
     FD1P3AX d7_i0_i36 (.D(n1599[36]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i36.GSR = "ENABLED";
     FD1P3AX d7_i0_i37 (.D(n1677[0]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i37.GSR = "ENABLED";
     FD1P3AX d7_i0_i38 (.D(n1677[1]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i38.GSR = "ENABLED";
     FD1P3AX d7_i0_i39 (.D(n1677[2]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i39.GSR = "ENABLED";
     FD1P3AX d7_i0_i40 (.D(n1677[3]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i40.GSR = "ENABLED";
     FD1P3AX d7_i0_i41 (.D(n1677[4]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i41.GSR = "ENABLED";
     FD1P3AX d7_i0_i42 (.D(n1677[5]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i42.GSR = "ENABLED";
     FD1P3AX d7_i0_i43 (.D(n1677[6]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i43.GSR = "ENABLED";
     FD1P3AX d7_i0_i44 (.D(n1677[7]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i44.GSR = "ENABLED";
     FD1P3AX d7_i0_i45 (.D(n1677[8]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i45.GSR = "ENABLED";
     FD1P3AX d7_i0_i46 (.D(n1677[9]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i46.GSR = "ENABLED";
     FD1P3AX d7_i0_i47 (.D(n1677[10]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i47.GSR = "ENABLED";
     FD1P3AX d7_i0_i48 (.D(n1677[11]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i48.GSR = "ENABLED";
     FD1P3AX d7_i0_i49 (.D(n1677[12]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i49.GSR = "ENABLED";
     FD1P3AX d7_i0_i50 (.D(n1677[13]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i50.GSR = "ENABLED";
     FD1P3AX d7_i0_i51 (.D(n1677[14]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i51.GSR = "ENABLED";
     FD1P3AX d7_i0_i52 (.D(n1677[15]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i52.GSR = "ENABLED";
     FD1P3AX d7_i0_i53 (.D(n1677[16]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i53.GSR = "ENABLED";
     FD1P3AX d7_i0_i54 (.D(n1677[17]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i54.GSR = "ENABLED";
     FD1P3AX d7_i0_i55 (.D(n1677[18]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i55.GSR = "ENABLED";
     FD1P3AX d7_i0_i56 (.D(n1677[19]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i56.GSR = "ENABLED";
     FD1P3AX d7_i0_i57 (.D(n1677[20]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i57.GSR = "ENABLED";
     FD1P3AX d7_i0_i58 (.D(n1677[21]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i58.GSR = "ENABLED";
     FD1P3AX d7_i0_i59 (.D(n1677[22]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i59.GSR = "ENABLED";
     FD1P3AX d7_i0_i60 (.D(n1677[23]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i60.GSR = "ENABLED";
     FD1P3AX d7_i0_i61 (.D(n1677[24]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i61.GSR = "ENABLED";
     FD1P3AX d7_i0_i62 (.D(n1677[25]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i62.GSR = "ENABLED";
     FD1P3AX d7_i0_i63 (.D(n1677[26]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i63.GSR = "ENABLED";
     FD1P3AX d7_i0_i64 (.D(n1677[27]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i64.GSR = "ENABLED";
     FD1P3AX d7_i0_i65 (.D(n1677[28]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i65.GSR = "ENABLED";
     FD1P3AX d7_i0_i66 (.D(n1677[29]), .SP(osc_clk_enable_225), .CK(osc_clk), 
-            .Q(d7[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i66.GSR = "ENABLED";
     FD1P3AX d7_i0_i67 (.D(n1677[30]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i67.GSR = "ENABLED";
     FD1P3AX d7_i0_i68 (.D(n1677[31]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i68.GSR = "ENABLED";
     FD1P3AX d7_i0_i69 (.D(n1677[32]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i69.GSR = "ENABLED";
     FD1P3AX d7_i0_i70 (.D(n1677[33]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i70.GSR = "ENABLED";
     FD1P3AX d7_i0_i71 (.D(n1677[34]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i71.GSR = "ENABLED";
     FD1P3AX d7_i0_i72 (.D(n1677[35]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i72.GSR = "ENABLED";
     FD1P3AX d7_i0_i73 (.D(n1677[36]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d7[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d7[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d7_i0_i73.GSR = "ENABLED";
     FD1P3AX d8_i0_i1 (.D(n975[1]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i1.GSR = "ENABLED";
     CCU2D add_101_3 (.A0(d8[38]), .B0(d_d8[38]), .C0(GND_net), .D0(GND_net), 
           .A1(d8[39]), .B1(d_d8[39]), .C1(GND_net), .D1(GND_net), .CIN(n2855), 
@@ -5299,1555 +5299,1555 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam add_107_1.INJECT1_0 = "NO";
     defparam add_107_1.INJECT1_1 = "NO";
     FD1P3AX d8_i0_i2 (.D(n975[2]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i2.GSR = "ENABLED";
     FD1P3AX d8_i0_i3 (.D(n975[3]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i3.GSR = "ENABLED";
     FD1P3AX d8_i0_i4 (.D(n975[4]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i4.GSR = "ENABLED";
     FD1P3AX d8_i0_i5 (.D(n975[5]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i5.GSR = "ENABLED";
     FD1P3AX d8_i0_i6 (.D(n975[6]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i6.GSR = "ENABLED";
     FD1P3AX d8_i0_i7 (.D(n975[7]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i7.GSR = "ENABLED";
     FD1P3AX d8_i0_i8 (.D(n975[8]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i8.GSR = "ENABLED";
     FD1P3AX d8_i0_i9 (.D(n975[9]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i9.GSR = "ENABLED";
     FD1P3AX d8_i0_i10 (.D(n975[10]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i10.GSR = "ENABLED";
     FD1P3AX d8_i0_i11 (.D(n975[11]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i11.GSR = "ENABLED";
     FD1P3AX d8_i0_i12 (.D(n975[12]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i12.GSR = "ENABLED";
     FD1P3AX d8_i0_i13 (.D(n975[13]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i13.GSR = "ENABLED";
     FD1P3AX d8_i0_i14 (.D(n975[14]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i14.GSR = "ENABLED";
     FD1P3AX d8_i0_i15 (.D(n975[15]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i15.GSR = "ENABLED";
     FD1P3AX d8_i0_i16 (.D(n975[16]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i16.GSR = "ENABLED";
     FD1P3AX d8_i0_i17 (.D(n975[17]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i17.GSR = "ENABLED";
     FD1P3AX d8_i0_i18 (.D(n975[18]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i18.GSR = "ENABLED";
     FD1P3AX d8_i0_i19 (.D(n975[19]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i19.GSR = "ENABLED";
     FD1P3AX d8_i0_i20 (.D(n975[20]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i20.GSR = "ENABLED";
     FD1P3AX d8_i0_i21 (.D(n975[21]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i21.GSR = "ENABLED";
     FD1P3AX d8_i0_i22 (.D(n975[22]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i22.GSR = "ENABLED";
     FD1P3AX d8_i0_i23 (.D(n975[23]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i23.GSR = "ENABLED";
     FD1P3AX d8_i0_i24 (.D(n975[24]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i24.GSR = "ENABLED";
     FD1P3AX d8_i0_i25 (.D(n975[25]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i25.GSR = "ENABLED";
     FD1P3AX d8_i0_i26 (.D(n975[26]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i26.GSR = "ENABLED";
     FD1P3AX d8_i0_i27 (.D(n975[27]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i27.GSR = "ENABLED";
     FD1P3AX d8_i0_i28 (.D(n975[28]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i28.GSR = "ENABLED";
     FD1P3AX d8_i0_i29 (.D(n975[29]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i29.GSR = "ENABLED";
     FD1P3AX d8_i0_i30 (.D(n975[30]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i30.GSR = "ENABLED";
     FD1P3AX d8_i0_i31 (.D(n975[31]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i31.GSR = "ENABLED";
     FD1P3AX d8_i0_i32 (.D(n975[32]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i32.GSR = "ENABLED";
     FD1P3AX d8_i0_i33 (.D(n975[33]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i33.GSR = "ENABLED";
     FD1P3AX d8_i0_i34 (.D(n975[34]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i34.GSR = "ENABLED";
     FD1P3AX d8_i0_i35 (.D(n975[35]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i35.GSR = "ENABLED";
     FD1P3AX d8_i0_i36 (.D(n975[36]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i36.GSR = "ENABLED";
     FD1P3AX d8_i0_i37 (.D(n1053[0]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i37.GSR = "ENABLED";
     FD1P3AX d8_i0_i38 (.D(n1053[1]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i38.GSR = "ENABLED";
     FD1P3AX d8_i0_i39 (.D(n1053[2]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i39.GSR = "ENABLED";
     FD1P3AX d8_i0_i40 (.D(n1053[3]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i40.GSR = "ENABLED";
     FD1P3AX d8_i0_i41 (.D(n1053[4]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i41.GSR = "ENABLED";
     FD1P3AX d8_i0_i42 (.D(n1053[5]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i42.GSR = "ENABLED";
     FD1P3AX d8_i0_i43 (.D(n1053[6]), .SP(osc_clk_enable_275), .CK(osc_clk), 
-            .Q(d8[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i43.GSR = "ENABLED";
     FD1P3AX d8_i0_i44 (.D(n1053[7]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i44.GSR = "ENABLED";
     FD1P3AX d8_i0_i45 (.D(n1053[8]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i45.GSR = "ENABLED";
     FD1P3AX d8_i0_i46 (.D(n1053[9]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i46.GSR = "ENABLED";
     FD1P3AX d8_i0_i47 (.D(n1053[10]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i47.GSR = "ENABLED";
     FD1P3AX d8_i0_i48 (.D(n1053[11]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i48.GSR = "ENABLED";
     FD1P3AX d8_i0_i49 (.D(n1053[12]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i49.GSR = "ENABLED";
     FD1P3AX d8_i0_i50 (.D(n1053[13]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i50.GSR = "ENABLED";
     FD1P3AX d8_i0_i51 (.D(n1053[14]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i51.GSR = "ENABLED";
     FD1P3AX d8_i0_i52 (.D(n1053[15]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i52.GSR = "ENABLED";
     FD1P3AX d8_i0_i53 (.D(n1053[16]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i53.GSR = "ENABLED";
     FD1P3AX d8_i0_i54 (.D(n1053[17]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i54.GSR = "ENABLED";
     FD1P3AX d8_i0_i55 (.D(n1053[18]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i55.GSR = "ENABLED";
     FD1P3AX d8_i0_i56 (.D(n1053[19]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i56.GSR = "ENABLED";
     FD1P3AX d8_i0_i57 (.D(n1053[20]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i57.GSR = "ENABLED";
     FD1P3AX d8_i0_i58 (.D(n1053[21]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i58.GSR = "ENABLED";
     FD1P3AX d8_i0_i59 (.D(n1053[22]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i59.GSR = "ENABLED";
     FD1P3AX d8_i0_i60 (.D(n1053[23]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i60.GSR = "ENABLED";
     FD1P3AX d8_i0_i61 (.D(n1053[24]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i61.GSR = "ENABLED";
     FD1P3AX d8_i0_i62 (.D(n1053[25]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i62.GSR = "ENABLED";
     FD1P3AX d8_i0_i63 (.D(n1053[26]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i63.GSR = "ENABLED";
     FD1P3AX d8_i0_i64 (.D(n1053[27]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i64.GSR = "ENABLED";
     FD1P3AX d8_i0_i65 (.D(n1053[28]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i65.GSR = "ENABLED";
     FD1P3AX d8_i0_i66 (.D(n1053[29]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i66.GSR = "ENABLED";
     FD1P3AX d8_i0_i67 (.D(n1053[30]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i67.GSR = "ENABLED";
     FD1P3AX d8_i0_i68 (.D(n1053[31]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i68.GSR = "ENABLED";
     FD1P3AX d8_i0_i69 (.D(n1053[32]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i69.GSR = "ENABLED";
     FD1P3AX d8_i0_i70 (.D(n1053[33]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i70.GSR = "ENABLED";
     FD1P3AX d8_i0_i71 (.D(n1053[34]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i71.GSR = "ENABLED";
     FD1P3AX d8_i0_i72 (.D(n1053[35]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i72.GSR = "ENABLED";
     FD1P3AX d8_i0_i73 (.D(n1053[36]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d8[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d8[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d8_i0_i73.GSR = "ENABLED";
     FD1P3AX d9_i0_i1 (.D(n1443[1]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i1.GSR = "ENABLED";
     FD1P3AX d9_i0_i2 (.D(n1443[2]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i2.GSR = "ENABLED";
     FD1P3AX d9_i0_i3 (.D(n1443[3]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i3.GSR = "ENABLED";
     FD1P3AX d9_i0_i4 (.D(n1443[4]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i4.GSR = "ENABLED";
     FD1P3AX d9_i0_i5 (.D(n1443[5]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i5.GSR = "ENABLED";
     FD1P3AX d9_i0_i6 (.D(n1443[6]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i6.GSR = "ENABLED";
     FD1P3AX d9_i0_i7 (.D(n1443[7]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i7.GSR = "ENABLED";
     FD1P3AX d9_i0_i8 (.D(n1443[8]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i8.GSR = "ENABLED";
     FD1P3AX d9_i0_i9 (.D(n1443[9]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i9.GSR = "ENABLED";
     FD1P3AX d9_i0_i10 (.D(n1443[10]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i10.GSR = "ENABLED";
     FD1P3AX d9_i0_i11 (.D(n1443[11]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i11.GSR = "ENABLED";
     FD1P3AX d9_i0_i12 (.D(n1443[12]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i12.GSR = "ENABLED";
     FD1P3AX d9_i0_i13 (.D(n1443[13]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i13.GSR = "ENABLED";
     FD1P3AX d9_i0_i14 (.D(n1443[14]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i14.GSR = "ENABLED";
     FD1P3AX d9_i0_i15 (.D(n1443[15]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i15.GSR = "ENABLED";
     FD1P3AX d9_i0_i16 (.D(n1443[16]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i16.GSR = "ENABLED";
     FD1P3AX d9_i0_i17 (.D(n1443[17]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i17.GSR = "ENABLED";
     FD1P3AX d9_i0_i18 (.D(n1443[18]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i18.GSR = "ENABLED";
     FD1P3AX d9_i0_i19 (.D(n1443[19]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i19.GSR = "ENABLED";
     FD1P3AX d9_i0_i20 (.D(n1443[20]), .SP(osc_clk_enable_325), .CK(osc_clk), 
-            .Q(d9[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i20.GSR = "ENABLED";
     FD1P3AX d9_i0_i21 (.D(n1443[21]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i21.GSR = "ENABLED";
     FD1P3AX d9_i0_i22 (.D(n1443[22]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i22.GSR = "ENABLED";
     FD1P3AX d9_i0_i23 (.D(n1443[23]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i23.GSR = "ENABLED";
     FD1P3AX d9_i0_i24 (.D(n1443[24]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i24.GSR = "ENABLED";
     FD1P3AX d9_i0_i25 (.D(n1443[25]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i25.GSR = "ENABLED";
     FD1P3AX d9_i0_i26 (.D(n1443[26]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i26.GSR = "ENABLED";
     FD1P3AX d9_i0_i27 (.D(n1443[27]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i27.GSR = "ENABLED";
     FD1P3AX d9_i0_i28 (.D(n1443[28]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i28.GSR = "ENABLED";
     FD1P3AX d9_i0_i29 (.D(n1443[29]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i29.GSR = "ENABLED";
     FD1P3AX d9_i0_i30 (.D(n1443[30]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i30.GSR = "ENABLED";
     FD1P3AX d9_i0_i31 (.D(n1443[31]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i31.GSR = "ENABLED";
     FD1P3AX d9_i0_i32 (.D(n1443[32]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i32.GSR = "ENABLED";
     FD1P3AX d9_i0_i33 (.D(n1443[33]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i33.GSR = "ENABLED";
     FD1P3AX d9_i0_i34 (.D(n1443[34]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i34.GSR = "ENABLED";
     FD1P3AX d9_i0_i35 (.D(n1443[35]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i35.GSR = "ENABLED";
     FD1P3AX d9_i0_i36 (.D(n1443[36]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i36.GSR = "ENABLED";
     FD1P3AX d9_i0_i37 (.D(n1521[0]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i37.GSR = "ENABLED";
     FD1P3AX d9_i0_i38 (.D(n1521[1]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i38.GSR = "ENABLED";
     FD1P3AX d9_i0_i39 (.D(n1521[2]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i39.GSR = "ENABLED";
     FD1P3AX d9_i0_i40 (.D(n1521[3]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i40.GSR = "ENABLED";
     FD1P3AX d9_i0_i41 (.D(n1521[4]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i41.GSR = "ENABLED";
     FD1P3AX d9_i0_i42 (.D(n1521[5]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i42.GSR = "ENABLED";
     FD1P3AX d9_i0_i43 (.D(n1521[6]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i43.GSR = "ENABLED";
     FD1P3AX d9_i0_i44 (.D(n1521[7]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i44.GSR = "ENABLED";
     FD1P3AX d9_i0_i45 (.D(n1521[8]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i45.GSR = "ENABLED";
     FD1P3AX d9_i0_i46 (.D(n1521[9]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i46.GSR = "ENABLED";
     FD1P3AX d9_i0_i47 (.D(n1521[10]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i47.GSR = "ENABLED";
     FD1P3AX d9_i0_i48 (.D(n1521[11]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i48.GSR = "ENABLED";
     FD1P3AX d9_i0_i49 (.D(n1521[12]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i49.GSR = "ENABLED";
     FD1P3AX d9_i0_i50 (.D(n1521[13]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i50.GSR = "ENABLED";
     FD1P3AX d9_i0_i51 (.D(n1521[14]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i51.GSR = "ENABLED";
     FD1P3AX d9_i0_i52 (.D(n1521[15]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i52.GSR = "ENABLED";
     FD1P3AX d9_i0_i53 (.D(n1521[16]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i53.GSR = "ENABLED";
     FD1P3AX d9_i0_i54 (.D(n1521[17]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i54.GSR = "ENABLED";
     FD1P3AX d9_i0_i55 (.D(n1521[18]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i55.GSR = "ENABLED";
     FD1P3AX d9_i0_i56 (.D(n1521[19]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i56.GSR = "ENABLED";
     FD1P3AX d9_i0_i57 (.D(n1521[20]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i57.GSR = "ENABLED";
     FD1P3AX d9_i0_i58 (.D(n1521[21]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i58.GSR = "ENABLED";
     FD1P3AX d9_i0_i59 (.D(n1521[22]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i59.GSR = "ENABLED";
     FD1P3AX d9_i0_i60 (.D(n1521[23]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i60.GSR = "ENABLED";
     FD1P3AX d9_i0_i61 (.D(n1521[24]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i61.GSR = "ENABLED";
     FD1P3AX d9_i0_i62 (.D(n1521[25]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i62.GSR = "ENABLED";
     FD1P3AX d9_i0_i63 (.D(n1521[26]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i63.GSR = "ENABLED";
     FD1P3AX d9_i0_i64 (.D(n1521[27]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i64.GSR = "ENABLED";
     FD1P3AX d9_i0_i65 (.D(n1521[28]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i65.GSR = "ENABLED";
     FD1P3AX d9_i0_i66 (.D(n1521[29]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i66.GSR = "ENABLED";
     FD1P3AX d9_i0_i67 (.D(n1521[30]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i67.GSR = "ENABLED";
     FD1P3AX d9_i0_i68 (.D(n1521[31]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i68.GSR = "ENABLED";
     FD1P3AX d9_i0_i69 (.D(n1521[32]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i69.GSR = "ENABLED";
     FD1P3AX d9_i0_i70 (.D(n1521[33]), .SP(osc_clk_enable_375), .CK(osc_clk), 
-            .Q(d9[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i70.GSR = "ENABLED";
     FD1P3AX d9_i0_i71 (.D(n1521[34]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d9[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i71.GSR = "ENABLED";
     FD1P3AX d9_i0_i72 (.D(n1521[35]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d9[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i72.GSR = "ENABLED";
     FD1P3AX d9_i0_i73 (.D(n1521[36]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d9[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d9[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d9_i0_i73.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i1 (.D(d6[1]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i1.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i2 (.D(d6[2]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i2.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i3 (.D(d6[3]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i3.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i4 (.D(d6[4]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i4.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i5 (.D(d6[5]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i5.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i6 (.D(d6[6]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i6.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i7 (.D(d6[7]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i8 (.D(d6[8]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i8.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i9 (.D(d6[9]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i9.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i10 (.D(d6[10]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i10.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i11 (.D(d6[11]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i11.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i12 (.D(d6[12]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i12.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i13 (.D(d6[13]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i13.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i14 (.D(d6[14]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i14.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i15 (.D(d6[15]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i15.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i16 (.D(d6[16]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i16.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i17 (.D(d6[17]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i17.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i18 (.D(d6[18]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i18.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i19 (.D(d6[19]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i19.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i20 (.D(d6[20]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i20.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i21 (.D(d6[21]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i21.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i22 (.D(d6[22]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i22.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i23 (.D(d6[23]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i23.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i24 (.D(d6[24]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i24.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i25 (.D(d6[25]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i25.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i26 (.D(d6[26]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i26.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i27 (.D(d6[27]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i27.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i28 (.D(d6[28]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i28.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i29 (.D(d6[29]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i29.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i30 (.D(d6[30]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i30.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i31 (.D(d6[31]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i31.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i32 (.D(d6[32]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i32.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i33 (.D(d6[33]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i33.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i34 (.D(d6[34]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i34.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i35 (.D(d6[35]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i35.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i36 (.D(d6[36]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i36.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i37 (.D(d6[37]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i37.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i38 (.D(d6[38]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i38.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i39 (.D(d6[39]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i39.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i40 (.D(d6[40]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i40.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i41 (.D(d6[41]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i41.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i42 (.D(d6[42]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i42.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i43 (.D(d6[43]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i43.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i44 (.D(d6[44]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i44.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i45 (.D(d6[45]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i45.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i46 (.D(d6[46]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i46.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i47 (.D(d6[47]), .SP(osc_clk_enable_425), .CK(osc_clk), 
-            .Q(d_d6[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i47.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i48 (.D(d6[48]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i48.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i49 (.D(d6[49]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i49.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i50 (.D(d6[50]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i50.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i51 (.D(d6[51]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i51.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i52 (.D(d6[52]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i52.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i53 (.D(d6[53]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i53.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i54 (.D(d6[54]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i54.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i55 (.D(d6[55]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i55.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i56 (.D(d6[56]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i56.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i57 (.D(d6[57]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i57.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i58 (.D(d6[58]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i58.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i59 (.D(d6[59]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i59.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i60 (.D(d6[60]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i60.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i61 (.D(d6[61]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i61.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i62 (.D(d6[62]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i62.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i63 (.D(d6[63]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i63.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i64 (.D(d6[64]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i64.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i65 (.D(d6[65]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i65.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i66 (.D(d6[66]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i66.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i67 (.D(d6[67]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i67.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i68 (.D(d6[68]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i68.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i69 (.D(d6[69]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i69.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i70 (.D(d6[70]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i70.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i71 (.D(d6[71]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i71.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i72 (.D(d6[72]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i72.GSR = "ENABLED";
     FD1P3AX d_d6_i0_i73 (.D(d6[73]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d6[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d6[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d6_i0_i73.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i1 (.D(d7[1]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i1.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i2 (.D(d7[2]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i2.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i3 (.D(d7[3]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i3.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i4 (.D(d7[4]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i4.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i5 (.D(d7[5]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i5.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i6 (.D(d7[6]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i6.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i7 (.D(d7[7]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i8 (.D(d7[8]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i8.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i9 (.D(d7[9]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i9.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i10 (.D(d7[10]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i10.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i11 (.D(d7[11]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i11.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i12 (.D(d7[12]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i12.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i13 (.D(d7[13]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i13.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i14 (.D(d7[14]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i14.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i15 (.D(d7[15]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i15.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i16 (.D(d7[16]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i16.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i17 (.D(d7[17]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i17.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i18 (.D(d7[18]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i18.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i19 (.D(d7[19]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i19.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i20 (.D(d7[20]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i20.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i21 (.D(d7[21]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i21.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i22 (.D(d7[22]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i22.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i23 (.D(d7[23]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i23.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i24 (.D(d7[24]), .SP(osc_clk_enable_475), .CK(osc_clk), 
-            .Q(d_d7[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i24.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i25 (.D(d7[25]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i25.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i26 (.D(d7[26]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i26.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i27 (.D(d7[27]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i27.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i28 (.D(d7[28]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i28.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i29 (.D(d7[29]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i29.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i30 (.D(d7[30]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i30.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i31 (.D(d7[31]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i31.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i32 (.D(d7[32]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i32.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i33 (.D(d7[33]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i33.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i34 (.D(d7[34]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i34.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i35 (.D(d7[35]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i35.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i36 (.D(d7[36]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i36.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i37 (.D(d7[37]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i37.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i38 (.D(d7[38]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i38.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i39 (.D(d7[39]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i39.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i40 (.D(d7[40]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i40.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i41 (.D(d7[41]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i41.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i42 (.D(d7[42]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i42.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i43 (.D(d7[43]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i43.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i44 (.D(d7[44]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i44.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i45 (.D(d7[45]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i45.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i46 (.D(d7[46]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i46.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i47 (.D(d7[47]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i47.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i48 (.D(d7[48]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i48.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i49 (.D(d7[49]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i49.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i50 (.D(d7[50]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i50.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i51 (.D(d7[51]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i51.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i52 (.D(d7[52]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i52.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i53 (.D(d7[53]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i53.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i54 (.D(d7[54]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i54.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i55 (.D(d7[55]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i55.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i56 (.D(d7[56]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i56.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i57 (.D(d7[57]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i57.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i58 (.D(d7[58]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i58.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i59 (.D(d7[59]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i59.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i60 (.D(d7[60]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i60.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i61 (.D(d7[61]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i61.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i62 (.D(d7[62]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i62.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i63 (.D(d7[63]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i63.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i64 (.D(d7[64]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i64.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i65 (.D(d7[65]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i65.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i66 (.D(d7[66]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i66.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i67 (.D(d7[67]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i67.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i68 (.D(d7[68]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i68.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i69 (.D(d7[69]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i69.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i70 (.D(d7[70]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i70.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i71 (.D(d7[71]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i71.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i72 (.D(d7[72]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i72.GSR = "ENABLED";
     FD1P3AX d_d7_i0_i73 (.D(d7[73]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d7[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d7[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d7_i0_i73.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i1 (.D(d8[1]), .SP(osc_clk_enable_525), .CK(osc_clk), 
-            .Q(d_d8[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i1.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i2 (.D(d8[2]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i2.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i3 (.D(d8[3]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i3.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i4 (.D(d8[4]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i4.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i5 (.D(d8[5]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i5.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i6 (.D(d8[6]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i6.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i7 (.D(d8[7]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i8 (.D(d8[8]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i8.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i9 (.D(d8[9]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i9.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i10 (.D(d8[10]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i10.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i11 (.D(d8[11]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i11.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i12 (.D(d8[12]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i12.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i13 (.D(d8[13]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i13.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i14 (.D(d8[14]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i14.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i15 (.D(d8[15]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i15.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i16 (.D(d8[16]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i16.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i17 (.D(d8[17]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i17.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i18 (.D(d8[18]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i18.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i19 (.D(d8[19]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i19.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i20 (.D(d8[20]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i20.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i21 (.D(d8[21]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i21.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i22 (.D(d8[22]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i22.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i23 (.D(d8[23]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i23.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i24 (.D(d8[24]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i24.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i25 (.D(d8[25]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i25.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i26 (.D(d8[26]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i26.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i27 (.D(d8[27]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i27.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i28 (.D(d8[28]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i28.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i29 (.D(d8[29]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i29.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i30 (.D(d8[30]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i30.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i31 (.D(d8[31]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i31.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i32 (.D(d8[32]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i32.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i33 (.D(d8[33]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i33.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i34 (.D(d8[34]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i34.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i35 (.D(d8[35]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i35.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i36 (.D(d8[36]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i36.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i37 (.D(d8[37]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i37.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i38 (.D(d8[38]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i38.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i39 (.D(d8[39]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i39.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i40 (.D(d8[40]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i40.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i41 (.D(d8[41]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i41.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i42 (.D(d8[42]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i42.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i43 (.D(d8[43]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i43.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i44 (.D(d8[44]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i44.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i45 (.D(d8[45]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i45.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i46 (.D(d8[46]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i46.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i47 (.D(d8[47]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i47.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i48 (.D(d8[48]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i48.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i49 (.D(d8[49]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i49.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i50 (.D(d8[50]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i50.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i51 (.D(d8[51]), .SP(osc_clk_enable_575), .CK(osc_clk), 
-            .Q(d_d8[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i51.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i52 (.D(d8[52]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i52.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i53 (.D(d8[53]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i53.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i54 (.D(d8[54]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i54.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i55 (.D(d8[55]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i55.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i56 (.D(d8[56]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i56.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i57 (.D(d8[57]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i57.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i58 (.D(d8[58]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i58.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i59 (.D(d8[59]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i59.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i60 (.D(d8[60]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i60.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i61 (.D(d8[61]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i61.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i62 (.D(d8[62]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i62.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i63 (.D(d8[63]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i63.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i64 (.D(d8[64]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i64.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i65 (.D(d8[65]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i65.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i66 (.D(d8[66]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i66.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i67 (.D(d8[67]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i67.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i68 (.D(d8[68]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i68.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i69 (.D(d8[69]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i69.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i70 (.D(d8[70]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i70.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i71 (.D(d8[71]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i71.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i72 (.D(d8[72]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i72.GSR = "ENABLED";
     FD1P3AX d_d8_i0_i73 (.D(d8[73]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d8[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d8[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d8_i0_i73.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i1 (.D(d9[1]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i1.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i2 (.D(d9[2]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i2.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i3 (.D(d9[3]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i3.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i4 (.D(d9[4]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i4.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i5 (.D(d9[5]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i5.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i6 (.D(d9[6]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i6.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i7 (.D(d9[7]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i8 (.D(d9[8]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i8.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i9 (.D(d9[9]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i9.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i10 (.D(d9[10]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i10.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i11 (.D(d9[11]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i11.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i12 (.D(d9[12]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i12.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i13 (.D(d9[13]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i13.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i14 (.D(d9[14]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i14.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i15 (.D(d9[15]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i15.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i16 (.D(d9[16]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i16.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i17 (.D(d9[17]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i17.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i18 (.D(d9[18]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i18.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i19 (.D(d9[19]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i19.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i20 (.D(d9[20]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i20.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i21 (.D(d9[21]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i21.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i22 (.D(d9[22]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i22.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i23 (.D(d9[23]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i23.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i24 (.D(d9[24]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i24.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i25 (.D(d9[25]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i25.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i26 (.D(d9[26]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i26.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i27 (.D(d9[27]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i27.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i28 (.D(d9[28]), .SP(osc_clk_enable_625), .CK(osc_clk), 
-            .Q(d_d9[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i28.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i29 (.D(d9[29]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i29.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i30 (.D(d9[30]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i30.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i31 (.D(d9[31]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i31.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i32 (.D(d9[32]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i32.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i33 (.D(d9[33]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i33.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i34 (.D(d9[34]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i34.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i35 (.D(d9[35]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i35.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i36 (.D(d9[36]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i36.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i37 (.D(d9[37]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i37.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i38 (.D(d9[38]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i38.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i39 (.D(d9[39]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i39.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i40 (.D(d9[40]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i40.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i41 (.D(d9[41]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i41.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i42 (.D(d9[42]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i42.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i43 (.D(d9[43]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i43.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i44 (.D(d9[44]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i44.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i45 (.D(d9[45]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i45.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i46 (.D(d9[46]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i46.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i47 (.D(d9[47]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i47.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i48 (.D(d9[48]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i48.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i49 (.D(d9[49]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i49.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i50 (.D(d9[50]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i50.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i51 (.D(d9[51]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i51.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i52 (.D(d9[52]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i52.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i53 (.D(d9[53]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i53.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i54 (.D(d9[54]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i54.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i55 (.D(d9[55]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i55.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i56 (.D(d9[56]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i56.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i57 (.D(d9[57]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i57.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i58 (.D(d9[58]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i58.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i59 (.D(d9[59]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i59.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i60 (.D(d9[60]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i60.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i61 (.D(d9[61]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i61.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i62 (.D(d9[62]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i62.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i63 (.D(d9[63]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i63.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i64 (.D(d9[64]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i64.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i65 (.D(d9[65]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i65.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i66 (.D(d9[66]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i66.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i67 (.D(d9[67]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i67.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i68 (.D(d9[68]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i68.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i69 (.D(d9[69]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i69.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i70 (.D(d9[70]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i70.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i71 (.D(d9[71]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i71.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i72 (.D(d9[72]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i72.GSR = "ENABLED";
     FD1P3AX d_d9_i0_i73 (.D(d9[73]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(d_d9[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d9[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d9_i0_i73.GSR = "ENABLED";
     FD1P3AX d_out_i0_i1 (.D(d10[67]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(\DataInNoSign_7__N_2556[1] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(\DataInNoSign_7__N_2588[1] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i1.GSR = "ENABLED";
     FD1P3AX d_out_i0_i2 (.D(d10[68]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(MYLED_c_2)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(MYLED_c_2)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i2.GSR = "ENABLED";
     FD1P3AX d_out_i0_i3 (.D(d10[69]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(MYLED_c_3)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(MYLED_c_3)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i3.GSR = "ENABLED";
     FD1P3AX d_out_i0_i4 (.D(d10[70]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(MYLED_c_4)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(MYLED_c_4)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i4.GSR = "ENABLED";
     FD1P3AX d_out_i0_i5 (.D(d10[71]), .SP(osc_clk_enable_675), .CK(osc_clk), 
-            .Q(n1846)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(n1846)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i5.GSR = "ENABLED";
     FD1P3AX d_out_i0_i6 (.D(d10[72]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(n1845)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(n1845)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i6.GSR = "ENABLED";
     FD1P3AX d_out_i0_i7 (.D(d10[73]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(MYLED_c_5)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(MYLED_c_5)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_out_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i1 (.D(d_tmp[1]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i1.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i2 (.D(d_tmp[2]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i2.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i3 (.D(d_tmp[3]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i3.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i4 (.D(d_tmp[4]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i4.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i5 (.D(d_tmp[5]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i5.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i6 (.D(d_tmp[6]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i6.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i7 (.D(d_tmp[7]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i7.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i8 (.D(d_tmp[8]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i8.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i9 (.D(d_tmp[9]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i9.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i10 (.D(d_tmp[10]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i10.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i11 (.D(d_tmp[11]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i11.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i12 (.D(d_tmp[12]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i12.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i13 (.D(d_tmp[13]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i13.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i14 (.D(d_tmp[14]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i14.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i15 (.D(d_tmp[15]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i15.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i16 (.D(d_tmp[16]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i16.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i17 (.D(d_tmp[17]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i17.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i18 (.D(d_tmp[18]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i18.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i19 (.D(d_tmp[19]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i19.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i20 (.D(d_tmp[20]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i20.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i21 (.D(d_tmp[21]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i21.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i22 (.D(d_tmp[22]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i22.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i23 (.D(d_tmp[23]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i23.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i24 (.D(d_tmp[24]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i24.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i25 (.D(d_tmp[25]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i25.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i26 (.D(d_tmp[26]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i26.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i27 (.D(d_tmp[27]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i27.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i28 (.D(d_tmp[28]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i28.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i29 (.D(d_tmp[29]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i29.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i30 (.D(d_tmp[30]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i30.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i31 (.D(d_tmp[31]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i31.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i32 (.D(d_tmp[32]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i32.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i33 (.D(d_tmp[33]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i33.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i34 (.D(d_tmp[34]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i34.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i35 (.D(d_tmp[35]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i35.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i36 (.D(d_tmp[36]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i36.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i37 (.D(d_tmp[37]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i37.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i38 (.D(d_tmp[38]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i38.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i39 (.D(d_tmp[39]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i39.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i40 (.D(d_tmp[40]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i40.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i41 (.D(d_tmp[41]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i41.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i42 (.D(d_tmp[42]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i42.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i43 (.D(d_tmp[43]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i43.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i44 (.D(d_tmp[44]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i44.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i45 (.D(d_tmp[45]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i45.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i46 (.D(d_tmp[46]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i46.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i47 (.D(d_tmp[47]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i47.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i48 (.D(d_tmp[48]), .SP(osc_clk_enable_725), .CK(osc_clk), 
-            .Q(d_d_tmp[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i48.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i49 (.D(d_tmp[49]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i49.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i50 (.D(d_tmp[50]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i50.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i51 (.D(d_tmp[51]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i51.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i52 (.D(d_tmp[52]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i52.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i53 (.D(d_tmp[53]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i53.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i54 (.D(d_tmp[54]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i54.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i55 (.D(d_tmp[55]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i55.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i56 (.D(d_tmp[56]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i56.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i57 (.D(d_tmp[57]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i57.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i58 (.D(d_tmp[58]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i58.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i59 (.D(d_tmp[59]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i59.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i60 (.D(d_tmp[60]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i60.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i61 (.D(d_tmp[61]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i61.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i62 (.D(d_tmp[62]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i62.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i63 (.D(d_tmp[63]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i63.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i64 (.D(d_tmp[64]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i64.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i65 (.D(d_tmp[65]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i65.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i66 (.D(d_tmp[66]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i66.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i67 (.D(d_tmp[67]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i67.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i68 (.D(d_tmp[68]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i68.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i69 (.D(d_tmp[69]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i69.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i70 (.D(d_tmp[70]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i70.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i71 (.D(d_tmp[71]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i71.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i72 (.D(d_tmp[72]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i72.GSR = "ENABLED";
     FD1P3AX d_d_tmp_i0_i73 (.D(d_tmp[73]), .SP(v_comb), .CK(osc_clk), 
-            .Q(d_d_tmp[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
+            .Q(d_d_tmp[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d_d_tmp_i0_i73.GSR = "ENABLED";
     FD1P3AX d10__0__i2 (.D(n1404[30]), .SP(v_comb), .CK(osc_clk), .Q(d10[67]));   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d10__0__i2.GSR = "ENABLED";
@@ -6863,151 +6863,151 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     defparam d10__0__i7.GSR = "ENABLED";
     FD1P3AX d10__0__i8 (.D(n1404[36]), .SP(v_comb), .CK(osc_clk), .Q(d10[73]));   // c:/users/user/lattice/fpgasdr/cic.v(103[9] 148[5])
     defparam d10__0__i8.GSR = "ENABLED";
-    FD1S3AX d1_i1 (.D(d1_73__N_1309[1]), .CK(osc_clk), .Q(d1[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i1 (.D(d1_73__N_1309[1]), .CK(osc_clk), .Q(d1[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i1.GSR = "ENABLED";
-    FD1S3AX d1_i2 (.D(d1_73__N_1309[2]), .CK(osc_clk), .Q(d1[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i2 (.D(d1_73__N_1309[2]), .CK(osc_clk), .Q(d1[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i2.GSR = "ENABLED";
-    FD1S3AX d1_i3 (.D(d1_73__N_1309[3]), .CK(osc_clk), .Q(d1[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i3 (.D(d1_73__N_1309[3]), .CK(osc_clk), .Q(d1[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i3.GSR = "ENABLED";
-    FD1S3AX d1_i4 (.D(d1_73__N_1309[4]), .CK(osc_clk), .Q(d1[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i4 (.D(d1_73__N_1309[4]), .CK(osc_clk), .Q(d1[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i4.GSR = "ENABLED";
-    FD1S3AX d1_i5 (.D(d1_73__N_1309[5]), .CK(osc_clk), .Q(d1[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i5 (.D(d1_73__N_1309[5]), .CK(osc_clk), .Q(d1[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i5.GSR = "ENABLED";
-    FD1S3AX d1_i6 (.D(d1_73__N_1309[6]), .CK(osc_clk), .Q(d1[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i6 (.D(d1_73__N_1309[6]), .CK(osc_clk), .Q(d1[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i6.GSR = "ENABLED";
-    FD1S3AX d1_i7 (.D(d1_73__N_1309[7]), .CK(osc_clk), .Q(d1[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i7 (.D(d1_73__N_1309[7]), .CK(osc_clk), .Q(d1[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i7.GSR = "ENABLED";
-    FD1S3AX d1_i8 (.D(d1_73__N_1309[8]), .CK(osc_clk), .Q(d1[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i8 (.D(d1_73__N_1309[8]), .CK(osc_clk), .Q(d1[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i8.GSR = "ENABLED";
-    FD1S3AX d1_i9 (.D(d1_73__N_1309[9]), .CK(osc_clk), .Q(d1[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i9 (.D(d1_73__N_1309[9]), .CK(osc_clk), .Q(d1[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i9.GSR = "ENABLED";
-    FD1S3AX d1_i10 (.D(d1_73__N_1309[10]), .CK(osc_clk), .Q(d1[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i10 (.D(d1_73__N_1309[10]), .CK(osc_clk), .Q(d1[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i10.GSR = "ENABLED";
-    FD1S3AX d1_i11 (.D(d1_73__N_1309[11]), .CK(osc_clk), .Q(d1[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i11 (.D(d1_73__N_1309[11]), .CK(osc_clk), .Q(d1[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i11.GSR = "ENABLED";
-    FD1S3AX d1_i12 (.D(d1_73__N_1309[12]), .CK(osc_clk), .Q(d1[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i12 (.D(d1_73__N_1309[12]), .CK(osc_clk), .Q(d1[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i12.GSR = "ENABLED";
-    FD1S3AX d1_i13 (.D(d1_73__N_1309[13]), .CK(osc_clk), .Q(d1[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i13 (.D(d1_73__N_1309[13]), .CK(osc_clk), .Q(d1[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i13.GSR = "ENABLED";
-    FD1S3AX d1_i14 (.D(d1_73__N_1309[14]), .CK(osc_clk), .Q(d1[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i14 (.D(d1_73__N_1309[14]), .CK(osc_clk), .Q(d1[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i14.GSR = "ENABLED";
-    FD1S3AX d1_i15 (.D(d1_73__N_1309[15]), .CK(osc_clk), .Q(d1[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i15 (.D(d1_73__N_1309[15]), .CK(osc_clk), .Q(d1[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i15.GSR = "ENABLED";
-    FD1S3AX d1_i16 (.D(d1_73__N_1309[16]), .CK(osc_clk), .Q(d1[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i16 (.D(d1_73__N_1309[16]), .CK(osc_clk), .Q(d1[16])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i16.GSR = "ENABLED";
-    FD1S3AX d1_i17 (.D(d1_73__N_1309[17]), .CK(osc_clk), .Q(d1[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i17 (.D(d1_73__N_1309[17]), .CK(osc_clk), .Q(d1[17])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i17.GSR = "ENABLED";
-    FD1S3AX d1_i18 (.D(d1_73__N_1309[18]), .CK(osc_clk), .Q(d1[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i18 (.D(d1_73__N_1309[18]), .CK(osc_clk), .Q(d1[18])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i18.GSR = "ENABLED";
-    FD1S3AX d1_i19 (.D(d1_73__N_1309[19]), .CK(osc_clk), .Q(d1[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i19 (.D(d1_73__N_1309[19]), .CK(osc_clk), .Q(d1[19])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i19.GSR = "ENABLED";
-    FD1S3AX d1_i20 (.D(d1_73__N_1309[20]), .CK(osc_clk), .Q(d1[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i20 (.D(d1_73__N_1309[20]), .CK(osc_clk), .Q(d1[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i20.GSR = "ENABLED";
-    FD1S3AX d1_i21 (.D(d1_73__N_1309[21]), .CK(osc_clk), .Q(d1[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i21 (.D(d1_73__N_1309[21]), .CK(osc_clk), .Q(d1[21])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i21.GSR = "ENABLED";
-    FD1S3AX d1_i22 (.D(d1_73__N_1309[22]), .CK(osc_clk), .Q(d1[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i22 (.D(d1_73__N_1309[22]), .CK(osc_clk), .Q(d1[22])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i22.GSR = "ENABLED";
-    FD1S3AX d1_i23 (.D(d1_73__N_1309[23]), .CK(osc_clk), .Q(d1[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i23 (.D(d1_73__N_1309[23]), .CK(osc_clk), .Q(d1[23])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i23.GSR = "ENABLED";
-    FD1S3AX d1_i24 (.D(d1_73__N_1309[24]), .CK(osc_clk), .Q(d1[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i24 (.D(d1_73__N_1309[24]), .CK(osc_clk), .Q(d1[24])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i24.GSR = "ENABLED";
-    FD1S3AX d1_i25 (.D(d1_73__N_1309[25]), .CK(osc_clk), .Q(d1[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i25 (.D(d1_73__N_1309[25]), .CK(osc_clk), .Q(d1[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i25.GSR = "ENABLED";
-    FD1S3AX d1_i26 (.D(d1_73__N_1309[26]), .CK(osc_clk), .Q(d1[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i26 (.D(d1_73__N_1309[26]), .CK(osc_clk), .Q(d1[26])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i26.GSR = "ENABLED";
-    FD1S3AX d1_i27 (.D(d1_73__N_1309[27]), .CK(osc_clk), .Q(d1[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i27 (.D(d1_73__N_1309[27]), .CK(osc_clk), .Q(d1[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i27.GSR = "ENABLED";
-    FD1S3AX d1_i28 (.D(d1_73__N_1309[28]), .CK(osc_clk), .Q(d1[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i28 (.D(d1_73__N_1309[28]), .CK(osc_clk), .Q(d1[28])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i28.GSR = "ENABLED";
-    FD1S3AX d1_i29 (.D(d1_73__N_1309[29]), .CK(osc_clk), .Q(d1[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i29 (.D(d1_73__N_1309[29]), .CK(osc_clk), .Q(d1[29])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i29.GSR = "ENABLED";
-    FD1S3AX d1_i30 (.D(d1_73__N_1309[30]), .CK(osc_clk), .Q(d1[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i30 (.D(d1_73__N_1309[30]), .CK(osc_clk), .Q(d1[30])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i30.GSR = "ENABLED";
-    FD1S3AX d1_i31 (.D(d1_73__N_1309[31]), .CK(osc_clk), .Q(d1[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i31 (.D(d1_73__N_1309[31]), .CK(osc_clk), .Q(d1[31])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i31.GSR = "ENABLED";
-    FD1S3AX d1_i32 (.D(d1_73__N_1309[32]), .CK(osc_clk), .Q(d1[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i32 (.D(d1_73__N_1309[32]), .CK(osc_clk), .Q(d1[32])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i32.GSR = "ENABLED";
-    FD1S3AX d1_i33 (.D(d1_73__N_1309[33]), .CK(osc_clk), .Q(d1[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i33 (.D(d1_73__N_1309[33]), .CK(osc_clk), .Q(d1[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i33.GSR = "ENABLED";
-    FD1S3AX d1_i34 (.D(d1_73__N_1309[34]), .CK(osc_clk), .Q(d1[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i34 (.D(d1_73__N_1309[34]), .CK(osc_clk), .Q(d1[34])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i34.GSR = "ENABLED";
-    FD1S3AX d1_i35 (.D(d1_73__N_1309[35]), .CK(osc_clk), .Q(d1[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i35 (.D(d1_73__N_1309[35]), .CK(osc_clk), .Q(d1[35])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i35.GSR = "ENABLED";
-    FD1S3AX d1_i36 (.D(d1_73__N_1309[36]), .CK(osc_clk), .Q(d1[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i36 (.D(d1_73__N_1309[36]), .CK(osc_clk), .Q(d1[36])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i36.GSR = "ENABLED";
-    FD1S3AX d1_i37 (.D(d1_73__N_1309[37]), .CK(osc_clk), .Q(d1[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i37 (.D(d1_73__N_1309[37]), .CK(osc_clk), .Q(d1[37])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i37.GSR = "ENABLED";
-    FD1S3AX d1_i38 (.D(d1_73__N_1309[38]), .CK(osc_clk), .Q(d1[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i38 (.D(d1_73__N_1309[38]), .CK(osc_clk), .Q(d1[38])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i38.GSR = "ENABLED";
-    FD1S3AX d1_i39 (.D(d1_73__N_1309[39]), .CK(osc_clk), .Q(d1[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i39 (.D(d1_73__N_1309[39]), .CK(osc_clk), .Q(d1[39])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i39.GSR = "ENABLED";
-    FD1S3AX d1_i40 (.D(d1_73__N_1309[40]), .CK(osc_clk), .Q(d1[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i40 (.D(d1_73__N_1309[40]), .CK(osc_clk), .Q(d1[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i40.GSR = "ENABLED";
-    FD1S3AX d1_i41 (.D(d1_73__N_1309[41]), .CK(osc_clk), .Q(d1[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i41 (.D(d1_73__N_1309[41]), .CK(osc_clk), .Q(d1[41])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i41.GSR = "ENABLED";
-    FD1S3AX d1_i42 (.D(d1_73__N_1309[42]), .CK(osc_clk), .Q(d1[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i42 (.D(d1_73__N_1309[42]), .CK(osc_clk), .Q(d1[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i42.GSR = "ENABLED";
-    FD1S3AX d1_i43 (.D(d1_73__N_1309[43]), .CK(osc_clk), .Q(d1[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i43 (.D(d1_73__N_1309[43]), .CK(osc_clk), .Q(d1[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i43.GSR = "ENABLED";
-    FD1S3AX d1_i44 (.D(d1_73__N_1309[44]), .CK(osc_clk), .Q(d1[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i44 (.D(d1_73__N_1309[44]), .CK(osc_clk), .Q(d1[44])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i44.GSR = "ENABLED";
-    FD1S3AX d1_i45 (.D(d1_73__N_1309[45]), .CK(osc_clk), .Q(d1[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i45 (.D(d1_73__N_1309[45]), .CK(osc_clk), .Q(d1[45])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i45.GSR = "ENABLED";
-    FD1S3AX d1_i46 (.D(d1_73__N_1309[46]), .CK(osc_clk), .Q(d1[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i46 (.D(d1_73__N_1309[46]), .CK(osc_clk), .Q(d1[46])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i46.GSR = "ENABLED";
-    FD1S3AX d1_i47 (.D(d1_73__N_1309[47]), .CK(osc_clk), .Q(d1[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i47 (.D(d1_73__N_1309[47]), .CK(osc_clk), .Q(d1[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i47.GSR = "ENABLED";
-    FD1S3AX d1_i48 (.D(d1_73__N_1309[48]), .CK(osc_clk), .Q(d1[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i48 (.D(d1_73__N_1309[48]), .CK(osc_clk), .Q(d1[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i48.GSR = "ENABLED";
-    FD1S3AX d1_i49 (.D(d1_73__N_1309[49]), .CK(osc_clk), .Q(d1[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i49 (.D(d1_73__N_1309[49]), .CK(osc_clk), .Q(d1[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i49.GSR = "ENABLED";
-    FD1S3AX d1_i50 (.D(d1_73__N_1309[50]), .CK(osc_clk), .Q(d1[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i50 (.D(d1_73__N_1309[50]), .CK(osc_clk), .Q(d1[50])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i50.GSR = "ENABLED";
-    FD1S3AX d1_i51 (.D(d1_73__N_1309[51]), .CK(osc_clk), .Q(d1[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i51 (.D(d1_73__N_1309[51]), .CK(osc_clk), .Q(d1[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i51.GSR = "ENABLED";
-    FD1S3AX d1_i52 (.D(d1_73__N_1309[52]), .CK(osc_clk), .Q(d1[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i52 (.D(d1_73__N_1309[52]), .CK(osc_clk), .Q(d1[52])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i52.GSR = "ENABLED";
-    FD1S3AX d1_i53 (.D(d1_73__N_1309[53]), .CK(osc_clk), .Q(d1[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i53 (.D(d1_73__N_1309[53]), .CK(osc_clk), .Q(d1[53])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i53.GSR = "ENABLED";
-    FD1S3AX d1_i54 (.D(d1_73__N_1309[54]), .CK(osc_clk), .Q(d1[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i54 (.D(d1_73__N_1309[54]), .CK(osc_clk), .Q(d1[54])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i54.GSR = "ENABLED";
-    FD1S3AX d1_i55 (.D(d1_73__N_1309[55]), .CK(osc_clk), .Q(d1[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i55 (.D(d1_73__N_1309[55]), .CK(osc_clk), .Q(d1[55])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i55.GSR = "ENABLED";
-    FD1S3AX d1_i56 (.D(d1_73__N_1309[56]), .CK(osc_clk), .Q(d1[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i56 (.D(d1_73__N_1309[56]), .CK(osc_clk), .Q(d1[56])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i56.GSR = "ENABLED";
-    FD1S3AX d1_i57 (.D(d1_73__N_1309[57]), .CK(osc_clk), .Q(d1[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i57 (.D(d1_73__N_1309[57]), .CK(osc_clk), .Q(d1[57])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i57.GSR = "ENABLED";
-    FD1S3AX d1_i58 (.D(d1_73__N_1309[58]), .CK(osc_clk), .Q(d1[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i58 (.D(d1_73__N_1309[58]), .CK(osc_clk), .Q(d1[58])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i58.GSR = "ENABLED";
-    FD1S3AX d1_i59 (.D(d1_73__N_1309[59]), .CK(osc_clk), .Q(d1[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i59 (.D(d1_73__N_1309[59]), .CK(osc_clk), .Q(d1[59])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i59.GSR = "ENABLED";
-    FD1S3AX d1_i60 (.D(d1_73__N_1309[60]), .CK(osc_clk), .Q(d1[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i60 (.D(d1_73__N_1309[60]), .CK(osc_clk), .Q(d1[60])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i60.GSR = "ENABLED";
-    FD1S3AX d1_i61 (.D(d1_73__N_1309[61]), .CK(osc_clk), .Q(d1[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i61 (.D(d1_73__N_1309[61]), .CK(osc_clk), .Q(d1[61])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i61.GSR = "ENABLED";
-    FD1S3AX d1_i62 (.D(d1_73__N_1309[62]), .CK(osc_clk), .Q(d1[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i62 (.D(d1_73__N_1309[62]), .CK(osc_clk), .Q(d1[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i62.GSR = "ENABLED";
-    FD1S3AX d1_i63 (.D(d1_73__N_1309[63]), .CK(osc_clk), .Q(d1[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i63 (.D(d1_73__N_1309[63]), .CK(osc_clk), .Q(d1[63])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i63.GSR = "ENABLED";
-    FD1S3AX d1_i64 (.D(d1_73__N_1309[64]), .CK(osc_clk), .Q(d1[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i64 (.D(d1_73__N_1309[64]), .CK(osc_clk), .Q(d1[64])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i64.GSR = "ENABLED";
-    FD1S3AX d1_i65 (.D(d1_73__N_1309[65]), .CK(osc_clk), .Q(d1[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i65 (.D(d1_73__N_1309[65]), .CK(osc_clk), .Q(d1[65])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i65.GSR = "ENABLED";
-    FD1S3AX d1_i66 (.D(d1_73__N_1309[66]), .CK(osc_clk), .Q(d1[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i66 (.D(d1_73__N_1309[66]), .CK(osc_clk), .Q(d1[66])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i66.GSR = "ENABLED";
-    FD1S3AX d1_i67 (.D(d1_73__N_1309[67]), .CK(osc_clk), .Q(d1[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i67 (.D(d1_73__N_1309[67]), .CK(osc_clk), .Q(d1[67])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i67.GSR = "ENABLED";
-    FD1S3AX d1_i68 (.D(d1_73__N_1309[68]), .CK(osc_clk), .Q(d1[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i68 (.D(d1_73__N_1309[68]), .CK(osc_clk), .Q(d1[68])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i68.GSR = "ENABLED";
-    FD1S3AX d1_i69 (.D(d1_73__N_1309[69]), .CK(osc_clk), .Q(d1[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i69 (.D(d1_73__N_1309[69]), .CK(osc_clk), .Q(d1[69])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i69.GSR = "ENABLED";
-    FD1S3AX d1_i70 (.D(d1_73__N_1309[70]), .CK(osc_clk), .Q(d1[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i70 (.D(d1_73__N_1309[70]), .CK(osc_clk), .Q(d1[70])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i70.GSR = "ENABLED";
-    FD1S3AX d1_i71 (.D(d1_73__N_1309[71]), .CK(osc_clk), .Q(d1[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i71 (.D(d1_73__N_1309[71]), .CK(osc_clk), .Q(d1[71])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i71.GSR = "ENABLED";
-    FD1S3AX d1_i72 (.D(d1_73__N_1309[72]), .CK(osc_clk), .Q(d1[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i72 (.D(d1_73__N_1309[72]), .CK(osc_clk), .Q(d1[72])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i72.GSR = "ENABLED";
-    FD1S3AX d1_i73 (.D(d1_73__N_1309[73]), .CK(osc_clk), .Q(d1[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX d1_i73 (.D(d1_73__N_1309[73]), .CK(osc_clk), .Q(d1[73])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam d1_i73.GSR = "ENABLED";
     LUT4 i10_4_lut_adj_2 (.A(count[7]), .B(count[12]), .C(count[11]), 
          .D(count[4]), .Z(n24)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(90[17:47])
@@ -7015,11 +7015,11 @@ module \CIC(width=74)  (GND_net, osc_clk, CIC_out_clk_c, \DataInNoSign_7__N_2556
     LUT4 mux_114_i4_3_lut (.A(n1326[32]), .B(n1365[32]), .C(n1325), .Z(n1404[32])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(137[12:21])
     defparam mux_114_i4_3_lut.init = 16'hcaca;
     LUT4 i8_4_lut_adj_3 (.A(count[6]), .B(count[0]), .C(count[10]), .D(count[13]), 
-         .Z(n22_adj_2568)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(90[17:47])
+         .Z(n22_adj_2600)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(90[17:47])
     defparam i8_4_lut_adj_3.init = 16'hfeff;
     LUT4 mux_114_i5_3_lut (.A(n1326[33]), .B(n1365[33]), .C(n1325), .Z(n1404[33])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(137[12:21])
     defparam mux_114_i5_3_lut.init = 16'hcaca;
-    FD1S3AX v_comb_87_rep_14 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_425)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=117, LSE_RLINE=124 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
+    FD1S3AX v_comb_87_rep_14 (.D(osc_clk_enable_119), .CK(osc_clk), .Q(osc_clk_enable_425)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=20, LSE_RCOL=2, LSE_LLINE=122, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(59[9] 101[5])
     defparam v_comb_87_rep_14.GSR = "ENABLED";
     FD1S3IX count_53_54__i2 (.D(n61[1]), .CK(osc_clk), .CD(osc_clk_enable_159), 
             .Q(count[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[14:27])
@@ -8470,7 +8470,7 @@ module PLL (XIn_c, osc_clk, GND_net) /* synthesis NGD_DRC_MASK=1, syn_module_def
             .PLLDATI3(GND_net), .PLLDATI4(GND_net), .PLLDATI5(GND_net), 
             .PLLDATI6(GND_net), .PLLDATI7(GND_net), .PLLADDR0(GND_net), 
             .PLLADDR1(GND_net), .PLLADDR2(GND_net), .PLLADDR3(GND_net), 
-            .PLLADDR4(GND_net), .CLKOP(osc_clk)) /* synthesis FREQUENCY_PIN_CLKOP="136.000000", FREQUENCY_PIN_CLKI="8.000000", ICP_CURRENT="8", LPF_RESISTOR="8", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=139, LSE_RLINE=141 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(139[5] 141[2])
+            .PLLADDR4(GND_net), .CLKOP(osc_clk)) /* synthesis FREQUENCY_PIN_CLKOP="136.000000", FREQUENCY_PIN_CLKI="8.000000", ICP_CURRENT="8", LPF_RESISTOR="8", syn_instantiated=1, LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=149, LSE_RLINE=151 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(149[5] 151[2])
     defparam PLLInst_0.CLKI_DIV = 1;
     defparam PLLInst_0.CLKFB_DIV = 17;
     defparam PLLInst_0.CLKOP_DIV = 4;

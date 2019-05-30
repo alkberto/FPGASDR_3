@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  04/10/19  00:11:00
+Mapped on:  05/29/19  22:23:44
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ WARNING - map: IO buffer missing for top level port DiffIn...logic will be
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -198,7 +198,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -264,7 +264,7 @@ Signal CIC1/add_105_1/CI undriven or does not drive anything - clipped.
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Removed logic (cont)
 --------------------
@@ -330,7 +330,7 @@ Signal CIC1/add_95_1/S0 undriven or does not drive anything - clipped.
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal CIC1/add_97_11/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal CIC1/add_96_15/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Memory Usage
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 PLL/DLL Summary
 ---------------
@@ -594,7 +594,7 @@ PLL 1:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  04/10/19  00:11:00
+Design:  top                                           Date:  05/29/19  22:23:44
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -628,7 +628,7 @@ Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs  
-   Total REAL Time: 0 secs  
+   Total REAL Time: 2 secs  
    Peak Memory Usage: 68 MB
         
 

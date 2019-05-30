@@ -1,6 +1,8 @@
 // https://www-users.cs.york.ac.uk/~fisher/mkfilter/
 // http://www.micromodeler.com/dsp/
+//https://dspguru.com/dsp/tricks/fixed-point-dc-blocking-filter-with-noise-shaping/
 
+//NON FUNZIONA FIXME
 
 module HP_IIR
 			(input wire               clk,
@@ -18,7 +20,7 @@ reg signed [15:0]  d_in16;
  
 Multiplier  Multiplier1 ( 
 .Clock (clk),
-.DataA (8'd 64),  // 60/64 = 0.9375
+.DataA (8'd 60),  // 60/64 = 0.9375
 .DataB (LastOut),
 .Result (MultResult), 
 .ClkEn (1'b 1),

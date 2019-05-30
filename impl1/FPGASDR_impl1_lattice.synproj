@@ -42,7 +42,7 @@
 "C:/Users/user/lattice/FPGASDR/PWM.v"
 "C:/Users/user/lattice/FPGASDR/PLL.v"
 "C:/Users/user/lattice/FPGASDR/Multiplier.v"
-"C:/Users/user/lattice/FPGASDR/HP_IIR.v"
+"C:/Users/user/lattice/FPGASDR/HP_shift.v"
 -top top
 
 

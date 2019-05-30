@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 10 00:10:54 2019
+Wed May 29 22:23:38 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -76,7 +76,7 @@ Verilog design file = C:/Users/user/lattice/FPGASDR/CIC.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/PWM.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/PLL.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/Multiplier.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/HP_IIR.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/HP_shift.v
 NGD file = FPGASDR_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -98,7 +98,7 @@ Analyzing Verilog file c:/users/user/lattice/fpgasdr/cic.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/pwm.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/pll.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_iir.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_shift.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): compiling module top. VERI-1018
@@ -123,19 +123,12 @@ INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_16. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(24): compiling module CIC(width=74). VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/hp_iir.v(5): compiling module HP_IIR. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/multiplier.v(8): compiling module Multiplier. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): compiling module AND2. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): compiling module ND2. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): compiling module FADD2B. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): compiling module MULT2. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/hp_iir.v(32): expression size 16 truncated to fit in target size 8. VERI-1209
+INFO - synthesis: c:/users/user/lattice/fpgasdr/hp_shift.v(6): compiling module HP_shift. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pll.v(8): compiling module PLL. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=17,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(119): net rst does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(124): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -143,7 +136,7 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(129): Removing unused instance HP_IIR1. VDB-5034
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(140): Removing unused instance HP_shift1. VDB-5034
 WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
 WARNING - synthesis: I/O Port o_Tx_Serial 's net has no driver and is unused.
 WARNING - synthesis: I/O Port o_Rx_DV 's net has no driver and is unused.
@@ -262,8 +255,8 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|   69.334 MHz|    40 *
 1 constraints not met.
 
 
-Peak Memory Usage: 79.379  MB
+Peak Memory Usage: 79.703  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.165  secs
+Elapsed CPU time for LSE flow : 4.462  secs
 --------------------------------------------------------------

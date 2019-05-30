@@ -60,13 +60,18 @@ wire [7:0] IIR_out;
 */
 // 136 MHz Clock:
 // 1000000 1E1E1E1E1DBDFC0
-// 900000  1B1B1B1B1B1B1B1  RAI 1 Siziano
-// 540000  104376A9DD10437  Kossuth
-
+// 900000  1B1B1B1B1B1B1B1  RAI 1 Siziano Milano
+// 540000  104376A9DD10437  Kossuth Budapest 
+// 1359000 28EE0CC5170287A  Radio Spore Bologna, Radio Wombat Firenze, Radio Gramma Genova 
+// 855000  19c0268cf359c02  Radio Romania Actualitati
+// 963000  1d00d7e21f90340
+// NCO additional increment for 9 KHz is  0X45641C6E59DF0
+// NCO additional increment for 1 KHz is  0X7B5CA45266E2
 // inc = 2^64 * Fout / Fclock
+// Python: print(hex(pow(2,64) * 1359000 // 136000000))
 
 
- //assign phase_inc_carr =    64'h 104376A9DD10437; //1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+// assign phase_inc_carr =    64'h  104376A9DD10437; //1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
 assign phase_inc_carr =    64'h 1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  //assign phase_inc_carr =    64'h 1B1B4294E949F45;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
 //assign phase_inc_carr =    64'h 104376A9DD10437;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
@@ -122,12 +127,17 @@ CIC  #(.width(74)) CIC1 (
 .d_out (CIC_out),
 .d_clk (CIC_out_clk)
 );  
- 
+ /*
 HP_IIR HP_IIR1 (.clk (CIC_out_clk),
 .d_in (CIC_out),
 .d_out (IIR_out)
 );
 
+ */
+HP_shift HP_shift1 (.clk (osc_clk),
+.d_in (CIC_out),
+.d_out (IIR_out)
+);
  
 PWM PWM1 (
 .clk (osc_clk),
@@ -142,6 +152,7 @@ PLL PLL1 (
 
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
+//assign MYLED[5:0] = CIC_out [7:2];
 assign MYLED[5:0] = CIC_out [7:2];
 assign MYLED[7] = sin_out;
 assign MYLED[6] = cos_out;
