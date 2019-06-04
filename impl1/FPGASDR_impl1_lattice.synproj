@@ -2,8 +2,8 @@
 -d LCMXO2-7000HE
 -t TQFP144
 -s 4
--frequency 120
--optimization_goal Balanced
+-frequency 200
+-optimization_goal Timing
 -bram_utilization 100
 -ramstyle Auto
 -romstyle auto

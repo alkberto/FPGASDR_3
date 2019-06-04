@@ -28,8 +28,9 @@ reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
 wire  cosGen;//wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
-wire [15:0] decimation_ratio = 16'd 16384;  //4096
 wire [7:0] CIC_out;
+wire [7:0] CIC1_out;
+wire CIC1_out_clk;
 wire [63:0] phase_accum;
 wire [7:0] LOSine;
 wire [7:0] LOCosine;
@@ -120,14 +121,21 @@ Mixer Mixer1 (
 .MixerOutCos (MixerOutCos)
 );
 	 //width was 68 for decimation = 4096, 74 for 16384
-CIC  #(.width(64)) CIC1 (
+CIC  #(.width(16), .decimation_ratio(8)) CIC1 (
 .clk (osc_clk),
-.rst (rst),
-.decimation_ratio (decimation_ratio),
 .d_in (MixerOutSin),
+.d_out (CIC1_out),
+.d_clk (CIC1_out_clk)
+);  
+
+CIC  #(.width(63), .decimation_ratio(2048)) CIC2 (
+.clk (CIC1_out_clk),
+.d_in (CIC1_out),
 .d_out (CIC_out),
 .d_clk (CIC_out_clk)
 );  
+
+
  /*
 HP_IIR HP_IIR1 (.clk (CIC_out_clk),
 .d_in (CIC_out),
@@ -154,21 +162,23 @@ PLL PLL1 (
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
 //assign MYLED[5:0] = CIC_out [7:2];
-assign MYLED[5:0] = CIC_out [7:2];
+assign MYLED[5:0] = o_Rx_Byte [7:2];
 assign MYLED[7] = sin_out;
 assign MYLED[6] = cos_out; 
  
 
 
-uart_rx  #(.CLKS_PER_BIT(1155))  uart_rx1 (
+uart_rx  #(.CLKS_PER_BIT(130))  uart_rx1 (
 .osc_clk (osc_clk), 
 .i_Rx_Serial (i_Rx_Serial),
 .o_Rx_DV  (o_Rx_DV),
 .o_Rx_Byte (o_Rx_Byte)
 );
 	
-/*
-uart_tx  #(.CLKS_PER_BIT(1155))  uart_tx1 (
+	
+	
+
+uart_tx  #(.CLKS_PER_BIT(130))  uart_tx1 (
 .osc_clk (osc_clk), 
 .o_Tx_Serial (o_Tx_Serial),
 .i_Tx_DV  (o_Rx_DV),
@@ -176,7 +186,7 @@ uart_tx  #(.CLKS_PER_BIT(1155))  uart_tx1 (
 .o_Tx_Active (o_Tx_Active),
 .o_Tx_Done (o_Tx_Done)
 );	
-*/	
+	
 
 
 /*	

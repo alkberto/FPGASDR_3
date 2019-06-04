@@ -6,38 +6,7 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="pn181123230230"></A><B><U><big>pn181123230230</big></U></B>
-#Start recording tcl command: 11/23/2018 21:32:47
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-C:/Users/user/lattice/TestUart
-TestUart1
-#Start recording tcl command: 11/23/2018 23:02:29
-#Project Location: C:/Users/user/lattice/TestUart; Project name: TestUart1
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-prj_src remove "C:/Users/user/lattice/FPGASDR/impl1/source/Uart1.v"
-prj_run Synthesis -impl impl1
-prj_src add "C:/Users/user/lattice/FPGASDR/NCO.v"
-prj_run Synthesis -impl impl1
-prj_run Synthesis -impl impl1
-prj_run Synthesis -impl impl1
-prj_run Synthesis -impl impl1
-prj_run Synthesis -impl impl1
-prj_run Export -impl impl1
-pgr_project save "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
-prj_src add -exclude "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
-prj_src enable "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
-prj_run Export -impl impl1
-prj_run Export -impl impl1
-pgr_program run
-pgr_project save "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
-prj_project save
-prj_project close
-prj_project open "C:/Users/user/lattice/TestUart/TestUart1.ldf"
-#Stop recording: 11/23/2018 23:02:30
-
-
-
-<A name="pn181124213118"></A><B><U><big>pn181124213118</big></U></B>
+<PRE><A name="pn181124213118"></A><B><U><big>pn181124213118</big></U></B>
 #Start recording tcl command: 11/23/2018 23:03:34
 #Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
 C:/Users/user/lattice/TestUart
@@ -229,6 +198,91 @@ prj_run PAR -impl impl1 -task IOTiming
 prj_strgy set_value -strategy Strategy1 lse_frequency=64
 prj_run Export -impl impl1 -task Jedecgen
 #Stop recording: 6/3/2019 21:54:21
+
+
+
+<A name="pn190604154411"></A><B><U><big>pn190604154411</big></U></B>
+#Start recording tcl command: 6/4/2019 09:42:01
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+C:/Users/user/lattice/TestUart
+TestUart1
+#Start recording tcl command: 6/4/2019 15:44:11
+#Project Location: C:/Users/user/lattice/TestUart; Project name: TestUart1
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_src exclude "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
+prj_src exclude "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Map -impl impl1 -task MapTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_src enable "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run PAR -impl impl1 -task PARTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_src enable "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_strgy set "Timing"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1 -task PARTrace
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project open "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/user/lattice/FPGASDR/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/Users/user/lattice/TestUart/TestUart1.ldf"
+#Stop recording: 6/4/2019 15:44:11
 
 
 

@@ -10,7 +10,7 @@
 // CLKS_PER_BIT = (Frequency of osc_clk)/(Frequency of UART)
 // Example: 10 MHz Clock, 115200 baud UART
 // (10000000)/(115200) = 87
-  
+ //Clock 120000000 - Clock div 8 (bit 2) - 115200 baud = 130 
 module uart_tx 
   #(parameter CLKS_PER_BIT = 1155)
   (
@@ -34,8 +34,15 @@ module uart_tx
   reg [7:0]    r_Tx_Data     = 0;
   reg          r_Tx_Done     = 0;
   reg          r_Tx_Active   = 0;
+  reg [7:0]		UartClk   = 2'b0;
      
-  always @(posedge osc_clk)
+
+   always @(posedge osc_clk)
+    begin
+	  UartClk <= UartClk + 1'b1;
+    end  
+	
+  always @(posedge UartClk[2])
     begin
        
       case (r_SM_Main)

@@ -21,8 +21,8 @@ Performance Hardware Data Status:   Final          Version 34.4.
 Setup and Hold Report
 
 --------------------------------------------------------------------------------
-<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.2.115</big></U></B>
-Sat Nov 24 18:09:19 2018
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.3.144</big></U></B>
+Tue Jun 04 15:26:19 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -41,9 +41,12 @@ Report level:    verbose report, limited to 1 item per preference
 
 <A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "osc_clk" 133.000000 MHz (586 errors)</FONT></A></LI>
-</FONT>            1481 items scored, 586 timing errors detected.
-Warning:  86.296MHz is the maximum frequency for this preference.
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "XIn_c" 8.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_0_1' Target='right'>FREQUENCY NET "osc_clk" 120.000000 MHz (0 errors)</A></LI>            3559 items scored, 0 timing errors detected.
+Report:  123.122MHz is the maximum frequency for this preference.
+
+<LI><A href='#map_twr_pref_0_2' Target='right'>CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" (0 errors)</A></LI>            10 items scored, 0 timing errors detected.
 
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
@@ -52,50 +55,95 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "osc_clk" 133.000000 MHz ;
-            1481 items scored, 586 timing errors detected.
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 4.069ns
+================================================================================
+<A name="map_twr_pref_0_1"></A>Preference: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+            3559 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.211ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              uart_rx1/r_Clock_Count_180__i1  (from osc_clk +)
-   Destination:    FF         Data in        uart_rx1/r_Clock_Count_180__i2  (to osc_clk +)
-                   FF                        uart_rx1/r_Clock_Count_180__i1
+   Source:         FF         Q              CIC1/count__i10  (from osc_clk +)
+   Destination:    FF         Data in        CIC1/count__i8  (to osc_clk +)
+                   FF                        CIC1/count__i7
 
-   Delay:              11.306ns  (30.3% logic, 69.7% route), 7 logic levels.
+   Delay:               7.848ns  (31.0% logic, 69.0% route), 5 logic levels.
 
  Constraint Details:
 
-     11.306ns physical path delay uart_rx1/SLICE_16 to uart_rx1/SLICE_16 exceeds
-      7.519ns delay constraint less
-      0.282ns CE_SET requirement (totaling 7.237ns) by 4.069ns
+      7.848ns physical path delay CIC1/SLICE_449 to CIC1/SLICE_451 meets
+      8.333ns delay constraint less
+      0.274ns LSR_SET requirement (totaling 8.059ns) by 0.211ns
 
  Physical Path Details:
 
-      Data path uart_rx1/SLICE_16 to uart_rx1/SLICE_16:
+      Data path CIC1/SLICE_449 to CIC1/SLICE_451:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452 */SLICE_16.CLK to *1/SLICE_16.Q0 uart_rx1/SLICE_16 (from osc_clk)
-ROUTE         2   e 1.234 *1/SLICE_16.Q0 to    SLICE_59.A0 uart_rx1/r_Clock_Count_1
-CTOF_DEL    ---     0.495    SLICE_59.A0 to    SLICE_59.F0 SLICE_59
-ROUTE         1   e 1.234    SLICE_59.F0 to *1/SLICE_52.D1 uart_rx1/n6_adj_688
-CTOF_DEL    ---     0.495 *1/SLICE_52.D1 to *1/SLICE_52.F1 uart_rx1/SLICE_52
-ROUTE         2   e 1.234 *1/SLICE_52.F1 to    SLICE_59.A1 uart_rx1/n1425
-CTOF_DEL    ---     0.495    SLICE_59.A1 to    SLICE_59.F1 SLICE_59
-ROUTE         1   e 1.234    SLICE_59.F1 to *1/SLICE_53.C1 uart_rx1/n8
-CTOF_DEL    ---     0.495 *1/SLICE_53.C1 to *1/SLICE_53.F1 uart_rx1/SLICE_53
-ROUTE         4   e 1.234 *1/SLICE_53.F1 to *1/SLICE_49.B0 uart_rx1/r_SM_Main_2_N_558_0
-CTOF_DEL    ---     0.495 *1/SLICE_49.B0 to *1/SLICE_49.F0 uart_rx1/SLICE_49
-ROUTE         1   e 0.480 *1/SLICE_49.F0 to *1/SLICE_49.C1 uart_rx1/n6
-CTOF_DEL    ---     0.495 *1/SLICE_49.C1 to *1/SLICE_49.F1 uart_rx1/SLICE_49
-ROUTE         9   e 1.234 *1/SLICE_49.F1 to *1/SLICE_16.CE uart_rx1/osc_clk_enable_50 (to osc_clk)
+REG_DEL     ---     0.452 *SLICE_449.CLK to */SLICE_449.Q1 CIC1/SLICE_449 (from osc_clk)
+ROUTE         2   e 1.234 */SLICE_449.Q1 to */SLICE_819.A1 CIC1/count_10
+CTOF_DEL    ---     0.495 */SLICE_819.A1 to */SLICE_819.F1 CIC1/SLICE_819
+ROUTE         1   e 0.480 */SLICE_819.F1 to */SLICE_819.B0 CIC1/n2879
+CTOF_DEL    ---     0.495 */SLICE_819.B0 to */SLICE_819.F0 CIC1/SLICE_819
+ROUTE         1   e 1.234 */SLICE_819.F0 to */SLICE_514.B1 CIC1/n2889
+CTOF_DEL    ---     0.495 */SLICE_514.B1 to */SLICE_514.F1 CIC1/SLICE_514
+ROUTE         5   e 1.234 */SLICE_514.F1 to */SLICE_461.A1 CIC1/n1032
+CTOF_DEL    ---     0.495 */SLICE_461.A1 to */SLICE_461.F1 CIC1/SLICE_461
+ROUTE         8   e 1.234 */SLICE_461.F1 to *SLICE_451.LSR CIC1/n1199 (to osc_clk)
                   --------
-                   11.306   (30.3% logic, 69.7% route), 7 logic levels.
+                    7.848   (31.0% logic, 69.0% route), 5 logic levels.
 
-Warning:  86.296MHz is the maximum frequency for this preference.
+Report:  123.122MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_2"></A>Preference: CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 13.632ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              Mixer1/RFInR_14  (from osc_clk +)
+   Destination:    Port       Pad            DiffOut
+
+   Data Path Delay:     5.134ns  (76.0% logic, 24.0% route), 2 logic levels.
+
+   Clock Path Delay:    1.234ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.234ns delay PLL1/PLLInst_0 to Mixer1/SLICE_750 and
+      5.134ns delay Mixer1/SLICE_750 to DiffOut (totaling 6.368ns) meets
+     20.000ns offset PLL1/PLLInst_0 to DiffOut by 13.632ns
+
+ Physical Path Details:
+
+      Clock path PLL1/PLLInst_0 to Mixer1/SLICE_750:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181   e 1.234 *LInst_0.CLKOP to *SLICE_750.CLK osc_clk
+                  --------
+                    1.234   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path Mixer1/SLICE_750 to DiffOut:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_750.CLK to */SLICE_750.Q1 Mixer1/SLICE_750 (from osc_clk)
+ROUTE         9   e 1.234 */SLICE_750.Q1 to      127.PADDO DiffOut_c
+DOPAD_DEL   ---     3.448      127.PADDO to        127.PAD DiffOut
+                  --------
+                    5.134   (76.0% logic, 24.0% route), 2 logic levels.
+
+Report:    6.368ns is the minimum offset for this preference.
 
 <A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -103,78 +151,56 @@ Warning:  86.296MHz is the maximum frequency for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "osc_clk" 133.000000 MHz  |             |             |
-;                                       |  133.000 MHz|   86.296 MHz|   7 *
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "osc_clk" 120.000000 MHz  |             |             |
+;                                       |  120.000 MHz|  123.122 MHz|   5  
+                                        |             |             |
+CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
+CLKNET "osc_clk" ;                      |    20.000 ns|     6.368 ns|   2  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-uart_rx1/r_SM_Main_2_N_558_0            |       4|     228|     38.91%
-                                        |        |        |
-uart_rx1/n1425                          |       2|     203|     34.64%
-                                        |        |        |
-uart_rx1/r_SM_Main_2_N_552_2            |       8|     197|     33.62%
-                                        |        |        |
-uart_rx1/n928                           |       9|     171|     29.18%
-                                        |        |        |
-uart_tx1/n10_adj_690                    |       1|     161|     27.47%
-                                        |        |        |
-uart_tx1/r_SM_Main_2_N_646_1            |       7|     161|     27.47%
-                                        |        |        |
-uart_tx1/n1198                          |       1|     158|     26.96%
-                                        |        |        |
-uart_rx1/n8                             |       1|     136|     23.21%
-                                        |        |        |
-uart_rx1/n4                             |       1|     127|     21.67%
-                                        |        |        |
-uart_tx1/n43                            |       1|     116|     19.80%
-                                        |        |        |
-uart_rx1/n1394                          |       2|     108|     18.43%
-                                        |        |        |
-uart_rx1/n1444                          |       1|     108|     18.43%
-                                        |        |        |
-uart_rx1/n6                             |       1|     108|     18.43%
-                                        |        |        |
-uart_rx1/osc_clk_enable_50              |       9|     108|     18.43%
-                                        |        |        |
-uart_rx1/n1518                          |       8|     104|     17.75%
-                                        |        |        |
-uart_tx1/n916                           |       9|      90|     15.36%
-                                        |        |        |
-uart_rx1/n6_adj_688                     |       1|      86|     14.68%
-                                        |        |        |
-uart_rx1/n6_adj_687                     |       1|      84|     14.33%
-                                        |        |        |
-uart_tx1/n10                            |       1|      68|     11.60%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 <A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
 ------------------------
 
-Found 1 clocks:
+Found 5 clocks:
 
-Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 44
-   Covered under: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+Clock Domain: uart_tx1/UartClk[3]   Source: uart_tx1/SLICE_9.Q0   Loads: 20
+   No transfer within this clock domain is found
+
+Clock Domain: uart_rx1/UartClk[2]   Source: uart_tx1/SLICE_10.Q1   Loads: 23
+   No transfer within this clock domain is found
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk_derived_991   Source: CIC1/SLICE_772.Q0   Loads: 524
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 181
+   Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: osc_clk_derived_991   Source: CIC1/SLICE_772.Q0
+      Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;   Transfers: 8
 
 
 <A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
 ---------------
 
-Timing errors: 586  Score: 1054666
-Cumulative negative slack: 1054666
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 1481 paths, 1 nets, and 433 connections (99.54% coverage)
+Constraints cover 3569 paths, 2 nets, and 1196 connections (22.76% coverage)
 
 --------------------------------------------------------------------------------
-<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.2.115</big></U></B>
-Sat Nov 24 18:09:19 2018
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.3.144</big></U></B>
+Tue Jun 04 15:26:19 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -193,7 +219,11 @@ Report level:    verbose report, limited to 1 item per preference
 
 <A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "osc_clk" 133.000000 MHz (0 errors)</A></LI>            1481 items scored, 0 timing errors detected.
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "XIn_c" 8.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY NET "osc_clk" 120.000000 MHz (0 errors)</A></LI>            3559 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_2' Target='right'>CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" (0 errors)</A></LI>            10 items scored, 0 timing errors detected.
 
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
@@ -202,8 +232,14 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "osc_clk" 133.000000 MHz ;
-            1481 items scored, 0 timing errors detected.
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+<A name="map_twr_pref_1_1"></A>Preference: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+            3559 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -211,26 +247,69 @@ Passed: The following path meets requirements by 0.351ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Mixer1/RFInR1_16  (from osc_clk +)
-   Destination:    FF         Data in        Mixer1/RFInR_17  (to osc_clk +)
+   Source:         FF         Q              Mixer1/RFInR1_13  (from osc_clk +)
+   Destination:    FF         Data in        Mixer1/RFInR_14  (to osc_clk +)
 
    Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
 
  Constraint Details:
 
-      0.332ns physical path delay SLICE_51 to SLICE_51 meets
+      0.332ns physical path delay Mixer1/SLICE_750 to Mixer1/SLICE_750 meets
      -0.019ns M_HLD and
       0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
 
  Physical Path Details:
 
-      Data path SLICE_51 to SLICE_51:
+      Data path Mixer1/SLICE_750 to Mixer1/SLICE_750:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133   SLICE_51.CLK to    SLICE_51.Q0 SLICE_51 (from osc_clk)
-ROUTE         1   e 0.199    SLICE_51.Q0 to    SLICE_51.M1 Mixer1/RFInR1 (to osc_clk)
+REG_DEL     ---     0.133 *SLICE_750.CLK to */SLICE_750.Q0 Mixer1/SLICE_750 (from osc_clk)
+ROUTE         1   e 0.199 */SLICE_750.Q0 to */SLICE_750.M1 Mixer1/RFInR1 (to osc_clk)
                   --------
                     0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_2"></A>Preference: CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.247ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              Mixer1/RFInR_14  (from osc_clk +)
+   Destination:    Port       Pad            DiffOut
+
+   Data Path Delay:     1.732ns  (70.3% logic, 29.7% route), 2 logic levels.
+
+   Clock Path Delay:    0.515ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.515ns delay PLL1/PLLInst_0 to Mixer1/SLICE_750 and
+      1.732ns delay Mixer1/SLICE_750 to DiffOut (totaling 2.247ns) meets
+      0.000ns hold offset PLL1/PLLInst_0 to DiffOut by 2.247ns
+
+ Physical Path Details:
+
+      Clock path PLL1/PLLInst_0 to Mixer1/SLICE_750:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181   e 0.515 *LInst_0.CLKOP to *SLICE_750.CLK osc_clk
+                  --------
+                    0.515   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path Mixer1/SLICE_750 to DiffOut:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_750.CLK to */SLICE_750.Q1 Mixer1/SLICE_750 (from osc_clk)
+ROUTE         9   e 0.515 */SLICE_750.Q1 to      127.PADDO DiffOut_c
+DOPAD_DEL   ---     1.084      127.PADDO to        127.PAD DiffOut
+                  --------
+                    1.732   (70.3% logic, 29.7% route), 2 logic levels.
+
+Report:    2.247ns is the maximum offset for this preference.
 
 <A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -238,8 +317,13 @@ ROUTE         1   e 0.199    SLICE_51.Q0 to    SLICE_51.M1 Mixer1/RFInR1 (to osc
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "osc_clk" 133.000000 MHz  |             |             |
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "osc_clk" 120.000000 MHz  |             |             |
 ;                                       |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
+CLKNET "osc_clk" ;                      |     0.000 ns|     2.247 ns|   2  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -250,10 +334,26 @@ All preferences were met.
 <A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
 ------------------------
 
-Found 1 clocks:
+Found 5 clocks:
 
-Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 44
-   Covered under: FREQUENCY NET "osc_clk" 133.000000 MHz ;
+Clock Domain: uart_tx1/UartClk[3]   Source: uart_tx1/SLICE_9.Q0   Loads: 20
+   No transfer within this clock domain is found
+
+Clock Domain: uart_rx1/UartClk[2]   Source: uart_tx1/SLICE_10.Q1   Loads: 23
+   No transfer within this clock domain is found
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk_derived_991   Source: CIC1/SLICE_772.Q0   Loads: 524
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 181
+   Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: osc_clk_derived_991   Source: CIC1/SLICE_772.Q0
+      Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;   Transfers: 8
 
 
 <A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
@@ -262,16 +362,16 @@ Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 44
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1481 paths, 1 nets, and 433 connections (99.54% coverage)
+Constraints cover 3569 paths, 2 nets, and 1196 connections (22.76% coverage)
 
 
 
 <A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
 ---------------
 
-Timing errors: 586 (setup), 0 (hold)
-Score: 1054666 (setup), 0 (hold)
-Cumulative negative slack: 1054666 (1054666+0)
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

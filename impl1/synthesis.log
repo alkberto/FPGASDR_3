@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jun 03 23:42:43 2019
+Tue Jun 04 15:54:07 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -34,9 +34,9 @@ Using performance grade 4.
                                                           
 
 INFO - synthesis: User-Selected Strategy Settings
-Optimization goal = Balanced
+Optimization goal = Timing
 Top-level module name = top.
-Target frequency = 120.000000 MHz.
+Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -124,15 +124,16 @@ INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_15. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_16. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(24): compiling module CIC. VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(25): compiling module CIC(width=16,decimation_ratio=8). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(25): compiling module CIC(width=63,decimation_ratio=2048). VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/hp_shift.v(6): compiling module HP_shift. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pll.v(8): compiling module PLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=5,CLKOS_TRIM_POL="FALLING"). VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(19): compiling module uart_rx(CLKS_PER_BIT=1155). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(19): compiling module uart_rx(CLKS_PER_BIT=130). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): compiling module uart_tx(CLKS_PER_BIT=130). VERI-1018
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(27): net phase_inc_carr[63] does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(125): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -140,11 +141,9 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(141): Removing unused instance HP_shift1. VDB-5034
-WARNING - synthesis: I/O Port o_Tx_Serial 's net has no driver and is unused.
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(149): Removing unused instance HP_shift1. VDB-5034
 WARNING - synthesis: I/O Port XOut 's net has no driver and is unused.
 WARNING - synthesis: I/O Port sinGen 's net has no driver and is unused.
-######## Missing driver on net o_Tx_Serial. Patching with GND.
 ######## Missing driver on net XOut. Patching with GND.
 ######## Missing driver on net sinGen. Patching with GND.
 ######## Missing driver on net phase_inc_carr[63]. Patching with GND.
@@ -211,13 +210,12 @@ WARNING - synthesis: I/O Port sinGen 's net has no driver and is unused.
 ######## Missing driver on net phase_inc_carr[2]. Patching with GND.
 ######## Missing driver on net phase_inc_carr[1]. Patching with GND.
 ######## Missing driver on net phase_inc_carr[0]. Patching with GND.
-######## Missing driver on net rst. Patching with GND.
 
 
 
 WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(52): Register \nco/phase_accum_i0 is stuck at Zero. VDB-5013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Applying 120.000000 MHz constraint to all clocks
+Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in top_drc.log.
@@ -229,21 +227,22 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1075 of 7209 (14 % )
-CCU2D => 352
+Number of register bits => 1371 of 7209 (19 % )
+CCU2D => 453
 EHXPLLJ => 1
-FD1P3AX => 676
+FD1P3AX => 854
 FD1P3DX => 8
-FD1P3IX => 16
-FD1S3AX => 353
+FD1P3IX => 32
+FD1S3AX => 433
 FD1S3AY => 4
-FD1S3IX => 17
-FD1S3JX => 1
+FD1S3IX => 38
+FD1S3JX => 2
 GSR => 1
 IB => 3
-LUT4 => 85
+L6MUX21 => 1
+LUT4 => 157
 OB => 32
-PFUMX => 2
+PFUMX => 4
 ROM256X1A => 8
 ################### End Area Report ##################
 
@@ -253,35 +252,36 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
-  Net : osc_clk, loads : 1043
-  Net : uart_rx1/UartClk_2, loads : 34
+Number of Clocks: 4
+  Net : CIC1/osc_clk_derived_991, loads : 991
+  Net : osc_clk, loads : 317
+  Net : uart_tx1/UartClk_2, loads : 65
   Net : XIn_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 26
+Number of Clock Enables: 34
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_59, loads : 61
-  Net : CIC1/osc_clk_enable_98, loads : 50
-  Net : CIC1/osc_clk_enable_298, loads : 50
-  Net : CIC1/osc_clk_enable_348, loads : 50
-  Net : CIC1/osc_clk_enable_148, loads : 50
-  Net : CIC1/osc_clk_enable_605, loads : 50
-  Net : CIC1/osc_clk_enable_398, loads : 50
-  Net : CIC1/osc_clk_enable_248, loads : 50
-  Net : CIC1/osc_clk_enable_448, loads : 50
-  Net : CIC1/osc_clk_enable_198, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_597, loads : 61
+  Net : CIC2/osc_clk_derived_991_enable_96, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_446, loads : 50
+  Net : CIC1/osc_clk_enable_158, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_496, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_196, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_546, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_296, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_596, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_396, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : CIC1/osc_clk_enable_498, loads : 100
-  Net : CIC1/osc_clk_enable_548, loads : 100
-  Net : CIC1/v_comb, loads : 84
-  Net : CIC1/osc_clk_enable_59, loads : 61
-  Net : CIC1/d_clk_tmp_N_2217, loads : 60
-  Net : Mixer1/MixerOutSin_c_7, loads : 57
-  Net : CIC1/osc_clk_enable_98, loads : 50
-  Net : CIC1/osc_clk_enable_148, loads : 50
-  Net : CIC1/osc_clk_enable_198, loads : 50
-  Net : CIC1/osc_clk_enable_248, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_146, loads : 100
+  Net : CIC2/osc_clk_derived_991_enable_346, loads : 100
+  Net : CIC2/osc_clk_derived_991_enable_246, loads : 100
+  Net : CIC1/osc_clk_enable_51, loads : 100
+  Net : CIC1/osc_clk_enable_101, loads : 100
+  Net : CIC2/v_comb, loads : 66
+  Net : CIC2/osc_clk_derived_991_enable_597, loads : 61
+  Net : CIC1/CIC1_out_7, loads : 55
+  Net : CIC2/osc_clk_derived_991_enable_96, loads : 50
+  Net : CIC2/osc_clk_derived_991_enable_596, loads : 50
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -290,20 +290,23 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 8.333333 -name     |             |             |
-clk1 [get_nets \uart_rx1/UartClk[2]]    |  120.004 MHz|   72.522 MHz|     8 *
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets UartClk[2]]              |  200.000 MHz|   94.563 MHz|     6 *
                                         |             |             |
-create_clock -period 8.333333 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  120.004 MHz|   99.108 MHz|    30 *
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets osc_clk_derived_991]     |  200.000 MHz|  103.114 MHz|    33 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets osc_clk]                 |  200.000 MHz|  110.840 MHz|     5 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-2 constraints not met.
+3 constraints not met.
 
 
-Peak Memory Usage: 75.301  MB
+Peak Memory Usage: 78.234  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 3.401  secs
+Elapsed CPU time for LSE flow : 6.505  secs
 --------------------------------------------------------------

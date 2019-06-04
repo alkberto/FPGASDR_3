@@ -16,8 +16,8 @@ CoreRevision=5.8
 ModuleName=PLL
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=06/03/2019
-Time=21:31:44
+Date=06/04/2019
+Time=14:30:02
 
 [Parameters]
 Verilog=1
@@ -33,7 +33,7 @@ CLKI_DIV=1
 BW=0.764
 VCO=480.000
 fb_mode=CLKOP
-CLKFB_DIV=10
+CLKFB_DIV=15
 FRACN_ENABLE=0
 FRACN_DIV=0
 DynamicPhase=STATIC
@@ -49,10 +49,10 @@ LockStk=0
 WBProt=0
 OPBypass=0
 OPUseDiv=0
-CLKOP_DIV=6
-FREQ_PIN_CLKOP=80
+CLKOP_DIV=4
+FREQ_PIN_CLKOP=120
 OP_Tol=0.0
-CLKOP_AFREQ=80.000000
+CLKOP_AFREQ=120.000000
 CLKOP_PHASEADJ=0
 CLKOP_TRIM_POL=Rising
 CLKOP_TRIM_DELAY=0
@@ -84,4 +84,4 @@ CLKOS3_AFREQ=
 CLKOS3_PHASEADJ=0
 
 [Command]
-cmd_line= -w -n PLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 8 -fclkop 80 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1
+cmd_line= -w -n PLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 8 -fclkop 120 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1

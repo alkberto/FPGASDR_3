@@ -14,7 +14,7 @@
   
 //Clock 133000000 - 115200 baud = 1155
 //Clock 136000000 - 115200 baud = 1181
-
+//Clock 120000000 - Clock div 8 (bit 2) - 115200 baud = 130
   
 module uart_rx 
 
@@ -39,7 +39,7 @@ module uart_rx
    
   reg           r_Rx_Data_R = 1'b1;
   reg           r_Rx_Data   = 1'b1;
-  reg [2:0]		UartClk   = 2'b0;
+  reg [7:0]		UartClk   = 2'b0;
    
   reg [15:0]     r_Clock_Count = 0;
   reg [2:0]     r_Bit_Index   = 0; //8 bits total
@@ -67,7 +67,6 @@ module uart_rx
     begin
       r_Rx_Data_R <= i_Rx_Serial;
       r_Rx_Data   <= r_Rx_Data_R;
-	
     end
  
   // Purpose: Control RX state machine

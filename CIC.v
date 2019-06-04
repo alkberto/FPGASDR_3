@@ -21,13 +21,15 @@ where x(n) is the input to the CIC filter, and {k} means that if k is not an int
 
 
 //width ok was 80
-module CIC #(parameter width = 64)
+//module CIC #(parameter width = 64, decimation_ratio = 16)
+module CIC 
 			(input wire               clk,
-			input wire               rst,
-			input wire        [15:0] decimation_ratio,
 			input wire signed [7:0]  d_in,
 			output reg signed [7:0]  d_out,
 			output reg 				 d_clk);
+
+parameter width = 64;
+parameter decimation_ratio = 16;
 
 reg signed [width-1:0] d_tmp, d_d_tmp;
 
@@ -58,16 +60,8 @@ reg d_clk_tmp;
  
 	always @(posedge clk)
 	begin
-		if (rst)
-		begin
-			d1 <= 0;
-			d2 <= 0;
-			d3 <= 0;
-			d4 <= 0;
-			d5 <= 0;
-			count <= 0;
-		end else
-		begin
+		
+		
 			// Integrator section
 			d1 <= d_in + d1;
 			
@@ -97,26 +91,14 @@ reg d_clk_tmp;
 				count <= count + 16'd1;
 				v_comb <= 1'b0;
 			end
-		end
+		
 	end
 	
 	always @(posedge clk)  // Comb section running at output rate
 	begin
 		d_clk <= d_clk_tmp;
-		if (rst)
-		begin
-			d6 <= 0;
-			d7 <= 0;
-			d8 <= 0;
-			d9 <= 0;
-			d10 <= 0;
-			d_d6 <= 0;
-			d_d7 <= 0;
-			d_d8 <= 0;
-			d_d9 <= 0;
-			d_out <= 8'b0;
-		end else
-		begin
+		
+		
 			if (v_comb)
 			begin
 				// Comb section
@@ -141,9 +123,7 @@ reg d_clk_tmp;
 
 				d_out <= d10 >>> (width - 8); // was (width - 6)
 				//d_out[6:0] <= d10[50:44];
-				//d_out[7] <= d10[57];
-			
-			end
+				//d_out[7] <= d10[57];						
 		end
 	end								
 endmodule
