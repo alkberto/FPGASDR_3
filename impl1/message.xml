@@ -302,24 +302,4 @@
             <Severity>Warning</Severity>
         </Message>
     </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>61091062</ID>
-            <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>61091050</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>XIn</Dynamic>
-            <Dynamic>PLL1/PLLInst_0</Dynamic>
-            <Dynamic>57</Dynamic>
-            <Dynamic>PB26A</Dynamic>
-        </Message>
-        <Message>
-            <ID>62061005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CLKI</Dynamic>
-            <Dynamic>XIn_c</Dynamic>
-        </Message>
-    </Task>
 </BaliMessageLog>

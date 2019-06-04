@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jun 04 15:54:07 2019
+Tue Jun 04 16:35:48 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -305,8 +305,8 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|  110.840 MHz|     5 *
 3 constraints not met.
 
 
-Peak Memory Usage: 78.234  MB
+Peak Memory Usage: 78.313  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 6.505  secs
+Elapsed CPU time for LSE flow : 6.661  secs
 --------------------------------------------------------------

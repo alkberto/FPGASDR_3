@@ -120,7 +120,7 @@ Mixer Mixer1 (
 .MixerOutSin (MixerOutSin),
 .MixerOutCos (MixerOutCos)
 );
-	 //width was 68 for decimation = 4096, 74 for 16384
+
 CIC  #(.width(16), .decimation_ratio(8)) CIC1 (
 .clk (osc_clk),
 .d_in (MixerOutSin),
@@ -161,12 +161,12 @@ PLL PLL1 (
 
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
-//assign MYLED[5:0] = CIC_out [7:2];
-assign MYLED[5:0] = o_Rx_Byte [7:2];
+assign MYLED[5:0] = CIC_out [7:2];
+//assign MYLED[5:0] = o_Rx_Byte [7:2];
 assign MYLED[7] = sin_out;
 assign MYLED[6] = cos_out; 
  
-
+  
 
 uart_rx  #(.CLKS_PER_BIT(130))  uart_rx1 (
 .osc_clk (osc_clk), 

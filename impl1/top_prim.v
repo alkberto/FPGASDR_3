@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.10.3.144
-// Netlist written on Tue Jun 04 15:54:14 2019
+// Netlist written on Tue Jun 04 16:35:55 2019
 //
 // Verilog Description of module top
 //
@@ -27,14 +27,16 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
     wire [7:0]UartClk_adj_2190 /* synthesis SET_AS_NETWORK=\uart_tx1/UartClk[2], is_clock=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(37[14:21])
     wire osc_clk_derived_991 /* synthesis is_clock=1, SET_AS_NETWORK=osc_clk_derived_991 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(23[8:15])
     
-    wire GND_net, VCC_net, i_Rx_Serial_c, o_Tx_Serial_c, MYLED_c, 
-        n657, n658, n659, n660, n661, o_Rx_Byte_c_1, o_Rx_Byte_c_0, 
-        MixerOutSin_c_7, MixerOutSin_c_6, MixerOutSin_c_5, MixerOutSin_c_4, 
-        MixerOutSin_c_3, MixerOutSin_c_2, MixerOutSin_c_1, MixerOutSin_c_0, 
-        RFIn_c, DiffOut_c, PWMOut_c, CIC_out_clk_c;
-    wire [7:0]CIC_out;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(31[12:19])
+    wire GND_net, VCC_net, i_Rx_Serial_c, o_Tx_Serial_c, o_Rx_Byte_c_7, 
+        o_Rx_Byte_c_6, o_Rx_Byte_c_5, o_Rx_Byte_c_4, o_Rx_Byte_c_3, 
+        o_Rx_Byte_c_2, o_Rx_Byte_c_1, o_Rx_Byte_c_0, MYLED_c_5, MixerOutSin_c_7, 
+        MixerOutSin_c_6, MixerOutSin_c_5, MixerOutSin_c_4, MixerOutSin_c_3, 
+        MixerOutSin_c_2, MixerOutSin_c_1, MixerOutSin_c_0, RFIn_c, DiffOut_c, 
+        PWMOut_c, CIC_out_clk_c;
     wire [7:0]CIC1_out;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(32[12:20])
     wire [7:0]LOSine;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(35[12:18])
+    
+    wire n657, n658, MYLED_c_4, MYLED_c_3, MYLED_c_2;
     wire [7:0]DataInNoSign_7__N_1896;
     
     wire o_Rx_DV_c_0;
@@ -43,8 +45,10 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
     \uart_tx(CLKS_PER_BIT=130)  uart_tx1 (.\UartClk[2] (UartClk_adj_2190[2]), 
             .o_Tx_Serial_c(o_Tx_Serial_c), .o_Rx_Byte_c_0(o_Rx_Byte_c_0), 
             .osc_clk(osc_clk), .o_Rx_DV_c_0(o_Rx_DV_c_0), .GND_net(GND_net), 
-            .o_Rx_Byte_c_1(o_Rx_Byte_c_1), .n661(n661), .n660(n660), .n659(n659), 
-            .n658(n658), .n657(n657), .MYLED_c(MYLED_c)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(181[33] 188[2])
+            .o_Rx_Byte_c_1(o_Rx_Byte_c_1), .o_Rx_Byte_c_2(o_Rx_Byte_c_2), 
+            .o_Rx_Byte_c_3(o_Rx_Byte_c_3), .o_Rx_Byte_c_4(o_Rx_Byte_c_4), 
+            .o_Rx_Byte_c_5(o_Rx_Byte_c_5), .o_Rx_Byte_c_6(o_Rx_Byte_c_6), 
+            .o_Rx_Byte_c_7(o_Rx_Byte_c_7)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(181[33] 188[2])
     OB o_Rx_Byte_pad_1 (.I(o_Rx_Byte_c_1), .O(o_Rx_Byte[1]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
     Mixer Mixer1 (.MixerOutSin_c_0(MixerOutSin_c_0), .osc_clk(osc_clk), 
           .DiffOut_c(DiffOut_c), .RFIn_c(RFIn_c), .LOSine({LOSine}), .MixerOutSin_c_7(MixerOutSin_c_7), 
@@ -52,30 +56,29 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
           .MixerOutSin_c_4(MixerOutSin_c_4), .MixerOutSin_c_3(MixerOutSin_c_3), 
           .MixerOutSin_c_2(MixerOutSin_c_2), .MixerOutSin_c_1(MixerOutSin_c_1), 
           .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(114[7] 122[2])
-    OB o_Rx_Byte_pad_2 (.I(n661), .O(o_Rx_Byte[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_2 (.I(o_Rx_Byte_c_2), .O(o_Rx_Byte[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
     PWM PWM1 (.osc_clk(osc_clk), .\DataInNoSign_7__N_1896[0] (DataInNoSign_7__N_1896[0]), 
-        .PWMOut_c(PWMOut_c), .\CIC_out[7] (CIC_out[7]), .\DataInNoSign_7__N_1896[1] (DataInNoSign_7__N_1896[1]), 
-        .\DataInNoSign_7__N_1896[2] (DataInNoSign_7__N_1896[2]), .\DataInNoSign_7__N_1896[3] (DataInNoSign_7__N_1896[3]), 
-        .\DataInNoSign_7__N_1896[4] (DataInNoSign_7__N_1896[4]), .\DataInNoSign_7__N_1896[5] (DataInNoSign_7__N_1896[5]), 
-        .\DataInNoSign_7__N_1896[6] (DataInNoSign_7__N_1896[6]), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(151[5] 156[2])
+        .PWMOut_c(PWMOut_c), .MYLED_c_5(MYLED_c_5), .\DataInNoSign_7__N_1896[1] (DataInNoSign_7__N_1896[1]), 
+        .MYLED_c_2(MYLED_c_2), .MYLED_c_3(MYLED_c_3), .MYLED_c_4(MYLED_c_4), 
+        .n658(n658), .n657(n657), .GND_net(GND_net)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(151[5] 156[2])
     VLO i1 (.Z(GND_net));
-    OB o_Rx_Byte_pad_3 (.I(n660), .O(o_Rx_Byte[3]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
-    OB o_Rx_Byte_pad_4 (.I(n659), .O(o_Rx_Byte[4]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
-    OB o_Rx_Byte_pad_5 (.I(n658), .O(o_Rx_Byte[5]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
-    OB o_Rx_Byte_pad_6 (.I(n657), .O(o_Rx_Byte[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
-    OB o_Rx_Byte_pad_7 (.I(MYLED_c), .O(o_Rx_Byte[7]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_3 (.I(o_Rx_Byte_c_3), .O(o_Rx_Byte[3]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_4 (.I(o_Rx_Byte_c_4), .O(o_Rx_Byte[4]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_5 (.I(o_Rx_Byte_c_5), .O(o_Rx_Byte[5]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_6 (.I(o_Rx_Byte_c_6), .O(o_Rx_Byte[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
+    OB o_Rx_Byte_pad_7 (.I(o_Rx_Byte_c_7), .O(o_Rx_Byte[7]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
     OB o_Rx_DV_pad (.I(o_Rx_DV_c_0), .O(o_Rx_DV));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(8[13:20])
     OB o_Tx_Serial_pad (.I(o_Tx_Serial_c), .O(o_Tx_Serial));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(7[11:22])
     GSR GSR_INST (.GSR(VCC_net));
     OB o_Rx_Byte_pad_0 (.I(o_Rx_Byte_c_0), .O(o_Rx_Byte[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(9[16:25])
     OB MYLED_pad_7 (.I(VCC_net), .O(MYLED[7]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
     OB MYLED_pad_6 (.I(VCC_net), .O(MYLED[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
-    OB MYLED_pad_5 (.I(MYLED_c), .O(MYLED[5]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
+    OB MYLED_pad_5 (.I(MYLED_c_5), .O(MYLED[5]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
     OB MYLED_pad_4 (.I(n657), .O(MYLED[4]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
     OB MYLED_pad_3 (.I(n658), .O(MYLED[3]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
-    OB MYLED_pad_2 (.I(n659), .O(MYLED[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
-    OB MYLED_pad_1 (.I(n660), .O(MYLED[1]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
-    OB MYLED_pad_0 (.I(n661), .O(MYLED[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
+    OB MYLED_pad_2 (.I(MYLED_c_4), .O(MYLED[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
+    OB MYLED_pad_1 (.I(MYLED_c_3), .O(MYLED[1]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
+    OB MYLED_pad_0 (.I(MYLED_c_2), .O(MYLED[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(10[18:23])
     OB MixerOutSin_pad_7 (.I(MixerOutSin_c_7), .O(MixerOutSin[7]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(11[15:26])
     OB MixerOutSin_pad_6 (.I(MixerOutSin_c_6), .O(MixerOutSin[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(11[15:26])
     OB MixerOutSin_pad_5 (.I(MixerOutSin_c_5), .O(MixerOutSin[5]));   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(11[15:26])
@@ -97,15 +100,16 @@ module top (i_Rx_Serial, o_Tx_Serial, o_Rx_DV, o_Rx_Byte, MYLED, MixerOutSin,
     defparam PUR_INST.RST_PULSE = 1;
     PLL PLL1 (.XIn_c(XIn_c), .osc_clk(osc_clk), .GND_net(GND_net)) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(158[5] 160[2])
     \uart_rx(CLKS_PER_BIT=130)  uart_rx1 (.\UartClk[2] (UartClk_adj_2190[2]), 
-            .GND_net(GND_net), .i_Rx_Serial_c(i_Rx_Serial_c), .MYLED_c(MYLED_c), 
-            .n657(n657), .n658(n658), .n659(n659), .n660(n660), .n661(n661), 
-            .o_Rx_Byte_c_1(o_Rx_Byte_c_1), .o_Rx_DV_c_0(o_Rx_DV_c_0), .o_Rx_Byte_c_0(o_Rx_Byte_c_0)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(171[33] 176[2])
+            .GND_net(GND_net), .i_Rx_Serial_c(i_Rx_Serial_c), .o_Rx_Byte_c_7(o_Rx_Byte_c_7), 
+            .o_Rx_Byte_c_6(o_Rx_Byte_c_6), .o_Rx_Byte_c_5(o_Rx_Byte_c_5), 
+            .o_Rx_Byte_c_4(o_Rx_Byte_c_4), .o_Rx_Byte_c_3(o_Rx_Byte_c_3), 
+            .o_Rx_Byte_c_2(o_Rx_Byte_c_2), .o_Rx_Byte_c_1(o_Rx_Byte_c_1), 
+            .o_Rx_DV_c_0(o_Rx_DV_c_0), .o_Rx_Byte_c_0(o_Rx_Byte_c_0)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(171[33] 176[2])
     \CIC(width=63,decimation_ratio=2048)  CIC2 (.osc_clk_derived_991(osc_clk_derived_991), 
             .GND_net(GND_net), .CIC1_out({CIC1_out}), .CIC_out_clk_c(CIC_out_clk_c), 
             .\DataInNoSign_7__N_1896[0] (DataInNoSign_7__N_1896[0]), .\DataInNoSign_7__N_1896[1] (DataInNoSign_7__N_1896[1]), 
-            .\DataInNoSign_7__N_1896[2] (DataInNoSign_7__N_1896[2]), .\DataInNoSign_7__N_1896[3] (DataInNoSign_7__N_1896[3]), 
-            .\DataInNoSign_7__N_1896[4] (DataInNoSign_7__N_1896[4]), .\DataInNoSign_7__N_1896[5] (DataInNoSign_7__N_1896[5]), 
-            .\DataInNoSign_7__N_1896[6] (DataInNoSign_7__N_1896[6]), .\CIC_out[7] (CIC_out[7])) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(131[45] 136[2])
+            .MYLED_c_2(MYLED_c_2), .MYLED_c_3(MYLED_c_3), .MYLED_c_4(MYLED_c_4), 
+            .n658(n658), .n657(n657), .MYLED_c_5(MYLED_c_5)) /* synthesis syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(131[45] 136[2])
     SinCos SinCos1 (.osc_clk(osc_clk), .VCC_net(VCC_net), .GND_net(GND_net), 
            .LOSine({LOSine})) /* synthesis NGD_DRC_MASK=1, syn_module_defined=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(94[8] 101[2])
     TSALL TSALL_INST (.TSALL(GND_net));
@@ -122,8 +126,9 @@ endmodule
 //
 
 module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0, 
-            osc_clk, o_Rx_DV_c_0, GND_net, o_Rx_Byte_c_1, n661, n660, 
-            n659, n658, n657, MYLED_c) /* synthesis syn_module_defined=1 */ ;
+            osc_clk, o_Rx_DV_c_0, GND_net, o_Rx_Byte_c_1, o_Rx_Byte_c_2, 
+            o_Rx_Byte_c_3, o_Rx_Byte_c_4, o_Rx_Byte_c_5, o_Rx_Byte_c_6, 
+            o_Rx_Byte_c_7) /* synthesis syn_module_defined=1 */ ;
     output \UartClk[2] ;
     output o_Tx_Serial_c;
     input o_Rx_Byte_c_0;
@@ -131,18 +136,18 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     input o_Rx_DV_c_0;
     input GND_net;
     input o_Rx_Byte_c_1;
-    input n661;
-    input n660;
-    input n659;
-    input n658;
-    input n657;
-    input MYLED_c;
+    input o_Rx_Byte_c_2;
+    input o_Rx_Byte_c_3;
+    input o_Rx_Byte_c_4;
+    input o_Rx_Byte_c_5;
+    input o_Rx_Byte_c_6;
+    input o_Rx_Byte_c_7;
     
     wire \UartClk[2]  /* synthesis SET_AS_NETWORK=\uart_tx1/UartClk[2], is_clock=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(37[14:21])
     wire osc_clk /* synthesis SET_AS_NETWORK=osc_clk, is_clock=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(23[8:15])
     wire [2:0]r_SM_Main;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(31[16:25])
     
-    wire n847;
+    wire n844;
     wire [2:0]r_Bit_Index;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(33[16:27])
     
     wire UartClk_2_enable_9, n3, UartClk_2_enable_52, n3_adj_2156;
@@ -152,18 +157,18 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     wire [2:0]n30;
     wire [2:0]n17;
     
-    wire n2598, n3245, n2613, n3_adj_2158, n2324, n2557, n3244, 
-        n7, n3243, n3263;
+    wire n2595, n3242, n2610, n3_adj_2158, n2321, n2554, n3241, 
+        n7, n3240, n3260;
     wire [15:0]r_Clock_Count;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     
-    wire n2848, n2846, n2808, n2802, n1208;
+    wire n2845, n2843, n2805, n2799, n1205;
     wire [15:0]n69;
     
-    wire o_Tx_Serial_N_2085, n3304, n3300, n3301, n3303, n3_adj_2159, 
-        n2812, n3305, n2215, n2214, n2213, n2212, n2211, n2210, 
-        n2209, n2208, n3302, n1866, n6;
+    wire o_Tx_Serial_N_2085, n3301, n3297, n3298, n3300, n3_adj_2159, 
+        n2809, n3302, n2212, n2211, n2210, n2209, n2208, n2207, 
+        n2206, n2205, n3299, n1863, n6;
     
-    FD1S3IX r_SM_Main_i0 (.D(n847), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
+    FD1S3IX r_SM_Main_i0 (.D(n844), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
             .Q(r_SM_Main[0])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_SM_Main_i0.GSR = "ENABLED";
     FD1P3AX r_Bit_Index_i0 (.D(n3), .SP(UartClk_2_enable_9), .CK(\UartClk[2] ), 
@@ -177,120 +182,120 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Tx_Data_i0.GSR = "ENABLED";
     FD1S3AX UartClk_286_297__i0 (.D(n17[0]), .CK(osc_clk), .Q(n30[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
     defparam UartClk_286_297__i0.GSR = "ENABLED";
-    FD1S3IX r_SM_Main_i2 (.D(n3245), .CK(\UartClk[2] ), .CD(n2598), .Q(r_SM_Main[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
+    FD1S3IX r_SM_Main_i2 (.D(n3242), .CK(\UartClk[2] ), .CD(n2595), .Q(r_SM_Main[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_SM_Main_i2.GSR = "ENABLED";
-    FD1P3AX r_Bit_Index_i1 (.D(n2613), .SP(UartClk_2_enable_9), .CK(\UartClk[2] ), 
+    FD1P3AX r_Bit_Index_i1 (.D(n2610), .SP(UartClk_2_enable_9), .CK(\UartClk[2] ), 
             .Q(r_Bit_Index[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Bit_Index_i1.GSR = "ENABLED";
     FD1P3AX r_Bit_Index_i2 (.D(n3_adj_2158), .SP(UartClk_2_enable_9), .CK(\UartClk[2] ), 
             .Q(r_Bit_Index[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Bit_Index_i2.GSR = "ENABLED";
-    LUT4 i1_2_lut_rep_33_3_lut (.A(n2324), .B(n2557), .C(r_SM_Main[0]), 
-         .Z(n3244)) /* synthesis lut_function=(!(A (C)+!A ((C)+!B))) */ ;
+    LUT4 i1_2_lut_rep_33_3_lut (.A(n2321), .B(n2554), .C(r_SM_Main[0]), 
+         .Z(n3241)) /* synthesis lut_function=(!(A (C)+!A ((C)+!B))) */ ;
     defparam i1_2_lut_rep_33_3_lut.init = 16'h0e0e;
-    LUT4 i10_3_lut_4_lut (.A(n2324), .B(n2557), .C(r_SM_Main[0]), .D(n7), 
-         .Z(n847)) /* synthesis lut_function=(!(A (C+!(D))+!A (B (C+!(D))+!B !(C+(D))))) */ ;
+    LUT4 i10_3_lut_4_lut (.A(n2321), .B(n2554), .C(r_SM_Main[0]), .D(n7), 
+         .Z(n844)) /* synthesis lut_function=(!(A (C+!(D))+!A (B (C+!(D))+!B !(C+(D))))) */ ;
     defparam i10_3_lut_4_lut.init = 16'h1f10;
-    LUT4 i1_2_lut_rep_32_3_lut_4_lut (.A(n2324), .B(n2557), .C(r_SM_Main[1]), 
-         .D(r_SM_Main[0]), .Z(n3243)) /* synthesis lut_function=(!(A ((D)+!C)+!A (((D)+!C)+!B))) */ ;
+    LUT4 i1_2_lut_rep_32_3_lut_4_lut (.A(n2321), .B(n2554), .C(r_SM_Main[1]), 
+         .D(r_SM_Main[0]), .Z(n3240)) /* synthesis lut_function=(!(A ((D)+!C)+!A (((D)+!C)+!B))) */ ;
     defparam i1_2_lut_rep_32_3_lut_4_lut.init = 16'h00e0;
-    LUT4 i1_3_lut_4_lut (.A(n2324), .B(n2557), .C(n3263), .D(r_SM_Main[1]), 
+    LUT4 i1_3_lut_4_lut (.A(n2321), .B(n2554), .C(n3260), .D(r_SM_Main[1]), 
          .Z(UartClk_2_enable_9)) /* synthesis lut_function=(!(A (C)+!A (B (C)+!B (C+(D))))) */ ;
     defparam i1_3_lut_4_lut.init = 16'h0e0f;
     LUT4 i1_4_lut (.A(r_Clock_Count[8]), .B(r_Clock_Count[9]), .C(r_Clock_Count[13]), 
-         .D(r_Clock_Count[12]), .Z(n2848)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+         .D(r_Clock_Count[12]), .Z(n2845)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i1_4_lut.init = 16'hfffe;
-    LUT4 i1_4_lut_adj_37 (.A(r_Clock_Count[14]), .B(n2848), .C(n2846), 
-         .D(r_Clock_Count[11]), .Z(n2324)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+    LUT4 i1_4_lut_adj_37 (.A(r_Clock_Count[14]), .B(n2845), .C(n2843), 
+         .D(r_Clock_Count[11]), .Z(n2321)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i1_4_lut_adj_37.init = 16'hfffe;
-    LUT4 i1_2_lut (.A(r_Clock_Count[15]), .B(r_Clock_Count[10]), .Z(n2846)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+    LUT4 i1_2_lut (.A(r_Clock_Count[15]), .B(r_Clock_Count[10]), .Z(n2843)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i1_2_lut.init = 16'heeee;
-    LUT4 i135_rep_7_4_lut (.A(n2808), .B(r_Clock_Count[7]), .C(n2802), 
-         .D(r_Clock_Count[5]), .Z(n2557)) /* synthesis lut_function=(A (B)+!A (B (C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+    LUT4 i135_rep_7_4_lut (.A(n2805), .B(r_Clock_Count[7]), .C(n2799), 
+         .D(r_Clock_Count[5]), .Z(n2554)) /* synthesis lut_function=(A (B)+!A (B (C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i135_rep_7_4_lut.init = 16'hccc8;
     LUT4 i1_4_lut_adj_38 (.A(r_Clock_Count[4]), .B(r_Clock_Count[2]), .C(r_Clock_Count[0]), 
-         .D(r_Clock_Count[6]), .Z(n2808)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+         .D(r_Clock_Count[6]), .Z(n2805)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i1_4_lut_adj_38.init = 16'hfffe;
-    LUT4 i1_2_lut_adj_39 (.A(r_Clock_Count[3]), .B(r_Clock_Count[1]), .Z(n2802)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
+    LUT4 i1_2_lut_adj_39 (.A(r_Clock_Count[3]), .B(r_Clock_Count[1]), .Z(n2799)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(32[17:30])
     defparam i1_2_lut_adj_39.init = 16'heeee;
     FD1P3IX r_Clock_Count_288__i15 (.D(n69[15]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i15.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i14 (.D(n69[14]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i14.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i13 (.D(n69[13]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i13.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i12 (.D(n69[12]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i12.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i11 (.D(n69[11]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i11.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i10 (.D(n69[10]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i10.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i9 (.D(n69[9]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i9.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i8 (.D(n69[8]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i8.GSR = "ENABLED";
     LUT4 i1_1_lut (.A(r_SM_Main[2]), .Z(UartClk_2_enable_52)) /* synthesis lut_function=(!(A)) */ ;
     defparam i1_1_lut.init = 16'h5555;
     LUT4 r_SM_Main_2__I_0_58_i3_3_lut (.A(r_SM_Main[0]), .B(o_Tx_Serial_N_2085), 
          .C(r_SM_Main[1]), .Z(n3_adj_2156)) /* synthesis lut_function=(A (C)+!A (B+!(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(48[7] 147[14])
     defparam r_SM_Main_2__I_0_58_i3_3_lut.init = 16'he5e5;
-    LUT4 i1739_2_lut_rep_52 (.A(r_SM_Main[2]), .B(r_SM_Main[0]), .Z(n3263)) /* synthesis lut_function=(A+(B)) */ ;
+    LUT4 i1739_2_lut_rep_52 (.A(r_SM_Main[2]), .B(r_SM_Main[0]), .Z(n3260)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i1739_2_lut_rep_52.init = 16'heeee;
     LUT4 i2358_3_lut (.A(r_SM_Main[1]), .B(r_SM_Main[2]), .C(r_SM_Main[0]), 
-         .Z(n2598)) /* synthesis lut_function=((B+!(C))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(48[7] 147[14])
+         .Z(n2595)) /* synthesis lut_function=((B+!(C))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(48[7] 147[14])
     defparam i2358_3_lut.init = 16'hdfdf;
     LUT4 r_Tx_Data_0__bdd_3_lut_2414 (.A(r_Tx_Data[0]), .B(r_Tx_Data[2]), 
-         .C(r_Bit_Index[1]), .Z(n3304)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
+         .C(r_Bit_Index[1]), .Z(n3301)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
     defparam r_Tx_Data_0__bdd_3_lut_2414.init = 16'hcaca;
-    LUT4 i1_4_lut_adj_40 (.A(r_Bit_Index[1]), .B(n3244), .C(r_SM_Main[1]), 
-         .D(r_Bit_Index[0]), .Z(n2613)) /* synthesis lut_function=(!(A (((D)+!C)+!B)+!A !(B (C (D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(48[7] 147[14])
+    LUT4 i1_4_lut_adj_40 (.A(r_Bit_Index[1]), .B(n3241), .C(r_SM_Main[1]), 
+         .D(r_Bit_Index[0]), .Z(n2610)) /* synthesis lut_function=(!(A (((D)+!C)+!B)+!A !(B (C (D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(48[7] 147[14])
     defparam i1_4_lut_adj_40.init = 16'h4080;
     FD1P3IX r_Clock_Count_288__i7 (.D(n69[7]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i7.GSR = "ENABLED";
     LUT4 r_Tx_Data_5__bdd_3_lut_2401 (.A(r_Tx_Data[5]), .B(r_Tx_Data[7]), 
-         .C(r_Bit_Index[1]), .Z(n3300)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
+         .C(r_Bit_Index[1]), .Z(n3297)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
     defparam r_Tx_Data_5__bdd_3_lut_2401.init = 16'hcaca;
     LUT4 r_Tx_Data_5__bdd_3_lut (.A(r_Tx_Data[4]), .B(r_Tx_Data[6]), .C(r_Bit_Index[1]), 
-         .Z(n3301)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
+         .Z(n3298)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
     defparam r_Tx_Data_5__bdd_3_lut.init = 16'hcaca;
     LUT4 r_Tx_Data_0__bdd_3_lut_2404 (.A(r_Tx_Data[3]), .B(r_Tx_Data[1]), 
-         .C(r_Bit_Index[1]), .Z(n3303)) /* synthesis lut_function=(A (B+(C))+!A !((C)+!B)) */ ;
+         .C(r_Bit_Index[1]), .Z(n3300)) /* synthesis lut_function=(A (B+(C))+!A !((C)+!B)) */ ;
     defparam r_Tx_Data_0__bdd_3_lut_2404.init = 16'hacac;
     LUT4 i1_3_lut_4_lut_adj_41 (.A(r_SM_Main[2]), .B(r_SM_Main[0]), .C(o_Rx_DV_c_0), 
          .D(r_SM_Main[1]), .Z(UartClk_2_enable_47)) /* synthesis lut_function=(!(A+(B+((D)+!C)))) */ ;
     defparam i1_3_lut_4_lut_adj_41.init = 16'h0010;
-    LUT4 i46_3_lut_4_lut (.A(n2324), .B(n2557), .C(r_SM_Main[1]), .D(r_SM_Main[0]), 
+    LUT4 i46_3_lut_4_lut (.A(n2321), .B(n2554), .C(r_SM_Main[1]), .D(r_SM_Main[0]), 
          .Z(n3_adj_2159)) /* synthesis lut_function=(!(A (C (D)+!C !(D))+!A (B (C (D)+!C !(D))+!B !(C)))) */ ;
     defparam i46_3_lut_4_lut.init = 16'h1ef0;
-    LUT4 i9_4_lut (.A(o_Rx_DV_c_0), .B(n2812), .C(r_SM_Main[1]), .D(n3245), 
+    LUT4 i9_4_lut (.A(o_Rx_DV_c_0), .B(n2809), .C(r_SM_Main[1]), .D(n3242), 
          .Z(n7)) /* synthesis lut_function=(A (B ((D)+!C)+!B !(C))+!A (B (C (D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(31[16:25])
     defparam i9_4_lut.init = 16'hca0a;
     LUT4 i1_3_lut (.A(r_Bit_Index[2]), .B(r_Bit_Index[0]), .C(r_Bit_Index[1]), 
-         .Z(n2812)) /* synthesis lut_function=(A (B (C))) */ ;
+         .Z(n2809)) /* synthesis lut_function=(A (B (C))) */ ;
     defparam i1_3_lut.init = 16'h8080;
-    LUT4 i1_4_lut_adj_42 (.A(n3243), .B(r_Bit_Index[2]), .C(r_Bit_Index[1]), 
+    LUT4 i1_4_lut_adj_42 (.A(n3240), .B(r_Bit_Index[2]), .C(r_Bit_Index[1]), 
          .D(r_Bit_Index[0]), .Z(n3_adj_2158)) /* synthesis lut_function=(!((B (C (D))+!B !(C (D)))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam i1_4_lut_adj_42.init = 16'h2888;
-    PFUMX i2405 (.BLUT(n3304), .ALUT(n3303), .C0(r_Bit_Index[0]), .Z(n3305));
+    PFUMX i2405 (.BLUT(n3301), .ALUT(n3300), .C0(r_Bit_Index[0]), .Z(n3302));
     CCU2D r_Clock_Count_288_add_4_17 (.A0(r_Clock_Count[15]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2215), .S0(n69[15]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+          .D1(GND_net), .CIN(n2212), .S0(n69[15]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_17.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_17.INIT1 = 16'h0000;
     defparam r_Clock_Count_288_add_4_17.INJECT1_0 = "NO";
     defparam r_Clock_Count_288_add_4_17.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_15 (.A0(r_Clock_Count[13]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[14]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2214), .COUT(n2215), .S0(n69[13]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2211), .COUT(n2212), .S0(n69[13]), 
           .S1(n69[14]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_15.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_15.INIT1 = 16'hfaaa;
@@ -298,7 +303,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_15.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_13 (.A0(r_Clock_Count[11]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[12]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2213), .COUT(n2214), .S0(n69[11]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2210), .COUT(n2211), .S0(n69[11]), 
           .S1(n69[12]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_13.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_13.INIT1 = 16'hfaaa;
@@ -306,7 +311,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_13.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_11 (.A0(r_Clock_Count[9]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[10]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2212), .COUT(n2213), .S0(n69[9]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2209), .COUT(n2210), .S0(n69[9]), 
           .S1(n69[10]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_11.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_11.INIT1 = 16'hfaaa;
@@ -314,7 +319,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_11.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_9 (.A0(r_Clock_Count[7]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[8]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2211), .COUT(n2212), .S0(n69[7]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2208), .COUT(n2209), .S0(n69[7]), 
           .S1(n69[8]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_9.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_9.INIT1 = 16'hfaaa;
@@ -322,7 +327,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_9.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_7 (.A0(r_Clock_Count[5]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[6]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2210), .COUT(n2211), .S0(n69[5]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2207), .COUT(n2208), .S0(n69[5]), 
           .S1(n69[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_7.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_7.INIT1 = 16'hfaaa;
@@ -330,7 +335,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_7.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_5 (.A0(r_Clock_Count[3]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[4]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2209), .COUT(n2210), .S0(n69[3]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2206), .COUT(n2207), .S0(n69[3]), 
           .S1(n69[4]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_5.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_5.INIT1 = 16'hfaaa;
@@ -338,7 +343,7 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_5.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_3 (.A0(r_Clock_Count[1]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[2]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n2208), .COUT(n2209), .S0(n69[1]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n2205), .COUT(n2206), .S0(n69[1]), 
           .S1(n69[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_3.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_288_add_4_3.INIT1 = 16'hfaaa;
@@ -346,27 +351,27 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     defparam r_Clock_Count_288_add_4_3.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_288_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(r_Clock_Count[0]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .COUT(n2208), .S1(n69[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+          .D1(GND_net), .COUT(n2205), .S1(n69[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288_add_4_1.INIT0 = 16'hF000;
     defparam r_Clock_Count_288_add_4_1.INIT1 = 16'h0555;
     defparam r_Clock_Count_288_add_4_1.INJECT1_0 = "NO";
     defparam r_Clock_Count_288_add_4_1.INJECT1_1 = "NO";
     FD1P3IX r_Clock_Count_288__i6 (.D(n69[6]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i6.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i5 (.D(n69[5]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i5.GSR = "ENABLED";
-    L6MUX21 i2407 (.D0(n3305), .D1(n3302), .SD(r_Bit_Index[2]), .Z(o_Tx_Serial_N_2085));
+    L6MUX21 i2407 (.D0(n3302), .D1(n3299), .SD(r_Bit_Index[2]), .Z(o_Tx_Serial_N_2085));
     FD1S3IX r_SM_Main_i1 (.D(n3_adj_2159), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
             .Q(r_SM_Main[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_SM_Main_i1.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i4 (.D(n69[4]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i4.GSR = "ENABLED";
     CCU2D UartClk_286_297_add_4_3 (.A0(n30[1]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(\UartClk[2] ), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1866), .S0(n17[1]), .S1(n17[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
+          .D1(GND_net), .CIN(n1863), .S0(n17[1]), .S1(n17[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
     defparam UartClk_286_297_add_4_3.INIT0 = 16'hfaaa;
     defparam UartClk_286_297_add_4_3.INIT1 = 16'hfaaa;
     defparam UartClk_286_297_add_4_3.INJECT1_0 = "NO";
@@ -374,57 +379,57 @@ module \uart_tx(CLKS_PER_BIT=130)  (\UartClk[2] , o_Tx_Serial_c, o_Rx_Byte_c_0,
     FD1P3AX r_Tx_Data_i1 (.D(o_Rx_Byte_c_1), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i1.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i2 (.D(n661), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i2 (.D(o_Rx_Byte_c_2), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i2.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i3 (.D(n660), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i3 (.D(o_Rx_Byte_c_3), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[3])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i3.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i4 (.D(n659), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i4 (.D(o_Rx_Byte_c_4), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[4])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i4.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i5 (.D(n658), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i5 (.D(o_Rx_Byte_c_5), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[5])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i5.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i6 (.D(n657), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i6 (.D(o_Rx_Byte_c_6), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[6])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i6.GSR = "ENABLED";
-    FD1P3AX r_Tx_Data_i7 (.D(MYLED_c), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
+    FD1P3AX r_Tx_Data_i7 (.D(o_Rx_Byte_c_7), .SP(UartClk_2_enable_47), .CK(\UartClk[2] ), 
             .Q(r_Tx_Data[7])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=181, LSE_RLINE=188 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam r_Tx_Data_i7.GSR = "ENABLED";
     FD1S3AX UartClk_286_297__i1 (.D(n17[1]), .CK(osc_clk), .Q(n30[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
     defparam UartClk_286_297__i1.GSR = "ENABLED";
     CCU2D UartClk_286_297_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(n30[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .COUT(n1866), .S1(n17[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
+          .COUT(n1863), .S1(n17[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
     defparam UartClk_286_297_add_4_1.INIT0 = 16'hF000;
     defparam UartClk_286_297_add_4_1.INIT1 = 16'h0555;
     defparam UartClk_286_297_add_4_1.INJECT1_0 = "NO";
     defparam UartClk_286_297_add_4_1.INJECT1_1 = "NO";
-    LUT4 i2337_4_lut (.A(r_SM_Main[2]), .B(n2324), .C(n2557), .D(n6), 
-         .Z(n1208)) /* synthesis lut_function=(!(A+!(B+(C+!(D))))) */ ;
+    LUT4 i2337_4_lut (.A(r_SM_Main[2]), .B(n2321), .C(n2554), .D(n6), 
+         .Z(n1205)) /* synthesis lut_function=(!(A+!(B+(C+!(D))))) */ ;
     defparam i2337_4_lut.init = 16'h5455;
     LUT4 i1_2_lut_adj_43 (.A(r_SM_Main[1]), .B(r_SM_Main[0]), .Z(n6)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i1_2_lut_adj_43.init = 16'heeee;
-    PFUMX i2402 (.BLUT(n3301), .ALUT(n3300), .C0(r_Bit_Index[0]), .Z(n3302));
-    LUT4 i1_2_lut_3_lut_4_lut (.A(n3245), .B(r_SM_Main[0]), .C(r_Bit_Index[0]), 
+    PFUMX i2402 (.BLUT(n3298), .ALUT(n3297), .C0(r_Bit_Index[0]), .Z(n3299));
+    LUT4 i1_2_lut_3_lut_4_lut (.A(n3242), .B(r_SM_Main[0]), .C(r_Bit_Index[0]), 
          .D(r_SM_Main[1]), .Z(n3)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(45[10] 148[8])
     defparam i1_2_lut_3_lut_4_lut.init = 16'h0200;
     FD1S3AX UartClk_286_297__i2 (.D(n17[2]), .CK(osc_clk), .Q(\UartClk[2] )) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(42[15:29])
     defparam UartClk_286_297__i2.GSR = "ENABLED";
-    LUT4 i1_2_lut_rep_34 (.A(n2324), .B(n2557), .Z(n3245)) /* synthesis lut_function=(A+(B)) */ ;
+    LUT4 i1_2_lut_rep_34 (.A(n2321), .B(n2554), .Z(n3242)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i1_2_lut_rep_34.init = 16'heeee;
     FD1P3IX r_Clock_Count_288__i3 (.D(n69[3]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i3.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i2 (.D(n69[2]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i2.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i1 (.D(n69[1]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i1.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_288__i0 (.D(n69[0]), .SP(UartClk_2_enable_52), 
-            .CD(n1208), .CK(\UartClk[2] ), .Q(r_Clock_Count[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
+            .CD(n1205), .CK(\UartClk[2] ), .Q(r_Clock_Count[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(123[34:54])
     defparam r_Clock_Count_288__i0.GSR = "ENABLED";
     
 endmodule
@@ -455,7 +460,7 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     wire RFInR1;
     wire [7:0]MixerOutSin_7__N_83;
     
-    wire n2191, n2190, n2189, n2188;
+    wire n2188, n2187, n2186, n2185;
     
     FD1S3AX MixerOutSin_i1 (.D(MixerOutSin_7__N_67[0]), .CK(osc_clk), .Q(MixerOutSin_c_0)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=7, LSE_RCOL=2, LSE_LLINE=114, LSE_RLINE=122 */ ;   // c:/users/user/lattice/fpgasdr/mixer.v(29[8] 42[5])
     defparam MixerOutSin_i1.GSR = "ENABLED";
@@ -494,14 +499,14 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     defparam MixerOutSin_i2.GSR = "ENABLED";
     CCU2D unary_minus_6_add_3_9 (.A0(LOSine[7]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2191), .S0(MixerOutSin_7__N_83[7]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
+          .CIN(n2188), .S0(MixerOutSin_7__N_83[7]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
     defparam unary_minus_6_add_3_9.INIT0 = 16'hf555;
     defparam unary_minus_6_add_3_9.INIT1 = 16'h0000;
     defparam unary_minus_6_add_3_9.INJECT1_0 = "NO";
     defparam unary_minus_6_add_3_9.INJECT1_1 = "NO";
     CCU2D unary_minus_6_add_3_7 (.A0(LOSine[5]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(LOSine[6]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2190), .COUT(n2191), .S0(MixerOutSin_7__N_83[5]), 
+          .D1(GND_net), .CIN(n2187), .COUT(n2188), .S0(MixerOutSin_7__N_83[5]), 
           .S1(MixerOutSin_7__N_83[6]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
     defparam unary_minus_6_add_3_7.INIT0 = 16'hf555;
     defparam unary_minus_6_add_3_7.INIT1 = 16'hf555;
@@ -509,7 +514,7 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     defparam unary_minus_6_add_3_7.INJECT1_1 = "NO";
     CCU2D unary_minus_6_add_3_5 (.A0(LOSine[3]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(LOSine[4]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2189), .COUT(n2190), .S0(MixerOutSin_7__N_83[3]), 
+          .D1(GND_net), .CIN(n2186), .COUT(n2187), .S0(MixerOutSin_7__N_83[3]), 
           .S1(MixerOutSin_7__N_83[4]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
     defparam unary_minus_6_add_3_5.INIT0 = 16'hf555;
     defparam unary_minus_6_add_3_5.INIT1 = 16'hf555;
@@ -517,7 +522,7 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     defparam unary_minus_6_add_3_5.INJECT1_1 = "NO";
     CCU2D unary_minus_6_add_3_3 (.A0(LOSine[1]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(LOSine[2]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2188), .COUT(n2189), .S0(MixerOutSin_7__N_83[1]), 
+          .D1(GND_net), .CIN(n2185), .COUT(n2186), .S0(MixerOutSin_7__N_83[1]), 
           .S1(MixerOutSin_7__N_83[2]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
     defparam unary_minus_6_add_3_3.INIT0 = 16'hf555;
     defparam unary_minus_6_add_3_3.INIT1 = 16'hf555;
@@ -525,7 +530,7 @@ module Mixer (MixerOutSin_c_0, osc_clk, DiffOut_c, RFIn_c, LOSine,
     defparam unary_minus_6_add_3_3.INJECT1_1 = "NO";
     CCU2D unary_minus_6_add_3_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(LOSine[0]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .COUT(n2188), .S1(MixerOutSin_7__N_83[0]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
+          .D1(GND_net), .COUT(n2185), .S1(MixerOutSin_7__N_83[0]));   // c:/users/user/lattice/fpgasdr/mixer.v(38[20:27])
     defparam unary_minus_6_add_3_1.INIT0 = 16'hF000;
     defparam unary_minus_6_add_3_1.INIT1 = 16'h0aaa;
     defparam unary_minus_6_add_3_1.INJECT1_0 = "NO";
@@ -545,59 +550,58 @@ endmodule
 // Verilog Description of module PWM
 //
 
-module PWM (osc_clk, \DataInNoSign_7__N_1896[0] , PWMOut_c, \CIC_out[7] , 
-            \DataInNoSign_7__N_1896[1] , \DataInNoSign_7__N_1896[2] , \DataInNoSign_7__N_1896[3] , 
-            \DataInNoSign_7__N_1896[4] , \DataInNoSign_7__N_1896[5] , \DataInNoSign_7__N_1896[6] , 
-            GND_net) /* synthesis syn_module_defined=1 */ ;
+module PWM (osc_clk, \DataInNoSign_7__N_1896[0] , PWMOut_c, MYLED_c_5, 
+            \DataInNoSign_7__N_1896[1] , MYLED_c_2, MYLED_c_3, MYLED_c_4, 
+            n658, n657, GND_net) /* synthesis syn_module_defined=1 */ ;
     input osc_clk;
     input \DataInNoSign_7__N_1896[0] ;
     output PWMOut_c;
-    input \CIC_out[7] ;
+    input MYLED_c_5;
     input \DataInNoSign_7__N_1896[1] ;
-    input \DataInNoSign_7__N_1896[2] ;
-    input \DataInNoSign_7__N_1896[3] ;
-    input \DataInNoSign_7__N_1896[4] ;
-    input \DataInNoSign_7__N_1896[5] ;
-    input \DataInNoSign_7__N_1896[6] ;
+    input MYLED_c_2;
+    input MYLED_c_3;
+    input MYLED_c_4;
+    input n658;
+    input n657;
     input GND_net;
     
     wire osc_clk /* synthesis SET_AS_NETWORK=osc_clk, is_clock=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(23[8:15])
     wire [7:0]DataInNoSign;   // c:/users/user/lattice/fpgasdr/pwm.v(9[11:23])
     
-    wire osc_clk_enable_153, PWMOut_N_1905, n3260, n3259, n3255, n3014, 
-        n3025, n3257, n3256;
+    wire osc_clk_enable_153, PWMOut_N_1905, n3257, n3256, n3252, n3011, 
+        n3022, n3254, n3253;
     wire [7:0]counter;   // c:/users/user/lattice/fpgasdr/pwm.v(7[11:18])
     wire [7:0]n477;
     
-    wire n10, n3022, n12;
+    wire n10, n3019, n12;
     wire [7:0]n37;
     
-    wire n6, n4, n2968, n2962, n3043, n3044, n2227, n2226, n2225, 
-        n2224;
+    wire n6, n4, n2965, n2959, n3040, n3041, n2224, n2223, n2222, 
+        n2221;
     
     FD1P3AX DataInNoSign_i0_i0 (.D(\DataInNoSign_7__N_1896[0] ), .SP(osc_clk_enable_153), 
             .CK(osc_clk), .Q(DataInNoSign[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i0.GSR = "ENABLED";
     FD1S3AX PWMOut_15 (.D(PWMOut_N_1905), .CK(osc_clk), .Q(PWMOut_c)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam PWMOut_15.GSR = "ENABLED";
-    LUT4 i2360_4_lut (.A(n3260), .B(n3259), .C(n3255), .D(n3014), .Z(n3025)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+    LUT4 i2360_4_lut (.A(n3257), .B(n3256), .C(n3252), .D(n3011), .Z(n3022)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i2360_4_lut.init = 16'hfffe;
-    LUT4 i2282_4_lut (.A(n3257), .B(n3256), .C(DataInNoSign[2]), .D(counter[2]), 
-         .Z(n3014)) /* synthesis lut_function=(!(A+(B+!(C (D)+!C !(D))))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+    LUT4 i2282_4_lut (.A(n3254), .B(n3253), .C(DataInNoSign[2]), .D(counter[2]), 
+         .Z(n3011)) /* synthesis lut_function=(!(A+(B+!(C (D)+!C !(D))))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i2282_4_lut.init = 16'h1001;
-    LUT4 i363_1_lut (.A(\CIC_out[7] ), .Z(n477[7])) /* synthesis lut_function=(!(A)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(27[4:33])
+    LUT4 i363_1_lut (.A(MYLED_c_5), .Z(n477[7])) /* synthesis lut_function=(!(A)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(27[4:33])
     defparam i363_1_lut.init = 16'h5555;
     LUT4 DataInNoSign_7__I_0_i13_2_lut_rep_48 (.A(DataInNoSign[6]), .B(counter[6]), 
-         .Z(n3259)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3256)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i13_2_lut_rep_48.init = 16'h6666;
     LUT4 DataInNoSign_7__I_0_i10_3_lut_3_lut (.A(DataInNoSign[6]), .B(counter[6]), 
          .C(counter[5]), .Z(n10)) /* synthesis lut_function=(A (B (C))+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i10_3_lut_3_lut.init = 16'hd4d4;
     LUT4 i2290_2_lut_3_lut_4_lut (.A(DataInNoSign[6]), .B(counter[6]), .C(counter[5]), 
-         .D(DataInNoSign[5]), .Z(n3022)) /* synthesis lut_function=(A (B (C (D)+!C !(D)))+!A !(B+!(C (D)+!C !(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .D(DataInNoSign[5]), .Z(n3019)) /* synthesis lut_function=(A (B (C (D)+!C !(D)))+!A !(B+!(C (D)+!C !(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i2290_2_lut_3_lut_4_lut.init = 16'h9009;
     LUT4 DataInNoSign_7__I_0_i15_2_lut_rep_49 (.A(DataInNoSign[7]), .B(counter[7]), 
-         .Z(n3260)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3257)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i15_2_lut_rep_49.init = 16'h6666;
     LUT4 DataInNoSign_7__I_0_i12_3_lut_3_lut (.A(DataInNoSign[7]), .B(counter[7]), 
          .C(n10), .Z(n12)) /* synthesis lut_function=(A (B (C))+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
@@ -605,10 +609,10 @@ module PWM (osc_clk, \DataInNoSign_7__N_1896[0] , PWMOut_c, \CIC_out[7] ,
     FD1S3AX counter_282__i0 (.D(n37[0]), .CK(osc_clk), .Q(counter[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282__i0.GSR = "ENABLED";
     LUT4 DataInNoSign_7__I_0_i11_2_lut_rep_44 (.A(DataInNoSign[5]), .B(counter[5]), 
-         .Z(n3255)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3252)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i11_2_lut_rep_44.init = 16'h6666;
     LUT4 DataInNoSign_7__I_0_i7_2_lut_rep_45 (.A(DataInNoSign[3]), .B(counter[3]), 
-         .Z(n3256)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3253)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i7_2_lut_rep_45.init = 16'h6666;
     LUT4 DataInNoSign_7__I_0_i6_3_lut_3_lut (.A(DataInNoSign[3]), .B(counter[3]), 
          .C(counter[2]), .Z(n6)) /* synthesis lut_function=(A (B (C))+!A (B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
@@ -616,80 +620,80 @@ module PWM (osc_clk, \DataInNoSign_7__N_1896[0] , PWMOut_c, \CIC_out[7] ,
     LUT4 DataInNoSign_7__I_0_i4_4_lut (.A(counter[0]), .B(counter[1]), .C(DataInNoSign[1]), 
          .D(DataInNoSign[0]), .Z(n4)) /* synthesis lut_function=(!(A (B (C (D))+!B (C+(D)))+!A ((C)+!B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i4_4_lut.init = 16'h0c8e;
-    LUT4 i2331_4_lut (.A(n2968), .B(counter[7]), .C(n2962), .D(counter[3]), 
+    LUT4 i2331_4_lut (.A(n2965), .B(counter[7]), .C(n2959), .D(counter[3]), 
          .Z(osc_clk_enable_153)) /* synthesis lut_function=(!(A+(B+(C+(D))))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i2331_4_lut.init = 16'h0001;
-    PFUMX DataInNoSign_7__I_0_i16 (.BLUT(n3043), .ALUT(n3044), .C0(n3025), 
+    PFUMX DataInNoSign_7__I_0_i16 (.BLUT(n3040), .ALUT(n3041), .C0(n3022), 
           .Z(PWMOut_N_1905)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;
     LUT4 i1_4_lut (.A(counter[2]), .B(counter[6]), .C(counter[0]), .D(counter[1]), 
-         .Z(n2968)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
+         .Z(n2965)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i1_4_lut.init = 16'hfffe;
-    LUT4 i1_2_lut (.A(counter[5]), .B(counter[4]), .Z(n2962)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
+    LUT4 i1_2_lut (.A(counter[5]), .B(counter[4]), .Z(n2959)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(24[7:19])
     defparam i1_2_lut.init = 16'heeee;
     LUT4 DataInNoSign_7__I_0_i9_2_lut_rep_46 (.A(DataInNoSign[4]), .B(counter[4]), 
-         .Z(n3257)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3254)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam DataInNoSign_7__I_0_i9_2_lut_rep_46.init = 16'h6666;
     FD1P3AX DataInNoSign_i0_i1 (.D(\DataInNoSign_7__N_1896[1] ), .SP(osc_clk_enable_153), 
             .CK(osc_clk), .Q(DataInNoSign[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i1.GSR = "ENABLED";
-    FD1P3AX DataInNoSign_i0_i2 (.D(\DataInNoSign_7__N_1896[2] ), .SP(osc_clk_enable_153), 
+    FD1P3AX DataInNoSign_i0_i2 (.D(MYLED_c_2), .SP(osc_clk_enable_153), 
             .CK(osc_clk), .Q(DataInNoSign[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i2.GSR = "ENABLED";
-    FD1P3AX DataInNoSign_i0_i3 (.D(\DataInNoSign_7__N_1896[3] ), .SP(osc_clk_enable_153), 
+    FD1P3AX DataInNoSign_i0_i3 (.D(MYLED_c_3), .SP(osc_clk_enable_153), 
             .CK(osc_clk), .Q(DataInNoSign[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i3.GSR = "ENABLED";
-    FD1P3AX DataInNoSign_i0_i4 (.D(\DataInNoSign_7__N_1896[4] ), .SP(osc_clk_enable_153), 
+    FD1P3AX DataInNoSign_i0_i4 (.D(MYLED_c_4), .SP(osc_clk_enable_153), 
             .CK(osc_clk), .Q(DataInNoSign[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i4.GSR = "ENABLED";
-    FD1P3AX DataInNoSign_i0_i5 (.D(\DataInNoSign_7__N_1896[5] ), .SP(osc_clk_enable_153), 
-            .CK(osc_clk), .Q(DataInNoSign[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+    FD1P3AX DataInNoSign_i0_i5 (.D(n658), .SP(osc_clk_enable_153), .CK(osc_clk), 
+            .Q(DataInNoSign[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i5.GSR = "ENABLED";
-    FD1P3AX DataInNoSign_i0_i6 (.D(\DataInNoSign_7__N_1896[6] ), .SP(osc_clk_enable_153), 
-            .CK(osc_clk), .Q(DataInNoSign[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
+    FD1P3AX DataInNoSign_i0_i6 (.D(n657), .SP(osc_clk_enable_153), .CK(osc_clk), 
+            .Q(DataInNoSign[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i6.GSR = "ENABLED";
     FD1P3AX DataInNoSign_i0_i7 (.D(n477[7]), .SP(osc_clk_enable_153), .CK(osc_clk), 
             .Q(DataInNoSign[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=5, LSE_RCOL=2, LSE_LLINE=151, LSE_RLINE=156 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(21[8] 33[5])
     defparam DataInNoSign_i0_i7.GSR = "ENABLED";
     CCU2D counter_282_add_4_9 (.A0(counter[7]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2227), .S0(n37[7]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
+          .CIN(n2224), .S0(n37[7]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282_add_4_9.INIT0 = 16'hfaaa;
     defparam counter_282_add_4_9.INIT1 = 16'h0000;
     defparam counter_282_add_4_9.INJECT1_0 = "NO";
     defparam counter_282_add_4_9.INJECT1_1 = "NO";
     CCU2D counter_282_add_4_7 (.A0(counter[5]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(counter[6]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2226), .COUT(n2227), .S0(n37[5]), .S1(n37[6]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
+          .D1(GND_net), .CIN(n2223), .COUT(n2224), .S0(n37[5]), .S1(n37[6]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282_add_4_7.INIT0 = 16'hfaaa;
     defparam counter_282_add_4_7.INIT1 = 16'hfaaa;
     defparam counter_282_add_4_7.INJECT1_0 = "NO";
     defparam counter_282_add_4_7.INJECT1_1 = "NO";
     CCU2D counter_282_add_4_5 (.A0(counter[3]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(counter[4]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2225), .COUT(n2226), .S0(n37[3]), .S1(n37[4]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
+          .D1(GND_net), .CIN(n2222), .COUT(n2223), .S0(n37[3]), .S1(n37[4]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282_add_4_5.INIT0 = 16'hfaaa;
     defparam counter_282_add_4_5.INIT1 = 16'hfaaa;
     defparam counter_282_add_4_5.INJECT1_0 = "NO";
     defparam counter_282_add_4_5.INJECT1_1 = "NO";
     CCU2D counter_282_add_4_3 (.A0(counter[1]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(counter[2]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2224), .COUT(n2225), .S0(n37[1]), .S1(n37[2]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
+          .D1(GND_net), .CIN(n2221), .COUT(n2222), .S0(n37[1]), .S1(n37[2]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282_add_4_3.INIT0 = 16'hfaaa;
     defparam counter_282_add_4_3.INIT1 = 16'hfaaa;
     defparam counter_282_add_4_3.INJECT1_0 = "NO";
     defparam counter_282_add_4_3.INJECT1_1 = "NO";
     CCU2D counter_282_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(counter[0]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .COUT(n2224), .S1(n37[0]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
+          .D1(GND_net), .COUT(n2221), .S1(n37[0]));   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282_add_4_1.INIT0 = 16'hF000;
     defparam counter_282_add_4_1.INIT1 = 16'h0555;
     defparam counter_282_add_4_1.INJECT1_0 = "NO";
     defparam counter_282_add_4_1.INJECT1_1 = "NO";
     LUT4 i2313_1_lut_3_lut_3_lut (.A(DataInNoSign[4]), .B(counter[4]), .C(n6), 
-         .Z(n3043)) /* synthesis lut_function=(!(A (B (C))+!A (B+(C)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+         .Z(n3040)) /* synthesis lut_function=(!(A (B (C))+!A (B+(C)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i2313_1_lut_3_lut_3_lut.init = 16'h2b2b;
-    LUT4 i2314_1_lut_4_lut_4_lut (.A(n3260), .B(n3022), .C(n12), .D(n4), 
-         .Z(n3044)) /* synthesis lut_function=(!(A (C)+!A (B (D)+!B (C)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
+    LUT4 i2314_1_lut_4_lut_4_lut (.A(n3257), .B(n3019), .C(n12), .D(n4), 
+         .Z(n3041)) /* synthesis lut_function=(!(A (C)+!A (B (D)+!B (C)))) */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(29[7:31])
     defparam i2314_1_lut_4_lut_4_lut.init = 16'h0b4f;
     FD1S3AX counter_282__i1 (.D(n37[1]), .CK(osc_clk), .Q(counter[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/pwm.v(23[14:29])
     defparam counter_282__i1.GSR = "ENABLED";
@@ -788,17 +792,18 @@ endmodule
 //
 
 module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c, 
-            MYLED_c, n657, n658, n659, n660, n661, o_Rx_Byte_c_1, 
-            o_Rx_DV_c_0, o_Rx_Byte_c_0) /* synthesis syn_module_defined=1 */ ;
+            o_Rx_Byte_c_7, o_Rx_Byte_c_6, o_Rx_Byte_c_5, o_Rx_Byte_c_4, 
+            o_Rx_Byte_c_3, o_Rx_Byte_c_2, o_Rx_Byte_c_1, o_Rx_DV_c_0, 
+            o_Rx_Byte_c_0) /* synthesis syn_module_defined=1 */ ;
     input \UartClk[2] ;
     input GND_net;
     input i_Rx_Serial_c;
-    output MYLED_c;
-    output n657;
-    output n658;
-    output n659;
-    output n660;
-    output n661;
+    output o_Rx_Byte_c_7;
+    output o_Rx_Byte_c_6;
+    output o_Rx_Byte_c_5;
+    output o_Rx_Byte_c_4;
+    output o_Rx_Byte_c_3;
+    output o_Rx_Byte_c_2;
     output o_Rx_Byte_c_1;
     output o_Rx_DV_c_0;
     output o_Rx_Byte_c_0;
@@ -806,102 +811,102 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
     wire \UartClk[2]  /* synthesis SET_AS_NETWORK=\uart_tx1/UartClk[2], is_clock=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(37[14:21])
     wire [15:0]r_Clock_Count;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(44[18:31])
     
-    wire UartClk_2_enable_56, n1181;
+    wire UartClk_2_enable_56, n1178;
     wire [15:0]n69;
     
-    wire n1883;
+    wire n1880;
     wire [2:0]r_SM_Main;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(48[17:26])
     
-    wire n3185, r_Rx_Data_R, r_Rx_Data, n3251, n2504, n2676, n2464, 
-        n3246, n2672;
+    wire n3182, r_Rx_Data_R, r_Rx_Data, n3248, n2501, n2673, n2461, 
+        n3243, n2669;
     wire [2:0]r_Bit_Index;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(45[17:28])
     
-    wire UartClk_2_enable_15, n2592, n2444, n3252, n2864, n3269, 
-        n1882, n2596, UartClk_2_enable_17, n1881;
+    wire UartClk_2_enable_15, n2589, n2441, n3249, n2861, n3266, 
+        n1879, n2593, UartClk_2_enable_17, n1878;
     wire [2:0]r_SM_Main_2__N_1945;
     
     wire o_Rx_DV_N_2000, UartClk_2_enable_18, UartClk_2_enable_19, UartClk_2_enable_39, 
-        n2497, UartClk_2_enable_22, n2730, n3247, UartClk_2_enable_20, 
-        n3181, n3241, n2870, n3242, n1566, n2862, n3261, UartClk_2_enable_51, 
-        n2794, n3180, n3248, n2654, n2708, n9, n2682, n3253, 
-        n2690, n2999, n3254, n3262, UartClk_2_enable_21, UartClk_2_enable_23, 
-        n3250, n3268, n3179, n1880, n3267, n2720, n2740, n3249, 
-        n2526, n2792, n1529, n2760, n2748, n2782, n3258, n2700, 
-        n2780, n1879, n1878, n1877, n1876, n2997, n2764;
+        n2494, UartClk_2_enable_22, n2727, n3244, UartClk_2_enable_20, 
+        n3178, n3238, n2867, n3239, n1563, n2859, n3258, UartClk_2_enable_51, 
+        n2791, n3177, n3245, n2651, n2705, n9, n2679, n3250, 
+        n2687, n2996, n3251, n3259, UartClk_2_enable_21, UartClk_2_enable_23, 
+        n3247, n3265, n3176, n1877, n3264, n2717, n2737, n3246, 
+        n2523, n2789, n1526, n2757, n2745, n2779, n3255, n2697, 
+        n2777, n1876, n1875, n1874, n1873, n2994, n2761;
     
     FD1P3IX r_Clock_Count_285__i5 (.D(n69[5]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i5.GSR = "ENABLED";
     CCU2D r_Clock_Count_285_add_4_17 (.A0(r_Clock_Count[15]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1883), .S0(n69[15]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+          .D1(GND_net), .CIN(n1880), .S0(n69[15]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_17.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_17.INIT1 = 16'h0000;
     defparam r_Clock_Count_285_add_4_17.INJECT1_0 = "NO";
     defparam r_Clock_Count_285_add_4_17.INJECT1_1 = "NO";
-    FD1S3IX r_SM_Main_i0 (.D(n3185), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
+    FD1S3IX r_SM_Main_i0 (.D(n3182), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
             .Q(r_SM_Main[0])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_SM_Main_i0.GSR = "ENABLED";
     FD1S3AY r_Rx_Data_R_52 (.D(i_Rx_Serial_c), .CK(\UartClk[2] ), .Q(r_Rx_Data_R)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(66[12] 70[8])
     defparam r_Rx_Data_R_52.GSR = "ENABLED";
     FD1S3AY r_Rx_Data_53 (.D(r_Rx_Data_R), .CK(\UartClk[2] ), .Q(r_Rx_Data)) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(66[12] 70[8])
     defparam r_Rx_Data_53.GSR = "ENABLED";
-    LUT4 i1743_4_lut (.A(r_SM_Main[0]), .B(n3251), .C(n2504), .D(n2676), 
-         .Z(n2464)) /* synthesis lut_function=(A (B+(C+(D)))) */ ;
+    LUT4 i1743_4_lut (.A(r_SM_Main[0]), .B(n3248), .C(n2501), .D(n2673), 
+         .Z(n2461)) /* synthesis lut_function=(A (B+(C+(D)))) */ ;
     defparam i1743_4_lut.init = 16'haaa8;
     FD1P3IX r_Clock_Count_285__i6 (.D(n69[6]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i6.GSR = "ENABLED";
-    LUT4 i1_4_lut (.A(n3246), .B(n2672), .C(r_Clock_Count[8]), .D(r_Clock_Count[13]), 
-         .Z(n2676)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_4_lut (.A(n3243), .B(n2669), .C(r_Clock_Count[8]), .D(r_Clock_Count[13]), 
+         .Z(n2673)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_4_lut.init = 16'hfffe;
-    FD1P3AX r_Bit_Index_i0 (.D(n2592), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
+    FD1P3AX r_Bit_Index_i0 (.D(n2589), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
             .Q(r_Bit_Index[0])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Bit_Index_i0.GSR = "ENABLED";
     LUT4 i2340_2_lut_3_lut (.A(r_SM_Main[1]), .B(r_SM_Main[2]), .C(r_SM_Main[0]), 
-         .Z(n2444)) /* synthesis lut_function=((B+!(C))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
+         .Z(n2441)) /* synthesis lut_function=((B+!(C))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
     defparam i2340_2_lut_3_lut.init = 16'hdfdf;
     FD1P3IX r_Clock_Count_285__i7 (.D(n69[7]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i7.GSR = "ENABLED";
-    LUT4 i1_3_lut_4_lut (.A(n3252), .B(r_Rx_Data), .C(r_Clock_Count[13]), 
-         .D(r_Clock_Count[14]), .Z(n2864)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_3_lut_4_lut (.A(n3249), .B(r_Rx_Data), .C(r_Clock_Count[13]), 
+         .D(r_Clock_Count[14]), .Z(n2861)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_3_lut_4_lut.init = 16'hfffe;
-    FD1P3AX r_Bit_Index_i2 (.D(n3269), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
+    FD1P3AX r_Bit_Index_i2 (.D(n3266), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
             .Q(r_Bit_Index[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Bit_Index_i2.GSR = "ENABLED";
     CCU2D r_Clock_Count_285_add_4_15 (.A0(r_Clock_Count[13]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[14]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1882), .COUT(n1883), .S0(n69[13]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1879), .COUT(n1880), .S0(n69[13]), 
           .S1(n69[14]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_15.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_15.INIT1 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_15.INJECT1_0 = "NO";
     defparam r_Clock_Count_285_add_4_15.INJECT1_1 = "NO";
     FD1P3IX r_Clock_Count_285__i8 (.D(n69[8]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i8.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i9 (.D(n69[9]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i9.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i10 (.D(n69[10]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i10.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i0 (.D(n69[0]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i0.GSR = "ENABLED";
-    FD1P3AX r_Bit_Index_i1 (.D(n2596), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
+    FD1P3AX r_Bit_Index_i1 (.D(n2593), .SP(UartClk_2_enable_15), .CK(\UartClk[2] ), 
             .Q(r_Bit_Index[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Bit_Index_i1.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i11 (.D(n69[11]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i11.GSR = "ENABLED";
     FD1P3AX r_Rx_Byte_i8 (.D(r_Rx_Data), .SP(UartClk_2_enable_17), .CK(\UartClk[2] ), 
-            .Q(MYLED_c)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_7)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i8.GSR = "ENABLED";
     CCU2D r_Clock_Count_285_add_4_13 (.A0(r_Clock_Count[11]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[12]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1881), .COUT(n1882), .S0(n69[11]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1878), .COUT(n1879), .S0(n69[11]), 
           .S1(n69[12]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_13.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_13.INIT1 = 16'hfaaa;
@@ -911,207 +916,207 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
          .D(r_SM_Main_2__N_1945[2]), .Z(o_Rx_DV_N_2000)) /* synthesis lut_function=(!((B+!(C (D)))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
     defparam i1_2_lut_3_lut_4_lut.init = 16'h2000;
     FD1P3AX r_Rx_Byte_i7 (.D(r_Rx_Data), .SP(UartClk_2_enable_18), .CK(\UartClk[2] ), 
-            .Q(n657)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_6)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i7.GSR = "ENABLED";
     FD1P3AX r_Rx_Byte_i6 (.D(r_Rx_Data), .SP(UartClk_2_enable_19), .CK(\UartClk[2] ), 
-            .Q(n658)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_5)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i6.GSR = "ENABLED";
     LUT4 i21_4_lut_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main[2]), .C(r_SM_Main[0]), 
          .D(r_SM_Main_2__N_1945[2]), .Z(UartClk_2_enable_39)) /* synthesis lut_function=(!(A (B+!(C (D)))+!A (C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
     defparam i21_4_lut_4_lut.init = 16'h2505;
-    LUT4 i2345_3_lut_4_lut (.A(r_Bit_Index[0]), .B(r_Bit_Index[2]), .C(n2497), 
+    LUT4 i2345_3_lut_4_lut (.A(r_Bit_Index[0]), .B(r_Bit_Index[2]), .C(n2494), 
          .D(r_Bit_Index[1]), .Z(UartClk_2_enable_22)) /* synthesis lut_function=(!(A+(B+(C+!(D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2345_3_lut_4_lut.init = 16'h0100;
     LUT4 i1_2_lut_3_lut (.A(r_Bit_Index[0]), .B(r_Bit_Index[2]), .C(r_SM_Main[0]), 
-         .Z(n2730)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .Z(n2727)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_2_lut_3_lut.init = 16'hfefe;
     LUT4 i1_2_lut_rep_36 (.A(r_Clock_Count[13]), .B(r_Clock_Count[12]), 
-         .Z(n3247)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .Z(n3244)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_36.init = 16'heeee;
     FD1P3AX r_Rx_Byte_i5 (.D(r_Rx_Data), .SP(UartClk_2_enable_20), .CK(\UartClk[2] ), 
-            .Q(n659)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_4)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i5.GSR = "ENABLED";
-    LUT4 n3181_bdd_4_lut_4_lut (.A(r_Rx_Data), .B(r_SM_Main[0]), .C(n2504), 
-         .D(n3181), .Z(n3241)) /* synthesis lut_function=(A (B (C+(D)))+!A ((C+(D))+!B)) */ ;
-    defparam n3181_bdd_4_lut_4_lut.init = 16'hddd1;
-    LUT4 r_SM_Main_2__I_0_59_Mux_1_i3_4_lut (.A(n2870), .B(n3242), .C(r_SM_Main[1]), 
-         .D(n2504), .Z(n1566)) /* synthesis lut_function=(!(A (B+!(C))+!A (B (C+(D))+!B !(C+!(D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
+    LUT4 n3178_bdd_4_lut_4_lut (.A(r_Rx_Data), .B(r_SM_Main[0]), .C(n2501), 
+         .D(n3178), .Z(n3238)) /* synthesis lut_function=(A (B (C+(D)))+!A ((C+(D))+!B)) */ ;
+    defparam n3178_bdd_4_lut_4_lut.init = 16'hddd1;
+    LUT4 r_SM_Main_2__I_0_59_Mux_1_i3_4_lut (.A(n2867), .B(n3239), .C(r_SM_Main[1]), 
+         .D(n2501), .Z(n1563)) /* synthesis lut_function=(!(A (B+!(C))+!A (B (C+(D))+!B !(C+!(D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
     defparam r_SM_Main_2__I_0_59_Mux_1_i3_4_lut.init = 16'h3035;
-    LUT4 i1_4_lut_adj_16 (.A(n3251), .B(r_SM_Main[0]), .C(n2864), .D(n2862), 
-         .Z(n2870)) /* synthesis lut_function=(A+((C+(D))+!B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_4_lut_adj_16 (.A(n3248), .B(r_SM_Main[0]), .C(n2861), .D(n2859), 
+         .Z(n2867)) /* synthesis lut_function=(A+((C+(D))+!B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_4_lut_adj_16.init = 16'hfffb;
-    LUT4 i2320_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2730), 
-         .D(n3261), .Z(UartClk_2_enable_51)) /* synthesis lut_function=(!(((C+(D))+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+    LUT4 i2320_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2727), 
+         .D(n3258), .Z(UartClk_2_enable_51)) /* synthesis lut_function=(!(((C+(D))+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2320_4_lut.init = 16'h0008;
     LUT4 i1_3_lut_4_lut_adj_17 (.A(r_Clock_Count[15]), .B(r_Clock_Count[8]), 
-         .C(r_Clock_Count[11]), .D(r_Clock_Count[10]), .Z(n2862)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .C(r_Clock_Count[11]), .D(r_Clock_Count[10]), .Z(n2859)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_3_lut_4_lut_adj_17.init = 16'hfffe;
     LUT4 i1_3_lut_4_lut_adj_18 (.A(r_Clock_Count[13]), .B(r_Clock_Count[12]), 
-         .C(r_Clock_Count[8]), .D(r_Clock_Count[11]), .Z(n2794)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .C(r_Clock_Count[8]), .D(r_Clock_Count[11]), .Z(n2791)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_3_lut_4_lut_adj_18.init = 16'hfffe;
-    LUT4 n3180_bdd_2_lut_3_lut (.A(r_Clock_Count[7]), .B(r_Clock_Count[6]), 
-         .C(n3180), .Z(n3181)) /* synthesis lut_function=(A+((C)+!B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
-    defparam n3180_bdd_2_lut_3_lut.init = 16'hfbfb;
-    LUT4 i1_2_lut_rep_37 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .Z(n3248)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+    LUT4 n3177_bdd_2_lut_3_lut (.A(r_Clock_Count[7]), .B(r_Clock_Count[6]), 
+         .C(n3177), .Z(n3178)) /* synthesis lut_function=(A+((C)+!B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    defparam n3177_bdd_2_lut_3_lut.init = 16'hfbfb;
+    LUT4 i1_2_lut_rep_37 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .Z(n3245)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_2_lut_rep_37.init = 16'heeee;
     LUT4 i1_2_lut_3_lut_adj_19 (.A(r_Clock_Count[3]), .B(r_Clock_Count[0]), 
-         .C(r_Clock_Count[6]), .Z(n2654)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
+         .C(r_Clock_Count[6]), .Z(n2651)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
     defparam i1_2_lut_3_lut_adj_19.init = 16'hfefe;
     LUT4 i1_2_lut_3_lut_adj_20 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .C(r_Bit_Index[2]), 
-         .Z(n2708)) /* synthesis lut_function=(A+(B+!(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .Z(n2705)) /* synthesis lut_function=(A+(B+!(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_2_lut_3_lut_adj_20.init = 16'hefef;
-    LUT4 i1_2_lut_rep_50 (.A(r_SM_Main[2]), .B(r_Bit_Index[1]), .Z(n3261)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+    LUT4 i1_2_lut_rep_50 (.A(r_SM_Main[2]), .B(r_Bit_Index[1]), .Z(n3258)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_2_lut_rep_50.init = 16'heeee;
     LUT4 i1_3_lut_4_lut_adj_21 (.A(r_Clock_Count[3]), .B(r_Clock_Count[0]), 
-         .C(n9), .D(n2682), .Z(n2504)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
+         .C(n9), .D(n2679), .Z(n2501)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
     defparam i1_3_lut_4_lut_adj_21.init = 16'hfffe;
-    LUT4 i1_2_lut_rep_41 (.A(r_Clock_Count[12]), .B(r_Clock_Count[9]), .Z(n3252)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_2_lut_rep_41 (.A(r_Clock_Count[12]), .B(r_Clock_Count[9]), .Z(n3249)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_41.init = 16'heeee;
     LUT4 i1_2_lut_rep_35_3_lut (.A(r_Clock_Count[12]), .B(r_Clock_Count[9]), 
-         .C(r_Rx_Data), .Z(n3246)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .C(r_Rx_Data), .Z(n3243)) /* synthesis lut_function=(A+(B+(C))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_35_3_lut.init = 16'hfefe;
-    LUT4 i1_2_lut_rep_42 (.A(r_Clock_Count[9]), .B(r_Clock_Count[14]), .Z(n3253)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_2_lut_rep_42 (.A(r_Clock_Count[9]), .B(r_Clock_Count[14]), .Z(n3250)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_42.init = 16'heeee;
     LUT4 i1_3_lut_4_lut_adj_22 (.A(r_SM_Main[2]), .B(r_Bit_Index[1]), .C(r_SM_Main[0]), 
-         .D(r_Bit_Index[2]), .Z(n2690)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(r_Bit_Index[2]), .Z(n2687)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_3_lut_4_lut_adj_22.init = 16'hfeff;
     LUT4 i2268_2_lut_3_lut_4_lut (.A(r_Clock_Count[9]), .B(r_Clock_Count[14]), 
-         .C(r_Clock_Count[13]), .D(r_Clock_Count[11]), .Z(n2999)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .C(r_Clock_Count[13]), .D(r_Clock_Count[11]), .Z(n2996)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i2268_2_lut_3_lut_4_lut.init = 16'hfffe;
     LUT4 i1_2_lut_rep_43 (.A(r_Clock_Count[14]), .B(r_Clock_Count[10]), 
-         .Z(n3254)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .Z(n3251)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_43.init = 16'heeee;
-    LUT4 i323_2_lut_rep_51 (.A(r_Bit_Index[1]), .B(r_Bit_Index[0]), .Z(n3262)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(126[36:54])
+    LUT4 i323_2_lut_rep_51 (.A(r_Bit_Index[1]), .B(r_Bit_Index[0]), .Z(n3259)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(126[36:54])
     defparam i323_2_lut_rep_51.init = 16'h8888;
     LUT4 i1_3_lut_4_lut_adj_23 (.A(r_Clock_Count[14]), .B(r_Clock_Count[10]), 
-         .C(r_Clock_Count[15]), .D(r_Clock_Count[11]), .Z(n2672)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .C(r_Clock_Count[15]), .D(r_Clock_Count[11]), .Z(n2669)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_3_lut_4_lut_adj_23.init = 16'hfffe;
     FD1P3AX r_Rx_Byte_i4 (.D(r_Rx_Data), .SP(UartClk_2_enable_21), .CK(\UartClk[2] ), 
-            .Q(n660)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_3)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i4.GSR = "ENABLED";
     FD1P3AX r_Rx_Byte_i3 (.D(r_Rx_Data), .SP(UartClk_2_enable_22), .CK(\UartClk[2] ), 
-            .Q(n661)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .Q(o_Rx_Byte_c_2)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i3.GSR = "ENABLED";
     FD1P3AX r_Rx_Byte_i2 (.D(r_Rx_Data), .SP(UartClk_2_enable_23), .CK(\UartClk[2] ), 
             .Q(o_Rx_Byte_c_1)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i2.GSR = "ENABLED";
     FD1S3IX r_SM_Main_i2 (.D(r_SM_Main_2__N_1945[2]), .CK(\UartClk[2] ), 
-            .CD(n2444), .Q(r_SM_Main[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
+            .CD(n2441), .Q(r_SM_Main[2])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_SM_Main_i2.GSR = "ENABLED";
-    LUT4 i1_4_lut_then_4_lut (.A(r_SM_Main_2__N_1945[2]), .B(n3250), .C(r_Bit_Index[0]), 
-         .D(r_Bit_Index[1]), .Z(n3268)) /* synthesis lut_function=(!(((C (D))+!B)+!A)) */ ;
+    LUT4 i1_4_lut_then_4_lut (.A(r_SM_Main_2__N_1945[2]), .B(n3247), .C(r_Bit_Index[0]), 
+         .D(r_Bit_Index[1]), .Z(n3265)) /* synthesis lut_function=(!(((C (D))+!B)+!A)) */ ;
     defparam i1_4_lut_then_4_lut.init = 16'h0888;
-    LUT4 n3184_bdd_3_lut (.A(n3241), .B(n3179), .C(r_SM_Main[1]), .Z(n3185)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
-    defparam n3184_bdd_3_lut.init = 16'hcaca;
+    LUT4 n3181_bdd_3_lut (.A(n3238), .B(n3176), .C(r_SM_Main[1]), .Z(n3182)) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;
+    defparam n3181_bdd_3_lut.init = 16'hcaca;
     CCU2D r_Clock_Count_285_add_4_11 (.A0(r_Clock_Count[9]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[10]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1880), .COUT(n1881), .S0(n69[9]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1877), .COUT(n1878), .S0(n69[9]), 
           .S1(n69[10]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_11.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_11.INIT1 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_11.INJECT1_0 = "NO";
     defparam r_Clock_Count_285_add_4_11.INJECT1_1 = "NO";
-    LUT4 i1_4_lut_else_4_lut (.A(r_SM_Main_2__N_1945[2]), .B(n3250), .C(r_Bit_Index[0]), 
-         .D(r_Bit_Index[1]), .Z(n3267)) /* synthesis lut_function=(A (B (C (D)))) */ ;
+    LUT4 i1_4_lut_else_4_lut (.A(r_SM_Main_2__N_1945[2]), .B(n3247), .C(r_Bit_Index[0]), 
+         .D(r_Bit_Index[1]), .Z(n3264)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i1_4_lut_else_4_lut.init = 16'h8000;
     LUT4 i1_3_lut_4_lut_adj_24 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .C(r_Bit_Index[0]), 
-         .D(r_Bit_Index[1]), .Z(n2720)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(r_Bit_Index[1]), .Z(n2717)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_3_lut_4_lut_adj_24.init = 16'hfffe;
     LUT4 i1_3_lut_4_lut_adj_25 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .C(r_SM_Main_2__N_1945[2]), 
-         .D(r_SM_Main[1]), .Z(n2497)) /* synthesis lut_function=(A+(B+!(C (D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(r_SM_Main[1]), .Z(n2494)) /* synthesis lut_function=(A+(B+!(C (D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_3_lut_4_lut_adj_25.init = 16'hefff;
     LUT4 i1_3_lut_4_lut_adj_26 (.A(r_SM_Main[0]), .B(r_SM_Main[2]), .C(r_Bit_Index[2]), 
-         .D(r_Bit_Index[1]), .Z(n2740)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(r_Bit_Index[1]), .Z(n2737)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_3_lut_4_lut_adj_26.init = 16'hfffe;
     LUT4 i1_2_lut_rep_38 (.A(r_Clock_Count[11]), .B(r_Clock_Count[13]), 
-         .Z(n3249)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .Z(n3246)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_38.init = 16'heeee;
     LUT4 i3_2_lut (.A(r_Clock_Count[1]), .B(r_Clock_Count[4]), .Z(n9)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
     defparam i3_2_lut.init = 16'heeee;
-    LUT4 i1_2_lut (.A(r_Clock_Count[2]), .B(r_Clock_Count[5]), .Z(n2682)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
+    LUT4 i1_2_lut (.A(r_Clock_Count[2]), .B(r_Clock_Count[5]), .Z(n2679)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(142[17:47])
     defparam i1_2_lut.init = 16'heeee;
-    LUT4 i1_rep_1_4_lut (.A(n2526), .B(n3253), .C(n2794), .D(n2792), 
+    LUT4 i1_rep_1_4_lut (.A(n2523), .B(n3250), .C(n2791), .D(n2789), 
          .Z(r_SM_Main_2__N_1945[2])) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_rep_1_4_lut.init = 16'hfffe;
-    LUT4 r_SM_Main_2__N_1945_2__bdd_3_lut (.A(r_SM_Main_2__N_1945[2]), .B(n1529), 
-         .C(r_SM_Main[0]), .Z(n3179)) /* synthesis lut_function=(!(A ((C)+!B)+!A !(C))) */ ;
+    LUT4 r_SM_Main_2__N_1945_2__bdd_3_lut (.A(r_SM_Main_2__N_1945[2]), .B(n1526), 
+         .C(r_SM_Main[0]), .Z(n3176)) /* synthesis lut_function=(!(A ((C)+!B)+!A !(C))) */ ;
     defparam r_SM_Main_2__N_1945_2__bdd_3_lut.init = 16'h5858;
-    LUT4 i1_2_lut_rep_39 (.A(r_SM_Main[1]), .B(r_SM_Main[0]), .Z(n3250)) /* synthesis lut_function=(!((B)+!A)) */ ;
+    LUT4 i1_2_lut_rep_39 (.A(r_SM_Main[1]), .B(r_SM_Main[0]), .Z(n3247)) /* synthesis lut_function=(!((B)+!A)) */ ;
     defparam i1_2_lut_rep_39.init = 16'h2222;
-    LUT4 i2323_4_lut (.A(n3248), .B(n2760), .C(n2526), .D(n2999), .Z(UartClk_2_enable_15)) /* synthesis lut_function=(!(A+!((C+(D))+!B))) */ ;
+    LUT4 i2323_4_lut (.A(n3245), .B(n2757), .C(n2523), .D(n2996), .Z(UartClk_2_enable_15)) /* synthesis lut_function=(!(A+!((C+(D))+!B))) */ ;
     defparam i2323_4_lut.init = 16'h5551;
-    LUT4 i1269_rep_2_4_lut (.A(n2654), .B(r_Clock_Count[7]), .C(n9), .D(n2682), 
-         .Z(n2526)) /* synthesis lut_function=(A (B)+!A (B (C+(D)))) */ ;
+    LUT4 i1269_rep_2_4_lut (.A(n2651), .B(r_Clock_Count[7]), .C(n9), .D(n2679), 
+         .Z(n2523)) /* synthesis lut_function=(A (B)+!A (B (C+(D)))) */ ;
     defparam i1269_rep_2_4_lut.init = 16'hccc8;
-    LUT4 i1_4_lut_adj_27 (.A(r_Clock_Count[12]), .B(n2748), .C(r_Clock_Count[15]), 
-         .D(r_Clock_Count[8]), .Z(n2760)) /* synthesis lut_function=(!(A+((C+(D))+!B))) */ ;
+    LUT4 i1_4_lut_adj_27 (.A(r_Clock_Count[12]), .B(n2745), .C(r_Clock_Count[15]), 
+         .D(r_Clock_Count[8]), .Z(n2757)) /* synthesis lut_function=(!(A+((C+(D))+!B))) */ ;
     defparam i1_4_lut_adj_27.init = 16'h0004;
-    LUT4 i1_2_lut_adj_28 (.A(r_Clock_Count[10]), .B(r_SM_Main[1]), .Z(n2748)) /* synthesis lut_function=(!(A+!(B))) */ ;
+    LUT4 i1_2_lut_adj_28 (.A(r_Clock_Count[10]), .B(r_SM_Main[1]), .Z(n2745)) /* synthesis lut_function=(!(A+!(B))) */ ;
     defparam i1_2_lut_adj_28.init = 16'h4444;
-    LUT4 i2334_4_lut (.A(r_SM_Main[2]), .B(n3251), .C(n2504), .D(n2782), 
+    LUT4 i2334_4_lut (.A(r_SM_Main[2]), .B(n3248), .C(n2501), .D(n2779), 
          .Z(UartClk_2_enable_56)) /* synthesis lut_function=(!(A+!(B+(C+!(D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(76[7] 167[14])
     defparam i2334_4_lut.init = 16'h5455;
-    LUT4 i1_2_lut_rep_40 (.A(r_Clock_Count[7]), .B(r_Clock_Count[6]), .Z(n3251)) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_2_lut_rep_40 (.A(r_Clock_Count[7]), .B(r_Clock_Count[6]), .Z(n3248)) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_40.init = 16'hbbbb;
     LUT4 i1_2_lut_adj_29 (.A(r_Clock_Count[15]), .B(r_Clock_Count[10]), 
-         .Z(n2792)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+         .Z(n2789)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_adj_29.init = 16'heeee;
     LUT4 i1_3_lut_4_lut_adj_30 (.A(r_SM_Main[1]), .B(r_SM_Main[0]), .C(r_Bit_Index[0]), 
-         .D(r_SM_Main_2__N_1945[2]), .Z(n2592)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
+         .D(r_SM_Main_2__N_1945[2]), .Z(n2589)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
     defparam i1_3_lut_4_lut_adj_30.init = 16'h0200;
     LUT4 i1_3_lut (.A(r_Bit_Index[0]), .B(r_Bit_Index[1]), .C(r_Bit_Index[2]), 
-         .Z(n1529)) /* synthesis lut_function=(A (B (C))) */ ;
+         .Z(n1526)) /* synthesis lut_function=(A (B (C))) */ ;
     defparam i1_3_lut.init = 16'h8080;
-    LUT4 i1_4_lut_adj_31 (.A(n3250), .B(r_SM_Main_2__N_1945[2]), .C(r_Bit_Index[0]), 
-         .D(r_Bit_Index[1]), .Z(n2596)) /* synthesis lut_function=(!(((C (D)+!C !(D))+!B)+!A)) */ ;
+    LUT4 i1_4_lut_adj_31 (.A(n3247), .B(r_SM_Main_2__N_1945[2]), .C(r_Bit_Index[0]), 
+         .D(r_Bit_Index[1]), .Z(n2593)) /* synthesis lut_function=(!(((C (D)+!C !(D))+!B)+!A)) */ ;
     defparam i1_4_lut_adj_31.init = 16'h0880;
-    LUT4 n5_bdd_4_lut (.A(n3254), .B(n3252), .C(n3249), .D(n3258), .Z(n3180)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
+    LUT4 n5_bdd_4_lut (.A(n3251), .B(n3249), .C(n3246), .D(n3255), .Z(n3177)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
     defparam n5_bdd_4_lut.init = 16'hfffe;
-    FD1S3IX r_SM_Main_i1 (.D(n1566), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
+    FD1S3IX r_SM_Main_i1 (.D(n1563), .CK(\UartClk[2] ), .CD(r_SM_Main[2]), 
             .Q(r_SM_Main[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_SM_Main_i1.GSR = "ENABLED";
-    LUT4 i2356_4_lut (.A(n2708), .B(r_SM_Main_2__N_1945[2]), .C(n3262), 
+    LUT4 i2356_4_lut (.A(n2705), .B(r_SM_Main_2__N_1945[2]), .C(n3259), 
          .D(r_SM_Main[1]), .Z(UartClk_2_enable_17)) /* synthesis lut_function=(!(A+!(B (C (D))))) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2356_4_lut.init = 16'h4000;
-    LUT4 i2354_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2700), 
+    LUT4 i2354_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2697), 
          .D(r_Bit_Index[1]), .Z(UartClk_2_enable_18)) /* synthesis lut_function=(!(((C+!(D))+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2354_4_lut.init = 16'h0800;
     FD1P3IX r_Clock_Count_285__i12 (.D(n69[12]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i12.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i13 (.D(n69[13]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i13.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i14 (.D(n69[14]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i14.GSR = "ENABLED";
     LUT4 i1_4_lut_adj_32 (.A(r_Bit_Index[2]), .B(r_SM_Main[2]), .C(r_SM_Main[0]), 
-         .D(r_Bit_Index[0]), .Z(n2700)) /* synthesis lut_function=((B+(C+(D)))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(r_Bit_Index[0]), .Z(n2697)) /* synthesis lut_function=((B+(C+(D)))+!A) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i1_4_lut_adj_32.init = 16'hfffd;
     LUT4 i1277_2_lut_rep_31 (.A(r_SM_Main_2__N_1945[2]), .B(r_SM_Main[0]), 
-         .Z(n3242)) /* synthesis lut_function=(A (B)) */ ;
+         .Z(n3239)) /* synthesis lut_function=(A (B)) */ ;
     defparam i1277_2_lut_rep_31.init = 16'h8888;
-    LUT4 i2352_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2690), 
+    LUT4 i2352_4_lut (.A(r_SM_Main[1]), .B(r_SM_Main_2__N_1945[2]), .C(n2687), 
          .D(r_Bit_Index[0]), .Z(UartClk_2_enable_19)) /* synthesis lut_function=(!(((C+!(D))+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2352_4_lut.init = 16'h0800;
     FD1P3IX r_Clock_Count_285__i15 (.D(n69[15]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i15.GSR = "ENABLED";
     FD1P3AX r_Rx_DV_55 (.D(o_Rx_DV_N_2000), .SP(UartClk_2_enable_39), .CK(\UartClk[2] ), 
             .Q(o_Rx_DV_c_0)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_DV_55.GSR = "ENABLED";
     LUT4 i2350_4_lut (.A(r_Bit_Index[2]), .B(r_SM_Main_2__N_1945[2]), .C(r_SM_Main[1]), 
-         .D(n2720), .Z(UartClk_2_enable_20)) /* synthesis lut_function=(!((((D)+!C)+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(n2717), .Z(UartClk_2_enable_20)) /* synthesis lut_function=(!((((D)+!C)+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2350_4_lut.init = 16'h0080;
-    LUT4 i2348_4_lut (.A(r_Bit_Index[1]), .B(n2497), .C(r_Bit_Index[0]), 
+    LUT4 i2348_4_lut (.A(r_Bit_Index[1]), .B(n2494), .C(r_Bit_Index[0]), 
          .D(r_Bit_Index[2]), .Z(UartClk_2_enable_21)) /* synthesis lut_function=(!((B+((D)+!C))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2348_4_lut.init = 16'h0020;
-    LUT4 i1_4_lut_adj_33 (.A(n2780), .B(r_SM_Main[1]), .C(r_Clock_Count[9]), 
-         .D(r_Clock_Count[10]), .Z(n2782)) /* synthesis lut_function=(!((B+(C+(D)))+!A)) */ ;
+    LUT4 i1_4_lut_adj_33 (.A(n2777), .B(r_SM_Main[1]), .C(r_Clock_Count[9]), 
+         .D(r_Clock_Count[10]), .Z(n2779)) /* synthesis lut_function=(!((B+(C+(D)))+!A)) */ ;
     defparam i1_4_lut_adj_33.init = 16'h0002;
     CCU2D r_Clock_Count_285_add_4_9 (.A0(r_Clock_Count[7]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[8]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1879), .COUT(n1880), .S0(n69[7]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1876), .COUT(n1877), .S0(n69[7]), 
           .S1(n69[8]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_9.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_9.INIT1 = 16'hfaaa;
@@ -1119,7 +1124,7 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
     defparam r_Clock_Count_285_add_4_9.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_285_add_4_7 (.A0(r_Clock_Count[5]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[6]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1878), .COUT(n1879), .S0(n69[5]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1875), .COUT(n1876), .S0(n69[5]), 
           .S1(n69[6]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_7.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_7.INIT1 = 16'hfaaa;
@@ -1127,7 +1132,7 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
     defparam r_Clock_Count_285_add_4_7.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_285_add_4_5 (.A0(r_Clock_Count[3]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[4]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1877), .COUT(n1878), .S0(n69[3]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1874), .COUT(n1875), .S0(n69[3]), 
           .S1(n69[4]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_5.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_5.INIT1 = 16'hfaaa;
@@ -1135,7 +1140,7 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
     defparam r_Clock_Count_285_add_4_5.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_285_add_4_3 (.A0(r_Clock_Count[1]), .B0(GND_net), 
           .C0(GND_net), .D0(GND_net), .A1(r_Clock_Count[2]), .B1(GND_net), 
-          .C1(GND_net), .D1(GND_net), .CIN(n1876), .COUT(n1877), .S0(n69[1]), 
+          .C1(GND_net), .D1(GND_net), .CIN(n1873), .COUT(n1874), .S0(n69[1]), 
           .S1(n69[2]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_3.INIT0 = 16'hfaaa;
     defparam r_Clock_Count_285_add_4_3.INIT1 = 16'hfaaa;
@@ -1143,42 +1148,42 @@ module \uart_rx(CLKS_PER_BIT=130)  (\UartClk[2] , GND_net, i_Rx_Serial_c,
     defparam r_Clock_Count_285_add_4_3.INJECT1_1 = "NO";
     CCU2D r_Clock_Count_285_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(r_Clock_Count[0]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .COUT(n1876), .S1(n69[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+          .D1(GND_net), .COUT(n1873), .S1(n69[0]));   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285_add_4_1.INIT0 = 16'hF000;
     defparam r_Clock_Count_285_add_4_1.INIT1 = 16'h0555;
     defparam r_Clock_Count_285_add_4_1.INJECT1_0 = "NO";
     defparam r_Clock_Count_285_add_4_1.INJECT1_1 = "NO";
     LUT4 i2342_4_lut (.A(r_Bit_Index[0]), .B(r_SM_Main_2__N_1945[2]), .C(r_SM_Main[1]), 
-         .D(n2740), .Z(UartClk_2_enable_23)) /* synthesis lut_function=(!((((D)+!C)+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
+         .D(n2737), .Z(UartClk_2_enable_23)) /* synthesis lut_function=(!((((D)+!C)+!B)+!A)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(121[17:39])
     defparam i2342_4_lut.init = 16'h0080;
-    LUT4 i1_4_lut_adj_34 (.A(n2997), .B(n3247), .C(r_Clock_Count[8]), 
-         .D(n2764), .Z(n2780)) /* synthesis lut_function=(!(A+(B+(C+!(D))))) */ ;
+    LUT4 i1_4_lut_adj_34 (.A(n2994), .B(n3244), .C(r_Clock_Count[8]), 
+         .D(n2761), .Z(n2777)) /* synthesis lut_function=(!(A+(B+(C+!(D))))) */ ;
     defparam i1_4_lut_adj_34.init = 16'h0100;
-    PFUMX i2399 (.BLUT(n3267), .ALUT(n3268), .C0(r_Bit_Index[2]), .Z(n3269));
+    PFUMX i2399 (.BLUT(n3264), .ALUT(n3265), .C0(r_Bit_Index[2]), .Z(n3266));
     LUT4 i2266_3_lut (.A(r_Clock_Count[11]), .B(r_Clock_Count[15]), .C(r_Clock_Count[14]), 
-         .Z(n2997)) /* synthesis lut_function=(A+(B+(C))) */ ;
+         .Z(n2994)) /* synthesis lut_function=(A+(B+(C))) */ ;
     defparam i2266_3_lut.init = 16'hfefe;
-    LUT4 i1_2_lut_adj_35 (.A(r_SM_Main[0]), .B(r_Rx_Data), .Z(n2764)) /* synthesis lut_function=(A (B)) */ ;
+    LUT4 i1_2_lut_adj_35 (.A(r_SM_Main[0]), .B(r_Rx_Data), .Z(n2761)) /* synthesis lut_function=(A (B)) */ ;
     defparam i1_2_lut_adj_35.init = 16'h8888;
-    LUT4 i1_2_lut_rep_47 (.A(r_Clock_Count[15]), .B(r_Clock_Count[8]), .Z(n3258)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
+    LUT4 i1_2_lut_rep_47 (.A(r_Clock_Count[15]), .B(r_Clock_Count[8]), .Z(n3255)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(92[17:52])
     defparam i1_2_lut_rep_47.init = 16'heeee;
     FD1P3AX r_Rx_Byte_i1 (.D(r_Rx_Data), .SP(UartClk_2_enable_51), .CK(\UartClk[2] ), 
             .Q(o_Rx_Byte_c_0)) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=4, LSE_LCOL=33, LSE_RCOL=2, LSE_LLINE=171, LSE_RLINE=176 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(73[10] 168[8])
     defparam r_Rx_Byte_i1.GSR = "ENABLED";
-    LUT4 i1_4_lut_adj_36 (.A(r_SM_Main[2]), .B(n2464), .C(r_SM_Main_2__N_1945[2]), 
-         .D(r_SM_Main[1]), .Z(n1181)) /* synthesis lut_function=(!(A+!(B (C (D))+!B (C+!(D))))) */ ;
+    LUT4 i1_4_lut_adj_36 (.A(r_SM_Main[2]), .B(n2461), .C(r_SM_Main_2__N_1945[2]), 
+         .D(r_SM_Main[1]), .Z(n1178)) /* synthesis lut_function=(!(A+!(B (C (D))+!B (C+!(D))))) */ ;
     defparam i1_4_lut_adj_36.init = 16'h5011;
     FD1P3IX r_Clock_Count_285__i1 (.D(n69[1]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i1.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i2 (.D(n69[2]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i2.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i3 (.D(n69[3]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i3.GSR = "ENABLED";
     FD1P3IX r_Clock_Count_285__i4 (.D(n69[4]), .SP(UartClk_2_enable_56), 
-            .CD(n1181), .CK(\UartClk[2] ), .Q(r_Clock_Count[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
+            .CD(n1178), .CK(\UartClk[2] ), .Q(r_Clock_Count[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(144[34:54])
     defparam r_Clock_Count_285__i4.GSR = "ENABLED";
     
 endmodule
@@ -1188,20 +1193,19 @@ endmodule
 
 module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net, 
             CIC1_out, CIC_out_clk_c, \DataInNoSign_7__N_1896[0] , \DataInNoSign_7__N_1896[1] , 
-            \DataInNoSign_7__N_1896[2] , \DataInNoSign_7__N_1896[3] , \DataInNoSign_7__N_1896[4] , 
-            \DataInNoSign_7__N_1896[5] , \DataInNoSign_7__N_1896[6] , \CIC_out[7] ) /* synthesis syn_module_defined=1 */ ;
+            MYLED_c_2, MYLED_c_3, MYLED_c_4, n658, n657, MYLED_c_5) /* synthesis syn_module_defined=1 */ ;
     input osc_clk_derived_991;
     input GND_net;
     input [7:0]CIC1_out;
     output CIC_out_clk_c;
     output \DataInNoSign_7__N_1896[0] ;
     output \DataInNoSign_7__N_1896[1] ;
-    output \DataInNoSign_7__N_1896[2] ;
-    output \DataInNoSign_7__N_1896[3] ;
-    output \DataInNoSign_7__N_1896[4] ;
-    output \DataInNoSign_7__N_1896[5] ;
-    output \DataInNoSign_7__N_1896[6] ;
-    output \CIC_out[7] ;
+    output MYLED_c_2;
+    output MYLED_c_3;
+    output MYLED_c_4;
+    output n658;
+    output n657;
+    output MYLED_c_5;
     
     wire osc_clk_derived_991 /* synthesis is_clock=1, SET_AS_NETWORK=osc_clk_derived_991 */ ;   // c:/users/user/lattice/fpgasdr/impl1/source/top.v(23[8:15])
     wire [62:0]d_tmp;   // c:/users/user/lattice/fpgasdr/cic.v(34[24:29])
@@ -1209,33 +1213,33 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     wire osc_clk_derived_991_enable_597;
     wire [62:0]d5;   // c:/users/user/lattice/fpgasdr/cic.v(43[24:26])
     
-    wire n2005;
+    wire n2002;
     wire [62:0]d3;   // c:/users/user/lattice/fpgasdr/cic.v(41[24:26])
     wire [62:0]d4;   // c:/users/user/lattice/fpgasdr/cic.v(42[24:26])
     wire [62:0]d4_62__N_804;
     
-    wire n2006, n2004, n2003, n2002, n2001, n2000, n1999;
+    wire n2003, n2001, n2000, n1999, n1998, n1997, n1996;
     wire [62:0]d_d_tmp;   // c:/users/user/lattice/fpgasdr/cic.v(34[31:38])
     
     wire osc_clk_derived_991_enable_96;
     wire [62:0]d2;   // c:/users/user/lattice/fpgasdr/cic.v(40[24:26])
     wire [62:0]d2_62__N_678;
     
-    wire n1917;
+    wire n1914;
     wire [62:0]d1;   // c:/users/user/lattice/fpgasdr/cic.v(39[24:26])
     
-    wire n1918, n1899;
+    wire n1915, n1896;
     wire [62:0]d1_62__N_615;
     
-    wire n1900;
+    wire n1897;
     wire [62:0]d3_62__N_741;
     
-    wire n1998;
+    wire n1995;
     wire [62:0]d5_62__N_867;
     wire [62:0]d6;   // c:/users/user/lattice/fpgasdr/cic.v(47[24:26])
     wire [62:0]d6_62__N_1530;
     
-    wire d_clk_tmp, n1142, v_comb, n1997;
+    wire d_clk_tmp, n1139, v_comb, n1994;
     wire [62:0]d_d6;   // c:/users/user/lattice/fpgasdr/cic.v(47[28:32])
     wire [62:0]d7;   // c:/users/user/lattice/fpgasdr/cic.v(48[24:26])
     wire [62:0]d7_62__N_1593;
@@ -1249,57 +1253,57 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     wire [62:0]d10;   // c:/users/user/lattice/fpgasdr/cic.v(51[24:27])
     wire [62:0]d10_62__N_1782;
     
-    wire n1996, n1847, n1848, n1846, n2014, n2015, n1995, n1898, 
-        n1826, n1994;
+    wire n1993, n1844, n1845, n1843, n2011, n2012, n1992, n1895, 
+        n1823, n1991;
     wire [15:0]count;   // c:/users/user/lattice/fpgasdr/cic.v(54[12:17])
     wire [15:0]count_15__N_1513;
     
-    wire n1897, n1993, n1839, n1840, n1231;
+    wire n1894, n1990, n1836, n1837, n1228;
     wire [15:0]n330;
     
-    wire n1915, d_clk_tmp_N_1845, n1992, n1991, n1990, n1989, n1988, 
-        n1987, n1914, n1896, n1913, n1986, n1912, n1895, n1985, 
-        n2575, n2830, n10, n2824, n2826, n2820, osc_clk_derived_991_enable_596, 
-        osc_clk_derived_991_enable_546, n1911, n3438, n1894, n1984, 
-        n1983, n1910, n1982, n1981, n1909, n1979, n1978, n1977, 
-        n1976, n1975, n1974, n1973, n1972, n1971, n1970, n2954, 
-        n18, n2950, n2912, n2016, osc_clk_derived_991_enable_146, 
+    wire n1912, d_clk_tmp_N_1845, n1989, n1988, n1987, n1986, n1985, 
+        n1984, n1911, n1893, n1910, n1983, n1909, n1892, n1982, 
+        n2572, n2827, n10, n2821, n2823, n2817, osc_clk_derived_991_enable_596, 
+        osc_clk_derived_991_enable_546, n1908, n3435, n1891, n1981, 
+        n1980, n1907, n1979, n1978, n1906, n1976, n1975, n1974, 
+        n1973, n1972, n1971, n1970, n1969, n1968, n1967, n2951, 
+        n18, n2947, n2909, n2013, osc_clk_derived_991_enable_146, 
         osc_clk_derived_991_enable_196, osc_clk_derived_991_enable_496, 
         osc_clk_derived_991_enable_446, osc_clk_derived_991_enable_396, 
         osc_clk_derived_991_enable_346, osc_clk_derived_991_enable_296, 
-        osc_clk_derived_991_enable_246, n1969, n1968, n2186, n2185, 
-        n2184, n2183, n2182, n2181, n2180, n2179, n2178, n2177, 
-        n2176, n2175, n2174, n2173, n2172, n2171, n2170, n2169, 
-        n2168, n2167, n2166, n2165, n2164, n2163, n2162, n2161, 
-        n2160, n2159, n2158, n2157, n2156, n1967, n1966, n1965, 
-        n1964, n2146, n2145, n2144, n2143, n2142, n2141, n2140, 
-        n2139, n2138, n2137, n2136, n2135, n2134, n2133, n2132, 
-        n2131, n2130, n2129, n2128, n2127, n2126, n2125, n2124, 
-        n2123, n2122, n2121, n2120, n2119, n2118, n2117, n2116, 
-        n2114, n2113, n2112, n2111, n2110, n2109, n2108, n2107, 
-        n2106, n2105, n2104, n2103, n2102, n2101, n2100, n2099, 
-        n2098, n2097, n2096, n2095, n2094, n2093, n2092, n2091, 
-        n2090, n2089, n2088, n2087, n2086, n2085, n2084, n2082, 
-        n2081, n2080, n2079, n2078, n2077, n2076, n2075, n2074, 
-        n2073, n2072, n2071, n2070, n2069, n2068, n2067, n2066, 
-        n2065, n1908, n2064, n2063, n2062, n1963, n2061, n2060, 
-        n2059, n2058, n2057, n2056, n2055, n2054, n2053, n2052, 
-        n2051, n2050, n2049, n2048, n2047, n2046, n2045, n2044, 
-        n2043, n2042, n2041, n2040, n2039, n2038, n2037, n2036, 
-        n2035, n2034, n2033, n2032, n2031, n2030, n2029, n2028, 
-        n2027, n2026, n2025, n2024, n2023, n2022, n2021, n2020, 
-        n2019, n2018, n2007, n1962, n1961, n1960, n1959, n1958, 
-        n1893, n1907, n1831, n1832, n1906, n1845, n1830, n1892, 
-        n1957, n1956, n1955, n1954, n1953, n1891, n1905, n1890, 
-        n1829, n1828, n1836, n1837, n1835, n1834, n1833, n1838, 
-        n1904, n1903, n2008, n2009, n1952, n1951, n1950, n1949, 
-        n1856, n1947, n1946, n1945, n1944, n1943, n1942, n1941, 
-        n1940, n1939, n1938, n1844, n1855, n1854, n1853, n1852, 
-        n1889, n1937, n1843, n1842, n2017, n1936, n1935, n1934, 
-        n1933, n1932, n1931, n1930, n1929, n1928, n1927, n2010, 
-        n1926, n1925, n1902, n1901, n1888, n1887, n1924, n1923, 
-        n1922, n1921, n1851, n1841, n1850, n1849, n1886, n1920, 
-        n1827, n1885, n1919, n2011, n2013;
+        osc_clk_derived_991_enable_246, n1966, n1965, n2183, n2182, 
+        n2181, n2180, n2179, n2178, n2177, n2176, n2175, n2174, 
+        n2173, n2172, n2171, n2170, n2169, n2168, n2167, n2166, 
+        n2165, n2164, n2163, n2162, n2161, n2160, n2159, n2158, 
+        n2157, n2156, n2155, n2154, n2153, n1964, n1963, n1962, 
+        n1961, n2143, n2142, n2141, n2140, n2139, n2138, n2137, 
+        n2136, n2135, n2134, n2133, n2132, n2131, n2130, n2129, 
+        n2128, n2127, n2126, n2125, n2124, n2123, n2122, n2121, 
+        n2120, n2119, n2118, n2117, n2116, n2115, n2114, n2113, 
+        n2111, n2110, n2109, n2108, n2107, n2106, n2105, n2104, 
+        n2103, n2102, n2101, n2100, n2099, n2098, n2097, n2096, 
+        n2095, n2094, n2093, n2092, n2091, n2090, n2089, n2088, 
+        n2087, n2086, n2085, n2084, n2083, n2082, n2081, n2079, 
+        n2078, n2077, n2076, n2075, n2074, n2073, n2072, n2071, 
+        n2070, n2069, n2068, n2067, n2066, n2065, n2064, n2063, 
+        n2062, n1905, n2061, n2060, n2059, n1960, n2058, n2057, 
+        n2056, n2055, n2054, n2053, n2052, n2051, n2050, n2049, 
+        n2048, n2047, n2046, n2045, n2044, n2043, n2042, n2041, 
+        n2040, n2039, n2038, n2037, n2036, n2035, n2034, n2033, 
+        n2032, n2031, n2030, n2029, n2028, n2027, n2026, n2025, 
+        n2024, n2023, n2022, n2021, n2020, n2019, n2018, n2017, 
+        n2016, n2015, n2004, n1959, n1958, n1957, n1956, n1955, 
+        n1890, n1904, n1828, n1829, n1903, n1842, n1827, n1889, 
+        n1954, n1953, n1952, n1951, n1950, n1888, n1902, n1887, 
+        n1826, n1825, n1833, n1834, n1832, n1831, n1830, n1835, 
+        n1901, n1900, n2005, n2006, n1949, n1948, n1947, n1946, 
+        n1853, n1944, n1943, n1942, n1941, n1940, n1939, n1938, 
+        n1937, n1936, n1935, n1841, n1852, n1851, n1850, n1849, 
+        n1886, n1934, n1840, n1839, n2014, n1933, n1932, n1931, 
+        n1930, n1929, n1928, n1927, n1926, n1925, n1924, n2007, 
+        n1923, n1922, n1899, n1898, n1885, n1884, n1921, n1920, 
+        n1919, n1918, n1848, n1838, n1847, n1846, n1883, n1917, 
+        n1824, n1882, n1916, n2008, n2010;
     
     FD1P3AX d_tmp_i0_i51 (.D(d5[51]), .SP(osc_clk_derived_991_enable_597), 
             .CK(osc_clk_derived_991), .Q(d_tmp[51])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
@@ -1311,8 +1315,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[49])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i49.GSR = "ENABLED";
     CCU2D d3_62__I_0_52 (.A0(d3[50]), .B0(d4[50]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[51]), .B1(d4[51]), .C1(GND_net), .D1(GND_net), .CIN(n2005), 
-          .COUT(n2006), .S0(d4_62__N_804[50]), .S1(d4_62__N_804[51]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[51]), .B1(d4[51]), .C1(GND_net), .D1(GND_net), .CIN(n2002), 
+          .COUT(n2003), .S0(d4_62__N_804[50]), .S1(d4_62__N_804[51]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_52.INIT0 = 16'h5666;
     defparam d3_62__I_0_52.INIT1 = 16'h5666;
     defparam d3_62__I_0_52.INJECT1_0 = "NO";
@@ -1321,8 +1325,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[48])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i48.GSR = "ENABLED";
     CCU2D d3_62__I_0_50 (.A0(d3[48]), .B0(d4[48]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[49]), .B1(d4[49]), .C1(GND_net), .D1(GND_net), .CIN(n2004), 
-          .COUT(n2005), .S0(d4_62__N_804[48]), .S1(d4_62__N_804[49]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[49]), .B1(d4[49]), .C1(GND_net), .D1(GND_net), .CIN(n2001), 
+          .COUT(n2002), .S0(d4_62__N_804[48]), .S1(d4_62__N_804[49]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_50.INIT0 = 16'h5666;
     defparam d3_62__I_0_50.INIT1 = 16'h5666;
     defparam d3_62__I_0_50.INJECT1_0 = "NO";
@@ -1331,8 +1335,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[47])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i47.GSR = "ENABLED";
     CCU2D d3_62__I_0_48 (.A0(d3[46]), .B0(d4[46]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[47]), .B1(d4[47]), .C1(GND_net), .D1(GND_net), .CIN(n2003), 
-          .COUT(n2004), .S0(d4_62__N_804[46]), .S1(d4_62__N_804[47]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[47]), .B1(d4[47]), .C1(GND_net), .D1(GND_net), .CIN(n2000), 
+          .COUT(n2001), .S0(d4_62__N_804[46]), .S1(d4_62__N_804[47]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_48.INIT0 = 16'h5666;
     defparam d3_62__I_0_48.INIT1 = 16'h5666;
     defparam d3_62__I_0_48.INJECT1_0 = "NO";
@@ -1350,15 +1354,15 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[43])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i43.GSR = "ENABLED";
     CCU2D d3_62__I_0_46 (.A0(d3[44]), .B0(d4[44]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[45]), .B1(d4[45]), .C1(GND_net), .D1(GND_net), .CIN(n2002), 
-          .COUT(n2003), .S0(d4_62__N_804[44]), .S1(d4_62__N_804[45]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[45]), .B1(d4[45]), .C1(GND_net), .D1(GND_net), .CIN(n1999), 
+          .COUT(n2000), .S0(d4_62__N_804[44]), .S1(d4_62__N_804[45]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_46.INIT0 = 16'h5666;
     defparam d3_62__I_0_46.INIT1 = 16'h5666;
     defparam d3_62__I_0_46.INJECT1_0 = "NO";
     defparam d3_62__I_0_46.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_44 (.A0(d3[42]), .B0(d4[42]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[43]), .B1(d4[43]), .C1(GND_net), .D1(GND_net), .CIN(n2001), 
-          .COUT(n2002), .S0(d4_62__N_804[42]), .S1(d4_62__N_804[43]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[43]), .B1(d4[43]), .C1(GND_net), .D1(GND_net), .CIN(n1998), 
+          .COUT(n1999), .S0(d4_62__N_804[42]), .S1(d4_62__N_804[43]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_44.INIT0 = 16'h5666;
     defparam d3_62__I_0_44.INIT1 = 16'h5666;
     defparam d3_62__I_0_44.INJECT1_0 = "NO";
@@ -1367,8 +1371,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[42])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i42.GSR = "ENABLED";
     CCU2D d3_62__I_0_42 (.A0(d3[40]), .B0(d4[40]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[41]), .B1(d4[41]), .C1(GND_net), .D1(GND_net), .CIN(n2000), 
-          .COUT(n2001), .S0(d4_62__N_804[40]), .S1(d4_62__N_804[41]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[41]), .B1(d4[41]), .C1(GND_net), .D1(GND_net), .CIN(n1997), 
+          .COUT(n1998), .S0(d4_62__N_804[40]), .S1(d4_62__N_804[41]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_42.INIT0 = 16'h5666;
     defparam d3_62__I_0_42.INIT1 = 16'h5666;
     defparam d3_62__I_0_42.INJECT1_0 = "NO";
@@ -1380,8 +1384,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[40])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i40.GSR = "ENABLED";
     CCU2D d3_62__I_0_40 (.A0(d3[38]), .B0(d4[38]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[39]), .B1(d4[39]), .C1(GND_net), .D1(GND_net), .CIN(n1999), 
-          .COUT(n2000), .S0(d4_62__N_804[38]), .S1(d4_62__N_804[39]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[39]), .B1(d4[39]), .C1(GND_net), .D1(GND_net), .CIN(n1996), 
+          .COUT(n1997), .S0(d4_62__N_804[38]), .S1(d4_62__N_804[39]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_40.INIT0 = 16'h5666;
     defparam d3_62__I_0_40.INIT1 = 16'h5666;
     defparam d3_62__I_0_40.INJECT1_0 = "NO";
@@ -1410,15 +1414,15 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     FD1S3AX d2_i0 (.D(d2_62__N_678[0]), .CK(osc_clk_derived_991), .Q(d2[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d2_i0.GSR = "ENABLED";
     CCU2D d1_62__I_0_4 (.A0(d1[2]), .B0(d2[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[3]), .B1(d2[3]), .C1(GND_net), .D1(GND_net), .CIN(n1917), 
-          .COUT(n1918), .S0(d2_62__N_678[2]), .S1(d2_62__N_678[3]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[3]), .B1(d2[3]), .C1(GND_net), .D1(GND_net), .CIN(n1914), 
+          .COUT(n1915), .S0(d2_62__N_678[2]), .S1(d2_62__N_678[3]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_4.INIT0 = 16'h5666;
     defparam d1_62__I_0_4.INIT1 = 16'h5666;
     defparam d1_62__I_0_4.INJECT1_0 = "NO";
     defparam d1_62__I_0_4.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_32 (.A0(CIC1_out[7]), .B0(d1[30]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[31]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1899), .COUT(n1900), .S0(d1_62__N_615[30]), 
+          .D1(GND_net), .CIN(n1896), .COUT(n1897), .S0(d1_62__N_615[30]), 
           .S1(d1_62__N_615[31]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_32.INIT0 = 16'h5666;
     defparam d_in_7__I_0_32.INIT1 = 16'h5666;
@@ -1427,8 +1431,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     FD1S3AX d3_i0 (.D(d3_62__N_741[0]), .CK(osc_clk_derived_991), .Q(d3[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d3_i0.GSR = "ENABLED";
     CCU2D d3_62__I_0_38 (.A0(d3[36]), .B0(d4[36]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[37]), .B1(d4[37]), .C1(GND_net), .D1(GND_net), .CIN(n1998), 
-          .COUT(n1999), .S0(d4_62__N_804[36]), .S1(d4_62__N_804[37]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[37]), .B1(d4[37]), .C1(GND_net), .D1(GND_net), .CIN(n1995), 
+          .COUT(n1996), .S0(d4_62__N_804[36]), .S1(d4_62__N_804[37]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_38.INIT0 = 16'h5666;
     defparam d3_62__I_0_38.INIT1 = 16'h5666;
     defparam d3_62__I_0_38.INJECT1_0 = "NO";
@@ -1443,7 +1447,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     FD1P3AX d6_i0_i0 (.D(d6_62__N_1530[0]), .SP(osc_clk_derived_991_enable_96), 
             .CK(osc_clk_derived_991), .Q(d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d6_i0_i0.GSR = "ENABLED";
-    FD1S3JX d_clk_tmp_63 (.D(n1142), .CK(osc_clk_derived_991), .PD(osc_clk_derived_991_enable_597), 
+    FD1S3JX d_clk_tmp_63 (.D(n1139), .CK(osc_clk_derived_991), .PD(osc_clk_derived_991_enable_597), 
             .Q(d_clk_tmp)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_clk_tmp_63.GSR = "ENABLED";
     FD1S3AX v_comb_64 (.D(osc_clk_derived_991_enable_597), .CK(osc_clk_derived_991), 
@@ -1455,8 +1459,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[33])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i33.GSR = "ENABLED";
     CCU2D d3_62__I_0_36 (.A0(d3[34]), .B0(d4[34]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[35]), .B1(d4[35]), .C1(GND_net), .D1(GND_net), .CIN(n1997), 
-          .COUT(n1998), .S0(d4_62__N_804[34]), .S1(d4_62__N_804[35]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[35]), .B1(d4[35]), .C1(GND_net), .D1(GND_net), .CIN(n1994), 
+          .COUT(n1995), .S0(d4_62__N_804[34]), .S1(d4_62__N_804[35]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_36.INIT0 = 16'h5666;
     defparam d3_62__I_0_36.INIT1 = 16'h5666;
     defparam d3_62__I_0_36.INJECT1_0 = "NO";
@@ -1509,15 +1513,15 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[27])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i27.GSR = "ENABLED";
     CCU2D d3_62__I_0_34 (.A0(d3[32]), .B0(d4[32]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[33]), .B1(d4[33]), .C1(GND_net), .D1(GND_net), .CIN(n1996), 
-          .COUT(n1997), .S0(d4_62__N_804[32]), .S1(d4_62__N_804[33]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[33]), .B1(d4[33]), .C1(GND_net), .D1(GND_net), .CIN(n1993), 
+          .COUT(n1994), .S0(d4_62__N_804[32]), .S1(d4_62__N_804[33]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_34.INIT0 = 16'h5666;
     defparam d3_62__I_0_34.INIT1 = 16'h5666;
     defparam d3_62__I_0_34.INJECT1_0 = "NO";
     defparam d3_62__I_0_34.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_45 (.A0(d_tmp[43]), .B0(d_d_tmp[43]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[44]), .B1(d_d_tmp[44]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1847), .COUT(n1848), .S0(d6_62__N_1530[43]), 
+          .D1(GND_net), .CIN(n1844), .COUT(n1845), .S0(d6_62__N_1530[43]), 
           .S1(d6_62__N_1530[44]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_45.INIT0 = 16'h5999;
     defparam sub_25_add_2_45.INIT1 = 16'h5999;
@@ -1525,36 +1529,36 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_45.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_43 (.A0(d_tmp[41]), .B0(d_d_tmp[41]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[42]), .B1(d_d_tmp[42]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1846), .COUT(n1847), .S0(d6_62__N_1530[41]), 
+          .D1(GND_net), .CIN(n1843), .COUT(n1844), .S0(d6_62__N_1530[41]), 
           .S1(d6_62__N_1530[42]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_43.INIT0 = 16'h5999;
     defparam sub_25_add_2_43.INIT1 = 16'h5999;
     defparam sub_25_add_2_43.INJECT1_0 = "NO";
     defparam sub_25_add_2_43.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_2 (.A0(d1[0]), .B0(d2[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[1]), .B1(d2[1]), .C1(GND_net), .D1(GND_net), .COUT(n1917), 
+          .A1(d1[1]), .B1(d2[1]), .C1(GND_net), .D1(GND_net), .COUT(n1914), 
           .S1(d2_62__N_678[1]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_2.INIT0 = 16'h7000;
     defparam d1_62__I_0_2.INIT1 = 16'h5666;
     defparam d1_62__I_0_2.INJECT1_0 = "NO";
     defparam d1_62__I_0_2.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_6 (.A0(d4[4]), .B0(d5[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[5]), .B1(d5[5]), .C1(GND_net), .D1(GND_net), .CIN(n2014), 
-          .COUT(n2015), .S0(d5_62__N_867[4]), .S1(d5_62__N_867[5]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[5]), .B1(d5[5]), .C1(GND_net), .D1(GND_net), .CIN(n2011), 
+          .COUT(n2012), .S0(d5_62__N_867[4]), .S1(d5_62__N_867[5]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_6.INIT0 = 16'h5666;
     defparam d4_62__I_0_6.INIT1 = 16'h5666;
     defparam d4_62__I_0_6.INJECT1_0 = "NO";
     defparam d4_62__I_0_6.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_32 (.A0(d3[30]), .B0(d4[30]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[31]), .B1(d4[31]), .C1(GND_net), .D1(GND_net), .CIN(n1995), 
-          .COUT(n1996), .S0(d4_62__N_804[30]), .S1(d4_62__N_804[31]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[31]), .B1(d4[31]), .C1(GND_net), .D1(GND_net), .CIN(n1992), 
+          .COUT(n1993), .S0(d4_62__N_804[30]), .S1(d4_62__N_804[31]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_32.INIT0 = 16'h5666;
     defparam d3_62__I_0_32.INIT1 = 16'h5666;
     defparam d3_62__I_0_32.INJECT1_0 = "NO";
     defparam d3_62__I_0_32.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_30 (.A0(CIC1_out[7]), .B0(d1[28]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[29]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1898), .COUT(n1899), .S0(d1_62__N_615[28]), 
+          .D1(GND_net), .CIN(n1895), .COUT(n1896), .S0(d1_62__N_615[28]), 
           .S1(d1_62__N_615[29]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_30.INIT0 = 16'h5666;
     defparam d_in_7__I_0_30.INIT1 = 16'h5666;
@@ -1565,7 +1569,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_tmp_i0_i26.GSR = "ENABLED";
     CCU2D sub_25_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(d_tmp[0]), .B1(d_d_tmp[0]), .C1(GND_net), .D1(GND_net), 
-          .COUT(n1826), .S1(d6_62__N_1530[0]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
+          .COUT(n1823), .S1(d6_62__N_1530[0]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_1.INIT0 = 16'h0000;
     defparam sub_25_add_2_1.INIT1 = 16'h5999;
     defparam sub_25_add_2_1.INJECT1_0 = "NO";
@@ -1574,8 +1578,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[25])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i25.GSR = "ENABLED";
     CCU2D d3_62__I_0_30 (.A0(d3[28]), .B0(d4[28]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[29]), .B1(d4[29]), .C1(GND_net), .D1(GND_net), .CIN(n1994), 
-          .COUT(n1995), .S0(d4_62__N_804[28]), .S1(d4_62__N_804[29]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[29]), .B1(d4[29]), .C1(GND_net), .D1(GND_net), .CIN(n1991), 
+          .COUT(n1992), .S0(d4_62__N_804[28]), .S1(d4_62__N_804[29]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_30.INIT0 = 16'h5666;
     defparam d3_62__I_0_30.INIT1 = 16'h5666;
     defparam d3_62__I_0_30.INJECT1_0 = "NO";
@@ -1591,7 +1595,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_tmp_i0_i23.GSR = "ENABLED";
     CCU2D d_in_7__I_0_28 (.A0(CIC1_out[7]), .B0(d1[26]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[27]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1897), .COUT(n1898), .S0(d1_62__N_615[26]), 
+          .D1(GND_net), .CIN(n1894), .COUT(n1895), .S0(d1_62__N_615[26]), 
           .S1(d1_62__N_615[27]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_28.INIT0 = 16'h5666;
     defparam d_in_7__I_0_28.INIT1 = 16'h5666;
@@ -1607,8 +1611,8 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .CK(osc_clk_derived_991), .Q(d_tmp[20])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i20.GSR = "ENABLED";
     CCU2D d3_62__I_0_28 (.A0(d3[26]), .B0(d4[26]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[27]), .B1(d4[27]), .C1(GND_net), .D1(GND_net), .CIN(n1993), 
-          .COUT(n1994), .S0(d4_62__N_804[26]), .S1(d4_62__N_804[27]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[27]), .B1(d4[27]), .C1(GND_net), .D1(GND_net), .CIN(n1990), 
+          .COUT(n1991), .S0(d4_62__N_804[26]), .S1(d4_62__N_804[27]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_28.INIT0 = 16'h5666;
     defparam d3_62__I_0_28.INIT1 = 16'h5666;
     defparam d3_62__I_0_28.INJECT1_0 = "NO";
@@ -1633,18 +1637,18 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_tmp_i0_i14.GSR = "ENABLED";
     CCU2D sub_25_add_2_29 (.A0(d_tmp[27]), .B0(d_d_tmp[27]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[28]), .B1(d_d_tmp[28]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1839), .COUT(n1840), .S0(d6_62__N_1530[27]), 
+          .D1(GND_net), .CIN(n1836), .COUT(n1837), .S0(d6_62__N_1530[27]), 
           .S1(d6_62__N_1530[28]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_29.INIT0 = 16'h5999;
     defparam sub_25_add_2_29.INIT1 = 16'h5999;
     defparam sub_25_add_2_29.INJECT1_0 = "NO";
     defparam sub_25_add_2_29.INJECT1_1 = "NO";
-    FD1S3IX count__i1 (.D(n330[1]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i1 (.D(n330[1]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i1.GSR = "ENABLED";
     CCU2D d_in_7__I_0_64 (.A0(CIC1_out[7]), .B0(d1[62]), .C0(GND_net), 
           .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1915), .S0(d1_62__N_615[62]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .CIN(n1912), .S0(d1_62__N_615[62]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_64.INIT0 = 16'h5666;
     defparam d_in_7__I_0_64.INIT1 = 16'h0000;
     defparam d_in_7__I_0_64.INJECT1_0 = "NO";
@@ -1689,50 +1693,50 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .Q(d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i1.GSR = "ENABLED";
     CCU2D d3_62__I_0_26 (.A0(d3[24]), .B0(d4[24]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[25]), .B1(d4[25]), .C1(GND_net), .D1(GND_net), .CIN(n1992), 
-          .COUT(n1993), .S0(d4_62__N_804[24]), .S1(d4_62__N_804[25]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[25]), .B1(d4[25]), .C1(GND_net), .D1(GND_net), .CIN(n1989), 
+          .COUT(n1990), .S0(d4_62__N_804[24]), .S1(d4_62__N_804[25]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_26.INIT0 = 16'h5666;
     defparam d3_62__I_0_26.INIT1 = 16'h5666;
     defparam d3_62__I_0_26.INJECT1_0 = "NO";
     defparam d3_62__I_0_26.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_24 (.A0(d3[22]), .B0(d4[22]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[23]), .B1(d4[23]), .C1(GND_net), .D1(GND_net), .CIN(n1991), 
-          .COUT(n1992), .S0(d4_62__N_804[22]), .S1(d4_62__N_804[23]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[23]), .B1(d4[23]), .C1(GND_net), .D1(GND_net), .CIN(n1988), 
+          .COUT(n1989), .S0(d4_62__N_804[22]), .S1(d4_62__N_804[23]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_24.INIT0 = 16'h5666;
     defparam d3_62__I_0_24.INIT1 = 16'h5666;
     defparam d3_62__I_0_24.INJECT1_0 = "NO";
     defparam d3_62__I_0_24.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_22 (.A0(d3[20]), .B0(d4[20]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[21]), .B1(d4[21]), .C1(GND_net), .D1(GND_net), .CIN(n1990), 
-          .COUT(n1991), .S0(d4_62__N_804[20]), .S1(d4_62__N_804[21]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[21]), .B1(d4[21]), .C1(GND_net), .D1(GND_net), .CIN(n1987), 
+          .COUT(n1988), .S0(d4_62__N_804[20]), .S1(d4_62__N_804[21]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_22.INIT0 = 16'h5666;
     defparam d3_62__I_0_22.INIT1 = 16'h5666;
     defparam d3_62__I_0_22.INJECT1_0 = "NO";
     defparam d3_62__I_0_22.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_20 (.A0(d3[18]), .B0(d4[18]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[19]), .B1(d4[19]), .C1(GND_net), .D1(GND_net), .CIN(n1989), 
-          .COUT(n1990), .S0(d4_62__N_804[18]), .S1(d4_62__N_804[19]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[19]), .B1(d4[19]), .C1(GND_net), .D1(GND_net), .CIN(n1986), 
+          .COUT(n1987), .S0(d4_62__N_804[18]), .S1(d4_62__N_804[19]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_20.INIT0 = 16'h5666;
     defparam d3_62__I_0_20.INIT1 = 16'h5666;
     defparam d3_62__I_0_20.INJECT1_0 = "NO";
     defparam d3_62__I_0_20.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_18 (.A0(d3[16]), .B0(d4[16]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[17]), .B1(d4[17]), .C1(GND_net), .D1(GND_net), .CIN(n1988), 
-          .COUT(n1989), .S0(d4_62__N_804[16]), .S1(d4_62__N_804[17]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[17]), .B1(d4[17]), .C1(GND_net), .D1(GND_net), .CIN(n1985), 
+          .COUT(n1986), .S0(d4_62__N_804[16]), .S1(d4_62__N_804[17]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_18.INIT0 = 16'h5666;
     defparam d3_62__I_0_18.INIT1 = 16'h5666;
     defparam d3_62__I_0_18.INJECT1_0 = "NO";
     defparam d3_62__I_0_18.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_16 (.A0(d3[14]), .B0(d4[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[15]), .B1(d4[15]), .C1(GND_net), .D1(GND_net), .CIN(n1987), 
-          .COUT(n1988), .S0(d4_62__N_804[14]), .S1(d4_62__N_804[15]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[15]), .B1(d4[15]), .C1(GND_net), .D1(GND_net), .CIN(n1984), 
+          .COUT(n1985), .S0(d4_62__N_804[14]), .S1(d4_62__N_804[15]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_16.INIT0 = 16'h5666;
     defparam d3_62__I_0_16.INIT1 = 16'h5666;
     defparam d3_62__I_0_16.INJECT1_0 = "NO";
     defparam d3_62__I_0_16.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_62 (.A0(CIC1_out[7]), .B0(d1[60]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[61]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1914), .COUT(n1915), .S0(d1_62__N_615[60]), 
+          .D1(GND_net), .CIN(n1911), .COUT(n1912), .S0(d1_62__N_615[60]), 
           .S1(d1_62__N_615[61]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_62.INIT0 = 16'h5666;
     defparam d_in_7__I_0_62.INIT1 = 16'h5666;
@@ -1740,7 +1744,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_62.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_26 (.A0(CIC1_out[7]), .B0(d1[24]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[25]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1896), .COUT(n1897), .S0(d1_62__N_615[24]), 
+          .D1(GND_net), .CIN(n1893), .COUT(n1894), .S0(d1_62__N_615[24]), 
           .S1(d1_62__N_615[25]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_26.INIT0 = 16'h5666;
     defparam d_in_7__I_0_26.INIT1 = 16'h5666;
@@ -1748,22 +1752,22 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_26.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_60 (.A0(CIC1_out[7]), .B0(d1[58]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[59]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1913), .COUT(n1914), .S0(d1_62__N_615[58]), 
+          .D1(GND_net), .CIN(n1910), .COUT(n1911), .S0(d1_62__N_615[58]), 
           .S1(d1_62__N_615[59]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_60.INIT0 = 16'h5666;
     defparam d_in_7__I_0_60.INIT1 = 16'h5666;
     defparam d_in_7__I_0_60.INJECT1_0 = "NO";
     defparam d_in_7__I_0_60.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_14 (.A0(d3[12]), .B0(d4[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[13]), .B1(d4[13]), .C1(GND_net), .D1(GND_net), .CIN(n1986), 
-          .COUT(n1987), .S0(d4_62__N_804[12]), .S1(d4_62__N_804[13]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[13]), .B1(d4[13]), .C1(GND_net), .D1(GND_net), .CIN(n1983), 
+          .COUT(n1984), .S0(d4_62__N_804[12]), .S1(d4_62__N_804[13]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_14.INIT0 = 16'h5666;
     defparam d3_62__I_0_14.INIT1 = 16'h5666;
     defparam d3_62__I_0_14.INJECT1_0 = "NO";
     defparam d3_62__I_0_14.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_58 (.A0(CIC1_out[7]), .B0(d1[56]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[57]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1912), .COUT(n1913), .S0(d1_62__N_615[56]), 
+          .D1(GND_net), .CIN(n1909), .COUT(n1910), .S0(d1_62__N_615[56]), 
           .S1(d1_62__N_615[57]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_58.INIT0 = 16'h5666;
     defparam d_in_7__I_0_58.INIT1 = 16'h5666;
@@ -1771,35 +1775,35 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_58.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_24 (.A0(CIC1_out[7]), .B0(d1[22]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[23]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1895), .COUT(n1896), .S0(d1_62__N_615[22]), 
+          .D1(GND_net), .CIN(n1892), .COUT(n1893), .S0(d1_62__N_615[22]), 
           .S1(d1_62__N_615[23]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_24.INIT0 = 16'h5666;
     defparam d_in_7__I_0_24.INIT1 = 16'h5666;
     defparam d_in_7__I_0_24.INJECT1_0 = "NO";
     defparam d_in_7__I_0_24.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_12 (.A0(d3[10]), .B0(d4[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[11]), .B1(d4[11]), .C1(GND_net), .D1(GND_net), .CIN(n1985), 
-          .COUT(n1986), .S0(d4_62__N_804[10]), .S1(d4_62__N_804[11]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[11]), .B1(d4[11]), .C1(GND_net), .D1(GND_net), .CIN(n1982), 
+          .COUT(n1983), .S0(d4_62__N_804[10]), .S1(d4_62__N_804[11]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_12.INIT0 = 16'h5666;
     defparam d3_62__I_0_12.INIT1 = 16'h5666;
     defparam d3_62__I_0_12.INJECT1_0 = "NO";
     defparam d3_62__I_0_12.INJECT1_1 = "NO";
-    LUT4 i1_2_lut (.A(n330[10]), .B(n2575), .Z(count_15__N_1513[10])) /* synthesis lut_function=(A+!(B)) */ ;
+    LUT4 i1_2_lut (.A(n330[10]), .B(n2572), .Z(count_15__N_1513[10])) /* synthesis lut_function=(A+!(B)) */ ;
     defparam i1_2_lut.init = 16'hbbbb;
-    LUT4 i1_4_lut (.A(n2830), .B(n10), .C(count[15]), .D(n2824), .Z(d_clk_tmp_N_1845)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
+    LUT4 i1_4_lut (.A(n2827), .B(n10), .C(count[15]), .D(n2821), .Z(d_clk_tmp_N_1845)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
     defparam i1_4_lut.init = 16'h0200;
-    LUT4 i1_4_lut_adj_4 (.A(count[1]), .B(n2826), .C(n2820), .D(count[8]), 
-         .Z(n2830)) /* synthesis lut_function=(A (B (C (D)))) */ ;
+    LUT4 i1_4_lut_adj_4 (.A(count[1]), .B(n2823), .C(n2817), .D(count[8]), 
+         .Z(n2827)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i1_4_lut_adj_4.init = 16'h8000;
     FD1S3AX v_comb_64_rep_71 (.D(osc_clk_derived_991_enable_597), .CK(osc_clk_derived_991), 
             .Q(osc_clk_derived_991_enable_596)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam v_comb_64_rep_71.GSR = "ENABLED";
-    LUT4 i1_3_lut (.A(count[7]), .B(count[2]), .C(count[6]), .Z(n2824)) /* synthesis lut_function=(A (B (C))) */ ;
+    LUT4 i1_3_lut (.A(count[7]), .B(count[2]), .C(count[6]), .Z(n2821)) /* synthesis lut_function=(A (B (C))) */ ;
     defparam i1_3_lut.init = 16'h8080;
     LUT4 i1_4_lut_adj_5 (.A(count[3]), .B(count[0]), .C(count[5]), .D(count[4]), 
-         .Z(n2826)) /* synthesis lut_function=(A (B (C (D)))) */ ;
+         .Z(n2823)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i1_4_lut_adj_5.init = 16'h8000;
-    LUT4 i1_2_lut_adj_6 (.A(count[9]), .B(count[10]), .Z(n2820)) /* synthesis lut_function=(A (B)) */ ;
+    LUT4 i1_2_lut_adj_6 (.A(count[9]), .B(count[10]), .Z(n2817)) /* synthesis lut_function=(A (B)) */ ;
     defparam i1_2_lut_adj_6.init = 16'h8888;
     LUT4 i1_4_lut_adj_7 (.A(count[14]), .B(count[12]), .C(count[13]), 
          .D(count[11]), .Z(n10)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
@@ -1809,147 +1813,147 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam v_comb_64_rep_70.GSR = "ENABLED";
     CCU2D d_in_7__I_0_56 (.A0(CIC1_out[7]), .B0(d1[54]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[55]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1911), .COUT(n1912), .S0(d1_62__N_615[54]), 
+          .D1(GND_net), .CIN(n1908), .COUT(n1909), .S0(d1_62__N_615[54]), 
           .S1(d1_62__N_615[55]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_56.INIT0 = 16'h5666;
     defparam d_in_7__I_0_56.INIT1 = 16'h5666;
     defparam d_in_7__I_0_56.INJECT1_0 = "NO";
     defparam d_in_7__I_0_56.INJECT1_1 = "NO";
-    LUT4 i1_4_lut_rep_54 (.A(n2830), .B(n10), .C(count[15]), .D(n2824), 
-         .Z(n3438)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
+    LUT4 i1_4_lut_rep_54 (.A(n2827), .B(n10), .C(count[15]), .D(n2821), 
+         .Z(n3435)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
     defparam i1_4_lut_rep_54.init = 16'h0200;
     CCU2D d_in_7__I_0_22 (.A0(CIC1_out[7]), .B0(d1[20]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[21]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1894), .COUT(n1895), .S0(d1_62__N_615[20]), 
+          .D1(GND_net), .CIN(n1891), .COUT(n1892), .S0(d1_62__N_615[20]), 
           .S1(d1_62__N_615[21]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_22.INIT0 = 16'h5666;
     defparam d_in_7__I_0_22.INIT1 = 16'h5666;
     defparam d_in_7__I_0_22.INJECT1_0 = "NO";
     defparam d_in_7__I_0_22.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_10 (.A0(d3[8]), .B0(d4[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[9]), .B1(d4[9]), .C1(GND_net), .D1(GND_net), .CIN(n1984), 
-          .COUT(n1985), .S0(d4_62__N_804[8]), .S1(d4_62__N_804[9]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[9]), .B1(d4[9]), .C1(GND_net), .D1(GND_net), .CIN(n1981), 
+          .COUT(n1982), .S0(d4_62__N_804[8]), .S1(d4_62__N_804[9]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_10.INIT0 = 16'h5666;
     defparam d3_62__I_0_10.INIT1 = 16'h5666;
     defparam d3_62__I_0_10.INJECT1_0 = "NO";
     defparam d3_62__I_0_10.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_8 (.A0(d3[6]), .B0(d4[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[7]), .B1(d4[7]), .C1(GND_net), .D1(GND_net), .CIN(n1983), 
-          .COUT(n1984), .S0(d4_62__N_804[6]), .S1(d4_62__N_804[7]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[7]), .B1(d4[7]), .C1(GND_net), .D1(GND_net), .CIN(n1980), 
+          .COUT(n1981), .S0(d4_62__N_804[6]), .S1(d4_62__N_804[7]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_8.INIT0 = 16'h5666;
     defparam d3_62__I_0_8.INIT1 = 16'h5666;
     defparam d3_62__I_0_8.INJECT1_0 = "NO";
     defparam d3_62__I_0_8.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_54 (.A0(CIC1_out[7]), .B0(d1[52]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[53]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1910), .COUT(n1911), .S0(d1_62__N_615[52]), 
+          .D1(GND_net), .CIN(n1907), .COUT(n1908), .S0(d1_62__N_615[52]), 
           .S1(d1_62__N_615[53]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_54.INIT0 = 16'h5666;
     defparam d_in_7__I_0_54.INIT1 = 16'h5666;
     defparam d_in_7__I_0_54.INJECT1_0 = "NO";
     defparam d_in_7__I_0_54.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_6 (.A0(d3[4]), .B0(d4[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[5]), .B1(d4[5]), .C1(GND_net), .D1(GND_net), .CIN(n1982), 
-          .COUT(n1983), .S0(d4_62__N_804[4]), .S1(d4_62__N_804[5]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[5]), .B1(d4[5]), .C1(GND_net), .D1(GND_net), .CIN(n1979), 
+          .COUT(n1980), .S0(d4_62__N_804[4]), .S1(d4_62__N_804[5]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_6.INIT0 = 16'h5666;
     defparam d3_62__I_0_6.INIT1 = 16'h5666;
     defparam d3_62__I_0_6.INJECT1_0 = "NO";
     defparam d3_62__I_0_6.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_4 (.A0(d3[2]), .B0(d4[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[3]), .B1(d4[3]), .C1(GND_net), .D1(GND_net), .CIN(n1981), 
-          .COUT(n1982), .S0(d4_62__N_804[2]), .S1(d4_62__N_804[3]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[3]), .B1(d4[3]), .C1(GND_net), .D1(GND_net), .CIN(n1978), 
+          .COUT(n1979), .S0(d4_62__N_804[2]), .S1(d4_62__N_804[3]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_4.INIT0 = 16'h5666;
     defparam d3_62__I_0_4.INIT1 = 16'h5666;
     defparam d3_62__I_0_4.INJECT1_0 = "NO";
     defparam d3_62__I_0_4.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_52 (.A0(CIC1_out[7]), .B0(d1[50]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[51]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1909), .COUT(n1910), .S0(d1_62__N_615[50]), 
+          .D1(GND_net), .CIN(n1906), .COUT(n1907), .S0(d1_62__N_615[50]), 
           .S1(d1_62__N_615[51]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_52.INIT0 = 16'h5666;
     defparam d_in_7__I_0_52.INIT1 = 16'h5666;
     defparam d_in_7__I_0_52.INJECT1_0 = "NO";
     defparam d_in_7__I_0_52.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_2 (.A0(d3[0]), .B0(d4[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[1]), .B1(d4[1]), .C1(GND_net), .D1(GND_net), .COUT(n1981), 
+          .A1(d3[1]), .B1(d4[1]), .C1(GND_net), .D1(GND_net), .COUT(n1978), 
           .S1(d4_62__N_804[1]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_2.INIT0 = 16'h7000;
     defparam d3_62__I_0_2.INIT1 = 16'h5666;
     defparam d3_62__I_0_2.INJECT1_0 = "NO";
     defparam d3_62__I_0_2.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_64 (.A0(d2[62]), .B0(d3[62]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1979), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1976), 
           .S0(d3_62__N_741[62]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_64.INIT0 = 16'h5666;
     defparam d2_62__I_0_64.INIT1 = 16'h0000;
     defparam d2_62__I_0_64.INJECT1_0 = "NO";
     defparam d2_62__I_0_64.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_62 (.A0(d2[60]), .B0(d3[60]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[61]), .B1(d3[61]), .C1(GND_net), .D1(GND_net), .CIN(n1978), 
-          .COUT(n1979), .S0(d3_62__N_741[60]), .S1(d3_62__N_741[61]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[61]), .B1(d3[61]), .C1(GND_net), .D1(GND_net), .CIN(n1975), 
+          .COUT(n1976), .S0(d3_62__N_741[60]), .S1(d3_62__N_741[61]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_62.INIT0 = 16'h5666;
     defparam d2_62__I_0_62.INIT1 = 16'h5666;
     defparam d2_62__I_0_62.INJECT1_0 = "NO";
     defparam d2_62__I_0_62.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_60 (.A0(d2[58]), .B0(d3[58]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[59]), .B1(d3[59]), .C1(GND_net), .D1(GND_net), .CIN(n1977), 
-          .COUT(n1978), .S0(d3_62__N_741[58]), .S1(d3_62__N_741[59]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[59]), .B1(d3[59]), .C1(GND_net), .D1(GND_net), .CIN(n1974), 
+          .COUT(n1975), .S0(d3_62__N_741[58]), .S1(d3_62__N_741[59]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_60.INIT0 = 16'h5666;
     defparam d2_62__I_0_60.INIT1 = 16'h5666;
     defparam d2_62__I_0_60.INJECT1_0 = "NO";
     defparam d2_62__I_0_60.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_58 (.A0(d2[56]), .B0(d3[56]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[57]), .B1(d3[57]), .C1(GND_net), .D1(GND_net), .CIN(n1976), 
-          .COUT(n1977), .S0(d3_62__N_741[56]), .S1(d3_62__N_741[57]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[57]), .B1(d3[57]), .C1(GND_net), .D1(GND_net), .CIN(n1973), 
+          .COUT(n1974), .S0(d3_62__N_741[56]), .S1(d3_62__N_741[57]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_58.INIT0 = 16'h5666;
     defparam d2_62__I_0_58.INIT1 = 16'h5666;
     defparam d2_62__I_0_58.INJECT1_0 = "NO";
     defparam d2_62__I_0_58.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_56 (.A0(d2[54]), .B0(d3[54]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[55]), .B1(d3[55]), .C1(GND_net), .D1(GND_net), .CIN(n1975), 
-          .COUT(n1976), .S0(d3_62__N_741[54]), .S1(d3_62__N_741[55]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[55]), .B1(d3[55]), .C1(GND_net), .D1(GND_net), .CIN(n1972), 
+          .COUT(n1973), .S0(d3_62__N_741[54]), .S1(d3_62__N_741[55]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_56.INIT0 = 16'h5666;
     defparam d2_62__I_0_56.INIT1 = 16'h5666;
     defparam d2_62__I_0_56.INJECT1_0 = "NO";
     defparam d2_62__I_0_56.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_54 (.A0(d2[52]), .B0(d3[52]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[53]), .B1(d3[53]), .C1(GND_net), .D1(GND_net), .CIN(n1974), 
-          .COUT(n1975), .S0(d3_62__N_741[52]), .S1(d3_62__N_741[53]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[53]), .B1(d3[53]), .C1(GND_net), .D1(GND_net), .CIN(n1971), 
+          .COUT(n1972), .S0(d3_62__N_741[52]), .S1(d3_62__N_741[53]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_54.INIT0 = 16'h5666;
     defparam d2_62__I_0_54.INIT1 = 16'h5666;
     defparam d2_62__I_0_54.INJECT1_0 = "NO";
     defparam d2_62__I_0_54.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_52 (.A0(d2[50]), .B0(d3[50]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[51]), .B1(d3[51]), .C1(GND_net), .D1(GND_net), .CIN(n1973), 
-          .COUT(n1974), .S0(d3_62__N_741[50]), .S1(d3_62__N_741[51]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[51]), .B1(d3[51]), .C1(GND_net), .D1(GND_net), .CIN(n1970), 
+          .COUT(n1971), .S0(d3_62__N_741[50]), .S1(d3_62__N_741[51]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_52.INIT0 = 16'h5666;
     defparam d2_62__I_0_52.INIT1 = 16'h5666;
     defparam d2_62__I_0_52.INJECT1_0 = "NO";
     defparam d2_62__I_0_52.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_50 (.A0(d2[48]), .B0(d3[48]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[49]), .B1(d3[49]), .C1(GND_net), .D1(GND_net), .CIN(n1972), 
-          .COUT(n1973), .S0(d3_62__N_741[48]), .S1(d3_62__N_741[49]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[49]), .B1(d3[49]), .C1(GND_net), .D1(GND_net), .CIN(n1969), 
+          .COUT(n1970), .S0(d3_62__N_741[48]), .S1(d3_62__N_741[49]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_50.INIT0 = 16'h5666;
     defparam d2_62__I_0_50.INIT1 = 16'h5666;
     defparam d2_62__I_0_50.INJECT1_0 = "NO";
     defparam d2_62__I_0_50.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_48 (.A0(d2[46]), .B0(d3[46]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[47]), .B1(d3[47]), .C1(GND_net), .D1(GND_net), .CIN(n1971), 
-          .COUT(n1972), .S0(d3_62__N_741[46]), .S1(d3_62__N_741[47]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[47]), .B1(d3[47]), .C1(GND_net), .D1(GND_net), .CIN(n1968), 
+          .COUT(n1969), .S0(d3_62__N_741[46]), .S1(d3_62__N_741[47]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_48.INIT0 = 16'h5666;
     defparam d2_62__I_0_48.INIT1 = 16'h5666;
     defparam d2_62__I_0_48.INJECT1_0 = "NO";
     defparam d2_62__I_0_48.INJECT1_1 = "NO";
-    LUT4 i1_2_lut_adj_8 (.A(n330[0]), .B(n2575), .Z(count_15__N_1513[0])) /* synthesis lut_function=(A+!(B)) */ ;
+    LUT4 i1_2_lut_adj_8 (.A(n330[0]), .B(n2572), .Z(count_15__N_1513[0])) /* synthesis lut_function=(A+!(B)) */ ;
     defparam i1_2_lut_adj_8.init = 16'hbbbb;
     CCU2D d2_62__I_0_46 (.A0(d2[44]), .B0(d3[44]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[45]), .B1(d3[45]), .C1(GND_net), .D1(GND_net), .CIN(n1970), 
-          .COUT(n1971), .S0(d3_62__N_741[44]), .S1(d3_62__N_741[45]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[45]), .B1(d3[45]), .C1(GND_net), .D1(GND_net), .CIN(n1967), 
+          .COUT(n1968), .S0(d3_62__N_741[44]), .S1(d3_62__N_741[45]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_46.INIT0 = 16'h5666;
     defparam d2_62__I_0_46.INIT1 = 16'h5666;
     defparam d2_62__I_0_46.INJECT1_0 = "NO";
     defparam d2_62__I_0_46.INJECT1_1 = "NO";
-    LUT4 i1_4_lut_rep_55 (.A(n2830), .B(n10), .C(count[15]), .D(n2824), 
+    LUT4 i1_4_lut_rep_55 (.A(n2827), .B(n10), .C(count[15]), .D(n2821), 
          .Z(osc_clk_derived_991_enable_597)) /* synthesis lut_function=(!((B+(C+!(D)))+!A)) */ ;
     defparam i1_4_lut_rep_55.init = 16'h0200;
     FD1P3AX d_tmp_i0_i53 (.D(d5[53]), .SP(d_clk_tmp_N_1845), .CK(osc_clk_derived_991), 
@@ -1963,24 +1967,24 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam i1547_2_lut.init = 16'h6666;
     LUT4 i1548_2_lut (.A(d4[0]), .B(d5[0]), .Z(d5_62__N_867[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i1548_2_lut.init = 16'h6666;
-    LUT4 i1_2_lut_adj_9 (.A(n2575), .B(d_clk_tmp), .Z(n1142)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(54[12:17])
+    LUT4 i1_2_lut_adj_9 (.A(n2572), .B(d_clk_tmp), .Z(n1139)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(54[12:17])
     defparam i1_2_lut_adj_9.init = 16'h8888;
-    LUT4 i1_4_lut_adj_10 (.A(n2954), .B(n18), .C(n2950), .D(count[10]), 
-         .Z(n2575)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;
+    LUT4 i1_4_lut_adj_10 (.A(n2951), .B(n18), .C(n2947), .D(count[10]), 
+         .Z(n2572)) /* synthesis lut_function=(A+(B+(C+!(D)))) */ ;
     defparam i1_4_lut_adj_10.init = 16'hfeff;
-    LUT4 i1_4_lut_adj_11 (.A(count[2]), .B(n10), .C(n2912), .D(count[3]), 
-         .Z(n2954)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
+    LUT4 i1_4_lut_adj_11 (.A(count[2]), .B(n10), .C(n2909), .D(count[3]), 
+         .Z(n2951)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
     defparam i1_4_lut_adj_11.init = 16'hfffe;
     LUT4 i1_4_lut_adj_12 (.A(count[4]), .B(count[6]), .C(count[7]), .D(count[9]), 
          .Z(n18)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;
     defparam i1_4_lut_adj_12.init = 16'hfffe;
-    LUT4 i1_3_lut_adj_13 (.A(count[5]), .B(count[15]), .C(count[0]), .Z(n2950)) /* synthesis lut_function=(A+(B+(C))) */ ;
+    LUT4 i1_3_lut_adj_13 (.A(count[5]), .B(count[15]), .C(count[0]), .Z(n2947)) /* synthesis lut_function=(A+(B+(C))) */ ;
     defparam i1_3_lut_adj_13.init = 16'hfefe;
-    LUT4 i1_2_lut_adj_14 (.A(count[8]), .B(count[1]), .Z(n2912)) /* synthesis lut_function=(A+(B)) */ ;
+    LUT4 i1_2_lut_adj_14 (.A(count[8]), .B(count[1]), .Z(n2909)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i1_2_lut_adj_14.init = 16'heeee;
     CCU2D d4_62__I_0_8 (.A0(d4[6]), .B0(d5[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[7]), .B1(d5[7]), .C1(GND_net), .D1(GND_net), .CIN(n2015), 
-          .COUT(n2016), .S0(d5_62__N_867[6]), .S1(d5_62__N_867[7]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[7]), .B1(d5[7]), .C1(GND_net), .D1(GND_net), .CIN(n2012), 
+          .COUT(n2013), .S0(d5_62__N_867[6]), .S1(d5_62__N_867[7]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_8.INIT0 = 16'h5666;
     defparam d4_62__I_0_8.INIT1 = 16'h5666;
     defparam d4_62__I_0_8.INJECT1_0 = "NO";
@@ -2897,7 +2901,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     FD1S3AX v_comb_64_rep_66 (.D(osc_clk_derived_991_enable_597), .CK(osc_clk_derived_991), 
             .Q(osc_clk_derived_991_enable_346)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam v_comb_64_rep_66.GSR = "ENABLED";
-    LUT4 i1_2_lut_adj_15 (.A(n3438), .B(n2575), .Z(n1231)) /* synthesis lut_function=(A+!(B)) */ ;
+    LUT4 i1_2_lut_adj_15 (.A(n3435), .B(n2572), .Z(n1228)) /* synthesis lut_function=(A+!(B)) */ ;
     defparam i1_2_lut_adj_15.init = 16'hbbbb;
     FD1S3AX v_comb_64_rep_65 (.D(osc_clk_derived_991_enable_597), .CK(osc_clk_derived_991), 
             .Q(osc_clk_derived_991_enable_296)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
@@ -4235,22 +4239,22 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
             .Q(\DataInNoSign_7__N_1896[1] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i1.GSR = "ENABLED";
     FD1P3AX d_out_i0_i2 (.D(d10[57]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\DataInNoSign_7__N_1896[2] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(MYLED_c_2)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i2.GSR = "ENABLED";
     FD1P3AX d_out_i0_i3 (.D(d10[58]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\DataInNoSign_7__N_1896[3] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(MYLED_c_3)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i3.GSR = "ENABLED";
     FD1P3AX d_out_i0_i4 (.D(d10[59]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\DataInNoSign_7__N_1896[4] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(MYLED_c_4)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i4.GSR = "ENABLED";
     FD1P3AX d_out_i0_i5 (.D(d10[60]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\DataInNoSign_7__N_1896[5] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(n658)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i5.GSR = "ENABLED";
     FD1P3AX d_out_i0_i6 (.D(d10[61]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\DataInNoSign_7__N_1896[6] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(n657)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i6.GSR = "ENABLED";
     FD1P3AX d_out_i0_i7 (.D(d10[62]), .SP(v_comb), .CK(osc_clk_derived_991), 
-            .Q(\CIC_out[7] )) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
+            .Q(MYLED_c_5)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_out_i0_i7.GSR = "ENABLED";
     FD1S3AX d1_i1 (.D(d1_62__N_615[1]), .CK(osc_clk_derived_991), .Q(d1[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d1_i1.GSR = "ENABLED";
@@ -4380,959 +4384,959 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     FD1S3AX d1_i62 (.D(d1_62__N_615[62]), .CK(osc_clk_derived_991), .Q(d1[62])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d1_i62.GSR = "ENABLED";
     CCU2D d2_62__I_0_44 (.A0(d2[42]), .B0(d3[42]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[43]), .B1(d3[43]), .C1(GND_net), .D1(GND_net), .CIN(n1969), 
-          .COUT(n1970), .S0(d3_62__N_741[42]), .S1(d3_62__N_741[43]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[43]), .B1(d3[43]), .C1(GND_net), .D1(GND_net), .CIN(n1966), 
+          .COUT(n1967), .S0(d3_62__N_741[42]), .S1(d3_62__N_741[43]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_44.INIT0 = 16'h5666;
     defparam d2_62__I_0_44.INIT1 = 16'h5666;
     defparam d2_62__I_0_44.INJECT1_0 = "NO";
     defparam d2_62__I_0_44.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_42 (.A0(d2[40]), .B0(d3[40]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[41]), .B1(d3[41]), .C1(GND_net), .D1(GND_net), .CIN(n1968), 
-          .COUT(n1969), .S0(d3_62__N_741[40]), .S1(d3_62__N_741[41]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[41]), .B1(d3[41]), .C1(GND_net), .D1(GND_net), .CIN(n1965), 
+          .COUT(n1966), .S0(d3_62__N_741[40]), .S1(d3_62__N_741[41]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_42.INIT0 = 16'h5666;
     defparam d2_62__I_0_42.INIT1 = 16'h5666;
     defparam d2_62__I_0_42.INJECT1_0 = "NO";
     defparam d2_62__I_0_42.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_63 (.A0(d6[61]), .B0(d_d6[61]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[62]), .B1(d_d6[62]), .C1(GND_net), .D1(GND_net), .CIN(n2186), 
+          .A1(d6[62]), .B1(d_d6[62]), .C1(GND_net), .D1(GND_net), .CIN(n2183), 
           .S0(d7_62__N_1593[61]), .S1(d7_62__N_1593[62]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_63.INIT0 = 16'h5999;
     defparam sub_26_add_2_63.INIT1 = 16'h5999;
     defparam sub_26_add_2_63.INJECT1_0 = "NO";
     defparam sub_26_add_2_63.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_61 (.A0(d6[59]), .B0(d_d6[59]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[60]), .B1(d_d6[60]), .C1(GND_net), .D1(GND_net), .CIN(n2185), 
-          .COUT(n2186), .S0(d7_62__N_1593[59]), .S1(d7_62__N_1593[60]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[60]), .B1(d_d6[60]), .C1(GND_net), .D1(GND_net), .CIN(n2182), 
+          .COUT(n2183), .S0(d7_62__N_1593[59]), .S1(d7_62__N_1593[60]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_61.INIT0 = 16'h5999;
     defparam sub_26_add_2_61.INIT1 = 16'h5999;
     defparam sub_26_add_2_61.INJECT1_0 = "NO";
     defparam sub_26_add_2_61.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_59 (.A0(d6[57]), .B0(d_d6[57]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[58]), .B1(d_d6[58]), .C1(GND_net), .D1(GND_net), .CIN(n2184), 
-          .COUT(n2185), .S0(d7_62__N_1593[57]), .S1(d7_62__N_1593[58]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[58]), .B1(d_d6[58]), .C1(GND_net), .D1(GND_net), .CIN(n2181), 
+          .COUT(n2182), .S0(d7_62__N_1593[57]), .S1(d7_62__N_1593[58]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_59.INIT0 = 16'h5999;
     defparam sub_26_add_2_59.INIT1 = 16'h5999;
     defparam sub_26_add_2_59.INJECT1_0 = "NO";
     defparam sub_26_add_2_59.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_57 (.A0(d6[55]), .B0(d_d6[55]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[56]), .B1(d_d6[56]), .C1(GND_net), .D1(GND_net), .CIN(n2183), 
-          .COUT(n2184), .S0(d7_62__N_1593[55]), .S1(d7_62__N_1593[56]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[56]), .B1(d_d6[56]), .C1(GND_net), .D1(GND_net), .CIN(n2180), 
+          .COUT(n2181), .S0(d7_62__N_1593[55]), .S1(d7_62__N_1593[56]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_57.INIT0 = 16'h5999;
     defparam sub_26_add_2_57.INIT1 = 16'h5999;
     defparam sub_26_add_2_57.INJECT1_0 = "NO";
     defparam sub_26_add_2_57.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_55 (.A0(d6[53]), .B0(d_d6[53]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[54]), .B1(d_d6[54]), .C1(GND_net), .D1(GND_net), .CIN(n2182), 
-          .COUT(n2183), .S0(d7_62__N_1593[53]), .S1(d7_62__N_1593[54]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[54]), .B1(d_d6[54]), .C1(GND_net), .D1(GND_net), .CIN(n2179), 
+          .COUT(n2180), .S0(d7_62__N_1593[53]), .S1(d7_62__N_1593[54]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_55.INIT0 = 16'h5999;
     defparam sub_26_add_2_55.INIT1 = 16'h5999;
     defparam sub_26_add_2_55.INJECT1_0 = "NO";
     defparam sub_26_add_2_55.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_53 (.A0(d6[51]), .B0(d_d6[51]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[52]), .B1(d_d6[52]), .C1(GND_net), .D1(GND_net), .CIN(n2181), 
-          .COUT(n2182), .S0(d7_62__N_1593[51]), .S1(d7_62__N_1593[52]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[52]), .B1(d_d6[52]), .C1(GND_net), .D1(GND_net), .CIN(n2178), 
+          .COUT(n2179), .S0(d7_62__N_1593[51]), .S1(d7_62__N_1593[52]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_53.INIT0 = 16'h5999;
     defparam sub_26_add_2_53.INIT1 = 16'h5999;
     defparam sub_26_add_2_53.INJECT1_0 = "NO";
     defparam sub_26_add_2_53.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_51 (.A0(d6[49]), .B0(d_d6[49]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[50]), .B1(d_d6[50]), .C1(GND_net), .D1(GND_net), .CIN(n2180), 
-          .COUT(n2181), .S0(d7_62__N_1593[49]), .S1(d7_62__N_1593[50]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[50]), .B1(d_d6[50]), .C1(GND_net), .D1(GND_net), .CIN(n2177), 
+          .COUT(n2178), .S0(d7_62__N_1593[49]), .S1(d7_62__N_1593[50]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_51.INIT0 = 16'h5999;
     defparam sub_26_add_2_51.INIT1 = 16'h5999;
     defparam sub_26_add_2_51.INJECT1_0 = "NO";
     defparam sub_26_add_2_51.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_49 (.A0(d6[47]), .B0(d_d6[47]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[48]), .B1(d_d6[48]), .C1(GND_net), .D1(GND_net), .CIN(n2179), 
-          .COUT(n2180), .S0(d7_62__N_1593[47]), .S1(d7_62__N_1593[48]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[48]), .B1(d_d6[48]), .C1(GND_net), .D1(GND_net), .CIN(n2176), 
+          .COUT(n2177), .S0(d7_62__N_1593[47]), .S1(d7_62__N_1593[48]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_49.INIT0 = 16'h5999;
     defparam sub_26_add_2_49.INIT1 = 16'h5999;
     defparam sub_26_add_2_49.INJECT1_0 = "NO";
     defparam sub_26_add_2_49.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_47 (.A0(d6[45]), .B0(d_d6[45]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[46]), .B1(d_d6[46]), .C1(GND_net), .D1(GND_net), .CIN(n2178), 
-          .COUT(n2179), .S0(d7_62__N_1593[45]), .S1(d7_62__N_1593[46]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[46]), .B1(d_d6[46]), .C1(GND_net), .D1(GND_net), .CIN(n2175), 
+          .COUT(n2176), .S0(d7_62__N_1593[45]), .S1(d7_62__N_1593[46]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_47.INIT0 = 16'h5999;
     defparam sub_26_add_2_47.INIT1 = 16'h5999;
     defparam sub_26_add_2_47.INJECT1_0 = "NO";
     defparam sub_26_add_2_47.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_45 (.A0(d6[43]), .B0(d_d6[43]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[44]), .B1(d_d6[44]), .C1(GND_net), .D1(GND_net), .CIN(n2177), 
-          .COUT(n2178), .S0(d7_62__N_1593[43]), .S1(d7_62__N_1593[44]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[44]), .B1(d_d6[44]), .C1(GND_net), .D1(GND_net), .CIN(n2174), 
+          .COUT(n2175), .S0(d7_62__N_1593[43]), .S1(d7_62__N_1593[44]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_45.INIT0 = 16'h5999;
     defparam sub_26_add_2_45.INIT1 = 16'h5999;
     defparam sub_26_add_2_45.INJECT1_0 = "NO";
     defparam sub_26_add_2_45.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_43 (.A0(d6[41]), .B0(d_d6[41]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[42]), .B1(d_d6[42]), .C1(GND_net), .D1(GND_net), .CIN(n2176), 
-          .COUT(n2177), .S0(d7_62__N_1593[41]), .S1(d7_62__N_1593[42]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[42]), .B1(d_d6[42]), .C1(GND_net), .D1(GND_net), .CIN(n2173), 
+          .COUT(n2174), .S0(d7_62__N_1593[41]), .S1(d7_62__N_1593[42]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_43.INIT0 = 16'h5999;
     defparam sub_26_add_2_43.INIT1 = 16'h5999;
     defparam sub_26_add_2_43.INJECT1_0 = "NO";
     defparam sub_26_add_2_43.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_41 (.A0(d6[39]), .B0(d_d6[39]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[40]), .B1(d_d6[40]), .C1(GND_net), .D1(GND_net), .CIN(n2175), 
-          .COUT(n2176), .S0(d7_62__N_1593[39]), .S1(d7_62__N_1593[40]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[40]), .B1(d_d6[40]), .C1(GND_net), .D1(GND_net), .CIN(n2172), 
+          .COUT(n2173), .S0(d7_62__N_1593[39]), .S1(d7_62__N_1593[40]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_41.INIT0 = 16'h5999;
     defparam sub_26_add_2_41.INIT1 = 16'h5999;
     defparam sub_26_add_2_41.INJECT1_0 = "NO";
     defparam sub_26_add_2_41.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_39 (.A0(d6[37]), .B0(d_d6[37]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[38]), .B1(d_d6[38]), .C1(GND_net), .D1(GND_net), .CIN(n2174), 
-          .COUT(n2175), .S0(d7_62__N_1593[37]), .S1(d7_62__N_1593[38]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[38]), .B1(d_d6[38]), .C1(GND_net), .D1(GND_net), .CIN(n2171), 
+          .COUT(n2172), .S0(d7_62__N_1593[37]), .S1(d7_62__N_1593[38]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_39.INIT0 = 16'h5999;
     defparam sub_26_add_2_39.INIT1 = 16'h5999;
     defparam sub_26_add_2_39.INJECT1_0 = "NO";
     defparam sub_26_add_2_39.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_37 (.A0(d6[35]), .B0(d_d6[35]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[36]), .B1(d_d6[36]), .C1(GND_net), .D1(GND_net), .CIN(n2173), 
-          .COUT(n2174), .S0(d7_62__N_1593[35]), .S1(d7_62__N_1593[36]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[36]), .B1(d_d6[36]), .C1(GND_net), .D1(GND_net), .CIN(n2170), 
+          .COUT(n2171), .S0(d7_62__N_1593[35]), .S1(d7_62__N_1593[36]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_37.INIT0 = 16'h5999;
     defparam sub_26_add_2_37.INIT1 = 16'h5999;
     defparam sub_26_add_2_37.INJECT1_0 = "NO";
     defparam sub_26_add_2_37.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_35 (.A0(d6[33]), .B0(d_d6[33]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[34]), .B1(d_d6[34]), .C1(GND_net), .D1(GND_net), .CIN(n2172), 
-          .COUT(n2173), .S0(d7_62__N_1593[33]), .S1(d7_62__N_1593[34]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[34]), .B1(d_d6[34]), .C1(GND_net), .D1(GND_net), .CIN(n2169), 
+          .COUT(n2170), .S0(d7_62__N_1593[33]), .S1(d7_62__N_1593[34]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_35.INIT0 = 16'h5999;
     defparam sub_26_add_2_35.INIT1 = 16'h5999;
     defparam sub_26_add_2_35.INJECT1_0 = "NO";
     defparam sub_26_add_2_35.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_33 (.A0(d6[31]), .B0(d_d6[31]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[32]), .B1(d_d6[32]), .C1(GND_net), .D1(GND_net), .CIN(n2171), 
-          .COUT(n2172), .S0(d7_62__N_1593[31]), .S1(d7_62__N_1593[32]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[32]), .B1(d_d6[32]), .C1(GND_net), .D1(GND_net), .CIN(n2168), 
+          .COUT(n2169), .S0(d7_62__N_1593[31]), .S1(d7_62__N_1593[32]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_33.INIT0 = 16'h5999;
     defparam sub_26_add_2_33.INIT1 = 16'h5999;
     defparam sub_26_add_2_33.INJECT1_0 = "NO";
     defparam sub_26_add_2_33.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_31 (.A0(d6[29]), .B0(d_d6[29]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[30]), .B1(d_d6[30]), .C1(GND_net), .D1(GND_net), .CIN(n2170), 
-          .COUT(n2171), .S0(d7_62__N_1593[29]), .S1(d7_62__N_1593[30]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[30]), .B1(d_d6[30]), .C1(GND_net), .D1(GND_net), .CIN(n2167), 
+          .COUT(n2168), .S0(d7_62__N_1593[29]), .S1(d7_62__N_1593[30]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_31.INIT0 = 16'h5999;
     defparam sub_26_add_2_31.INIT1 = 16'h5999;
     defparam sub_26_add_2_31.INJECT1_0 = "NO";
     defparam sub_26_add_2_31.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_29 (.A0(d6[27]), .B0(d_d6[27]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[28]), .B1(d_d6[28]), .C1(GND_net), .D1(GND_net), .CIN(n2169), 
-          .COUT(n2170), .S0(d7_62__N_1593[27]), .S1(d7_62__N_1593[28]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[28]), .B1(d_d6[28]), .C1(GND_net), .D1(GND_net), .CIN(n2166), 
+          .COUT(n2167), .S0(d7_62__N_1593[27]), .S1(d7_62__N_1593[28]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_29.INIT0 = 16'h5999;
     defparam sub_26_add_2_29.INIT1 = 16'h5999;
     defparam sub_26_add_2_29.INJECT1_0 = "NO";
     defparam sub_26_add_2_29.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_27 (.A0(d6[25]), .B0(d_d6[25]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[26]), .B1(d_d6[26]), .C1(GND_net), .D1(GND_net), .CIN(n2168), 
-          .COUT(n2169), .S0(d7_62__N_1593[25]), .S1(d7_62__N_1593[26]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[26]), .B1(d_d6[26]), .C1(GND_net), .D1(GND_net), .CIN(n2165), 
+          .COUT(n2166), .S0(d7_62__N_1593[25]), .S1(d7_62__N_1593[26]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_27.INIT0 = 16'h5999;
     defparam sub_26_add_2_27.INIT1 = 16'h5999;
     defparam sub_26_add_2_27.INJECT1_0 = "NO";
     defparam sub_26_add_2_27.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_25 (.A0(d6[23]), .B0(d_d6[23]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[24]), .B1(d_d6[24]), .C1(GND_net), .D1(GND_net), .CIN(n2167), 
-          .COUT(n2168), .S0(d7_62__N_1593[23]), .S1(d7_62__N_1593[24]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[24]), .B1(d_d6[24]), .C1(GND_net), .D1(GND_net), .CIN(n2164), 
+          .COUT(n2165), .S0(d7_62__N_1593[23]), .S1(d7_62__N_1593[24]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_25.INIT0 = 16'h5999;
     defparam sub_26_add_2_25.INIT1 = 16'h5999;
     defparam sub_26_add_2_25.INJECT1_0 = "NO";
     defparam sub_26_add_2_25.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_23 (.A0(d6[21]), .B0(d_d6[21]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[22]), .B1(d_d6[22]), .C1(GND_net), .D1(GND_net), .CIN(n2166), 
-          .COUT(n2167), .S0(d7_62__N_1593[21]), .S1(d7_62__N_1593[22]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[22]), .B1(d_d6[22]), .C1(GND_net), .D1(GND_net), .CIN(n2163), 
+          .COUT(n2164), .S0(d7_62__N_1593[21]), .S1(d7_62__N_1593[22]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_23.INIT0 = 16'h5999;
     defparam sub_26_add_2_23.INIT1 = 16'h5999;
     defparam sub_26_add_2_23.INJECT1_0 = "NO";
     defparam sub_26_add_2_23.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_21 (.A0(d6[19]), .B0(d_d6[19]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[20]), .B1(d_d6[20]), .C1(GND_net), .D1(GND_net), .CIN(n2165), 
-          .COUT(n2166), .S0(d7_62__N_1593[19]), .S1(d7_62__N_1593[20]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[20]), .B1(d_d6[20]), .C1(GND_net), .D1(GND_net), .CIN(n2162), 
+          .COUT(n2163), .S0(d7_62__N_1593[19]), .S1(d7_62__N_1593[20]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_21.INIT0 = 16'h5999;
     defparam sub_26_add_2_21.INIT1 = 16'h5999;
     defparam sub_26_add_2_21.INJECT1_0 = "NO";
     defparam sub_26_add_2_21.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_19 (.A0(d6[17]), .B0(d_d6[17]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[18]), .B1(d_d6[18]), .C1(GND_net), .D1(GND_net), .CIN(n2164), 
-          .COUT(n2165), .S0(d7_62__N_1593[17]), .S1(d7_62__N_1593[18]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[18]), .B1(d_d6[18]), .C1(GND_net), .D1(GND_net), .CIN(n2161), 
+          .COUT(n2162), .S0(d7_62__N_1593[17]), .S1(d7_62__N_1593[18]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_19.INIT0 = 16'h5999;
     defparam sub_26_add_2_19.INIT1 = 16'h5999;
     defparam sub_26_add_2_19.INJECT1_0 = "NO";
     defparam sub_26_add_2_19.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_17 (.A0(d6[15]), .B0(d_d6[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[16]), .B1(d_d6[16]), .C1(GND_net), .D1(GND_net), .CIN(n2163), 
-          .COUT(n2164), .S0(d7_62__N_1593[15]), .S1(d7_62__N_1593[16]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[16]), .B1(d_d6[16]), .C1(GND_net), .D1(GND_net), .CIN(n2160), 
+          .COUT(n2161), .S0(d7_62__N_1593[15]), .S1(d7_62__N_1593[16]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_17.INIT0 = 16'h5999;
     defparam sub_26_add_2_17.INIT1 = 16'h5999;
     defparam sub_26_add_2_17.INJECT1_0 = "NO";
     defparam sub_26_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_15 (.A0(d6[13]), .B0(d_d6[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[14]), .B1(d_d6[14]), .C1(GND_net), .D1(GND_net), .CIN(n2162), 
-          .COUT(n2163), .S0(d7_62__N_1593[13]), .S1(d7_62__N_1593[14]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[14]), .B1(d_d6[14]), .C1(GND_net), .D1(GND_net), .CIN(n2159), 
+          .COUT(n2160), .S0(d7_62__N_1593[13]), .S1(d7_62__N_1593[14]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_15.INIT0 = 16'h5999;
     defparam sub_26_add_2_15.INIT1 = 16'h5999;
     defparam sub_26_add_2_15.INJECT1_0 = "NO";
     defparam sub_26_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_13 (.A0(d6[11]), .B0(d_d6[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[12]), .B1(d_d6[12]), .C1(GND_net), .D1(GND_net), .CIN(n2161), 
-          .COUT(n2162), .S0(d7_62__N_1593[11]), .S1(d7_62__N_1593[12]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[12]), .B1(d_d6[12]), .C1(GND_net), .D1(GND_net), .CIN(n2158), 
+          .COUT(n2159), .S0(d7_62__N_1593[11]), .S1(d7_62__N_1593[12]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_13.INIT0 = 16'h5999;
     defparam sub_26_add_2_13.INIT1 = 16'h5999;
     defparam sub_26_add_2_13.INJECT1_0 = "NO";
     defparam sub_26_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_11 (.A0(d6[9]), .B0(d_d6[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[10]), .B1(d_d6[10]), .C1(GND_net), .D1(GND_net), .CIN(n2160), 
-          .COUT(n2161), .S0(d7_62__N_1593[9]), .S1(d7_62__N_1593[10]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[10]), .B1(d_d6[10]), .C1(GND_net), .D1(GND_net), .CIN(n2157), 
+          .COUT(n2158), .S0(d7_62__N_1593[9]), .S1(d7_62__N_1593[10]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_11.INIT0 = 16'h5999;
     defparam sub_26_add_2_11.INIT1 = 16'h5999;
     defparam sub_26_add_2_11.INJECT1_0 = "NO";
     defparam sub_26_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_9 (.A0(d6[7]), .B0(d_d6[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[8]), .B1(d_d6[8]), .C1(GND_net), .D1(GND_net), .CIN(n2159), 
-          .COUT(n2160), .S0(d7_62__N_1593[7]), .S1(d7_62__N_1593[8]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[8]), .B1(d_d6[8]), .C1(GND_net), .D1(GND_net), .CIN(n2156), 
+          .COUT(n2157), .S0(d7_62__N_1593[7]), .S1(d7_62__N_1593[8]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_9.INIT0 = 16'h5999;
     defparam sub_26_add_2_9.INIT1 = 16'h5999;
     defparam sub_26_add_2_9.INJECT1_0 = "NO";
     defparam sub_26_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_7 (.A0(d6[5]), .B0(d_d6[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[6]), .B1(d_d6[6]), .C1(GND_net), .D1(GND_net), .CIN(n2158), 
-          .COUT(n2159), .S0(d7_62__N_1593[5]), .S1(d7_62__N_1593[6]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[6]), .B1(d_d6[6]), .C1(GND_net), .D1(GND_net), .CIN(n2155), 
+          .COUT(n2156), .S0(d7_62__N_1593[5]), .S1(d7_62__N_1593[6]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_7.INIT0 = 16'h5999;
     defparam sub_26_add_2_7.INIT1 = 16'h5999;
     defparam sub_26_add_2_7.INJECT1_0 = "NO";
     defparam sub_26_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_5 (.A0(d6[3]), .B0(d_d6[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[4]), .B1(d_d6[4]), .C1(GND_net), .D1(GND_net), .CIN(n2157), 
-          .COUT(n2158), .S0(d7_62__N_1593[3]), .S1(d7_62__N_1593[4]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[4]), .B1(d_d6[4]), .C1(GND_net), .D1(GND_net), .CIN(n2154), 
+          .COUT(n2155), .S0(d7_62__N_1593[3]), .S1(d7_62__N_1593[4]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_5.INIT0 = 16'h5999;
     defparam sub_26_add_2_5.INIT1 = 16'h5999;
     defparam sub_26_add_2_5.INJECT1_0 = "NO";
     defparam sub_26_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_3 (.A0(d6[1]), .B0(d_d6[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[2]), .B1(d_d6[2]), .C1(GND_net), .D1(GND_net), .CIN(n2156), 
-          .COUT(n2157), .S0(d7_62__N_1593[1]), .S1(d7_62__N_1593[2]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[2]), .B1(d_d6[2]), .C1(GND_net), .D1(GND_net), .CIN(n2153), 
+          .COUT(n2154), .S0(d7_62__N_1593[1]), .S1(d7_62__N_1593[2]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_3.INIT0 = 16'h5999;
     defparam sub_26_add_2_3.INIT1 = 16'h5999;
     defparam sub_26_add_2_3.INJECT1_0 = "NO";
     defparam sub_26_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[0]), .B1(d_d6[0]), .C1(GND_net), .D1(GND_net), .COUT(n2156), 
+          .A1(d6[0]), .B1(d_d6[0]), .C1(GND_net), .D1(GND_net), .COUT(n2153), 
           .S1(d7_62__N_1593[0]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_1.INIT0 = 16'h0000;
     defparam sub_26_add_2_1.INIT1 = 16'h5999;
     defparam sub_26_add_2_1.INJECT1_0 = "NO";
     defparam sub_26_add_2_1.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_40 (.A0(d2[38]), .B0(d3[38]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[39]), .B1(d3[39]), .C1(GND_net), .D1(GND_net), .CIN(n1967), 
-          .COUT(n1968), .S0(d3_62__N_741[38]), .S1(d3_62__N_741[39]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[39]), .B1(d3[39]), .C1(GND_net), .D1(GND_net), .CIN(n1964), 
+          .COUT(n1965), .S0(d3_62__N_741[38]), .S1(d3_62__N_741[39]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_40.INIT0 = 16'h5666;
     defparam d2_62__I_0_40.INIT1 = 16'h5666;
     defparam d2_62__I_0_40.INJECT1_0 = "NO";
     defparam d2_62__I_0_40.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_38 (.A0(d2[36]), .B0(d3[36]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[37]), .B1(d3[37]), .C1(GND_net), .D1(GND_net), .CIN(n1966), 
-          .COUT(n1967), .S0(d3_62__N_741[36]), .S1(d3_62__N_741[37]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[37]), .B1(d3[37]), .C1(GND_net), .D1(GND_net), .CIN(n1963), 
+          .COUT(n1964), .S0(d3_62__N_741[36]), .S1(d3_62__N_741[37]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_38.INIT0 = 16'h5666;
     defparam d2_62__I_0_38.INIT1 = 16'h5666;
     defparam d2_62__I_0_38.INJECT1_0 = "NO";
     defparam d2_62__I_0_38.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_36 (.A0(d2[34]), .B0(d3[34]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[35]), .B1(d3[35]), .C1(GND_net), .D1(GND_net), .CIN(n1965), 
-          .COUT(n1966), .S0(d3_62__N_741[34]), .S1(d3_62__N_741[35]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[35]), .B1(d3[35]), .C1(GND_net), .D1(GND_net), .CIN(n1962), 
+          .COUT(n1963), .S0(d3_62__N_741[34]), .S1(d3_62__N_741[35]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_36.INIT0 = 16'h5666;
     defparam d2_62__I_0_36.INIT1 = 16'h5666;
     defparam d2_62__I_0_36.INJECT1_0 = "NO";
     defparam d2_62__I_0_36.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_34 (.A0(d2[32]), .B0(d3[32]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[33]), .B1(d3[33]), .C1(GND_net), .D1(GND_net), .CIN(n1964), 
-          .COUT(n1965), .S0(d3_62__N_741[32]), .S1(d3_62__N_741[33]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[33]), .B1(d3[33]), .C1(GND_net), .D1(GND_net), .CIN(n1961), 
+          .COUT(n1962), .S0(d3_62__N_741[32]), .S1(d3_62__N_741[33]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_34.INIT0 = 16'h5666;
     defparam d2_62__I_0_34.INIT1 = 16'h5666;
     defparam d2_62__I_0_34.INJECT1_0 = "NO";
     defparam d2_62__I_0_34.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_63 (.A0(d7[61]), .B0(d_d7[61]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[62]), .B1(d_d7[62]), .C1(GND_net), .D1(GND_net), .CIN(n2146), 
+          .A1(d7[62]), .B1(d_d7[62]), .C1(GND_net), .D1(GND_net), .CIN(n2143), 
           .S0(d8_62__N_1656[61]), .S1(d8_62__N_1656[62]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_63.INIT0 = 16'h5999;
     defparam sub_27_add_2_63.INIT1 = 16'h5999;
     defparam sub_27_add_2_63.INJECT1_0 = "NO";
     defparam sub_27_add_2_63.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_61 (.A0(d7[59]), .B0(d_d7[59]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[60]), .B1(d_d7[60]), .C1(GND_net), .D1(GND_net), .CIN(n2145), 
-          .COUT(n2146), .S0(d8_62__N_1656[59]), .S1(d8_62__N_1656[60]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[60]), .B1(d_d7[60]), .C1(GND_net), .D1(GND_net), .CIN(n2142), 
+          .COUT(n2143), .S0(d8_62__N_1656[59]), .S1(d8_62__N_1656[60]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_61.INIT0 = 16'h5999;
     defparam sub_27_add_2_61.INIT1 = 16'h5999;
     defparam sub_27_add_2_61.INJECT1_0 = "NO";
     defparam sub_27_add_2_61.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_59 (.A0(d7[57]), .B0(d_d7[57]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[58]), .B1(d_d7[58]), .C1(GND_net), .D1(GND_net), .CIN(n2144), 
-          .COUT(n2145), .S0(d8_62__N_1656[57]), .S1(d8_62__N_1656[58]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[58]), .B1(d_d7[58]), .C1(GND_net), .D1(GND_net), .CIN(n2141), 
+          .COUT(n2142), .S0(d8_62__N_1656[57]), .S1(d8_62__N_1656[58]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_59.INIT0 = 16'h5999;
     defparam sub_27_add_2_59.INIT1 = 16'h5999;
     defparam sub_27_add_2_59.INJECT1_0 = "NO";
     defparam sub_27_add_2_59.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_57 (.A0(d7[55]), .B0(d_d7[55]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[56]), .B1(d_d7[56]), .C1(GND_net), .D1(GND_net), .CIN(n2143), 
-          .COUT(n2144), .S0(d8_62__N_1656[55]), .S1(d8_62__N_1656[56]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[56]), .B1(d_d7[56]), .C1(GND_net), .D1(GND_net), .CIN(n2140), 
+          .COUT(n2141), .S0(d8_62__N_1656[55]), .S1(d8_62__N_1656[56]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_57.INIT0 = 16'h5999;
     defparam sub_27_add_2_57.INIT1 = 16'h5999;
     defparam sub_27_add_2_57.INJECT1_0 = "NO";
     defparam sub_27_add_2_57.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_55 (.A0(d7[53]), .B0(d_d7[53]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[54]), .B1(d_d7[54]), .C1(GND_net), .D1(GND_net), .CIN(n2142), 
-          .COUT(n2143), .S0(d8_62__N_1656[53]), .S1(d8_62__N_1656[54]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[54]), .B1(d_d7[54]), .C1(GND_net), .D1(GND_net), .CIN(n2139), 
+          .COUT(n2140), .S0(d8_62__N_1656[53]), .S1(d8_62__N_1656[54]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_55.INIT0 = 16'h5999;
     defparam sub_27_add_2_55.INIT1 = 16'h5999;
     defparam sub_27_add_2_55.INJECT1_0 = "NO";
     defparam sub_27_add_2_55.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_53 (.A0(d7[51]), .B0(d_d7[51]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[52]), .B1(d_d7[52]), .C1(GND_net), .D1(GND_net), .CIN(n2141), 
-          .COUT(n2142), .S0(d8_62__N_1656[51]), .S1(d8_62__N_1656[52]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[52]), .B1(d_d7[52]), .C1(GND_net), .D1(GND_net), .CIN(n2138), 
+          .COUT(n2139), .S0(d8_62__N_1656[51]), .S1(d8_62__N_1656[52]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_53.INIT0 = 16'h5999;
     defparam sub_27_add_2_53.INIT1 = 16'h5999;
     defparam sub_27_add_2_53.INJECT1_0 = "NO";
     defparam sub_27_add_2_53.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_51 (.A0(d7[49]), .B0(d_d7[49]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[50]), .B1(d_d7[50]), .C1(GND_net), .D1(GND_net), .CIN(n2140), 
-          .COUT(n2141), .S0(d8_62__N_1656[49]), .S1(d8_62__N_1656[50]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[50]), .B1(d_d7[50]), .C1(GND_net), .D1(GND_net), .CIN(n2137), 
+          .COUT(n2138), .S0(d8_62__N_1656[49]), .S1(d8_62__N_1656[50]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_51.INIT0 = 16'h5999;
     defparam sub_27_add_2_51.INIT1 = 16'h5999;
     defparam sub_27_add_2_51.INJECT1_0 = "NO";
     defparam sub_27_add_2_51.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_49 (.A0(d7[47]), .B0(d_d7[47]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[48]), .B1(d_d7[48]), .C1(GND_net), .D1(GND_net), .CIN(n2139), 
-          .COUT(n2140), .S0(d8_62__N_1656[47]), .S1(d8_62__N_1656[48]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[48]), .B1(d_d7[48]), .C1(GND_net), .D1(GND_net), .CIN(n2136), 
+          .COUT(n2137), .S0(d8_62__N_1656[47]), .S1(d8_62__N_1656[48]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_49.INIT0 = 16'h5999;
     defparam sub_27_add_2_49.INIT1 = 16'h5999;
     defparam sub_27_add_2_49.INJECT1_0 = "NO";
     defparam sub_27_add_2_49.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_47 (.A0(d7[45]), .B0(d_d7[45]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[46]), .B1(d_d7[46]), .C1(GND_net), .D1(GND_net), .CIN(n2138), 
-          .COUT(n2139), .S0(d8_62__N_1656[45]), .S1(d8_62__N_1656[46]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[46]), .B1(d_d7[46]), .C1(GND_net), .D1(GND_net), .CIN(n2135), 
+          .COUT(n2136), .S0(d8_62__N_1656[45]), .S1(d8_62__N_1656[46]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_47.INIT0 = 16'h5999;
     defparam sub_27_add_2_47.INIT1 = 16'h5999;
     defparam sub_27_add_2_47.INJECT1_0 = "NO";
     defparam sub_27_add_2_47.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_45 (.A0(d7[43]), .B0(d_d7[43]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[44]), .B1(d_d7[44]), .C1(GND_net), .D1(GND_net), .CIN(n2137), 
-          .COUT(n2138), .S0(d8_62__N_1656[43]), .S1(d8_62__N_1656[44]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[44]), .B1(d_d7[44]), .C1(GND_net), .D1(GND_net), .CIN(n2134), 
+          .COUT(n2135), .S0(d8_62__N_1656[43]), .S1(d8_62__N_1656[44]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_45.INIT0 = 16'h5999;
     defparam sub_27_add_2_45.INIT1 = 16'h5999;
     defparam sub_27_add_2_45.INJECT1_0 = "NO";
     defparam sub_27_add_2_45.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_43 (.A0(d7[41]), .B0(d_d7[41]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[42]), .B1(d_d7[42]), .C1(GND_net), .D1(GND_net), .CIN(n2136), 
-          .COUT(n2137), .S0(d8_62__N_1656[41]), .S1(d8_62__N_1656[42]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[42]), .B1(d_d7[42]), .C1(GND_net), .D1(GND_net), .CIN(n2133), 
+          .COUT(n2134), .S0(d8_62__N_1656[41]), .S1(d8_62__N_1656[42]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_43.INIT0 = 16'h5999;
     defparam sub_27_add_2_43.INIT1 = 16'h5999;
     defparam sub_27_add_2_43.INJECT1_0 = "NO";
     defparam sub_27_add_2_43.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_41 (.A0(d7[39]), .B0(d_d7[39]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[40]), .B1(d_d7[40]), .C1(GND_net), .D1(GND_net), .CIN(n2135), 
-          .COUT(n2136), .S0(d8_62__N_1656[39]), .S1(d8_62__N_1656[40]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[40]), .B1(d_d7[40]), .C1(GND_net), .D1(GND_net), .CIN(n2132), 
+          .COUT(n2133), .S0(d8_62__N_1656[39]), .S1(d8_62__N_1656[40]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_41.INIT0 = 16'h5999;
     defparam sub_27_add_2_41.INIT1 = 16'h5999;
     defparam sub_27_add_2_41.INJECT1_0 = "NO";
     defparam sub_27_add_2_41.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_39 (.A0(d7[37]), .B0(d_d7[37]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[38]), .B1(d_d7[38]), .C1(GND_net), .D1(GND_net), .CIN(n2134), 
-          .COUT(n2135), .S0(d8_62__N_1656[37]), .S1(d8_62__N_1656[38]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[38]), .B1(d_d7[38]), .C1(GND_net), .D1(GND_net), .CIN(n2131), 
+          .COUT(n2132), .S0(d8_62__N_1656[37]), .S1(d8_62__N_1656[38]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_39.INIT0 = 16'h5999;
     defparam sub_27_add_2_39.INIT1 = 16'h5999;
     defparam sub_27_add_2_39.INJECT1_0 = "NO";
     defparam sub_27_add_2_39.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_37 (.A0(d7[35]), .B0(d_d7[35]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[36]), .B1(d_d7[36]), .C1(GND_net), .D1(GND_net), .CIN(n2133), 
-          .COUT(n2134), .S0(d8_62__N_1656[35]), .S1(d8_62__N_1656[36]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[36]), .B1(d_d7[36]), .C1(GND_net), .D1(GND_net), .CIN(n2130), 
+          .COUT(n2131), .S0(d8_62__N_1656[35]), .S1(d8_62__N_1656[36]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_37.INIT0 = 16'h5999;
     defparam sub_27_add_2_37.INIT1 = 16'h5999;
     defparam sub_27_add_2_37.INJECT1_0 = "NO";
     defparam sub_27_add_2_37.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_35 (.A0(d7[33]), .B0(d_d7[33]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[34]), .B1(d_d7[34]), .C1(GND_net), .D1(GND_net), .CIN(n2132), 
-          .COUT(n2133), .S0(d8_62__N_1656[33]), .S1(d8_62__N_1656[34]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[34]), .B1(d_d7[34]), .C1(GND_net), .D1(GND_net), .CIN(n2129), 
+          .COUT(n2130), .S0(d8_62__N_1656[33]), .S1(d8_62__N_1656[34]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_35.INIT0 = 16'h5999;
     defparam sub_27_add_2_35.INIT1 = 16'h5999;
     defparam sub_27_add_2_35.INJECT1_0 = "NO";
     defparam sub_27_add_2_35.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_33 (.A0(d7[31]), .B0(d_d7[31]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[32]), .B1(d_d7[32]), .C1(GND_net), .D1(GND_net), .CIN(n2131), 
-          .COUT(n2132), .S0(d8_62__N_1656[31]), .S1(d8_62__N_1656[32]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[32]), .B1(d_d7[32]), .C1(GND_net), .D1(GND_net), .CIN(n2128), 
+          .COUT(n2129), .S0(d8_62__N_1656[31]), .S1(d8_62__N_1656[32]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_33.INIT0 = 16'h5999;
     defparam sub_27_add_2_33.INIT1 = 16'h5999;
     defparam sub_27_add_2_33.INJECT1_0 = "NO";
     defparam sub_27_add_2_33.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_31 (.A0(d7[29]), .B0(d_d7[29]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[30]), .B1(d_d7[30]), .C1(GND_net), .D1(GND_net), .CIN(n2130), 
-          .COUT(n2131), .S0(d8_62__N_1656[29]), .S1(d8_62__N_1656[30]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[30]), .B1(d_d7[30]), .C1(GND_net), .D1(GND_net), .CIN(n2127), 
+          .COUT(n2128), .S0(d8_62__N_1656[29]), .S1(d8_62__N_1656[30]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_31.INIT0 = 16'h5999;
     defparam sub_27_add_2_31.INIT1 = 16'h5999;
     defparam sub_27_add_2_31.INJECT1_0 = "NO";
     defparam sub_27_add_2_31.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_29 (.A0(d7[27]), .B0(d_d7[27]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[28]), .B1(d_d7[28]), .C1(GND_net), .D1(GND_net), .CIN(n2129), 
-          .COUT(n2130), .S0(d8_62__N_1656[27]), .S1(d8_62__N_1656[28]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[28]), .B1(d_d7[28]), .C1(GND_net), .D1(GND_net), .CIN(n2126), 
+          .COUT(n2127), .S0(d8_62__N_1656[27]), .S1(d8_62__N_1656[28]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_29.INIT0 = 16'h5999;
     defparam sub_27_add_2_29.INIT1 = 16'h5999;
     defparam sub_27_add_2_29.INJECT1_0 = "NO";
     defparam sub_27_add_2_29.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_27 (.A0(d7[25]), .B0(d_d7[25]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[26]), .B1(d_d7[26]), .C1(GND_net), .D1(GND_net), .CIN(n2128), 
-          .COUT(n2129), .S0(d8_62__N_1656[25]), .S1(d8_62__N_1656[26]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[26]), .B1(d_d7[26]), .C1(GND_net), .D1(GND_net), .CIN(n2125), 
+          .COUT(n2126), .S0(d8_62__N_1656[25]), .S1(d8_62__N_1656[26]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_27.INIT0 = 16'h5999;
     defparam sub_27_add_2_27.INIT1 = 16'h5999;
     defparam sub_27_add_2_27.INJECT1_0 = "NO";
     defparam sub_27_add_2_27.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_25 (.A0(d7[23]), .B0(d_d7[23]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[24]), .B1(d_d7[24]), .C1(GND_net), .D1(GND_net), .CIN(n2127), 
-          .COUT(n2128), .S0(d8_62__N_1656[23]), .S1(d8_62__N_1656[24]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[24]), .B1(d_d7[24]), .C1(GND_net), .D1(GND_net), .CIN(n2124), 
+          .COUT(n2125), .S0(d8_62__N_1656[23]), .S1(d8_62__N_1656[24]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_25.INIT0 = 16'h5999;
     defparam sub_27_add_2_25.INIT1 = 16'h5999;
     defparam sub_27_add_2_25.INJECT1_0 = "NO";
     defparam sub_27_add_2_25.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_23 (.A0(d7[21]), .B0(d_d7[21]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[22]), .B1(d_d7[22]), .C1(GND_net), .D1(GND_net), .CIN(n2126), 
-          .COUT(n2127), .S0(d8_62__N_1656[21]), .S1(d8_62__N_1656[22]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[22]), .B1(d_d7[22]), .C1(GND_net), .D1(GND_net), .CIN(n2123), 
+          .COUT(n2124), .S0(d8_62__N_1656[21]), .S1(d8_62__N_1656[22]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_23.INIT0 = 16'h5999;
     defparam sub_27_add_2_23.INIT1 = 16'h5999;
     defparam sub_27_add_2_23.INJECT1_0 = "NO";
     defparam sub_27_add_2_23.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_21 (.A0(d7[19]), .B0(d_d7[19]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[20]), .B1(d_d7[20]), .C1(GND_net), .D1(GND_net), .CIN(n2125), 
-          .COUT(n2126), .S0(d8_62__N_1656[19]), .S1(d8_62__N_1656[20]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[20]), .B1(d_d7[20]), .C1(GND_net), .D1(GND_net), .CIN(n2122), 
+          .COUT(n2123), .S0(d8_62__N_1656[19]), .S1(d8_62__N_1656[20]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_21.INIT0 = 16'h5999;
     defparam sub_27_add_2_21.INIT1 = 16'h5999;
     defparam sub_27_add_2_21.INJECT1_0 = "NO";
     defparam sub_27_add_2_21.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_19 (.A0(d7[17]), .B0(d_d7[17]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[18]), .B1(d_d7[18]), .C1(GND_net), .D1(GND_net), .CIN(n2124), 
-          .COUT(n2125), .S0(d8_62__N_1656[17]), .S1(d8_62__N_1656[18]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[18]), .B1(d_d7[18]), .C1(GND_net), .D1(GND_net), .CIN(n2121), 
+          .COUT(n2122), .S0(d8_62__N_1656[17]), .S1(d8_62__N_1656[18]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_19.INIT0 = 16'h5999;
     defparam sub_27_add_2_19.INIT1 = 16'h5999;
     defparam sub_27_add_2_19.INJECT1_0 = "NO";
     defparam sub_27_add_2_19.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_17 (.A0(d7[15]), .B0(d_d7[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[16]), .B1(d_d7[16]), .C1(GND_net), .D1(GND_net), .CIN(n2123), 
-          .COUT(n2124), .S0(d8_62__N_1656[15]), .S1(d8_62__N_1656[16]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[16]), .B1(d_d7[16]), .C1(GND_net), .D1(GND_net), .CIN(n2120), 
+          .COUT(n2121), .S0(d8_62__N_1656[15]), .S1(d8_62__N_1656[16]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_17.INIT0 = 16'h5999;
     defparam sub_27_add_2_17.INIT1 = 16'h5999;
     defparam sub_27_add_2_17.INJECT1_0 = "NO";
     defparam sub_27_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_15 (.A0(d7[13]), .B0(d_d7[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[14]), .B1(d_d7[14]), .C1(GND_net), .D1(GND_net), .CIN(n2122), 
-          .COUT(n2123), .S0(d8_62__N_1656[13]), .S1(d8_62__N_1656[14]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[14]), .B1(d_d7[14]), .C1(GND_net), .D1(GND_net), .CIN(n2119), 
+          .COUT(n2120), .S0(d8_62__N_1656[13]), .S1(d8_62__N_1656[14]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_15.INIT0 = 16'h5999;
     defparam sub_27_add_2_15.INIT1 = 16'h5999;
     defparam sub_27_add_2_15.INJECT1_0 = "NO";
     defparam sub_27_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_13 (.A0(d7[11]), .B0(d_d7[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[12]), .B1(d_d7[12]), .C1(GND_net), .D1(GND_net), .CIN(n2121), 
-          .COUT(n2122), .S0(d8_62__N_1656[11]), .S1(d8_62__N_1656[12]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[12]), .B1(d_d7[12]), .C1(GND_net), .D1(GND_net), .CIN(n2118), 
+          .COUT(n2119), .S0(d8_62__N_1656[11]), .S1(d8_62__N_1656[12]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_13.INIT0 = 16'h5999;
     defparam sub_27_add_2_13.INIT1 = 16'h5999;
     defparam sub_27_add_2_13.INJECT1_0 = "NO";
     defparam sub_27_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_11 (.A0(d7[9]), .B0(d_d7[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[10]), .B1(d_d7[10]), .C1(GND_net), .D1(GND_net), .CIN(n2120), 
-          .COUT(n2121), .S0(d8_62__N_1656[9]), .S1(d8_62__N_1656[10]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[10]), .B1(d_d7[10]), .C1(GND_net), .D1(GND_net), .CIN(n2117), 
+          .COUT(n2118), .S0(d8_62__N_1656[9]), .S1(d8_62__N_1656[10]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_11.INIT0 = 16'h5999;
     defparam sub_27_add_2_11.INIT1 = 16'h5999;
     defparam sub_27_add_2_11.INJECT1_0 = "NO";
     defparam sub_27_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_9 (.A0(d7[7]), .B0(d_d7[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[8]), .B1(d_d7[8]), .C1(GND_net), .D1(GND_net), .CIN(n2119), 
-          .COUT(n2120), .S0(d8_62__N_1656[7]), .S1(d8_62__N_1656[8]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[8]), .B1(d_d7[8]), .C1(GND_net), .D1(GND_net), .CIN(n2116), 
+          .COUT(n2117), .S0(d8_62__N_1656[7]), .S1(d8_62__N_1656[8]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_9.INIT0 = 16'h5999;
     defparam sub_27_add_2_9.INIT1 = 16'h5999;
     defparam sub_27_add_2_9.INJECT1_0 = "NO";
     defparam sub_27_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_7 (.A0(d7[5]), .B0(d_d7[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[6]), .B1(d_d7[6]), .C1(GND_net), .D1(GND_net), .CIN(n2118), 
-          .COUT(n2119), .S0(d8_62__N_1656[5]), .S1(d8_62__N_1656[6]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[6]), .B1(d_d7[6]), .C1(GND_net), .D1(GND_net), .CIN(n2115), 
+          .COUT(n2116), .S0(d8_62__N_1656[5]), .S1(d8_62__N_1656[6]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_7.INIT0 = 16'h5999;
     defparam sub_27_add_2_7.INIT1 = 16'h5999;
     defparam sub_27_add_2_7.INJECT1_0 = "NO";
     defparam sub_27_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_5 (.A0(d7[3]), .B0(d_d7[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[4]), .B1(d_d7[4]), .C1(GND_net), .D1(GND_net), .CIN(n2117), 
-          .COUT(n2118), .S0(d8_62__N_1656[3]), .S1(d8_62__N_1656[4]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[4]), .B1(d_d7[4]), .C1(GND_net), .D1(GND_net), .CIN(n2114), 
+          .COUT(n2115), .S0(d8_62__N_1656[3]), .S1(d8_62__N_1656[4]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_5.INIT0 = 16'h5999;
     defparam sub_27_add_2_5.INIT1 = 16'h5999;
     defparam sub_27_add_2_5.INJECT1_0 = "NO";
     defparam sub_27_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_3 (.A0(d7[1]), .B0(d_d7[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[2]), .B1(d_d7[2]), .C1(GND_net), .D1(GND_net), .CIN(n2116), 
-          .COUT(n2117), .S0(d8_62__N_1656[1]), .S1(d8_62__N_1656[2]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[2]), .B1(d_d7[2]), .C1(GND_net), .D1(GND_net), .CIN(n2113), 
+          .COUT(n2114), .S0(d8_62__N_1656[1]), .S1(d8_62__N_1656[2]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_3.INIT0 = 16'h5999;
     defparam sub_27_add_2_3.INIT1 = 16'h5999;
     defparam sub_27_add_2_3.INJECT1_0 = "NO";
     defparam sub_27_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[0]), .B1(d_d7[0]), .C1(GND_net), .D1(GND_net), .COUT(n2116), 
+          .A1(d7[0]), .B1(d_d7[0]), .C1(GND_net), .D1(GND_net), .COUT(n2113), 
           .S1(d8_62__N_1656[0]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_1.INIT0 = 16'h0000;
     defparam sub_27_add_2_1.INIT1 = 16'h5999;
     defparam sub_27_add_2_1.INJECT1_0 = "NO";
     defparam sub_27_add_2_1.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_63 (.A0(d8[61]), .B0(d_d8[61]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[62]), .B1(d_d8[62]), .C1(GND_net), .D1(GND_net), .CIN(n2114), 
+          .A1(d8[62]), .B1(d_d8[62]), .C1(GND_net), .D1(GND_net), .CIN(n2111), 
           .S0(d9_62__N_1719[61]), .S1(d9_62__N_1719[62]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_63.INIT0 = 16'h5999;
     defparam sub_28_add_2_63.INIT1 = 16'h5999;
     defparam sub_28_add_2_63.INJECT1_0 = "NO";
     defparam sub_28_add_2_63.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_61 (.A0(d8[59]), .B0(d_d8[59]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[60]), .B1(d_d8[60]), .C1(GND_net), .D1(GND_net), .CIN(n2113), 
-          .COUT(n2114), .S0(d9_62__N_1719[59]), .S1(d9_62__N_1719[60]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[60]), .B1(d_d8[60]), .C1(GND_net), .D1(GND_net), .CIN(n2110), 
+          .COUT(n2111), .S0(d9_62__N_1719[59]), .S1(d9_62__N_1719[60]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_61.INIT0 = 16'h5999;
     defparam sub_28_add_2_61.INIT1 = 16'h5999;
     defparam sub_28_add_2_61.INJECT1_0 = "NO";
     defparam sub_28_add_2_61.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_59 (.A0(d8[57]), .B0(d_d8[57]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[58]), .B1(d_d8[58]), .C1(GND_net), .D1(GND_net), .CIN(n2112), 
-          .COUT(n2113), .S0(d9_62__N_1719[57]), .S1(d9_62__N_1719[58]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[58]), .B1(d_d8[58]), .C1(GND_net), .D1(GND_net), .CIN(n2109), 
+          .COUT(n2110), .S0(d9_62__N_1719[57]), .S1(d9_62__N_1719[58]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_59.INIT0 = 16'h5999;
     defparam sub_28_add_2_59.INIT1 = 16'h5999;
     defparam sub_28_add_2_59.INJECT1_0 = "NO";
     defparam sub_28_add_2_59.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_57 (.A0(d8[55]), .B0(d_d8[55]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[56]), .B1(d_d8[56]), .C1(GND_net), .D1(GND_net), .CIN(n2111), 
-          .COUT(n2112), .S0(d9_62__N_1719[55]), .S1(d9_62__N_1719[56]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[56]), .B1(d_d8[56]), .C1(GND_net), .D1(GND_net), .CIN(n2108), 
+          .COUT(n2109), .S0(d9_62__N_1719[55]), .S1(d9_62__N_1719[56]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_57.INIT0 = 16'h5999;
     defparam sub_28_add_2_57.INIT1 = 16'h5999;
     defparam sub_28_add_2_57.INJECT1_0 = "NO";
     defparam sub_28_add_2_57.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_55 (.A0(d8[53]), .B0(d_d8[53]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[54]), .B1(d_d8[54]), .C1(GND_net), .D1(GND_net), .CIN(n2110), 
-          .COUT(n2111), .S0(d9_62__N_1719[53]), .S1(d9_62__N_1719[54]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[54]), .B1(d_d8[54]), .C1(GND_net), .D1(GND_net), .CIN(n2107), 
+          .COUT(n2108), .S0(d9_62__N_1719[53]), .S1(d9_62__N_1719[54]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_55.INIT0 = 16'h5999;
     defparam sub_28_add_2_55.INIT1 = 16'h5999;
     defparam sub_28_add_2_55.INJECT1_0 = "NO";
     defparam sub_28_add_2_55.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_53 (.A0(d8[51]), .B0(d_d8[51]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[52]), .B1(d_d8[52]), .C1(GND_net), .D1(GND_net), .CIN(n2109), 
-          .COUT(n2110), .S0(d9_62__N_1719[51]), .S1(d9_62__N_1719[52]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[52]), .B1(d_d8[52]), .C1(GND_net), .D1(GND_net), .CIN(n2106), 
+          .COUT(n2107), .S0(d9_62__N_1719[51]), .S1(d9_62__N_1719[52]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_53.INIT0 = 16'h5999;
     defparam sub_28_add_2_53.INIT1 = 16'h5999;
     defparam sub_28_add_2_53.INJECT1_0 = "NO";
     defparam sub_28_add_2_53.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_51 (.A0(d8[49]), .B0(d_d8[49]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[50]), .B1(d_d8[50]), .C1(GND_net), .D1(GND_net), .CIN(n2108), 
-          .COUT(n2109), .S0(d9_62__N_1719[49]), .S1(d9_62__N_1719[50]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[50]), .B1(d_d8[50]), .C1(GND_net), .D1(GND_net), .CIN(n2105), 
+          .COUT(n2106), .S0(d9_62__N_1719[49]), .S1(d9_62__N_1719[50]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_51.INIT0 = 16'h5999;
     defparam sub_28_add_2_51.INIT1 = 16'h5999;
     defparam sub_28_add_2_51.INJECT1_0 = "NO";
     defparam sub_28_add_2_51.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_49 (.A0(d8[47]), .B0(d_d8[47]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[48]), .B1(d_d8[48]), .C1(GND_net), .D1(GND_net), .CIN(n2107), 
-          .COUT(n2108), .S0(d9_62__N_1719[47]), .S1(d9_62__N_1719[48]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[48]), .B1(d_d8[48]), .C1(GND_net), .D1(GND_net), .CIN(n2104), 
+          .COUT(n2105), .S0(d9_62__N_1719[47]), .S1(d9_62__N_1719[48]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_49.INIT0 = 16'h5999;
     defparam sub_28_add_2_49.INIT1 = 16'h5999;
     defparam sub_28_add_2_49.INJECT1_0 = "NO";
     defparam sub_28_add_2_49.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_47 (.A0(d8[45]), .B0(d_d8[45]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[46]), .B1(d_d8[46]), .C1(GND_net), .D1(GND_net), .CIN(n2106), 
-          .COUT(n2107), .S0(d9_62__N_1719[45]), .S1(d9_62__N_1719[46]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[46]), .B1(d_d8[46]), .C1(GND_net), .D1(GND_net), .CIN(n2103), 
+          .COUT(n2104), .S0(d9_62__N_1719[45]), .S1(d9_62__N_1719[46]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_47.INIT0 = 16'h5999;
     defparam sub_28_add_2_47.INIT1 = 16'h5999;
     defparam sub_28_add_2_47.INJECT1_0 = "NO";
     defparam sub_28_add_2_47.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_45 (.A0(d8[43]), .B0(d_d8[43]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[44]), .B1(d_d8[44]), .C1(GND_net), .D1(GND_net), .CIN(n2105), 
-          .COUT(n2106), .S0(d9_62__N_1719[43]), .S1(d9_62__N_1719[44]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[44]), .B1(d_d8[44]), .C1(GND_net), .D1(GND_net), .CIN(n2102), 
+          .COUT(n2103), .S0(d9_62__N_1719[43]), .S1(d9_62__N_1719[44]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_45.INIT0 = 16'h5999;
     defparam sub_28_add_2_45.INIT1 = 16'h5999;
     defparam sub_28_add_2_45.INJECT1_0 = "NO";
     defparam sub_28_add_2_45.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_43 (.A0(d8[41]), .B0(d_d8[41]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[42]), .B1(d_d8[42]), .C1(GND_net), .D1(GND_net), .CIN(n2104), 
-          .COUT(n2105), .S0(d9_62__N_1719[41]), .S1(d9_62__N_1719[42]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[42]), .B1(d_d8[42]), .C1(GND_net), .D1(GND_net), .CIN(n2101), 
+          .COUT(n2102), .S0(d9_62__N_1719[41]), .S1(d9_62__N_1719[42]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_43.INIT0 = 16'h5999;
     defparam sub_28_add_2_43.INIT1 = 16'h5999;
     defparam sub_28_add_2_43.INJECT1_0 = "NO";
     defparam sub_28_add_2_43.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_41 (.A0(d8[39]), .B0(d_d8[39]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[40]), .B1(d_d8[40]), .C1(GND_net), .D1(GND_net), .CIN(n2103), 
-          .COUT(n2104), .S0(d9_62__N_1719[39]), .S1(d9_62__N_1719[40]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[40]), .B1(d_d8[40]), .C1(GND_net), .D1(GND_net), .CIN(n2100), 
+          .COUT(n2101), .S0(d9_62__N_1719[39]), .S1(d9_62__N_1719[40]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_41.INIT0 = 16'h5999;
     defparam sub_28_add_2_41.INIT1 = 16'h5999;
     defparam sub_28_add_2_41.INJECT1_0 = "NO";
     defparam sub_28_add_2_41.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_39 (.A0(d8[37]), .B0(d_d8[37]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[38]), .B1(d_d8[38]), .C1(GND_net), .D1(GND_net), .CIN(n2102), 
-          .COUT(n2103), .S0(d9_62__N_1719[37]), .S1(d9_62__N_1719[38]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[38]), .B1(d_d8[38]), .C1(GND_net), .D1(GND_net), .CIN(n2099), 
+          .COUT(n2100), .S0(d9_62__N_1719[37]), .S1(d9_62__N_1719[38]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_39.INIT0 = 16'h5999;
     defparam sub_28_add_2_39.INIT1 = 16'h5999;
     defparam sub_28_add_2_39.INJECT1_0 = "NO";
     defparam sub_28_add_2_39.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_37 (.A0(d8[35]), .B0(d_d8[35]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[36]), .B1(d_d8[36]), .C1(GND_net), .D1(GND_net), .CIN(n2101), 
-          .COUT(n2102), .S0(d9_62__N_1719[35]), .S1(d9_62__N_1719[36]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[36]), .B1(d_d8[36]), .C1(GND_net), .D1(GND_net), .CIN(n2098), 
+          .COUT(n2099), .S0(d9_62__N_1719[35]), .S1(d9_62__N_1719[36]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_37.INIT0 = 16'h5999;
     defparam sub_28_add_2_37.INIT1 = 16'h5999;
     defparam sub_28_add_2_37.INJECT1_0 = "NO";
     defparam sub_28_add_2_37.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_35 (.A0(d8[33]), .B0(d_d8[33]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[34]), .B1(d_d8[34]), .C1(GND_net), .D1(GND_net), .CIN(n2100), 
-          .COUT(n2101), .S0(d9_62__N_1719[33]), .S1(d9_62__N_1719[34]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[34]), .B1(d_d8[34]), .C1(GND_net), .D1(GND_net), .CIN(n2097), 
+          .COUT(n2098), .S0(d9_62__N_1719[33]), .S1(d9_62__N_1719[34]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_35.INIT0 = 16'h5999;
     defparam sub_28_add_2_35.INIT1 = 16'h5999;
     defparam sub_28_add_2_35.INJECT1_0 = "NO";
     defparam sub_28_add_2_35.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_33 (.A0(d8[31]), .B0(d_d8[31]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[32]), .B1(d_d8[32]), .C1(GND_net), .D1(GND_net), .CIN(n2099), 
-          .COUT(n2100), .S0(d9_62__N_1719[31]), .S1(d9_62__N_1719[32]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[32]), .B1(d_d8[32]), .C1(GND_net), .D1(GND_net), .CIN(n2096), 
+          .COUT(n2097), .S0(d9_62__N_1719[31]), .S1(d9_62__N_1719[32]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_33.INIT0 = 16'h5999;
     defparam sub_28_add_2_33.INIT1 = 16'h5999;
     defparam sub_28_add_2_33.INJECT1_0 = "NO";
     defparam sub_28_add_2_33.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_31 (.A0(d8[29]), .B0(d_d8[29]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[30]), .B1(d_d8[30]), .C1(GND_net), .D1(GND_net), .CIN(n2098), 
-          .COUT(n2099), .S0(d9_62__N_1719[29]), .S1(d9_62__N_1719[30]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[30]), .B1(d_d8[30]), .C1(GND_net), .D1(GND_net), .CIN(n2095), 
+          .COUT(n2096), .S0(d9_62__N_1719[29]), .S1(d9_62__N_1719[30]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_31.INIT0 = 16'h5999;
     defparam sub_28_add_2_31.INIT1 = 16'h5999;
     defparam sub_28_add_2_31.INJECT1_0 = "NO";
     defparam sub_28_add_2_31.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_29 (.A0(d8[27]), .B0(d_d8[27]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[28]), .B1(d_d8[28]), .C1(GND_net), .D1(GND_net), .CIN(n2097), 
-          .COUT(n2098), .S0(d9_62__N_1719[27]), .S1(d9_62__N_1719[28]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[28]), .B1(d_d8[28]), .C1(GND_net), .D1(GND_net), .CIN(n2094), 
+          .COUT(n2095), .S0(d9_62__N_1719[27]), .S1(d9_62__N_1719[28]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_29.INIT0 = 16'h5999;
     defparam sub_28_add_2_29.INIT1 = 16'h5999;
     defparam sub_28_add_2_29.INJECT1_0 = "NO";
     defparam sub_28_add_2_29.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_27 (.A0(d8[25]), .B0(d_d8[25]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[26]), .B1(d_d8[26]), .C1(GND_net), .D1(GND_net), .CIN(n2096), 
-          .COUT(n2097), .S0(d9_62__N_1719[25]), .S1(d9_62__N_1719[26]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[26]), .B1(d_d8[26]), .C1(GND_net), .D1(GND_net), .CIN(n2093), 
+          .COUT(n2094), .S0(d9_62__N_1719[25]), .S1(d9_62__N_1719[26]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_27.INIT0 = 16'h5999;
     defparam sub_28_add_2_27.INIT1 = 16'h5999;
     defparam sub_28_add_2_27.INJECT1_0 = "NO";
     defparam sub_28_add_2_27.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_25 (.A0(d8[23]), .B0(d_d8[23]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[24]), .B1(d_d8[24]), .C1(GND_net), .D1(GND_net), .CIN(n2095), 
-          .COUT(n2096), .S0(d9_62__N_1719[23]), .S1(d9_62__N_1719[24]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[24]), .B1(d_d8[24]), .C1(GND_net), .D1(GND_net), .CIN(n2092), 
+          .COUT(n2093), .S0(d9_62__N_1719[23]), .S1(d9_62__N_1719[24]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_25.INIT0 = 16'h5999;
     defparam sub_28_add_2_25.INIT1 = 16'h5999;
     defparam sub_28_add_2_25.INJECT1_0 = "NO";
     defparam sub_28_add_2_25.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_23 (.A0(d8[21]), .B0(d_d8[21]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[22]), .B1(d_d8[22]), .C1(GND_net), .D1(GND_net), .CIN(n2094), 
-          .COUT(n2095), .S0(d9_62__N_1719[21]), .S1(d9_62__N_1719[22]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[22]), .B1(d_d8[22]), .C1(GND_net), .D1(GND_net), .CIN(n2091), 
+          .COUT(n2092), .S0(d9_62__N_1719[21]), .S1(d9_62__N_1719[22]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_23.INIT0 = 16'h5999;
     defparam sub_28_add_2_23.INIT1 = 16'h5999;
     defparam sub_28_add_2_23.INJECT1_0 = "NO";
     defparam sub_28_add_2_23.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_21 (.A0(d8[19]), .B0(d_d8[19]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[20]), .B1(d_d8[20]), .C1(GND_net), .D1(GND_net), .CIN(n2093), 
-          .COUT(n2094), .S0(d9_62__N_1719[19]), .S1(d9_62__N_1719[20]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[20]), .B1(d_d8[20]), .C1(GND_net), .D1(GND_net), .CIN(n2090), 
+          .COUT(n2091), .S0(d9_62__N_1719[19]), .S1(d9_62__N_1719[20]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_21.INIT0 = 16'h5999;
     defparam sub_28_add_2_21.INIT1 = 16'h5999;
     defparam sub_28_add_2_21.INJECT1_0 = "NO";
     defparam sub_28_add_2_21.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_19 (.A0(d8[17]), .B0(d_d8[17]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[18]), .B1(d_d8[18]), .C1(GND_net), .D1(GND_net), .CIN(n2092), 
-          .COUT(n2093), .S0(d9_62__N_1719[17]), .S1(d9_62__N_1719[18]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[18]), .B1(d_d8[18]), .C1(GND_net), .D1(GND_net), .CIN(n2089), 
+          .COUT(n2090), .S0(d9_62__N_1719[17]), .S1(d9_62__N_1719[18]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_19.INIT0 = 16'h5999;
     defparam sub_28_add_2_19.INIT1 = 16'h5999;
     defparam sub_28_add_2_19.INJECT1_0 = "NO";
     defparam sub_28_add_2_19.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_17 (.A0(d8[15]), .B0(d_d8[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[16]), .B1(d_d8[16]), .C1(GND_net), .D1(GND_net), .CIN(n2091), 
-          .COUT(n2092), .S0(d9_62__N_1719[15]), .S1(d9_62__N_1719[16]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[16]), .B1(d_d8[16]), .C1(GND_net), .D1(GND_net), .CIN(n2088), 
+          .COUT(n2089), .S0(d9_62__N_1719[15]), .S1(d9_62__N_1719[16]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_17.INIT0 = 16'h5999;
     defparam sub_28_add_2_17.INIT1 = 16'h5999;
     defparam sub_28_add_2_17.INJECT1_0 = "NO";
     defparam sub_28_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_15 (.A0(d8[13]), .B0(d_d8[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[14]), .B1(d_d8[14]), .C1(GND_net), .D1(GND_net), .CIN(n2090), 
-          .COUT(n2091), .S0(d9_62__N_1719[13]), .S1(d9_62__N_1719[14]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[14]), .B1(d_d8[14]), .C1(GND_net), .D1(GND_net), .CIN(n2087), 
+          .COUT(n2088), .S0(d9_62__N_1719[13]), .S1(d9_62__N_1719[14]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_15.INIT0 = 16'h5999;
     defparam sub_28_add_2_15.INIT1 = 16'h5999;
     defparam sub_28_add_2_15.INJECT1_0 = "NO";
     defparam sub_28_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_13 (.A0(d8[11]), .B0(d_d8[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[12]), .B1(d_d8[12]), .C1(GND_net), .D1(GND_net), .CIN(n2089), 
-          .COUT(n2090), .S0(d9_62__N_1719[11]), .S1(d9_62__N_1719[12]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[12]), .B1(d_d8[12]), .C1(GND_net), .D1(GND_net), .CIN(n2086), 
+          .COUT(n2087), .S0(d9_62__N_1719[11]), .S1(d9_62__N_1719[12]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_13.INIT0 = 16'h5999;
     defparam sub_28_add_2_13.INIT1 = 16'h5999;
     defparam sub_28_add_2_13.INJECT1_0 = "NO";
     defparam sub_28_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_11 (.A0(d8[9]), .B0(d_d8[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[10]), .B1(d_d8[10]), .C1(GND_net), .D1(GND_net), .CIN(n2088), 
-          .COUT(n2089), .S0(d9_62__N_1719[9]), .S1(d9_62__N_1719[10]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[10]), .B1(d_d8[10]), .C1(GND_net), .D1(GND_net), .CIN(n2085), 
+          .COUT(n2086), .S0(d9_62__N_1719[9]), .S1(d9_62__N_1719[10]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_11.INIT0 = 16'h5999;
     defparam sub_28_add_2_11.INIT1 = 16'h5999;
     defparam sub_28_add_2_11.INJECT1_0 = "NO";
     defparam sub_28_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_9 (.A0(d8[7]), .B0(d_d8[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[8]), .B1(d_d8[8]), .C1(GND_net), .D1(GND_net), .CIN(n2087), 
-          .COUT(n2088), .S0(d9_62__N_1719[7]), .S1(d9_62__N_1719[8]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[8]), .B1(d_d8[8]), .C1(GND_net), .D1(GND_net), .CIN(n2084), 
+          .COUT(n2085), .S0(d9_62__N_1719[7]), .S1(d9_62__N_1719[8]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_9.INIT0 = 16'h5999;
     defparam sub_28_add_2_9.INIT1 = 16'h5999;
     defparam sub_28_add_2_9.INJECT1_0 = "NO";
     defparam sub_28_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_7 (.A0(d8[5]), .B0(d_d8[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[6]), .B1(d_d8[6]), .C1(GND_net), .D1(GND_net), .CIN(n2086), 
-          .COUT(n2087), .S0(d9_62__N_1719[5]), .S1(d9_62__N_1719[6]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[6]), .B1(d_d8[6]), .C1(GND_net), .D1(GND_net), .CIN(n2083), 
+          .COUT(n2084), .S0(d9_62__N_1719[5]), .S1(d9_62__N_1719[6]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_7.INIT0 = 16'h5999;
     defparam sub_28_add_2_7.INIT1 = 16'h5999;
     defparam sub_28_add_2_7.INJECT1_0 = "NO";
     defparam sub_28_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_5 (.A0(d8[3]), .B0(d_d8[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[4]), .B1(d_d8[4]), .C1(GND_net), .D1(GND_net), .CIN(n2085), 
-          .COUT(n2086), .S0(d9_62__N_1719[3]), .S1(d9_62__N_1719[4]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[4]), .B1(d_d8[4]), .C1(GND_net), .D1(GND_net), .CIN(n2082), 
+          .COUT(n2083), .S0(d9_62__N_1719[3]), .S1(d9_62__N_1719[4]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_5.INIT0 = 16'h5999;
     defparam sub_28_add_2_5.INIT1 = 16'h5999;
     defparam sub_28_add_2_5.INJECT1_0 = "NO";
     defparam sub_28_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_3 (.A0(d8[1]), .B0(d_d8[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[2]), .B1(d_d8[2]), .C1(GND_net), .D1(GND_net), .CIN(n2084), 
-          .COUT(n2085), .S0(d9_62__N_1719[1]), .S1(d9_62__N_1719[2]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[2]), .B1(d_d8[2]), .C1(GND_net), .D1(GND_net), .CIN(n2081), 
+          .COUT(n2082), .S0(d9_62__N_1719[1]), .S1(d9_62__N_1719[2]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_3.INIT0 = 16'h5999;
     defparam sub_28_add_2_3.INIT1 = 16'h5999;
     defparam sub_28_add_2_3.INJECT1_0 = "NO";
     defparam sub_28_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[0]), .B1(d_d8[0]), .C1(GND_net), .D1(GND_net), .COUT(n2084), 
+          .A1(d8[0]), .B1(d_d8[0]), .C1(GND_net), .D1(GND_net), .COUT(n2081), 
           .S1(d9_62__N_1719[0]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_1.INIT0 = 16'h0000;
     defparam sub_28_add_2_1.INIT1 = 16'h5999;
     defparam sub_28_add_2_1.INJECT1_0 = "NO";
     defparam sub_28_add_2_1.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_63 (.A0(d9[61]), .B0(d_d9[61]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[62]), .B1(d_d9[62]), .C1(GND_net), .D1(GND_net), .CIN(n2082), 
+          .A1(d9[62]), .B1(d_d9[62]), .C1(GND_net), .D1(GND_net), .CIN(n2079), 
           .S0(d10_62__N_1782[61]), .S1(d10_62__N_1782[62]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_63.INIT0 = 16'h5999;
     defparam sub_29_add_2_63.INIT1 = 16'h5999;
     defparam sub_29_add_2_63.INJECT1_0 = "NO";
     defparam sub_29_add_2_63.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_61 (.A0(d9[59]), .B0(d_d9[59]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[60]), .B1(d_d9[60]), .C1(GND_net), .D1(GND_net), .CIN(n2081), 
-          .COUT(n2082), .S0(d10_62__N_1782[59]), .S1(d10_62__N_1782[60]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[60]), .B1(d_d9[60]), .C1(GND_net), .D1(GND_net), .CIN(n2078), 
+          .COUT(n2079), .S0(d10_62__N_1782[59]), .S1(d10_62__N_1782[60]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_61.INIT0 = 16'h5999;
     defparam sub_29_add_2_61.INIT1 = 16'h5999;
     defparam sub_29_add_2_61.INJECT1_0 = "NO";
     defparam sub_29_add_2_61.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_59 (.A0(d9[57]), .B0(d_d9[57]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[58]), .B1(d_d9[58]), .C1(GND_net), .D1(GND_net), .CIN(n2080), 
-          .COUT(n2081), .S0(d10_62__N_1782[57]), .S1(d10_62__N_1782[58]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[58]), .B1(d_d9[58]), .C1(GND_net), .D1(GND_net), .CIN(n2077), 
+          .COUT(n2078), .S0(d10_62__N_1782[57]), .S1(d10_62__N_1782[58]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_59.INIT0 = 16'h5999;
     defparam sub_29_add_2_59.INIT1 = 16'h5999;
     defparam sub_29_add_2_59.INJECT1_0 = "NO";
     defparam sub_29_add_2_59.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_57 (.A0(d9[55]), .B0(d_d9[55]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[56]), .B1(d_d9[56]), .C1(GND_net), .D1(GND_net), .CIN(n2079), 
-          .COUT(n2080), .S0(d10_62__N_1782[55]), .S1(d10_62__N_1782[56]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[56]), .B1(d_d9[56]), .C1(GND_net), .D1(GND_net), .CIN(n2076), 
+          .COUT(n2077), .S0(d10_62__N_1782[55]), .S1(d10_62__N_1782[56]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_57.INIT0 = 16'h5999;
     defparam sub_29_add_2_57.INIT1 = 16'h5999;
     defparam sub_29_add_2_57.INJECT1_0 = "NO";
     defparam sub_29_add_2_57.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_55 (.A0(d9[53]), .B0(d_d9[53]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[54]), .B1(d_d9[54]), .C1(GND_net), .D1(GND_net), .CIN(n2078), 
-          .COUT(n2079));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[54]), .B1(d_d9[54]), .C1(GND_net), .D1(GND_net), .CIN(n2075), 
+          .COUT(n2076));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_55.INIT0 = 16'h5999;
     defparam sub_29_add_2_55.INIT1 = 16'h5999;
     defparam sub_29_add_2_55.INJECT1_0 = "NO";
     defparam sub_29_add_2_55.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_53 (.A0(d9[51]), .B0(d_d9[51]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[52]), .B1(d_d9[52]), .C1(GND_net), .D1(GND_net), .CIN(n2077), 
-          .COUT(n2078));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[52]), .B1(d_d9[52]), .C1(GND_net), .D1(GND_net), .CIN(n2074), 
+          .COUT(n2075));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_53.INIT0 = 16'h5999;
     defparam sub_29_add_2_53.INIT1 = 16'h5999;
     defparam sub_29_add_2_53.INJECT1_0 = "NO";
     defparam sub_29_add_2_53.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_51 (.A0(d9[49]), .B0(d_d9[49]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[50]), .B1(d_d9[50]), .C1(GND_net), .D1(GND_net), .CIN(n2076), 
-          .COUT(n2077));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[50]), .B1(d_d9[50]), .C1(GND_net), .D1(GND_net), .CIN(n2073), 
+          .COUT(n2074));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_51.INIT0 = 16'h5999;
     defparam sub_29_add_2_51.INIT1 = 16'h5999;
     defparam sub_29_add_2_51.INJECT1_0 = "NO";
     defparam sub_29_add_2_51.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_49 (.A0(d9[47]), .B0(d_d9[47]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[48]), .B1(d_d9[48]), .C1(GND_net), .D1(GND_net), .CIN(n2075), 
-          .COUT(n2076));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[48]), .B1(d_d9[48]), .C1(GND_net), .D1(GND_net), .CIN(n2072), 
+          .COUT(n2073));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_49.INIT0 = 16'h5999;
     defparam sub_29_add_2_49.INIT1 = 16'h5999;
     defparam sub_29_add_2_49.INJECT1_0 = "NO";
     defparam sub_29_add_2_49.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_47 (.A0(d9[45]), .B0(d_d9[45]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[46]), .B1(d_d9[46]), .C1(GND_net), .D1(GND_net), .CIN(n2074), 
-          .COUT(n2075));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[46]), .B1(d_d9[46]), .C1(GND_net), .D1(GND_net), .CIN(n2071), 
+          .COUT(n2072));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_47.INIT0 = 16'h5999;
     defparam sub_29_add_2_47.INIT1 = 16'h5999;
     defparam sub_29_add_2_47.INJECT1_0 = "NO";
     defparam sub_29_add_2_47.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_45 (.A0(d9[43]), .B0(d_d9[43]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[44]), .B1(d_d9[44]), .C1(GND_net), .D1(GND_net), .CIN(n2073), 
-          .COUT(n2074));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[44]), .B1(d_d9[44]), .C1(GND_net), .D1(GND_net), .CIN(n2070), 
+          .COUT(n2071));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_45.INIT0 = 16'h5999;
     defparam sub_29_add_2_45.INIT1 = 16'h5999;
     defparam sub_29_add_2_45.INJECT1_0 = "NO";
     defparam sub_29_add_2_45.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_43 (.A0(d9[41]), .B0(d_d9[41]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[42]), .B1(d_d9[42]), .C1(GND_net), .D1(GND_net), .CIN(n2072), 
-          .COUT(n2073));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[42]), .B1(d_d9[42]), .C1(GND_net), .D1(GND_net), .CIN(n2069), 
+          .COUT(n2070));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_43.INIT0 = 16'h5999;
     defparam sub_29_add_2_43.INIT1 = 16'h5999;
     defparam sub_29_add_2_43.INJECT1_0 = "NO";
     defparam sub_29_add_2_43.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_41 (.A0(d9[39]), .B0(d_d9[39]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[40]), .B1(d_d9[40]), .C1(GND_net), .D1(GND_net), .CIN(n2071), 
-          .COUT(n2072));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[40]), .B1(d_d9[40]), .C1(GND_net), .D1(GND_net), .CIN(n2068), 
+          .COUT(n2069));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_41.INIT0 = 16'h5999;
     defparam sub_29_add_2_41.INIT1 = 16'h5999;
     defparam sub_29_add_2_41.INJECT1_0 = "NO";
     defparam sub_29_add_2_41.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_39 (.A0(d9[37]), .B0(d_d9[37]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[38]), .B1(d_d9[38]), .C1(GND_net), .D1(GND_net), .CIN(n2070), 
-          .COUT(n2071));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[38]), .B1(d_d9[38]), .C1(GND_net), .D1(GND_net), .CIN(n2067), 
+          .COUT(n2068));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_39.INIT0 = 16'h5999;
     defparam sub_29_add_2_39.INIT1 = 16'h5999;
     defparam sub_29_add_2_39.INJECT1_0 = "NO";
     defparam sub_29_add_2_39.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_37 (.A0(d9[35]), .B0(d_d9[35]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[36]), .B1(d_d9[36]), .C1(GND_net), .D1(GND_net), .CIN(n2069), 
-          .COUT(n2070));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[36]), .B1(d_d9[36]), .C1(GND_net), .D1(GND_net), .CIN(n2066), 
+          .COUT(n2067));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_37.INIT0 = 16'h5999;
     defparam sub_29_add_2_37.INIT1 = 16'h5999;
     defparam sub_29_add_2_37.INJECT1_0 = "NO";
     defparam sub_29_add_2_37.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_35 (.A0(d9[33]), .B0(d_d9[33]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[34]), .B1(d_d9[34]), .C1(GND_net), .D1(GND_net), .CIN(n2068), 
-          .COUT(n2069));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[34]), .B1(d_d9[34]), .C1(GND_net), .D1(GND_net), .CIN(n2065), 
+          .COUT(n2066));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_35.INIT0 = 16'h5999;
     defparam sub_29_add_2_35.INIT1 = 16'h5999;
     defparam sub_29_add_2_35.INJECT1_0 = "NO";
     defparam sub_29_add_2_35.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_33 (.A0(d9[31]), .B0(d_d9[31]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[32]), .B1(d_d9[32]), .C1(GND_net), .D1(GND_net), .CIN(n2067), 
-          .COUT(n2068));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[32]), .B1(d_d9[32]), .C1(GND_net), .D1(GND_net), .CIN(n2064), 
+          .COUT(n2065));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_33.INIT0 = 16'h5999;
     defparam sub_29_add_2_33.INIT1 = 16'h5999;
     defparam sub_29_add_2_33.INJECT1_0 = "NO";
     defparam sub_29_add_2_33.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_31 (.A0(d9[29]), .B0(d_d9[29]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[30]), .B1(d_d9[30]), .C1(GND_net), .D1(GND_net), .CIN(n2066), 
-          .COUT(n2067));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[30]), .B1(d_d9[30]), .C1(GND_net), .D1(GND_net), .CIN(n2063), 
+          .COUT(n2064));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_31.INIT0 = 16'h5999;
     defparam sub_29_add_2_31.INIT1 = 16'h5999;
     defparam sub_29_add_2_31.INJECT1_0 = "NO";
     defparam sub_29_add_2_31.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_29 (.A0(d9[27]), .B0(d_d9[27]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[28]), .B1(d_d9[28]), .C1(GND_net), .D1(GND_net), .CIN(n2065), 
-          .COUT(n2066));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[28]), .B1(d_d9[28]), .C1(GND_net), .D1(GND_net), .CIN(n2062), 
+          .COUT(n2063));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_29.INIT0 = 16'h5999;
     defparam sub_29_add_2_29.INIT1 = 16'h5999;
     defparam sub_29_add_2_29.INJECT1_0 = "NO";
     defparam sub_29_add_2_29.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_50 (.A0(CIC1_out[7]), .B0(d1[48]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[49]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1908), .COUT(n1909), .S0(d1_62__N_615[48]), 
+          .D1(GND_net), .CIN(n1905), .COUT(n1906), .S0(d1_62__N_615[48]), 
           .S1(d1_62__N_615[49]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_50.INIT0 = 16'h5666;
     defparam d_in_7__I_0_50.INIT1 = 16'h5666;
     defparam d_in_7__I_0_50.INJECT1_0 = "NO";
     defparam d_in_7__I_0_50.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_27 (.A0(d9[25]), .B0(d_d9[25]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[26]), .B1(d_d9[26]), .C1(GND_net), .D1(GND_net), .CIN(n2064), 
-          .COUT(n2065));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[26]), .B1(d_d9[26]), .C1(GND_net), .D1(GND_net), .CIN(n2061), 
+          .COUT(n2062));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_27.INIT0 = 16'h5999;
     defparam sub_29_add_2_27.INIT1 = 16'h5999;
     defparam sub_29_add_2_27.INJECT1_0 = "NO";
     defparam sub_29_add_2_27.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_25 (.A0(d9[23]), .B0(d_d9[23]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[24]), .B1(d_d9[24]), .C1(GND_net), .D1(GND_net), .CIN(n2063), 
-          .COUT(n2064));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[24]), .B1(d_d9[24]), .C1(GND_net), .D1(GND_net), .CIN(n2060), 
+          .COUT(n2061));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_25.INIT0 = 16'h5999;
     defparam sub_29_add_2_25.INIT1 = 16'h5999;
     defparam sub_29_add_2_25.INJECT1_0 = "NO";
     defparam sub_29_add_2_25.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_23 (.A0(d9[21]), .B0(d_d9[21]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[22]), .B1(d_d9[22]), .C1(GND_net), .D1(GND_net), .CIN(n2062), 
-          .COUT(n2063));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[22]), .B1(d_d9[22]), .C1(GND_net), .D1(GND_net), .CIN(n2059), 
+          .COUT(n2060));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_23.INIT0 = 16'h5999;
     defparam sub_29_add_2_23.INIT1 = 16'h5999;
     defparam sub_29_add_2_23.INJECT1_0 = "NO";
     defparam sub_29_add_2_23.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_32 (.A0(d2[30]), .B0(d3[30]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[31]), .B1(d3[31]), .C1(GND_net), .D1(GND_net), .CIN(n1963), 
-          .COUT(n1964), .S0(d3_62__N_741[30]), .S1(d3_62__N_741[31]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[31]), .B1(d3[31]), .C1(GND_net), .D1(GND_net), .CIN(n1960), 
+          .COUT(n1961), .S0(d3_62__N_741[30]), .S1(d3_62__N_741[31]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_32.INIT0 = 16'h5666;
     defparam d2_62__I_0_32.INIT1 = 16'h5666;
     defparam d2_62__I_0_32.INJECT1_0 = "NO";
     defparam d2_62__I_0_32.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_21 (.A0(d9[19]), .B0(d_d9[19]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[20]), .B1(d_d9[20]), .C1(GND_net), .D1(GND_net), .CIN(n2061), 
-          .COUT(n2062));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[20]), .B1(d_d9[20]), .C1(GND_net), .D1(GND_net), .CIN(n2058), 
+          .COUT(n2059));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_21.INIT0 = 16'h5999;
     defparam sub_29_add_2_21.INIT1 = 16'h5999;
     defparam sub_29_add_2_21.INJECT1_0 = "NO";
     defparam sub_29_add_2_21.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_19 (.A0(d9[17]), .B0(d_d9[17]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[18]), .B1(d_d9[18]), .C1(GND_net), .D1(GND_net), .CIN(n2060), 
-          .COUT(n2061));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[18]), .B1(d_d9[18]), .C1(GND_net), .D1(GND_net), .CIN(n2057), 
+          .COUT(n2058));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_19.INIT0 = 16'h5999;
     defparam sub_29_add_2_19.INIT1 = 16'h5999;
     defparam sub_29_add_2_19.INJECT1_0 = "NO";
     defparam sub_29_add_2_19.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_17 (.A0(d9[15]), .B0(d_d9[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[16]), .B1(d_d9[16]), .C1(GND_net), .D1(GND_net), .CIN(n2059), 
-          .COUT(n2060));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[16]), .B1(d_d9[16]), .C1(GND_net), .D1(GND_net), .CIN(n2056), 
+          .COUT(n2057));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_17.INIT0 = 16'h5999;
     defparam sub_29_add_2_17.INIT1 = 16'h5999;
     defparam sub_29_add_2_17.INJECT1_0 = "NO";
     defparam sub_29_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_15 (.A0(d9[13]), .B0(d_d9[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[14]), .B1(d_d9[14]), .C1(GND_net), .D1(GND_net), .CIN(n2058), 
-          .COUT(n2059));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[14]), .B1(d_d9[14]), .C1(GND_net), .D1(GND_net), .CIN(n2055), 
+          .COUT(n2056));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_15.INIT0 = 16'h5999;
     defparam sub_29_add_2_15.INIT1 = 16'h5999;
     defparam sub_29_add_2_15.INJECT1_0 = "NO";
     defparam sub_29_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_13 (.A0(d9[11]), .B0(d_d9[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[12]), .B1(d_d9[12]), .C1(GND_net), .D1(GND_net), .CIN(n2057), 
-          .COUT(n2058));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[12]), .B1(d_d9[12]), .C1(GND_net), .D1(GND_net), .CIN(n2054), 
+          .COUT(n2055));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_13.INIT0 = 16'h5999;
     defparam sub_29_add_2_13.INIT1 = 16'h5999;
     defparam sub_29_add_2_13.INJECT1_0 = "NO";
     defparam sub_29_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_11 (.A0(d9[9]), .B0(d_d9[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[10]), .B1(d_d9[10]), .C1(GND_net), .D1(GND_net), .CIN(n2056), 
-          .COUT(n2057));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[10]), .B1(d_d9[10]), .C1(GND_net), .D1(GND_net), .CIN(n2053), 
+          .COUT(n2054));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_11.INIT0 = 16'h5999;
     defparam sub_29_add_2_11.INIT1 = 16'h5999;
     defparam sub_29_add_2_11.INJECT1_0 = "NO";
     defparam sub_29_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_9 (.A0(d9[7]), .B0(d_d9[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[8]), .B1(d_d9[8]), .C1(GND_net), .D1(GND_net), .CIN(n2055), 
-          .COUT(n2056));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[8]), .B1(d_d9[8]), .C1(GND_net), .D1(GND_net), .CIN(n2052), 
+          .COUT(n2053));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_9.INIT0 = 16'h5999;
     defparam sub_29_add_2_9.INIT1 = 16'h5999;
     defparam sub_29_add_2_9.INJECT1_0 = "NO";
     defparam sub_29_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_7 (.A0(d9[5]), .B0(d_d9[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[6]), .B1(d_d9[6]), .C1(GND_net), .D1(GND_net), .CIN(n2054), 
-          .COUT(n2055));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[6]), .B1(d_d9[6]), .C1(GND_net), .D1(GND_net), .CIN(n2051), 
+          .COUT(n2052));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_7.INIT0 = 16'h5999;
     defparam sub_29_add_2_7.INIT1 = 16'h5999;
     defparam sub_29_add_2_7.INJECT1_0 = "NO";
     defparam sub_29_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_5 (.A0(d9[3]), .B0(d_d9[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[4]), .B1(d_d9[4]), .C1(GND_net), .D1(GND_net), .CIN(n2053), 
-          .COUT(n2054));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[4]), .B1(d_d9[4]), .C1(GND_net), .D1(GND_net), .CIN(n2050), 
+          .COUT(n2051));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_5.INIT0 = 16'h5999;
     defparam sub_29_add_2_5.INIT1 = 16'h5999;
     defparam sub_29_add_2_5.INJECT1_0 = "NO";
     defparam sub_29_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_3 (.A0(d9[1]), .B0(d_d9[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[2]), .B1(d_d9[2]), .C1(GND_net), .D1(GND_net), .CIN(n2052), 
-          .COUT(n2053));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[2]), .B1(d_d9[2]), .C1(GND_net), .D1(GND_net), .CIN(n2049), 
+          .COUT(n2050));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_3.INIT0 = 16'h5999;
     defparam sub_29_add_2_3.INIT1 = 16'h5999;
     defparam sub_29_add_2_3.INJECT1_0 = "NO";
     defparam sub_29_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[0]), .B1(d_d9[0]), .C1(GND_net), .D1(GND_net), .COUT(n2052));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[0]), .B1(d_d9[0]), .C1(GND_net), .D1(GND_net), .COUT(n2049));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_1.INIT0 = 16'h0000;
     defparam sub_29_add_2_1.INIT1 = 16'h5999;
     defparam sub_29_add_2_1.INJECT1_0 = "NO";
     defparam sub_29_add_2_1.INJECT1_1 = "NO";
     CCU2D add_10_17 (.A0(count[15]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2051), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2048), 
           .S0(n330[15]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_17.INIT0 = 16'h5aaa;
     defparam add_10_17.INIT1 = 16'h0000;
@@ -5340,287 +5344,287 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam add_10_17.INJECT1_1 = "NO";
     CCU2D add_10_15 (.A0(count[13]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[14]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2050), .COUT(n2051), .S0(n330[13]), .S1(n330[14]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n2047), .COUT(n2048), .S0(n330[13]), .S1(n330[14]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_15.INIT0 = 16'h5aaa;
     defparam add_10_15.INIT1 = 16'h5aaa;
     defparam add_10_15.INJECT1_0 = "NO";
     defparam add_10_15.INJECT1_1 = "NO";
     CCU2D add_10_13 (.A0(count[11]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[12]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2049), .COUT(n2050), .S0(n330[11]), .S1(n330[12]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n2046), .COUT(n2047), .S0(n330[11]), .S1(n330[12]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_13.INIT0 = 16'h5aaa;
     defparam add_10_13.INIT1 = 16'h5aaa;
     defparam add_10_13.INJECT1_0 = "NO";
     defparam add_10_13.INJECT1_1 = "NO";
     CCU2D add_10_11 (.A0(count[9]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[10]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2048), .COUT(n2049), .S0(n330[9]), .S1(n330[10]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n2045), .COUT(n2046), .S0(n330[9]), .S1(n330[10]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_11.INIT0 = 16'h5aaa;
     defparam add_10_11.INIT1 = 16'h5aaa;
     defparam add_10_11.INJECT1_0 = "NO";
     defparam add_10_11.INJECT1_1 = "NO";
     CCU2D add_10_9 (.A0(count[7]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[8]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2047), 
-          .COUT(n2048), .S0(n330[7]), .S1(n330[8]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[8]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2044), 
+          .COUT(n2045), .S0(n330[7]), .S1(n330[8]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_9.INIT0 = 16'h5aaa;
     defparam add_10_9.INIT1 = 16'h5aaa;
     defparam add_10_9.INJECT1_0 = "NO";
     defparam add_10_9.INJECT1_1 = "NO";
     CCU2D add_10_7 (.A0(count[5]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[6]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2046), 
-          .COUT(n2047), .S0(n330[5]), .S1(n330[6]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[6]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2043), 
+          .COUT(n2044), .S0(n330[5]), .S1(n330[6]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_7.INIT0 = 16'h5aaa;
     defparam add_10_7.INIT1 = 16'h5aaa;
     defparam add_10_7.INJECT1_0 = "NO";
     defparam add_10_7.INJECT1_1 = "NO";
     CCU2D add_10_5 (.A0(count[3]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[4]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2045), 
-          .COUT(n2046), .S0(n330[3]), .S1(n330[4]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[4]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2042), 
+          .COUT(n2043), .S0(n330[3]), .S1(n330[4]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_5.INIT0 = 16'h5aaa;
     defparam add_10_5.INIT1 = 16'h5aaa;
     defparam add_10_5.INJECT1_0 = "NO";
     defparam add_10_5.INJECT1_1 = "NO";
     CCU2D add_10_3 (.A0(count[1]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[2]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2044), 
-          .COUT(n2045), .S0(n330[1]), .S1(n330[2]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[2]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2041), 
+          .COUT(n2042), .S0(n330[1]), .S1(n330[2]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_3.INIT0 = 16'h5aaa;
     defparam add_10_3.INIT1 = 16'h5aaa;
     defparam add_10_3.INJECT1_0 = "NO";
     defparam add_10_3.INJECT1_1 = "NO";
     CCU2D add_10_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .COUT(n2044), 
+          .A1(count[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .COUT(n2041), 
           .S1(n330[0]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_1.INIT0 = 16'hF000;
     defparam add_10_1.INIT1 = 16'h5555;
     defparam add_10_1.INJECT1_0 = "NO";
     defparam add_10_1.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_64 (.A0(d4[62]), .B0(d5[62]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2043), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2040), 
           .S0(d5_62__N_867[62]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_64.INIT0 = 16'h5666;
     defparam d4_62__I_0_64.INIT1 = 16'h0000;
     defparam d4_62__I_0_64.INJECT1_0 = "NO";
     defparam d4_62__I_0_64.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_62 (.A0(d4[60]), .B0(d5[60]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[61]), .B1(d5[61]), .C1(GND_net), .D1(GND_net), .CIN(n2042), 
-          .COUT(n2043), .S0(d5_62__N_867[60]), .S1(d5_62__N_867[61]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[61]), .B1(d5[61]), .C1(GND_net), .D1(GND_net), .CIN(n2039), 
+          .COUT(n2040), .S0(d5_62__N_867[60]), .S1(d5_62__N_867[61]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_62.INIT0 = 16'h5666;
     defparam d4_62__I_0_62.INIT1 = 16'h5666;
     defparam d4_62__I_0_62.INJECT1_0 = "NO";
     defparam d4_62__I_0_62.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_60 (.A0(d4[58]), .B0(d5[58]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[59]), .B1(d5[59]), .C1(GND_net), .D1(GND_net), .CIN(n2041), 
-          .COUT(n2042), .S0(d5_62__N_867[58]), .S1(d5_62__N_867[59]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[59]), .B1(d5[59]), .C1(GND_net), .D1(GND_net), .CIN(n2038), 
+          .COUT(n2039), .S0(d5_62__N_867[58]), .S1(d5_62__N_867[59]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_60.INIT0 = 16'h5666;
     defparam d4_62__I_0_60.INIT1 = 16'h5666;
     defparam d4_62__I_0_60.INJECT1_0 = "NO";
     defparam d4_62__I_0_60.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_58 (.A0(d4[56]), .B0(d5[56]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[57]), .B1(d5[57]), .C1(GND_net), .D1(GND_net), .CIN(n2040), 
-          .COUT(n2041), .S0(d5_62__N_867[56]), .S1(d5_62__N_867[57]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[57]), .B1(d5[57]), .C1(GND_net), .D1(GND_net), .CIN(n2037), 
+          .COUT(n2038), .S0(d5_62__N_867[56]), .S1(d5_62__N_867[57]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_58.INIT0 = 16'h5666;
     defparam d4_62__I_0_58.INIT1 = 16'h5666;
     defparam d4_62__I_0_58.INJECT1_0 = "NO";
     defparam d4_62__I_0_58.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_56 (.A0(d4[54]), .B0(d5[54]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[55]), .B1(d5[55]), .C1(GND_net), .D1(GND_net), .CIN(n2039), 
-          .COUT(n2040), .S0(d5_62__N_867[54]), .S1(d5_62__N_867[55]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[55]), .B1(d5[55]), .C1(GND_net), .D1(GND_net), .CIN(n2036), 
+          .COUT(n2037), .S0(d5_62__N_867[54]), .S1(d5_62__N_867[55]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_56.INIT0 = 16'h5666;
     defparam d4_62__I_0_56.INIT1 = 16'h5666;
     defparam d4_62__I_0_56.INJECT1_0 = "NO";
     defparam d4_62__I_0_56.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_54 (.A0(d4[52]), .B0(d5[52]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[53]), .B1(d5[53]), .C1(GND_net), .D1(GND_net), .CIN(n2038), 
-          .COUT(n2039), .S0(d5_62__N_867[52]), .S1(d5_62__N_867[53]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[53]), .B1(d5[53]), .C1(GND_net), .D1(GND_net), .CIN(n2035), 
+          .COUT(n2036), .S0(d5_62__N_867[52]), .S1(d5_62__N_867[53]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_54.INIT0 = 16'h5666;
     defparam d4_62__I_0_54.INIT1 = 16'h5666;
     defparam d4_62__I_0_54.INJECT1_0 = "NO";
     defparam d4_62__I_0_54.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_52 (.A0(d4[50]), .B0(d5[50]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[51]), .B1(d5[51]), .C1(GND_net), .D1(GND_net), .CIN(n2037), 
-          .COUT(n2038), .S0(d5_62__N_867[50]), .S1(d5_62__N_867[51]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[51]), .B1(d5[51]), .C1(GND_net), .D1(GND_net), .CIN(n2034), 
+          .COUT(n2035), .S0(d5_62__N_867[50]), .S1(d5_62__N_867[51]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_52.INIT0 = 16'h5666;
     defparam d4_62__I_0_52.INIT1 = 16'h5666;
     defparam d4_62__I_0_52.INJECT1_0 = "NO";
     defparam d4_62__I_0_52.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_50 (.A0(d4[48]), .B0(d5[48]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[49]), .B1(d5[49]), .C1(GND_net), .D1(GND_net), .CIN(n2036), 
-          .COUT(n2037), .S0(d5_62__N_867[48]), .S1(d5_62__N_867[49]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[49]), .B1(d5[49]), .C1(GND_net), .D1(GND_net), .CIN(n2033), 
+          .COUT(n2034), .S0(d5_62__N_867[48]), .S1(d5_62__N_867[49]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_50.INIT0 = 16'h5666;
     defparam d4_62__I_0_50.INIT1 = 16'h5666;
     defparam d4_62__I_0_50.INJECT1_0 = "NO";
     defparam d4_62__I_0_50.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_48 (.A0(d4[46]), .B0(d5[46]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[47]), .B1(d5[47]), .C1(GND_net), .D1(GND_net), .CIN(n2035), 
-          .COUT(n2036), .S0(d5_62__N_867[46]), .S1(d5_62__N_867[47]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[47]), .B1(d5[47]), .C1(GND_net), .D1(GND_net), .CIN(n2032), 
+          .COUT(n2033), .S0(d5_62__N_867[46]), .S1(d5_62__N_867[47]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_48.INIT0 = 16'h5666;
     defparam d4_62__I_0_48.INIT1 = 16'h5666;
     defparam d4_62__I_0_48.INJECT1_0 = "NO";
     defparam d4_62__I_0_48.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_46 (.A0(d4[44]), .B0(d5[44]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[45]), .B1(d5[45]), .C1(GND_net), .D1(GND_net), .CIN(n2034), 
-          .COUT(n2035), .S0(d5_62__N_867[44]), .S1(d5_62__N_867[45]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[45]), .B1(d5[45]), .C1(GND_net), .D1(GND_net), .CIN(n2031), 
+          .COUT(n2032), .S0(d5_62__N_867[44]), .S1(d5_62__N_867[45]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_46.INIT0 = 16'h5666;
     defparam d4_62__I_0_46.INIT1 = 16'h5666;
     defparam d4_62__I_0_46.INJECT1_0 = "NO";
     defparam d4_62__I_0_46.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_44 (.A0(d4[42]), .B0(d5[42]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[43]), .B1(d5[43]), .C1(GND_net), .D1(GND_net), .CIN(n2033), 
-          .COUT(n2034), .S0(d5_62__N_867[42]), .S1(d5_62__N_867[43]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[43]), .B1(d5[43]), .C1(GND_net), .D1(GND_net), .CIN(n2030), 
+          .COUT(n2031), .S0(d5_62__N_867[42]), .S1(d5_62__N_867[43]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_44.INIT0 = 16'h5666;
     defparam d4_62__I_0_44.INIT1 = 16'h5666;
     defparam d4_62__I_0_44.INJECT1_0 = "NO";
     defparam d4_62__I_0_44.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_42 (.A0(d4[40]), .B0(d5[40]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[41]), .B1(d5[41]), .C1(GND_net), .D1(GND_net), .CIN(n2032), 
-          .COUT(n2033), .S0(d5_62__N_867[40]), .S1(d5_62__N_867[41]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[41]), .B1(d5[41]), .C1(GND_net), .D1(GND_net), .CIN(n2029), 
+          .COUT(n2030), .S0(d5_62__N_867[40]), .S1(d5_62__N_867[41]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_42.INIT0 = 16'h5666;
     defparam d4_62__I_0_42.INIT1 = 16'h5666;
     defparam d4_62__I_0_42.INJECT1_0 = "NO";
     defparam d4_62__I_0_42.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_40 (.A0(d4[38]), .B0(d5[38]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[39]), .B1(d5[39]), .C1(GND_net), .D1(GND_net), .CIN(n2031), 
-          .COUT(n2032), .S0(d5_62__N_867[38]), .S1(d5_62__N_867[39]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[39]), .B1(d5[39]), .C1(GND_net), .D1(GND_net), .CIN(n2028), 
+          .COUT(n2029), .S0(d5_62__N_867[38]), .S1(d5_62__N_867[39]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_40.INIT0 = 16'h5666;
     defparam d4_62__I_0_40.INIT1 = 16'h5666;
     defparam d4_62__I_0_40.INJECT1_0 = "NO";
     defparam d4_62__I_0_40.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_38 (.A0(d4[36]), .B0(d5[36]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[37]), .B1(d5[37]), .C1(GND_net), .D1(GND_net), .CIN(n2030), 
-          .COUT(n2031), .S0(d5_62__N_867[36]), .S1(d5_62__N_867[37]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[37]), .B1(d5[37]), .C1(GND_net), .D1(GND_net), .CIN(n2027), 
+          .COUT(n2028), .S0(d5_62__N_867[36]), .S1(d5_62__N_867[37]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_38.INIT0 = 16'h5666;
     defparam d4_62__I_0_38.INIT1 = 16'h5666;
     defparam d4_62__I_0_38.INJECT1_0 = "NO";
     defparam d4_62__I_0_38.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_36 (.A0(d4[34]), .B0(d5[34]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[35]), .B1(d5[35]), .C1(GND_net), .D1(GND_net), .CIN(n2029), 
-          .COUT(n2030), .S0(d5_62__N_867[34]), .S1(d5_62__N_867[35]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[35]), .B1(d5[35]), .C1(GND_net), .D1(GND_net), .CIN(n2026), 
+          .COUT(n2027), .S0(d5_62__N_867[34]), .S1(d5_62__N_867[35]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_36.INIT0 = 16'h5666;
     defparam d4_62__I_0_36.INIT1 = 16'h5666;
     defparam d4_62__I_0_36.INJECT1_0 = "NO";
     defparam d4_62__I_0_36.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_34 (.A0(d4[32]), .B0(d5[32]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[33]), .B1(d5[33]), .C1(GND_net), .D1(GND_net), .CIN(n2028), 
-          .COUT(n2029), .S0(d5_62__N_867[32]), .S1(d5_62__N_867[33]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[33]), .B1(d5[33]), .C1(GND_net), .D1(GND_net), .CIN(n2025), 
+          .COUT(n2026), .S0(d5_62__N_867[32]), .S1(d5_62__N_867[33]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_34.INIT0 = 16'h5666;
     defparam d4_62__I_0_34.INIT1 = 16'h5666;
     defparam d4_62__I_0_34.INJECT1_0 = "NO";
     defparam d4_62__I_0_34.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_32 (.A0(d4[30]), .B0(d5[30]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[31]), .B1(d5[31]), .C1(GND_net), .D1(GND_net), .CIN(n2027), 
-          .COUT(n2028), .S0(d5_62__N_867[30]), .S1(d5_62__N_867[31]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[31]), .B1(d5[31]), .C1(GND_net), .D1(GND_net), .CIN(n2024), 
+          .COUT(n2025), .S0(d5_62__N_867[30]), .S1(d5_62__N_867[31]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_32.INIT0 = 16'h5666;
     defparam d4_62__I_0_32.INIT1 = 16'h5666;
     defparam d4_62__I_0_32.INJECT1_0 = "NO";
     defparam d4_62__I_0_32.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_30 (.A0(d4[28]), .B0(d5[28]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[29]), .B1(d5[29]), .C1(GND_net), .D1(GND_net), .CIN(n2026), 
-          .COUT(n2027), .S0(d5_62__N_867[28]), .S1(d5_62__N_867[29]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[29]), .B1(d5[29]), .C1(GND_net), .D1(GND_net), .CIN(n2023), 
+          .COUT(n2024), .S0(d5_62__N_867[28]), .S1(d5_62__N_867[29]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_30.INIT0 = 16'h5666;
     defparam d4_62__I_0_30.INIT1 = 16'h5666;
     defparam d4_62__I_0_30.INJECT1_0 = "NO";
     defparam d4_62__I_0_30.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_28 (.A0(d4[26]), .B0(d5[26]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[27]), .B1(d5[27]), .C1(GND_net), .D1(GND_net), .CIN(n2025), 
-          .COUT(n2026), .S0(d5_62__N_867[26]), .S1(d5_62__N_867[27]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[27]), .B1(d5[27]), .C1(GND_net), .D1(GND_net), .CIN(n2022), 
+          .COUT(n2023), .S0(d5_62__N_867[26]), .S1(d5_62__N_867[27]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_28.INIT0 = 16'h5666;
     defparam d4_62__I_0_28.INIT1 = 16'h5666;
     defparam d4_62__I_0_28.INJECT1_0 = "NO";
     defparam d4_62__I_0_28.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_26 (.A0(d4[24]), .B0(d5[24]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[25]), .B1(d5[25]), .C1(GND_net), .D1(GND_net), .CIN(n2024), 
-          .COUT(n2025), .S0(d5_62__N_867[24]), .S1(d5_62__N_867[25]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[25]), .B1(d5[25]), .C1(GND_net), .D1(GND_net), .CIN(n2021), 
+          .COUT(n2022), .S0(d5_62__N_867[24]), .S1(d5_62__N_867[25]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_26.INIT0 = 16'h5666;
     defparam d4_62__I_0_26.INIT1 = 16'h5666;
     defparam d4_62__I_0_26.INJECT1_0 = "NO";
     defparam d4_62__I_0_26.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_24 (.A0(d4[22]), .B0(d5[22]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[23]), .B1(d5[23]), .C1(GND_net), .D1(GND_net), .CIN(n2023), 
-          .COUT(n2024), .S0(d5_62__N_867[22]), .S1(d5_62__N_867[23]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[23]), .B1(d5[23]), .C1(GND_net), .D1(GND_net), .CIN(n2020), 
+          .COUT(n2021), .S0(d5_62__N_867[22]), .S1(d5_62__N_867[23]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_24.INIT0 = 16'h5666;
     defparam d4_62__I_0_24.INIT1 = 16'h5666;
     defparam d4_62__I_0_24.INJECT1_0 = "NO";
     defparam d4_62__I_0_24.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_22 (.A0(d4[20]), .B0(d5[20]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[21]), .B1(d5[21]), .C1(GND_net), .D1(GND_net), .CIN(n2022), 
-          .COUT(n2023), .S0(d5_62__N_867[20]), .S1(d5_62__N_867[21]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[21]), .B1(d5[21]), .C1(GND_net), .D1(GND_net), .CIN(n2019), 
+          .COUT(n2020), .S0(d5_62__N_867[20]), .S1(d5_62__N_867[21]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_22.INIT0 = 16'h5666;
     defparam d4_62__I_0_22.INIT1 = 16'h5666;
     defparam d4_62__I_0_22.INJECT1_0 = "NO";
     defparam d4_62__I_0_22.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_20 (.A0(d4[18]), .B0(d5[18]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[19]), .B1(d5[19]), .C1(GND_net), .D1(GND_net), .CIN(n2021), 
-          .COUT(n2022), .S0(d5_62__N_867[18]), .S1(d5_62__N_867[19]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[19]), .B1(d5[19]), .C1(GND_net), .D1(GND_net), .CIN(n2018), 
+          .COUT(n2019), .S0(d5_62__N_867[18]), .S1(d5_62__N_867[19]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_20.INIT0 = 16'h5666;
     defparam d4_62__I_0_20.INIT1 = 16'h5666;
     defparam d4_62__I_0_20.INJECT1_0 = "NO";
     defparam d4_62__I_0_20.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_18 (.A0(d4[16]), .B0(d5[16]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[17]), .B1(d5[17]), .C1(GND_net), .D1(GND_net), .CIN(n2020), 
-          .COUT(n2021), .S0(d5_62__N_867[16]), .S1(d5_62__N_867[17]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[17]), .B1(d5[17]), .C1(GND_net), .D1(GND_net), .CIN(n2017), 
+          .COUT(n2018), .S0(d5_62__N_867[16]), .S1(d5_62__N_867[17]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_18.INIT0 = 16'h5666;
     defparam d4_62__I_0_18.INIT1 = 16'h5666;
     defparam d4_62__I_0_18.INJECT1_0 = "NO";
     defparam d4_62__I_0_18.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_16 (.A0(d4[14]), .B0(d5[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[15]), .B1(d5[15]), .C1(GND_net), .D1(GND_net), .CIN(n2019), 
-          .COUT(n2020), .S0(d5_62__N_867[14]), .S1(d5_62__N_867[15]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[15]), .B1(d5[15]), .C1(GND_net), .D1(GND_net), .CIN(n2016), 
+          .COUT(n2017), .S0(d5_62__N_867[14]), .S1(d5_62__N_867[15]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_16.INIT0 = 16'h5666;
     defparam d4_62__I_0_16.INIT1 = 16'h5666;
     defparam d4_62__I_0_16.INJECT1_0 = "NO";
     defparam d4_62__I_0_16.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_14 (.A0(d4[12]), .B0(d5[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[13]), .B1(d5[13]), .C1(GND_net), .D1(GND_net), .CIN(n2018), 
-          .COUT(n2019), .S0(d5_62__N_867[12]), .S1(d5_62__N_867[13]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[13]), .B1(d5[13]), .C1(GND_net), .D1(GND_net), .CIN(n2015), 
+          .COUT(n2016), .S0(d5_62__N_867[12]), .S1(d5_62__N_867[13]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_14.INIT0 = 16'h5666;
     defparam d4_62__I_0_14.INIT1 = 16'h5666;
     defparam d4_62__I_0_14.INJECT1_0 = "NO";
     defparam d4_62__I_0_14.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_54 (.A0(d3[52]), .B0(d4[52]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[53]), .B1(d4[53]), .C1(GND_net), .D1(GND_net), .CIN(n2006), 
-          .COUT(n2007), .S0(d4_62__N_804[52]), .S1(d4_62__N_804[53]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[53]), .B1(d4[53]), .C1(GND_net), .D1(GND_net), .CIN(n2003), 
+          .COUT(n2004), .S0(d4_62__N_804[52]), .S1(d4_62__N_804[53]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_54.INIT0 = 16'h5666;
     defparam d3_62__I_0_54.INIT1 = 16'h5666;
     defparam d3_62__I_0_54.INJECT1_0 = "NO";
     defparam d3_62__I_0_54.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_30 (.A0(d2[28]), .B0(d3[28]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[29]), .B1(d3[29]), .C1(GND_net), .D1(GND_net), .CIN(n1962), 
-          .COUT(n1963), .S0(d3_62__N_741[28]), .S1(d3_62__N_741[29]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[29]), .B1(d3[29]), .C1(GND_net), .D1(GND_net), .CIN(n1959), 
+          .COUT(n1960), .S0(d3_62__N_741[28]), .S1(d3_62__N_741[29]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_30.INIT0 = 16'h5666;
     defparam d2_62__I_0_30.INIT1 = 16'h5666;
     defparam d2_62__I_0_30.INJECT1_0 = "NO";
     defparam d2_62__I_0_30.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_28 (.A0(d2[26]), .B0(d3[26]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[27]), .B1(d3[27]), .C1(GND_net), .D1(GND_net), .CIN(n1961), 
-          .COUT(n1962), .S0(d3_62__N_741[26]), .S1(d3_62__N_741[27]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[27]), .B1(d3[27]), .C1(GND_net), .D1(GND_net), .CIN(n1958), 
+          .COUT(n1959), .S0(d3_62__N_741[26]), .S1(d3_62__N_741[27]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_28.INIT0 = 16'h5666;
     defparam d2_62__I_0_28.INIT1 = 16'h5666;
     defparam d2_62__I_0_28.INJECT1_0 = "NO";
     defparam d2_62__I_0_28.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_26 (.A0(d2[24]), .B0(d3[24]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[25]), .B1(d3[25]), .C1(GND_net), .D1(GND_net), .CIN(n1960), 
-          .COUT(n1961), .S0(d3_62__N_741[24]), .S1(d3_62__N_741[25]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[25]), .B1(d3[25]), .C1(GND_net), .D1(GND_net), .CIN(n1957), 
+          .COUT(n1958), .S0(d3_62__N_741[24]), .S1(d3_62__N_741[25]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_26.INIT0 = 16'h5666;
     defparam d2_62__I_0_26.INIT1 = 16'h5666;
     defparam d2_62__I_0_26.INJECT1_0 = "NO";
     defparam d2_62__I_0_26.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_24 (.A0(d2[22]), .B0(d3[22]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[23]), .B1(d3[23]), .C1(GND_net), .D1(GND_net), .CIN(n1959), 
-          .COUT(n1960), .S0(d3_62__N_741[22]), .S1(d3_62__N_741[23]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[23]), .B1(d3[23]), .C1(GND_net), .D1(GND_net), .CIN(n1956), 
+          .COUT(n1957), .S0(d3_62__N_741[22]), .S1(d3_62__N_741[23]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_24.INIT0 = 16'h5666;
     defparam d2_62__I_0_24.INIT1 = 16'h5666;
     defparam d2_62__I_0_24.INJECT1_0 = "NO";
     defparam d2_62__I_0_24.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_22 (.A0(d2[20]), .B0(d3[20]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[21]), .B1(d3[21]), .C1(GND_net), .D1(GND_net), .CIN(n1958), 
-          .COUT(n1959), .S0(d3_62__N_741[20]), .S1(d3_62__N_741[21]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[21]), .B1(d3[21]), .C1(GND_net), .D1(GND_net), .CIN(n1955), 
+          .COUT(n1956), .S0(d3_62__N_741[20]), .S1(d3_62__N_741[21]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_22.INIT0 = 16'h5666;
     defparam d2_62__I_0_22.INIT1 = 16'h5666;
     defparam d2_62__I_0_22.INJECT1_0 = "NO";
     defparam d2_62__I_0_22.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_20 (.A0(CIC1_out[7]), .B0(d1[18]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[19]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1893), .COUT(n1894), .S0(d1_62__N_615[18]), 
+          .D1(GND_net), .CIN(n1890), .COUT(n1891), .S0(d1_62__N_615[18]), 
           .S1(d1_62__N_615[19]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_20.INIT0 = 16'h5666;
     defparam d_in_7__I_0_20.INIT1 = 16'h5666;
@@ -5628,7 +5632,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_20.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_48 (.A0(CIC1_out[7]), .B0(d1[46]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[47]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1907), .COUT(n1908), .S0(d1_62__N_615[46]), 
+          .D1(GND_net), .CIN(n1904), .COUT(n1905), .S0(d1_62__N_615[46]), 
           .S1(d1_62__N_615[47]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_48.INIT0 = 16'h5666;
     defparam d_in_7__I_0_48.INIT1 = 16'h5666;
@@ -5636,7 +5640,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_48.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_13 (.A0(d_tmp[11]), .B0(d_d_tmp[11]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[12]), .B1(d_d_tmp[12]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1831), .COUT(n1832), .S0(d6_62__N_1530[11]), 
+          .D1(GND_net), .CIN(n1828), .COUT(n1829), .S0(d6_62__N_1530[11]), 
           .S1(d6_62__N_1530[12]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_13.INIT0 = 16'h5999;
     defparam sub_25_add_2_13.INIT1 = 16'h5999;
@@ -5644,7 +5648,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_13.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_46 (.A0(CIC1_out[7]), .B0(d1[44]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[45]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1906), .COUT(n1907), .S0(d1_62__N_615[44]), 
+          .D1(GND_net), .CIN(n1903), .COUT(n1904), .S0(d1_62__N_615[44]), 
           .S1(d1_62__N_615[45]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_46.INIT0 = 16'h5666;
     defparam d_in_7__I_0_46.INIT1 = 16'h5666;
@@ -5652,7 +5656,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_46.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_41 (.A0(d_tmp[39]), .B0(d_d_tmp[39]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[40]), .B1(d_d_tmp[40]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1845), .COUT(n1846), .S0(d6_62__N_1530[39]), 
+          .D1(GND_net), .CIN(n1842), .COUT(n1843), .S0(d6_62__N_1530[39]), 
           .S1(d6_62__N_1530[40]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_41.INIT0 = 16'h5999;
     defparam sub_25_add_2_41.INIT1 = 16'h5999;
@@ -5660,7 +5664,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_41.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_11 (.A0(d_tmp[9]), .B0(d_d_tmp[9]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[10]), .B1(d_d_tmp[10]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1830), .COUT(n1831), .S0(d6_62__N_1530[9]), 
+          .D1(GND_net), .CIN(n1827), .COUT(n1828), .S0(d6_62__N_1530[9]), 
           .S1(d6_62__N_1530[10]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_11.INIT0 = 16'h5999;
     defparam sub_25_add_2_11.INIT1 = 16'h5999;
@@ -5668,50 +5672,50 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_11.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_18 (.A0(CIC1_out[7]), .B0(d1[16]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[17]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1892), .COUT(n1893), .S0(d1_62__N_615[16]), 
+          .D1(GND_net), .CIN(n1889), .COUT(n1890), .S0(d1_62__N_615[16]), 
           .S1(d1_62__N_615[17]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_18.INIT0 = 16'h5666;
     defparam d_in_7__I_0_18.INIT1 = 16'h5666;
     defparam d_in_7__I_0_18.INJECT1_0 = "NO";
     defparam d_in_7__I_0_18.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_20 (.A0(d2[18]), .B0(d3[18]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[19]), .B1(d3[19]), .C1(GND_net), .D1(GND_net), .CIN(n1957), 
-          .COUT(n1958), .S0(d3_62__N_741[18]), .S1(d3_62__N_741[19]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[19]), .B1(d3[19]), .C1(GND_net), .D1(GND_net), .CIN(n1954), 
+          .COUT(n1955), .S0(d3_62__N_741[18]), .S1(d3_62__N_741[19]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_20.INIT0 = 16'h5666;
     defparam d2_62__I_0_20.INIT1 = 16'h5666;
     defparam d2_62__I_0_20.INJECT1_0 = "NO";
     defparam d2_62__I_0_20.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_18 (.A0(d2[16]), .B0(d3[16]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[17]), .B1(d3[17]), .C1(GND_net), .D1(GND_net), .CIN(n1956), 
-          .COUT(n1957), .S0(d3_62__N_741[16]), .S1(d3_62__N_741[17]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[17]), .B1(d3[17]), .C1(GND_net), .D1(GND_net), .CIN(n1953), 
+          .COUT(n1954), .S0(d3_62__N_741[16]), .S1(d3_62__N_741[17]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_18.INIT0 = 16'h5666;
     defparam d2_62__I_0_18.INIT1 = 16'h5666;
     defparam d2_62__I_0_18.INJECT1_0 = "NO";
     defparam d2_62__I_0_18.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_16 (.A0(d2[14]), .B0(d3[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[15]), .B1(d3[15]), .C1(GND_net), .D1(GND_net), .CIN(n1955), 
-          .COUT(n1956), .S0(d3_62__N_741[14]), .S1(d3_62__N_741[15]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[15]), .B1(d3[15]), .C1(GND_net), .D1(GND_net), .CIN(n1952), 
+          .COUT(n1953), .S0(d3_62__N_741[14]), .S1(d3_62__N_741[15]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_16.INIT0 = 16'h5666;
     defparam d2_62__I_0_16.INIT1 = 16'h5666;
     defparam d2_62__I_0_16.INJECT1_0 = "NO";
     defparam d2_62__I_0_16.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_14 (.A0(d2[12]), .B0(d3[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[13]), .B1(d3[13]), .C1(GND_net), .D1(GND_net), .CIN(n1954), 
-          .COUT(n1955), .S0(d3_62__N_741[12]), .S1(d3_62__N_741[13]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[13]), .B1(d3[13]), .C1(GND_net), .D1(GND_net), .CIN(n1951), 
+          .COUT(n1952), .S0(d3_62__N_741[12]), .S1(d3_62__N_741[13]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_14.INIT0 = 16'h5666;
     defparam d2_62__I_0_14.INIT1 = 16'h5666;
     defparam d2_62__I_0_14.INJECT1_0 = "NO";
     defparam d2_62__I_0_14.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_12 (.A0(d2[10]), .B0(d3[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[11]), .B1(d3[11]), .C1(GND_net), .D1(GND_net), .CIN(n1953), 
-          .COUT(n1954), .S0(d3_62__N_741[10]), .S1(d3_62__N_741[11]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[11]), .B1(d3[11]), .C1(GND_net), .D1(GND_net), .CIN(n1950), 
+          .COUT(n1951), .S0(d3_62__N_741[10]), .S1(d3_62__N_741[11]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_12.INIT0 = 16'h5666;
     defparam d2_62__I_0_12.INIT1 = 16'h5666;
     defparam d2_62__I_0_12.INJECT1_0 = "NO";
     defparam d2_62__I_0_12.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_16 (.A0(CIC1_out[7]), .B0(d1[14]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[15]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1891), .COUT(n1892), .S0(d1_62__N_615[14]), 
+          .D1(GND_net), .CIN(n1888), .COUT(n1889), .S0(d1_62__N_615[14]), 
           .S1(d1_62__N_615[15]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_16.INIT0 = 16'h5666;
     defparam d_in_7__I_0_16.INIT1 = 16'h5666;
@@ -5719,7 +5723,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_16.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_44 (.A0(CIC1_out[7]), .B0(d1[42]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[43]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1905), .COUT(n1906), .S0(d1_62__N_615[42]), 
+          .D1(GND_net), .CIN(n1902), .COUT(n1903), .S0(d1_62__N_615[42]), 
           .S1(d1_62__N_615[43]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_44.INIT0 = 16'h5666;
     defparam d_in_7__I_0_44.INIT1 = 16'h5666;
@@ -5727,7 +5731,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_44.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_14 (.A0(CIC1_out[7]), .B0(d1[12]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[13]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1890), .COUT(n1891), .S0(d1_62__N_615[12]), 
+          .D1(GND_net), .CIN(n1887), .COUT(n1888), .S0(d1_62__N_615[12]), 
           .S1(d1_62__N_615[13]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_14.INIT0 = 16'h5666;
     defparam d_in_7__I_0_14.INIT1 = 16'h5666;
@@ -5735,7 +5739,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_14.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_9 (.A0(d_tmp[7]), .B0(d_d_tmp[7]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[8]), .B1(d_d_tmp[8]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1829), .COUT(n1830), .S0(d6_62__N_1530[7]), 
+          .D1(GND_net), .CIN(n1826), .COUT(n1827), .S0(d6_62__N_1530[7]), 
           .S1(d6_62__N_1530[8]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_9.INIT0 = 16'h5999;
     defparam sub_25_add_2_9.INIT1 = 16'h5999;
@@ -5743,7 +5747,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_7 (.A0(d_tmp[5]), .B0(d_d_tmp[5]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[6]), .B1(d_d_tmp[6]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1828), .COUT(n1829), .S0(d6_62__N_1530[5]), 
+          .D1(GND_net), .CIN(n1825), .COUT(n1826), .S0(d6_62__N_1530[5]), 
           .S1(d6_62__N_1530[6]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_7.INIT0 = 16'h5999;
     defparam sub_25_add_2_7.INIT1 = 16'h5999;
@@ -5751,7 +5755,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_23 (.A0(d_tmp[21]), .B0(d_d_tmp[21]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[22]), .B1(d_d_tmp[22]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1836), .COUT(n1837), .S0(d6_62__N_1530[21]), 
+          .D1(GND_net), .CIN(n1833), .COUT(n1834), .S0(d6_62__N_1530[21]), 
           .S1(d6_62__N_1530[22]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_23.INIT0 = 16'h5999;
     defparam sub_25_add_2_23.INIT1 = 16'h5999;
@@ -5759,7 +5763,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_23.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_21 (.A0(d_tmp[19]), .B0(d_d_tmp[19]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[20]), .B1(d_d_tmp[20]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1835), .COUT(n1836), .S0(d6_62__N_1530[19]), 
+          .D1(GND_net), .CIN(n1832), .COUT(n1833), .S0(d6_62__N_1530[19]), 
           .S1(d6_62__N_1530[20]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_21.INIT0 = 16'h5999;
     defparam sub_25_add_2_21.INIT1 = 16'h5999;
@@ -5767,7 +5771,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_21.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_19 (.A0(d_tmp[17]), .B0(d_d_tmp[17]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[18]), .B1(d_d_tmp[18]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1834), .COUT(n1835), .S0(d6_62__N_1530[17]), 
+          .D1(GND_net), .CIN(n1831), .COUT(n1832), .S0(d6_62__N_1530[17]), 
           .S1(d6_62__N_1530[18]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_19.INIT0 = 16'h5999;
     defparam sub_25_add_2_19.INIT1 = 16'h5999;
@@ -5775,7 +5779,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_19.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_17 (.A0(d_tmp[15]), .B0(d_d_tmp[15]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[16]), .B1(d_d_tmp[16]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1833), .COUT(n1834), .S0(d6_62__N_1530[15]), 
+          .D1(GND_net), .CIN(n1830), .COUT(n1831), .S0(d6_62__N_1530[15]), 
           .S1(d6_62__N_1530[16]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_17.INIT0 = 16'h5999;
     defparam sub_25_add_2_17.INIT1 = 16'h5999;
@@ -5783,7 +5787,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_27 (.A0(d_tmp[25]), .B0(d_d_tmp[25]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[26]), .B1(d_d_tmp[26]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1838), .COUT(n1839), .S0(d6_62__N_1530[25]), 
+          .D1(GND_net), .CIN(n1835), .COUT(n1836), .S0(d6_62__N_1530[25]), 
           .S1(d6_62__N_1530[26]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_27.INIT0 = 16'h5999;
     defparam sub_25_add_2_27.INIT1 = 16'h5999;
@@ -5791,7 +5795,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_27.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_25 (.A0(d_tmp[23]), .B0(d_d_tmp[23]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[24]), .B1(d_d_tmp[24]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1837), .COUT(n1838), .S0(d6_62__N_1530[23]), 
+          .D1(GND_net), .CIN(n1834), .COUT(n1835), .S0(d6_62__N_1530[23]), 
           .S1(d6_62__N_1530[24]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_25.INIT0 = 16'h5999;
     defparam sub_25_add_2_25.INIT1 = 16'h5999;
@@ -5799,7 +5803,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_25.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_42 (.A0(CIC1_out[7]), .B0(d1[40]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[41]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1904), .COUT(n1905), .S0(d1_62__N_615[40]), 
+          .D1(GND_net), .CIN(n1901), .COUT(n1902), .S0(d1_62__N_615[40]), 
           .S1(d1_62__N_615[41]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_42.INIT0 = 16'h5666;
     defparam d_in_7__I_0_42.INIT1 = 16'h5666;
@@ -5807,56 +5811,56 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_42.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_40 (.A0(CIC1_out[7]), .B0(d1[38]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[39]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1903), .COUT(n1904), .S0(d1_62__N_615[38]), 
+          .D1(GND_net), .CIN(n1900), .COUT(n1901), .S0(d1_62__N_615[38]), 
           .S1(d1_62__N_615[39]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_40.INIT0 = 16'h5666;
     defparam d_in_7__I_0_40.INIT1 = 16'h5666;
     defparam d_in_7__I_0_40.INJECT1_0 = "NO";
     defparam d_in_7__I_0_40.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_56 (.A0(d3[54]), .B0(d4[54]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[55]), .B1(d4[55]), .C1(GND_net), .D1(GND_net), .CIN(n2007), 
-          .COUT(n2008), .S0(d4_62__N_804[54]), .S1(d4_62__N_804[55]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[55]), .B1(d4[55]), .C1(GND_net), .D1(GND_net), .CIN(n2004), 
+          .COUT(n2005), .S0(d4_62__N_804[54]), .S1(d4_62__N_804[55]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_56.INIT0 = 16'h5666;
     defparam d3_62__I_0_56.INIT1 = 16'h5666;
     defparam d3_62__I_0_56.INJECT1_0 = "NO";
     defparam d3_62__I_0_56.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_58 (.A0(d3[56]), .B0(d4[56]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[57]), .B1(d4[57]), .C1(GND_net), .D1(GND_net), .CIN(n2008), 
-          .COUT(n2009), .S0(d4_62__N_804[56]), .S1(d4_62__N_804[57]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[57]), .B1(d4[57]), .C1(GND_net), .D1(GND_net), .CIN(n2005), 
+          .COUT(n2006), .S0(d4_62__N_804[56]), .S1(d4_62__N_804[57]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_58.INIT0 = 16'h5666;
     defparam d3_62__I_0_58.INIT1 = 16'h5666;
     defparam d3_62__I_0_58.INJECT1_0 = "NO";
     defparam d3_62__I_0_58.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_10 (.A0(d2[8]), .B0(d3[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[9]), .B1(d3[9]), .C1(GND_net), .D1(GND_net), .CIN(n1952), 
-          .COUT(n1953), .S0(d3_62__N_741[8]), .S1(d3_62__N_741[9]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[9]), .B1(d3[9]), .C1(GND_net), .D1(GND_net), .CIN(n1949), 
+          .COUT(n1950), .S0(d3_62__N_741[8]), .S1(d3_62__N_741[9]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_10.INIT0 = 16'h5666;
     defparam d2_62__I_0_10.INIT1 = 16'h5666;
     defparam d2_62__I_0_10.INJECT1_0 = "NO";
     defparam d2_62__I_0_10.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_8 (.A0(d2[6]), .B0(d3[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[7]), .B1(d3[7]), .C1(GND_net), .D1(GND_net), .CIN(n1951), 
-          .COUT(n1952), .S0(d3_62__N_741[6]), .S1(d3_62__N_741[7]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[7]), .B1(d3[7]), .C1(GND_net), .D1(GND_net), .CIN(n1948), 
+          .COUT(n1949), .S0(d3_62__N_741[6]), .S1(d3_62__N_741[7]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_8.INIT0 = 16'h5666;
     defparam d2_62__I_0_8.INIT1 = 16'h5666;
     defparam d2_62__I_0_8.INJECT1_0 = "NO";
     defparam d2_62__I_0_8.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_6 (.A0(d2[4]), .B0(d3[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[5]), .B1(d3[5]), .C1(GND_net), .D1(GND_net), .CIN(n1950), 
-          .COUT(n1951), .S0(d3_62__N_741[4]), .S1(d3_62__N_741[5]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[5]), .B1(d3[5]), .C1(GND_net), .D1(GND_net), .CIN(n1947), 
+          .COUT(n1948), .S0(d3_62__N_741[4]), .S1(d3_62__N_741[5]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_6.INIT0 = 16'h5666;
     defparam d2_62__I_0_6.INIT1 = 16'h5666;
     defparam d2_62__I_0_6.INJECT1_0 = "NO";
     defparam d2_62__I_0_6.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_4 (.A0(d2[2]), .B0(d3[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[3]), .B1(d3[3]), .C1(GND_net), .D1(GND_net), .CIN(n1949), 
-          .COUT(n1950), .S0(d3_62__N_741[2]), .S1(d3_62__N_741[3]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[3]), .B1(d3[3]), .C1(GND_net), .D1(GND_net), .CIN(n1946), 
+          .COUT(n1947), .S0(d3_62__N_741[2]), .S1(d3_62__N_741[3]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_4.INIT0 = 16'h5666;
     defparam d2_62__I_0_4.INIT1 = 16'h5666;
     defparam d2_62__I_0_4.INJECT1_0 = "NO";
     defparam d2_62__I_0_4.INJECT1_1 = "NO";
     CCU2D d2_62__I_0_2 (.A0(d2[0]), .B0(d3[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[1]), .B1(d3[1]), .C1(GND_net), .D1(GND_net), .COUT(n1949), 
+          .A1(d2[1]), .B1(d3[1]), .C1(GND_net), .D1(GND_net), .COUT(n1946), 
           .S1(d3_62__N_741[1]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d2_62__I_0_2.INIT0 = 16'h7000;
     defparam d2_62__I_0_2.INIT1 = 16'h5666;
@@ -5864,84 +5868,84 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d2_62__I_0_2.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_63 (.A0(d_tmp[61]), .B0(d_d_tmp[61]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[62]), .B1(d_d_tmp[62]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1856), .S0(d6_62__N_1530[61]), .S1(d6_62__N_1530[62]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
+          .D1(GND_net), .CIN(n1853), .S0(d6_62__N_1530[61]), .S1(d6_62__N_1530[62]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_63.INIT0 = 16'h5999;
     defparam sub_25_add_2_63.INIT1 = 16'h5999;
     defparam sub_25_add_2_63.INJECT1_0 = "NO";
     defparam sub_25_add_2_63.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_64 (.A0(d1[62]), .B0(d2[62]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1947), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1944), 
           .S0(d2_62__N_678[62]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_64.INIT0 = 16'h5666;
     defparam d1_62__I_0_64.INIT1 = 16'h0000;
     defparam d1_62__I_0_64.INJECT1_0 = "NO";
     defparam d1_62__I_0_64.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_62 (.A0(d1[60]), .B0(d2[60]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[61]), .B1(d2[61]), .C1(GND_net), .D1(GND_net), .CIN(n1946), 
-          .COUT(n1947), .S0(d2_62__N_678[60]), .S1(d2_62__N_678[61]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[61]), .B1(d2[61]), .C1(GND_net), .D1(GND_net), .CIN(n1943), 
+          .COUT(n1944), .S0(d2_62__N_678[60]), .S1(d2_62__N_678[61]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_62.INIT0 = 16'h5666;
     defparam d1_62__I_0_62.INIT1 = 16'h5666;
     defparam d1_62__I_0_62.INJECT1_0 = "NO";
     defparam d1_62__I_0_62.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_60 (.A0(d1[58]), .B0(d2[58]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[59]), .B1(d2[59]), .C1(GND_net), .D1(GND_net), .CIN(n1945), 
-          .COUT(n1946), .S0(d2_62__N_678[58]), .S1(d2_62__N_678[59]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[59]), .B1(d2[59]), .C1(GND_net), .D1(GND_net), .CIN(n1942), 
+          .COUT(n1943), .S0(d2_62__N_678[58]), .S1(d2_62__N_678[59]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_60.INIT0 = 16'h5666;
     defparam d1_62__I_0_60.INIT1 = 16'h5666;
     defparam d1_62__I_0_60.INJECT1_0 = "NO";
     defparam d1_62__I_0_60.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_58 (.A0(d1[56]), .B0(d2[56]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[57]), .B1(d2[57]), .C1(GND_net), .D1(GND_net), .CIN(n1944), 
-          .COUT(n1945), .S0(d2_62__N_678[56]), .S1(d2_62__N_678[57]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[57]), .B1(d2[57]), .C1(GND_net), .D1(GND_net), .CIN(n1941), 
+          .COUT(n1942), .S0(d2_62__N_678[56]), .S1(d2_62__N_678[57]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_58.INIT0 = 16'h5666;
     defparam d1_62__I_0_58.INIT1 = 16'h5666;
     defparam d1_62__I_0_58.INJECT1_0 = "NO";
     defparam d1_62__I_0_58.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_56 (.A0(d1[54]), .B0(d2[54]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[55]), .B1(d2[55]), .C1(GND_net), .D1(GND_net), .CIN(n1943), 
-          .COUT(n1944), .S0(d2_62__N_678[54]), .S1(d2_62__N_678[55]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[55]), .B1(d2[55]), .C1(GND_net), .D1(GND_net), .CIN(n1940), 
+          .COUT(n1941), .S0(d2_62__N_678[54]), .S1(d2_62__N_678[55]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_56.INIT0 = 16'h5666;
     defparam d1_62__I_0_56.INIT1 = 16'h5666;
     defparam d1_62__I_0_56.INJECT1_0 = "NO";
     defparam d1_62__I_0_56.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_54 (.A0(d1[52]), .B0(d2[52]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[53]), .B1(d2[53]), .C1(GND_net), .D1(GND_net), .CIN(n1942), 
-          .COUT(n1943), .S0(d2_62__N_678[52]), .S1(d2_62__N_678[53]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[53]), .B1(d2[53]), .C1(GND_net), .D1(GND_net), .CIN(n1939), 
+          .COUT(n1940), .S0(d2_62__N_678[52]), .S1(d2_62__N_678[53]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_54.INIT0 = 16'h5666;
     defparam d1_62__I_0_54.INIT1 = 16'h5666;
     defparam d1_62__I_0_54.INJECT1_0 = "NO";
     defparam d1_62__I_0_54.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_52 (.A0(d1[50]), .B0(d2[50]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[51]), .B1(d2[51]), .C1(GND_net), .D1(GND_net), .CIN(n1941), 
-          .COUT(n1942), .S0(d2_62__N_678[50]), .S1(d2_62__N_678[51]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[51]), .B1(d2[51]), .C1(GND_net), .D1(GND_net), .CIN(n1938), 
+          .COUT(n1939), .S0(d2_62__N_678[50]), .S1(d2_62__N_678[51]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_52.INIT0 = 16'h5666;
     defparam d1_62__I_0_52.INIT1 = 16'h5666;
     defparam d1_62__I_0_52.INJECT1_0 = "NO";
     defparam d1_62__I_0_52.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_50 (.A0(d1[48]), .B0(d2[48]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[49]), .B1(d2[49]), .C1(GND_net), .D1(GND_net), .CIN(n1940), 
-          .COUT(n1941), .S0(d2_62__N_678[48]), .S1(d2_62__N_678[49]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[49]), .B1(d2[49]), .C1(GND_net), .D1(GND_net), .CIN(n1937), 
+          .COUT(n1938), .S0(d2_62__N_678[48]), .S1(d2_62__N_678[49]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_50.INIT0 = 16'h5666;
     defparam d1_62__I_0_50.INIT1 = 16'h5666;
     defparam d1_62__I_0_50.INJECT1_0 = "NO";
     defparam d1_62__I_0_50.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_48 (.A0(d1[46]), .B0(d2[46]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[47]), .B1(d2[47]), .C1(GND_net), .D1(GND_net), .CIN(n1939), 
-          .COUT(n1940), .S0(d2_62__N_678[46]), .S1(d2_62__N_678[47]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[47]), .B1(d2[47]), .C1(GND_net), .D1(GND_net), .CIN(n1936), 
+          .COUT(n1937), .S0(d2_62__N_678[46]), .S1(d2_62__N_678[47]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_48.INIT0 = 16'h5666;
     defparam d1_62__I_0_48.INIT1 = 16'h5666;
     defparam d1_62__I_0_48.INJECT1_0 = "NO";
     defparam d1_62__I_0_48.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_46 (.A0(d1[44]), .B0(d2[44]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[45]), .B1(d2[45]), .C1(GND_net), .D1(GND_net), .CIN(n1938), 
-          .COUT(n1939), .S0(d2_62__N_678[44]), .S1(d2_62__N_678[45]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[45]), .B1(d2[45]), .C1(GND_net), .D1(GND_net), .CIN(n1935), 
+          .COUT(n1936), .S0(d2_62__N_678[44]), .S1(d2_62__N_678[45]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_46.INIT0 = 16'h5666;
     defparam d1_62__I_0_46.INIT1 = 16'h5666;
     defparam d1_62__I_0_46.INJECT1_0 = "NO";
     defparam d1_62__I_0_46.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_39 (.A0(d_tmp[37]), .B0(d_d_tmp[37]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[38]), .B1(d_d_tmp[38]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1844), .COUT(n1845), .S0(d6_62__N_1530[37]), 
+          .D1(GND_net), .CIN(n1841), .COUT(n1842), .S0(d6_62__N_1530[37]), 
           .S1(d6_62__N_1530[38]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_39.INIT0 = 16'h5999;
     defparam sub_25_add_2_39.INIT1 = 16'h5999;
@@ -5949,7 +5953,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_39.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_61 (.A0(d_tmp[59]), .B0(d_d_tmp[59]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[60]), .B1(d_d_tmp[60]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1855), .COUT(n1856), .S0(d6_62__N_1530[59]), 
+          .D1(GND_net), .CIN(n1852), .COUT(n1853), .S0(d6_62__N_1530[59]), 
           .S1(d6_62__N_1530[60]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_61.INIT0 = 16'h5999;
     defparam sub_25_add_2_61.INIT1 = 16'h5999;
@@ -5957,7 +5961,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_61.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_59 (.A0(d_tmp[57]), .B0(d_d_tmp[57]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[58]), .B1(d_d_tmp[58]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1854), .COUT(n1855), .S0(d6_62__N_1530[57]), 
+          .D1(GND_net), .CIN(n1851), .COUT(n1852), .S0(d6_62__N_1530[57]), 
           .S1(d6_62__N_1530[58]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_59.INIT0 = 16'h5999;
     defparam sub_25_add_2_59.INIT1 = 16'h5999;
@@ -5965,7 +5969,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_59.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_57 (.A0(d_tmp[55]), .B0(d_d_tmp[55]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[56]), .B1(d_d_tmp[56]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1853), .COUT(n1854), .S0(d6_62__N_1530[55]), 
+          .D1(GND_net), .CIN(n1850), .COUT(n1851), .S0(d6_62__N_1530[55]), 
           .S1(d6_62__N_1530[56]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_57.INIT0 = 16'h5999;
     defparam sub_25_add_2_57.INIT1 = 16'h5999;
@@ -5973,7 +5977,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_57.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_55 (.A0(d_tmp[53]), .B0(d_d_tmp[53]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[54]), .B1(d_d_tmp[54]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1852), .COUT(n1853), .S0(d6_62__N_1530[53]), 
+          .D1(GND_net), .CIN(n1849), .COUT(n1850), .S0(d6_62__N_1530[53]), 
           .S1(d6_62__N_1530[54]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_55.INIT0 = 16'h5999;
     defparam sub_25_add_2_55.INIT1 = 16'h5999;
@@ -5981,22 +5985,22 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_55.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_12 (.A0(CIC1_out[7]), .B0(d1[10]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[11]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1889), .COUT(n1890), .S0(d1_62__N_615[10]), 
+          .D1(GND_net), .CIN(n1886), .COUT(n1887), .S0(d1_62__N_615[10]), 
           .S1(d1_62__N_615[11]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_12.INIT0 = 16'h5666;
     defparam d_in_7__I_0_12.INIT1 = 16'h5666;
     defparam d_in_7__I_0_12.INJECT1_0 = "NO";
     defparam d_in_7__I_0_12.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_44 (.A0(d1[42]), .B0(d2[42]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[43]), .B1(d2[43]), .C1(GND_net), .D1(GND_net), .CIN(n1937), 
-          .COUT(n1938), .S0(d2_62__N_678[42]), .S1(d2_62__N_678[43]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[43]), .B1(d2[43]), .C1(GND_net), .D1(GND_net), .CIN(n1934), 
+          .COUT(n1935), .S0(d2_62__N_678[42]), .S1(d2_62__N_678[43]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_44.INIT0 = 16'h5666;
     defparam d1_62__I_0_44.INIT1 = 16'h5666;
     defparam d1_62__I_0_44.INJECT1_0 = "NO";
     defparam d1_62__I_0_44.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_37 (.A0(d_tmp[35]), .B0(d_d_tmp[35]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[36]), .B1(d_d_tmp[36]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1843), .COUT(n1844), .S0(d6_62__N_1530[35]), 
+          .D1(GND_net), .CIN(n1840), .COUT(n1841), .S0(d6_62__N_1530[35]), 
           .S1(d6_62__N_1530[36]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_37.INIT0 = 16'h5999;
     defparam sub_25_add_2_37.INIT1 = 16'h5999;
@@ -6004,162 +6008,162 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_37.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_35 (.A0(d_tmp[33]), .B0(d_d_tmp[33]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[34]), .B1(d_d_tmp[34]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1842), .COUT(n1843), .S0(d6_62__N_1530[33]), 
+          .D1(GND_net), .CIN(n1839), .COUT(n1840), .S0(d6_62__N_1530[33]), 
           .S1(d6_62__N_1530[34]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_35.INIT0 = 16'h5999;
     defparam sub_25_add_2_35.INIT1 = 16'h5999;
     defparam sub_25_add_2_35.INJECT1_0 = "NO";
     defparam sub_25_add_2_35.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_10 (.A0(d4[8]), .B0(d5[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[9]), .B1(d5[9]), .C1(GND_net), .D1(GND_net), .CIN(n2016), 
-          .COUT(n2017), .S0(d5_62__N_867[8]), .S1(d5_62__N_867[9]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[9]), .B1(d5[9]), .C1(GND_net), .D1(GND_net), .CIN(n2013), 
+          .COUT(n2014), .S0(d5_62__N_867[8]), .S1(d5_62__N_867[9]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_10.INIT0 = 16'h5666;
     defparam d4_62__I_0_10.INIT1 = 16'h5666;
     defparam d4_62__I_0_10.INJECT1_0 = "NO";
     defparam d4_62__I_0_10.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_12 (.A0(d4[10]), .B0(d5[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[11]), .B1(d5[11]), .C1(GND_net), .D1(GND_net), .CIN(n2017), 
-          .COUT(n2018), .S0(d5_62__N_867[10]), .S1(d5_62__N_867[11]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[11]), .B1(d5[11]), .C1(GND_net), .D1(GND_net), .CIN(n2014), 
+          .COUT(n2015), .S0(d5_62__N_867[10]), .S1(d5_62__N_867[11]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_12.INIT0 = 16'h5666;
     defparam d4_62__I_0_12.INIT1 = 16'h5666;
     defparam d4_62__I_0_12.INJECT1_0 = "NO";
     defparam d4_62__I_0_12.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_42 (.A0(d1[40]), .B0(d2[40]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[41]), .B1(d2[41]), .C1(GND_net), .D1(GND_net), .CIN(n1936), 
-          .COUT(n1937), .S0(d2_62__N_678[40]), .S1(d2_62__N_678[41]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[41]), .B1(d2[41]), .C1(GND_net), .D1(GND_net), .CIN(n1933), 
+          .COUT(n1934), .S0(d2_62__N_678[40]), .S1(d2_62__N_678[41]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_42.INIT0 = 16'h5666;
     defparam d1_62__I_0_42.INIT1 = 16'h5666;
     defparam d1_62__I_0_42.INJECT1_0 = "NO";
     defparam d1_62__I_0_42.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_40 (.A0(d1[38]), .B0(d2[38]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[39]), .B1(d2[39]), .C1(GND_net), .D1(GND_net), .CIN(n1935), 
-          .COUT(n1936), .S0(d2_62__N_678[38]), .S1(d2_62__N_678[39]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[39]), .B1(d2[39]), .C1(GND_net), .D1(GND_net), .CIN(n1932), 
+          .COUT(n1933), .S0(d2_62__N_678[38]), .S1(d2_62__N_678[39]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_40.INIT0 = 16'h5666;
     defparam d1_62__I_0_40.INIT1 = 16'h5666;
     defparam d1_62__I_0_40.INJECT1_0 = "NO";
     defparam d1_62__I_0_40.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_38 (.A0(d1[36]), .B0(d2[36]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[37]), .B1(d2[37]), .C1(GND_net), .D1(GND_net), .CIN(n1934), 
-          .COUT(n1935), .S0(d2_62__N_678[36]), .S1(d2_62__N_678[37]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[37]), .B1(d2[37]), .C1(GND_net), .D1(GND_net), .CIN(n1931), 
+          .COUT(n1932), .S0(d2_62__N_678[36]), .S1(d2_62__N_678[37]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_38.INIT0 = 16'h5666;
     defparam d1_62__I_0_38.INIT1 = 16'h5666;
     defparam d1_62__I_0_38.INJECT1_0 = "NO";
     defparam d1_62__I_0_38.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_36 (.A0(d1[34]), .B0(d2[34]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[35]), .B1(d2[35]), .C1(GND_net), .D1(GND_net), .CIN(n1933), 
-          .COUT(n1934), .S0(d2_62__N_678[34]), .S1(d2_62__N_678[35]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[35]), .B1(d2[35]), .C1(GND_net), .D1(GND_net), .CIN(n1930), 
+          .COUT(n1931), .S0(d2_62__N_678[34]), .S1(d2_62__N_678[35]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_36.INIT0 = 16'h5666;
     defparam d1_62__I_0_36.INIT1 = 16'h5666;
     defparam d1_62__I_0_36.INJECT1_0 = "NO";
     defparam d1_62__I_0_36.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_34 (.A0(d1[32]), .B0(d2[32]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[33]), .B1(d2[33]), .C1(GND_net), .D1(GND_net), .CIN(n1932), 
-          .COUT(n1933), .S0(d2_62__N_678[32]), .S1(d2_62__N_678[33]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[33]), .B1(d2[33]), .C1(GND_net), .D1(GND_net), .CIN(n1929), 
+          .COUT(n1930), .S0(d2_62__N_678[32]), .S1(d2_62__N_678[33]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_34.INIT0 = 16'h5666;
     defparam d1_62__I_0_34.INIT1 = 16'h5666;
     defparam d1_62__I_0_34.INJECT1_0 = "NO";
     defparam d1_62__I_0_34.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_32 (.A0(d1[30]), .B0(d2[30]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[31]), .B1(d2[31]), .C1(GND_net), .D1(GND_net), .CIN(n1931), 
-          .COUT(n1932), .S0(d2_62__N_678[30]), .S1(d2_62__N_678[31]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[31]), .B1(d2[31]), .C1(GND_net), .D1(GND_net), .CIN(n1928), 
+          .COUT(n1929), .S0(d2_62__N_678[30]), .S1(d2_62__N_678[31]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_32.INIT0 = 16'h5666;
     defparam d1_62__I_0_32.INIT1 = 16'h5666;
     defparam d1_62__I_0_32.INJECT1_0 = "NO";
     defparam d1_62__I_0_32.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_30 (.A0(d1[28]), .B0(d2[28]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[29]), .B1(d2[29]), .C1(GND_net), .D1(GND_net), .CIN(n1930), 
-          .COUT(n1931), .S0(d2_62__N_678[28]), .S1(d2_62__N_678[29]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[29]), .B1(d2[29]), .C1(GND_net), .D1(GND_net), .CIN(n1927), 
+          .COUT(n1928), .S0(d2_62__N_678[28]), .S1(d2_62__N_678[29]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_30.INIT0 = 16'h5666;
     defparam d1_62__I_0_30.INIT1 = 16'h5666;
     defparam d1_62__I_0_30.INJECT1_0 = "NO";
     defparam d1_62__I_0_30.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_28 (.A0(d1[26]), .B0(d2[26]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[27]), .B1(d2[27]), .C1(GND_net), .D1(GND_net), .CIN(n1929), 
-          .COUT(n1930), .S0(d2_62__N_678[26]), .S1(d2_62__N_678[27]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[27]), .B1(d2[27]), .C1(GND_net), .D1(GND_net), .CIN(n1926), 
+          .COUT(n1927), .S0(d2_62__N_678[26]), .S1(d2_62__N_678[27]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_28.INIT0 = 16'h5666;
     defparam d1_62__I_0_28.INIT1 = 16'h5666;
     defparam d1_62__I_0_28.INJECT1_0 = "NO";
     defparam d1_62__I_0_28.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_26 (.A0(d1[24]), .B0(d2[24]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[25]), .B1(d2[25]), .C1(GND_net), .D1(GND_net), .CIN(n1928), 
-          .COUT(n1929), .S0(d2_62__N_678[24]), .S1(d2_62__N_678[25]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[25]), .B1(d2[25]), .C1(GND_net), .D1(GND_net), .CIN(n1925), 
+          .COUT(n1926), .S0(d2_62__N_678[24]), .S1(d2_62__N_678[25]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_26.INIT0 = 16'h5666;
     defparam d1_62__I_0_26.INIT1 = 16'h5666;
     defparam d1_62__I_0_26.INJECT1_0 = "NO";
     defparam d1_62__I_0_26.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_24 (.A0(d1[22]), .B0(d2[22]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[23]), .B1(d2[23]), .C1(GND_net), .D1(GND_net), .CIN(n1927), 
-          .COUT(n1928), .S0(d2_62__N_678[22]), .S1(d2_62__N_678[23]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[23]), .B1(d2[23]), .C1(GND_net), .D1(GND_net), .CIN(n1924), 
+          .COUT(n1925), .S0(d2_62__N_678[22]), .S1(d2_62__N_678[23]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_24.INIT0 = 16'h5666;
     defparam d1_62__I_0_24.INIT1 = 16'h5666;
     defparam d1_62__I_0_24.INJECT1_0 = "NO";
     defparam d1_62__I_0_24.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_60 (.A0(d3[58]), .B0(d4[58]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[59]), .B1(d4[59]), .C1(GND_net), .D1(GND_net), .CIN(n2009), 
-          .COUT(n2010), .S0(d4_62__N_804[58]), .S1(d4_62__N_804[59]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[59]), .B1(d4[59]), .C1(GND_net), .D1(GND_net), .CIN(n2006), 
+          .COUT(n2007), .S0(d4_62__N_804[58]), .S1(d4_62__N_804[59]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_60.INIT0 = 16'h5666;
     defparam d3_62__I_0_60.INIT1 = 16'h5666;
     defparam d3_62__I_0_60.INJECT1_0 = "NO";
     defparam d3_62__I_0_60.INJECT1_1 = "NO";
-    FD1S3IX count__i2 (.D(n330[2]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i2 (.D(n330[2]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i2.GSR = "ENABLED";
-    FD1S3IX count__i3 (.D(n330[3]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i3 (.D(n330[3]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i3.GSR = "ENABLED";
-    FD1S3IX count__i4 (.D(n330[4]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i4 (.D(n330[4]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i4.GSR = "ENABLED";
-    FD1S3IX count__i5 (.D(n330[5]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i5 (.D(n330[5]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i5.GSR = "ENABLED";
-    FD1S3IX count__i6 (.D(n330[6]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i6 (.D(n330[6]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i6.GSR = "ENABLED";
-    FD1S3IX count__i7 (.D(n330[7]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i7 (.D(n330[7]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i7.GSR = "ENABLED";
-    FD1S3IX count__i8 (.D(n330[8]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i8 (.D(n330[8]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i8.GSR = "ENABLED";
-    FD1S3IX count__i9 (.D(n330[9]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i9 (.D(n330[9]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i9.GSR = "ENABLED";
     FD1S3IX count__i10 (.D(count_15__N_1513[10]), .CK(osc_clk_derived_991), 
             .CD(d_clk_tmp_N_1845), .Q(count[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i10.GSR = "ENABLED";
-    FD1S3IX count__i11 (.D(n330[11]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i11 (.D(n330[11]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i11.GSR = "ENABLED";
-    FD1S3IX count__i12 (.D(n330[12]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i12 (.D(n330[12]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i12.GSR = "ENABLED";
-    FD1S3IX count__i13 (.D(n330[13]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i13 (.D(n330[13]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i13.GSR = "ENABLED";
-    FD1S3IX count__i14 (.D(n330[14]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i14 (.D(n330[14]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i14.GSR = "ENABLED";
-    FD1S3IX count__i15 (.D(n330[15]), .CK(osc_clk_derived_991), .CD(n1231), 
+    FD1S3IX count__i15 (.D(n330[15]), .CK(osc_clk_derived_991), .CD(n1228), 
             .Q(count[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=45, LSE_RCOL=2, LSE_LLINE=131, LSE_RLINE=136 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i15.GSR = "ENABLED";
     CCU2D d1_62__I_0_22 (.A0(d1[20]), .B0(d2[20]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[21]), .B1(d2[21]), .C1(GND_net), .D1(GND_net), .CIN(n1926), 
-          .COUT(n1927), .S0(d2_62__N_678[20]), .S1(d2_62__N_678[21]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[21]), .B1(d2[21]), .C1(GND_net), .D1(GND_net), .CIN(n1923), 
+          .COUT(n1924), .S0(d2_62__N_678[20]), .S1(d2_62__N_678[21]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_22.INIT0 = 16'h5666;
     defparam d1_62__I_0_22.INIT1 = 16'h5666;
     defparam d1_62__I_0_22.INJECT1_0 = "NO";
     defparam d1_62__I_0_22.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_20 (.A0(d1[18]), .B0(d2[18]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[19]), .B1(d2[19]), .C1(GND_net), .D1(GND_net), .CIN(n1925), 
-          .COUT(n1926), .S0(d2_62__N_678[18]), .S1(d2_62__N_678[19]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[19]), .B1(d2[19]), .C1(GND_net), .D1(GND_net), .CIN(n1922), 
+          .COUT(n1923), .S0(d2_62__N_678[18]), .S1(d2_62__N_678[19]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_20.INIT0 = 16'h5666;
     defparam d1_62__I_0_20.INIT1 = 16'h5666;
     defparam d1_62__I_0_20.INJECT1_0 = "NO";
     defparam d1_62__I_0_20.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_38 (.A0(CIC1_out[7]), .B0(d1[36]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[37]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1902), .COUT(n1903), .S0(d1_62__N_615[36]), 
+          .D1(GND_net), .CIN(n1899), .COUT(n1900), .S0(d1_62__N_615[36]), 
           .S1(d1_62__N_615[37]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_38.INIT0 = 16'h5666;
     defparam d_in_7__I_0_38.INIT1 = 16'h5666;
@@ -6167,7 +6171,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_38.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_36 (.A0(CIC1_out[7]), .B0(d1[34]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[35]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1901), .COUT(n1902), .S0(d1_62__N_615[34]), 
+          .D1(GND_net), .CIN(n1898), .COUT(n1899), .S0(d1_62__N_615[34]), 
           .S1(d1_62__N_615[35]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_36.INIT0 = 16'h5666;
     defparam d_in_7__I_0_36.INIT1 = 16'h5666;
@@ -6175,7 +6179,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_36.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_10 (.A0(CIC1_out[7]), .B0(d1[8]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[9]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1888), .COUT(n1889), .S0(d1_62__N_615[8]), 
+          .D1(GND_net), .CIN(n1885), .COUT(n1886), .S0(d1_62__N_615[8]), 
           .S1(d1_62__N_615[9]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_10.INIT0 = 16'h5666;
     defparam d_in_7__I_0_10.INIT1 = 16'h5666;
@@ -6183,42 +6187,42 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_10.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_8 (.A0(CIC1_out[6]), .B0(d1[6]), .C0(GND_net), .D0(GND_net), 
           .A1(CIC1_out[7]), .B1(d1[7]), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1887), .COUT(n1888), .S0(d1_62__N_615[6]), .S1(d1_62__N_615[7]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .CIN(n1884), .COUT(n1885), .S0(d1_62__N_615[6]), .S1(d1_62__N_615[7]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_8.INIT0 = 16'h5666;
     defparam d_in_7__I_0_8.INIT1 = 16'h5666;
     defparam d_in_7__I_0_8.INJECT1_0 = "NO";
     defparam d_in_7__I_0_8.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_18 (.A0(d1[16]), .B0(d2[16]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[17]), .B1(d2[17]), .C1(GND_net), .D1(GND_net), .CIN(n1924), 
-          .COUT(n1925), .S0(d2_62__N_678[16]), .S1(d2_62__N_678[17]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[17]), .B1(d2[17]), .C1(GND_net), .D1(GND_net), .CIN(n1921), 
+          .COUT(n1922), .S0(d2_62__N_678[16]), .S1(d2_62__N_678[17]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_18.INIT0 = 16'h5666;
     defparam d1_62__I_0_18.INIT1 = 16'h5666;
     defparam d1_62__I_0_18.INJECT1_0 = "NO";
     defparam d1_62__I_0_18.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_16 (.A0(d1[14]), .B0(d2[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[15]), .B1(d2[15]), .C1(GND_net), .D1(GND_net), .CIN(n1923), 
-          .COUT(n1924), .S0(d2_62__N_678[14]), .S1(d2_62__N_678[15]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[15]), .B1(d2[15]), .C1(GND_net), .D1(GND_net), .CIN(n1920), 
+          .COUT(n1921), .S0(d2_62__N_678[14]), .S1(d2_62__N_678[15]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_16.INIT0 = 16'h5666;
     defparam d1_62__I_0_16.INIT1 = 16'h5666;
     defparam d1_62__I_0_16.INJECT1_0 = "NO";
     defparam d1_62__I_0_16.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_14 (.A0(d1[12]), .B0(d2[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[13]), .B1(d2[13]), .C1(GND_net), .D1(GND_net), .CIN(n1922), 
-          .COUT(n1923), .S0(d2_62__N_678[12]), .S1(d2_62__N_678[13]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[13]), .B1(d2[13]), .C1(GND_net), .D1(GND_net), .CIN(n1919), 
+          .COUT(n1920), .S0(d2_62__N_678[12]), .S1(d2_62__N_678[13]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_14.INIT0 = 16'h5666;
     defparam d1_62__I_0_14.INIT1 = 16'h5666;
     defparam d1_62__I_0_14.INJECT1_0 = "NO";
     defparam d1_62__I_0_14.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_12 (.A0(d1[10]), .B0(d2[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[11]), .B1(d2[11]), .C1(GND_net), .D1(GND_net), .CIN(n1921), 
-          .COUT(n1922), .S0(d2_62__N_678[10]), .S1(d2_62__N_678[11]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[11]), .B1(d2[11]), .C1(GND_net), .D1(GND_net), .CIN(n1918), 
+          .COUT(n1919), .S0(d2_62__N_678[10]), .S1(d2_62__N_678[11]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_12.INIT0 = 16'h5666;
     defparam d1_62__I_0_12.INIT1 = 16'h5666;
     defparam d1_62__I_0_12.INJECT1_0 = "NO";
     defparam d1_62__I_0_12.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_53 (.A0(d_tmp[51]), .B0(d_d_tmp[51]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[52]), .B1(d_d_tmp[52]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1851), .COUT(n1852), .S0(d6_62__N_1530[51]), 
+          .D1(GND_net), .CIN(n1848), .COUT(n1849), .S0(d6_62__N_1530[51]), 
           .S1(d6_62__N_1530[52]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_53.INIT0 = 16'h5999;
     defparam sub_25_add_2_53.INIT1 = 16'h5999;
@@ -6229,7 +6233,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_tmp_i0_i52.GSR = "ENABLED";
     CCU2D sub_25_add_2_33 (.A0(d_tmp[31]), .B0(d_d_tmp[31]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[32]), .B1(d_d_tmp[32]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1841), .COUT(n1842), .S0(d6_62__N_1530[31]), 
+          .D1(GND_net), .CIN(n1838), .COUT(n1839), .S0(d6_62__N_1530[31]), 
           .S1(d6_62__N_1530[32]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_33.INIT0 = 16'h5999;
     defparam sub_25_add_2_33.INIT1 = 16'h5999;
@@ -6237,7 +6241,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_33.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_51 (.A0(d_tmp[49]), .B0(d_d_tmp[49]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[50]), .B1(d_d_tmp[50]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1850), .COUT(n1851), .S0(d6_62__N_1530[49]), 
+          .D1(GND_net), .CIN(n1847), .COUT(n1848), .S0(d6_62__N_1530[49]), 
           .S1(d6_62__N_1530[50]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_51.INIT0 = 16'h5999;
     defparam sub_25_add_2_51.INIT1 = 16'h5999;
@@ -6245,7 +6249,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_51.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_49 (.A0(d_tmp[47]), .B0(d_d_tmp[47]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[48]), .B1(d_d_tmp[48]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1849), .COUT(n1850), .S0(d6_62__N_1530[47]), 
+          .D1(GND_net), .CIN(n1846), .COUT(n1847), .S0(d6_62__N_1530[47]), 
           .S1(d6_62__N_1530[48]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_49.INIT0 = 16'h5999;
     defparam sub_25_add_2_49.INIT1 = 16'h5999;
@@ -6253,29 +6257,29 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_49.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_6 (.A0(CIC1_out[4]), .B0(d1[4]), .C0(GND_net), .D0(GND_net), 
           .A1(CIC1_out[5]), .B1(d1[5]), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1886), .COUT(n1887), .S0(d1_62__N_615[4]), .S1(d1_62__N_615[5]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .CIN(n1883), .COUT(n1884), .S0(d1_62__N_615[4]), .S1(d1_62__N_615[5]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_6.INIT0 = 16'h5666;
     defparam d_in_7__I_0_6.INIT1 = 16'h5666;
     defparam d_in_7__I_0_6.INJECT1_0 = "NO";
     defparam d_in_7__I_0_6.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_47 (.A0(d_tmp[45]), .B0(d_d_tmp[45]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[46]), .B1(d_d_tmp[46]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1848), .COUT(n1849), .S0(d6_62__N_1530[45]), 
+          .D1(GND_net), .CIN(n1845), .COUT(n1846), .S0(d6_62__N_1530[45]), 
           .S1(d6_62__N_1530[46]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_47.INIT0 = 16'h5999;
     defparam sub_25_add_2_47.INIT1 = 16'h5999;
     defparam sub_25_add_2_47.INJECT1_0 = "NO";
     defparam sub_25_add_2_47.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_10 (.A0(d1[8]), .B0(d2[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[9]), .B1(d2[9]), .C1(GND_net), .D1(GND_net), .CIN(n1920), 
-          .COUT(n1921), .S0(d2_62__N_678[8]), .S1(d2_62__N_678[9]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[9]), .B1(d2[9]), .C1(GND_net), .D1(GND_net), .CIN(n1917), 
+          .COUT(n1918), .S0(d2_62__N_678[8]), .S1(d2_62__N_678[9]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_10.INIT0 = 16'h5666;
     defparam d1_62__I_0_10.INIT1 = 16'h5666;
     defparam d1_62__I_0_10.INJECT1_0 = "NO";
     defparam d1_62__I_0_10.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_34 (.A0(CIC1_out[7]), .B0(d1[32]), .C0(GND_net), 
           .D0(GND_net), .A1(CIC1_out[7]), .B1(d1[33]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1900), .COUT(n1901), .S0(d1_62__N_615[32]), 
+          .D1(GND_net), .CIN(n1897), .COUT(n1898), .S0(d1_62__N_615[32]), 
           .S1(d1_62__N_615[33]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_34.INIT0 = 16'h5666;
     defparam d_in_7__I_0_34.INIT1 = 16'h5666;
@@ -6283,7 +6287,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam d_in_7__I_0_34.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_15 (.A0(d_tmp[13]), .B0(d_d_tmp[13]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[14]), .B1(d_d_tmp[14]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1832), .COUT(n1833), .S0(d6_62__N_1530[13]), 
+          .D1(GND_net), .CIN(n1829), .COUT(n1830), .S0(d6_62__N_1530[13]), 
           .S1(d6_62__N_1530[14]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_15.INIT0 = 16'h5999;
     defparam sub_25_add_2_15.INIT1 = 16'h5999;
@@ -6291,7 +6295,7 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_3 (.A0(d_tmp[1]), .B0(d_d_tmp[1]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[2]), .B1(d_d_tmp[2]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1826), .COUT(n1827), .S0(d6_62__N_1530[1]), 
+          .D1(GND_net), .CIN(n1823), .COUT(n1824), .S0(d6_62__N_1530[1]), 
           .S1(d6_62__N_1530[2]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_3.INIT0 = 16'h5999;
     defparam sub_25_add_2_3.INIT1 = 16'h5999;
@@ -6299,21 +6303,21 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_3.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_4 (.A0(CIC1_out[2]), .B0(d1[2]), .C0(GND_net), .D0(GND_net), 
           .A1(CIC1_out[3]), .B1(d1[3]), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1885), .COUT(n1886), .S0(d1_62__N_615[2]), .S1(d1_62__N_615[3]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .CIN(n1882), .COUT(n1883), .S0(d1_62__N_615[2]), .S1(d1_62__N_615[3]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_4.INIT0 = 16'h5666;
     defparam d_in_7__I_0_4.INIT1 = 16'h5666;
     defparam d_in_7__I_0_4.INJECT1_0 = "NO";
     defparam d_in_7__I_0_4.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_8 (.A0(d1[6]), .B0(d2[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[7]), .B1(d2[7]), .C1(GND_net), .D1(GND_net), .CIN(n1919), 
-          .COUT(n1920), .S0(d2_62__N_678[6]), .S1(d2_62__N_678[7]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[7]), .B1(d2[7]), .C1(GND_net), .D1(GND_net), .CIN(n1916), 
+          .COUT(n1917), .S0(d2_62__N_678[6]), .S1(d2_62__N_678[7]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_8.INIT0 = 16'h5666;
     defparam d1_62__I_0_8.INIT1 = 16'h5666;
     defparam d1_62__I_0_8.INJECT1_0 = "NO";
     defparam d1_62__I_0_8.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_5 (.A0(d_tmp[3]), .B0(d_d_tmp[3]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[4]), .B1(d_d_tmp[4]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1827), .COUT(n1828), .S0(d6_62__N_1530[3]), 
+          .D1(GND_net), .CIN(n1824), .COUT(n1825), .S0(d6_62__N_1530[3]), 
           .S1(d6_62__N_1530[4]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_5.INIT0 = 16'h5999;
     defparam sub_25_add_2_5.INIT1 = 16'h5999;
@@ -6321,50 +6325,50 @@ module \CIC(width=63,decimation_ratio=2048)  (osc_clk_derived_991, GND_net,
     defparam sub_25_add_2_5.INJECT1_1 = "NO";
     CCU2D d_in_7__I_0_2 (.A0(CIC1_out[0]), .B0(d1[0]), .C0(GND_net), .D0(GND_net), 
           .A1(CIC1_out[1]), .B1(d1[1]), .C1(GND_net), .D1(GND_net), 
-          .COUT(n1885), .S1(d1_62__N_615[1]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .COUT(n1882), .S1(d1_62__N_615[1]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d_in_7__I_0_2.INIT0 = 16'h7000;
     defparam d_in_7__I_0_2.INIT1 = 16'h5666;
     defparam d_in_7__I_0_2.INJECT1_0 = "NO";
     defparam d_in_7__I_0_2.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_31 (.A0(d_tmp[29]), .B0(d_d_tmp[29]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[30]), .B1(d_d_tmp[30]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n1840), .COUT(n1841), .S0(d6_62__N_1530[29]), 
+          .D1(GND_net), .CIN(n1837), .COUT(n1838), .S0(d6_62__N_1530[29]), 
           .S1(d6_62__N_1530[30]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_31.INIT0 = 16'h5999;
     defparam sub_25_add_2_31.INIT1 = 16'h5999;
     defparam sub_25_add_2_31.INJECT1_0 = "NO";
     defparam sub_25_add_2_31.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_62 (.A0(d3[60]), .B0(d4[60]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[61]), .B1(d4[61]), .C1(GND_net), .D1(GND_net), .CIN(n2010), 
-          .COUT(n2011), .S0(d4_62__N_804[60]), .S1(d4_62__N_804[61]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[61]), .B1(d4[61]), .C1(GND_net), .D1(GND_net), .CIN(n2007), 
+          .COUT(n2008), .S0(d4_62__N_804[60]), .S1(d4_62__N_804[61]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_62.INIT0 = 16'h5666;
     defparam d3_62__I_0_62.INIT1 = 16'h5666;
     defparam d3_62__I_0_62.INJECT1_0 = "NO";
     defparam d3_62__I_0_62.INJECT1_1 = "NO";
     CCU2D d3_62__I_0_64 (.A0(d3[62]), .B0(d4[62]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2011), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2008), 
           .S0(d4_62__N_804[62]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d3_62__I_0_64.INIT0 = 16'h5666;
     defparam d3_62__I_0_64.INIT1 = 16'h0000;
     defparam d3_62__I_0_64.INJECT1_0 = "NO";
     defparam d3_62__I_0_64.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_2 (.A0(d4[0]), .B0(d5[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[1]), .B1(d5[1]), .C1(GND_net), .D1(GND_net), .COUT(n2013), 
+          .A1(d4[1]), .B1(d5[1]), .C1(GND_net), .D1(GND_net), .COUT(n2010), 
           .S1(d5_62__N_867[1]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_2.INIT0 = 16'h7000;
     defparam d4_62__I_0_2.INIT1 = 16'h5666;
     defparam d4_62__I_0_2.INJECT1_0 = "NO";
     defparam d4_62__I_0_2.INJECT1_1 = "NO";
     CCU2D d4_62__I_0_4 (.A0(d4[2]), .B0(d5[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[3]), .B1(d5[3]), .C1(GND_net), .D1(GND_net), .CIN(n2013), 
-          .COUT(n2014), .S0(d5_62__N_867[2]), .S1(d5_62__N_867[3]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[3]), .B1(d5[3]), .C1(GND_net), .D1(GND_net), .CIN(n2010), 
+          .COUT(n2011), .S0(d5_62__N_867[2]), .S1(d5_62__N_867[3]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d4_62__I_0_4.INIT0 = 16'h5666;
     defparam d4_62__I_0_4.INIT1 = 16'h5666;
     defparam d4_62__I_0_4.INJECT1_0 = "NO";
     defparam d4_62__I_0_4.INJECT1_1 = "NO";
     CCU2D d1_62__I_0_6 (.A0(d1[4]), .B0(d2[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[5]), .B1(d2[5]), .C1(GND_net), .D1(GND_net), .CIN(n1918), 
-          .COUT(n1919), .S0(d2_62__N_678[4]), .S1(d2_62__N_678[5]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[5]), .B1(d2[5]), .C1(GND_net), .D1(GND_net), .CIN(n1915), 
+          .COUT(n1916), .S0(d2_62__N_678[4]), .S1(d2_62__N_678[5]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d1_62__I_0_6.INIT0 = 16'h5666;
     defparam d1_62__I_0_6.INIT1 = 16'h5666;
     defparam d1_62__I_0_6.INJECT1_0 = "NO";
@@ -6481,7 +6485,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     wire osc_clk_enable_51;
     wire [15:0]d6_15__N_398;
     
-    wire d_clk_tmp, n1158, v_comb;
+    wire d_clk_tmp, n1155, v_comb;
     wire [15:0]d_d6;   // c:/users/user/lattice/fpgasdr/cic.v(47[28:32])
     wire [15:0]d7;   // c:/users/user/lattice/fpgasdr/cic.v(48[24:26])
     wire [15:0]d7_15__N_414;
@@ -6497,13 +6501,13 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     wire [15:0]d_tmp;   // c:/users/user/lattice/fpgasdr/cic.v(34[24:29])
     wire [15:0]d5;   // c:/users/user/lattice/fpgasdr/cic.v(43[24:26])
     
-    wire n1870;
+    wire n1867;
     wire [15:0]n95;
     
-    wire n1871;
+    wire n1868;
     wire [15:0]d_d_tmp;   // c:/users/user/lattice/fpgasdr/cic.v(34[31:38])
     
-    wire osc_clk_enable_101, n1035, n1869;
+    wire osc_clk_enable_101, n1032, n1866;
     wire [15:0]n69;
     
     wire osc_clk_enable_158;
@@ -6516,17 +6520,17 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     wire [15:0]d1;   // c:/users/user/lattice/fpgasdr/cic.v(39[24:26])
     wire [15:0]n69_adj_2155;
     
-    wire n1202, n2890, n2892, n2888, n2882, n2271, n2270, n2269, 
-        n2268, n2267, n2266, n2265, n2262, n2261, n2260, n2259, 
-        n2258, n2257, n2256, n2253, n2252, n2251, n2250, n2249, 
-        n2248, n2247, n2244, n2243, n2242, n2241, n2240, n2239, 
-        n2238, n2235, n2234, n2233, n2232, n2231, n2230, n2229, 
-        n2223, n2222, n2221, n2220, n2219, n2218, n2217, n2216, 
-        n2207, n2206, n2205, n2204, n2203, n2202, n2201, n2200, 
-        n2199, n2198, n2197, n2196, n2195, n2194, n2193, n2192, 
-        n2155, n2154, n2153, n2152, n2151, n2150, n2149, n2148, 
-        n1868, n1858, n1859, n1865, n1864, n1863, n1875, n1874, 
-        n1862, n1861, n1873, n1860, n1872;
+    wire n1199, n2887, n2889, n2885, n2879, n2268, n2267, n2266, 
+        n2265, n2264, n2263, n2262, n2259, n2258, n2257, n2256, 
+        n2255, n2254, n2253, n2250, n2249, n2248, n2247, n2246, 
+        n2245, n2244, n2241, n2240, n2239, n2238, n2237, n2236, 
+        n2235, n2232, n2231, n2230, n2229, n2228, n2227, n2226, 
+        n2220, n2219, n2218, n2217, n2216, n2215, n2214, n2213, 
+        n2204, n2203, n2202, n2201, n2200, n2199, n2198, n2197, 
+        n2196, n2195, n2194, n2193, n2192, n2191, n2190, n2189, 
+        n2152, n2151, n2150, n2149, n2148, n2147, n2146, n2145, 
+        n1865, n1855, n1856, n1862, n1861, n1860, n1872, n1871, 
+        n1859, n1858, n1870, n1857, n1869;
     
     FD1S3IX count__i0 (.D(count_15__N_381[0]), .CK(osc_clk), .CD(d_clk_tmp_N_478), 
             .Q(count[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
@@ -6534,7 +6538,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     FD1P3AX d6_i0_i0 (.D(d6_15__N_398[0]), .SP(osc_clk_enable_51), .CK(osc_clk), 
             .Q(d6[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d6_i0_i0.GSR = "ENABLED";
-    FD1S3JX d_clk_tmp_63 (.D(n1158), .CK(osc_clk), .PD(d_clk_tmp_N_478), 
+    FD1S3JX d_clk_tmp_63 (.D(n1155), .CK(osc_clk), .PD(d_clk_tmp_N_478), 
             .Q(d_clk_tmp)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_clk_tmp_63.GSR = "ENABLED";
     FD1S3AX v_comb_64 (.D(d_clk_tmp_N_478), .CK(osc_clk), .Q(v_comb)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
@@ -6570,8 +6574,8 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
             .Q(d_tmp[0])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i0.GSR = "ENABLED";
     CCU2D add_10_7 (.A0(count[5]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[6]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1870), 
-          .COUT(n1871), .S0(n95[5]), .S1(n95[6]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[6]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1867), 
+          .COUT(n1868), .S0(n95[5]), .S1(n95[6]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_7.INIT0 = 16'h5aaa;
     defparam add_10_7.INIT1 = 16'h5aaa;
     defparam add_10_7.INJECT1_0 = "NO";
@@ -6780,13 +6784,13 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     FD1P3AX d8_i0_i8 (.D(d8_15__N_430[8]), .SP(osc_clk_enable_101), .CK(osc_clk), 
             .Q(d8[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d8_i0_i8.GSR = "ENABLED";
-    LUT4 i872_2_lut_4_lut (.A(count[1]), .B(n1035), .C(count[0]), .D(d_clk_tmp), 
-         .Z(n1158)) /* synthesis lut_function=(A (D)+!A (B (D)+!B (C (D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(84[17:47])
+    LUT4 i872_2_lut_4_lut (.A(count[1]), .B(n1032), .C(count[0]), .D(d_clk_tmp), 
+         .Z(n1155)) /* synthesis lut_function=(A (D)+!A (B (D)+!B (C (D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(84[17:47])
     defparam i872_2_lut_4_lut.init = 16'hfe00;
-    LUT4 i1189_2_lut_4_lut (.A(count[1]), .B(n1035), .C(count[0]), .D(n95[2]), 
+    LUT4 i1189_2_lut_4_lut (.A(count[1]), .B(n1032), .C(count[0]), .D(n95[2]), 
          .Z(count_15__N_381[2])) /* synthesis lut_function=(A (D)+!A (B (D)+!B ((D)+!C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(84[17:47])
     defparam i1189_2_lut_4_lut.init = 16'hff01;
-    LUT4 i2325_3_lut (.A(count[1]), .B(n1035), .C(count[0]), .Z(d_clk_tmp_N_478)) /* synthesis lut_function=(!((B+!(C))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+    LUT4 i2325_3_lut (.A(count[1]), .B(n1032), .C(count[0]), .Z(d_clk_tmp_N_478)) /* synthesis lut_function=(!((B+!(C))+!A)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i2325_3_lut.init = 16'h2020;
     FD1P3AX d8_i0_i7 (.D(d8_15__N_430[7]), .SP(osc_clk_enable_101), .CK(osc_clk), 
             .Q(d8[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
@@ -6828,8 +6832,8 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
             .Q(d_d7[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_d7_i0_i10.GSR = "ENABLED";
     CCU2D add_10_5 (.A0(count[3]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[4]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1869), 
-          .COUT(n1870), .S0(n95[3]), .S1(n95[4]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[4]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1866), 
+          .COUT(n1867), .S0(n95[3]), .S1(n95[4]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_5.INIT0 = 16'h5aaa;
     defparam add_10_5.INIT1 = 16'h5aaa;
     defparam add_10_5.INJECT1_0 = "NO";
@@ -7006,42 +7010,42 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     FD1P3AX d6_i0_i1 (.D(d6_15__N_398[1]), .SP(osc_clk_enable_158), .CK(osc_clk), 
             .Q(d6[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d6_i0_i1.GSR = "ENABLED";
-    FD1S3IX count__i14 (.D(n95[14]), .CK(osc_clk), .CD(n1202), .Q(count[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i14 (.D(n95[14]), .CK(osc_clk), .CD(n1199), .Q(count[14])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i14.GSR = "ENABLED";
-    FD1S3IX count__i13 (.D(n95[13]), .CK(osc_clk), .CD(n1202), .Q(count[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i13 (.D(n95[13]), .CK(osc_clk), .CD(n1199), .Q(count[13])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i13.GSR = "ENABLED";
-    FD1S3IX count__i12 (.D(n95[12]), .CK(osc_clk), .CD(n1202), .Q(count[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i12 (.D(n95[12]), .CK(osc_clk), .CD(n1199), .Q(count[12])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i12.GSR = "ENABLED";
-    FD1S3IX count__i11 (.D(n95[11]), .CK(osc_clk), .CD(n1202), .Q(count[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i11 (.D(n95[11]), .CK(osc_clk), .CD(n1199), .Q(count[11])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i11.GSR = "ENABLED";
-    FD1S3IX count__i10 (.D(n95[10]), .CK(osc_clk), .CD(n1202), .Q(count[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i10 (.D(n95[10]), .CK(osc_clk), .CD(n1199), .Q(count[10])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i10.GSR = "ENABLED";
-    FD1S3IX count__i9 (.D(n95[9]), .CK(osc_clk), .CD(n1202), .Q(count[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i9 (.D(n95[9]), .CK(osc_clk), .CD(n1199), .Q(count[9])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i9.GSR = "ENABLED";
-    FD1S3IX count__i8 (.D(n95[8]), .CK(osc_clk), .CD(n1202), .Q(count[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i8 (.D(n95[8]), .CK(osc_clk), .CD(n1199), .Q(count[8])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i8.GSR = "ENABLED";
-    FD1S3IX count__i7 (.D(n95[7]), .CK(osc_clk), .CD(n1202), .Q(count[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i7 (.D(n95[7]), .CK(osc_clk), .CD(n1199), .Q(count[7])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i7.GSR = "ENABLED";
-    FD1S3IX count__i6 (.D(n95[6]), .CK(osc_clk), .CD(n1202), .Q(count[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i6 (.D(n95[6]), .CK(osc_clk), .CD(n1199), .Q(count[6])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i6.GSR = "ENABLED";
-    FD1S3IX count__i5 (.D(n95[5]), .CK(osc_clk), .CD(n1202), .Q(count[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i5 (.D(n95[5]), .CK(osc_clk), .CD(n1199), .Q(count[5])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i5.GSR = "ENABLED";
-    FD1S3IX count__i4 (.D(n95[4]), .CK(osc_clk), .CD(n1202), .Q(count[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i4 (.D(n95[4]), .CK(osc_clk), .CD(n1199), .Q(count[4])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i4.GSR = "ENABLED";
-    FD1S3IX count__i3 (.D(n95[3]), .CK(osc_clk), .CD(n1202), .Q(count[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i3 (.D(n95[3]), .CK(osc_clk), .CD(n1199), .Q(count[3])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i3.GSR = "ENABLED";
     FD1S3IX count__i2 (.D(count_15__N_381[2]), .CK(osc_clk), .CD(d_clk_tmp_N_478), 
             .Q(count[2])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i2.GSR = "ENABLED";
-    FD1S3IX count__i1 (.D(n95[1]), .CK(osc_clk), .CD(n1202), .Q(count[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i1 (.D(n95[1]), .CK(osc_clk), .CD(n1199), .Q(count[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i1.GSR = "ENABLED";
-    LUT4 i1_4_lut (.A(n2890), .B(n2892), .C(count[2]), .D(n2888), .Z(n1035)) /* synthesis lut_function=(A+(B+((D)+!C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+    LUT4 i1_4_lut (.A(n2887), .B(n2889), .C(count[2]), .D(n2885), .Z(n1032)) /* synthesis lut_function=(A+(B+((D)+!C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i1_4_lut.init = 16'hffef;
     LUT4 i1_4_lut_adj_1 (.A(count[11]), .B(count[7]), .C(count[8]), .D(count[14]), 
-         .Z(n2890)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+         .Z(n2887)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i1_4_lut_adj_1.init = 16'hfffe;
-    LUT4 i1_4_lut_adj_2 (.A(count[9]), .B(n2882), .C(count[3]), .D(count[12]), 
-         .Z(n2892)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+    LUT4 i1_4_lut_adj_2 (.A(count[9]), .B(n2879), .C(count[3]), .D(count[12]), 
+         .Z(n2889)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i1_4_lut_adj_2.init = 16'hfffe;
     FD1P3AX d_tmp_i0_i1 (.D(d5[1]), .SP(d_clk_tmp_N_478), .CK(osc_clk), 
             .Q(d_tmp[1])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
@@ -7089,22 +7093,22 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
             .Q(d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam d_tmp_i0_i15.GSR = "ENABLED";
     LUT4 i1_4_lut_adj_3 (.A(count[4]), .B(count[6]), .C(count[13]), .D(count[15]), 
-         .Z(n2888)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+         .Z(n2885)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i1_4_lut_adj_3.init = 16'hfffe;
-    LUT4 i1_2_lut (.A(count[10]), .B(count[5]), .Z(n2882)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
+    LUT4 i1_2_lut (.A(count[10]), .B(count[5]), .Z(n2879)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(78[8:37])
     defparam i1_2_lut.init = 16'heeee;
     FD1S3AX v_comb_64_rep_59 (.D(d_clk_tmp_N_478), .CK(osc_clk), .Q(osc_clk_enable_158)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam v_comb_64_rep_59.GSR = "ENABLED";
     CCU2D d1_277_add_4_16 (.A0(MixerOutSin_c_7), .B0(d1[14]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_7), .B1(d1[15]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2271), .S0(n69_adj_2155[14]), .S1(n69_adj_2155[15]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .D1(GND_net), .CIN(n2268), .S0(n69_adj_2155[14]), .S1(n69_adj_2155[15]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_16.INIT0 = 16'h5666;
     defparam d1_277_add_4_16.INIT1 = 16'h5666;
     defparam d1_277_add_4_16.INJECT1_0 = "NO";
     defparam d1_277_add_4_16.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_14 (.A0(MixerOutSin_c_7), .B0(d1[12]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_7), .B1(d1[13]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2270), .COUT(n2271), .S0(n69_adj_2155[12]), 
+          .D1(GND_net), .CIN(n2267), .COUT(n2268), .S0(n69_adj_2155[12]), 
           .S1(n69_adj_2155[13]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_14.INIT0 = 16'h5666;
     defparam d1_277_add_4_14.INIT1 = 16'h5666;
@@ -7112,7 +7116,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_14.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_12 (.A0(MixerOutSin_c_7), .B0(d1[10]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_7), .B1(d1[11]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2269), .COUT(n2270), .S0(n69_adj_2155[10]), 
+          .D1(GND_net), .CIN(n2266), .COUT(n2267), .S0(n69_adj_2155[10]), 
           .S1(n69_adj_2155[11]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_12.INIT0 = 16'h5666;
     defparam d1_277_add_4_12.INIT1 = 16'h5666;
@@ -7120,7 +7124,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_12.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_10 (.A0(MixerOutSin_c_7), .B0(d1[8]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_7), .B1(d1[9]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2268), .COUT(n2269), .S0(n69_adj_2155[8]), 
+          .D1(GND_net), .CIN(n2265), .COUT(n2266), .S0(n69_adj_2155[8]), 
           .S1(n69_adj_2155[9]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_10.INIT0 = 16'h5666;
     defparam d1_277_add_4_10.INIT1 = 16'h5666;
@@ -7128,7 +7132,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_10.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_8 (.A0(MixerOutSin_c_6), .B0(d1[6]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_7), .B1(d1[7]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2267), .COUT(n2268), .S0(n69_adj_2155[6]), 
+          .D1(GND_net), .CIN(n2264), .COUT(n2265), .S0(n69_adj_2155[6]), 
           .S1(n69_adj_2155[7]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_8.INIT0 = 16'h5666;
     defparam d1_277_add_4_8.INIT1 = 16'h5666;
@@ -7136,7 +7140,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_8.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_6 (.A0(MixerOutSin_c_4), .B0(d1[4]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_5), .B1(d1[5]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2266), .COUT(n2267), .S0(n69_adj_2155[4]), 
+          .D1(GND_net), .CIN(n2263), .COUT(n2264), .S0(n69_adj_2155[4]), 
           .S1(n69_adj_2155[5]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_6.INIT0 = 16'h5666;
     defparam d1_277_add_4_6.INIT1 = 16'h5666;
@@ -7144,7 +7148,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_6.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_4 (.A0(MixerOutSin_c_2), .B0(d1[2]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_3), .B1(d1[3]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2265), .COUT(n2266), .S0(n69_adj_2155[2]), 
+          .D1(GND_net), .CIN(n2262), .COUT(n2263), .S0(n69_adj_2155[2]), 
           .S1(n69_adj_2155[3]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_4.INIT0 = 16'h5666;
     defparam d1_277_add_4_4.INIT1 = 16'h5666;
@@ -7152,230 +7156,230 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277_add_4_4.INJECT1_1 = "NO";
     CCU2D d1_277_add_4_2 (.A0(MixerOutSin_c_0), .B0(d1[0]), .C0(GND_net), 
           .D0(GND_net), .A1(MixerOutSin_c_1), .B1(d1[1]), .C1(GND_net), 
-          .D1(GND_net), .COUT(n2265), .S1(n69_adj_2155[1]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
+          .D1(GND_net), .COUT(n2262), .S1(n69_adj_2155[1]));   // c:/users/user/lattice/fpgasdr/cic.v(66[10:19])
     defparam d1_277_add_4_2.INIT0 = 16'h7000;
     defparam d1_277_add_4_2.INIT1 = 16'h5666;
     defparam d1_277_add_4_2.INJECT1_0 = "NO";
     defparam d1_277_add_4_2.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_16 (.A0(d1[14]), .B0(d2[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[15]), .B1(d2[15]), .C1(GND_net), .D1(GND_net), .CIN(n2262), 
+          .A1(d1[15]), .B1(d2[15]), .C1(GND_net), .D1(GND_net), .CIN(n2259), 
           .S0(n69_adj_2154[14]), .S1(n69_adj_2154[15]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_16.INIT0 = 16'h5666;
     defparam d2_278_add_4_16.INIT1 = 16'h5666;
     defparam d2_278_add_4_16.INJECT1_0 = "NO";
     defparam d2_278_add_4_16.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_14 (.A0(d1[12]), .B0(d2[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[13]), .B1(d2[13]), .C1(GND_net), .D1(GND_net), .CIN(n2261), 
-          .COUT(n2262), .S0(n69_adj_2154[12]), .S1(n69_adj_2154[13]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[13]), .B1(d2[13]), .C1(GND_net), .D1(GND_net), .CIN(n2258), 
+          .COUT(n2259), .S0(n69_adj_2154[12]), .S1(n69_adj_2154[13]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_14.INIT0 = 16'h5666;
     defparam d2_278_add_4_14.INIT1 = 16'h5666;
     defparam d2_278_add_4_14.INJECT1_0 = "NO";
     defparam d2_278_add_4_14.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_12 (.A0(d1[10]), .B0(d2[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[11]), .B1(d2[11]), .C1(GND_net), .D1(GND_net), .CIN(n2260), 
-          .COUT(n2261), .S0(n69_adj_2154[10]), .S1(n69_adj_2154[11]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[11]), .B1(d2[11]), .C1(GND_net), .D1(GND_net), .CIN(n2257), 
+          .COUT(n2258), .S0(n69_adj_2154[10]), .S1(n69_adj_2154[11]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_12.INIT0 = 16'h5666;
     defparam d2_278_add_4_12.INIT1 = 16'h5666;
     defparam d2_278_add_4_12.INJECT1_0 = "NO";
     defparam d2_278_add_4_12.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_10 (.A0(d1[8]), .B0(d2[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[9]), .B1(d2[9]), .C1(GND_net), .D1(GND_net), .CIN(n2259), 
-          .COUT(n2260), .S0(n69_adj_2154[8]), .S1(n69_adj_2154[9]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[9]), .B1(d2[9]), .C1(GND_net), .D1(GND_net), .CIN(n2256), 
+          .COUT(n2257), .S0(n69_adj_2154[8]), .S1(n69_adj_2154[9]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_10.INIT0 = 16'h5666;
     defparam d2_278_add_4_10.INIT1 = 16'h5666;
     defparam d2_278_add_4_10.INJECT1_0 = "NO";
     defparam d2_278_add_4_10.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_8 (.A0(d1[6]), .B0(d2[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[7]), .B1(d2[7]), .C1(GND_net), .D1(GND_net), .CIN(n2258), 
-          .COUT(n2259), .S0(n69_adj_2154[6]), .S1(n69_adj_2154[7]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[7]), .B1(d2[7]), .C1(GND_net), .D1(GND_net), .CIN(n2255), 
+          .COUT(n2256), .S0(n69_adj_2154[6]), .S1(n69_adj_2154[7]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_8.INIT0 = 16'h5666;
     defparam d2_278_add_4_8.INIT1 = 16'h5666;
     defparam d2_278_add_4_8.INJECT1_0 = "NO";
     defparam d2_278_add_4_8.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_6 (.A0(d1[4]), .B0(d2[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[5]), .B1(d2[5]), .C1(GND_net), .D1(GND_net), .CIN(n2257), 
-          .COUT(n2258), .S0(n69_adj_2154[4]), .S1(n69_adj_2154[5]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[5]), .B1(d2[5]), .C1(GND_net), .D1(GND_net), .CIN(n2254), 
+          .COUT(n2255), .S0(n69_adj_2154[4]), .S1(n69_adj_2154[5]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_6.INIT0 = 16'h5666;
     defparam d2_278_add_4_6.INIT1 = 16'h5666;
     defparam d2_278_add_4_6.INJECT1_0 = "NO";
     defparam d2_278_add_4_6.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_4 (.A0(d1[2]), .B0(d2[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[3]), .B1(d2[3]), .C1(GND_net), .D1(GND_net), .CIN(n2256), 
-          .COUT(n2257), .S0(n69_adj_2154[2]), .S1(n69_adj_2154[3]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
+          .A1(d1[3]), .B1(d2[3]), .C1(GND_net), .D1(GND_net), .CIN(n2253), 
+          .COUT(n2254), .S0(n69_adj_2154[2]), .S1(n69_adj_2154[3]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_4.INIT0 = 16'h5666;
     defparam d2_278_add_4_4.INIT1 = 16'h5666;
     defparam d2_278_add_4_4.INJECT1_0 = "NO";
     defparam d2_278_add_4_4.INJECT1_1 = "NO";
     CCU2D d2_278_add_4_2 (.A0(d1[0]), .B0(d2[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d1[1]), .B1(d2[1]), .C1(GND_net), .D1(GND_net), .COUT(n2256), 
+          .A1(d1[1]), .B1(d2[1]), .C1(GND_net), .D1(GND_net), .COUT(n2253), 
           .S1(n69_adj_2154[1]));   // c:/users/user/lattice/fpgasdr/cic.v(68[10:17])
     defparam d2_278_add_4_2.INIT0 = 16'h7000;
     defparam d2_278_add_4_2.INIT1 = 16'h5666;
     defparam d2_278_add_4_2.INJECT1_0 = "NO";
     defparam d2_278_add_4_2.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_16 (.A0(d2[14]), .B0(d3[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[15]), .B1(d3[15]), .C1(GND_net), .D1(GND_net), .CIN(n2253), 
+          .A1(d2[15]), .B1(d3[15]), .C1(GND_net), .D1(GND_net), .CIN(n2250), 
           .S0(n69_adj_2153[14]), .S1(n69_adj_2153[15]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_16.INIT0 = 16'h5666;
     defparam d3_279_add_4_16.INIT1 = 16'h5666;
     defparam d3_279_add_4_16.INJECT1_0 = "NO";
     defparam d3_279_add_4_16.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_14 (.A0(d2[12]), .B0(d3[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[13]), .B1(d3[13]), .C1(GND_net), .D1(GND_net), .CIN(n2252), 
-          .COUT(n2253), .S0(n69_adj_2153[12]), .S1(n69_adj_2153[13]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[13]), .B1(d3[13]), .C1(GND_net), .D1(GND_net), .CIN(n2249), 
+          .COUT(n2250), .S0(n69_adj_2153[12]), .S1(n69_adj_2153[13]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_14.INIT0 = 16'h5666;
     defparam d3_279_add_4_14.INIT1 = 16'h5666;
     defparam d3_279_add_4_14.INJECT1_0 = "NO";
     defparam d3_279_add_4_14.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_12 (.A0(d2[10]), .B0(d3[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[11]), .B1(d3[11]), .C1(GND_net), .D1(GND_net), .CIN(n2251), 
-          .COUT(n2252), .S0(n69_adj_2153[10]), .S1(n69_adj_2153[11]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[11]), .B1(d3[11]), .C1(GND_net), .D1(GND_net), .CIN(n2248), 
+          .COUT(n2249), .S0(n69_adj_2153[10]), .S1(n69_adj_2153[11]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_12.INIT0 = 16'h5666;
     defparam d3_279_add_4_12.INIT1 = 16'h5666;
     defparam d3_279_add_4_12.INJECT1_0 = "NO";
     defparam d3_279_add_4_12.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_10 (.A0(d2[8]), .B0(d3[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[9]), .B1(d3[9]), .C1(GND_net), .D1(GND_net), .CIN(n2250), 
-          .COUT(n2251), .S0(n69_adj_2153[8]), .S1(n69_adj_2153[9]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[9]), .B1(d3[9]), .C1(GND_net), .D1(GND_net), .CIN(n2247), 
+          .COUT(n2248), .S0(n69_adj_2153[8]), .S1(n69_adj_2153[9]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_10.INIT0 = 16'h5666;
     defparam d3_279_add_4_10.INIT1 = 16'h5666;
     defparam d3_279_add_4_10.INJECT1_0 = "NO";
     defparam d3_279_add_4_10.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_8 (.A0(d2[6]), .B0(d3[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[7]), .B1(d3[7]), .C1(GND_net), .D1(GND_net), .CIN(n2249), 
-          .COUT(n2250), .S0(n69_adj_2153[6]), .S1(n69_adj_2153[7]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[7]), .B1(d3[7]), .C1(GND_net), .D1(GND_net), .CIN(n2246), 
+          .COUT(n2247), .S0(n69_adj_2153[6]), .S1(n69_adj_2153[7]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_8.INIT0 = 16'h5666;
     defparam d3_279_add_4_8.INIT1 = 16'h5666;
     defparam d3_279_add_4_8.INJECT1_0 = "NO";
     defparam d3_279_add_4_8.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_6 (.A0(d2[4]), .B0(d3[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[5]), .B1(d3[5]), .C1(GND_net), .D1(GND_net), .CIN(n2248), 
-          .COUT(n2249), .S0(n69_adj_2153[4]), .S1(n69_adj_2153[5]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[5]), .B1(d3[5]), .C1(GND_net), .D1(GND_net), .CIN(n2245), 
+          .COUT(n2246), .S0(n69_adj_2153[4]), .S1(n69_adj_2153[5]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_6.INIT0 = 16'h5666;
     defparam d3_279_add_4_6.INIT1 = 16'h5666;
     defparam d3_279_add_4_6.INJECT1_0 = "NO";
     defparam d3_279_add_4_6.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_4 (.A0(d2[2]), .B0(d3[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[3]), .B1(d3[3]), .C1(GND_net), .D1(GND_net), .CIN(n2247), 
-          .COUT(n2248), .S0(n69_adj_2153[2]), .S1(n69_adj_2153[3]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
+          .A1(d2[3]), .B1(d3[3]), .C1(GND_net), .D1(GND_net), .CIN(n2244), 
+          .COUT(n2245), .S0(n69_adj_2153[2]), .S1(n69_adj_2153[3]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_4.INIT0 = 16'h5666;
     defparam d3_279_add_4_4.INIT1 = 16'h5666;
     defparam d3_279_add_4_4.INJECT1_0 = "NO";
     defparam d3_279_add_4_4.INJECT1_1 = "NO";
     CCU2D d3_279_add_4_2 (.A0(d2[0]), .B0(d3[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d2[1]), .B1(d3[1]), .C1(GND_net), .D1(GND_net), .COUT(n2247), 
+          .A1(d2[1]), .B1(d3[1]), .C1(GND_net), .D1(GND_net), .COUT(n2244), 
           .S1(n69_adj_2153[1]));   // c:/users/user/lattice/fpgasdr/cic.v(70[10:17])
     defparam d3_279_add_4_2.INIT0 = 16'h7000;
     defparam d3_279_add_4_2.INIT1 = 16'h5666;
     defparam d3_279_add_4_2.INJECT1_0 = "NO";
     defparam d3_279_add_4_2.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_16 (.A0(d3[14]), .B0(d4[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[15]), .B1(d4[15]), .C1(GND_net), .D1(GND_net), .CIN(n2244), 
+          .A1(d3[15]), .B1(d4[15]), .C1(GND_net), .D1(GND_net), .CIN(n2241), 
           .S0(n69_adj_2152[14]), .S1(n69_adj_2152[15]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_16.INIT0 = 16'h5666;
     defparam d4_280_add_4_16.INIT1 = 16'h5666;
     defparam d4_280_add_4_16.INJECT1_0 = "NO";
     defparam d4_280_add_4_16.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_14 (.A0(d3[12]), .B0(d4[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[13]), .B1(d4[13]), .C1(GND_net), .D1(GND_net), .CIN(n2243), 
-          .COUT(n2244), .S0(n69_adj_2152[12]), .S1(n69_adj_2152[13]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[13]), .B1(d4[13]), .C1(GND_net), .D1(GND_net), .CIN(n2240), 
+          .COUT(n2241), .S0(n69_adj_2152[12]), .S1(n69_adj_2152[13]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_14.INIT0 = 16'h5666;
     defparam d4_280_add_4_14.INIT1 = 16'h5666;
     defparam d4_280_add_4_14.INJECT1_0 = "NO";
     defparam d4_280_add_4_14.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_12 (.A0(d3[10]), .B0(d4[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[11]), .B1(d4[11]), .C1(GND_net), .D1(GND_net), .CIN(n2242), 
-          .COUT(n2243), .S0(n69_adj_2152[10]), .S1(n69_adj_2152[11]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[11]), .B1(d4[11]), .C1(GND_net), .D1(GND_net), .CIN(n2239), 
+          .COUT(n2240), .S0(n69_adj_2152[10]), .S1(n69_adj_2152[11]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_12.INIT0 = 16'h5666;
     defparam d4_280_add_4_12.INIT1 = 16'h5666;
     defparam d4_280_add_4_12.INJECT1_0 = "NO";
     defparam d4_280_add_4_12.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_10 (.A0(d3[8]), .B0(d4[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[9]), .B1(d4[9]), .C1(GND_net), .D1(GND_net), .CIN(n2241), 
-          .COUT(n2242), .S0(n69_adj_2152[8]), .S1(n69_adj_2152[9]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[9]), .B1(d4[9]), .C1(GND_net), .D1(GND_net), .CIN(n2238), 
+          .COUT(n2239), .S0(n69_adj_2152[8]), .S1(n69_adj_2152[9]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_10.INIT0 = 16'h5666;
     defparam d4_280_add_4_10.INIT1 = 16'h5666;
     defparam d4_280_add_4_10.INJECT1_0 = "NO";
     defparam d4_280_add_4_10.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_8 (.A0(d3[6]), .B0(d4[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[7]), .B1(d4[7]), .C1(GND_net), .D1(GND_net), .CIN(n2240), 
-          .COUT(n2241), .S0(n69_adj_2152[6]), .S1(n69_adj_2152[7]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[7]), .B1(d4[7]), .C1(GND_net), .D1(GND_net), .CIN(n2237), 
+          .COUT(n2238), .S0(n69_adj_2152[6]), .S1(n69_adj_2152[7]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_8.INIT0 = 16'h5666;
     defparam d4_280_add_4_8.INIT1 = 16'h5666;
     defparam d4_280_add_4_8.INJECT1_0 = "NO";
     defparam d4_280_add_4_8.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_6 (.A0(d3[4]), .B0(d4[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[5]), .B1(d4[5]), .C1(GND_net), .D1(GND_net), .CIN(n2239), 
-          .COUT(n2240), .S0(n69_adj_2152[4]), .S1(n69_adj_2152[5]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[5]), .B1(d4[5]), .C1(GND_net), .D1(GND_net), .CIN(n2236), 
+          .COUT(n2237), .S0(n69_adj_2152[4]), .S1(n69_adj_2152[5]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_6.INIT0 = 16'h5666;
     defparam d4_280_add_4_6.INIT1 = 16'h5666;
     defparam d4_280_add_4_6.INJECT1_0 = "NO";
     defparam d4_280_add_4_6.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_4 (.A0(d3[2]), .B0(d4[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[3]), .B1(d4[3]), .C1(GND_net), .D1(GND_net), .CIN(n2238), 
-          .COUT(n2239), .S0(n69_adj_2152[2]), .S1(n69_adj_2152[3]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
+          .A1(d3[3]), .B1(d4[3]), .C1(GND_net), .D1(GND_net), .CIN(n2235), 
+          .COUT(n2236), .S0(n69_adj_2152[2]), .S1(n69_adj_2152[3]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_4.INIT0 = 16'h5666;
     defparam d4_280_add_4_4.INIT1 = 16'h5666;
     defparam d4_280_add_4_4.INJECT1_0 = "NO";
     defparam d4_280_add_4_4.INJECT1_1 = "NO";
     CCU2D d4_280_add_4_2 (.A0(d3[0]), .B0(d4[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d3[1]), .B1(d4[1]), .C1(GND_net), .D1(GND_net), .COUT(n2238), 
+          .A1(d3[1]), .B1(d4[1]), .C1(GND_net), .D1(GND_net), .COUT(n2235), 
           .S1(n69_adj_2152[1]));   // c:/users/user/lattice/fpgasdr/cic.v(72[10:17])
     defparam d4_280_add_4_2.INIT0 = 16'h7000;
     defparam d4_280_add_4_2.INIT1 = 16'h5666;
     defparam d4_280_add_4_2.INJECT1_0 = "NO";
     defparam d4_280_add_4_2.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_16 (.A0(d4[14]), .B0(d5[14]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[15]), .B1(d5[15]), .C1(GND_net), .D1(GND_net), .CIN(n2235), 
+          .A1(d4[15]), .B1(d5[15]), .C1(GND_net), .D1(GND_net), .CIN(n2232), 
           .S0(n69[14]), .S1(n69[15]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_16.INIT0 = 16'h5666;
     defparam d5_281_add_4_16.INIT1 = 16'h5666;
     defparam d5_281_add_4_16.INJECT1_0 = "NO";
     defparam d5_281_add_4_16.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_14 (.A0(d4[12]), .B0(d5[12]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[13]), .B1(d5[13]), .C1(GND_net), .D1(GND_net), .CIN(n2234), 
-          .COUT(n2235), .S0(n69[12]), .S1(n69[13]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[13]), .B1(d5[13]), .C1(GND_net), .D1(GND_net), .CIN(n2231), 
+          .COUT(n2232), .S0(n69[12]), .S1(n69[13]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_14.INIT0 = 16'h5666;
     defparam d5_281_add_4_14.INIT1 = 16'h5666;
     defparam d5_281_add_4_14.INJECT1_0 = "NO";
     defparam d5_281_add_4_14.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_12 (.A0(d4[10]), .B0(d5[10]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[11]), .B1(d5[11]), .C1(GND_net), .D1(GND_net), .CIN(n2233), 
-          .COUT(n2234), .S0(n69[10]), .S1(n69[11]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[11]), .B1(d5[11]), .C1(GND_net), .D1(GND_net), .CIN(n2230), 
+          .COUT(n2231), .S0(n69[10]), .S1(n69[11]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_12.INIT0 = 16'h5666;
     defparam d5_281_add_4_12.INIT1 = 16'h5666;
     defparam d5_281_add_4_12.INJECT1_0 = "NO";
     defparam d5_281_add_4_12.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_10 (.A0(d4[8]), .B0(d5[8]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[9]), .B1(d5[9]), .C1(GND_net), .D1(GND_net), .CIN(n2232), 
-          .COUT(n2233), .S0(n69[8]), .S1(n69[9]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[9]), .B1(d5[9]), .C1(GND_net), .D1(GND_net), .CIN(n2229), 
+          .COUT(n2230), .S0(n69[8]), .S1(n69[9]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_10.INIT0 = 16'h5666;
     defparam d5_281_add_4_10.INIT1 = 16'h5666;
     defparam d5_281_add_4_10.INJECT1_0 = "NO";
     defparam d5_281_add_4_10.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_8 (.A0(d4[6]), .B0(d5[6]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[7]), .B1(d5[7]), .C1(GND_net), .D1(GND_net), .CIN(n2231), 
-          .COUT(n2232), .S0(n69[6]), .S1(n69[7]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[7]), .B1(d5[7]), .C1(GND_net), .D1(GND_net), .CIN(n2228), 
+          .COUT(n2229), .S0(n69[6]), .S1(n69[7]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_8.INIT0 = 16'h5666;
     defparam d5_281_add_4_8.INIT1 = 16'h5666;
     defparam d5_281_add_4_8.INJECT1_0 = "NO";
     defparam d5_281_add_4_8.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_6 (.A0(d4[4]), .B0(d5[4]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[5]), .B1(d5[5]), .C1(GND_net), .D1(GND_net), .CIN(n2230), 
-          .COUT(n2231), .S0(n69[4]), .S1(n69[5]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[5]), .B1(d5[5]), .C1(GND_net), .D1(GND_net), .CIN(n2227), 
+          .COUT(n2228), .S0(n69[4]), .S1(n69[5]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_6.INIT0 = 16'h5666;
     defparam d5_281_add_4_6.INIT1 = 16'h5666;
     defparam d5_281_add_4_6.INJECT1_0 = "NO";
     defparam d5_281_add_4_6.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_4 (.A0(d4[2]), .B0(d5[2]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[3]), .B1(d5[3]), .C1(GND_net), .D1(GND_net), .CIN(n2229), 
-          .COUT(n2230), .S0(n69[2]), .S1(n69[3]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
+          .A1(d4[3]), .B1(d5[3]), .C1(GND_net), .D1(GND_net), .CIN(n2226), 
+          .COUT(n2227), .S0(n69[2]), .S1(n69[3]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_4.INIT0 = 16'h5666;
     defparam d5_281_add_4_4.INIT1 = 16'h5666;
     defparam d5_281_add_4_4.INJECT1_0 = "NO";
     defparam d5_281_add_4_4.INJECT1_1 = "NO";
     CCU2D d5_281_add_4_2 (.A0(d4[0]), .B0(d5[0]), .C0(GND_net), .D0(GND_net), 
-          .A1(d4[1]), .B1(d5[1]), .C1(GND_net), .D1(GND_net), .COUT(n2229), 
+          .A1(d4[1]), .B1(d5[1]), .C1(GND_net), .D1(GND_net), .COUT(n2226), 
           .S1(n69[1]));   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281_add_4_2.INIT0 = 16'h7000;
     defparam d5_281_add_4_2.INIT1 = 16'h5666;
@@ -7383,14 +7387,14 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d5_281_add_4_2.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_17 (.A0(d_tmp[15]), .B0(d_d_tmp[15]), .C0(GND_net), 
           .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n2223), .S0(d6_15__N_398[15]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
+          .CIN(n2220), .S0(d6_15__N_398[15]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_17.INIT0 = 16'h5999;
     defparam sub_25_add_2_17.INIT1 = 16'h0000;
     defparam sub_25_add_2_17.INJECT1_0 = "NO";
     defparam sub_25_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_15 (.A0(d_tmp[13]), .B0(d_d_tmp[13]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[14]), .B1(d_d_tmp[14]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2222), .COUT(n2223), .S0(d6_15__N_398[13]), 
+          .D1(GND_net), .CIN(n2219), .COUT(n2220), .S0(d6_15__N_398[13]), 
           .S1(d6_15__N_398[14]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_15.INIT0 = 16'h5999;
     defparam sub_25_add_2_15.INIT1 = 16'h5999;
@@ -7398,7 +7402,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_13 (.A0(d_tmp[11]), .B0(d_d_tmp[11]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[12]), .B1(d_d_tmp[12]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2221), .COUT(n2222), .S0(d6_15__N_398[11]), 
+          .D1(GND_net), .CIN(n2218), .COUT(n2219), .S0(d6_15__N_398[11]), 
           .S1(d6_15__N_398[12]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_13.INIT0 = 16'h5999;
     defparam sub_25_add_2_13.INIT1 = 16'h5999;
@@ -7406,7 +7410,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_11 (.A0(d_tmp[9]), .B0(d_d_tmp[9]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[10]), .B1(d_d_tmp[10]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2220), .COUT(n2221), .S0(d6_15__N_398[9]), 
+          .D1(GND_net), .CIN(n2217), .COUT(n2218), .S0(d6_15__N_398[9]), 
           .S1(d6_15__N_398[10]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_11.INIT0 = 16'h5999;
     defparam sub_25_add_2_11.INIT1 = 16'h5999;
@@ -7414,7 +7418,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_9 (.A0(d_tmp[7]), .B0(d_d_tmp[7]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[8]), .B1(d_d_tmp[8]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2219), .COUT(n2220), .S0(d6_15__N_398[7]), 
+          .D1(GND_net), .CIN(n2216), .COUT(n2217), .S0(d6_15__N_398[7]), 
           .S1(d6_15__N_398[8]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_9.INIT0 = 16'h5999;
     defparam sub_25_add_2_9.INIT1 = 16'h5999;
@@ -7422,7 +7426,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_7 (.A0(d_tmp[5]), .B0(d_d_tmp[5]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[6]), .B1(d_d_tmp[6]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2218), .COUT(n2219), .S0(d6_15__N_398[5]), 
+          .D1(GND_net), .CIN(n2215), .COUT(n2216), .S0(d6_15__N_398[5]), 
           .S1(d6_15__N_398[6]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_7.INIT0 = 16'h5999;
     defparam sub_25_add_2_7.INIT1 = 16'h5999;
@@ -7430,7 +7434,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_5 (.A0(d_tmp[3]), .B0(d_d_tmp[3]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[4]), .B1(d_d_tmp[4]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2217), .COUT(n2218), .S0(d6_15__N_398[3]), 
+          .D1(GND_net), .CIN(n2214), .COUT(n2215), .S0(d6_15__N_398[3]), 
           .S1(d6_15__N_398[4]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_5.INIT0 = 16'h5999;
     defparam sub_25_add_2_5.INIT1 = 16'h5999;
@@ -7438,7 +7442,7 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_3 (.A0(d_tmp[1]), .B0(d_d_tmp[1]), .C0(GND_net), 
           .D0(GND_net), .A1(d_tmp[2]), .B1(d_d_tmp[2]), .C1(GND_net), 
-          .D1(GND_net), .CIN(n2216), .COUT(n2217), .S0(d6_15__N_398[1]), 
+          .D1(GND_net), .CIN(n2213), .COUT(n2214), .S0(d6_15__N_398[1]), 
           .S1(d6_15__N_398[2]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_3.INIT0 = 16'h5999;
     defparam sub_25_add_2_3.INIT1 = 16'h5999;
@@ -7446,139 +7450,139 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam sub_25_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_25_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(d_tmp[0]), .B1(d_d_tmp[0]), .C1(GND_net), .D1(GND_net), 
-          .COUT(n2216), .S1(d6_15__N_398[0]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
+          .COUT(n2213), .S1(d6_15__N_398[0]));   // c:/users/user/lattice/fpgasdr/cic.v(107[11:26])
     defparam sub_25_add_2_1.INIT0 = 16'h0000;
     defparam sub_25_add_2_1.INIT1 = 16'h5999;
     defparam sub_25_add_2_1.INJECT1_0 = "NO";
     defparam sub_25_add_2_1.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_17 (.A0(d6[15]), .B0(d_d6[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2207), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2204), 
           .S0(d7_15__N_414[15]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_17.INIT0 = 16'h5999;
     defparam sub_26_add_2_17.INIT1 = 16'h0000;
     defparam sub_26_add_2_17.INJECT1_0 = "NO";
     defparam sub_26_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_15 (.A0(d6[13]), .B0(d_d6[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[14]), .B1(d_d6[14]), .C1(GND_net), .D1(GND_net), .CIN(n2206), 
-          .COUT(n2207), .S0(d7_15__N_414[13]), .S1(d7_15__N_414[14]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[14]), .B1(d_d6[14]), .C1(GND_net), .D1(GND_net), .CIN(n2203), 
+          .COUT(n2204), .S0(d7_15__N_414[13]), .S1(d7_15__N_414[14]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_15.INIT0 = 16'h5999;
     defparam sub_26_add_2_15.INIT1 = 16'h5999;
     defparam sub_26_add_2_15.INJECT1_0 = "NO";
     defparam sub_26_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_13 (.A0(d6[11]), .B0(d_d6[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[12]), .B1(d_d6[12]), .C1(GND_net), .D1(GND_net), .CIN(n2205), 
-          .COUT(n2206), .S0(d7_15__N_414[11]), .S1(d7_15__N_414[12]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[12]), .B1(d_d6[12]), .C1(GND_net), .D1(GND_net), .CIN(n2202), 
+          .COUT(n2203), .S0(d7_15__N_414[11]), .S1(d7_15__N_414[12]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_13.INIT0 = 16'h5999;
     defparam sub_26_add_2_13.INIT1 = 16'h5999;
     defparam sub_26_add_2_13.INJECT1_0 = "NO";
     defparam sub_26_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_11 (.A0(d6[9]), .B0(d_d6[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[10]), .B1(d_d6[10]), .C1(GND_net), .D1(GND_net), .CIN(n2204), 
-          .COUT(n2205), .S0(d7_15__N_414[9]), .S1(d7_15__N_414[10]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[10]), .B1(d_d6[10]), .C1(GND_net), .D1(GND_net), .CIN(n2201), 
+          .COUT(n2202), .S0(d7_15__N_414[9]), .S1(d7_15__N_414[10]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_11.INIT0 = 16'h5999;
     defparam sub_26_add_2_11.INIT1 = 16'h5999;
     defparam sub_26_add_2_11.INJECT1_0 = "NO";
     defparam sub_26_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_9 (.A0(d6[7]), .B0(d_d6[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[8]), .B1(d_d6[8]), .C1(GND_net), .D1(GND_net), .CIN(n2203), 
-          .COUT(n2204), .S0(d7_15__N_414[7]), .S1(d7_15__N_414[8]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[8]), .B1(d_d6[8]), .C1(GND_net), .D1(GND_net), .CIN(n2200), 
+          .COUT(n2201), .S0(d7_15__N_414[7]), .S1(d7_15__N_414[8]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_9.INIT0 = 16'h5999;
     defparam sub_26_add_2_9.INIT1 = 16'h5999;
     defparam sub_26_add_2_9.INJECT1_0 = "NO";
     defparam sub_26_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_7 (.A0(d6[5]), .B0(d_d6[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[6]), .B1(d_d6[6]), .C1(GND_net), .D1(GND_net), .CIN(n2202), 
-          .COUT(n2203), .S0(d7_15__N_414[5]), .S1(d7_15__N_414[6]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[6]), .B1(d_d6[6]), .C1(GND_net), .D1(GND_net), .CIN(n2199), 
+          .COUT(n2200), .S0(d7_15__N_414[5]), .S1(d7_15__N_414[6]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_7.INIT0 = 16'h5999;
     defparam sub_26_add_2_7.INIT1 = 16'h5999;
     defparam sub_26_add_2_7.INJECT1_0 = "NO";
     defparam sub_26_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_5 (.A0(d6[3]), .B0(d_d6[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[4]), .B1(d_d6[4]), .C1(GND_net), .D1(GND_net), .CIN(n2201), 
-          .COUT(n2202), .S0(d7_15__N_414[3]), .S1(d7_15__N_414[4]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[4]), .B1(d_d6[4]), .C1(GND_net), .D1(GND_net), .CIN(n2198), 
+          .COUT(n2199), .S0(d7_15__N_414[3]), .S1(d7_15__N_414[4]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_5.INIT0 = 16'h5999;
     defparam sub_26_add_2_5.INIT1 = 16'h5999;
     defparam sub_26_add_2_5.INJECT1_0 = "NO";
     defparam sub_26_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_3 (.A0(d6[1]), .B0(d_d6[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[2]), .B1(d_d6[2]), .C1(GND_net), .D1(GND_net), .CIN(n2200), 
-          .COUT(n2201), .S0(d7_15__N_414[1]), .S1(d7_15__N_414[2]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
+          .A1(d6[2]), .B1(d_d6[2]), .C1(GND_net), .D1(GND_net), .CIN(n2197), 
+          .COUT(n2198), .S0(d7_15__N_414[1]), .S1(d7_15__N_414[2]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_3.INIT0 = 16'h5999;
     defparam sub_26_add_2_3.INIT1 = 16'h5999;
     defparam sub_26_add_2_3.INJECT1_0 = "NO";
     defparam sub_26_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_26_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d6[0]), .B1(d_d6[0]), .C1(GND_net), .D1(GND_net), .COUT(n2200), 
+          .A1(d6[0]), .B1(d_d6[0]), .C1(GND_net), .D1(GND_net), .COUT(n2197), 
           .S1(d7_15__N_414[0]));   // c:/users/user/lattice/fpgasdr/cic.v(110[11:20])
     defparam sub_26_add_2_1.INIT0 = 16'h0000;
     defparam sub_26_add_2_1.INIT1 = 16'h5999;
     defparam sub_26_add_2_1.INJECT1_0 = "NO";
     defparam sub_26_add_2_1.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_17 (.A0(d7[15]), .B0(d_d7[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2199), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2196), 
           .S0(d8_15__N_430[15]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_17.INIT0 = 16'h5999;
     defparam sub_27_add_2_17.INIT1 = 16'h0000;
     defparam sub_27_add_2_17.INJECT1_0 = "NO";
     defparam sub_27_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_15 (.A0(d7[13]), .B0(d_d7[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[14]), .B1(d_d7[14]), .C1(GND_net), .D1(GND_net), .CIN(n2198), 
-          .COUT(n2199), .S0(d8_15__N_430[13]), .S1(d8_15__N_430[14]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[14]), .B1(d_d7[14]), .C1(GND_net), .D1(GND_net), .CIN(n2195), 
+          .COUT(n2196), .S0(d8_15__N_430[13]), .S1(d8_15__N_430[14]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_15.INIT0 = 16'h5999;
     defparam sub_27_add_2_15.INIT1 = 16'h5999;
     defparam sub_27_add_2_15.INJECT1_0 = "NO";
     defparam sub_27_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_13 (.A0(d7[11]), .B0(d_d7[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[12]), .B1(d_d7[12]), .C1(GND_net), .D1(GND_net), .CIN(n2197), 
-          .COUT(n2198), .S0(d8_15__N_430[11]), .S1(d8_15__N_430[12]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[12]), .B1(d_d7[12]), .C1(GND_net), .D1(GND_net), .CIN(n2194), 
+          .COUT(n2195), .S0(d8_15__N_430[11]), .S1(d8_15__N_430[12]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_13.INIT0 = 16'h5999;
     defparam sub_27_add_2_13.INIT1 = 16'h5999;
     defparam sub_27_add_2_13.INJECT1_0 = "NO";
     defparam sub_27_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_11 (.A0(d7[9]), .B0(d_d7[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[10]), .B1(d_d7[10]), .C1(GND_net), .D1(GND_net), .CIN(n2196), 
-          .COUT(n2197), .S0(d8_15__N_430[9]), .S1(d8_15__N_430[10]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[10]), .B1(d_d7[10]), .C1(GND_net), .D1(GND_net), .CIN(n2193), 
+          .COUT(n2194), .S0(d8_15__N_430[9]), .S1(d8_15__N_430[10]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_11.INIT0 = 16'h5999;
     defparam sub_27_add_2_11.INIT1 = 16'h5999;
     defparam sub_27_add_2_11.INJECT1_0 = "NO";
     defparam sub_27_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_9 (.A0(d7[7]), .B0(d_d7[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[8]), .B1(d_d7[8]), .C1(GND_net), .D1(GND_net), .CIN(n2195), 
-          .COUT(n2196), .S0(d8_15__N_430[7]), .S1(d8_15__N_430[8]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[8]), .B1(d_d7[8]), .C1(GND_net), .D1(GND_net), .CIN(n2192), 
+          .COUT(n2193), .S0(d8_15__N_430[7]), .S1(d8_15__N_430[8]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_9.INIT0 = 16'h5999;
     defparam sub_27_add_2_9.INIT1 = 16'h5999;
     defparam sub_27_add_2_9.INJECT1_0 = "NO";
     defparam sub_27_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_7 (.A0(d7[5]), .B0(d_d7[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[6]), .B1(d_d7[6]), .C1(GND_net), .D1(GND_net), .CIN(n2194), 
-          .COUT(n2195), .S0(d8_15__N_430[5]), .S1(d8_15__N_430[6]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[6]), .B1(d_d7[6]), .C1(GND_net), .D1(GND_net), .CIN(n2191), 
+          .COUT(n2192), .S0(d8_15__N_430[5]), .S1(d8_15__N_430[6]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_7.INIT0 = 16'h5999;
     defparam sub_27_add_2_7.INIT1 = 16'h5999;
     defparam sub_27_add_2_7.INJECT1_0 = "NO";
     defparam sub_27_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_5 (.A0(d7[3]), .B0(d_d7[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[4]), .B1(d_d7[4]), .C1(GND_net), .D1(GND_net), .CIN(n2193), 
-          .COUT(n2194), .S0(d8_15__N_430[3]), .S1(d8_15__N_430[4]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[4]), .B1(d_d7[4]), .C1(GND_net), .D1(GND_net), .CIN(n2190), 
+          .COUT(n2191), .S0(d8_15__N_430[3]), .S1(d8_15__N_430[4]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_5.INIT0 = 16'h5999;
     defparam sub_27_add_2_5.INIT1 = 16'h5999;
     defparam sub_27_add_2_5.INJECT1_0 = "NO";
     defparam sub_27_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_3 (.A0(d7[1]), .B0(d_d7[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[2]), .B1(d_d7[2]), .C1(GND_net), .D1(GND_net), .CIN(n2192), 
-          .COUT(n2193), .S0(d8_15__N_430[1]), .S1(d8_15__N_430[2]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
+          .A1(d7[2]), .B1(d_d7[2]), .C1(GND_net), .D1(GND_net), .CIN(n2189), 
+          .COUT(n2190), .S0(d8_15__N_430[1]), .S1(d8_15__N_430[2]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_3.INIT0 = 16'h5999;
     defparam sub_27_add_2_3.INIT1 = 16'h5999;
     defparam sub_27_add_2_3.INJECT1_0 = "NO";
     defparam sub_27_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_27_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d7[0]), .B1(d_d7[0]), .C1(GND_net), .D1(GND_net), .COUT(n2192), 
+          .A1(d7[0]), .B1(d_d7[0]), .C1(GND_net), .D1(GND_net), .COUT(n2189), 
           .S1(d8_15__N_430[0]));   // c:/users/user/lattice/fpgasdr/cic.v(113[11:20])
     defparam sub_27_add_2_1.INIT0 = 16'h0000;
     defparam sub_27_add_2_1.INIT1 = 16'h5999;
     defparam sub_27_add_2_1.INJECT1_0 = "NO";
     defparam sub_27_add_2_1.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_17 (.A0(d8[15]), .B0(d_d8[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2155), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n2152), 
           .S0(d9_15__N_446[15]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_17.INIT0 = 16'h5999;
     defparam sub_28_add_2_17.INIT1 = 16'h0000;
@@ -7590,56 +7594,56 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     FD1S3AX v_comb_64_rep_57 (.D(d_clk_tmp_N_478), .CK(osc_clk), .Q(osc_clk_enable_51)) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam v_comb_64_rep_57.GSR = "ENABLED";
     CCU2D sub_28_add_2_15 (.A0(d8[13]), .B0(d_d8[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[14]), .B1(d_d8[14]), .C1(GND_net), .D1(GND_net), .CIN(n2154), 
-          .COUT(n2155), .S0(d9_15__N_446[13]), .S1(d9_15__N_446[14]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[14]), .B1(d_d8[14]), .C1(GND_net), .D1(GND_net), .CIN(n2151), 
+          .COUT(n2152), .S0(d9_15__N_446[13]), .S1(d9_15__N_446[14]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_15.INIT0 = 16'h5999;
     defparam sub_28_add_2_15.INIT1 = 16'h5999;
     defparam sub_28_add_2_15.INJECT1_0 = "NO";
     defparam sub_28_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_13 (.A0(d8[11]), .B0(d_d8[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[12]), .B1(d_d8[12]), .C1(GND_net), .D1(GND_net), .CIN(n2153), 
-          .COUT(n2154), .S0(d9_15__N_446[11]), .S1(d9_15__N_446[12]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[12]), .B1(d_d8[12]), .C1(GND_net), .D1(GND_net), .CIN(n2150), 
+          .COUT(n2151), .S0(d9_15__N_446[11]), .S1(d9_15__N_446[12]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_13.INIT0 = 16'h5999;
     defparam sub_28_add_2_13.INIT1 = 16'h5999;
     defparam sub_28_add_2_13.INJECT1_0 = "NO";
     defparam sub_28_add_2_13.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_11 (.A0(d8[9]), .B0(d_d8[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[10]), .B1(d_d8[10]), .C1(GND_net), .D1(GND_net), .CIN(n2152), 
-          .COUT(n2153), .S0(d9_15__N_446[9]), .S1(d9_15__N_446[10]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[10]), .B1(d_d8[10]), .C1(GND_net), .D1(GND_net), .CIN(n2149), 
+          .COUT(n2150), .S0(d9_15__N_446[9]), .S1(d9_15__N_446[10]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_11.INIT0 = 16'h5999;
     defparam sub_28_add_2_11.INIT1 = 16'h5999;
     defparam sub_28_add_2_11.INJECT1_0 = "NO";
     defparam sub_28_add_2_11.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_9 (.A0(d8[7]), .B0(d_d8[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[8]), .B1(d_d8[8]), .C1(GND_net), .D1(GND_net), .CIN(n2151), 
-          .COUT(n2152), .S0(d9_15__N_446[7]), .S1(d9_15__N_446[8]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[8]), .B1(d_d8[8]), .C1(GND_net), .D1(GND_net), .CIN(n2148), 
+          .COUT(n2149), .S0(d9_15__N_446[7]), .S1(d9_15__N_446[8]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_9.INIT0 = 16'h5999;
     defparam sub_28_add_2_9.INIT1 = 16'h5999;
     defparam sub_28_add_2_9.INJECT1_0 = "NO";
     defparam sub_28_add_2_9.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_7 (.A0(d8[5]), .B0(d_d8[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[6]), .B1(d_d8[6]), .C1(GND_net), .D1(GND_net), .CIN(n2150), 
-          .COUT(n2151), .S0(d9_15__N_446[5]), .S1(d9_15__N_446[6]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[6]), .B1(d_d8[6]), .C1(GND_net), .D1(GND_net), .CIN(n2147), 
+          .COUT(n2148), .S0(d9_15__N_446[5]), .S1(d9_15__N_446[6]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_7.INIT0 = 16'h5999;
     defparam sub_28_add_2_7.INIT1 = 16'h5999;
     defparam sub_28_add_2_7.INJECT1_0 = "NO";
     defparam sub_28_add_2_7.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_5 (.A0(d8[3]), .B0(d_d8[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[4]), .B1(d_d8[4]), .C1(GND_net), .D1(GND_net), .CIN(n2149), 
-          .COUT(n2150), .S0(d9_15__N_446[3]), .S1(d9_15__N_446[4]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[4]), .B1(d_d8[4]), .C1(GND_net), .D1(GND_net), .CIN(n2146), 
+          .COUT(n2147), .S0(d9_15__N_446[3]), .S1(d9_15__N_446[4]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_5.INIT0 = 16'h5999;
     defparam sub_28_add_2_5.INIT1 = 16'h5999;
     defparam sub_28_add_2_5.INJECT1_0 = "NO";
     defparam sub_28_add_2_5.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_3 (.A0(d8[1]), .B0(d_d8[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[2]), .B1(d_d8[2]), .C1(GND_net), .D1(GND_net), .CIN(n2148), 
-          .COUT(n2149), .S0(d9_15__N_446[1]), .S1(d9_15__N_446[2]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
+          .A1(d8[2]), .B1(d_d8[2]), .C1(GND_net), .D1(GND_net), .CIN(n2145), 
+          .COUT(n2146), .S0(d9_15__N_446[1]), .S1(d9_15__N_446[2]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_3.INIT0 = 16'h5999;
     defparam sub_28_add_2_3.INIT1 = 16'h5999;
     defparam sub_28_add_2_3.INJECT1_0 = "NO";
     defparam sub_28_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_28_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d8[0]), .B1(d_d8[0]), .C1(GND_net), .D1(GND_net), .COUT(n2148), 
+          .A1(d8[0]), .B1(d_d8[0]), .C1(GND_net), .D1(GND_net), .COUT(n2145), 
           .S1(d9_15__N_446[0]));   // c:/users/user/lattice/fpgasdr/cic.v(116[11:20])
     defparam sub_28_add_2_1.INIT0 = 16'h0000;
     defparam sub_28_add_2_1.INIT1 = 16'h5999;
@@ -7684,42 +7688,42 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
             .Q(d_d_tmp[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(97[9] 128[5])
     defparam d_d_tmp_i0_i15.GSR = "ENABLED";
     CCU2D add_10_3 (.A0(count[1]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[2]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1868), 
-          .COUT(n1869), .S0(n95[1]), .S1(n95[2]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[2]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1865), 
+          .COUT(n1866), .S0(n95[1]), .S1(n95[2]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_3.INIT0 = 16'h5aaa;
     defparam add_10_3.INIT1 = 16'h5aaa;
     defparam add_10_3.INJECT1_0 = "NO";
     defparam add_10_3.INJECT1_1 = "NO";
     CCU2D add_10_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .COUT(n1868), 
+          .A1(count[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .COUT(n1865), 
           .S1(n95[0]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_1.INIT0 = 16'hF000;
     defparam add_10_1.INIT1 = 16'h5555;
     defparam add_10_1.INJECT1_0 = "NO";
     defparam add_10_1.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_3 (.A0(d9[1]), .B0(d_d9[1]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[2]), .B1(d_d9[2]), .C1(GND_net), .D1(GND_net), .CIN(n1858), 
-          .COUT(n1859));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[2]), .B1(d_d9[2]), .C1(GND_net), .D1(GND_net), .CIN(n1855), 
+          .COUT(n1856));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_3.INIT0 = 16'h5999;
     defparam sub_29_add_2_3.INIT1 = 16'h5999;
     defparam sub_29_add_2_3.INJECT1_0 = "NO";
     defparam sub_29_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_17 (.A0(d9[15]), .B0(d_d9[15]), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1865), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1862), 
           .S0(d10_15__N_462[15]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_17.INIT0 = 16'h5999;
     defparam sub_29_add_2_17.INIT1 = 16'h0000;
     defparam sub_29_add_2_17.INJECT1_0 = "NO";
     defparam sub_29_add_2_17.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_15 (.A0(d9[13]), .B0(d_d9[13]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[14]), .B1(d_d9[14]), .C1(GND_net), .D1(GND_net), .CIN(n1864), 
-          .COUT(n1865), .S0(d10_15__N_462[13]), .S1(d10_15__N_462[14]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[14]), .B1(d_d9[14]), .C1(GND_net), .D1(GND_net), .CIN(n1861), 
+          .COUT(n1862), .S0(d10_15__N_462[13]), .S1(d10_15__N_462[14]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_15.INIT0 = 16'h5999;
     defparam sub_29_add_2_15.INIT1 = 16'h5999;
     defparam sub_29_add_2_15.INJECT1_0 = "NO";
     defparam sub_29_add_2_15.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[0]), .B1(d_d9[0]), .C1(GND_net), .D1(GND_net), .COUT(n1858));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[0]), .B1(d_d9[0]), .C1(GND_net), .D1(GND_net), .COUT(n1855));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_1.INIT0 = 16'h0000;
     defparam sub_29_add_2_1.INIT1 = 16'h5999;
     defparam sub_29_add_2_1.INJECT1_0 = "NO";
@@ -7729,14 +7733,14 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     LUT4 i1549_2_lut (.A(d4[0]), .B(d5[0]), .Z(n69[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i1549_2_lut.init = 16'h6666;
     CCU2D sub_29_add_2_13 (.A0(d9[11]), .B0(d_d9[11]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[12]), .B1(d_d9[12]), .C1(GND_net), .D1(GND_net), .CIN(n1863), 
-          .COUT(n1864), .S0(d10_15__N_462[11]), .S1(d10_15__N_462[12]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[12]), .B1(d_d9[12]), .C1(GND_net), .D1(GND_net), .CIN(n1860), 
+          .COUT(n1861), .S0(d10_15__N_462[11]), .S1(d10_15__N_462[12]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_13.INIT0 = 16'h5999;
     defparam sub_29_add_2_13.INIT1 = 16'h5999;
     defparam sub_29_add_2_13.INJECT1_0 = "NO";
     defparam sub_29_add_2_13.INJECT1_1 = "NO";
     CCU2D add_10_17 (.A0(count[15]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1875), 
+          .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1872), 
           .S0(n95[15]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_17.INIT0 = 16'h5aaa;
     defparam add_10_17.INIT1 = 16'h0000;
@@ -7744,24 +7748,24 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam add_10_17.INJECT1_1 = "NO";
     CCU2D add_10_15 (.A0(count[13]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[14]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1874), .COUT(n1875), .S0(n95[13]), .S1(n95[14]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n1871), .COUT(n1872), .S0(n95[13]), .S1(n95[14]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_15.INIT0 = 16'h5aaa;
     defparam add_10_15.INIT1 = 16'h5aaa;
     defparam add_10_15.INJECT1_0 = "NO";
     defparam add_10_15.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_11 (.A0(d9[9]), .B0(d_d9[9]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[10]), .B1(d_d9[10]), .C1(GND_net), .D1(GND_net), .CIN(n1862), 
-          .COUT(n1863), .S0(d10_15__N_462[9]), .S1(d10_15__N_462[10]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[10]), .B1(d_d9[10]), .C1(GND_net), .D1(GND_net), .CIN(n1859), 
+          .COUT(n1860), .S0(d10_15__N_462[9]), .S1(d10_15__N_462[10]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_11.INIT0 = 16'h5999;
     defparam sub_29_add_2_11.INIT1 = 16'h5999;
     defparam sub_29_add_2_11.INJECT1_0 = "NO";
     defparam sub_29_add_2_11.INJECT1_1 = "NO";
-    LUT4 i1137_2_lut_4_lut (.A(count[1]), .B(n1035), .C(count[0]), .D(n95[0]), 
+    LUT4 i1137_2_lut_4_lut (.A(count[1]), .B(n1032), .C(count[0]), .D(n95[0]), 
          .Z(count_15__N_381[0])) /* synthesis lut_function=(A (D)+!A (B (D)+!B ((D)+!C))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(84[17:47])
     defparam i1137_2_lut_4_lut.init = 16'hff01;
     CCU2D sub_29_add_2_9 (.A0(d9[7]), .B0(d_d9[7]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[8]), .B1(d_d9[8]), .C1(GND_net), .D1(GND_net), .CIN(n1861), 
-          .COUT(n1862), .S1(d10_15__N_462[8]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[8]), .B1(d_d9[8]), .C1(GND_net), .D1(GND_net), .CIN(n1858), 
+          .COUT(n1859), .S1(d10_15__N_462[8]));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_9.INIT0 = 16'h5999;
     defparam sub_29_add_2_9.INIT1 = 16'h5999;
     defparam sub_29_add_2_9.INJECT1_0 = "NO";
@@ -7774,11 +7778,11 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam i1552_2_lut.init = 16'h6666;
     LUT4 i1553_2_lut (.A(MixerOutSin_c_0), .B(d1[0]), .Z(n69_adj_2155[0])) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;
     defparam i1553_2_lut.init = 16'h6666;
-    LUT4 i2328_3_lut (.A(n1035), .B(count[1]), .C(count[0]), .Z(n1202)) /* synthesis lut_function=(!(A+!(B (C)+!B !(C)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    LUT4 i2328_3_lut (.A(n1032), .B(count[1]), .C(count[0]), .Z(n1199)) /* synthesis lut_function=(!(A+!(B (C)+!B !(C)))) */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam i2328_3_lut.init = 16'h4141;
     CCU2D add_10_13 (.A0(count[11]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[12]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1873), .COUT(n1874), .S0(n95[11]), .S1(n95[12]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n1870), .COUT(n1871), .S0(n95[11]), .S1(n95[12]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_13.INIT0 = 16'h5aaa;
     defparam add_10_13.INIT1 = 16'h5aaa;
     defparam add_10_13.INJECT1_0 = "NO";
@@ -7787,11 +7791,11 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d_clk_65_rep_53.GSR = "ENABLED";
     FD1S3AX d5_281__i1 (.D(n69[1]), .CK(osc_clk), .Q(d5[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(74[10:17])
     defparam d5_281__i1.GSR = "ENABLED";
-    FD1S3IX count__i15 (.D(n95[15]), .CK(osc_clk), .CD(n1202), .Q(count[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
+    FD1S3IX count__i15 (.D(n95[15]), .CK(osc_clk), .CD(n1199), .Q(count[15])) /* synthesis LSE_LINE_FILE_ID=4, LSE_LCOL=42, LSE_RCOL=2, LSE_LLINE=124, LSE_RLINE=129 */ ;   // c:/users/user/lattice/fpgasdr/cic.v(61[9] 95[5])
     defparam count__i15.GSR = "ENABLED";
     CCU2D sub_29_add_2_7 (.A0(d9[5]), .B0(d_d9[5]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[6]), .B1(d_d9[6]), .C1(GND_net), .D1(GND_net), .CIN(n1860), 
-          .COUT(n1861));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[6]), .B1(d_d9[6]), .C1(GND_net), .D1(GND_net), .CIN(n1857), 
+          .COUT(n1858));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_7.INIT0 = 16'h5999;
     defparam sub_29_add_2_7.INIT1 = 16'h5999;
     defparam sub_29_add_2_7.INJECT1_0 = "NO";
@@ -7946,21 +7950,21 @@ module \CIC(width=16,decimation_ratio=8)  (osc_clk, CIC1_out, GND_net,
     defparam d1_277__i15.GSR = "ENABLED";
     CCU2D add_10_11 (.A0(count[9]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(count[10]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n1872), .COUT(n1873), .S0(n95[9]), .S1(n95[10]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .CIN(n1869), .COUT(n1870), .S0(n95[9]), .S1(n95[10]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_11.INIT0 = 16'h5aaa;
     defparam add_10_11.INIT1 = 16'h5aaa;
     defparam add_10_11.INJECT1_0 = "NO";
     defparam add_10_11.INJECT1_1 = "NO";
     CCU2D sub_29_add_2_5 (.A0(d9[3]), .B0(d_d9[3]), .C0(GND_net), .D0(GND_net), 
-          .A1(d9[4]), .B1(d_d9[4]), .C1(GND_net), .D1(GND_net), .CIN(n1859), 
-          .COUT(n1860));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
+          .A1(d9[4]), .B1(d_d9[4]), .C1(GND_net), .D1(GND_net), .CIN(n1856), 
+          .COUT(n1857));   // c:/users/user/lattice/fpgasdr/cic.v(119[12:21])
     defparam sub_29_add_2_5.INIT0 = 16'h5999;
     defparam sub_29_add_2_5.INIT1 = 16'h5999;
     defparam sub_29_add_2_5.INJECT1_0 = "NO";
     defparam sub_29_add_2_5.INJECT1_1 = "NO";
     CCU2D add_10_9 (.A0(count[7]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
-          .A1(count[8]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1871), 
-          .COUT(n1872), .S0(n95[7]), .S1(n95[8]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
+          .A1(count[8]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n1868), 
+          .COUT(n1869), .S0(n95[7]), .S1(n95[8]));   // c:/users/user/lattice/fpgasdr/cic.v(91[14:27])
     defparam add_10_9.INIT0 = 16'h5aaa;
     defparam add_10_9.INIT1 = 16'h5aaa;
     defparam add_10_9.INJECT1_0 = "NO";

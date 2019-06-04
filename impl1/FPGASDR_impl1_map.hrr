@@ -3,7 +3,7 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     845.00        100.0
+                                  SLIC	     844.00        100.0
                                   LUT4	     158.00        100.0
                                  IOBUF	         35        100.0
                                 PFUREG	       1371        100.0
@@ -13,7 +13,7 @@ SUB MODULES
              uart_tx(CLKS_PER_BIT=130)	          1         3.4
              uart_rx(CLKS_PER_BIT=130)	          1         7.0
                                 SinCos	          1         0.5
-                                   PWM	          1         2.2
+                                   PWM	          1         2.3
                                    PLL	          1         0.0
                                  Mixer	          1         1.2
       CIC(width=16,decimation_ratio=8)	          1        19.4
@@ -41,7 +41,7 @@ Report for cell PWM
    Instance path: top/PWM1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      19.00         2.2
+                                  SLIC	      19.00         2.3
                                   LUT4	      18.00        11.4
                                 PFUREG	         17         1.2
                                 RIPPLE	          5         1.1
@@ -64,7 +64,7 @@ Report for cell CIC(width=63,decimation_ratio=2048)
    Instance path: top/CIC2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     558.00        66.0
+                                  SLIC	     557.00        66.0
                                   LUT4	      22.00        13.9
                                 PFUREG	        991        72.3
                                 RIPPLE	        329        72.6

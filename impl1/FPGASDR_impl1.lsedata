@@ -17361,12 +17361,12 @@
         </pins>
 
         <nets>
-        <nitem  name = "CIC_out[7]"  />
-        <nitem  name = "CIC_out[6]"  />
-        <nitem  name = "CIC_out[5]"  />
-        <nitem  name = "CIC_out[4]"  />
-        <nitem  name = "CIC_out[3]"  />
-        <nitem  name = "CIC_out[2]"  />
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
         <nitem  name = "CIC_out[1]"  />
         <nitem  name = "CIC_out[0]"  />
         <nitem  name = "CIC2/d10[62]"  />
@@ -21319,12 +21319,12 @@
         <nets>
         <nitem  name = "CIC2/gnd"  />
         <nitem  name = "CIC1_out_clk"  />
-        <nitem  name = "CIC_out[7]"  />
-        <nitem  name = "CIC_out[6]"  />
-        <nitem  name = "CIC_out[5]"  />
-        <nitem  name = "CIC_out[4]"  />
-        <nitem  name = "CIC_out[3]"  />
-        <nitem  name = "CIC_out[2]"  />
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
         <nitem  name = "CIC_out[1]"  />
         <nitem  name = "CIC_out[0]"  />
         <nitem  name = "CIC2/d_out_7__N_481[7]"  />
@@ -22130,12 +22130,12 @@
         </pins>
 
         <nets>
-        <nitem  name = "CIC_out[7]"  />
-        <nitem  name = "CIC_out[6]"  />
-        <nitem  name = "CIC_out[5]"  />
-        <nitem  name = "CIC_out[4]"  />
-        <nitem  name = "CIC_out[3]"  />
-        <nitem  name = "CIC_out[2]"  />
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
         <nitem  name = "CIC_out[1]"  />
         <nitem  name = "CIC_out[0]"  />
         <nitem  name = "HP_shift1/d_out[7]"  />
@@ -22704,12 +22704,12 @@
         <nets>
         <nitem  name = "PWM1/gnd"  />
         <nitem  name = "PWM1/pwr"  />
-        <nitem  name = "CIC_out[7]"  />
-        <nitem  name = "CIC_out[6]"  />
-        <nitem  name = "CIC_out[5]"  />
-        <nitem  name = "CIC_out[4]"  />
-        <nitem  name = "CIC_out[3]"  />
-        <nitem  name = "CIC_out[2]"  />
+        <nitem  name = "MYLED[5]"  />
+        <nitem  name = "MYLED[4]"  />
+        <nitem  name = "MYLED[3]"  />
+        <nitem  name = "MYLED[2]"  />
+        <nitem  name = "MYLED[1]"  />
+        <nitem  name = "MYLED[0]"  />
         <nitem  name = "CIC_out[1]"  />
         <nitem  name = "CIC_out[0]"  />
         <nitem  name = "PWM1/DataInNoSign_7__N_1896[7]"  />
