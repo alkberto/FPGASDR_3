@@ -37,8 +37,8 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Design: top
 // Package: TQFP144
 // ncd File: fpgasdr_impl1.ncd
-// Version: Diamond (64-bit) 3.10.2.115
-// Written on Tue Nov 27 15:59:03 2018
+// Version: Diamond (64-bit) 3.10.3.144
+// Written on Mon Jun 03 21:42:35 2019
 // M: Minimum Performance Grade
 // iotiming FPGASDR_impl1.ncd FPGASDR_impl1.prf -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml
 
@@ -48,110 +48,44 @@ Worst Case Results across Performance Grades (M, 6, 5, 4):
 
 // Input Setup and Hold Times
 
-Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+Port        Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-(no input setup/hold data)
+RFIn        XIn   R     0.085      M       1.621     4
+i_Rx_Serial XIn   R    -0.182      M       2.184     4
 
 
 // Clock to Output Delay
 
-Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+Port           Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-(no clock to output min/max data)
-
-
-// Internal_Clock to Input
-
-Port  Internal_Clock
---------------------------------------------------------
-RFIn  osc_clk       
-i_Rx_ osc_clk       
-
-
-// Internal_Clock to Output
-
-Port            Internal_Clock
---------------------------------------------------------
-MYLED[1]        osc_clk       
-MYLED[2]        osc_clk       
-MYLED[3]        osc_clk       
-MYLED[4]        osc_clk       
-MYLED[5]        osc_clk       
-MYLED[6]        osc_clk       
-MYLED[7]        osc_clk       
-MixerOutSin[10] osc_clk       
-MixerOutSin[11] osc_clk       
-MixerOutSin[12] osc_clk       
-MixerOutSin[13] osc_clk       
-MixerOutSin[14] osc_clk       
-MixerOutSin[15] osc_clk       
-MixerOutSin[16] osc_clk       
-MixerOutSin[17] osc_clk       
-MixerOutSin[18] osc_clk       
-MixerOutSin[19] osc_clk       
-MixerOutSin[1]  osc_clk       
-MixerOutSin[20] osc_clk       
-MixerOutSin[21] osc_clk       
-MixerOutSin[22] osc_clk       
-MixerOutSin[23] osc_clk       
-MixerOutSin[24] osc_clk       
-MixerOutSin[25] osc_clk       
-MixerOutSin[26] osc_clk       
-MixerOutSin[27] osc_clk       
-MixerOutSin[28] osc_clk       
-MixerOutSin[29] osc_clk       
-MixerOutSin[2]  osc_clk       
-MixerOutSin[30] osc_clk       
-MixerOutSin[31] osc_clk       
-MixerOutSin[32] osc_clk       
-MixerOutSin[33] osc_clk       
-MixerOutSin[34] osc_clk       
-MixerOutSin[35] osc_clk       
-MixerOutSin[36] osc_clk       
-MixerOutSin[37] osc_clk       
-MixerOutSin[38] osc_clk       
-MixerOutSin[39] osc_clk       
-MixerOutSin[3]  osc_clk       
-MixerOutSin[40] osc_clk       
-MixerOutSin[41] osc_clk       
-MixerOutSin[42] osc_clk       
-MixerOutSin[43] osc_clk       
-MixerOutSin[44] osc_clk       
-MixerOutSin[45] osc_clk       
-MixerOutSin[46] osc_clk       
-MixerOutSin[47] osc_clk       
-MixerOutSin[48] osc_clk       
-MixerOutSin[49] osc_clk       
-MixerOutSin[4]  osc_clk       
-MixerOutSin[50] osc_clk       
-MixerOutSin[51] osc_clk       
-MixerOutSin[52] osc_clk       
-MixerOutSin[53] osc_clk       
-MixerOutSin[54] osc_clk       
-MixerOutSin[55] osc_clk       
-MixerOutSin[56] osc_clk       
-MixerOutSin[57] osc_clk       
-MixerOutSin[58] osc_clk       
-MixerOutSin[59] osc_clk       
-MixerOutSin[5]  osc_clk       
-MixerOutSin[60] osc_clk       
-MixerOutSin[61] osc_clk       
-MixerOutSin[62] osc_clk       
-MixerOutSin[63] osc_clk       
-MixerOutSin[6]  osc_clk       
-MixerOutSin[7]  osc_clk       
-MixerOutSin[8]  osc_clk       
-MixerOutSin[9]  osc_clk       
-o_Rx_Byte[0]    osc_clk       
-o_Rx_Byte[1]    osc_clk       
-o_Rx_Byte[2]    osc_clk       
-o_Rx_Byte[3]    osc_clk       
-o_Rx_Byte[4]    osc_clk       
-o_Rx_Byte[5]    osc_clk       
-o_Rx_Byte[6]    osc_clk       
-o_Rx_Byte[7]    osc_clk       
-o_Rx_DV         osc_clk       
-o_Tx_Serial     osc_clk       
+CIC_out_clk    XIn   R    13.835         4        4.005          M
+DiffOut        XIn   R    12.343         4        3.584          M
+MYLED[0]       XIn   R    13.754         4        3.957          M
+MYLED[1]       XIn   R    13.799         4        3.947          M
+MYLED[2]       XIn   R    13.833         4        3.985          M
+MYLED[3]       XIn   R    13.842         4        3.988          M
+MYLED[4]       XIn   R    13.871         4        3.981          M
+MYLED[5]       XIn   R    13.862         4        3.978          M
+MixerOutSin[0] XIn   R    11.786         4        3.421          M
+MixerOutSin[1] XIn   R    11.641         4        3.394          M
+MixerOutSin[2] XIn   R    11.338         4        3.313          M
+MixerOutSin[3] XIn   R    12.033         4        3.497          M
+MixerOutSin[4] XIn   R    11.735         4        3.424          M
+MixerOutSin[5] XIn   R    11.641         4        3.394          M
+MixerOutSin[6] XIn   R    11.780         4        3.420          M
+MixerOutSin[7] XIn   R    11.338         4        3.307          M
+PWMOut         XIn   R    11.845         4        3.453          M
+o_Rx_Byte[0]   XIn   R    12.331         4        3.547          M
+o_Rx_Byte[1]   XIn   R    11.830         4        3.451          M
+o_Rx_Byte[2]   XIn   R    11.830         4        3.451          M
+o_Rx_Byte[3]   XIn   R    12.800         4        3.693          M
+o_Rx_Byte[4]   XIn   R    12.686         4        3.617          M
+o_Rx_Byte[5]   XIn   R    12.227         4        3.562          M
+o_Rx_Byte[6]   XIn   R    12.010         4        3.497          M
+o_Rx_Byte[7]   XIn   R    11.854         4        3.456          M
+o_Rx_DV        XIn   R    11.331         4        3.311          M
+WARNING: you must also run trce with hold speed: 4
+WARNING: you must also run trce with setup speed: M
 
 
 

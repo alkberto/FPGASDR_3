@@ -20,8 +20,8 @@ where x(n) is the input to the CIC filter, and {k} means that if k is not an int
 
 
 
-//width ok was 64
-module CIC #(parameter width = 80)
+//width ok was 80
+module CIC #(parameter width = 64)
 			(input wire               clk,
 			input wire               rst,
 			input wire        [15:0] decimation_ratio,

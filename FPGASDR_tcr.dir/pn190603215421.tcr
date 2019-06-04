@@ -1,0 +1,13 @@
+#Start recording tcl command: 6/3/2019 21:20:24
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+prj_src add -exclude "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
+prj_src enable "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run PAR -impl impl1 -task IOTiming
+prj_strgy set_value -strategy Strategy1 lse_frequency=64
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 6/3/2019 21:54:21

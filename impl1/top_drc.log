@@ -7,14 +7,10 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 
 Running DRC...
 
-WARNING - synthesis: logical net 'i_Rx_Serial' has no load.
-WARNING - synthesis: input pad net 'i_Rx_Serial' has no legal load.
-WARNING - synthesis: logical net 'DiffIn' has no load.
-WARNING - synthesis: input pad net 'DiffIn' has no legal load.
-WARNING - synthesis: DRC complete with 4 warnings.
+DRC complete with no errors or warnings
 
 Design Results:
-   1996 blocks expanded
+   1562 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.

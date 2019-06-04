@@ -6,25 +6,7 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="pn181123213213"></A><B><U><big>pn181123213213</big></U></B>
-#Start recording tcl command: 11/23/2018 21:18:15
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project new -name "FPGASDR" -impl "impl1" -dev LCMXO2-7000HE-4TG144C -synthesis "lse"
-file copy -force -- "C:/Users/user/lattice/FPGASDR/TestFifo.v" "C:/Users/user/lattice/FPGASDR/TestFifo_tmpl.v" "C:/Users/user/lattice/FPGASDR/TestUart.v" "C:/Users/user/lattice/FPGASDR/top.v" "C:/Users/user/lattice/FPGASDR/Uart1.v" "C:/Users/user/lattice/FPGASDR/impl1/source"
-file copy -force -- "C:/Users/user/lattice/FPGASDR/UartRX.v" "C:/Users/user/lattice/FPGASDR/UartTX.v" "C:/Users/user/lattice/FPGASDR/impl1/source"
-prj_src add "C:/Users/user/lattice/FPGASDR/impl1/source/TestFifo.v" "C:/Users/user/lattice/FPGASDR/impl1/source/TestFifo_tmpl.v" "C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v" "C:/Users/user/lattice/FPGASDR/impl1/source/top.v" "C:/Users/user/lattice/FPGASDR/impl1/source/Uart1.v" "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v" "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
-prj_project save
-prj_run Synthesis -impl impl1
-prj_src remove "C:/Users/user/lattice/FPGASDR/impl1/source/TestFifo.v"
-prj_src remove "C:/Users/user/lattice/FPGASDR/impl1/source/TestFifo_tmpl.v"
-prj_run Synthesis -impl impl1
-prj_project save
-prj_project close
-#Stop recording: 11/23/2018 21:32:13
-
-
-
-<A name="pn181123230230"></A><B><U><big>pn181123230230</big></U></B>
+<PRE><A name="pn181123230230"></A><B><U><big>pn181123230230</big></U></B>
 #Start recording tcl command: 11/23/2018 21:32:47
 #Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
 C:/Users/user/lattice/TestUart
@@ -230,6 +212,23 @@ prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
 #Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
 prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
 #Stop recording: 4/12/2019 15:49:37
+
+
+
+<A name="pn190603215421"></A><B><U><big>pn190603215421</big></U></B>
+#Start recording tcl command: 6/3/2019 21:20:24
+#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
+prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
+prj_src add -exclude "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
+prj_src enable "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run PAR -impl impl1 -task IOTiming
+prj_strgy set_value -strategy Strategy1 lse_frequency=64
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 6/3/2019 21:54:21
 
 
 

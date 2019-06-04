@@ -12,12 +12,15 @@
 // Example: 10 MHz Clock, 115200 baud UART
 // (10000000)/(115200) = 87
   
+//Clock 133000000 - 115200 baud = 1155
+//Clock 136000000 - 115200 baud = 1181
+
   
 module uart_rx 
 
  
 	
-  #(parameter CLKS_PER_BIT = 1155)
+  #(parameter CLKS_PER_BIT = 1181)
   (
    input   osc_clk,
    input   i_Rx_Serial,
@@ -36,6 +39,7 @@ module uart_rx
    
   reg           r_Rx_Data_R = 1'b1;
   reg           r_Rx_Data   = 1'b1;
+  reg [2:0]		UartClk   = 2'b0;
    
   reg [15:0]     r_Clock_Count = 0;
   reg [2:0]     r_Bit_Index   = 0; //8 bits total
@@ -51,19 +55,23 @@ module uart_rx
     end
   */   
  
-    
+   always @(posedge osc_clk)
+    begin
+	  UartClk <= UartClk + 1'b1;
+    end  
   // Purpose: Double-register the incoming data.
   // This allows it to be used in the UART RX Clock Domain.
   // (It removes problems caused by metastability)
- always @(posedge osc_clk)
+
+    always @(posedge UartClk[2])
     begin
       r_Rx_Data_R <= i_Rx_Serial;
       r_Rx_Data   <= r_Rx_Data_R;
+	
     end
-   
  
   // Purpose: Control RX state machine
-  always @(posedge osc_clk)
+  always @(posedge UartClk[2])
     begin
        
       case (r_SM_Main)

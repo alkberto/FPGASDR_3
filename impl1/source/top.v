@@ -12,7 +12,7 @@ module top
 	input XIn,
 	output XOut,
 	input  RFIn, 
-	input DiffIn,
+//	input DiffIn,
 	output DiffOut,
 	output PWMOut,
 	output sinGen,
@@ -23,7 +23,8 @@ module top
   wire osc_clk;
 wire reset;
 wire [7:0] i_Tx_Byte;
-wire [63:0] phase_inc_carr, phase_inc_carrGen ;
+wire [63:0] phase_inc_carrGen ;
+reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
 wire  cosGen;//wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
@@ -45,7 +46,7 @@ wire [7:0] IIR_out;
 */
 /*
 //// Internal Oscillator
-	defparam OSCH_inst.NOM_FREQ = "133.00";
+	defparam OSCH_inst.NOM_FREQ = "120.00";
 	OSCH OSCH_inst
 		( 
 		.STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Bandgap=OFF
@@ -72,7 +73,7 @@ wire [7:0] IIR_out;
 
 
 // assign phase_inc_carr =    64'h  104376A9DD10437; //1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
-assign phase_inc_carr =    64'h 1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
+//assign phase_inc_carr =    64'h 1B1B1B1B1B1B1B1;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  //assign phase_inc_carr =    64'h 1B1B4294E949F45;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
 //assign phase_inc_carr =    64'h 104376A9DD10437;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  
@@ -118,8 +119,8 @@ Mixer Mixer1 (
 .MixerOutSin (MixerOutSin),
 .MixerOutCos (MixerOutCos)
 );
-	 //width was 68 for decimation = 4096
-CIC  #(.width(74)) CIC1 (
+	 //width was 68 for decimation = 4096, 74 for 16384
+CIC  #(.width(64)) CIC1 (
 .clk (osc_clk),
 .rst (rst),
 .decimation_ratio (decimation_ratio),
@@ -155,9 +156,9 @@ PLL PLL1 (
 //assign MYLED[5:0] = CIC_out [7:2];
 assign MYLED[5:0] = CIC_out [7:2];
 assign MYLED[7] = sin_out;
-assign MYLED[6] = cos_out;
+assign MYLED[6] = cos_out; 
  
-/*
+
 
 uart_rx  #(.CLKS_PER_BIT(1155))  uart_rx1 (
 .osc_clk (osc_clk), 
@@ -166,7 +167,7 @@ uart_rx  #(.CLKS_PER_BIT(1155))  uart_rx1 (
 .o_Rx_Byte (o_Rx_Byte)
 );
 	
-
+/*
 uart_tx  #(.CLKS_PER_BIT(1155))  uart_tx1 (
 .osc_clk (osc_clk), 
 .o_Tx_Serial (o_Tx_Serial),

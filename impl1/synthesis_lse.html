@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 29 22:23:38 2019
+Mon Jun 03 23:42:43 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
@@ -45,7 +45,7 @@ Using performance grade 4.
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = top.
-Target frequency = 200.000000 MHz.
+Target frequency = 120.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -86,6 +86,7 @@ Verilog design file = C:/Users/user/lattice/FPGASDR/PWM.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/PLL.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/Multiplier.v
 Verilog design file = C:/Users/user/lattice/FPGASDR/HP_shift.v
+Verilog design file = C:/Users/user/lattice/FPGASDR/frequency_select.v
 NGD file = FPGASDR_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -108,6 +109,7 @@ Analyzing Verilog file c:/users/user/lattice/fpgasdr/pwm.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/pll.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/multiplier.v. VERI-1482
 Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_shift.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/fpgasdr/frequency_select.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): compiling module top. VERI-1018
@@ -131,13 +133,15 @@ INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_15. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): compiling module ROM256X1A_renamed_due_excessive_length_16. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
-INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(24): compiling module CIC(width=74). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/cic.v(24): compiling module CIC. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/hp_shift.v(6): compiling module HP_shift. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pwm.v(1): compiling module PWM. VERI-1018
 INFO - synthesis: c:/users/user/lattice/fpgasdr/pll.v(8): compiling module PLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=17,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(124): net rst does not have a driver. VDB-1002
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=5,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(19): compiling module uart_rx(CLKS_PER_BIT=1155). VERI-1018
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(27): net phase_inc_carr[63] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(125): net rst does not have a driver. VDB-1002
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -145,41 +149,84 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(140): Removing unused instance HP_shift1. VDB-5034
-WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/impl1/source/top.v(141): Removing unused instance HP_shift1. VDB-5034
 WARNING - synthesis: I/O Port o_Tx_Serial 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_DV 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port o_Rx_Byte[0] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port XOut 's net has no driver and is unused.
-WARNING - synthesis: I/O Port DiffIn 's net has no driver and is unused.
 WARNING - synthesis: I/O Port sinGen 's net has no driver and is unused.
 ######## Missing driver on net o_Tx_Serial. Patching with GND.
-######## Missing driver on net o_Rx_DV. Patching with GND.
-######## Missing driver on net o_Rx_Byte[7]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[6]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[5]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[4]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[3]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[2]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[1]. Patching with GND.
-######## Missing driver on net o_Rx_Byte[0]. Patching with GND.
 ######## Missing driver on net XOut. Patching with GND.
 ######## Missing driver on net sinGen. Patching with GND.
+######## Missing driver on net phase_inc_carr[63]. Patching with GND.
+######## Missing driver on net phase_inc_carr[62]. Patching with GND.
+######## Missing driver on net phase_inc_carr[61]. Patching with GND.
+######## Missing driver on net phase_inc_carr[60]. Patching with GND.
+######## Missing driver on net phase_inc_carr[59]. Patching with GND.
+######## Missing driver on net phase_inc_carr[58]. Patching with GND.
+######## Missing driver on net phase_inc_carr[57]. Patching with GND.
+######## Missing driver on net phase_inc_carr[56]. Patching with GND.
+######## Missing driver on net phase_inc_carr[55]. Patching with GND.
+######## Missing driver on net phase_inc_carr[54]. Patching with GND.
+######## Missing driver on net phase_inc_carr[53]. Patching with GND.
+######## Missing driver on net phase_inc_carr[52]. Patching with GND.
+######## Missing driver on net phase_inc_carr[51]. Patching with GND.
+######## Missing driver on net phase_inc_carr[50]. Patching with GND.
+######## Missing driver on net phase_inc_carr[49]. Patching with GND.
+######## Missing driver on net phase_inc_carr[48]. Patching with GND.
+######## Missing driver on net phase_inc_carr[47]. Patching with GND.
+######## Missing driver on net phase_inc_carr[46]. Patching with GND.
+######## Missing driver on net phase_inc_carr[45]. Patching with GND.
+######## Missing driver on net phase_inc_carr[44]. Patching with GND.
+######## Missing driver on net phase_inc_carr[43]. Patching with GND.
+######## Missing driver on net phase_inc_carr[42]. Patching with GND.
+######## Missing driver on net phase_inc_carr[41]. Patching with GND.
+######## Missing driver on net phase_inc_carr[40]. Patching with GND.
+######## Missing driver on net phase_inc_carr[39]. Patching with GND.
+######## Missing driver on net phase_inc_carr[38]. Patching with GND.
+######## Missing driver on net phase_inc_carr[37]. Patching with GND.
+######## Missing driver on net phase_inc_carr[36]. Patching with GND.
+######## Missing driver on net phase_inc_carr[35]. Patching with GND.
+######## Missing driver on net phase_inc_carr[34]. Patching with GND.
+######## Missing driver on net phase_inc_carr[33]. Patching with GND.
+######## Missing driver on net phase_inc_carr[32]. Patching with GND.
+######## Missing driver on net phase_inc_carr[31]. Patching with GND.
+######## Missing driver on net phase_inc_carr[30]. Patching with GND.
+######## Missing driver on net phase_inc_carr[29]. Patching with GND.
+######## Missing driver on net phase_inc_carr[28]. Patching with GND.
+######## Missing driver on net phase_inc_carr[27]. Patching with GND.
+######## Missing driver on net phase_inc_carr[26]. Patching with GND.
+######## Missing driver on net phase_inc_carr[25]. Patching with GND.
+######## Missing driver on net phase_inc_carr[24]. Patching with GND.
+######## Missing driver on net phase_inc_carr[23]. Patching with GND.
+######## Missing driver on net phase_inc_carr[22]. Patching with GND.
+######## Missing driver on net phase_inc_carr[21]. Patching with GND.
+######## Missing driver on net phase_inc_carr[20]. Patching with GND.
+######## Missing driver on net phase_inc_carr[19]. Patching with GND.
+######## Missing driver on net phase_inc_carr[18]. Patching with GND.
+######## Missing driver on net phase_inc_carr[17]. Patching with GND.
+######## Missing driver on net phase_inc_carr[16]. Patching with GND.
+######## Missing driver on net phase_inc_carr[15]. Patching with GND.
+######## Missing driver on net phase_inc_carr[14]. Patching with GND.
+######## Missing driver on net phase_inc_carr[13]. Patching with GND.
+######## Missing driver on net phase_inc_carr[12]. Patching with GND.
+######## Missing driver on net phase_inc_carr[11]. Patching with GND.
+######## Missing driver on net phase_inc_carr[10]. Patching with GND.
+######## Missing driver on net phase_inc_carr[9]. Patching with GND.
+######## Missing driver on net phase_inc_carr[8]. Patching with GND.
+######## Missing driver on net phase_inc_carr[7]. Patching with GND.
+######## Missing driver on net phase_inc_carr[6]. Patching with GND.
+######## Missing driver on net phase_inc_carr[5]. Patching with GND.
+######## Missing driver on net phase_inc_carr[4]. Patching with GND.
+######## Missing driver on net phase_inc_carr[3]. Patching with GND.
+######## Missing driver on net phase_inc_carr[2]. Patching with GND.
+######## Missing driver on net phase_inc_carr[1]. Patching with GND.
+######## Missing driver on net phase_inc_carr[0]. Patching with GND.
 ######## Missing driver on net rst. Patching with GND.
 
 
 
-WARNING - synthesis: I/O Port i_Rx_Serial 's net has no driver and is unused.
-WARNING - synthesis: I/O Port DiffIn 's net has no driver and is unused.
+WARNING - synthesis: c:/users/user/lattice/fpgasdr/nco.v(52): Register \nco/phase_accum_i0 is stuck at Zero. VDB-5013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-Applying 200.000000 MHz constraint to all clocks
+Applying 120.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in top_drc.log.
@@ -187,29 +234,25 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'.
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'i_Rx_Serial' has no load.
-WARNING - synthesis: input pad net 'i_Rx_Serial' has no legal load.
-WARNING - synthesis: logical net 'DiffIn' has no load.
-WARNING - synthesis: input pad net 'DiffIn' has no legal load.
-WARNING - synthesis: DRC complete with 4 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 1255 of 7209 (17 % )
-CCU2D => 635
+Number of register bits => 1075 of 7209 (14 % )
+CCU2D => 352
 EHXPLLJ => 1
-FD1P3AX => 764
+FD1P3AX => 676
 FD1P3DX => 8
-FD1S3AX => 466
-FD1S3AY => 2
-FD1S3IX => 14
+FD1P3IX => 16
+FD1S3AX => 353
+FD1S3AY => 4
+FD1S3IX => 17
 FD1S3JX => 1
 GSR => 1
-IB => 2
-LUT4 => 58
+IB => 3
+LUT4 => 85
 OB => 32
-PFUMX => 1
+PFUMX => 2
 ROM256X1A => 8
 ################### End Area Report ##################
 
@@ -219,34 +262,35 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 2
-  Net : osc_clk, loads : 1256
+Number of Clocks: 3
+  Net : osc_clk, loads : 1043
+  Net : uart_rx1/UartClk_2, loads : 34
   Net : XIn_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 17
+Number of Clock Enables: 26
 Top 10 highest fanout Clock Enables:
-  Net : CIC1/osc_clk_enable_375, loads : 50
-  Net : CIC1/osc_clk_enable_52, loads : 50
-  Net : CIC1/osc_clk_enable_119, loads : 50
-  Net : CIC1/osc_clk_enable_725, loads : 50
-  Net : CIC1/osc_clk_enable_425, loads : 50
-  Net : CIC1/osc_clk_enable_159, loads : 50
-  Net : CIC1/osc_clk_enable_475, loads : 50
-  Net : CIC1/osc_clk_enable_275, loads : 50
-  Net : CIC1/osc_clk_enable_525, loads : 50
-  Net : CIC1/osc_clk_enable_175, loads : 50
+  Net : CIC1/osc_clk_enable_59, loads : 61
+  Net : CIC1/osc_clk_enable_98, loads : 50
+  Net : CIC1/osc_clk_enable_298, loads : 50
+  Net : CIC1/osc_clk_enable_348, loads : 50
+  Net : CIC1/osc_clk_enable_148, loads : 50
+  Net : CIC1/osc_clk_enable_605, loads : 50
+  Net : CIC1/osc_clk_enable_398, loads : 50
+  Net : CIC1/osc_clk_enable_248, loads : 50
+  Net : CIC1/osc_clk_enable_448, loads : 50
+  Net : CIC1/osc_clk_enable_198, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : Mixer1/MixerOutSin_c_7, loads : 105
-  Net : CIC1/osc_clk_enable_675, loads : 100
-  Net : CIC1/osc_clk_enable_625, loads : 100
-  Net : CIC1/osc_clk_enable_575, loads : 100
-  Net : CIC1/osc_clk_enable_325, loads : 100
-  Net : CIC1/osc_clk_enable_225, loads : 100
-  Net : CIC1/v_comb, loads : 64
-  Net : CIC1/osc_clk_enable_52, loads : 50
-  Net : CIC1/osc_clk_enable_119, loads : 50
-  Net : CIC1/osc_clk_enable_159, loads : 50
+  Net : CIC1/osc_clk_enable_498, loads : 100
+  Net : CIC1/osc_clk_enable_548, loads : 100
+  Net : CIC1/v_comb, loads : 84
+  Net : CIC1/osc_clk_enable_59, loads : 61
+  Net : CIC1/d_clk_tmp_N_2217, loads : 60
+  Net : Mixer1/MixerOutSin_c_7, loads : 57
+  Net : CIC1/osc_clk_enable_98, loads : 50
+  Net : CIC1/osc_clk_enable_148, loads : 50
+  Net : CIC1/osc_clk_enable_198, loads : 50
+  Net : CIC1/osc_clk_enable_248, loads : 50
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -255,19 +299,22 @@ Top 10 highest fanout non-clock nets:
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |  200.000 MHz|   69.334 MHz|    40 *
+create_clock -period 8.333333 -name     |             |             |
+clk1 [get_nets \uart_rx1/UartClk[2]]    |  120.004 MHz|   72.522 MHz|     8 *
+                                        |             |             |
+create_clock -period 8.333333 -name     |             |             |
+clk0 [get_nets osc_clk]                 |  120.004 MHz|   99.108 MHz|    30 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-1 constraints not met.
+2 constraints not met.
 
 
-Peak Memory Usage: 79.703  MB
+Peak Memory Usage: 75.301  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.462  secs
+Elapsed CPU time for LSE flow : 3.401  secs
 --------------------------------------------------------------
 
 

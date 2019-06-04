@@ -2,7 +2,7 @@
 -d LCMXO2-7000HE
 -t TQFP144
 -s 4
--frequency 200
+-frequency 120
 -optimization_goal Balanced
 -bram_utilization 100
 -ramstyle Auto
@@ -43,6 +43,7 @@
 "C:/Users/user/lattice/FPGASDR/PLL.v"
 "C:/Users/user/lattice/FPGASDR/Multiplier.v"
 "C:/Users/user/lattice/FPGASDR/HP_shift.v"
+"C:/Users/user/lattice/FPGASDR/frequency_select.v"
 -top top
 
 
