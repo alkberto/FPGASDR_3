@@ -14,48 +14,40 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Tue Jun 04 16:36:08 2019
+Wed Jun 05 14:14:16 2019
 
 Pinout by Port Name:
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| Port Name      | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| CIC_out_clk    | 125/0    | LVCMOS25_OUT | PT22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| DiffOut        | 127/0    | LVCMOS25_OUT | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[0]       | 97/1     | LVCMOS25_OUT | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[1]       | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[2]       | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[3]       | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[4]       | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[5]       | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[6]       | 106/1    | LVCMOS25_OUT | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MYLED[7]       | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[0] | 117/0    | LVCMOS25_OUT | PT28A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[1] | 115/0    | LVCMOS25_OUT | PT28B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[2] | 120/0    | LVCMOS25_OUT | PT27C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[3] | 119/0    | LVCMOS25_OUT | PT27D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[4] | 113/0    | LVCMOS25_OUT | PT33B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[5] | 112/0    | LVCMOS25_OUT | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[6] | 114/0    | LVCMOS25_OUT | PT33A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MixerOutSin[7] | 110/0    | LVCMOS25_OUT | PT36C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| PWMOut         | 43/2     | LVCMOS25_OUT | PB9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RFIn           | 133/0    | LVDS25_IN    | PT15A |           |           |                                      |
-| XIn            | 3/5      | LVCMOS25_IN  | PL4A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL    |
-| XOut           | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| i_Rx_Serial    | 73/1     | LVCMOS25_IN  | PR24B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| o_Rx_Byte[0]   | 26/3     | LVCMOS25_OUT | PL19B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[1]   | 24/4     | LVCMOS25_OUT | PL17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[2]   | 21/4     | LVCMOS25_OUT | PL15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[3]   | 25/3     | LVCMOS25_OUT | PL19A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[4]   | 22/4     | LVCMOS25_OUT | PL15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[5]   | 23/4     | LVCMOS25_OUT | PL17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[6]   | 19/4     | LVCMOS25_OUT | PL12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_Byte[7]   | 17/4     | LVCMOS25_OUT | PL11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Rx_DV        | 20/4     | LVCMOS25_OUT | PL12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| o_Tx_Serial    | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| sinGen         | 142/0    | LVCMOS25_OUT | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| sin_out        | 54/2     | LVCMOS25_OUT | PB18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-+----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
++--------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| Port Name    | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
++--------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| CIC_out_clk  | 125/0    | LVCMOS25_OUT | PT22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| DiffOut      | 127/0    | LVCMOS25_OUT | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[0]     | 97/1     | LVCMOS25_OUT | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[1]     | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[2]     | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[3]     | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[4]     | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[5]     | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[6]     | 106/1    | LVCMOS25_OUT | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MYLED[7]     | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| PWMOut       | 43/2     | LVCMOS25_OUT | PB9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| RFIn         | 133/0    | LVDS25_IN    | PT15A |           |           |                                      |
+| XIn          | 3/5      | LVCMOS25_IN  | PL4A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL    |
+| XOut         | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| i_Rx_Serial  | 73/1     | LVCMOS25_IN  | PR24B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| o_Rx_Byte[0] | 84/1     | LVCMOS25_OUT | PR17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[1] | 93/1     | LVCMOS25_OUT | PR11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[2] | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[3] | 91/1     | LVCMOS25_OUT | PR12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[4] | 86/1     | LVCMOS25_OUT | PR16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[5] | 85/1     | LVCMOS25_OUT | PR16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[6] | 92/1     | LVCMOS25_OUT | PR12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_Byte[7] | 89/1     | LVCMOS25_OUT | PR15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Rx_DV      | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| o_Tx_Serial  | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| sinGen       | 142/0    | LVCMOS25_OUT | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| sin_out      | 54/2     | LVCMOS25_OUT | PB18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
++--------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -64,8 +56,6 @@ Vccio by Bank:
 | 0    | 2.5V  |
 | 1    | 2.5V  |
 | 2    | 2.5V  |
-| 3    | 2.5V  |
-| 4    | 2.5V  |
 | 5    | 2.5V  |
 +------+-------+
 
@@ -93,15 +83,15 @@ Vccio by Bank:
 | 13/4     |     unused, PULL:DOWN |            |              | PL10A |                |           |           |
 | 14/4     |     unused, PULL:DOWN |            |              | PL10B |                |           |           |
 | 15/4     |     unused, PULL:DOWN |            |              | PL11A |                |           |           |
-| 17/4     | o_Rx_Byte[7]          |            | LVCMOS25_OUT | PL11B |                |           |           |
-| 19/4     | o_Rx_Byte[6]          |            | LVCMOS25_OUT | PL12A | PCLKT4_0       |           |           |
-| 20/4     | o_Rx_DV               |            | LVCMOS25_OUT | PL12B | PCLKC4_0       |           |           |
-| 21/4     | o_Rx_Byte[2]          |            | LVCMOS25_OUT | PL15A |                |           |           |
-| 22/4     | o_Rx_Byte[4]          |            | LVCMOS25_OUT | PL15B |                |           |           |
-| 23/4     | o_Rx_Byte[5]          |            | LVCMOS25_OUT | PL17A |                |           |           |
-| 24/4     | o_Rx_Byte[1]          |            | LVCMOS25_OUT | PL17B |                |           |           |
-| 25/3     | o_Rx_Byte[3]          |            | LVCMOS25_OUT | PL19A |                |           |           |
-| 26/3     | o_Rx_Byte[0]          |            | LVCMOS25_OUT | PL19B |                |           |           |
+| 17/4     |     unused, PULL:DOWN |            |              | PL11B |                |           |           |
+| 19/4     |     unused, PULL:DOWN |            |              | PL12A | PCLKT4_0       |           |           |
+| 20/4     |     unused, PULL:DOWN |            |              | PL12B | PCLKC4_0       |           |           |
+| 21/4     |     unused, PULL:DOWN |            |              | PL15A |                |           |           |
+| 22/4     |     unused, PULL:DOWN |            |              | PL15B |                |           |           |
+| 23/4     |     unused, PULL:DOWN |            |              | PL17A |                |           |           |
+| 24/4     |     unused, PULL:DOWN |            |              | PL17B |                |           |           |
+| 25/3     |     unused, PULL:DOWN |            |              | PL19A |                |           |           |
+| 26/3     |     unused, PULL:DOWN |            |              | PL19B |                |           |           |
 | 27/3     |     unused, PULL:DOWN |            |              | PL22A | PCLKT3_0       |           |           |
 | 28/3     |     unused, PULL:DOWN |            |              | PL22B | PCLKC3_0       |           |           |
 | 31/3     |     unused, PULL:DOWN |            |              | PL23D |                |           |           |
@@ -144,17 +134,17 @@ Vccio by Bank:
 | 76/1     |     unused, PULL:DOWN |            |              | PR23A | DQ1            |           |           |
 | 77/1     |     unused, PULL:DOWN |            |              | PR21B | DQ1            |           |           |
 | 78/1     |     unused, PULL:DOWN |            |              | PR21A | DQ1            |           |           |
-| 81/1     |     unused, PULL:DOWN |            |              | PR18B | DQ1            |           |           |
+| 81/1     | o_Rx_DV               |            | LVCMOS25_OUT | PR18B | DQ1            |           |           |
 | 82/1     |     unused, PULL:DOWN |            |              | PR18A | DQ1            |           |           |
 | 83/1     |     unused, PULL:DOWN |            |              | PR17B | DQ1            |           |           |
-| 84/1     |     unused, PULL:DOWN |            |              | PR17A | DQ1            |           |           |
-| 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
-| 86/1     |     unused, PULL:DOWN |            |              | PR16A | DQS1           |           |           |
-| 87/1     |     unused, PULL:DOWN |            |              | PR15B |                |           |           |
-| 89/1     |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
-| 91/1     |     unused, PULL:DOWN |            |              | PR12B | PCLKC1_0/DQ0   |           |           |
-| 92/1     |     unused, PULL:DOWN |            |              | PR12A | PCLKT1_0/DQ0   |           |           |
-| 93/1     |     unused, PULL:DOWN |            |              | PR11B | DQS0N          |           |           |
+| 84/1     | o_Rx_Byte[0]          |            | LVCMOS25_OUT | PR17A | DQ1            |           |           |
+| 85/1     | o_Rx_Byte[5]          |            | LVCMOS25_OUT | PR16B | DQS1N          |           |           |
+| 86/1     | o_Rx_Byte[4]          |            | LVCMOS25_OUT | PR16A | DQS1           |           |           |
+| 87/1     | o_Rx_Byte[2]          |            | LVCMOS25_OUT | PR15B |                |           |           |
+| 89/1     | o_Rx_Byte[7]          |            | LVCMOS25_OUT | PR15A |                |           |           |
+| 91/1     | o_Rx_Byte[3]          |            | LVCMOS25_OUT | PR12B | PCLKC1_0/DQ0   |           |           |
+| 92/1     | o_Rx_Byte[6]          |            | LVCMOS25_OUT | PR12A | PCLKT1_0/DQ0   |           |           |
+| 93/1     | o_Rx_Byte[1]          |            | LVCMOS25_OUT | PR11B | DQS0N          |           |           |
 | 94/1     |     unused, PULL:DOWN |            |              | PR11A | DQS0           |           |           |
 | 95/1     |     unused, PULL:DOWN |            |              | PR9B  | DQ0            |           |           |
 | 96/1     |     unused, PULL:DOWN |            |              | PR9A  | DQ0            |           |           |
@@ -168,15 +158,15 @@ Vccio by Bank:
 | 106/1    | MYLED[6]              | LOCATED    | LVCMOS25_OUT | PR2B  | R_GPLLC_FB/DQ0 |           |           |
 | 107/1    | MYLED[7]              | LOCATED    | LVCMOS25_OUT | PR2A  | R_GPLLT_FB/DQ0 |           |           |
 | 109/0    |     unused, PULL:DOWN |            |              | PT36D | DONE           |           |           |
-| 110/0    | MixerOutSin[7]        |            | LVCMOS25_OUT | PT36C | INITN          |           |           |
+| 110/0    |     unused, PULL:DOWN |            |              | PT36C | INITN          |           |           |
 | 111/0    |     unused, PULL:DOWN |            |              | PT35B |                |           |           |
-| 112/0    | MixerOutSin[5]        |            | LVCMOS25_OUT | PT35A |                |           |           |
-| 113/0    | MixerOutSin[4]        |            | LVCMOS25_OUT | PT33B |                |           |           |
-| 114/0    | MixerOutSin[6]        |            | LVCMOS25_OUT | PT33A |                |           |           |
-| 115/0    | MixerOutSin[1]        |            | LVCMOS25_OUT | PT28B |                |           |           |
-| 117/0    | MixerOutSin[0]        |            | LVCMOS25_OUT | PT28A |                |           |           |
-| 119/0    | MixerOutSin[3]        |            | LVCMOS25_OUT | PT27D | PROGRAMN       |           |           |
-| 120/0    | MixerOutSin[2]        |            | LVCMOS25_OUT | PT27C | JTAGENB        |           |           |
+| 112/0    |     unused, PULL:DOWN |            |              | PT35A |                |           |           |
+| 113/0    |     unused, PULL:DOWN |            |              | PT33B |                |           |           |
+| 114/0    |     unused, PULL:DOWN |            |              | PT33A |                |           |           |
+| 115/0    |     unused, PULL:DOWN |            |              | PT28B |                |           |           |
+| 117/0    |     unused, PULL:DOWN |            |              | PT28A |                |           |           |
+| 119/0    |     unused, PULL:DOWN |            |              | PT27D | PROGRAMN       |           |           |
+| 120/0    |     unused, PULL:DOWN |            |              | PT27C | JTAGENB        |           |           |
 | 121/0    |     unused, PULL:DOWN |            |              | PT25B |                |           |           |
 | 122/0    |     unused, PULL:DOWN |            |              | PT25A |                |           |           |
 | 125/0    | CIC_out_clk           | LOCATED    | LVCMOS25_OUT | PT22D | SDA/PCLKC0_0   |           |           |
@@ -444,28 +434,20 @@ LOCATE  COMP  "MYLED[4]"  SITE  "104";
 LOCATE  COMP  "MYLED[5]"  SITE  "105";
 LOCATE  COMP  "MYLED[6]"  SITE  "106";
 LOCATE  COMP  "MYLED[7]"  SITE  "107";
-LOCATE  COMP  "MixerOutSin[0]"  SITE  "117";
-LOCATE  COMP  "MixerOutSin[1]"  SITE  "115";
-LOCATE  COMP  "MixerOutSin[2]"  SITE  "120";
-LOCATE  COMP  "MixerOutSin[3]"  SITE  "119";
-LOCATE  COMP  "MixerOutSin[4]"  SITE  "113";
-LOCATE  COMP  "MixerOutSin[5]"  SITE  "112";
-LOCATE  COMP  "MixerOutSin[6]"  SITE  "114";
-LOCATE  COMP  "MixerOutSin[7]"  SITE  "110";
 LOCATE  COMP  "PWMOut"  SITE  "43";
 LOCATE  COMP  "RFIn"  SITE  "133";
 LOCATE  COMP  "XIn"  SITE  "3";
 LOCATE  COMP  "XOut"  SITE  "58";
 LOCATE  COMP  "i_Rx_Serial"  SITE  "73";
-LOCATE  COMP  "o_Rx_Byte[0]"  SITE  "26";
-LOCATE  COMP  "o_Rx_Byte[1]"  SITE  "24";
-LOCATE  COMP  "o_Rx_Byte[2]"  SITE  "21";
-LOCATE  COMP  "o_Rx_Byte[3]"  SITE  "25";
-LOCATE  COMP  "o_Rx_Byte[4]"  SITE  "22";
-LOCATE  COMP  "o_Rx_Byte[5]"  SITE  "23";
-LOCATE  COMP  "o_Rx_Byte[6]"  SITE  "19";
-LOCATE  COMP  "o_Rx_Byte[7]"  SITE  "17";
-LOCATE  COMP  "o_Rx_DV"  SITE  "20";
+LOCATE  COMP  "o_Rx_Byte[0]"  SITE  "84";
+LOCATE  COMP  "o_Rx_Byte[1]"  SITE  "93";
+LOCATE  COMP  "o_Rx_Byte[2]"  SITE  "87";
+LOCATE  COMP  "o_Rx_Byte[3]"  SITE  "91";
+LOCATE  COMP  "o_Rx_Byte[4]"  SITE  "86";
+LOCATE  COMP  "o_Rx_Byte[5]"  SITE  "85";
+LOCATE  COMP  "o_Rx_Byte[6]"  SITE  "92";
+LOCATE  COMP  "o_Rx_Byte[7]"  SITE  "89";
+LOCATE  COMP  "o_Rx_DV"  SITE  "81";
 LOCATE  COMP  "o_Tx_Serial"  SITE  "74";
 LOCATE  COMP  "sinGen"  SITE  "142";
 LOCATE  COMP  "sin_out"  SITE  "54";
@@ -482,7 +464,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jun 04 16:36:09 2019
+Wed Jun 05 14:14:16 2019
 
 
 

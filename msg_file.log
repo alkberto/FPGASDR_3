@@ -1,5 +1,5 @@
 SCUBA, Version Diamond (64-bit) 3.10.3.144
-Tue Jun 04 14:30:03 2019
+Wed Jun 05 14:21:01 2019
   
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -9,21 +9,24 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
   
 BEGIN SCUBA Module Synthesis
   
-    Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n PLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 8 -fclkop 120 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 
-    Circuit name     : PLL
-    Module type      : pll
-    Module Version   : 5.7
+    Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n Multiplier -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 8 -widthb 8 -widthp 16 -signed -PL_stages 0 -input_reg -output_reg -clk0 -ce0 -rst0 
+    Circuit name     : Multiplier
+    Module type      : dspmult_a
+    Module Version   : 4.9
     Ports            : 
-    Inputs       : CLKI
-    Outputs      : CLKOP
+    Inputs       : Clock, ClkEn, Aclr, DataA[7:0], DataB[7:0]
+    Outputs      : Result[15:0]
     I/O buffer       : not inserted
-    EDIF output      : PLL.edn
-    Verilog output   : PLL.v
-    Verilog template : PLL_tmpl.v
+    EDIF output      : Multiplier.edn
+    Verilog output   : Multiplier.v
+    Verilog template : Multiplier_tmpl.v
+    Verilog testbench: tb_Multiplier_tmpl.v
     Verilog purpose  : for synthesis and simulation
     Bus notation     : big endian
-    Report output    : PLL.srp
+    Report output    : Multiplier.srp
     Estimated Resource Usage:
+            LUT : 106
+            Reg : 32
   
 END   SCUBA Module Synthesis
 

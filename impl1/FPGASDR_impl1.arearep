@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  1371 of 7209 (19.018%)
-I/O cells:      35
+Register bits:  1369 of 7209 (18.990%)
+I/O cells:      27
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D       453          100.0
@@ -9,16 +9,16 @@ I/O cells:      35
                             FD1P3AX       854          100.0
                             FD1P3DX         8          100.0
                             FD1P3IX        32          100.0
-                            FD1S3AX       433          100.0
+                            FD1S3AX       432          100.0
                             FD1S3AY         4          100.0
                             FD1S3IX        38          100.0
-                            FD1S3JX         2          100.0
+                            FD1S3JX         1          100.0
                                 GSR         1          100.0
                                  IB         3          100.0
                             L6MUX21         1          100.0
-                               LUT4       157          100.0
-                                 OB        32          100.0
-                              PFUMX         4          100.0
+                               LUT4       154          100.0
+                                 OB        24          100.0
+                              PFUMX         5          100.0
                           ROM256X1A         8          100.0
 SUB MODULES
    CIC(width=16,decimation_ratio=8)         1
@@ -29,7 +29,7 @@ CIC(width=63,decimation_ratio=2048)         1
                              SinCos         1
           uart_rx(CLKS_PER_BIT=130)         1
           uart_tx(CLKS_PER_BIT=130)         1
-                              TOTAL      2039
+                              TOTAL      2027
 ----------------------------------------------------------------------
 Report for cell uart_tx(CLKS_PER_BIT=130).v1
 Instance Path : uart_tx1
@@ -41,18 +41,18 @@ Instance Path : uart_tx1
                             FD1S3AX         3            0.7
                             FD1S3IX         3            7.9
                             L6MUX21         1          100.0
-                               LUT4        28           17.8
-                              PFUMX         2           50.0
-                              TOTAL        76
+                               LUT4        27           17.5
+                              PFUMX         2           40.0
+                              TOTAL        75
 ----------------------------------------------------------------------
 Report for cell Mixer.v1
 Instance Path : Mixer1
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D         5            1.1
-                            FD1S3AX         8            1.8
+                            FD1S3AX         8            1.9
                             FD1S3AY         2           50.0
-                               LUT4         8            5.1
+                               LUT4         8            5.2
                               TOTAL        23
 ----------------------------------------------------------------------
 Report for cell PWM.v1
@@ -62,8 +62,8 @@ Instance Path : PWM1
                               CCU2D         5            1.1
                             FD1P3AX         8            0.9
                             FD1S3AX         9            2.1
-                               LUT4        18           11.5
-                              PFUMX         1           25.0
+                               LUT4        18           11.7
+                              PFUMX         1           20.0
                               TOTAL        41
 ----------------------------------------------------------------------
 Report for cell PLL.v1
@@ -82,21 +82,20 @@ Instance Path : uart_rx1
                             FD1P3IX        16           50.0
                             FD1S3AY         2           50.0
                             FD1S3IX         3            7.9
-                               LUT4        66           42.0
-                              PFUMX         1           25.0
-                              TOTAL       109
+                               LUT4        61           39.6
+                              PFUMX         2           40.0
+                              TOTAL       105
 ----------------------------------------------------------------------
 Report for cell CIC(width=63,decimation_ratio=2048).v1
-Instance Path : CIC2
+Instance Path : CIC2Cos
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D       329           72.6
                             FD1P3AX       646           75.6
-                            FD1S3AX       328           75.8
+                            FD1S3AX       327           75.7
                             FD1S3IX        16           42.1
-                            FD1S3JX         1           50.0
-                               LUT4        22           14.0
-                              TOTAL      1342
+                               LUT4        22           14.3
+                              TOTAL      1340
 ----------------------------------------------------------------------
 Report for cell SinCos.v1
 Instance Path : SinCos1
@@ -107,13 +106,13 @@ Instance Path : SinCos1
                               TOTAL        16
 ----------------------------------------------------------------------
 Report for cell CIC(width=16,decimation_ratio=8).v1
-Instance Path : CIC1
+Instance Path : CIC1Cos
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        94           20.8
                             FD1P3AX       176           20.6
-                            FD1S3AX        85           19.6
+                            FD1S3AX        85           19.7
                             FD1S3IX        16           42.1
-                            FD1S3JX         1           50.0
-                               LUT4        15            9.6
-                              TOTAL       387
+                            FD1S3JX         1          100.0
+                               LUT4        18           11.7
+                              TOTAL       390

@@ -44,6 +44,8 @@
 "C:/Users/user/lattice/FPGASDR/Multiplier.v"
 "C:/Users/user/lattice/FPGASDR/HP_shift.v"
 "C:/Users/user/lattice/FPGASDR/frequency_select.v"
+"C:/Users/user/lattice/FPGASDR/AMDemodulator.v"
+"C:/Users/user/lattice/FPGASDR/Multiplier.v"
 -top top
 
 

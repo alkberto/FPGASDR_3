@@ -1,7 +1,0 @@
-6
-~M 0 "" 0 $root
-~A 1 "" 0 $root
-~M 1 "./../../sim2/source/Mixer.v" 2 Mixer
-~A 1 "./../../sim2/source/Mixer.v" 2 Mixer
-~M 3 "./../../MixerSim.v" 4 MixerSim
-~A 1 "./../../MixerSim.v" 4 MixerSim

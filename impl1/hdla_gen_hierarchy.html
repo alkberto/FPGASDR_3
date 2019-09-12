@@ -14,19 +14,32 @@ Starting: parse design source files
 (VERI-1482) Analyzing Verilog file C:/Users/user/lattice/FPGASDR/Multiplier.v
 (VERI-1482) Analyzing Verilog file C:/Users/user/lattice/FPGASDR/HP_shift.v
 (VERI-1482) Analyzing Verilog file C:/Users/user/lattice/FPGASDR/frequency_select.v
+(VERI-1482) Analyzing Verilog file C:/Users/user/lattice/FPGASDR/AMDemodulator.v
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(44,6-44,15) (VERI-1128) MultDataA is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(45,6-45,15) (VERI-1128) MultDataB is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(46,7-46,14) (VERI-1128) ISquare is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(46,18-46,28) (VERI-1128) MultResult is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(49,7-49,13) (VERI-1128) select is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(49,17-49,23) (VERI-1128) select is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(50,7-50,14) (VERI-1128) sum_clr is not declared
+ERROR - C:/Users/user/lattice/FPGASDR/AMDemodulator.v(2,1-56,10) (VERI-1072) module AMDemodulator ignored due to previous errors
+(VERI-1483) Verilog file C:/Users/user/lattice/FPGASDR/AMDemodulator.v ignored due to errors
 INFO - C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v(47,8-47,20) (VERI-1018) compiling module blinking_led
 INFO - C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v(47,1-140,10) (VERI-9000) elaborating module 'blinking_led'
 INFO - C:/Users/user/lattice/FPGASDR/impl1/source/top.v(3,8-3,11) (VERI-1018) compiling module top
-INFO - C:/Users/user/lattice/FPGASDR/impl1/source/top.v(3,1-201,10) (VERI-9000) elaborating module 'top'
+INFO - C:/Users/user/lattice/FPGASDR/impl1/source/top.v(3,1-237,10) (VERI-9000) elaborating module 'top'
 INFO - C:/Users/user/lattice/FPGASDR/NCO.v(18,1-54,10) (VERI-9000) elaborating module 'nco_sig_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/SinCos.v(8,1-196,10) (VERI-9000) elaborating module 'SinCos_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/Mixer.v(2,1-76,10) (VERI-9000) elaborating module 'Mixer_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/CIC.v(25,1-129,10) (VERI-9000) elaborating module 'CIC_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/CIC.v(25,1-129,10) (VERI-9000) elaborating module 'CIC_uniq_2'
+INFO - C:/Users/user/lattice/FPGASDR/CIC.v(25,1-129,10) (VERI-9000) elaborating module 'CIC_uniq_3'
+INFO - C:/Users/user/lattice/FPGASDR/CIC.v(25,1-129,10) (VERI-9000) elaborating module 'CIC_uniq_4'
 INFO - C:/Users/user/lattice/FPGASDR/HP_shift.v(6,1-30,10) (VERI-9000) elaborating module 'HP_shift_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/PWM.v(1,1-35,10) (VERI-9000) elaborating module 'PWM_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/PLL.v(8,1-93,10) (VERI-9000) elaborating module 'PLL_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v(19,1-174,10) (VERI-9000) elaborating module 'uart_rx_uniq_1'
+INFO - C:/Users/user/lattice/FPGASDR/Multiplier.v(8,1-533,10) (VERI-9000) elaborating module 'Multiplier_uniq_1'
 INFO - C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v(14,1-153,10) (VERI-9000) elaborating module 'uart_tx_uniq_1'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_1'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_2'
@@ -44,44 +57,6 @@ INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_14'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_15'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_16'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_1'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_2'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_3'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_4'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_5'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_6'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_7'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_8'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_9'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_10'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_11'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_12'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_13'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_14'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_15'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_16'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_1'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730,1-1786,10) (VERI-9000) elaborating module 'EHXPLLJ_uniq_1'
-INFO - C:/Users/user/lattice/FPGASDR/Multiplier.v(8,8-8,18) (VERI-1018) compiling module Multiplier
-INFO - C:/Users/user/lattice/FPGASDR/Multiplier.v(8,1-533,10) (VERI-9000) elaborating module 'Multiplier'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_1'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_2'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_3'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_4'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_1'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_2'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_3'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_4'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_5'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_6'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_7'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_8'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_9'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_10'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_11'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_12'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_13'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_14'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_17'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_18'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_19'
@@ -114,6 +89,43 @@ INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_46'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_47'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187,1-196,10) (VERI-9000) elaborating module 'FD1P3DX_uniq_48'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_1'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_2'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_3'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_4'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_5'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_6'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_7'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_8'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_9'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_10'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_11'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_12'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_13'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_14'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_15'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062,1-1075,10) (VERI-9000) elaborating module 'ROM256X1A_uniq_16'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_1'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_2'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730,1-1786,10) (VERI-9000) elaborating module 'EHXPLLJ_uniq_1'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_1'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_2'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_3'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43,1-47,10) (VERI-9000) elaborating module 'AND2_uniq_4'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_1'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_2'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_3'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_4'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_5'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_6'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_7'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_8'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_9'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_10'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_11'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_12'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_13'
+INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797,1-801,10) (VERI-9000) elaborating module 'ND2_uniq_14'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138,1-142,10) (VERI-9000) elaborating module 'FADD2B_uniq_1'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138,1-142,10) (VERI-9000) elaborating module 'FADD2B_uniq_2'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138,1-142,10) (VERI-9000) elaborating module 'FADD2B_uniq_3'
@@ -158,10 +170,11 @@ INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684,1-697,10) (VERI-9000) elaborating module 'MULT2_uniq_14'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684,1-697,10) (VERI-9000) elaborating module 'MULT2_uniq_15'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684,1-697,10) (VERI-9000) elaborating module 'MULT2_uniq_16'
-INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124,1-1126,10) (VERI-9000) elaborating module 'VLO_uniq_2'
 INFO - C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120,1-1122,10) (VERI-9000) elaborating module 'VHI_uniq_1'
+WARNING - C:/Users/user/lattice/FPGASDR/impl1/source/top.v(159,1-165,3) (VERI-1063) instantiating unknown module AMDemodulator
+WARNING - C:/Users/user/lattice/FPGASDR/impl1/source/top.v(210,1-210,19) (VERI-1330) actual bit length 1 differs from formal bit length 8 for port DataA
 INFO - C:/Users/user/lattice/FPGASDR/frequency_select.v(2,8-2,24) (VERI-1018) compiling module frequency_select
 INFO - C:/Users/user/lattice/FPGASDR/frequency_select.v(2,1-42,10) (VERI-9000) elaborating module 'frequency_select'
-Done: design load finished with (0) errors, and (0) warnings
+Done: design load finished with (8) errors, and (2) warnings
 
 </PRE></BODY></HTML>

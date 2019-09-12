@@ -16,8 +16,8 @@ CoreRevision=4.9
 ModuleName=Multiplier
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=12/15/2018
-Time=23:31:29
+Date=06/05/2019
+Time=14:21:01
 
 [Parameters]
 Verilog=1

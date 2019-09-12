@@ -8,7 +8,6 @@ module top
    output   o_Rx_DV,
    output[7:0] o_Rx_Byte,
    	output [7:0] MYLED,
-	output [7:0] MixerOutSin,
 	input XIn,
 	output XOut,
 	input  RFIn, 
@@ -26,16 +25,22 @@ wire [7:0] i_Tx_Byte;
 wire [63:0] phase_inc_carrGen ;
 reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
-wire  cosGen;//wire [7:0] MixerOutSin;
+wire  cosGen;wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
-wire [7:0] CIC_out;
-wire [7:0] CIC1_out;
-wire CIC1_out_clk;
+wire [7:0] CICSin_out;
+wire [7:0] CIC1Sin_out;
+wire CIC1Sin_out_clk;
+wire [7:0] CICCos_out;
+wire [7:0] CIC1Cos_out;
+wire CIC1Cos_out_clk;
 wire [63:0] phase_accum;
 wire [7:0] LOSine;
 wire [7:0] LOCosine;
 wire [7:0] IIR_out;
 
+wire signed [7:0] MuultDataA;
+wire signed [7:0] MultDataB;
+wire signed [15:0] MultResult;
 // wire CIC_out_clk;
 
 /*
@@ -121,18 +126,42 @@ Mixer Mixer1 (
 .MixerOutCos (MixerOutCos)
 );
 
-CIC  #(.width(16), .decimation_ratio(8)) CIC1 (
+CIC  #(.width(16), .decimation_ratio(8)) CIC1Sin (
 .clk (osc_clk),
 .d_in (MixerOutSin),
-.d_out (CIC1_out),
-.d_clk (CIC1_out_clk)
+.d_out (CIC1Sin_out),
+.d_clk (CIC1Sin_out_clk)
 );  
 
-CIC  #(.width(63), .decimation_ratio(2048)) CIC2 (
-.clk (CIC1_out_clk),
-.d_in (CIC1_out),
-.d_out (CIC_out),
-.d_clk (CIC_out_clk)
+CIC  #(.width(63), .decimation_ratio(2048)) CIC2Sin (
+.clk (CIC1Sin_out_clk),
+.d_in (CIC1Sin_out),
+.d_out (CICSin_out),
+.d_clk (CICSin_out_clk)
+);  
+
+
+CIC  #(.width(16), .decimation_ratio(8)) CIC1Cos (
+.clk (osc_clk),
+.d_in (MixerOutCos),
+.d_out (CIC1Cos_out),
+.d_clk (CIC1Cos_out_clk)
+);  
+
+CIC  #(.width(63), .decimation_ratio(2048)) CIC2Cos (
+.clk (CIC1Cos_out_clk),
+.d_in (CIC1Cos_out),
+.d_out (CICCos_out),
+.d_clk (CICCos_out_clk)
+);  
+
+
+AMDemodulator AMDemodulator (
+.clkData (CICCos_out_clk),
+.clk (clk),
+.I_in (CICCos_out),
+.Q_in (CICCos_out),
+.d_out (AMDemod_out)
 );  
 
 
@@ -144,14 +173,14 @@ HP_IIR HP_IIR1 (.clk (CIC_out_clk),
 
  */
 HP_shift HP_shift1 (.clk (osc_clk),
-.d_in (CIC_out),
+.d_in (CICCos_out),
 .d_out (IIR_out)
 );
  
 PWM PWM1 (
 .clk (osc_clk),
 //.DataIn (IIR_out), //(CIC_out),
-.DataIn (CIC_out), //(IIR_out),
+.DataIn (CICCos_out), //(IIR_out),
 .PWMOut (PWMOut)
 );
 
@@ -161,7 +190,7 @@ PLL PLL1 (
 
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
-assign MYLED[5:0] = CIC_out [7:2];
+assign MYLED[5:0] = CICCos_out [7:2];
 //assign MYLED[5:0] = o_Rx_Byte [7:2];
 assign MYLED[7] = sin_out;
 assign MYLED[6] = cos_out; 
@@ -175,7 +204,14 @@ uart_rx  #(.CLKS_PER_BIT(130))  uart_rx1 (
 .o_Rx_Byte (o_Rx_Byte)
 );
 	
-	
+Multiplier Multiplier1 (.Clock (clk),
+.ClkEn (1'b 1),
+.Aclr (1'b 0),
+.DataA (MultDataA),
+.DataB (MultDataB),
+.Result (MultResult)
+);
+
 	
 
 uart_tx  #(.CLKS_PER_BIT(130))  uart_tx1 (
