@@ -5,8 +5,8 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Jun 06 15:38:01 2019
+Wed Sep 18 22:40:06 2019
 
 
-Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
+Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
 

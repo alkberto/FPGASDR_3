@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Jun 06 15:38:01 2019
+Wed Sep 18 22:40:06 2019
 
 
-Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
+Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,47 +64,9 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/Users/user/lattice/FPGASDR (searchpath added)
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
 -p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
--p C:/Users/user/lattice/FPGASDR/impl1 (searchpath added)
--p C:/Users/user/lattice/FPGASDR (searchpath added)
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/top.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/NCO.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/Mixer.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/SinCos.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/CIC.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/PWM.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/PLL.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/Multiplier.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/HP_shift.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/frequency_select.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/AMDemodulator.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/Multiplier.v
-NGD file = FPGASDR_impl1.ngd
--sdc option: SDC file input not used.
--lpf option: Output file option is ON.
-Hardtimer checking is enabled (default). The -dt option is not used.
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Technology check ok...
-
-Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
-Compile design.
-Compile Design Begin
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/testuart.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/top.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/nco.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/mixer.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/sincos.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/cic.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/pwm.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/pll.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_shift.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/frequency_select.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/amdemodulator.v. VERI-1482
-    <postMsg mid="35901128" type="Error"   dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/amdemodulator.v(44): " arg1="MultDataA" arg2="c:/users/user/lattice/fpgasdr/amdemodulator.v" arg3="44"  />
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1 (searchpath added)
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v
+    <postMsg mid="35001355" type="Error"   dynamic="1" navigation="0" arg0="C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v"  />

@@ -24,12 +24,9 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35901128</ID>
+            <ID>35001355</ID>
             <Severity>Error</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/amdemodulator.v(44): </Dynamic>
-            <Dynamic>MultDataA</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/amdemodulator.v</Navigation>
-            <Navigation>44</Navigation>
+            <Dynamic>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
