@@ -30,24 +30,24 @@
 
 
 -lpf 1
--p "C:/Users/user/lattice/FPGASDR"
--ver "C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v"
-"C:/Users/user/lattice/FPGASDR/impl1/source/top.v"
-"C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
-"C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
-"C:/Users/user/lattice/FPGASDR/NCO.v"
-"C:/Users/user/lattice/FPGASDR/Mixer.v"
-"C:/Users/user/lattice/FPGASDR/SinCos.v"
-"C:/Users/user/lattice/FPGASDR/CIC.v"
-"C:/Users/user/lattice/FPGASDR/PWM.v"
-"C:/Users/user/lattice/FPGASDR/PLL.v"
-"C:/Users/user/lattice/FPGASDR/Multiplier.v"
-"C:/Users/user/lattice/FPGASDR/HP_shift.v"
-"C:/Users/user/lattice/FPGASDR/frequency_select.v"
+-p "C:/Users/Rinaldi-i3/lattice/FPGASDR_3"
+-ver "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartRX.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartTX.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v"
 -top top
 
 
--p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data" "C:/Users/user/lattice/FPGASDR/impl1" "C:/Users/user/lattice/FPGASDR"
+-p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3"
 
 -ngd "FPGASDR_impl1.ngd"
 

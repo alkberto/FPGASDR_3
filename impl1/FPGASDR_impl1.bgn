@@ -5,7 +5,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path C:/Users/user/lattice/FPGASDR -w -jedec -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml FPGASDR_impl1.ncd FPGASDR_impl1.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/Rinaldi-i3/lattice/FPGASDR_3 -w -jedec -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml FPGASDR_impl1.ncd FPGASDR_impl1.prf 
 
 Loading design for application Bitgen from file FPGASDR_impl1.ncd.
 Design name: top

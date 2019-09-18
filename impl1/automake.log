@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jun 04 16:35:48 2019
+Wed Sep 18 22:57:16 2019
 
 
-Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml 
+Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,23 +64,23 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/Users/user/lattice/FPGASDR (searchpath added)
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
 -p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
--p C:/Users/user/lattice/FPGASDR/impl1 (searchpath added)
--p C:/Users/user/lattice/FPGASDR (searchpath added)
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/top.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/NCO.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/Mixer.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/SinCos.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/CIC.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/PWM.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/PLL.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/Multiplier.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/HP_shift.v
-Verilog design file = C:/Users/user/lattice/FPGASDR/frequency_select.v
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1 (searchpath added)
+-p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartRX.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartTX.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v
 NGD file = FPGASDR_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -91,24 +91,24 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/testuart.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/top.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/nco.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/mixer.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/sincos.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/cic.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/pwm.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/pll.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/hp_shift.v. VERI-1482
-Analyzing Verilog file c:/users/user/lattice/fpgasdr/frequency_select.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/testuart.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uartrx.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uarttx.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/frequency_select.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): " arg1="top" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="3"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(18): " arg1="nco_sig" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="18"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/sincos.v(8): " arg1="SinCos" arg2="c:/users/user/lattice/fpgasdr/sincos.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(3): " arg1="top" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v(18): " arg1="nco_sig" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v(8): " arg1="SinCos" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): " arg1="FD1P3DX" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="187"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_1" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
@@ -126,17 +126,17 @@ Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_14" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_15" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): " arg1="ROM256X1A_renamed_due_excessive_length_16" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1062"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/mixer.v(2): " arg1="Mixer" arg2="c:/users/user/lattice/fpgasdr/mixer.v" arg3="2"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/cic.v(25): " arg1="CIC(width=16,decimation_ratio=8)" arg2="c:/users/user/lattice/fpgasdr/cic.v" arg3="25"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/cic.v(25): " arg1="CIC(width=63,decimation_ratio=2048)" arg2="c:/users/user/lattice/fpgasdr/cic.v" arg3="25"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/hp_shift.v(6): " arg1="HP_shift" arg2="c:/users/user/lattice/fpgasdr/hp_shift.v" arg3="6"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/pwm.v(1): " arg1="PWM" arg2="c:/users/user/lattice/fpgasdr/pwm.v" arg3="1"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/pll.v(8): " arg1="PLL" arg2="c:/users/user/lattice/fpgasdr/pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v(2): " arg1="Mixer" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v(25): " arg1="CIC(width=16,decimation_ratio=8)" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v" arg3="25"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v(25): " arg1="CIC(width=63,decimation_ratio=2048)" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v" arg3="25"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v(6): " arg1="HP_shift" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v" arg3="6"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v(1): " arg1="PWM" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v(8): " arg1="PLL" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=3,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(19): " arg1="uart_rx(CLKS_PER_BIT=130)" arg2="c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v" arg3="19"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): " arg1="uart_tx(CLKS_PER_BIT=130)" arg2="c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v" arg3="14"  />
-    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(27): " arg1="phase_inc_carr[63]" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="27"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uartrx.v(19): " arg1="uart_rx(CLKS_PER_BIT=130)" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uartrx.v" arg3="19"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uarttx.v(14): " arg1="uart_tx(CLKS_PER_BIT=130)" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uarttx.v" arg3="14"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(27): " arg1="phase_inc_carr[63]" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v" arg3="27"  />
 Last elaborated design is top()
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -145,7 +145,7 @@ Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'.
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/impl1/source/top.v(149): " arg1="HP_shift1" arg2="c:/users/user/lattice/fpgasdr/impl1/source/top.v" arg3="149"  />
+    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(149): " arg1="HP_shift1" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v" arg3="149"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="XOut"  />
     <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="sinGen"  />
 ######## Missing driver on net XOut. Patching with GND.
@@ -217,7 +217,7 @@ Top-level module name = top.
 
 
 
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/user/lattice/fpgasdr/nco.v(52): " arg1="\nco/phase_accum_i0" arg2="c:/users/user/lattice/fpgasdr/nco.v" arg3="52"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v(52): " arg1="\nco/phase_accum_i0" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v" arg3="52"  />
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
@@ -318,13 +318,13 @@ clk0 [get_nets osc_clk]                 |  200.000 MHz|  110.840 MHz|     5 *
 3 constraints not met.
 
 
-Peak Memory Usage: 78.313  MB
+Peak Memory Usage: 78.656  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 6.661  secs
+Elapsed CPU time for LSE flow : 10.998  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGASDR_impl1.ngd" -o "FPGASDR_impl1_map.ncd" -pr "FPGASDR_impl1.prf" -mp "FPGASDR_impl1.mrp" -lpf "C:/Users/user/lattice/FPGASDR/impl1/FPGASDR_impl1.lpf" -lpf "C:/Users/user/lattice/FPGASDR/FPGASDR.lpf"             
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FPGASDR_impl1.ngd" -o "FPGASDR_impl1_map.ncd" -pr "FPGASDR_impl1.prf" -mp "FPGASDR_impl1.mrp" -lpf "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/FPGASDR_impl1.lpf" -lpf "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.lpf"             
 map:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -467,7 +467,7 @@ Design Summary:
 
 
 Total CPU Time: 1 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 67 MB
 
 Dumping design to file FPGASDR_impl1_map.ncd.
@@ -483,10 +483,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "FPGASDR_impl1_map.ncd"
-Tue Jun 04 16:35:58 2019
+Wed Sep 18 22:57:34 2019
 
 PAR: Place And Route Diamond (64-bit) 3.10.3.144.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/user/lattice/FPGASDR/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGASDR_impl1_map.ncd FPGASDR_impl1.dir/5_1.ncd FPGASDR_impl1.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF FPGASDR_impl1_map.ncd FPGASDR_impl1.dir/5_1.ncd FPGASDR_impl1.prf
 Preference file: FPGASDR_impl1.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -541,17 +541,17 @@ No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
 ...............
-Finished Placer Phase 0.  REAL time: 2 secs 
+Finished Placer Phase 0.  REAL time: 5 secs 
 
 Starting Placer Phase 1.
 .....................
 Placer score = 264342.
-Finished Placer Phase 1.  REAL time: 10 secs 
+Finished Placer Phase 1.  REAL time: 19 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  259004
-Finished Placer Phase 2.  REAL time: 10 secs 
+Finished Placer Phase 2.  REAL time: 19 secs 
 
 
 ------------------ Clock Report ------------------
@@ -602,16 +602,16 @@ I/O Bank Usage Summary:
 | 5        | 1 / 10 ( 10%)  | 2.5V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 9 secs 
+Total placer CPU time: 18 secs 
 
 Dumping design to file FPGASDR_impl1.dir/5_1.ncd.
 
 0 connections routed; 5254 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 14 secs 
+Completed router resource preassignment. Real time: 24 secs 
 
-Start NBR router at 16:36:12 06/04/19
+Start NBR router at 22:57:58 09/18/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -626,74 +626,74 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 16:36:13 06/04/19
+Start NBR special constraint process at 22:57:59 09/18/19
 
-Start NBR section for initial routing at 16:36:13 06/04/19
+Start NBR section for initial routing at 22:57:59 09/18/19
 Level 1, iteration 1
 14(0.00%) conflicts; 3002(57.14%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.980ns/0.000ns; real time: 16 secs 
+Estimated worst slack/total negative slack<setup>: 0.980ns/0.000ns; real time: 26 secs 
 Level 2, iteration 1
 5(0.00%) conflicts; 2999(57.08%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.980ns/0.000ns; real time: 16 secs 
+Estimated worst slack/total negative slack<setup>: 0.980ns/0.000ns; real time: 26 secs 
 Level 3, iteration 1
 27(0.01%) conflicts; 2613(49.73%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 16 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 27 secs 
 Level 4, iteration 1
 163(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 29 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 16:36:16 06/04/19
+Start NBR section for normal routing at 22:58:03 09/18/19
 Level 1, iteration 1
 8(0.00%) conflicts; 170(3.24%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 29 secs 
 Level 2, iteration 1
 7(0.00%) conflicts; 170(3.24%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 29 secs 
 Level 3, iteration 1
 8(0.00%) conflicts; 167(3.18%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 29 secs 
 Level 4, iteration 1
 101(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 18 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 2
 38(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 3
 8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 4
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 5
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 6
 4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 30 secs 
 Level 4, iteration 7
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 31 secs 
 Level 4, iteration 8
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.965ns/0.000ns; real time: 31 secs 
 Level 4, iteration 9
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 31 secs 
 Level 4, iteration 10
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 19 secs 
+Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 31 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 16:36:17 06/04/19
+Start NBR section for setup/hold timing optimization with effort level 3 at 22:58:05 09/18/19
 
-Start NBR section for re-routing at 16:36:18 06/04/19
+Start NBR section for re-routing at 22:58:06 09/18/19
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 20 secs 
+Estimated worst slack/total negative slack<setup>: 0.646ns/0.000ns; real time: 32 secs 
 
-Start NBR section for post-routing at 16:36:18 06/04/19
+Start NBR section for post-routing at 22:58:06 09/18/19
 
 End NBR router with 0 unrouted connection
 
@@ -708,8 +708,8 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 21 secs 
-Total REAL time: 22 secs 
+Total CPU time 32 secs 
+Total REAL time: 34 secs 
 Completely routed.
 End of route.  5254 routed (100.00%); 0 unrouted.
 
@@ -728,8 +728,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 21 secs 
-Total REAL time to completion: 23 secs 
+Total CPU  time to completion: 33 secs 
+Total REAL time to completion: 35 secs 
 
 par done!
 

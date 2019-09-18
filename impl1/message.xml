@@ -26,25 +26,25 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(3): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(3): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v</Navigation>
             <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(18): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v(18): </Dynamic>
             <Dynamic>nco_sig</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/sincos.v(8): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v(8): </Dynamic>
             <Dynamic>SinCos</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/sincos.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v</Navigation>
             <Navigation>8</Navigation>
         </Message>
         <Message>
@@ -186,49 +186,49 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/mixer.v(2): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v(2): </Dynamic>
             <Dynamic>Mixer</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/mixer.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v</Navigation>
             <Navigation>2</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(25): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v(25): </Dynamic>
             <Dynamic>CIC(width=16,decimation_ratio=8)</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v</Navigation>
             <Navigation>25</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/cic.v(25): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v(25): </Dynamic>
             <Dynamic>CIC(width=63,decimation_ratio=2048)</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/cic.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v</Navigation>
             <Navigation>25</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/hp_shift.v(6): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v(6): </Dynamic>
             <Dynamic>HP_shift</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/hp_shift.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v</Navigation>
             <Navigation>6</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/pwm.v(1): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v(1): </Dynamic>
             <Dynamic>PWM</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/pwm.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/pll.v(8): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v(8): </Dynamic>
             <Dynamic>PLL</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/pll.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v</Navigation>
             <Navigation>8</Navigation>
         </Message>
         <Message>
@@ -250,33 +250,33 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v(19): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uartrx.v(19): </Dynamic>
             <Dynamic>uart_rx(CLKS_PER_BIT=130)</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uartrx.v</Navigation>
             <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v(14): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uarttx.v(14): </Dynamic>
             <Dynamic>uart_tx(CLKS_PER_BIT=130)</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/uarttx.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/uarttx.v</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(27): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(27): </Dynamic>
             <Dynamic>phase_inc_carr[63]</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v</Navigation>
             <Navigation>27</Navigation>
         </Message>
         <Message>
             <ID>35935034</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/impl1/source/top.v(149): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(149): </Dynamic>
             <Dynamic>HP_shift1</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v</Navigation>
             <Navigation>149</Navigation>
         </Message>
         <Message>
@@ -292,9 +292,9 @@
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/user/lattice/fpgasdr/nco.v(52): </Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v(52): </Dynamic>
             <Dynamic>\nco/phase_accum_i0</Dynamic>
-            <Navigation>c:/users/user/lattice/fpgasdr/nco.v</Navigation>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v</Navigation>
             <Navigation>52</Navigation>
         </Message>
         <Message>

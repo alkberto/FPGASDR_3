@@ -6,38 +6,40 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1559658987"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1568840297"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1559658958">
-            <Task name="Map" build_result="2" update_result="0" update_time="1559658958"/>
-            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="Map" build_result="2" build_time="1568840253">
+            <Task name="Map" build_result="2" update_result="0" update_time="1568840253"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1559711070"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1559658981">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1559658981"/>
-            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+        <Milestone name="PAR" build_result="2" build_time="1568840289">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1568840289"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1559711403"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1559658956">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1559658956"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1559658987"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1568840249">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1568840249"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1568840297"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1559657035"/>
-            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1559737846"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/FPGASDR_impl1_map.vdb" last_build_time="1559658958" last_build_size="371745"/>
-        <Report name="FPGASDR_impl1.bgn" last_build_time="1559658987" last_build_size="4216"/>
+        <Report name=".vdbs/FPGASDR_impl1_map.vdb" last_build_time="1568840253" last_build_size="387909"/>
+        <Report name="FPGASDR_impl1.bgn" last_build_time="1568840296" last_build_size="4232"/>
         <Report name="FPGASDR_impl1.ior" last_build_time="1559654815" last_build_size="3421"/>
-        <Report name="FPGASDR_impl1.jed" last_build_time="1559658987" last_build_size="1465653"/>
-        <Report name="FPGASDR_impl1.lsedata" last_build_time="1559658949" last_build_size="1321857"/>
-        <Report name="FPGASDR_impl1.ncd" last_build_time="1559658981" last_build_size="1514748"/>
-        <Report name="FPGASDR_impl1.ngd" last_build_time="1559658955" last_build_size="1241411"/>
-        <Report name="FPGASDR_impl1.tw1" last_build_time="1559654779" last_build_size="14577"/>
-        <Report name="FPGASDR_impl1.twr" last_build_time="1559654798" last_build_size="78443"/>
-        <Report name="FPGASDR_impl1_map.ncd" last_build_time="1559658957" last_build_size="1107659"/>
+        <Report name="FPGASDR_impl1.jed" last_build_time="1568840296" last_build_size="1465653"/>
+        <Report name="FPGASDR_impl1.lsedata" last_build_time="1568840238" last_build_size="1321857"/>
+        <Report name="FPGASDR_impl1.ncd" last_build_time="1568840289" last_build_size="1514748"/>
+        <Report name="FPGASDR_impl1.ngd" last_build_time="1568840248" last_build_size="1241411"/>
+        <Report name="FPGASDR_impl1.tw1" last_build_time="1559711070" last_build_size="15457"/>
+        <Report name="FPGASDR_impl1.twr" last_build_time="1559711403" last_build_size="56142"/>
+        <Report name="FPGASDR_impl1_map.ncd" last_build_time="1568840251" last_build_size="1107659"/>
         <Report name="FPGASDR_impl1_mapvho.sdf" last_build_time="1554808383" last_build_size="959132"/>
         <Report name="FPGASDR_impl1_mapvho.vho" last_build_time="1554808382" last_build_size="7294139"/>
         <Report name="FPGASDR_impl1_mapvo.sdf" last_build_time="1543079364" last_build_size="80984"/>
