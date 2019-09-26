@@ -16,7 +16,23 @@ input [7:0] Q_in;
 output [7:0] d_out;
 reg [1:0] state;
 reg NewSample;
+reg [15:0] ISquare;
+reg [15:0] QSquare;
+reg [15:0] SquareSum;
 
+wire signed [7:0] MultDataA;
+wire signed [7:0] MultDataB;
+wire signed [15:0] MultResult;
+
+Multiplier Multiplier1 (.Clock (clk),
+.ClkEn (1'b 1),
+.Aclr (1'b 0),
+.DataA (MultDataA),
+.DataB (MultDataB),
+.Result (MultResult)
+);
+
+	
 
 	always@(posedge clkData) begin
 	NewSample <= 1'b1;
@@ -25,14 +41,15 @@ reg NewSample;
 
 	always@(posedge clk) begin
 	case (state)
-		S0: state <= S1;
-		S1: if (NewSample == 1) 
+		
+		S0: if (NewSample == 1) 
 			begin
-				state <= S0;
+				state <= S1;
 				NewSample <= 1'b0;
 			end
 				else
-			state <= S1;
+			state <= S0;
+		S1: state <= S0;
 	endcase
 	end
 	
@@ -43,11 +60,13 @@ reg NewSample;
 					
 					MultDataA <= I_in;
 					MultDataB <= I_in;
-						ISquare <= MultResult;
+					ISquare <= MultResult;
 					end
 				S1: begin
-						select <= select + 1;
-						sum_clr <= 16'd0;
+					MultDataA <= Q_in;
+					MultDataB <= Q_in;
+					QSquare <= MultResult;
+					SquareSum <= ISquare + QSquare;
 					end
 			endcase
 		end

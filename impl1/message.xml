@@ -24,9 +24,92 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35001355</ID>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(31): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(32): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(33): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(34): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(35): </Dynamic>
+            <Dynamic>uart_rx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(25): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(26): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(27): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(28): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(29): </Dynamic>
+            <Dynamic>uart_tx</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901128</ID>
             <Severity>Error</Severity>
-            <Dynamic>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v</Dynamic>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(44): </Dynamic>
+            <Dynamic>MultDataA</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v</Navigation>
+            <Navigation>44</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

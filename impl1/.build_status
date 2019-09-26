@@ -19,12 +19,12 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1559711403"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="1" build_time="1568839207">
-            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1568839207"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1568839207"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1569352992">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1569352992"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1569352782"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1559737846"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1569357149"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
@@ -34,9 +34,9 @@
         <Report name="FPGASDR_impl1.bgn" last_build_time="1559736871" last_build_size="4216"/>
         <Report name="FPGASDR_impl1.ior" last_build_time="1559654815" last_build_size="3421"/>
         <Report name="FPGASDR_impl1.jed" last_build_time="1559736871" last_build_size="1465341"/>
-        <Report name="FPGASDR_impl1.lsedata" last_build_time="1568667379" last_build_size="2323283"/>
+        <Report name="FPGASDR_impl1.lsedata" last_build_time="1568928625" last_build_size="2323283"/>
         <Report name="FPGASDR_impl1.ncd" last_build_time="1559736865" last_build_size="1509665"/>
-        <Report name="FPGASDR_impl1.ngd" last_build_time="1568667379" last_build_size="1236098"/>
+        <Report name="FPGASDR_impl1.ngd" last_build_time="1568928625" last_build_size="1236098"/>
         <Report name="FPGASDR_impl1.tw1" last_build_time="1559711070" last_build_size="15457"/>
         <Report name="FPGASDR_impl1.twr" last_build_time="1559711403" last_build_size="56142"/>
         <Report name="FPGASDR_impl1_map.ncd" last_build_time="1559736845" last_build_size="1110352"/>

@@ -62,8 +62,55 @@ The -syn option is FALSE.
 -p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1 (searchpath added)
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v
-ERROR - synthesis: Cannot find C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v. File does not exist.
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v
+Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v
+NGD file = FPGASDR_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/frequency_select.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v. VERI-1482
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(31): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(32): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(33): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(34): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(35): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/testuart.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v. VERI-1482
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(25): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(26): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(27): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(28): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(29): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v. VERI-1482
+ERROR - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(44): MultDataA is not declared. VERI-1128
 
 
 

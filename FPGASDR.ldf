@@ -2,18 +2,9 @@
 <BaliProject version="3.2" title="FPGASDR" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Timing">
-        <Options def_top="frequency_select" top="top"/>
-        <Source name="impl1/source/TestUart.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
+        <Options def_top="blinking_led" top="top"/>
         <Source name="impl1/source/top.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
-        </Source>
-        <Source name="impl1/source/UartRX.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog">
-            <Options/>
         </Source>
         <Source name="NCO.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -43,6 +34,18 @@
             <Options/>
         </Source>
         <Source name="frequency_select.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="UartRX.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="TestUart.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="UartTX.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="AMDemodulator.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">

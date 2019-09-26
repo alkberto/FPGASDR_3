@@ -38,9 +38,6 @@ wire [7:0] LOSine;
 wire [7:0] LOCosine;
 wire [7:0] IIR_out;
 
-wire signed [7:0] MuultDataA;
-wire signed [7:0] MultDataB;
-wire signed [15:0] MultResult;
 // wire CIC_out_clk;
 
 /*
@@ -204,15 +201,7 @@ uart_rx  #(.CLKS_PER_BIT(130))  uart_rx1 (
 .o_Rx_Byte (o_Rx_Byte)
 );
 	
-Multiplier Multiplier1 (.Clock (clk),
-.ClkEn (1'b 1),
-.Aclr (1'b 0),
-.DataA (MultDataA),
-.DataB (MultDataB),
-.Result (MultResult)
-);
 
-	
 
 uart_tx  #(.CLKS_PER_BIT(130))  uart_tx1 (
 .osc_clk (osc_clk), 

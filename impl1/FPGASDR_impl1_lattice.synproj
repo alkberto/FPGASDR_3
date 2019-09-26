@@ -31,10 +31,7 @@
 
 -lpf 1
 -p "C:/Users/Rinaldi-i3/lattice/FPGASDR_3"
--ver "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/TestUart.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartRX.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartTX.v"
+-ver "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v"
@@ -44,6 +41,10 @@
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v"
+"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v"
 -top top
 
 
