@@ -13,15 +13,15 @@ input clk;
 input clkData; 
 input [7:0] I_in;
 input [7:0] Q_in;
-output [7:0] d_out;
+output [15:0] d_out;
 reg [1:0] state;
 reg NewSample;
 reg [15:0] ISquare;
 reg [15:0] QSquare;
 reg [15:0] SquareSum;
 
-wire signed [7:0] MultDataA;
-wire signed [7:0] MultDataB;
+reg signed [7:0] MultDataA;
+reg signed [7:0] MultDataB;
 wire signed [15:0] MultResult;
 
 Multiplier Multiplier1 (.Clock (clk),
@@ -32,7 +32,7 @@ Multiplier Multiplier1 (.Clock (clk),
 .Result (MultResult)
 );
 
-	
+assign d_out = SquareSum;	
 
 	always@(posedge clkData) begin
 	NewSample <= 1'b1;
@@ -67,9 +67,11 @@ Multiplier Multiplier1 (.Clock (clk),
 					MultDataB <= Q_in;
 					QSquare <= MultResult;
 					SquareSum <= ISquare + QSquare;
+					
 					end
 			endcase
+			 
 		end
-	   
+	 
 
 endmodule

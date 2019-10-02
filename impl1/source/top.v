@@ -2,7 +2,7 @@
 
 module top 
   (
-   input    i_Rx_Serial,
+   input    CICCos_out_clk,
  //  input Reset,
    output o_Tx_Serial,
    output   o_Rx_DV,
@@ -27,16 +27,17 @@ reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
 wire  cosGen;wire [7:0] MixerOutSin;
 wire [7:0] MixerOutCos;
-wire [7:0] CICSin_out;
+wire [7:0] CICSin_out = 20;
 wire [7:0] CIC1Sin_out;
 wire CIC1Sin_out_clk;
-wire [7:0] CICCos_out;
+wire [7:0] CICCos_out = 10;
 wire [7:0] CIC1Cos_out;
 wire CIC1Cos_out_clk;
 wire [63:0] phase_accum;
 wire [7:0] LOSine;
 wire [7:0] LOCosine;
 wire [7:0] IIR_out;
+wire [15:0] AMDemod_out;
 
 // wire CIC_out_clk;
 
@@ -81,81 +82,9 @@ wire [7:0] IIR_out;
 //assign phase_inc_carr =    64'h 104376A9DD10437;// 1E1E1E1E1DBDFC0; //17215ECF734A5; //  // C56106EA3BC;//138697310208;// 64'b 0000_0001_0010_1100_0000_0100_1101_0101_0101_11;
  
 
-assign phase_inc_carrGen = 64'h 1E25D3E862E4518; //E8943073C00000;
-assign reset = 1'b0;
-
-
-nco_sig	 nco (
-.clk (osc_clk),
-.phase_inc_carr ( phase_inc_carr),
-.phase_accum (phase_accum),
-.sin_out (sin_out),
-.cos_out (cos_out)
-);
-
-SinCos SinCos1 (
-.Clock (osc_clk),
-.ClkEn (1'b 1),
-.Reset (1'b 0),
-.Theta (phase_accum[63:56]),
-.Sine (LOSine),
-.Cosine (LOCosine)
-);
-	
-/*
-nco_sig	 ncoGen (
-.clk (osc_clk),
-.phase_inc_carr ( phase_inc_carrGen),
-.phase_accum (phase_accum),
-.sin_out (sinGen),
-.cos_out (cosGen)
-);
-*/	
-	
-	
-Mixer Mixer1 (
-.clk (osc_clk),
-.RFIn (RFIn),
-.sin_in (LOSine),
-.cos_in (LOCosine),
-.RFOut (DiffOut),
-.MixerOutSin (MixerOutSin),
-.MixerOutCos (MixerOutCos)
-);
-
-CIC  #(.width(16), .decimation_ratio(8)) CIC1Sin (
-.clk (osc_clk),
-.d_in (MixerOutSin),
-.d_out (CIC1Sin_out),
-.d_clk (CIC1Sin_out_clk)
-);  
-
-CIC  #(.width(63), .decimation_ratio(2048)) CIC2Sin (
-.clk (CIC1Sin_out_clk),
-.d_in (CIC1Sin_out),
-.d_out (CICSin_out),
-.d_clk (CICSin_out_clk)
-);  
-
-
-CIC  #(.width(16), .decimation_ratio(8)) CIC1Cos (
-.clk (osc_clk),
-.d_in (MixerOutCos),
-.d_out (CIC1Cos_out),
-.d_clk (CIC1Cos_out_clk)
-);  
-
-CIC  #(.width(63), .decimation_ratio(2048)) CIC2Cos (
-.clk (CIC1Cos_out_clk),
-.d_in (CIC1Cos_out),
-.d_out (CICCos_out),
-.d_clk (CICCos_out_clk)
-);  
-
-
 AMDemodulator AMDemodulator (
 .clkData (CICCos_out_clk),
-.clk (clk),
+.clk (osc_clk),
 .I_in (CICCos_out),
 .Q_in (CICCos_out),
 .d_out (AMDemod_out)
@@ -169,15 +98,11 @@ HP_IIR HP_IIR1 (.clk (CIC_out_clk),
 );
 
  */
-HP_shift HP_shift1 (.clk (osc_clk),
-.d_in (CICCos_out),
-.d_out (IIR_out)
-);
  
 PWM PWM1 (
 .clk (osc_clk),
 //.DataIn (IIR_out), //(CIC_out),
-.DataIn (CICCos_out), //(IIR_out),
+.DataIn (AMDemod_out[13:6]), //(IIR_out),
 .PWMOut (PWMOut)
 );
 
@@ -189,8 +114,7 @@ PLL PLL1 (
 //assign MYLED[5:0] = MixerOutSin[7:2];
 assign MYLED[5:0] = CICCos_out [7:2];
 //assign MYLED[5:0] = o_Rx_Byte [7:2];
-assign MYLED[7] = sin_out;
-assign MYLED[6] = cos_out; 
+
  
   
 
@@ -213,14 +137,6 @@ uart_tx  #(.CLKS_PER_BIT(130))  uart_tx1 (
 );	
 	
 
-
-/*	
-blinking_led blinking_led1 (
-.MYLED (MYLED),
-.In0 (In0),
-.osc_clk (osc_clk)
-);
-*/
 
 
 endmodule

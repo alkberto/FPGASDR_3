@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed Jun 05 14:14:02 2019
+Wed Oct 02 22:35:30 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,485 +18,107 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk2 [get_nets UartClk[2]]
-            1753 items scored, 1748 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Error:  The following path violates requirements by 5.025ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_285__i11  (from UartClk[2] +)
-   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_285__i6  (to UartClk[2] +)
-
-   Delay:                   9.865ns  (24.5% logic, 75.5% route), 5 logic levels.
-
- Constraint Details:
-
-      9.865ns data_path \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i6 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 5.025ns
-
- Path Details: \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i6
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_285__i11 (from UartClk[2])
-Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[11]
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_10
-Route         1   e 0.941                                  \uart_rx1/n2698
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_9
-Route        10   e 1.604                                  \uart_rx1/n2366
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_36
-Route         9   e 1.574                                  \uart_rx1/n3163
-LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_19
-Route        16   e 1.815                                  \uart_rx1/n1223
-                  --------
-                    9.865  (24.5% logic, 75.5% route), 5 logic levels.
-
-
-Error:  The following path violates requirements by 5.025ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_285__i11  (from UartClk[2] +)
-   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_285__i7  (to UartClk[2] +)
-
-   Delay:                   9.865ns  (24.5% logic, 75.5% route), 5 logic levels.
-
- Constraint Details:
-
-      9.865ns data_path \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i7 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 5.025ns
-
- Path Details: \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i7
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_285__i11 (from UartClk[2])
-Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[11]
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_10
-Route         1   e 0.941                                  \uart_rx1/n2698
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_9
-Route        10   e 1.604                                  \uart_rx1/n2366
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_36
-Route         9   e 1.574                                  \uart_rx1/n3163
-LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_19
-Route        16   e 1.815                                  \uart_rx1/n1223
-                  --------
-                    9.865  (24.5% logic, 75.5% route), 5 logic levels.
-
-
-Error:  The following path violates requirements by 5.025ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_285__i11  (from UartClk[2] +)
-   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_285__i8  (to UartClk[2] +)
-
-   Delay:                   9.865ns  (24.5% logic, 75.5% route), 5 logic levels.
-
- Constraint Details:
-
-      9.865ns data_path \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i8 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 5.025ns
-
- Path Details: \uart_rx1/r_Clock_Count_285__i11 to \uart_rx1/r_Clock_Count_285__i8
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_285__i11 (from UartClk[2])
-Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[11]
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_10
-Route         1   e 0.941                                  \uart_rx1/n2698
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_9
-Route        10   e 1.604                                  \uart_rx1/n2366
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_36
-Route         9   e 1.574                                  \uart_rx1/n3163
-LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_19
-Route        16   e 1.815                                  \uart_rx1/n1223
-                  --------
-                    9.865  (24.5% logic, 75.5% route), 5 logic levels.
-
-Warning: 10.025 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
-Constraint: create_clock -period 5.000000 -name clk1 [get_nets osc_clk_derived_989]
-            259 items scored, 259 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Error:  The following path violates requirements by 4.698ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \CIC2Cos/d2_i0  (from osc_clk_derived_989 +)
-   Destination:    FD1S3AX    D              \CIC2Cos/d2_i62  (to osc_clk_derived_989 +)
-
-   Delay:                   9.538ns  (69.0% logic, 31.0% route), 33 logic levels.
-
- Constraint Details:
-
-      9.538ns data_path \CIC2Cos/d2_i0 to \CIC2Cos/d2_i62 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 4.698ns
-
- Path Details: \CIC2Cos/d2_i0 to \CIC2Cos/d2_i62
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC2Cos/d2_i0 (from osc_clk_derived_989)
-Route         4   e 1.398                                  \CIC2Cos/d2[0]
-A1_TO_FCO   ---     0.827           B[2] to COUT           \CIC2Cos/d1_62__I_0_2
-Route         1   e 0.020                                  \CIC2Cos/n1831
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_4
-Route         1   e 0.020                                  \CIC2Cos/n1832
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_6
-Route         1   e 0.020                                  \CIC2Cos/n1833
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_8
-Route         1   e 0.020                                  \CIC2Cos/n1834
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_10
-Route         1   e 0.020                                  \CIC2Cos/n1835
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_12
-Route         1   e 0.020                                  \CIC2Cos/n1836
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_14
-Route         1   e 0.020                                  \CIC2Cos/n1837
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_16
-Route         1   e 0.020                                  \CIC2Cos/n1838
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_18
-Route         1   e 0.020                                  \CIC2Cos/n1839
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_20
-Route         1   e 0.020                                  \CIC2Cos/n1840
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_22
-Route         1   e 0.020                                  \CIC2Cos/n1841
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_24
-Route         1   e 0.020                                  \CIC2Cos/n1842
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_26
-Route         1   e 0.020                                  \CIC2Cos/n1843
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_28
-Route         1   e 0.020                                  \CIC2Cos/n1844
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_30
-Route         1   e 0.020                                  \CIC2Cos/n1845
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_32
-Route         1   e 0.020                                  \CIC2Cos/n1846
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_34
-Route         1   e 0.020                                  \CIC2Cos/n1847
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_36
-Route         1   e 0.020                                  \CIC2Cos/n1848
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_38
-Route         1   e 0.020                                  \CIC2Cos/n1849
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_40
-Route         1   e 0.020                                  \CIC2Cos/n1850
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_42
-Route         1   e 0.020                                  \CIC2Cos/n1851
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_44
-Route         1   e 0.020                                  \CIC2Cos/n1852
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_46
-Route         1   e 0.020                                  \CIC2Cos/n1853
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_48
-Route         1   e 0.020                                  \CIC2Cos/n1854
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_50
-Route         1   e 0.020                                  \CIC2Cos/n1855
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_52
-Route         1   e 0.020                                  \CIC2Cos/n1856
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_54
-Route         1   e 0.020                                  \CIC2Cos/n1857
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_56
-Route         1   e 0.020                                  \CIC2Cos/n1858
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_58
-Route         1   e 0.020                                  \CIC2Cos/n1859
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_60
-Route         1   e 0.020                                  \CIC2Cos/n1860
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d1_62__I_0_62
-Route         1   e 0.020                                  \CIC2Cos/n1861
-FCI_TO_F    ---     0.598            CIN to S[2]           \CIC2Cos/d1_62__I_0_64
-Route         1   e 0.941                                  \CIC2Cos/d2_62__N_678[62]
-                  --------
-                    9.538  (69.0% logic, 31.0% route), 33 logic levels.
-
-
-Error:  The following path violates requirements by 4.698ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \CIC2Cos/d2_i0  (from osc_clk_derived_989 +)
-   Destination:    FD1S3AX    D              \CIC2Cos/d3_i62  (to osc_clk_derived_989 +)
-
-   Delay:                   9.538ns  (69.0% logic, 31.0% route), 33 logic levels.
-
- Constraint Details:
-
-      9.538ns data_path \CIC2Cos/d2_i0 to \CIC2Cos/d3_i62 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 4.698ns
-
- Path Details: \CIC2Cos/d2_i0 to \CIC2Cos/d3_i62
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC2Cos/d2_i0 (from osc_clk_derived_989)
-Route         4   e 1.398                                  \CIC2Cos/d2[0]
-A1_TO_FCO   ---     0.827           A[2] to COUT           \CIC2Cos/d2_62__I_0_2
-Route         1   e 0.020                                  \CIC2Cos/n1863
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_4
-Route         1   e 0.020                                  \CIC2Cos/n1864
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_6
-Route         1   e 0.020                                  \CIC2Cos/n1865
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_8
-Route         1   e 0.020                                  \CIC2Cos/n1866
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_10
-Route         1   e 0.020                                  \CIC2Cos/n1867
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_12
-Route         1   e 0.020                                  \CIC2Cos/n1868
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_14
-Route         1   e 0.020                                  \CIC2Cos/n1869
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_16
-Route         1   e 0.020                                  \CIC2Cos/n1870
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_18
-Route         1   e 0.020                                  \CIC2Cos/n1871
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_20
-Route         1   e 0.020                                  \CIC2Cos/n1872
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_22
-Route         1   e 0.020                                  \CIC2Cos/n1873
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_24
-Route         1   e 0.020                                  \CIC2Cos/n1874
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_26
-Route         1   e 0.020                                  \CIC2Cos/n1875
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_28
-Route         1   e 0.020                                  \CIC2Cos/n1876
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_30
-Route         1   e 0.020                                  \CIC2Cos/n1877
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_32
-Route         1   e 0.020                                  \CIC2Cos/n1878
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_34
-Route         1   e 0.020                                  \CIC2Cos/n1879
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_36
-Route         1   e 0.020                                  \CIC2Cos/n1880
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_38
-Route         1   e 0.020                                  \CIC2Cos/n1881
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_40
-Route         1   e 0.020                                  \CIC2Cos/n1882
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_42
-Route         1   e 0.020                                  \CIC2Cos/n1883
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_44
-Route         1   e 0.020                                  \CIC2Cos/n1884
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_46
-Route         1   e 0.020                                  \CIC2Cos/n1885
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_48
-Route         1   e 0.020                                  \CIC2Cos/n1886
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_50
-Route         1   e 0.020                                  \CIC2Cos/n1887
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_52
-Route         1   e 0.020                                  \CIC2Cos/n1888
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_54
-Route         1   e 0.020                                  \CIC2Cos/n1889
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_56
-Route         1   e 0.020                                  \CIC2Cos/n1890
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_58
-Route         1   e 0.020                                  \CIC2Cos/n1891
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_60
-Route         1   e 0.020                                  \CIC2Cos/n1892
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_62
-Route         1   e 0.020                                  \CIC2Cos/n1893
-FCI_TO_F    ---     0.598            CIN to S[2]           \CIC2Cos/d2_62__I_0_64
-Route         1   e 0.941                                  \CIC2Cos/d3_62__N_741[62]
-                  --------
-                    9.538  (69.0% logic, 31.0% route), 33 logic levels.
-
-
-Error:  The following path violates requirements by 4.698ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3AX    CK             \CIC2Cos/d3_i0  (from osc_clk_derived_989 +)
-   Destination:    FD1S3AX    D              \CIC2Cos/d3_i62  (to osc_clk_derived_989 +)
-
-   Delay:                   9.538ns  (69.0% logic, 31.0% route), 33 logic levels.
-
- Constraint Details:
-
-      9.538ns data_path \CIC2Cos/d3_i0 to \CIC2Cos/d3_i62 violates
-      5.000ns delay constraint less
-      0.160ns L_S requirement (totaling 4.840ns) by 4.698ns
-
- Path Details: \CIC2Cos/d3_i0 to \CIC2Cos/d3_i62
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC2Cos/d3_i0 (from osc_clk_derived_989)
-Route         4   e 1.398                                  \CIC2Cos/d3[0]
-A1_TO_FCO   ---     0.827           B[2] to COUT           \CIC2Cos/d2_62__I_0_2
-Route         1   e 0.020                                  \CIC2Cos/n1863
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_4
-Route         1   e 0.020                                  \CIC2Cos/n1864
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_6
-Route         1   e 0.020                                  \CIC2Cos/n1865
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_8
-Route         1   e 0.020                                  \CIC2Cos/n1866
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_10
-Route         1   e 0.020                                  \CIC2Cos/n1867
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_12
-Route         1   e 0.020                                  \CIC2Cos/n1868
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_14
-Route         1   e 0.020                                  \CIC2Cos/n1869
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_16
-Route         1   e 0.020                                  \CIC2Cos/n1870
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_18
-Route         1   e 0.020                                  \CIC2Cos/n1871
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_20
-Route         1   e 0.020                                  \CIC2Cos/n1872
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_22
-Route         1   e 0.020                                  \CIC2Cos/n1873
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_24
-Route         1   e 0.020                                  \CIC2Cos/n1874
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_26
-Route         1   e 0.020                                  \CIC2Cos/n1875
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_28
-Route         1   e 0.020                                  \CIC2Cos/n1876
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_30
-Route         1   e 0.020                                  \CIC2Cos/n1877
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_32
-Route         1   e 0.020                                  \CIC2Cos/n1878
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_34
-Route         1   e 0.020                                  \CIC2Cos/n1879
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_36
-Route         1   e 0.020                                  \CIC2Cos/n1880
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_38
-Route         1   e 0.020                                  \CIC2Cos/n1881
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_40
-Route         1   e 0.020                                  \CIC2Cos/n1882
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_42
-Route         1   e 0.020                                  \CIC2Cos/n1883
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_44
-Route         1   e 0.020                                  \CIC2Cos/n1884
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_46
-Route         1   e 0.020                                  \CIC2Cos/n1885
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_48
-Route         1   e 0.020                                  \CIC2Cos/n1886
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_50
-Route         1   e 0.020                                  \CIC2Cos/n1887
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_52
-Route         1   e 0.020                                  \CIC2Cos/n1888
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_54
-Route         1   e 0.020                                  \CIC2Cos/n1889
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_56
-Route         1   e 0.020                                  \CIC2Cos/n1890
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_58
-Route         1   e 0.020                                  \CIC2Cos/n1891
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_60
-Route         1   e 0.020                                  \CIC2Cos/n1892
-FCI_TO_FCO  ---     0.157            CIN to COUT           \CIC2Cos/d2_62__I_0_62
-Route         1   e 0.020                                  \CIC2Cos/n1893
-FCI_TO_F    ---     0.598            CIN to S[2]           \CIC2Cos/d2_62__I_0_64
-Route         1   e 0.941                                  \CIC2Cos/d3_62__N_741[62]
-                  --------
-                    9.538  (69.0% logic, 31.0% route), 33 logic levels.
-
-Warning: 9.698 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
 Constraint: create_clock -period 5.000000 -name clk0 [get_nets osc_clk]
-            708 items scored, 708 timing errors detected.
+            1734 items scored, 1720 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 4.157ns
+Error:  The following path violates requirements by 4.991ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \CIC1Cos/count__i11  (from osc_clk +)
-   Destination:    FD1P3AX    SP             \CIC1Cos/d_tmp_i0_i1  (to osc_clk +)
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_183__i15  (from osc_clk +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_183__i15  (to osc_clk +)
 
-   Delay:                   8.872ns  (27.2% logic, 72.8% route), 5 logic levels.
+   Delay:                   9.831ns  (24.6% logic, 75.4% route), 5 logic levels.
 
  Constraint Details:
 
-      8.872ns data_path \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i1 violates
+      9.831ns data_path \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i15 violates
       5.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 4.715ns) by 4.157ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.991ns
 
- Path Details: \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i1
+ Path Details: \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i15
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC1Cos/count__i11 (from osc_clk)
-Route         2   e 1.198                                  \CIC1Cos/count[11]
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_2_lut
-Route         1   e 0.941                                  \CIC1Cos/n2800
-LUT4        ---     0.493              B to Z              \CIC1Cos/i1_4_lut_adj_1
-Route         2   e 1.141                                  \CIC1Cos/n25
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_4_lut
-Route         4   e 1.340                                  \CIC1Cos/n1054
-LUT4        ---     0.493              B to Z              \CIC1Cos/i2226_3_lut
-Route        23   e 1.836                                  \CIC1Cos/d_clk_tmp_N_478
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_183__i15 (from osc_clk)
+Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_adj_14
+Route         1   e 0.941                                  \uart_rx1/n1598
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_17
+Route        10   e 1.604                                  \uart_rx1/n1295
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_26
+Route         8   e 1.540                                  \uart_rx1/n1888
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_2
+Route        16   e 1.815                                  \uart_rx1/n912
                   --------
-                    8.872  (27.2% logic, 72.8% route), 5 logic levels.
+                    9.831  (24.6% logic, 75.4% route), 5 logic levels.
 
 
-Error:  The following path violates requirements by 4.157ns
+Error:  The following path violates requirements by 4.991ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \CIC1Cos/count__i11  (from osc_clk +)
-   Destination:    FD1P3AX    SP             \CIC1Cos/d_tmp_i0_i2  (to osc_clk +)
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_183__i15  (from osc_clk +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_183__i14  (to osc_clk +)
 
-   Delay:                   8.872ns  (27.2% logic, 72.8% route), 5 logic levels.
+   Delay:                   9.831ns  (24.6% logic, 75.4% route), 5 logic levels.
 
  Constraint Details:
 
-      8.872ns data_path \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i2 violates
+      9.831ns data_path \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i14 violates
       5.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 4.715ns) by 4.157ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.991ns
 
- Path Details: \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i2
+ Path Details: \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i14
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC1Cos/count__i11 (from osc_clk)
-Route         2   e 1.198                                  \CIC1Cos/count[11]
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_2_lut
-Route         1   e 0.941                                  \CIC1Cos/n2800
-LUT4        ---     0.493              B to Z              \CIC1Cos/i1_4_lut_adj_1
-Route         2   e 1.141                                  \CIC1Cos/n25
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_4_lut
-Route         4   e 1.340                                  \CIC1Cos/n1054
-LUT4        ---     0.493              B to Z              \CIC1Cos/i2226_3_lut
-Route        23   e 1.836                                  \CIC1Cos/d_clk_tmp_N_478
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_183__i15 (from osc_clk)
+Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_adj_14
+Route         1   e 0.941                                  \uart_rx1/n1598
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_17
+Route        10   e 1.604                                  \uart_rx1/n1295
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_26
+Route         8   e 1.540                                  \uart_rx1/n1888
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_2
+Route        16   e 1.815                                  \uart_rx1/n912
                   --------
-                    8.872  (27.2% logic, 72.8% route), 5 logic levels.
+                    9.831  (24.6% logic, 75.4% route), 5 logic levels.
 
 
-Error:  The following path violates requirements by 4.157ns
+Error:  The following path violates requirements by 4.991ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \CIC1Cos/count__i11  (from osc_clk +)
-   Destination:    FD1P3AX    SP             \CIC1Cos/d_tmp_i0_i3  (to osc_clk +)
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_183__i15  (from osc_clk +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_183__i13  (to osc_clk +)
 
-   Delay:                   8.872ns  (27.2% logic, 72.8% route), 5 logic levels.
+   Delay:                   9.831ns  (24.6% logic, 75.4% route), 5 logic levels.
 
  Constraint Details:
 
-      8.872ns data_path \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i3 violates
+      9.831ns data_path \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i13 violates
       5.000ns delay constraint less
-      0.285ns LCE_S requirement (totaling 4.715ns) by 4.157ns
+      0.160ns L_S requirement (totaling 4.840ns) by 4.991ns
 
- Path Details: \CIC1Cos/count__i11 to \CIC1Cos/d_tmp_i0_i3
+ Path Details: \uart_rx1/r_Clock_Count_183__i15 to \uart_rx1/r_Clock_Count_183__i13
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \CIC1Cos/count__i11 (from osc_clk)
-Route         2   e 1.198                                  \CIC1Cos/count[11]
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_2_lut
-Route         1   e 0.941                                  \CIC1Cos/n2800
-LUT4        ---     0.493              B to Z              \CIC1Cos/i1_4_lut_adj_1
-Route         2   e 1.141                                  \CIC1Cos/n25
-LUT4        ---     0.493              A to Z              \CIC1Cos/i1_4_lut
-Route         4   e 1.340                                  \CIC1Cos/n1054
-LUT4        ---     0.493              B to Z              \CIC1Cos/i2226_3_lut
-Route        23   e 1.836                                  \CIC1Cos/d_clk_tmp_N_478
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_183__i15 (from osc_clk)
+Route         6   e 1.515                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_2_lut_adj_14
+Route         1   e 0.941                                  \uart_rx1/n1598
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_17
+Route        10   e 1.604                                  \uart_rx1/n1295
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_rep_26
+Route         8   e 1.540                                  \uart_rx1/n1888
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut_adj_2
+Route        16   e 1.815                                  \uart_rx1/n912
                   --------
-                    8.872  (27.2% logic, 72.8% route), 5 logic levels.
+                    9.831  (24.6% logic, 75.4% route), 5 logic levels.
 
-Warning: 9.157 ns is the maximum delay for this constraint.
+Warning: 9.991 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -506,39 +128,37 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets UartClk[2]]              |     5.000 ns|    10.025 ns|     5 *
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets osc_clk_derived_989]     |     5.000 ns|     9.698 ns|    33 *
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk]                 |     5.000 ns|     9.157 ns|     5 *
+clk0 [get_nets osc_clk]                 |     5.000 ns|     9.991 ns|     5 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-3 constraints not met.
+1 constraints not met.
 
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\CIC1Cos/n1054                          |       4|     544|     20.04%
+\uart_rx1/n912                          |      16|     544|     31.63%
                                         |        |        |
-\uart_rx1/n1223                         |      16|     544|     20.04%
+\uart_rx1/n1888                         |       8|     368|     21.40%
                                         |        |        |
-\uart_rx1/n3163                         |       9|     384|     14.14%
+\uart_rx1/osc_clk_enable_54             |      16|     304|     17.67%
                                         |        |        |
-\CIC1Cos/d_clk_tmp_N_478                |      23|     322|     11.86%
+\uart_rx1/n1345                         |       1|     288|     16.74%
                                         |        |        |
-\uart_rx1/UartClk[2]_enable_56          |      16|     304|     11.20%
+\uart_tx1/n880                          |      16|     288|     16.74%
                                         |        |        |
-\uart_rx1/n2387                         |       1|     288|     10.61%
+\uart_rx1/n1295                         |      10|     272|     15.81%
                                         |        |        |
-\uart_tx1/n1212                         |      16|     288|     10.61%
+\uart_rx1/n1434                         |      10|     272|     15.81%
                                         |        |        |
-\uart_rx1/n2366                         |      10|     280|     10.31%
+\uart_rx1/n1371                         |       4|     204|     11.86%
                                         |        |        |
-\uart_rx1/n2472                         |      10|     280|     10.31%
+\uart_tx1/n1243                         |       6|     200|     11.63%
+                                        |        |        |
+\uart_tx1/n1425                         |       6|     200|     11.63%
+                                        |        |        |
+\uart_rx1/n1568                         |       1|     176|     10.23%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -546,10 +166,10 @@ Critical Nets                           |   Loads|  Errors| % of total
 Timing summary:
 ---------------
 
-Timing errors: 2715  Score: 7573111
+Timing errors: 1720  Score: 4667399
 
-Constraints cover  44794 paths, 2737 nets, and 5887 connections (93.4% coverage)
+Constraints cover  2210 paths, 232 nets, and 541 connections (86.1% coverage)
 
 
-Peak memory: 83865600 bytes, TRCE: 4259840 bytes, DLYMAN: 495616 bytes
+Peak memory: 62742528 bytes, TRCE: 557056 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

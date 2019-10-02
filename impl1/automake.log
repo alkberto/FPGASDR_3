@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep 24 21:23:12 2019
+Wed Oct 02 22:44:41 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
@@ -69,15 +69,9 @@ The -syn option is FALSE.
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1 (searchpath added)
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v
@@ -93,15 +87,9 @@ Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HE
 Compile design.
 Compile Design Begin
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/frequency_select.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v. VERI-1482
     <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(31): " arg1="uart_rx" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v" arg3="31"  />
     <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(32): " arg1="uart_rx" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v" arg3="32"  />
@@ -116,4 +104,24 @@ Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v. VERI-1482
     <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(28): " arg1="uart_tx" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v" arg3="28"  />
     <postMsg mid="35901199" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(29): " arg1="uart_tx" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v" arg3="29"  />
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v. VERI-1482
-    <postMsg mid="35901128" type="Error"   dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(44): " arg1="MultDataA" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v" arg3="44"  />
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(3): " arg1="top" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(2): " arg1="AMDemodulator" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v(8): " arg1="Multiplier" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): " arg1="AND2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="43"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): " arg1="ND2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="797"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): " arg1="FD1P3DX" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="187"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): " arg1="FADD2B" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="138"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(39): " arg1="NewSample_16_31" arg2="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v" arg3="39"  />
+    <postMsg mid="35001714" type="Warning" dynamic="1" navigation="0" arg0="pwr"  />
+	 instance i2
+
+	 instance NewSample_33
+
+
+
+    <postMsg mid="35931000" type="Error"   dynamic="4" navigation="2" arg0="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(54): " arg1="pwr" arg2="NewSample_33" arg3="q" arg4="c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v" arg5="54"  />

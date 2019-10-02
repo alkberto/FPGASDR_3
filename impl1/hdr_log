@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep 24 21:23:12 2019
+Wed Oct 02 22:44:41 2019
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
@@ -66,15 +66,9 @@ The -syn option is FALSE.
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1 (searchpath added)
 -p C:/Users/Rinaldi-i3/lattice/FPGASDR_3 (searchpath added)
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v
@@ -90,16 +84,16 @@ Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HE
 Compile design.
 Compile Design Begin
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/nco.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/mixer.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/sincos.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/cic.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/hp_shift.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/frequency_select.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v. VERI-1482
 WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(31): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
 WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(32): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/latti
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(33): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(34): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(35): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/testuart.v. VERI-1482
+Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v. VERI-1482
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(25): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(26): parameter declaration becomes local in 

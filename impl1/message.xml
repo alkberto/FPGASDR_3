@@ -14,6 +14,46 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.lpf(14): Semantic error in &quot;IOBUF PORT &quot;RFIn&quot; IO_TYPE=LVDS25 HYSTERESIS=NA ;&quot;: </Dynamic>
+            <Dynamic>RFIn</Dynamic>
+            <Navigation>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.lpf(24): Semantic error in &quot;LOCATE COMP &quot;i_Rx_Serial&quot; SITE &quot;73&quot; ;&quot;: </Dynamic>
+            <Dynamic>i_Rx_Serial</Dynamic>
+            <Navigation>C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.lpf</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>CICCos_out_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>RFIn</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CICCos_out_clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RFIn</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -104,12 +144,107 @@
             <Navigation>29</Navigation>
         </Message>
         <Message>
-            <ID>35901128</ID>
-            <Severity>Error</Severity>
-            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(44): </Dynamic>
-            <Dynamic>MultDataA</Dynamic>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v(3): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(2): </Dynamic>
+            <Dynamic>AMDemodulator</Dynamic>
             <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v</Navigation>
-            <Navigation>44</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v(8): </Dynamic>
+            <Dynamic>Multiplier</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): </Dynamic>
+            <Dynamic>FD1P3DX</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>187</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(39): </Dynamic>
+            <Dynamic>NewSample_16_31</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35001714</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwr</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931000</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(54): </Dynamic>
+            <Dynamic>pwr</Dynamic>
+            <Dynamic>NewSample_33</Dynamic>
+            <Dynamic>q</Dynamic>
+            <Navigation>c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v</Navigation>
+            <Navigation>54</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>
