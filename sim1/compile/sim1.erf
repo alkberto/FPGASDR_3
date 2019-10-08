@@ -1,0 +1,39 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 11
+UPDATEPROGRESS 23
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 36
+UPDATEPROGRESS 37
+UPDATEPROGRESS 39
+UPDATEPROGRESS 40
+UPDATEPROGRESS 42
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Parameters in case labels, will not check for overlapping labels (C:/Users/Rinaldi-i3/lattice/FPGASDR_3/sim1/AMDemodulator.v, ln 43)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (C:/Users/Rinaldi-i3/lattice/FPGASDR_3/sim1/AMDemodulator.v, ln 58)."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 81
+UPDATEPROGRESS 82
+UPDATEPROGRESS 84
+UPDATEPROGRESS 85
+UPDATEPROGRESS 87
+UPDATEPROGRESS 88
+UPDATEPROGRESS 90
+UPDATEPROGRESS 91
+UPDATEPROGRESS 92
+UPDATEPROGRESS 94
+UPDATEPROGRESS 95
+UPDATEPROGRESS 97
+MESSAGE "Unit top modules: AMDemod_tb."
+MESSAGE "$root top modules: AMDemod_tb."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

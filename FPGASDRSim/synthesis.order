@@ -1,0 +1,8 @@
+i<>.\..\UartTX.v
+i<>.\..\UartRX.v
+i<>.\..\PLL.v
+i<>.\..\PWM.v
+i<>.\..\Multiplier.v
+i<>.\..\AMDemodulator.v
+i<>.\..\impl1\source\top.v
+i<>.\..\TestUart.v

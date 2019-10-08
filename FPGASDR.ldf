@@ -2,26 +2,26 @@
 <BaliProject version="3.2" title="FPGASDR" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Timing">
-        <Options def_top="blinking_led" top="top"/>
-        <Source name="impl1/source/top.v" type="Verilog" type_short="Verilog">
+        <Options def_top="top" top="top"/>
+        <Source name="impl1/source/top.v" type="Verilog" type_short="Verilog" syn_sim="SynOnly">
             <Options top_module="top"/>
         </Source>
-        <Source name="NCO.v" type="Verilog" type_short="Verilog">
+        <Source name="NCO.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="Mixer.v" type="Verilog" type_short="Verilog">
+        <Source name="Mixer.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="SinCos.v" type="Verilog" type_short="Verilog">
+        <Source name="SinCos.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="CIC.v" type="Verilog" type_short="Verilog">
+        <Source name="CIC.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="PWM.v" type="Verilog" type_short="Verilog">
+        <Source name="PWM.v" type="Verilog" type_short="Verilog" syn_sim="SynOnly">
             <Options/>
         </Source>
-        <Source name="PLL.v" type="Verilog" type_short="Verilog">
+        <Source name="PLL.v" type="Verilog" type_short="Verilog" syn_sim="SynOnly">
             <Options/>
         </Source>
         <Source name="Multiplier.ipx" type="IPX_Module" type_short="IPX">
@@ -30,22 +30,28 @@
         <Source name="HP_IIR.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="HP_shift.v" type="Verilog" type_short="Verilog">
+        <Source name="HP_shift.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="frequency_select.v" type="Verilog" type_short="Verilog">
+        <Source name="frequency_select.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="UartRX.v" type="Verilog" type_short="Verilog">
+        <Source name="UartRX.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="TestUart.v" type="Verilog" type_short="Verilog">
+        <Source name="TestUart.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="UartTX.v" type="Verilog" type_short="Verilog">
+        <Source name="UartTX.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="AMDemodulator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="AMDemod_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="Multiplier.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">
@@ -64,6 +70,9 @@
             <Options/>
         </Source>
         <Source name="sim1/sim1.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="simwiz1/simwiz1.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="testsim/testsim.spf" type="Simulation Project File" type_short="SPF">

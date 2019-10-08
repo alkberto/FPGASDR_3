@@ -1,0 +1,9 @@
+4
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 3 "./../AMDemod_tb.v" 1 AMDemod_tb
+~A 1 "./../AMDemod_tb.v" 1 AMDemod_tb
+~M 1 "./../AMDemodulator.v" 2 AMDemodulator
+~A 1 "./../AMDemodulator.v" 2 AMDemodulator
+~M 1 "./../Multiplier.v" 8 Multiplier
+~A 1 "./../Multiplier.v" 8 Multiplier

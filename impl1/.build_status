@@ -19,12 +19,12 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1559711403"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="1" build_time="1570049082">
-            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1570049082"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1570049082">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1570049082"/>
             <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1570048553"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1570048678"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1570568064"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>

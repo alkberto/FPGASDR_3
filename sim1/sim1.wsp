@@ -1,0 +1,9 @@
+[COMPILESTATUS|.\Multiplier.v]
+FileTimeLow=30764849
+Status=Compiled
+[COMPILESTATUS|.\AMDemodulator.v]
+FileTimeLow=30767458
+Status=Compiled
+[COMPILESTATUS|.\AMDemod_tb.v]
+FileTimeLow=30768665
+Status=Compiled

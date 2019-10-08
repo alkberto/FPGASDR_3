@@ -1,12 +1,12 @@
 lappend auto_path "C:/lscc/diamond/3.10_x64/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(PROJECT) {FPGASDRSim}
-set ::bali::simulation::Para(PROJECTPATH) {C:/Users/user/lattice/FPGASDR}
-set ::bali::simulation::Para(FILELIST) {"C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v" "C:/Users/user/lattice/FPGASDR/PLL.v" "C:/Users/user/lattice/FPGASDR/PWM.v" "C:/Users/user/lattice/FPGASDR/Multiplier.v" "C:/Users/user/lattice/FPGASDR/HP_IIR.v" "C:/Users/user/lattice/FPGASDR/CIC.v" "C:/Users/user/lattice/FPGASDR/Mixer.v" "C:/Users/user/lattice/FPGASDR/SinCos.v" "C:/Users/user/lattice/FPGASDR/NCO.v" "C:/Users/user/lattice/FPGASDR/impl1/source/top.v" "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v" "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v" }
+set ::bali::simulation::Para(PROJECTPATH) {C:/Users/Rinaldi-i3/lattice/FPGASDR_3}
+set ::bali::simulation::Para(FILELIST) {"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v" }
 set ::bali::simulation::Para(GLBINCLIST) {}
-set ::bali::simulation::Para(INCLIST) {"none" "none" "none" "none" "none" "none" "none" "none" "none" "none" "none" "none"}
-set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" "work" "work" "work" "work" "work" "work" "work" "work" "work" }
-set ::bali::simulation::Para(COMPLIST) {"VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" }
+set ::bali::simulation::Para(INCLIST) {"none" "none" "none" "none" "none" "none" "none" "none"}
+set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" "work" "work" "work" "work" "work" }
+set ::bali::simulation::Para(COMPLIST) {"VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" "VERILOG" }
 set ::bali::simulation::Para(SIMLIBLIST) {pmi_work ovi_machxo2}
 set ::bali::simulation::Para(MACROLIST) {}
 set ::bali::simulation::Para(SIMULATIONTOPMODULE) {top}

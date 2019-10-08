@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2019 6 5 14 21 1)
+      (timestamp 2019 10 8 22 53 0)
       (program "SCUBA" (version "Diamond (64-bit) 3.10.3.144"))))
       (comment "C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n Multiplier -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 8 -widthb 8 -widthp 16 -signed -PL_stages 0 -input_reg -output_reg -clk0 -ce0 -rst0 ")
   (library ORCLIB

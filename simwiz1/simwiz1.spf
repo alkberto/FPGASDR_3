@@ -1,0 +1,14 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="simwiz1" simType="Active-HDL">
+    <Source worklib="work" path="simwiz1/UartTX.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/UartRX.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/PLL.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/PWM.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/Multiplier.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/AMDemodulator.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/top.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="simwiz1/TestUart.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="top"/>
+</BaliSimProject>

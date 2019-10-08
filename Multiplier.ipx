@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="Multiplier" module="Multiplier" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 06 05 14:21:09.298" version="4.9" type="Module" synthesis="lse" source_format="Verilog HDL">
+<DiamondModule name="Multiplier" module="Multiplier" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 10 08 22:53:42.139" version="4.9" type="Module" synthesis="lse" source_format="Verilog HDL">
   <Package>
-		<File name="Multiplier.lpc" type="lpc" modified="2019 06 05 14:21:01.432"/>
-		<File name="Multiplier.v" type="top_level_verilog" modified="2019 06 05 14:21:01.559"/>
-		<File name="Multiplier_tmpl.v" type="template_verilog" modified="2019 06 05 14:21:01.568"/>
-		<File name="tb_Multiplier_tmpl.v" type="testbench_verilog" modified="2019 06 05 14:21:01.600"/>
+		<File name="Multiplier.lpc" type="lpc" modified="2019 10 08 22:52:59.996"/>
+		<File name="Multiplier.v" type="top_level_verilog" modified="2019 10 08 22:53:00.271"/>
+		<File name="Multiplier_tmpl.v" type="template_verilog" modified="2019 10 08 22:53:00.272"/>
+		<File name="tb_Multiplier_tmpl.v" type="testbench_verilog" modified="2019 10 08 22:53:00.284"/>
   </Package>
 </DiamondModule>

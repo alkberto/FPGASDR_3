@@ -1,0 +1,60 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+simwiz1=.\simwiz1\simwiz1.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+simwiz1=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\UartTX.v=-1
+/..\UartRX.v=-1
+/..\PLL.v=-1
+/..\PWM.v=-1
+/..\Multiplier.v=-1
+/..\AMDemodulator.v=-1
+/..\top.v=-1
+/..\TestUart.v=-1
+[Files.Data]
+.\UartTX.v=Verilog Source Code
+.\UartRX.v=Verilog Source Code
+.\PLL.v=Verilog Source Code
+.\PWM.v=Verilog Source Code
+.\Multiplier.v=Verilog Source Code
+.\AMDemodulator.v=Verilog Source Code
+.\top.v=Verilog Source Code
+.\TestUart.v=Verilog Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

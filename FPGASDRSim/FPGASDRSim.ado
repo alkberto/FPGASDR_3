@@ -1,11 +1,11 @@
 setenv SIM_WORKING_FOLDER .
 set newDesign 0
-if {![file exists "C:/Users/user/lattice/FPGASDR/FPGASDRSim/FPGASDRSim.adf"]} { 
-	design create FPGASDRSim "C:/Users/user/lattice/FPGASDR"
+if {![file exists "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim/FPGASDRSim.adf"]} { 
+	design create FPGASDRSim "C:/Users/Rinaldi-i3/lattice/FPGASDR_3"
   set newDesign 1
 }
-design open "C:/Users/user/lattice/FPGASDR/FPGASDRSim"
-cd "C:/Users/user/lattice/FPGASDR"
+design open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim"
+cd "C:/Users/Rinaldi-i3/lattice/FPGASDR_3"
 designverincludedir -clear
 designverlibrarysim -PL -clear
 designverlibrarysim -L -clear
@@ -15,33 +15,25 @@ designverdefinemacro -clear
 if {$newDesign == 0} { 
   removefile -Y -D *
 }
-addfile "C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v"
-addfile "C:/Users/user/lattice/FPGASDR/PLL.v"
-addfile "C:/Users/user/lattice/FPGASDR/PWM.v"
-addfile "C:/Users/user/lattice/FPGASDR/Multiplier.v"
-addfile "C:/Users/user/lattice/FPGASDR/HP_IIR.v"
-addfile "C:/Users/user/lattice/FPGASDR/CIC.v"
-addfile "C:/Users/user/lattice/FPGASDR/Mixer.v"
-addfile "C:/Users/user/lattice/FPGASDR/SinCos.v"
-addfile "C:/Users/user/lattice/FPGASDR/NCO.v"
-addfile "C:/Users/user/lattice/FPGASDR/impl1/source/top.v"
-addfile "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
-addfile "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
-vlib "C:/Users/user/lattice/FPGASDR/FPGASDRSim/work"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
+addfile "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v"
+vlib "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim/work"
 set worklib work
 adel -all
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/PLL.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/PWM.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/Multiplier.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/HP_IIR.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/CIC.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/Mixer.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/SinCos.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/NCO.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/impl1/source/top.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v"
-vlog -dbg -work work "C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
+vlog -dbg -work work "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v"
 module top
 vsim  +access +r top   -PL pmi_work -L ovi_machxo2
 add wave *

@@ -176,36 +176,52 @@ prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
 
 
 
-<A name="pn190412154937"></A><B><U><big>pn190412154937</big></U></B>
-#Start recording tcl command: 4/11/2019 20:53:21
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-#Stop recording: 4/12/2019 15:49:37
-
-
-
-<A name="pn190603215421"></A><B><U><big>pn190603215421</big></U></B>
-#Start recording tcl command: 6/3/2019 21:20:24
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-prj_src add -exclude "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
-prj_src enable "C:/Users/user/lattice/FPGASDR/timingtest1.tpf"
-prj_run Export -impl impl1 -task Jedecgen
-prj_run Export -impl impl1 -task Jedecgen
-prj_run Export -impl impl1 -task Jedecgen
-prj_run Export -impl impl1 -task Jedecgen
-prj_run PAR -impl impl1 -task IOTiming
-prj_strgy set_value -strategy Strategy1 lse_frequency=64
-prj_run Export -impl impl1 -task Jedecgen
-#Stop recording: 6/3/2019 21:54:21
-
-
-
 <A name="pn190919235039"></A><B><U><big>pn190919235039</big></U></B>
 #Start recording tcl command: 9/19/2019 23:30:43
 #Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
 prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
 #Stop recording: 9/19/2019 23:50:39
+
+
+
+<A name="pn191002224722"></A><B><U><big>pn191002224722</big></U></B>
+#Start recording tcl command: 10/2/2019 21:36:41
+#Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
+prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v" "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 10/2/2019 22:47:22
+
+
+
+<A name="pn191003231101"></A><B><U><big>pn191003231101</big></U></B>
+#Start recording tcl command: 10/3/2019 21:53:13
+#Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
+prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
+prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim/FPGASDRSim.spf"
+#Stop recording: 10/3/2019 23:11:01
 
 
 
