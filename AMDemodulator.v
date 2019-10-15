@@ -1,4 +1,4 @@
-
+`timescale 1 ns / 1 ps
 module AMDemodulator
 (clkData,
 clk,
@@ -34,21 +34,14 @@ Multiplier Multiplier1 (.Clock (clk),
 
 assign d_out = SquareSum;	
 
-	always@(posedge clkData) begin
-	NewSample <= 1'b1;
-	end
 	
 
 	always@(posedge clk) begin
 	case (state)
 		
-		S0: if (NewSample == 1) 
-			begin
+		S0: 
 				state <= S1;
-				NewSample <= 1'b0;
-			end
-				else
-			state <= S0;
+	
 		S1: state <= S0;
 	endcase
 	end

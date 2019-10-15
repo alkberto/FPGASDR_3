@@ -1,41 +1,29 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  73 of 7209 (1.013%)
+Register bits:  9 of 7209 (0.125%)
 I/O cells:      25
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        23          100.0
+                              CCU2D         5          100.0
                             EHXPLLJ         1          100.0
-                            FD1P3AX        24          100.0
-                            FD1P3IX        32          100.0
                             FD1S3AX         9          100.0
-                            FD1S3AY         2          100.0
-                            FD1S3IX         6          100.0
                                 GSR         1          100.0
                                  IB         1          100.0
-                            L6MUX21         1          100.0
-                               LUT4        96          100.0
+                               LUT4         3          100.0
                                  OB        24          100.0
-                              PFUMX         4          100.0
 SUB MODULES
                                 PLL         1
                                 PWM         1
-          uart_rx(CLKS_PER_BIT=130)         1
-          uart_tx(CLKS_PER_BIT=130)         1
-                              TOTAL       228
+                              TOTAL        46
 ----------------------------------------------------------------------
-Report for cell uart_tx(CLKS_PER_BIT=130).v1
-Instance Path : uart_tx1
+Report for cell PWM.v1
+Instance Path : PWM1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D         9           39.1
-                            FD1P3AX        12           50.0
-                            FD1P3IX        16           50.0
-                            FD1S3IX         3           50.0
-                            L6MUX21         1          100.0
-                               LUT4        29           30.2
-                              PFUMX         3           75.0
-                              TOTAL        73
+                              CCU2D         5          100.0
+                            FD1S3AX         9          100.0
+                               LUT4         3          100.0
+                              TOTAL        17
 ----------------------------------------------------------------------
 Report for cell PLL.v1
 Instance Path : PLL1
@@ -43,25 +31,3 @@ Instance Path : PLL1
                                cell     count   Res Usage(%)
                             EHXPLLJ         1          100.0
                               TOTAL         1
-----------------------------------------------------------------------
-Report for cell uart_rx(CLKS_PER_BIT=130).v1
-Instance Path : uart_rx1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D         9           39.1
-                            FD1P3AX        12           50.0
-                            FD1P3IX        16           50.0
-                            FD1S3AY         2          100.0
-                            FD1S3IX         3           50.0
-                               LUT4        63           65.6
-                              PFUMX         1           25.0
-                              TOTAL       106
-----------------------------------------------------------------------
-Report for cell PWM.v1
-Instance Path : PWM1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D         5           21.7
-                            FD1S3AX         9          100.0
-                               LUT4         3            3.1
-                              TOTAL        17

@@ -1,7 +1,0 @@
-#Start recording tcl command: 4/4/2019 20:10:15
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-prj_run Map -impl impl1 -task MapVHDLSimFile
-prj_run PAR -impl impl1
-prj_run Export -impl impl1 -task Jedecgen
-#Stop recording: 4/9/2019 16:44:11

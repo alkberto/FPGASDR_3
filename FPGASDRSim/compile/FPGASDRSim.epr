@@ -1,1 +1,9 @@
-"../../TestUart.v"	1
+"../../Multiplier.v"	0
+"../../UartRX.v"	0
+"../../UartTX.v"	0
+"../../AMDemodulator.v"	0
+"../../PLL.v"	0
+"../../impl1/source/top.v"	0
+"../../TestUart.v"	0
+"../src/AMDemod_tb.v"	0
+"../../PWM.v"	0

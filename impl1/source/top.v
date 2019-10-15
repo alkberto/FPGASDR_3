@@ -116,26 +116,6 @@ assign MYLED[5:0] = CICCos_out [7:2];
 //assign MYLED[5:0] = o_Rx_Byte [7:2];
 
  
-  
-
-uart_rx  #(.CLKS_PER_BIT(130))  uart_rx1 (
-.osc_clk (osc_clk), 
-.i_Rx_Serial (i_Rx_Serial),
-.o_Rx_DV  (o_Rx_DV),
-.o_Rx_Byte (o_Rx_Byte)
-);
-	
-
-
-uart_tx  #(.CLKS_PER_BIT(130))  uart_tx1 (
-.osc_clk (osc_clk), 
-.o_Tx_Serial (o_Tx_Serial),
-.i_Tx_DV  (o_Rx_DV),
-.i_Tx_Byte (o_Rx_Byte),
-.o_Tx_Active (o_Tx_Active),
-.o_Tx_Done (o_Tx_Done)
-);	
-	
 
 
 

@@ -1,3 +1,15 @@
+synthesis:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Oct 15 21:43:55 2019
+
+
+Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/Rinaldi-i3/lattice/FPGASDR_3/promote.xml 
+
 Synthesis options:
 The -a option is MachXO2.
 The -s option is 4.
@@ -57,9 +69,6 @@ Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v
-Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v
 Verilog design file = C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v
 NGD file = FPGASDR_impl1.ngd
 -sdc option: SDC file input not used.
@@ -75,19 +84,6 @@ Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/impl1/source/top.v.
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v. VERI-1482
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/multiplier.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v. VERI-1482
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(31): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(32): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(33): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(34): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uartrx.v(35): parameter declaration becomes local in uart_rx with formal parameter declaration list. VERI-1199
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/testuart.v. VERI-1482
-Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v. VERI-1482
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(25): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(26): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(27): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(28): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/uarttx.v(29): parameter declaration becomes local in uart_tx with formal parameter declaration list. VERI-1199
 Analyzing Verilog file c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
@@ -101,12 +97,176 @@ INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): compiling module MULT2. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
-WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(39): Register NewSample_16_31 is stuck at One. VDB-5014
-WARNING - synthesis: Net pwr has following drivers :
-	 instance i2
+INFO - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v(1): compiling module PWM. VERI-1018
+INFO - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/pll.v(8): compiling module PLL. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = top.
+WARNING - synthesis: I/O Port CICCos_out_clk 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Tx_Serial 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_DV 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port o_Rx_Byte[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port MYLED[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port MYLED[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port XOut 's net has no driver and is unused.
+WARNING - synthesis: I/O Port RFIn 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DiffOut 's net has no driver and is unused.
+WARNING - synthesis: I/O Port sinGen 's net has no driver and is unused.
+WARNING - synthesis: I/O Port sin_out 's net has no driver and is unused.
+WARNING - synthesis: I/O Port CIC_out_clk 's net has no driver and is unused.
+######## Missing driver on net o_Tx_Serial. Patching with GND.
+######## Missing driver on net o_Rx_DV. Patching with GND.
+######## Missing driver on net o_Rx_Byte[7]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[6]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[5]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[4]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[3]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[2]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[1]. Patching with GND.
+######## Missing driver on net o_Rx_Byte[0]. Patching with GND.
+######## Missing driver on net MYLED[7]. Patching with GND.
+######## Missing driver on net MYLED[6]. Patching with GND.
+######## Missing driver on net XOut. Patching with GND.
+######## Missing driver on net DiffOut. Patching with GND.
+######## Missing driver on net sinGen. Patching with GND.
+######## Missing driver on net sin_out. Patching with GND.
+######## Missing driver on net CIC_out_clk. Patching with GND.
 
-	 instance NewSample_33
 
 
+WARNING - synthesis: Bit 0 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \AMDemodulator/MultDataA is stuck at One
+WARNING - synthesis: Bit 5 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \AMDemodulator/MultDataA is stuck at One
+WARNING - synthesis: Bit 7 of Register \AMDemodulator/MultDataA is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \AMDemodulator/MultDataB is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \AMDemodulator/MultDataB is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \AMDemodulator/MultDataB is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \AMDemodulator/MultDataB is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \AMDemodulator/MultDataB is stuck at One
+WARNING - synthesis: Bit 5 of Register \AMDemodulator/MultDataB is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \AMDemodulator/MultDataB is stuck at One
+WARNING - synthesis: Bit 7 of Register \AMDemodulator/MultDataB is stuck at Zero
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_31 is a one-to-one match with \AMDemodulator/Multiplier1/FF_29.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_30 is a one-to-one match with \AMDemodulator/Multiplier1/FF_28.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_27 is a one-to-one match with \AMDemodulator/Multiplier1/FF_31.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_26 is a one-to-one match with \AMDemodulator/Multiplier1/FF_27.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_25 is a one-to-one match with \AMDemodulator/Multiplier1/FF_26.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_24 is a one-to-one match with \AMDemodulator/Multiplier1/FF_25.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_23 is a one-to-one match with \AMDemodulator/Multiplier1/FF_24.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_22 is a one-to-one match with \AMDemodulator/Multiplier1/FF_30.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_21 is a one-to-one match with \AMDemodulator/Multiplier1/FF_23.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_20 is a one-to-one match with \AMDemodulator/Multiplier1/FF_22.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_19 is a one-to-one match with \AMDemodulator/Multiplier1/FF_21.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_18 is a one-to-one match with \AMDemodulator/Multiplier1/FF_19.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_17 is a one-to-one match with \AMDemodulator/Multiplier1/FF_18.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_16 is a one-to-one match with \AMDemodulator/Multiplier1/FF_17.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_30 is a one-to-one match with \AMDemodulator/Multiplier1/FF_28.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_29 is a one-to-one match with \AMDemodulator/Multiplier1/FF_27.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_26 is a one-to-one match with \AMDemodulator/Multiplier1/FF_29.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_25 is a one-to-one match with \AMDemodulator/Multiplier1/FF_26.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_24 is a one-to-one match with \AMDemodulator/Multiplier1/FF_25.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_23 is a one-to-one match with \AMDemodulator/Multiplier1/FF_24.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_22 is a one-to-one match with \AMDemodulator/Multiplier1/FF_30.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_21 is a one-to-one match with \AMDemodulator/Multiplier1/FF_23.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_20 is a one-to-one match with \AMDemodulator/Multiplier1/FF_22.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_19 is a one-to-one match with \AMDemodulator/Multiplier1/FF_21.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_18 is a one-to-one match with \AMDemodulator/Multiplier1/FF_19.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_17 is a one-to-one match with \AMDemodulator/Multiplier1/FF_18.
+Duplicate register/latch removal. \AMDemodulator/Multiplier1/FF_16 is a one-to-one match with \AMDemodulator/Multiplier1/FF_17.
+WARNING - synthesis: I/O Port CICCos_out_clk 's net has no driver and is unused.
+WARNING - synthesis: I/O Port RFIn 's net has no driver and is unused.
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(47): Register \AMDemodulator/state_i0_i1 is stuck at One. VDB-5014
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(67): Register \AMDemodulator/QSquare__i8 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v(33): Register \PWM1/DataInNoSign_i0_i1 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(47): Register \AMDemodulator/state_i0_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/pwm.v(33): Register \PWM1/DataInNoSign_i0_i7 is stuck at One. VDB-5014
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
 
-ERROR - synthesis: c:/users/rinaldi-i3/lattice/fpgasdr_3/amdemodulator.v(54): net pwr is constantly driven from multiple places at instance NewSample_33, on port q. VDB-1000
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'CICCos_out_clk' has no load.
+WARNING - synthesis: input pad net 'CICCos_out_clk' has no legal load.
+WARNING - synthesis: logical net 'RFIn' has no load.
+WARNING - synthesis: input pad net 'RFIn' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FPGASDR_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 9 of 7209 (0 % )
+CCU2D => 5
+EHXPLLJ => 1
+FD1S3AX => 9
+GSR => 1
+IB => 1
+LUT4 => 3
+OB => 24
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : osc_clk, loads : 10
+  Net : XIn_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : PWM1/counter_0, loads : 2
+  Net : PWM1/counter_1, loads : 2
+  Net : PWM1/counter_7, loads : 2
+  Net : PWM1/counter_5, loads : 2
+  Net : PWM1/counter_6, loads : 2
+  Net : PWM1/counter_3, loads : 2
+  Net : PWM1/counter_4, loads : 2
+  Net : PWM1/counter_2, loads : 2
+  Net : PWM1/n45, loads : 1
+  Net : PWM1/n373, loads : 1
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets osc_clk]                 |  200.000 MHz|  211.909 MHz|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 56.660  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.168  secs
+--------------------------------------------------------------

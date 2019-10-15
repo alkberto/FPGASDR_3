@@ -35,9 +35,6 @@
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v"
-"C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v"
 "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemodulator.v"
 -top top
 

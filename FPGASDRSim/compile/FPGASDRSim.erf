@@ -1,20 +1,15 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
+UPDATEPROGRESS 3
+UPDATEPROGRESS 7
+UPDATEPROGRESS 11
+UPDATEPROGRESS 15
+UPDATEPROGRESS 19
+UPDATEPROGRESS 23
+UPDATEPROGRESS 27
+UPDATEPROGRESS 31
+ERROR VCP2000 "Syntax error. Unexpected token: PUR[_IDENTIFIER]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... ." "c:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim/src/AMDemod_tb.v" 4  4
 UPDATEPROGRESS 35
-MESSAGE "Pass 2. Processing instantiations."
-UPDATEPROGRESS 45
-MESSAGE "Pass 3. Processing behavioral statements."
-UPDATEPROGRESS 80
-MESSAGE "ELB/DAG code generating."
-MESSAGE_SP VCP2113 "Module \$root found in current working library."
-UPDATEPROGRESS 84
-UPDATEPROGRESS 88
-UPDATEPROGRESS 92
-UPDATEPROGRESS 96
-MESSAGE "Unit top modules: blinking_led."
-MESSAGE "$root top modules: top blinking_led."
-UPDATEPROGRESS 100
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
-MESSAGE "done"
+FAILURE "Compile failure 1 Errors 0 Warnings  Analysis time: 1[s]."

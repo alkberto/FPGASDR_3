@@ -1,18 +1,13 @@
 [Files List]
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
-C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/EHXPLLJ.v=S
-C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/VLO.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/UDFDL5E_UDP_X.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/MULT2.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/VHI.v=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/VLO.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/FADD2B.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/FD1P3DX.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/ND2.v=S
 C:\lscc\diamond\3.10_x64\active-hdl\vlib\ovi_machxo2/src/AND2.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/Multiplier.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/UartTX.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/UartRX.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/PLL.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/PWM.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/AMDemodulator.v=S
-C:\Users\Rinaldi-i3\lattice\FPGASDR_3/impl1/source/top.v=S
+c:\Users\Rinaldi-i3\lattice\FPGASDR_3/Multiplier.v=S
+c:\Users\Rinaldi-i3\lattice\FPGASDR_3/AMDemodulator.v=S
+c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim/src/AMDemod_tb.v=S

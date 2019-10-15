@@ -157,25 +157,6 @@ pgr_project close
 
 
 
-<A name="pn190409164411"></A><B><U><big>pn190409164411</big></U></B>
-#Start recording tcl command: 4/4/2019 20:10:15
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-prj_run Map -impl impl1 -task MapVHDLSimFile
-prj_run PAR -impl impl1
-prj_run Export -impl impl1 -task Jedecgen
-#Stop recording: 4/9/2019 16:44:11
-
-
-
-<A name="pn190411165055"></A><B><U><big>pn190411165055</big></U></B>
-#Start recording tcl command: 4/11/2019 15:11:14
-#Project Location: C:/Users/user/lattice/FPGASDR; Project name: FPGASDR
-prj_project open "C:/Users/user/lattice/FPGASDR/FPGASDR.ldf"
-#Stop recording: 4/11/2019 16:50:55
-
-
-
 <A name="pn190919235039"></A><B><U><big>pn190919235039</big></U></B>
 #Start recording tcl command: 9/19/2019 23:30:43
 #Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
@@ -222,6 +203,33 @@ prj_run Export -impl impl1 -task Jedecgen
 prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
 prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDRSim/FPGASDRSim.spf"
 #Stop recording: 10/3/2019 23:11:01
+
+
+
+<A name="pn191008225830"></A><B><U><big>pn191008225830</big></U></B>
+#Start recording tcl command: 10/8/2019 21:59:51
+#Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
+prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
+prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/simwiz1/simwiz1.spf"
+prj_src syn_sim -src "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v" SynthesisOnly
+prj_src syn_sim -src "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v" SynthesisOnly
+prj_src syn_sim -src "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v" SynthesisOnly
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartRX.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/TestUart.v"
+prj_src exclude "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/UartTX.v"
+prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemod_tb.v"
+prj_src syn_sim -src "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/AMDemod_tb.v" SimulateOnly
+prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/sim1/sim1.spf"
+prj_src add "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Multiplier.v"
+#Stop recording: 10/8/2019 22:58:30
+
+
+
+<A name="pn191014220949"></A><B><U><big>pn191014220949</big></U></B>
+#Start recording tcl command: 10/14/2019 21:44:15
+#Project Location: C:/Users/Rinaldi-i3/lattice/FPGASDR_3; Project name: FPGASDR
+prj_project open "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/FPGASDR.ldf"
+#Stop recording: 10/14/2019 22:09:49
 
 
 

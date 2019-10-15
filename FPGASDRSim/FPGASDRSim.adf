@@ -3,11 +3,14 @@ Current Flow=Generic
 VCS=0
 version=3
 Current Config=compile
+
 [Configurations]
 compile=work
+
 [Library]
 FPGASDRSim=.\FPGASDRSim\FPGASDRSim.lib
 work=.\work\work.lib
+
 [Settings]
 AccessRead=1
 AccessReadWrite=0
@@ -20,20 +23,27 @@ ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
+fileopenfolder=C:\Users\Rinaldi-i3\lattice\FPGASDR_3
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
 PriorityLibNames=pmi_work
 LibNames=ovi_machxo2
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 FPGASDRSim=.
 work=.
+
 [LocalVerilogDirs]
 Count=0
+
 [DefineMacro]
 Global=
+
 [Files]
 /..\..\UartTX.v=-1
 /..\..\UartRX.v=-1
@@ -43,6 +53,8 @@ Global=
 /..\..\AMDemodulator.v=-1
 /..\..\impl1\source\top.v=-1
 /..\..\TestUart.v=-1
+/AMDemod_tb.v=-1
+
 [Files.Data]
 .\..\UartTX.v=Verilog Source Code
 .\..\UartRX.v=Verilog Source Code
@@ -52,9 +64,29 @@ Global=
 .\..\AMDemodulator.v=Verilog Source Code
 .\..\impl1\source\top.v=Verilog Source Code
 .\..\TestUart.v=Verilog Source Code
+.\src\AMDemod_tb.v=Verilog Source Code
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
 [SpecTracer]
 WindowVisible=0
+
+[Folders]
+Name3=Makefiles
+Directory3=c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim\
+Extension3=mak
+Name4=Memory
+Directory4=c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim\
+Extension5=dll
+Name6=PDF
+Directory6=c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim\
+Extension6=pdf
+Name7=HTML
+Directory7=c:\Users\Rinaldi-i3\lattice\FPGASDR_3\FPGASDRSim\
+Extension7=htm;html

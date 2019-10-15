@@ -1,3 +1,8 @@
+
+`timescale 1 ns / 1 ps
+
+PUR PUR_INST (.PUR (<powerup reset sig>));
+
 module AMDemod_tb();
 reg clkData, clk;
 reg[7:0] I_in;

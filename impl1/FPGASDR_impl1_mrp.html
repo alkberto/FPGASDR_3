@@ -23,21 +23,21 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  10/02/19  22:35:31
+Mapped on:  10/15/19  21:43:59
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     73 out of  7209 (1%)
-      PFU registers:           73 out of  6864 (1%)
+   Number of registers:      9 out of  7209 (0%)
+      PFU registers:            9 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        91 out of  3432 (3%)
-      SLICEs as Logic/ROM:     91 out of  3432 (3%)
+   Number of SLICEs:         9 out of  3432 (0%)
+      SLICEs as Logic/ROM:      9 out of  3432 (0%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         23 out of  3432 (1%)
-   Number of LUT4s:        142 out of  6864 (2%)
-      Number used as logic LUTs:         96
+      SLICEs as Carry:          5 out of  3432 (0%)
+   Number of LUT4s:         15 out of  6864 (0%)
+      Number used as logic LUTs:          5
       Number used as distributed RAM:     0
-      Number used as ripple logic:       46
+      Number used as ripple logic:       10
       Number used as shift registers:     0
    Number of PIO sites used: 25 + 4(JTAG) out of 115 (25%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -65,43 +65,23 @@ Mapped on:  10/02/19  22:35:31
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net osc_clk: 50 loads, 50 rising, 0 falling (Driver: PLL1/PLLInst_0 )
+     Net osc_clk: 7 loads, 7 rising, 0 falling (Driver: PLL1/PLLInst_0 )
      Net XIn_c: 1 loads, 1 rising, 0 falling (Driver: PIO XIn )
 
-   Number of Clock Enables:  14
-     Net uart_tx1/osc_clk_enable_53: 2 loads, 2 LSLICEs
-     Net uart_tx1/osc_clk_enable_19: 4 loads, 4 LSLICEs
-     Net uart_tx1/r_SM_Main_2: 10 loads, 10 LSLICEs
-     Net uart_rx1/osc_clk_enable_40: 2 loads, 2 LSLICEs
-     Net uart_rx1/osc_clk_enable_54: 9 loads, 9 LSLICEs
-     Net uart_rx1/osc_clk_enable_30: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_26: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_51: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_29: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_31: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_32: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_33: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_34: 1 loads, 1 LSLICEs
-     Net uart_rx1/osc_clk_enable_46: 1 loads, 1 LSLICEs
-   Number of LSRs:  6
-     Net uart_tx1/n880: 9 loads, 9 LSLICEs
-     Net uart_tx1/r_SM_Main_2: 2 loads, 2 LSLICEs
-     Net uart_tx1/n1467: 1 loads, 1 LSLICEs
-     Net uart_rx1/r_SM_Main_2: 2 loads, 2 LSLICEs
-     Net uart_rx1/n912: 9 loads, 9 LSLICEs
-     Net uart_rx1/n1891: 1 loads, 1 LSLICEs
+   Number of Clock Enables:  0
+   Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net uart_rx1/r_SM_Main_0: 17 loads
-     Net uart_tx1/r_SM_Main_2: 16 loads
-     Net uart_rx1/r_SM_Main_1: 14 loads
-     Net uart_rx1/r_Rx_Data: 11 loads
-     Net uart_rx1/r_SM_Main_2: 11 loads
-     Net uart_rx1/n1295: 10 loads
-     Net uart_rx1/n1434: 10 loads
-     Net uart_tx1/r_SM_Main_0: 10 loads
-     Net uart_tx1/r_SM_Main_1: 10 loads
-     Net uart_rx1/osc_clk_enable_54: 9 loads
+     Net PWM1/counter_0: 2 loads
+     Net PWM1/counter_1: 2 loads
+     Net PWM1/counter_2: 2 loads
+     Net PWM1/counter_3: 2 loads
+     Net PWM1/counter_4: 2 loads
+     Net PWM1/counter_5: 2 loads
+     Net PWM1/counter_6: 2 loads
+     Net PWM1/counter_7: 2 loads
+     Net PWM1/n373: 1 loads
+     Net PWM1/n376: 1 loads
 
 
 
@@ -126,7 +106,6 @@ WARNING - map: input pad net 'RFIn' has no legal load.
 WARNING - map: IO buffer missing for top level port CICCos_out_clk...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port RFIn...logic will be
-
      discarded.
 
 
@@ -137,21 +116,22 @@ WARNING - map: IO buffer missing for top level port RFIn...logic will be
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| o_Rx_Byte[3]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[2]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[4]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[5]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[6]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | o_Rx_DV             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Tx_Serial         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[7]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[6]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[5]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[4]        | OUTPUT    | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[3]        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| o_Rx_Byte[2]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | o_Rx_Byte[1]        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -184,7 +164,6 @@ WARNING - map: IO buffer missing for top level port RFIn...logic will be
 | sin_out             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | CIC_out_clk         | OUTPUT    | LVCMOS25  |            |
-
 +---------------------+-----------+-----------+------------+
 | XIn                 | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -194,34 +173,18 @@ WARNING - map: IO buffer missing for top level port RFIn...logic will be
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal uart_tx1/osc_clk_enable_56 was merged into signal uart_tx1/r_SM_Main_2
-Signal n2005 undriven or does not drive anything - clipped.
-Signal PWM1/counter_181_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM1/counter_181_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM1/counter_181_add_4_9/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM1/counter_181_add_4_9/CO undriven or does not drive anything -
-     clipped.
-Signal uart_rx1/r_Clock_Count_183_add_4_17/S1 undriven or does not drive
-     anything - clipped.
-Signal uart_rx1/r_Clock_Count_183_add_4_17/CO undriven or does not drive
-     anything - clipped.
-Signal uart_rx1/r_Clock_Count_183_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal uart_rx1/r_Clock_Count_183_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal uart_tx1/r_Clock_Count_185_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal uart_tx1/r_Clock_Count_185_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal uart_tx1/r_Clock_Count_185_add_4_17/S1 undriven or does not drive
-     anything - clipped.
-Signal uart_tx1/r_Clock_Count_185_add_4_17/CO undriven or does not drive
-     anything - clipped.
-Block uart_tx1/i1_1_lut_rep_36 was optimized away.
-Block m0_lut was optimized away.
+Signal PWM1/counter_64_add_4_9/S1 undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_64_add_4_9/CO undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_64_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal PWM1/counter_64_add_4_1/CI undriven or does not drive anything - clipped.
+     
+
+
+
+
 
 
 
@@ -245,7 +208,6 @@ PLL 1:                                     Pin/Node Value
   Output Clock(S3):                                 NONE
   Feedback Signal:                         NODE     osc_clk
   Reset Signal:                                     NONE
-
   M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
   D Divider Reset Signal:                           NONE
@@ -285,6 +247,7 @@ PLL 1:                                     Pin/Node Value
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
   CLKOS2 Post Divider C Input:                      DIVC
+
   CLKOS3 Post Divider D Input:                      DIVD
   Pre Divider A Input:                              VCO_PHASE
   Pre Divider B Input:                              VCO_PHASE
@@ -302,7 +265,6 @@ PLL 1:                                     Pin/Node Value
   CLKOS2 Divider:                                   1
   CLKOS3 Divider:                                   1
   Fractional N Divider:                             0
-
   CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
   CLKOP Trim Option Delay:                          0
@@ -326,26 +288,9 @@ Instance Name: PLL1/PLLInst_0
 -------------------------
 
    Total CPU Time: 1 secs  
-   Total REAL Time: 0 secs  
-   Peak Memory Usage: 57 MB
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 56 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

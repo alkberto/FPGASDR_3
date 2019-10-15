@@ -6,3 +6,4 @@ i<>.\..\Multiplier.v
 i<>.\..\AMDemodulator.v
 i<>.\..\impl1\source\top.v
 i<>.\..\TestUart.v
+i<>.\src\AMDemod_tb.v

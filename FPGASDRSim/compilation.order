@@ -6,3 +6,4 @@
 .\..\AMDemodulator.v
 .\..\impl1\source\top.v
 .\..\TestUart.v
+.\src\AMDemod_tb.v

@@ -1,19 +1,21 @@
-8
+9
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
-~M 3 "./../../AMDemodulator.v" 2 AMDemodulator
+~M 3 "./../src/AMDemod_tb.v" 4 AMDemod_tb
+~A 1 "./../src/AMDemod_tb.v" 4 AMDemod_tb
+~M 1 "./../../AMDemodulator.v" 2 AMDemodulator
 ~A 1 "./../../AMDemodulator.v" 2 AMDemodulator
-~M 3 "./../../Multiplier.v" 8 Multiplier
+~M 1 "./../../Multiplier.v" 8 Multiplier
 ~A 1 "./../../Multiplier.v" 8 Multiplier
-~M 3 "./../../PLL.v" 8 PLL
+~M 1 "./../../PLL.v" 8 PLL
 ~A 1 "./../../PLL.v" 8 PLL
-~M 3 "./../../PWM.v" 1 PWM
+~M 1 "./../../PWM.v" 1 PWM
 ~A 1 "./../../PWM.v" 1 PWM
 ~M 3 "./../../TestUart.v" 47 blinking_led
 ~A 1 "./../../TestUart.v" 47 blinking_led
 ~M 3 "./../../impl1/source/top.v" 3 top
 ~A 1 "./../../impl1/source/top.v" 3 top
-~M 3 "./../../UartRX.v" 16 uart_rx
+~M 1 "./../../UartRX.v" 16 uart_rx
 ~A 1 "./../../UartRX.v" 16 uart_rx
-~M 3 "./../../UartTX.v" 14 uart_tx
+~M 1 "./../../UartTX.v" 14 uart_tx
 ~A 1 "./../../UartTX.v" 14 uart_tx

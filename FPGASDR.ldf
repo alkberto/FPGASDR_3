@@ -51,7 +51,7 @@
         <Source name="AMDemod_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
-        <Source name="Multiplier.v" type="Verilog" type_short="Verilog">
+        <Source name="Multiplier.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">

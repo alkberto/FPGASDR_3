@@ -1,24 +1,14 @@
 [ START MERGED ]
-uart_tx1/osc_clk_enable_56 uart_tx1/r_SM_Main_2
 [ END MERGED ]
 [ START CLIPPED ]
-n2005
-PWM1/counter_181_add_4_1/S0
-PWM1/counter_181_add_4_1/CI
-PWM1/counter_181_add_4_9/S1
-PWM1/counter_181_add_4_9/CO
-uart_rx1/r_Clock_Count_183_add_4_17/S1
-uart_rx1/r_Clock_Count_183_add_4_17/CO
-uart_rx1/r_Clock_Count_183_add_4_1/S0
-uart_rx1/r_Clock_Count_183_add_4_1/CI
-uart_tx1/r_Clock_Count_185_add_4_1/S0
-uart_tx1/r_Clock_Count_185_add_4_1/CI
-uart_tx1/r_Clock_Count_185_add_4_17/S1
-uart_tx1/r_Clock_Count_185_add_4_17/CO
+PWM1/counter_64_add_4_9/S1
+PWM1/counter_64_add_4_9/CO
+PWM1/counter_64_add_4_1/S0
+PWM1/counter_64_add_4_1/CI
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Wed Oct 02 22:35:32 2019
+# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Tue Oct 15 21:44:01 2019
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "o_Tx_Serial" SITE "74" ;
